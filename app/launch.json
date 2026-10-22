@@ -1,0 +1,30 @@
+{
+  "_comment": "Processes the launcher starts, in order. {python} = the interpreter running the launcher. 'exists' is a path relative to the project root; the entry is skipped if it is missing. The pipeline (assistant.main) spawns the ASR and TTS MCP servers itself over stdio and auto-starts the tools server if port 8766 is silent, so it is the only required process. 'stub' entries only run when no real event publisher started.",
+  "events_port": 8765,
+  "ui_port": 8780,
+  "processes": [
+    {
+      "name": "mcp-tools",
+      "cmd": ["{python}", "-m", "mcp_servers.tools.server"],
+      "exists": "mcp_servers/tools/server.py",
+      "port": 8766,
+      "delay_s": 1.0
+    },
+    {
+      "name": "pipeline",
+      "cmd": ["{python}", "-m", "assistant.main"],
+      "exists": "assistant/main.py",
+      "publishes_events": true,
+      "port": 8765,
+      "delay_s": 1.0
+    },
+    {
+      "name": "stub-events",
+      "cmd": ["{python}", "app/stub_events.py"],
+      "exists": "app/stub_events.py",
+      "publishes_events": true,
+      "stub": true,
+      "port": 8765
+    }
+  ]
+}

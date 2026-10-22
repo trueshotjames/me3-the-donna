@@ -1,0 +1,2 @@
+# Launcher + UI only. The pipeline and MCP servers have their own list in ../requirements.txt.
+pywebview>=5.3,<6

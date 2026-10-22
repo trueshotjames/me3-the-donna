@@ -1,0 +1,13 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+app/logs/
+*.log
+data/*.db
+data/*.db-shm
+data/*.db-wal
+latency.jsonl
+*.lnk
+docs/
+reports/

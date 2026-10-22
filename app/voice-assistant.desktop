@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Voice Assistant
+Comment=ME3 full-duplex voice assistant (Raspberry Pi 4)
+# install_pi.sh rewrites the two paths below to the real project location
+Exec=/home/pi/me3/.venv/bin/python /home/pi/me3/app/launcher.py
+Icon=/home/pi/me3/app/assets/logo-512.png
+Path=/home/pi/me3
+Terminal=false
+Categories=AudioVideo;Utility;
+StartupNotify=true
