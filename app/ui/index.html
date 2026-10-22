@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voice Assistant</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <svg class="brand-logo" viewBox="0 0 64 64" aria-hidden="true">
+      <rect x="2" y="2" width="60" height="60" rx="14" fill="#121826"/>
+      <circle cx="32" cy="32" r="26" fill="none" stroke="#60a5fa" stroke-opacity=".25" stroke-width="2"/>
+      <circle cx="32" cy="32" r="20" fill="none" stroke="#60a5fa" stroke-opacity=".5" stroke-width="2"/>
+      <g fill="#fff"><rect x="15" y="26" width="4.5" height="12" rx="2.25"/><rect x="22" y="21" width="4.5" height="22" rx="2.25"/><rect x="29.75" y="16" width="4.5" height="32" rx="2.25"/><rect x="37.5" y="21" width="4.5" height="22" rx="2.25"/><rect x="44.5" y="26" width="4.5" height="12" rx="2.25"/></g>
+    </svg>
+    <div>
+      <div class="brand-name">Voice Assistant</div>
+      <div class="brand-sub">ME3 · Raspberry Pi 4 · Design A</div>
+    </div>
+  </div>
+  <div class="top-right">
+    <span id="conn" class="pill pill-off" title="Event stream">● connecting</span>
+    <button id="mic" class="btn btn-ghost" title="Mute the microphone (the assistant stops listening)">🎙 Mic on</button>
+    <button id="mute" class="btn btn-ghost" title="Mute UI sounds (chimes, alarm ring)">🔊 Sounds on</button>
+    <button id="test-sounds" class="btn btn-ghost" title="Play the chime and the alarm ring">Test sounds</button>
+  </div>
+</header>
+
+<main class="grid">
+  <!-- assistant state + conversation -->
+  <section class="card card-main">
+    <div class="orb-wrap">
+      <div id="orb" class="orb state-idle">
+        <div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div>
+        <div class="bars"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div id="state-label" class="state-label">Idle</div>
+      <div id="latency" class="latency" title="Last voice-to-voice latency"></div>
+    </div>
+    <div class="convo">
+      <div class="bubble user"><div class="who">You</div><div id="transcript" class="text muted">Say something…</div></div>
+      <div class="bubble bot"><div class="who">Assistant</div><div id="assistant-text" class="text muted">—</div></div>
+      <div id="tool-line" class="tool-line"></div>
+    </div>
+    <div class="main-actions">
+      <button id="interrupt" class="btn btn-danger">■ Stop talking</button>
+    </div>
+  </section>
+
+  <!-- time widget -->
+  <section class="card">
+    <h2>Time</h2>
+    <div id="clock" class="clock">--:--</div>
+    <div id="clock-sec" class="clock-sec"></div>
+    <div id="date" class="date">—</div>
+  </section>
+
+  <!-- reminders widget -->
+  <section class="card">
+    <h2>Reminders <span id="rem-count" class="count"></span></h2>
+    <ul id="reminders" class="list"><li class="empty">No reminders yet. Try: "remind me to … in 10 minutes".</li></ul>
+  </section>
+
+  <!-- alarms widget -->
+  <section class="card">
+    <h2>Alarms <span id="alarm-count" class="count"></span></h2>
+    <ul id="alarms" class="list"><li class="empty">No alarms. Try: "set an alarm for 6:30".</li></ul>
+  </section>
+</main>
+
+<!-- ringing alarm overlay -->
+<div id="ring-overlay" class="overlay hidden">
+  <div class="ring-card">
+    <div class="ring-bell">⏰</div>
+    <div id="ring-label" class="ring-label">Alarm</div>
+    <div id="ring-time" class="ring-time"></div>
+    <button id="ring-stop" class="btn btn-big">Stop</button>
+  </div>
+</div>
+
+<div id="toasts" class="toasts"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
