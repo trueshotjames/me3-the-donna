@@ -48,6 +48,10 @@ class Scheduler:
         self._runner: asyncio.Task | None = None
         self._last_announce: dict[int, float] = {}
         self._muted = False
+        self._settings = None  # SettingsOps: summarize / VAD calibration / config (assistant/settings_ops.py)
+
+    def set_settings(self, settings) -> None:
+        self._settings = settings
 
     def attach(self, task: PipelineWorker) -> None:
         self._task = task
@@ -120,14 +124,17 @@ class Scheduler:
             return []
         snap = await self._tools.call_json("snapshot", timeout=5)
         ts = int(time.time() * 1000)
-        return [
+        msgs = [
             {"type": "reminders", "ts": ts, "items": snap.get("reminders", [])},
             {"type": "alarms", "ts": ts, "items": snap.get("alarms", [])},
         ]
+        if self._settings is not None:
+            msgs.append({"type": "config", "ts": ts, **self._settings.config()})
+        return msgs
 
     async def push_snapshots(self) -> None:
         for msg in await self.snapshot_messages():
-            self._bus.emit(msg["type"], items=msg["items"])
+            self._bus.emit(msg["type"], **{k: v for k, v in msg.items() if k not in ("type", "ts")})
 
     async def on_tool_result(self, name: str, args: dict[str, Any] | None, result: Any) -> None:
         """Called by the UI observer after every LLM tool call; turns results into widget events."""
@@ -195,5 +202,7 @@ class Scheduler:
             await self.say(str(msg.get("text", "")), interruptible=True, append_to_context=False)
         elif kind == "refresh":
             await self.push_snapshots()
+        elif self._settings is not None and await self._settings.handle(msg):
+            pass
         else:
             logger.debug(f"unknown UI command: {kind}")

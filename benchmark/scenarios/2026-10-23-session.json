@@ -1,0 +1,18 @@
+{
+  "_source": "app/logs/pipeline.log, session of 2026-10-23 14:09-14:14 (final Flux transcripts, in order)",
+  "steps": [
+    {"say": "Hello! What is the capital of the uniforms?", "after": 1.0},
+    {"say": "What is the capital of the Philippines?", "after": 1.0},
+    {"say": "Please tell me a short story.", "after": 1.5},
+    {"say": "Sat on alarm for six AM.", "after": 1.5, "expect_tool": "create_alarm", "note": "mis-heard 'set'; she answered 'I can't set an alarm'"},
+    {"say": "set an alarm for six AM.", "after": 1.5, "expect_tool": "create_alarm", "note": "she said 'alarm set' without calling the tool"},
+    {"say": "Remind me to go to the gym at six AM.", "after": 1.5, "expect_tool": "create_reminder"},
+    {"say": "set an alarm for twelve PM.", "after": 1.5, "expect_tool": "create_alarm", "note": "she said 'alarm set for twelve noon' without calling the tool"},
+    {"say": "Tell me a short story again.", "after": 1.5},
+    {"say": "As a reminder to to eat.", "when": "speaking", "after": 4.0, "note": "barge-in during the story; she asked when"},
+    {"say": "Two PM.", "after": 1.0, "expect_tool": "create_reminder", "note": "this reply took 10.8 s (Groq 429?)"},
+    {"say": "Hello?", "after": 2.0, "note": "this reply took 8 s"},
+    {"say": "Please test if you can hear yourself.", "after": 1.5},
+    {"say": "I mean, uh, say something and then check your transcript if you heard it.", "after": 1.5}
+  ]
+}

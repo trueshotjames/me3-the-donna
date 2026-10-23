@@ -26,6 +26,7 @@
     <button id="mic" class="btn btn-ghost" title="Mute the microphone (the assistant stops listening)">🎙 Mic on</button>
     <button id="mute" class="btn btn-ghost" title="Mute UI sounds (chimes, alarm ring)">🔊 Sounds on</button>
     <button id="test-sounds" class="btn btn-ghost" title="Play the chime and the alarm ring">Test sounds</button>
+    <button id="settings-btn" class="btn btn-ghost" title="Latency summary, VAD calibration, current settings">⚙ Settings</button>
   </div>
 </header>
 
@@ -39,6 +40,7 @@
       </div>
       <div id="state-label" class="state-label">Idle</div>
       <div id="latency" class="latency" title="Last voice-to-voice latency"></div>
+      <div id="wait" class="wait hidden" title="Groq answered 429 (rate limit); the reply continues after this wait"></div>
     </div>
     <div class="convo">
       <div class="bubble user"><div class="who">You</div><div id="transcript" class="text muted">Say something…</div></div>
@@ -78,6 +80,53 @@
     <div id="ring-label" class="ring-label">Alarm</div>
     <div id="ring-time" class="ring-time"></div>
     <button id="ring-stop" class="btn btn-big">Stop</button>
+  </div>
+</div>
+
+<!-- settings panel -->
+<div id="settings" class="overlay hidden">
+  <div class="panel">
+    <div class="panel-head">
+      <h2>Settings</h2>
+      <button id="settings-close" class="btn btn-ghost" title="Close (Esc)">✕</button>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-tab="summary">Latency summary</button>
+      <button class="tab" data-tab="calibrate">VAD calibration</button>
+      <button class="tab" data-tab="status">Current settings</button>
+    </div>
+
+    <section id="tab-summary" class="tab-body">
+      <p class="hint">Median and p90 of every per-turn timing in <code>data/turns.jsonl</code>
+        (same as <code>python -m benchmark.summarize</code>). Values in milliseconds unless the name says otherwise.</p>
+      <div class="row">
+        <label>Turns <select id="sum-last"><option value="10">last 10</option><option value="20" selected>last 20</option><option value="50">last 50</option><option value="0">all</option></select></label>
+        <button id="sum-run" class="btn">Run summary</button>
+        <span id="sum-info" class="hint"></span>
+      </div>
+      <div id="sum-table" class="table-wrap"></div>
+    </section>
+
+    <section id="tab-calibrate" class="tab-body hidden">
+      <p class="hint">Measures what the voice detector hears in your room and suggests <code>VAD_CONFIDENCE</code> and
+        <code>VAD_MIN_VOLUME</code>. The assistant keeps the microphone; it is muted while this runs, so it will not answer.
+        First stay quiet, then talk normally from where you usually sit.</p>
+      <div class="row">
+        <label>Each part <select id="cal-secs"><option value="5">5 s</option><option value="10" selected>10 s</option><option value="15">15 s</option></select></label>
+        <button id="cal-start" class="btn">Start calibration</button>
+        <button id="cal-cancel" class="btn btn-ghost hidden">Cancel</button>
+      </div>
+      <div id="cal-progress" class="cal hidden">
+        <div id="cal-phase" class="cal-phase">—</div>
+        <div class="bar"><div id="cal-bar" class="bar-fill"></div></div>
+        <div id="cal-count" class="hint"></div>
+      </div>
+      <div id="cal-result" class="cal-result hidden"></div>
+    </section>
+
+    <section id="tab-status" class="tab-body hidden">
+      <dl id="cfg" class="cfg"><dt>Waiting for the backend…</dt></dl>
+    </section>
   </div>
 </div>
 

@@ -1,0 +1,13 @@
+{
+ "name": "11 rapid turns",
+ "steps": [
+  {
+   "say": "Hello?"
+  },
+  {
+   "say": "What day is it today?",
+   "when": "after_prompt",
+   "after": 0.5
+  }
+ ]
+}

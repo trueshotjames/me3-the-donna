@@ -54,6 +54,10 @@ class Config:
     llm_base_url: str = field(default_factory=lambda: _get("GROQ_BASE_URL", "https://api.groq.com/openai/v1"))
     llm_temperature: float = field(default_factory=lambda: _float("LLM_TEMPERATURE", 0.4))
     llm_max_tokens: int = field(default_factory=lambda: _int("LLM_MAX_TOKENS", 300))
+    llm_reasoning_effort: str = field(default_factory=lambda: _get("LLM_REASONING_EFFORT", ""))
+    # Messages of history re-sent on each call (system prompt not counted). Fewer = fewer tokens per
+    # minute on Groq's free tier (8K TPM on most models), which otherwise answers 429 + a multi-second wait.
+    llm_history_messages: int = field(default_factory=lambda: _int("LLM_HISTORY_MESSAGES", 12))
     assistant_name: str = field(default_factory=lambda: _get("ASSISTANT_NAME", "Pi"))
     user_name: str = field(default_factory=lambda: _get("USER_NAME", "King"))
     # audio
@@ -61,13 +65,19 @@ class Config:
     audio_out_sample_rate: int = field(default_factory=lambda: _int("AUDIO_OUT_SAMPLE_RATE", 16000))
     audio_input_device: int | str | None = field(default_factory=lambda: _device("AUDIO_INPUT_DEVICE"))
     audio_output_device: int | str | None = field(default_factory=lambda: _device("AUDIO_OUTPUT_DEVICE"))
-    # VAD (Silero on the Pi)
-    vad_confidence: float = field(default_factory=lambda: _float("VAD_CONFIDENCE", 0.7))
-    vad_start_secs: float = field(default_factory=lambda: _float("VAD_START_SECS", 0.2))
-    vad_stop_secs: float = field(default_factory=lambda: _float("VAD_STOP_SECS", 0.2))
-    vad_min_volume: float = field(default_factory=lambda: _float("VAD_MIN_VOLUME", 0.6))
+    # VAD (Silero on the Pi). It only decides when audio goes to Flux (the gate), so it is
+    # tuned for high recall. Loudness is Pipecat's 0..1 scale (-110..-10 dB); speech is ~0.7-0.9.
+    vad_confidence: float = field(default_factory=lambda: _float("VAD_CONFIDENCE", 0.4))
+    vad_start_secs: float = field(default_factory=lambda: _float("VAD_START_SECS", 0.1))
+    vad_stop_secs: float = field(default_factory=lambda: _float("VAD_STOP_SECS", 0.4))
+    vad_min_volume: float = field(default_factory=lambda: _float("VAD_MIN_VOLUME", 0.45))
+    # audio gate in front of Flux (assistant/services/mcp_stt.py)
+    gate_enabled: bool = field(default_factory=lambda: _bool("GATE_ENABLED", True))
+    preroll_ms: int = field(default_factory=lambda: _int("PREROLL_MS", 500))
+    bot_hangover_secs: float = field(default_factory=lambda: _float("BOT_HANGOVER_SECS", 1.5))
+    gate_noise_tail_secs: float = field(default_factory=lambda: _float("GATE_NOISE_TAIL_SECS", 0.8))
     # turn taking
-    turn_start: str = field(default_factory=lambda: _get("TURN_START_STRATEGY", "vad"))  # vad | asr
+    turn_start: str = field(default_factory=lambda: _get("TURN_START_STRATEGY", "asr"))  # asr = Flux | vad
     eager_end_of_turn: bool = field(default_factory=lambda: _bool("EAGER_END_OF_TURN", True))
     flux_eot_threshold: float = field(default_factory=lambda: _float("FLUX_EOT_THRESHOLD", 0.7))
     flux_eager_eot_threshold: float = field(default_factory=lambda: _float("FLUX_EAGER_EOT_THRESHOLD", 0.5))
@@ -91,6 +101,7 @@ class Config:
     alarm_repeat_announce_secs: float = field(default_factory=lambda: _float("ALARM_REANNOUNCE_SECS", 45.0))
     log_level: str = field(default_factory=lambda: _get("LOG_LEVEL", "INFO"))
     latency_log: Path = field(default_factory=lambda: DATA_DIR / "latency.jsonl")
+    turns_log: Path = field(default_factory=lambda: DATA_DIR / "turns.jsonl")
 
     @property
     def python(self) -> str:

@@ -11,3 +11,8 @@ latency.jsonl
 *.lnk
 docs/
 reports/
+backup/
+data/
+*.jsonl
+benchmark/audio_results/
+benchmark/replay_results/

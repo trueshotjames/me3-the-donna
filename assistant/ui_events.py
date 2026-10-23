@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import time
 from typing import Any
 
@@ -41,6 +42,8 @@ class UIEventObserver(BaseObserver):
         self._seen_calls: set[str] = set()
         self._seen_results: set[str] = set()
         self._last_interrupt = 0.0
+        self._tools_this_reply = 0  # tool calls since the user's turn ended
+        self._claim_warned = False
 
     async def on_push_frame(self, data: FramePushed):
         frame = data.frame
@@ -54,6 +57,8 @@ class UIEventObserver(BaseObserver):
             if self._user_speaking:
                 self._user_speaking = False
                 logger.info("user turn stopped; running LLM")
+                self._tools_this_reply = 0
+                self._claim_warned = False
                 bus.emit("state", state="thinking")
         elif isinstance(frame, LLMFullResponseStartFrame):
             if not self._bot_speaking:
@@ -72,6 +77,7 @@ class UIEventObserver(BaseObserver):
             if frame.text.strip():
                 logger.info(f"bot says: {frame.text}")
                 bus.emit("assistant_text", text=frame.text, final=True)
+                self._check_claim(frame.text)
         elif isinstance(frame, InterruptionFrame):
             # Broadcast frames reach the observer twice (upstream and downstream copies).
             if self._bot_speaking and time.monotonic() - self._last_interrupt > 0.2:
@@ -91,6 +97,8 @@ class UIEventObserver(BaseObserver):
             self._seen_calls.discard(frame.tool_call_id)
             result = _parse(frame.result)
             args = self._pending_args.pop(frame.tool_call_id, frame.arguments)
+            self._tools_this_reply += 1
+            logger.info(f"tool result: {frame.function_name} -> {str(result)[:160]}")
             bus.emit("tool_result", name=frame.function_name, result=result, id=frame.tool_call_id)
             if self._on_tool_result:
                 try:
@@ -106,6 +114,37 @@ class UIEventObserver(BaseObserver):
         elif isinstance(frame, ErrorFrame):
             logger.error(f"pipeline error: {frame.error}")
             bus.emit("error", message=str(frame.error), fatal=bool(getattr(frame, "fatal", False)))
+
+
+    # The LLM sometimes answers "Okay, alarm set" without calling create_alarm (seen with Qwen on
+    # 2026-10-23: two of three alarm requests). Nothing was saved, so tell the user instead of
+    # letting the spoken confirmation stand.
+    _CLAIM = re.compile(r"\b(alarm|reminder)\b.{0,40}\b(set|created|added|saved|done|scheduled)\b", re.I)
+    _CLAIM_REV = re.compile(r"\b(set|created|added|saved|scheduled)\b.{0,30}\b(alarm|reminder)\b", re.I)
+
+    # Or the opposite: "I'm sorry, I can't set an alarm for you." (2026-10-23, after "Sat on alarm").
+    _REFUSAL = re.compile(r"\b(can't|cannot|can not|unable to|not able to)\b.{0,20}\b(set|create|add|make)\b.{0,30}\b(alarm|reminder)s?\b", re.I)
+
+    def _check_claim(self, text: str) -> None:
+        if self._tools_this_reply or self._claim_warned:
+            return
+        if self._REFUSAL.search(text):
+            self._claim_warned = True
+            logger.warning(f"LLM claimed a tool action is impossible: [{text}]")
+            self._bus.emit(
+                "warning",
+                message="She said she can't do that, but alarms and reminders do work. Ask again, e.g. \"set an alarm for 6 AM\".",
+                kind="refused_tool",
+            )
+            return
+        if self._CLAIM.search(text) or self._CLAIM_REV.search(text):
+            self._claim_warned = True
+            logger.warning(f"LLM claimed a tool action without calling a tool: [{text}]")
+            self._bus.emit(
+                "warning",
+                message="She said it is set, but no tool was called: nothing was saved. Ask again.",
+                kind="no_tool_call",
+            )
 
 
 def _parse(result: Any) -> Any:
