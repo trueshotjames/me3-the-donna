@@ -5,7 +5,7 @@
     python -m assistant.main --check        # check keys and MCP servers, then exit
 
 Pipeline (all on the Pi):
-    mic -> Silero VAD -> MCPSTTService -> [ASR MCP server -> Deepgram Flux]
+    mic -> Silero VAD (gate only) -> MCPSTTService -> [ASR MCP server -> Deepgram Flux]
         -> user context aggregator -> Groq LLM (+ tools MCP server)
         -> PassFilter -> MCPTTSService -> [TTS MCP server -> Deepgram Aura-2] -> speaker
 
@@ -24,7 +24,7 @@ import time
 
 from loguru import logger
 
-from assistant.config import ROOT, Config, load
+from assistant.config import DATA_DIR, ROOT, Config, load
 
 # ----------------------------------------------------------------------------- helpers
 
@@ -103,9 +103,11 @@ async def connect_tools_server(cfg: Config):
 
 
 def make_transport(cfg: Config):
-    """Audio in/out through the USB speakerphone (hardware echo cancellation), with Silero VAD."""
-    from pipecat.audio.vad.silero import SileroVADAnalyzer
-    from pipecat.audio.vad.vad_analyzer import VADParams
+    """Audio in/out through the USB speakerphone (hardware echo cancellation).
+
+    No VAD here: Pipecat 1.13 ignores ``vad_analyzer`` on transport params. The VAD is a
+    VADProcessor in the pipeline (see build()).
+    """
     from pipecat.transports.local.audio import LocalAudioTransport, LocalAudioTransportParams
 
     return LocalAudioTransport(
@@ -118,14 +120,6 @@ def make_transport(cfg: Config):
             audio_out_channels=1,
             input_device_index=resolve_device(cfg.audio_input_device, want_input=True),
             output_device_index=resolve_device(cfg.audio_output_device, want_input=False),
-            vad_analyzer=SileroVADAnalyzer(
-                params=VADParams(
-                    confidence=cfg.vad_confidence,
-                    start_secs=cfg.vad_start_secs,
-                    stop_secs=cfg.vad_stop_secs,
-                    min_volume=cfg.vad_min_volume,
-                )
-            ),
         )
     )
 
@@ -138,11 +132,14 @@ class Assistant:
         self.bus = None
         self.scheduler = None
         self.worker = None
-        self.stt = self.tts = self.llm = None
+        self.stt = self.tts = self.llm = self.vad = None
         self.tools_client = self.tools_bridge = None
         self.tools_proc = None
+        self.settings = None
+        self.notifier = None
 
-    async def build(self, transport=None):
+    async def build(self, transport=None, stt=None):
+        """Wire the pipeline. ``transport``/``stt`` can be replaced (benchmark/replay.py feeds scripted turns)."""
         cfg = self.cfg
         from mcp.client.session_group import StreamableHttpParameters
         from pipecat.observers.user_bot_latency_observer import UserBotLatencyObserver
@@ -153,15 +150,20 @@ class Assistant:
             LLMContextAggregatorPair,
             LLMUserAggregatorParams,
         )
-        from pipecat.services.groq.llm import GroqLLMService
+        from pipecat.audio.vad.vad_analyzer import VADParams
+        from pipecat.processors.audio.vad_processor import VADProcessor
         from pipecat.services.mcp_service import MCPClient
 
         from assistant.mcp_bridge import stdio_params
         from assistant.processors import PassFilter
         from assistant.prompts import system_prompt
         from assistant.scheduler import Scheduler
+        from assistant.settings_ops import SettingsOps
         from assistant.services.mcp_stt import MCPSTTService
         from assistant.services.mcp_tts import MCPTTSService
+        from assistant.services.timed_llm import TimedGroqLLMService as GroqLLMService
+        from assistant.turn_metrics import METRICS, TurnMetricsObserver
+        from assistant.vad import RecordingSileroVAD
         from assistant.ui_bus import UIBus
         from assistant.ui_events import UIEventObserver
         from mcp_servers.tools.catalog import LLM_TOOLS
@@ -170,6 +172,11 @@ class Assistant:
         self.bus = bus = UIBus(cfg.ui_ws_host, cfg.ui_ws_port)
         await bus.start()
         bus.emit("state", state="starting")
+        # Warnings/errors that only reach the log become UI notifications (after "assistant ready").
+        from assistant.ui_notify import LogNotifier
+
+        self.notifier = LogNotifier(bus)
+        self.notifier.install()
 
         self.tools_bridge, self.tools_proc = await connect_tools_server(cfg)
         self.scheduler = scheduler = Scheduler(
@@ -178,7 +185,28 @@ class Assistant:
 
         transport = transport or make_transport(cfg)
 
-        self.stt = stt = MCPSTTService(
+        # High-recall VAD: it only opens the audio gate to Flux. Flux decides turns and interruptions.
+        self.vad = vad = RecordingSileroVAD(
+            params=VADParams(
+                confidence=cfg.vad_confidence,
+                start_secs=cfg.vad_start_secs,
+                stop_secs=cfg.vad_stop_secs,
+                min_volume=cfg.vad_min_volume,
+            )
+        )
+        METRICS.path = cfg.turns_log
+        METRICS.tool_exec_path = DATA_DIR / "tool_exec.jsonl"
+        METRICS.vad = vad
+        METRICS.vad_thresholds = (cfg.vad_confidence, cfg.vad_min_volume)
+
+        def output_latency() -> float | None:
+            stream = getattr(transport.output(), "_out_stream", None)
+            return stream.get_output_latency() if stream is not None else None
+
+        METRICS.output_latency_fn = output_latency
+        METRICS.on_problem = lambda msg: bus.emit("warning", message=msg, kind="turn_problem")
+
+        self.stt = stt = stt or MCPSTTService(
             server_params=stdio_params("mcp_servers.asr.server"),
             sample_rate=cfg.audio_in_sample_rate,
             push_interval_ms=cfg.asr_push_ms,
@@ -187,6 +215,10 @@ class Assistant:
             eot_timeout_ms=cfg.flux_eot_timeout_ms,
             enable_eager_end_of_turn=cfg.eager_end_of_turn,
             turn_start=cfg.turn_start,
+            gate_enabled=cfg.gate_enabled,
+            preroll_ms=cfg.preroll_ms,
+            bot_hangover_secs=cfg.bot_hangover_secs,
+            gate_noise_tail_secs=cfg.gate_noise_tail_secs,
         )
 
         self.tts = tts = MCPTTSService(
@@ -195,14 +227,24 @@ class Assistant:
             server_sample_rate=cfg.tts_sample_rate,
         )
 
+        async def on_rate_limited(retry_after: float, info: dict) -> None:
+            # Groq answered 429; the SDK waits retry-after and retries. Say so instead of going silent.
+            bus.emit("llm_wait", seconds=retry_after, remaining_tokens=info.get("remaining_tokens"), limit_tokens=info.get("limit_tokens"))
+            if retry_after >= 2.0 and self.scheduler is not None:
+                await self.scheduler.say("One moment.", interruptible=True, append_to_context=False)
+
         self.llm = llm = GroqLLMService(
             api_key=cfg.groq_api_key,
             base_url=cfg.llm_base_url,
+            history_messages=cfg.llm_history_messages,
+            on_rate_limited=on_rate_limited,
             settings=GroqLLMService.Settings(
                 model=cfg.llm_model,
                 temperature=cfg.llm_temperature,
                 max_tokens=cfg.llm_max_tokens,
-                reasoning_effort="low",
+                # "none" turns thinking off on Qwen; gpt-oss accepts low/medium/high; leave
+                # LLM_REASONING_EFFORT empty for models that reject the parameter.
+                **({"reasoning_effort": cfg.llm_reasoning_effort} if cfg.llm_reasoning_effort else {}),
             ),
         )
 
@@ -227,6 +269,7 @@ class Assistant:
         pipeline = Pipeline(
             [
                 transport.input(),
+                VADProcessor(vad_analyzer=vad),
                 stt,
                 aggregators.user(),
                 llm,
@@ -248,10 +291,12 @@ class Assistant:
                 enable_metrics=True,
                 enable_usage_metrics=True,
             ),
-            observers=[latency, ui_observer],
+            observers=[latency, ui_observer, TurnMetricsObserver()],
             idle_timeout_secs=None,  # always-on assistant; never cancel for silence
         )
         scheduler.attach(worker)
+        self.settings = SettingsOps(cfg, bus, vad, worker)
+        scheduler.set_settings(self.settings)
         cfg.latency_log.parent.mkdir(parents=True, exist_ok=True)
 
         @latency.event_handler("on_latency_measured")
@@ -295,6 +340,8 @@ class Assistant:
         await self.scheduler.start()
         self.bus.emit("state", state="idle")
         logger.info("assistant ready: say something")
+        if self.notifier:
+            self.notifier.enable()
         runner = WorkerRunner(handle_sigint=not sys.platform.startswith("win"))
         await runner.add_workers(self.worker)
         try:
@@ -305,14 +352,19 @@ class Assistant:
     async def shutdown(self) -> None:
         if self.scheduler:
             await self.scheduler.stop()
-        if self.stt:
+        from assistant.turn_metrics import METRICS
+
+        METRICS.flush()
+        if getattr(self.stt, "stats", None) is not None:
             logger.info(f"ASR stats: {self.stt.stats}")
-        if self.tts:
+        if getattr(self.tts, "stats", None) is not None:
             logger.info(f"TTS stats: {self.tts.stats}")
         if self.tools_client:
             await self.tools_client.close()
         if self.tools_bridge:
             await self.tools_bridge.close()
+        if self.notifier:
+            self.notifier.remove()
         if self.bus:
             await self.bus.stop()
         if self.tools_proc is not None:

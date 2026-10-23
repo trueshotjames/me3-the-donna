@@ -1,0 +1,22 @@
+{
+ "name": "5 mid-sentence pause",
+ "steps": [
+  {
+   "parts": [
+    {
+     "say": "Set an alarm for"
+    },
+    {
+     "silence": 1.5
+    },
+    {
+     "say": "six thirty in the evening."
+    }
+   ],
+   "expect_tool": "create_alarm",
+   "expect_args": {
+    "time": "18:30"
+   }
+  }
+ ]
+}

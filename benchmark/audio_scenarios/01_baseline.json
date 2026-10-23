@@ -1,0 +1,15 @@
+{
+ "name": "1 baseline",
+ "steps": [
+  {
+   "say": "What is the capital of the Philippines?"
+  },
+  {
+   "say": "Tell me a short story."
+  },
+  {
+   "say": "What time is it?",
+   "expect_tool": "get_current_time"
+  }
+ ]
+}

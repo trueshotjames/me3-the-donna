@@ -1,0 +1,12 @@
+{
+ "name": "12 long utterance",
+ "steps": [
+  {
+   "say": "I have a busy day tomorrow. I need to wake up early because I have a meeting at nine and I still have to prepare my slides before that. So please be my helper this time and set an alarm for eight tomorrow.",
+   "expect_tool": "create_alarm",
+   "expect_args": {
+    "time": "08:00"
+   }
+  }
+ ]
+}

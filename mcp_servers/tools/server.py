@@ -18,8 +18,10 @@ launcher can both reach it), or stdio with --stdio.
 from __future__ import annotations
 
 import argparse
+import functools
 import json
 import re
+import time
 from datetime import datetime, timedelta
 from typing import Any
 
@@ -39,6 +41,40 @@ from mcp_servers.tools.catalog import LLM_TOOLS  # noqa: E402,F401
 
 mcp = MCPServer("tools", log_level="WARNING", instructions="Reminders, alarms and the current time for the ME3 voice assistant.")
 store = Store(DB_PATH)
+EXEC_LOG = DATA_DIR / "tool_exec.jsonl"  # read by the assistant's turn record (assistant/turn_metrics.py)
+_register = mcp.tool
+
+
+def _timed_tool(*args, **kwargs):
+    """Like @mcp.tool(), but also records how long each call spends inside this server."""
+    decorator = _register(*args, **kwargs)
+
+    def wrap(fn):
+        @functools.wraps(fn)
+        def timed(*a, **k):
+            t0 = time.time()
+            try:
+                return fn(*a, **k)
+            finally:
+                t1 = time.time()
+                try:
+                    with open(EXEC_LOG, "a", encoding="utf-8") as fh:
+                        fh.write(json.dumps({"tool": fn.__name__, "t_start": t0, "t_end": t1, "exec_ms": round((t1 - t0) * 1000, 2)}) + "\n")
+                except OSError:
+                    pass
+
+        return decorator(timed)
+
+    return wrap
+
+
+mcp.tool = _timed_tool  # type: ignore[method-assign]
+
+try:  # keep the timing log small
+    if EXEC_LOG.exists() and EXEC_LOG.stat().st_size > 1_000_000:
+        EXEC_LOG.write_text("\n".join(EXEC_LOG.read_text(encoding="utf-8").splitlines()[-1000:]) + "\n", encoding="utf-8")
+except OSError:
+    pass
 
 
 def _j(obj: Any) -> str:

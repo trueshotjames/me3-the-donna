@@ -35,6 +35,12 @@ The backend sends, in order: `hello`, `state`, `reminders` (snapshot), `alarms` 
 | `latency` | `stage`, `ms` | per-stage timings; `stage` is `voice_to_voice` or `<Service>:ttfb` / `<Service>:processing` |
 | `latency_breakdown` | `total_ms`, `contributions: [{label, owner, ms}]`, `ttfb: [...]`, `function_calls: [...]` | Pipecat's per-turn latency breakdown, once per bot reply |
 | `error` | `message`, `fatal: bool` | pipeline or provider error (show a toast) |
+| `warning` | `message`, `kind` | e.g. `kind: "no_tool_call"`: the LLM said an alarm/reminder is set but called no tool, so nothing was saved |
+| `info` | `message` | a note for a toast (e.g. VAD thresholds applied) |
+| `llm_wait` | `seconds`, `remaining_tokens`, `limit_tokens` | Groq answered 429 (rate limit); the SDK retries after `seconds`. The bot also says "One moment." when the wait is 2 s or more |
+| `config` | `model`, `reasoning_effort`, `history_messages`, `vad_confidence`, `vad_min_volume`, `vad_start_secs`, `vad_stop_secs`, `turn_start`, `eager_end_of_turn`, `tts_voice`, `turns_log`, `calibrating` | current settings: on connect and after `config` / `vad_apply` |
+| `summary` | `turns`, `replied`, `from`, `to`, `rate_limit_waits`, `rate_limit_wait_s`, `rows: [{metric, n, median, p90, min, max}]`, or `error` | answer to `summarize` (same numbers as `python -m benchmark.summarize`) |
+| `calibrate` | `phase: "quiet" \| "talk" \| "done" \| "cancelled" \| "error"`, `secs`, `message`, `result` (on done: `confidence`, `min_volume`, `speech_pass_pct`, `quiet_pass_pct`, `quiet`, `speech`, `too_quiet`, `current`) | progress of the in-app VAD calibration (`vad_calibrate`); the STT is muted while it runs (`muted` events bracket it) |
 
 ### Reminder
 
@@ -63,5 +69,10 @@ The backend sends, in order: `hello`, `state`, `reminders` (snapshot), `alarms` 
 | `interrupt` | – | same as a voice barge-in: stops the bot speaking |
 | `refresh` | – | resend `reminders` and `alarms` snapshots |
 | `say` | `text` | debug: make the bot speak the text (not added to the conversation) |
+| `config` | – | resend the `config` snapshot |
+| `summarize` | `last` (0 = all turns) | compute the latency summary of `data/turns.jsonl`; backend emits `summary` |
+| `vad_calibrate` | `secs` (per part, 3-30) | calibrate the VAD from the running pipeline: `secs` quiet, then `secs` talking; backend emits `calibrate` events |
+| `vad_calibrate_cancel` | – | abort a running calibration |
+| `vad_apply` | `confidence`, `min_volume` | apply VAD thresholds to the running detector and save them to `.env`; backend emits `config` + `info` |
 
 Unknown command types are ignored. A malformed message gets an `error` reply.

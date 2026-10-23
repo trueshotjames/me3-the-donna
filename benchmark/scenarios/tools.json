@@ -1,0 +1,13 @@
+{
+  "_source": "tool-use phrases from app/logs/pipeline.log (2026-10-22/23)",
+  "steps": [
+    {"say": "What time is it?", "after": 1.0, "expect_tool": "get_current_time"},
+    {"say": "Please set a reminder for me to to go to the gym tomorrow at six AM.", "after": 1.5, "expect_tool": "create_reminder"},
+    {"say": "Please add an alarm for six AM.", "after": 1.5, "expect_tool": "create_alarm"},
+    {"say": "set an alarm for six thirty AM.", "after": 1.5, "expect_tool": "create_alarm"},
+    {"say": "What alarms do I have?", "after": 1.5, "expect_tool": "list_alarms"},
+    {"say": "Tell me a short story, please.", "after": 1.5},
+    {"say": "Remind me to drink water in ten minutes.", "when": "speaking", "after": 3.0, "expect_tool": "create_reminder", "note": "barge-in with a tool call"},
+    {"say": "What reminders do I have?", "after": 1.5, "expect_tool": "list_reminders"}
+  ]
+}

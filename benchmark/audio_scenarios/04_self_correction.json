@@ -1,0 +1,12 @@
+{
+ "name": "4 self-correction",
+ "steps": [
+  {
+   "say": "Set an alarm for six, no, seven in the morning.",
+   "expect_tool": "create_alarm",
+   "expect_args": {
+    "time": "07:00"
+   }
+  }
+ ]
+}

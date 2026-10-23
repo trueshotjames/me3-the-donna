@@ -6,8 +6,10 @@
 - Consumed: `hello`, `state` (incl. `starting`), `transcript`, `assistant_text`, `interrupted`, `tool_call`,
   `tool_result`, `reminders`, `alarms` (an alarm with `ringing: true` opens the ring overlay), `reminder_created`,
   `reminder_due`, `alarm_created`, `alarm_fired` (ring until `alarm_stopped`), `alarm_stopped`, `alarm_deleted`,
-  `time_told` (toast + clock flash), `muted` (mic button), `latency` / `latency_breakdown` (voice-to-voice under the orb), `error`.
+  `time_told` (toast + clock flash), `muted` (mic button), `latency` / `latency_breakdown` (voice-to-voice under the orb), `error`,
+  `warning` (toast), `info` (toast), `llm_wait` (rate-limit countdown pill under the orb), `config` / `summary` / `calibrate` (Settings panel).
 - Sent: `alarm_stop {id}` (Stop button, Esc, Space), `alarm_delete {id}`, `reminder_done {id}`, `reminder_delete {id}`,
-  `mute {muted}` (Mic button; the "Sounds" button only mutes browser sounds), `interrupt` (Stop talking).
+  `mute {muted}` (Mic button; the "Sounds" button only mutes browser sounds), `interrupt` (Stop talking),
+  `config`, `summarize {last}`, `vad_calibrate {secs}`, `vad_calibrate_cancel`, `vad_apply {confidence, min_volume}` (⚙ Settings).
 - The clock is computed in the browser; `time_told` only highlights it.
 - `app/stub_events.py` implements enough of the schema to drive the UI without the pipeline.

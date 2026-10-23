@@ -47,11 +47,30 @@
   };
 
   // ---------- toasts ----------
+  // Each toast stays 10 s (or until its x is clicked). The same message arriving again while it is
+  // still shown restarts its timer and counts up instead of stacking copies (error floods).
+  const TOAST_MS = 10000;
   function toast(msg, cls = "") {
+    const box = $("toasts");
+    for (const old of box.children) {
+      if (old.dataset.msg === msg && old.dataset.cls === cls) {
+        const n = Number(old.dataset.count || 1) + 1;
+        old.dataset.count = n; old.querySelector(".toast-count").textContent = ` ×${n}`;
+        clearTimeout(old._timer); old._timer = setTimeout(() => old.remove(), TOAST_MS);
+        return;
+      }
+    }
     const el = document.createElement("div");
-    el.className = `toast ${cls}`; el.textContent = msg;
-    $("toasts").appendChild(el);
-    setTimeout(() => el.remove(), 4500);
+    el.className = `toast ${cls}`; el.dataset.msg = msg; el.dataset.cls = cls;
+    const text = document.createElement("span"); text.className = "toast-text"; text.textContent = msg;
+    const count = document.createElement("span"); count.className = "toast-count";
+    text.appendChild(count);
+    const close = document.createElement("button");
+    close.className = "toast-close"; close.type = "button"; close.title = "Close"; close.setAttribute("aria-label", "Close notification"); close.textContent = "×";
+    close.onclick = () => { clearTimeout(el._timer); el.remove(); };
+    el.append(text, close);
+    box.appendChild(el);
+    el._timer = setTimeout(() => el.remove(), TOAST_MS);
   }
 
   // ---------- clock ----------
@@ -164,7 +183,11 @@
       }
       case "assistant_text": { const t = $("assistant-text"); t.textContent = m.text || ""; t.className = "text" + (m.final ? "" : " partial"); break; }
       case "tool_call": $("tool-line").textContent = `⚙ ${m.name}(${JSON.stringify(m.args || {})})`; break;
-      case "tool_result": $("tool-line").textContent += ` → ${typeof m.result === "string" ? m.result : JSON.stringify(m.result)}`; break;
+      case "tool_result": {
+        const r = m.result, err = r && typeof r === "object" && r.error;
+        $("tool-line").textContent += ` ${err ? "✗ " + err : "✓ " + (typeof r === "string" ? r : JSON.stringify(r))}`.slice(0, 400);
+        break;
+      }
       case "reminders": renderReminders(m.items || []); break;
       case "alarms": renderAlarms(m.items || []); break;
       case "reminder_created": Sound.chime(); toast(`Reminder set: ${m.text} · ${fmtDue(m.due_at)}`); break;
@@ -178,10 +201,107 @@
       case "latency": if (m.stage === "voice_to_voice") $("latency").textContent = `voice-to-voice ${Math.round(m.ms)} ms`; break;
       case "latency_breakdown": if (m.total_ms != null) $("latency").textContent = `voice-to-voice ${Math.round(m.total_ms)} ms`; break;
       case "error": toast(m.message || "error", "err"); if (m.fatal) setState("idle"); break;
-      case "info": if (m.stub) { $("conn").textContent = "● stub backend"; $("conn").className = "pill pill-stub"; } break;
+      case "warning": toast(m.message || "warning", "warn"); break;
+      case "info":
+        if (m.stub) { $("conn").textContent = "● stub backend"; $("conn").className = "pill pill-stub"; }
+        if (m.message) toast(m.message);
+        break;
+      case "llm_wait": showWait(m.seconds, m.remaining_tokens, m.limit_tokens); break;
+      case "config": Settings.config(m); break;
+      case "summary": Settings.summary(m); break;
+      case "calibrate": Settings.calibrate(m); break;
     }
   }
   connect();
+
+  // ---------- rate-limit wait (Groq 429) ----------
+  let waitTimer = null;
+  function showWait(seconds, left, limit) {
+    const el = $("wait"); let s = Math.ceil(seconds || 0);
+    const tokens = left != null && limit ? ` · ${Math.round(left)}/${Math.round(limit)} tokens left this minute` : "";
+    toast(`Groq rate limit: reply delayed ${s} s${tokens}`, "warn");
+    if (waitTimer) clearInterval(waitTimer);
+    const tick = () => { if (s <= 0) { el.classList.add("hidden"); clearInterval(waitTimer); waitTimer = null; return; } el.textContent = `⏳ rate limited · ${s--} s`; };
+    el.classList.remove("hidden"); tick(); waitTimer = setInterval(tick, 1000);
+  }
+
+  // ---------- settings panel ----------
+  const Settings = {
+    open() { $("settings").classList.remove("hidden"); send({ type: "config" }); },
+    close() { $("settings").classList.add("hidden"); },
+    tab(name) {
+      document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === name));
+      document.querySelectorAll(".tab-body").forEach(b => b.classList.toggle("hidden", b.id !== `tab-${name}`));
+    },
+    config(c) {
+      const dl = $("cfg"); dl.innerHTML = "";
+      const rows = [["LLM model", c.model], ["Reasoning effort", c.reasoning_effort || "(unset)"], ["History re-sent per call", `${c.history_messages} messages`],
+        ["VAD confidence", c.vad_confidence], ["VAD min loudness", c.vad_min_volume], ["VAD start / stop", `${c.vad_start_secs} s / ${c.vad_stop_secs} s`],
+        ["Turn start", c.turn_start === "asr" ? "Flux (asr)" : "local VAD"], ["Eager end of turn", c.eager_end_of_turn ? "on" : "off"], ["TTS voice", c.tts_voice], ["Turn log", c.turns_log]];
+      for (const [k, v] of rows) { const dt = document.createElement("dt"), dd = document.createElement("dd"); dt.textContent = k; dd.textContent = v ?? "—"; dl.append(dt, dd); }
+      this.current = { confidence: c.vad_confidence, min_volume: c.vad_min_volume };
+      if (c.calibrating) { $("cal-progress").classList.remove("hidden"); $("cal-cancel").classList.remove("hidden"); }
+    },
+    summary(m) {
+      const info = $("sum-info"), wrap = $("sum-table");
+      if (m.error) { info.textContent = m.error; wrap.innerHTML = ""; return; }
+      info.textContent = `${m.turns} turns (${m.from} to ${m.to}), ${m.replied} with a full reply` +
+        (m.rate_limit_waits ? ` · rate limited ${m.rate_limit_waits}× (${m.rate_limit_wait_s} s waited)` : "");
+      const t = document.createElement("table"); t.className = "sum";
+      t.innerHTML = "<thead><tr><th>metric</th><th>n</th><th>median</th><th>p90</th><th>min</th><th>max</th></tr></thead>";
+      const tb = document.createElement("tbody"); let group = "";
+      for (const r of m.rows || []) {
+        const g = r.metric.split(".")[0];
+        if (g !== group) { group = g; const tr = document.createElement("tr"); tr.className = "group"; tr.innerHTML = `<td colspan="6">${g}</td>`; tb.appendChild(tr); }
+        const tr = document.createElement("tr");
+        const bad = r.metric === "e2e.total_ms" && r.median > 1000 ? " class=\"bad\"" : "";
+        tr.innerHTML = `<td>${r.metric}</td><td>${r.n}</td><td${bad}>${r.median}</td><td${bad}>${r.p90}</td><td>${r.min}</td><td>${r.max}</td>`;
+        tb.appendChild(tr);
+      }
+      t.appendChild(tb); wrap.innerHTML = ""; wrap.appendChild(t);
+    },
+    calTimer: null,
+    calibrate(m) {
+      const prog = $("cal-progress"), phase = $("cal-phase"), bar = $("cal-bar"), count = $("cal-count"), res = $("cal-result");
+      const stopTimer = () => { if (this.calTimer) { clearInterval(this.calTimer); this.calTimer = null; } };
+      if (m.phase === "quiet" || m.phase === "talk") {
+        prog.classList.remove("hidden"); res.classList.add("hidden"); $("cal-cancel").classList.remove("hidden"); $("cal-start").disabled = true;
+        phase.textContent = (m.phase === "quiet" ? "🤫 " : "🗣 ") + m.message;
+        bar.style.background = m.phase === "quiet" ? "var(--accent)" : "var(--ok)";
+        if (m.phase === "quiet") Sound.listenStart(); else Sound.chime();
+        stopTimer(); const t0 = Date.now(), total = (m.secs || 10) * 1000;
+        const tick = () => { const p = Math.min(1, (Date.now() - t0) / total); bar.style.width = `${p * 100}%`; count.textContent = `${Math.max(0, Math.ceil((total - (Date.now() - t0)) / 1000))} s left`; if (p >= 1) stopTimer(); };
+        tick(); this.calTimer = setInterval(tick, 200);
+        return;
+      }
+      stopTimer(); prog.classList.add("hidden"); $("cal-cancel").classList.add("hidden"); $("cal-start").disabled = false;
+      if (m.phase === "done") {
+        const r = m.result, cur = r.current || this.current || {};
+        Sound.listenStop();
+        res.innerHTML = `
+          <div class="pair">
+            <div><div class="hint">Suggested VAD_CONFIDENCE</div><div class="big">${r.confidence}</div><div class="hint">now ${cur.confidence}</div></div>
+            <div><div class="hint">Suggested VAD_MIN_VOLUME</div><div class="big">${r.min_volume}</div><div class="hint">now ${cur.min_volume}</div></div>
+            <div><div class="hint">Speech frames passing</div><div class="big">${r.speech_pass_pct}%</div><div class="hint">${r.speech_frames} speech frames of ${r.talk_frames}</div></div>
+            <div><div class="hint">Quiet-room frames passing</div><div class="big">${r.quiet_pass_pct}%</div><div class="hint">${r.quiet_frames} frames</div></div>
+          </div>
+          <div class="hint">Quiet room: confidence p50/p90/p99 ${r.quiet.confidence["50"]} / ${r.quiet.confidence["90"]} / ${r.quiet.confidence["99"]}, loudness ${r.quiet.loudness["50"]} / ${r.quiet.loudness["90"]} / ${r.quiet.loudness["99"]}.
+            Speech: confidence p5/p50/p95 ${r.speech.confidence["5"]} / ${r.speech.confidence["50"]} / ${r.speech.confidence["95"]}, loudness ${r.speech.loudness["5"]} / ${r.speech.loudness["50"]} / ${r.speech.loudness["95"]}.</div>
+          ${r.too_quiet ? '<div class="warn">Your speech is barely louder than the room; move closer to the mic and run it again.</div>' : ""}
+          <div class="row"><button id="cal-apply" class="btn">Apply to the running assistant and .env</button><span class="hint">Takes effect at once; .env keeps it for the next start.</span></div>`;
+        res.classList.remove("hidden");
+        $("cal-apply").onclick = () => { send({ type: "vad_apply", confidence: r.confidence, min_volume: r.min_volume }); $("cal-apply").disabled = true; $("cal-apply").textContent = "Applied"; };
+      } else if (m.phase === "error") { toast(`Calibration: ${m.message}`, "err"); }
+      else if (m.phase === "cancelled") { toast("Calibration cancelled"); }
+    },
+  };
+  $("settings-btn").onclick = () => Settings.open();
+  $("settings-close").onclick = () => Settings.close();
+  $("settings").addEventListener("click", (e) => { if (e.target === $("settings")) Settings.close(); });
+  document.querySelectorAll(".tab").forEach(t => t.onclick = () => Settings.tab(t.dataset.tab));
+  $("sum-run").onclick = () => { $("sum-info").textContent = "running…"; send({ type: "summarize", last: Number($("sum-last").value) }); };
+  $("cal-start").onclick = () => { Sound.ensure(); $("cal-result").classList.add("hidden"); send({ type: "vad_calibrate", secs: Number($("cal-secs").value) }); };
+  $("cal-cancel").onclick = () => send({ type: "vad_calibrate_cancel" });
 
   // ---------- controls ----------
   $("interrupt").onclick = () => send({ type: "interrupt" });
@@ -196,5 +316,8 @@
   $("test-sounds").onclick = () => { Sound.ensure(); Sound.chime(); setTimeout(() => { Sound.alarmStart(); setTimeout(() => Sound.alarmStop(), 2200); }, 900); };
   // browsers need one user gesture before audio can play
   document.addEventListener("pointerdown", () => Sound.ensure(), { once: true });
-  document.addEventListener("keydown", (e) => { if (e.key === "Escape" || e.key === " ") ringStop(true); });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !$("settings").classList.contains("hidden")) { Settings.close(); return; }
+    if (e.key === "Escape" || (e.key === " " && ringing !== null)) ringStop(true);
+  });
 })();
