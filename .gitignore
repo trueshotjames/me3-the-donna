@@ -1,18 +1,7 @@
-.env
-.venv/
-__pycache__/
-*.pyc
-app/logs/
-*.log
-data/*.db
-data/*.db-shm
-data/*.db-wal
-latency.jsonl
-*.lnk
-docs/
-reports/
-backup/
-data/
-*.jsonl
-benchmark/audio_results/
-benchmark/replay_results/
+# Benchmark tool for classmates lives in its own repo; keep it out of this one.
+fd-benchmark/
+fd-benchmark.zip
+fd-benchmark/
+fd-benchmark.zip
+.venv-export/
+.pytest_cache/

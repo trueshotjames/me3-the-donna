@@ -108,6 +108,7 @@ class Turn:
     bot_stopped: float | None = None
     interrupted_at: float | None = None  # barge-in detected while she was speaking
     interrupted_stop: float | None = None
+    voice: dict | None = None  # Wav2Small scores used for this turn's prompt, plus the hint line
     closed: bool = False
 
 
@@ -126,6 +127,7 @@ class Recorder:
         self._pending_vad_start: float | None = None
         self._pending_gate: tuple[float, str, float] | None = None
         self.on_problem: Callable[[str], None] | None = None  # UI warning for a turn that failed quietly
+        self.net_info: Callable[[Turn, dict], dict | None] | None = None  # NetMonitor.turn_block (assistant/netstatus.py)
 
     # ------------------------------------------------------------ turn lifecycle
 
@@ -251,6 +253,34 @@ class Recorder:
     def tts_sentence(self, record: dict) -> None:
         self._reply_turn().tts.append(record)
 
+    def voice_hint(self, hint: str | None, scores: dict | None) -> None:
+        """Called by the VoiceHintInjector just before each LLM run."""
+        # Same attribution as llm_call(): during an open user turn (eager end of turn, the reply
+        # starts before Flux closes the turn) the hint belongs to that user turn, not a new one.
+        cur = self.current
+        if cur is not None and not cur.closed and cur.eot is None and cur.flux_start is not None:
+            turn = cur
+        else:
+            turn = self._reply_turn()
+        turn.voice = {"hint": hint, **(scores or {})}
+
+    def task_record(self, rec: dict) -> None:
+        """A delegated Hermes task, as its own line in turns.jsonl (kind = task)."""
+        record = {"kind": "task", "t": rec.get("t_start"), **rec}
+        logger.info(
+            f"task {rec.get('task_id')} {rec.get('state')} in {self._f(rec.get('task_ms'))} s"
+            + (f", spoken {self._f(rec.get('deliver_ms'))} s later" if rec.get("deliver_ms") is not None else "")
+            + (f": {rec.get('error')}" if rec.get("error") else "")
+        )
+        if self.path is None:
+            return
+        try:
+            self.path.parent.mkdir(parents=True, exist_ok=True)
+            with open(self.path, "a", encoding="utf-8") as fh:
+                fh.write(json.dumps(record, ensure_ascii=False) + "\n")
+        except OSError as e:
+            logger.warning(f"turn metrics: could not write {self.path}: {e}")
+
     # -------------------------------------------------- events from the observer
 
     def on_bot_started(self, t: float) -> None:
@@ -335,8 +365,23 @@ class Recorder:
         except Exception as e:  # noqa: BLE001
             logger.error(f"turn metrics: could not build record for turn {turn.n}: {e!r}")
             return
+        net = None
+        if self.net_info is not None:
+            try:
+                net = self.net_info(turn, record)
+            except Exception as e:  # noqa: BLE001
+                logger.debug(f"turn metrics: network block failed: {e!r}")
+            if net is not None:
+                record["net"] = net
         for line in self._format(record):
             logger.info(line)
+        if net is not None:
+            try:
+                from assistant.netstatus import NetMonitor
+
+                logger.info(NetMonitor.format_line(net))
+            except Exception as e:  # noqa: BLE001
+                logger.debug(f"turn metrics: network line failed: {e!r}")
         if self.on_problem is not None:
             for msg in self._problems(turn, record):
                 logger.warning(f"turn problem: turn {turn.n}: {msg}")
@@ -500,6 +545,13 @@ class Recorder:
                     "audio_s": round(audio_s, 3),
                     "rtf": round(synth_s / audio_s, 3) if (synth_s and audio_s) else None,
                     "leading_silence_ms": s.get("leading_silence_ms"),
+                    # adaptive playout buffer (assistant/services/playout.py)
+                    "playout_underruns": s.get("jb_underruns"),
+                    "playout_underrun_ms": s.get("jb_underrun_ms"),
+                    "playout_hold_ms": s.get("jb_hold_ms"),
+                    "playout_target_ms": s.get("jb_target_ms"),
+                    "playout_join_gap_ms": s.get("jb_join_gap_ms"),
+                    "arrival_rate": s.get("jb_arrival_rate"),
                     "interrupted": s.get("interrupted", False),
                 }
             )
@@ -609,6 +661,7 @@ class Recorder:
             }
             if turn.interrupted_at
             else None,
+            "voice": turn.voice,
         }
         if kept and not e2e and turn.kind == "user" and T5 is not None:
             record["note"] = "no reply audio (passed, interrupted or failed)"

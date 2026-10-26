@@ -48,16 +48,47 @@ def _device(name: str) -> int | str | None:
 class Config:
     # keys
     deepgram_api_key: str = field(default_factory=lambda: _get("DEEPGRAM_API_KEY"))
-    groq_api_key: str = field(default_factory=lambda: _get("GROQ_API_KEY"))
-    # LLM
-    llm_model: str = field(default_factory=lambda: _get("GROQ_MODEL", "openai/gpt-oss-20b"))
-    llm_base_url: str = field(default_factory=lambda: _get("GROQ_BASE_URL", "https://api.groq.com/openai/v1"))
+    # Fast LLM: any OpenAI-compatible endpoint. Default is OpenRouter; LLM_* names win, the old
+    # GROQ_* names still work for a direct Groq setup.
+    llm_api_key: str = field(default_factory=lambda: _get("LLM_API_KEY") or _get("OPENROUTER_API_KEY") or _get("GROQ_API_KEY"))
+    llm_model: str = field(default_factory=lambda: _get("LLM_MODEL") or _get("GROQ_MODEL", "meta-llama/llama-3.1-8b-instruct"))
+    llm_base_url: str = field(
+        default_factory=lambda: _get("LLM_BASE_URL") or _get("GROQ_BASE_URL", "https://openrouter.ai/api/v1")
+    )
     llm_temperature: float = field(default_factory=lambda: _float("LLM_TEMPERATURE", 0.4))
     llm_max_tokens: int = field(default_factory=lambda: _int("LLM_MAX_TOKENS", 300))
     llm_reasoning_effort: str = field(default_factory=lambda: _get("LLM_REASONING_EFFORT", ""))
+    # OpenRouter host preference (ignored by other endpoints): "groq,cerebras" pins hosts in order;
+    # sort = latency | throughput | price lets OpenRouter choose.
+    llm_provider_order: str = field(default_factory=lambda: _get("LLM_PROVIDER_ORDER", "groq"))
+    llm_provider_sort: str = field(default_factory=lambda: _get("LLM_PROVIDER_SORT", ""))
+    llm_allow_fallbacks: bool = field(default_factory=lambda: _bool("LLM_ALLOW_FALLBACKS", True))
+    # Hermes Agent (capable brain for delegated tasks), reached over its API server
+    hermes_enabled: bool = field(default_factory=lambda: _bool("HERMES_ENABLED", True))
+    hermes_url: str = field(default_factory=lambda: _get("HERMES_URL", "http://127.0.0.1:8642"))
+    hermes_api_key: str = field(default_factory=lambda: _get("HERMES_API_KEY"))
+    hermes_nudge_secs: float = field(default_factory=lambda: _float("HERMES_NUDGE_SECS", 30.0))
+    hermes_max_secs: float = field(default_factory=lambda: _float("HERMES_MAX_SECS", 300.0))
+    # Voice tone hints (Wav2Small on the Pi)
+    emotion_enabled: bool = field(default_factory=lambda: _bool("EMOTION_ENABLED", True))
+    emotion_model: Path = field(default_factory=lambda: Path(_get("EMOTION_MODEL", str(ROOT / "models" / "wav2small.onnx"))))
+    emotion_ad_low: float = field(default_factory=lambda: _float("EMOTION_AD_LOW", 0.35))
+    emotion_ad_high: float = field(default_factory=lambda: _float("EMOTION_AD_HIGH", 0.65))
+    emotion_v_low: float = field(default_factory=lambda: _float("EMOTION_V_LOW", 0.20))
+    emotion_v_high: float = field(default_factory=lambda: _float("EMOTION_V_HIGH", 0.80))
+    emotion_window_secs: float = field(default_factory=lambda: _float("EMOTION_WINDOW_SECS", 3.0))
+    emotion_every_secs: float = field(default_factory=lambda: _float("EMOTION_EVERY_SECS", 1.0))
+    emotion_smoothing: float = field(default_factory=lambda: _float("EMOTION_SMOOTHING", 0.5))
     # Messages of history re-sent on each call (system prompt not counted). Fewer = fewer tokens per
     # minute on Groq's free tier (8K TPM on most models), which otherwise answers 429 + a multi-second wait.
     llm_history_messages: int = field(default_factory=lambda: _int("LLM_HISTORY_MESSAGES", 12))
+    # Long-term memory (assistant/memory.py): a note in the prompt, raw transcripts on disk, recall tool.
+    memory_enabled: bool = field(default_factory=lambda: _bool("MEMORY_ENABLED", True))
+    memory_dir: Path = field(default_factory=lambda: Path(_get("MEMORY_DIR", str(DATA_DIR / "memory"))))
+    memory_model: str = field(default_factory=lambda: _get("MEMORY_MODEL"))  # empty = the fast model
+    memory_idle_secs: float = field(default_factory=lambda: _float("MEMORY_IDLE_SECS", 1800.0))
+    memory_episode_messages: int = field(default_factory=lambda: _int("MEMORY_EPISODE_MESSAGES", 40))
+    memory_note_max_chars: int = field(default_factory=lambda: _int("MEMORY_NOTE_MAX_CHARS", 4000))
     assistant_name: str = field(default_factory=lambda: _get("ASSISTANT_NAME", "Pi"))
     user_name: str = field(default_factory=lambda: _get("USER_NAME", "King"))
     # audio
@@ -88,6 +119,11 @@ class Config:
     asr_push_ms: int = field(default_factory=lambda: _int("ASR_PUSH_MS", 60))
     tts_voice: str = field(default_factory=lambda: _get("DEEPGRAM_AURA_VOICE", "aura-2-thalia-en"))
     tts_sample_rate: int = field(default_factory=lambda: _int("TTS_SAMPLE_RATE", 16000))
+    # adaptive playout buffer against stutter on slow links (0 ms added while audio arrives fast)
+    tts_playout: bool = field(default_factory=lambda: _bool("TTS_PLAYOUT_BUFFER", True))
+    tts_playout_start_ms: float = field(default_factory=lambda: _float("TTS_PLAYOUT_START_MS", 0.0))
+    tts_playout_max_ms: float = field(default_factory=lambda: _float("TTS_PLAYOUT_MAX_MS", 1500.0))
+    tts_playout_max_hold_ms: float = field(default_factory=lambda: _float("TTS_PLAYOUT_MAX_HOLD_MS", 1000.0))
     # servers
     tools_mcp_url: str = field(
         default_factory=lambda: _get(
@@ -107,15 +143,47 @@ class Config:
     def python(self) -> str:
         return sys.executable
 
+    def __post_init__(self) -> None:
+        # gpt-oss models must reason; OpenRouter answers 400 "Reasoning is mandatory" to "none".
+        # An old Qwen-era LLM_REASONING_EFFORT=none in .env would otherwise break every turn.
+        if "gpt-oss" in self.llm_model and self.llm_reasoning_effort.strip().lower() in ("", "none", "off", "0"):
+            import logging
+
+            logging.getLogger(__name__).warning("gpt-oss needs a reasoning effort (none/empty is rejected); using low")
+            self.llm_reasoning_effort = "low"
+
     def validate(self) -> list[str]:
         problems = []
         if not self.deepgram_api_key:
             problems.append("DEEPGRAM_API_KEY is missing (ASR and TTS servers need it)")
-        if not self.groq_api_key:
-            problems.append("GROQ_API_KEY is missing (LLM)")
+        if not self.llm_api_key:
+            problems.append("LLM_API_KEY is missing (fast model; an OpenRouter key, or GROQ_API_KEY for Groq direct)")
         if self.turn_start not in ("vad", "asr"):
             problems.append("TURN_START_STRATEGY must be 'vad' or 'asr'")
+        if self.hermes_enabled and not self.hermes_api_key:
+            problems.append("HERMES_API_KEY is missing (same value as API_SERVER_KEY in Hermes's .env), or set HERMES_ENABLED=0")
+        if self.emotion_enabled and not self.emotion_model.exists():
+            problems.append(f"EMOTION_MODEL not found at {self.emotion_model} (run tools/export_wav2small.py), or set EMOTION_ENABLED=0")
         return problems
+
+    @property
+    def llm_extra_body(self) -> dict:
+        """OpenRouter provider routing; empty for any other endpoint."""
+        if "openrouter" not in self.llm_base_url:
+            return {}
+        provider: dict = {"allow_fallbacks": self.llm_allow_fallbacks}
+        if self.llm_provider_sort:
+            provider["sort"] = self.llm_provider_sort
+        order = [p.strip() for p in self.llm_provider_order.split(",") if p.strip()]
+        if order:
+            provider["order"] = order
+        return {"provider": provider}
+
+    @property
+    def emotion_thresholds(self):
+        from assistant.emotion import Thresholds
+
+        return Thresholds(self.emotion_ad_low, self.emotion_ad_high, self.emotion_v_low, self.emotion_v_high)
 
 
 def load() -> Config:

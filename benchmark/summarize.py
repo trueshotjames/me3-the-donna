@@ -74,7 +74,41 @@ def flatten(r: dict) -> dict:
         "vad.median_loudness": vstats.get("median_loudness"),
         "vad.pct_both_pass": vstats.get("pct_both_pass"),
         "barge.stop_ms": barge.get("stop_ms"),
+        "voice.infer_ms": (r.get("voice") or {}).get("infer_ms"),
+        "voice.arousal": (r.get("voice") or {}).get("arousal"),
+        "voice.dominance": (r.get("voice") or {}).get("dominance"),
+        "voice.valence": (r.get("voice") or {}).get("valence"),
     }
+
+
+def task_summary(tasks: list[dict]) -> list[str]:
+    """Delegated Hermes tasks: how many, how they ended, how long they took, how long results waited."""
+    if not tasks:
+        return []
+    done = [t for t in tasks if t.get("state") == "done"]
+    lines = [f"\ndelegated tasks: {len(tasks)} ({len(done)} done, "
+             f"{sum(t.get('state') == 'failed' for t in tasks)} failed, "
+             f"{sum(t.get('state') == 'cancelled' for t in tasks)} cancelled)"]
+    for key, label in (("task_ms", "task time (delegate -> result ready)"), ("deliver_ms", "result wait (ready -> queued to speak)")):
+        vals = [t[key] for t in done if isinstance(t.get(key), (int, float))]
+        if vals:
+            lines.append(f"  {label:44} n={len(vals)} median {statistics.median(vals) / 1000:.1f} s p90 {pct(vals, 0.9) / 1000:.1f} s max {max(vals) / 1000:.1f} s")
+    tools = [name for t in tasks for name in t.get("tools_used", [])]
+    if tools:
+        counts = {n: tools.count(n) for n in sorted(set(tools))}
+        lines.append("  Hermes tools used: " + ", ".join(f"{n} x{c}" for n, c in counts.items()))
+    return lines
+
+
+def voice_summary(turns: list[dict]) -> list[str]:
+    scored = [t["voice"] for t in turns if t.get("voice")]
+    if not scored:
+        return []
+    hinted = [v for v in scored if v.get("hint")]
+    lines = [f"\nvoice hints: {len(hinted)} of {len(scored)} turns got a hint ({100 * len(hinted) / len(scored):.0f}%)"]
+    for v in hinted[-5:]:
+        lines.append(f"  A={v.get('arousal')} D={v.get('dominance')} V={v.get('valence')}: {v['hint']}")
+    return lines
 
 
 def pct(values: list[float], p: float) -> float:
@@ -142,7 +176,9 @@ def main() -> None:
     if a.since:
         hh, mm = map(int, a.since.split(":"))
         since = datetime.now().replace(hour=hh, minute=mm, second=0, microsecond=0).timestamp()
-    recs = load(a.file, a.last, since)
+    rows = load(a.file, a.last, since)
+    tasks = [r for r in rows if r.get("kind") == "task"]
+    recs = [r for r in rows if r.get("kind") != "task"]
     if not recs:
         print(f"no turns in {a.file}")
         return
@@ -150,11 +186,13 @@ def main() -> None:
     summary = summarize(recs)
     print(f"{summary['turns']} turns ({summary['from']} to {summary['to']}), {summary['replied']} with a full end-to-end measurement")
     if summary["rate_limit_waits"]:
-        print(f"Groq rate limit hit {summary['rate_limit_waits']} time(s), {summary['rate_limit_wait_s']} s waited in total")
+        print(f"LLM rate limit hit {summary['rate_limit_waits']} time(s), {summary['rate_limit_wait_s']} s waited in total")
     print()
     print(f"{'metric':32} {'n':>4} {'median':>9} {'p90':>9} {'min':>9} {'max':>9}")
     for row in summary["rows"]:
         print(f"{row['metric']:32} {row['n']:>4} {row['median']:>9.1f} {row['p90']:>9.1f} {row['min']:>9.1f} {row['max']:>9.1f}")
+    for line in task_summary(tasks) + voice_summary(recs):
+        print(line)
     if a.csv:
         with open(a.csv, "w", newline="", encoding="utf-8") as fh:
             w = csv.DictWriter(fh, fieldnames=["turn", "t", "transcript", *flat[0].keys()])

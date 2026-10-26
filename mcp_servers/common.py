@@ -7,8 +7,10 @@ All logging goes to stderr through loguru.
 
 from __future__ import annotations
 
+import json
 import os
 import sys
+import time
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -49,3 +51,22 @@ def env_int(name: str, default: int) -> int:
         return int(os.getenv(name, default))
     except ValueError:
         return default
+
+
+NET_EVENTS = DATA_DIR / "net_events.jsonl"
+
+
+def log_net_event(provider: str, ms: float, *, ok: bool = True, reconnect: bool = False, error: str | None = None) -> None:
+    """Append one provider connect (time in ms, measured here) to data/net_events.jsonl.
+
+    The pipeline reads it for the UI network indicator and the per-turn ``net`` block
+    (assistant/netstatus.py). Never raises: a failed write must not break a connect.
+    """
+    try:
+        rec = {"t": round(time.time(), 3), "provider": provider, "ms": round(ms, 1), "ok": ok, "reconnect": reconnect}
+        if error:
+            rec["error"] = error[:200]
+        with open(NET_EVENTS, "a", encoding="utf-8") as fh:
+            fh.write(json.dumps(rec) + "\n")
+    except Exception:  # noqa: BLE001
+        pass

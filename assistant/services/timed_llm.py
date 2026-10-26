@@ -8,7 +8,8 @@ Also:
   and records them on the call; a 429 is logged with its retry-after and reported to
   ``on_rate_limited`` so the assistant can say "one moment" instead of going silent
   (the OpenAI SDK retries a 429 by itself, after the retry-after wait, up to 2 times);
-- trims the conversation to the last ``history_messages`` messages before each call,
+- hands the full history to ``on_messages`` (long-term memory), then trims the conversation to
+  the last ``history_messages`` messages before each call,
   because every call re-sends the whole history and the free tier counts tokens per minute.
 """
 
@@ -86,9 +87,17 @@ def trim_history(messages: list, keep: int) -> list:
 
 
 class TimedGroqLLMService(GroqLLMService):
-    def __init__(self, *args, history_messages: int = 12, on_rate_limited: RateLimitHook | None = None, **kwargs):
+    def __init__(
+        self,
+        *args,
+        history_messages: int = 12,
+        on_rate_limited: RateLimitHook | None = None,
+        on_messages=None,  # callable(messages): sees the full history before the trim (assistant/memory.py)
+        **kwargs,
+    ):
         super().__init__(*args, **kwargs)
         self._history_messages = history_messages
+        self._on_messages = on_messages
         self._on_rate_limited = on_rate_limited
         self._pending_call: dict | None = None
         self.rate_limit: dict = {}  # last headers seen: remaining tokens/requests, reset times
@@ -137,8 +146,13 @@ class TimedGroqLLMService(GroqLLMService):
             logger.warning(f"{self}: Groq HTTP {response.status_code}")
 
     async def get_chat_completions(self, context):
+        msgs = context.get_messages() if hasattr(context, "get_messages") else context.messages
+        if self._on_messages:
+            try:
+                self._on_messages(list(msgs))
+            except Exception as e:  # noqa: BLE001
+                logger.debug(f"{self}: on_messages hook failed: {e!r}")
         if self._history_messages:
-            msgs = context.get_messages() if hasattr(context, "get_messages") else context.messages
             trimmed = trim_history(list(msgs), self._history_messages)
             if len(trimmed) < len(msgs):
                 context.set_messages(trimmed)

@@ -30,7 +30,7 @@ import websockets
 from loguru import logger
 from mcp.server.mcpserver import MCPServer
 
-from mcp_servers.common import env, env_float, env_int, setup
+from mcp_servers.common import env, env_float, env_int, log_net_event, setup
 
 setup("asr")
 
@@ -152,13 +152,17 @@ async def _connect(session: Session) -> None:
         if not DEEPGRAM_API_KEY:
             raise RuntimeError("DEEPGRAM_API_KEY is not set (see .env.example)")
         t0 = time.perf_counter()
-        ws = await websockets.connect(
-            session.url(),
-            additional_headers={"Authorization": f"Token {DEEPGRAM_API_KEY}"},
-            max_size=None,
-            ping_interval=20,
-            ping_timeout=20,
-        )
+        try:
+            ws = await websockets.connect(
+                session.url(),
+                additional_headers={"Authorization": f"Token {DEEPGRAM_API_KEY}"},
+                max_size=None,
+                ping_interval=20,
+                ping_timeout=20,
+            )
+        except Exception as e:
+            log_net_event("Flux", (time.perf_counter() - t0) * 1000, ok=False, reconnect=session.reconnects > 0, error=repr(e))
+            raise
         session.ws = ws
         session.conn_id += 1
         session.conn_bytes = 0
@@ -169,6 +173,7 @@ async def _connect(session: Session) -> None:
         was_reconnect = session.reconnects > 0
         session.reconnects += 1
         logger.info(f"Flux connected in {(time.perf_counter() - t0) * 1000:.0f} ms ({session.url()})")
+        log_net_event("Flux", (time.perf_counter() - t0) * 1000, reconnect=was_reconnect)
         if was_reconnect:
             _put(session, {"event": "Reconnected"})
 
