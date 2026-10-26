@@ -1,0 +1,14 @@
+{
+ "name": "7 background noise -30 dBFS",
+ "noise_db": -30,
+ "lead_secs": 20,
+ "steps": [
+  {
+   "say": "What is the capital of the Philippines?"
+  },
+  {
+   "say": "What time is it?",
+   "expect_tool": "get_current_time"
+  }
+ ]
+}

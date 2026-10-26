@@ -2,11 +2,31 @@
 
 from __future__ import annotations
 
+import re
+
 from loguru import logger
 from pipecat.frames.frames import Frame, LLMFullResponseEndFrame, LLMFullResponseStartFrame, LLMTextFrame
 from pipecat.processors.frame_processor import FrameDirection, FrameProcessor
 
 PASS_TOKEN = "<pass"
+
+# gpt-oss sometimes writes a non-breaking hyphen as the literal text "\u2011", and likes typographic
+# punctuation. Both reach the TTS as odd sounds, so sentences are cleaned before they are spoken.
+_ESCAPE = re.compile(r"\\u([0-9a-fA-F]{4})")
+_DASH = re.compile(r"\s*[\u2014\u2015]\s*")
+_ASCII = str.maketrans(
+    {
+        "\u2010": "-", "\u2011": "-", "\u2012": "-", "\u2013": "-",
+        "\u2018": "'", "\u2019": "'", "\u201a": "'", "\u201c": '"', "\u201d": '"', "\u201e": '"',
+        "\u2026": "...", "\u00a0": " ", "\u202f": " ", "\u2009": " ", "\u200b": "",
+    }
+)
+
+
+def speakable(text: str) -> str:
+    """Text as the TTS should get it: literal \\uXXXX escapes decoded, typographic punctuation to ASCII."""
+    text = _ESCAPE.sub(lambda m: chr(int(m.group(1), 16)), text)
+    return _DASH.sub(", ", text).translate(_ASCII)
 
 
 class PassFilter(FrameProcessor):

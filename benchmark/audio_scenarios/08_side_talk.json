@@ -1,0 +1,14 @@
+{
+ "name": "8 side-talk",
+ "steps": [
+  {
+   "say": "Did you finish the report? I will check it later tonight.",
+   "voice": "helena",
+   "expect_reply": false
+  },
+  {
+   "say": "What is the capital of France?",
+   "reply_cap": 10
+  }
+ ]
+}

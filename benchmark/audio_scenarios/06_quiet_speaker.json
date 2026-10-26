@@ -1,0 +1,14 @@
+{
+ "name": "6 quiet speaker",
+ "steps": [
+  {
+   "say": "What is the capital of the Philippines?",
+   "gain_db": -15
+  },
+  {
+   "say": "What is the capital of the Philippines?",
+   "gain_db": -25,
+   "reply_cap": 15
+  }
+ ]
+}

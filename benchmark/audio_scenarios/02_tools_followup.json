@@ -1,0 +1,19 @@
+{
+ "name": "2 tools + follow-up",
+ "steps": [
+  {
+   "say": "Set an alarm for seven in the morning.",
+   "expect_tool": "create_alarm",
+   "expect_args": {
+    "time": "07:00"
+   }
+  },
+  {
+   "say": "Remind me to eat."
+  },
+  {
+   "say": "Two PM.",
+   "expect_tool": "create_reminder"
+  }
+ ]
+}

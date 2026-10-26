@@ -29,7 +29,7 @@ from loguru import logger
 from mcp.server.mcpserver import MCPServer
 from mcp.types import AudioContent, TextContent
 
-from mcp_servers.common import env, env_int, setup
+from mcp_servers.common import env, env_int, log_net_event, setup
 
 setup("tts")
 
@@ -53,6 +53,8 @@ class Job:
     queue: asyncio.Queue = field(default_factory=asyncio.Queue)  # bytes or None (EOF)
     created: float = field(default_factory=time.time)
     first_audio: float | None = None
+    speak_sent: float | None = None
+    meta_sent: bool = False
     done: bool = False
     cancelled: bool = False
     bytes_out: int = 0
@@ -85,17 +87,22 @@ class Aura:
             if not DEEPGRAM_API_KEY:
                 raise RuntimeError("DEEPGRAM_API_KEY is not set (see .env.example)")
             t0 = time.perf_counter()
-            self.ws = await websockets.connect(
-                self.url(),
-                additional_headers={"Authorization": f"Token {DEEPGRAM_API_KEY}"},
-                max_size=None,
-                ping_interval=20,
-                ping_timeout=20,
-            )
+            try:
+                self.ws = await websockets.connect(
+                    self.url(),
+                    additional_headers={"Authorization": f"Token {DEEPGRAM_API_KEY}"},
+                    max_size=None,
+                    ping_interval=20,
+                    ping_timeout=20,
+                )
+            except Exception as e:
+                log_net_event("Aura", (time.perf_counter() - t0) * 1000, ok=False, error=repr(e))
+                raise
             self.reader = asyncio.create_task(self._read(self.ws))
             if self.keepalive is None:
                 self.keepalive = asyncio.create_task(self._keepalive())
             logger.info(f"Aura connected in {(time.perf_counter() - t0) * 1000:.0f} ms ({VOICE} @ {SAMPLE_RATE} Hz)")
+            log_net_event("Aura", (time.perf_counter() - t0) * 1000)
 
     async def _read(self, ws) -> None:
         try:
@@ -164,14 +171,21 @@ class Aura:
             await self.ws.send(json.dumps({"type": "Speak", "text": job.text}))
             await self.ws.send(json.dumps({"type": "Flush"}))
             self.last_send = time.time()
+            job.speak_sent = self.last_send
         except websockets.ConnectionClosed:
+            # The socket died under us. The reader may already have dropped this job and marked it
+            # finished (26 Oct: a ValueError here lost the reply), so reset it before resending.
             self.ws = None
-            self.in_flight.remove(job)
+            if job in self.in_flight:
+                self.in_flight.remove(job)
+            job.done = False
+            job.queue = asyncio.Queue()
             await self.connect()
             self.in_flight.append(job)
             await self.ws.send(json.dumps({"type": "Speak", "text": job.text}))
             await self.ws.send(json.dumps({"type": "Flush"}))
             self.last_send = time.time()
+            job.speak_sent = self.last_send
 
     async def clear(self) -> None:
         """Barge-in: stop everything in flight."""
@@ -245,7 +259,15 @@ async def tts_read(stream: str, wait_ms: int = 500) -> list[AudioContent | TextC
             break
         parts.append(nxt)
     data = b"".join(parts)
-    return [AudioContent(type="audio", data=base64.b64encode(data).decode("ascii"), mime_type=MIME)]
+    out: list[AudioContent | TextContent] = [
+        AudioContent(type="audio", data=base64.b64encode(data).decode("ascii"), mime_type=MIME)
+    ]
+    if not job.meta_sent:
+        # Server-side timings for the client's turn record (sent once, with the first audio).
+        job.meta_sent = True
+        meta = {"t_created": job.created, "t_speak_sent": job.speak_sent, "t_first_audio": job.first_audio}
+        out.append(TextContent(type="text", text=json.dumps({"eof": False, "meta": meta})))
+    return out
 
 
 @mcp.tool()

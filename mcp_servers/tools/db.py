@@ -1,7 +1,8 @@
-"""SQLite store for reminders and alarms (shared by the tools MCP server)."""
+"""SQLite store for reminders, alarms, timers and simulated device state (shared by the tools MCP server)."""
 
 from __future__ import annotations
 
+import json
 import sqlite3
 import threading
 from datetime import datetime, timedelta
@@ -27,6 +28,20 @@ CREATE TABLE IF NOT EXISTS alarms (
     ringing INTEGER NOT NULL DEFAULT 0,
     fired_at TEXT,
     created_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS timers (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    label TEXT NOT NULL DEFAULT '',
+    duration_s INTEGER NOT NULL,
+    ends_at TEXT NOT NULL,     -- ISO 8601 local time
+    state TEXT NOT NULL DEFAULT 'running',   -- running | ringing | done | cancelled
+    fired_at TEXT,
+    created_at TEXT NOT NULL
+);
+CREATE TABLE IF NOT EXISTS device_state (
+    name TEXT PRIMARY KEY,     -- "lights", "thermostat", "media", "phone", "weather"
+    json TEXT NOT NULL,
+    updated_at TEXT NOT NULL
 );
 """
 
@@ -195,3 +210,101 @@ class Store:
             "fired_at": row["fired_at"],
             "created_at": row["created_at"],
         }
+
+    # ---------- timers ----------
+    def create_timer(self, seconds: int, label: str) -> dict[str, Any]:
+        with self._lock:
+            cur = self._conn.execute(
+                "INSERT INTO timers(label, duration_s, ends_at, created_at) VALUES (?, ?, ?, ?)",
+                (label, int(seconds), iso(now() + timedelta(seconds=int(seconds))), iso(now())),
+            )
+            self._conn.commit()
+            return self.get_timer(cur.lastrowid)
+
+    def get_timer(self, tid: int) -> dict[str, Any] | None:
+        row = self._conn.execute("SELECT * FROM timers WHERE id=?", (tid,)).fetchone()
+        return self._timer(row) if row else None
+
+    def list_timers(self, include_finished: bool = False) -> list[dict[str, Any]]:
+        q = "SELECT * FROM timers" + ("" if include_finished else " WHERE state IN ('running', 'ringing')")
+        rows = self._conn.execute(q + " ORDER BY ends_at, id").fetchall()
+        return [self._timer(r) for r in rows]
+
+    def cancel_timer(self, tid: int | None) -> list[dict[str, Any]]:
+        """Cancel one running timer (or every running or ringing one when tid is None)."""
+        with self._lock:
+            if tid is None:
+                rows = self._conn.execute("SELECT id FROM timers WHERE state IN ('running', 'ringing')").fetchall()
+            else:
+                rows = self._conn.execute("SELECT id FROM timers WHERE id=? AND state IN ('running', 'ringing')", (tid,)).fetchall()
+            ids = [r["id"] for r in rows]
+            if ids:
+                self._conn.executemany("UPDATE timers SET state='cancelled' WHERE id=?", [(i,) for i in ids])
+                self._conn.commit()
+        return [t for t in (self.get_timer(i) for i in ids) if t]
+
+    def due_timers(self) -> list[dict[str, Any]]:
+        """Running timers whose time is up; marks them ringing."""
+        with self._lock:
+            rows = self._conn.execute(
+                "SELECT id FROM timers WHERE state='running' AND ends_at<=?", (iso(now()),)
+            ).fetchall()
+            ids = [r["id"] for r in rows]
+            if ids:
+                self._conn.executemany(
+                    "UPDATE timers SET state='ringing', fired_at=? WHERE id=?", [(iso(now()), i) for i in ids]
+                )
+                self._conn.commit()
+        return [t for t in (self.get_timer(i) for i in ids) if t]
+
+    def ringing_timers(self) -> list[dict[str, Any]]:
+        rows = self._conn.execute("SELECT * FROM timers WHERE state='ringing'").fetchall()
+        return [self._timer(r) for r in rows]
+
+    def stop_timer(self, tid: int | None) -> list[dict[str, Any]]:
+        """Silence one ringing timer (or all when tid is None): it becomes done."""
+        with self._lock:
+            if tid is None:
+                rows = self._conn.execute("SELECT id FROM timers WHERE state='ringing'").fetchall()
+            else:
+                rows = self._conn.execute("SELECT id FROM timers WHERE id=? AND state='ringing'", (tid,)).fetchall()
+            ids = [r["id"] for r in rows]
+            if ids:
+                self._conn.executemany("UPDATE timers SET state='done' WHERE id=?", [(i,) for i in ids])
+                self._conn.commit()
+        return [t for t in (self.get_timer(i) for i in ids) if t]
+
+    @staticmethod
+    def _timer(row: sqlite3.Row) -> dict[str, Any]:
+        ends = parse_iso(row["ends_at"])
+        remaining = max(0, int((ends - now()).total_seconds())) if row["state"] == "running" else 0
+        return {
+            "id": row["id"],
+            "label": row["label"],
+            "duration_s": row["duration_s"],
+            "ends_at": row["ends_at"],
+            "remaining_s": remaining,
+            "state": row["state"],
+            "ringing": row["state"] == "ringing",
+            "fired_at": row["fired_at"],
+            "created_at": row["created_at"],
+        }
+
+    # ---------- device state (simulated devices persist here so a restart keeps the house as it was) ----------
+    def get_state(self, name: str) -> dict[str, Any] | None:
+        row = self._conn.execute("SELECT json FROM device_state WHERE name=?", (name,)).fetchone()
+        if not row:
+            return None
+        try:
+            return json.loads(row["json"])
+        except (TypeError, ValueError):
+            return None
+
+    def set_state(self, name: str, state: dict[str, Any]) -> None:
+        with self._lock:
+            self._conn.execute(
+                "INSERT INTO device_state(name, json, updated_at) VALUES (?, ?, ?) "
+                "ON CONFLICT(name) DO UPDATE SET json=excluded.json, updated_at=excluded.updated_at",
+                (name, json.dumps(state, ensure_ascii=False), iso(now())),
+            )
+            self._conn.commit()

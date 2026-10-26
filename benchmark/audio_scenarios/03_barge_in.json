@@ -1,0 +1,14 @@
+{
+ "name": "3 barge-in",
+ "steps": [
+  {
+   "say": "Tell me a long story about a lighthouse."
+  },
+  {
+   "say": "Stop, what time is it?",
+   "when": "speaking",
+   "after": 3.0,
+   "expect_tool": "get_current_time"
+  }
+ ]
+}

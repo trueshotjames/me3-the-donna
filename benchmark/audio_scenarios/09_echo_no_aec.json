@@ -1,0 +1,10 @@
+{
+ "name": "9 echo -10 dB (no AEC)",
+ "echo_db": -10,
+ "steps": [
+  {
+   "say": "Tell me a short story."
+  }
+ ],
+ "tail_secs": 5
+}

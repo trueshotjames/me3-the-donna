@@ -1,0 +1,53 @@
+# Hermes Agent config for the ME3 voice assistant. Copied to Hermes's home by setup.sh / setup.ps1
+# (same file on the laptop and on the Pi). Secrets live in .env next to it, never here.
+#
+# Hermes is the background brain: the assistant's fast model delegates multi-step or open-world
+# tasks to it over the API server (assistant/tasks.py) and speaks the result. Keep the toolset
+# small: a smaller prompt is a faster and cheaper answer, and the Pi has one core to spare.
+
+model:
+  default: "deepseek/deepseek-v4.1-flash"   # DeepSeek flash via OpenRouter (>= 64k context, tool calling)
+  provider: "openrouter"
+  base_url: "https://openrouter.ai/api/v1"
+
+agent:
+  max_turns: 20                 # tool-call rounds per task; a voice answer should not need more
+  disabled_toolsets:
+    - browser                   # full browser automation: slow, 1.6 GB, not needed (web_search stays)
+    - terminal                  # no shell on the Pi from a voice command
+    - code_execution
+    - image_gen
+    - vision
+    - tts
+    - delegation                # no sub-agents inside a sub-agent
+    - cronjob
+    - computer_use
+    - catalog
+
+# Our own tools server (reminders, alarms, time), the same SQLite the assistant uses, so a
+# reminder Hermes creates shows up in the UI. Tools appear to Hermes as mcp_me3_<tool>.
+mcp_servers:
+  me3:
+    url: "http://127.0.0.1:8766/mcp"
+    timeout: 20
+    connect_timeout: 5
+    tools:
+      include: ["get_current_time", "create_reminder", "list_reminders", "complete_reminder", "create_alarm", "list_alarms"]
+
+compression:
+  enabled: true
+  threshold: 0.6
+
+display:
+  tool_progress: "all"          # keeps tool.started / tool.completed on the run event stream
+
+gateway:
+  api_server:
+    enabled: true               # API_SERVER_* in .env override these
+    host: 127.0.0.1
+    port: 8642
+    model_name: "hermes-agent"
+  platforms:
+    api_server:
+      tool_progress_events: true
+      direct_model_requests: false

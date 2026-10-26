@@ -23,9 +23,20 @@
   </div>
   <div class="top-right">
     <span id="conn" class="pill pill-off" title="Event stream">● connecting</span>
+    <div class="net-wrap">
+      <button id="net" class="pill net-pill net-unknown" title="Internet: round trip to the cloud providers (click for details)">🌐 checking…</button>
+      <div id="net-panel" class="net-panel hidden">
+        <div class="net-head"><b>Internet</b><button id="net-check" class="btn btn-sm">Check now</button></div>
+        <div id="net-rows" class="net-rows"><div class="hint">Waiting for the first check…</div></div>
+        <div class="hint">Round trip = TCP connect time, checked every 15 s. Each turn needs about one round trip per stage
+          (speech-to-text, each LLM call, text-to-speech); provider connects are measured exactly.</div>
+        <div id="net-hs" class="net-hs"></div>
+      </div>
+    </div>
     <button id="mic" class="btn btn-ghost" title="Mute the microphone (the assistant stops listening)">🎙 Mic on</button>
     <button id="mute" class="btn btn-ghost" title="Mute UI sounds (chimes, alarm ring)">🔊 Sounds on</button>
     <button id="test-sounds" class="btn btn-ghost" title="Play the chime and the alarm ring">Test sounds</button>
+    <button id="settings-btn" class="btn btn-ghost" title="Latency summary, VAD calibration, current settings">⚙ Settings</button>
   </div>
 </header>
 
@@ -39,10 +50,23 @@
       </div>
       <div id="state-label" class="state-label">Idle</div>
       <div id="latency" class="latency" title="Last voice-to-voice latency"></div>
+      <div id="wait" class="wait hidden" title="Groq answered 429 (rate limit); the reply continues after this wait"></div>
+      <div class="meters" title="Loudness in dBFS (0 = loudest possible). Speech near the mic is usually -35 to -15 dB; red means clipping.">
+        <div class="meter-row"><span class="meter-name">Mic</span>
+          <div class="meter"><div id="mic-cover" class="meter-cover"></div><div id="mic-peak" class="meter-peak"></div></div>
+          <span id="mic-db" class="meter-db">—</span></div>
+        <div class="meter-row"><span class="meter-name">Her</span>
+          <div class="meter"><div id="out-cover" class="meter-cover"></div><div id="out-peak" class="meter-peak"></div></div>
+          <span id="out-db" class="meter-db">—</span></div>
+      </div>
     </div>
     <div class="convo">
-      <div class="bubble user"><div class="who">You</div><div id="transcript" class="text muted">Say something…</div></div>
-      <div class="bubble bot"><div class="who">Assistant</div><div id="assistant-text" class="text muted">—</div></div>
+      <div class="chat-head"><span class="who">Conversation (this session)</span>
+        <span class="chat-actions"><button id="chat-copy" class="btn btn-sm" title="Copy the conversation as text">Copy</button><button id="chat-clear" class="btn btn-sm" title="Clear the chat box (her memory is not affected)">Clear</button></span></div>
+      <div id="chat" class="chat">
+        <div id="chat-empty" class="chat-empty">Say something…</div>
+        <div id="chat-live" class="msg msg-user live hidden"><div class="msg-text"></div></div>
+      </div>
       <div id="tool-line" class="tool-line"></div>
     </div>
     <div class="main-actions">
@@ -69,15 +93,186 @@
     <h2>Alarms <span id="alarm-count" class="count"></span></h2>
     <ul id="alarms" class="list"><li class="empty">No alarms. Try: "set an alarm for 6:30".</li></ul>
   </section>
+
+  <!-- timers widget -->
+  <section class="card dev-anchor" data-dev="timers">
+    <h2>Timers <span id="timer-count" class="count"></span><span class="dev-busy"></span></h2>
+    <div id="timers" class="timers"><div class="empty">No timers. Try: "set a timer for 5 minutes".</div></div>
+  </section>
+
+  <!-- the house: simulated devices (mcp_servers/tools/devices/), one widget each -->
+  <section class="card card-home">
+    <div class="home-head">
+      <h2>Home</h2>
+      <span id="home-backends" class="hint" title="Which backend each device uses (sim = simulated; see mcp_servers/tools/devices/README.md)">waiting for the house…</span>
+    </div>
+    <div class="home-grid">
+
+      <!-- music / media -->
+      <article class="dev dev-media dev-anchor" data-dev="media">
+        <div class="dev-head"><span class="dev-title">🎵 Now playing</span><span class="dev-busy"></span></div>
+        <div class="player">
+          <div id="disc" class="disc"><div class="disc-hole"></div></div>
+          <div class="np">
+            <div id="np-title" class="np-title">Nothing playing</div>
+            <div id="np-artist" class="np-artist">Try: "play some jazz" or "play my focus playlist"</div>
+            <div class="np-chips"><span id="np-genre" class="chip hidden"></span><span id="np-source" class="chip chip-dim hidden"></span><span id="np-state" class="chip chip-dim hidden"></span></div>
+            <div class="progress"><div id="np-fill" class="progress-fill"></div></div>
+            <div class="np-times"><span id="np-pos">0:00</span><span id="eq" class="eq"><i></i><i></i><i></i><i></i><i></i></span><span id="np-dur">0:00</span></div>
+          </div>
+        </div>
+        <div class="transport">
+          <button class="tbtn" id="btn-shuffle" data-media="shuffle_on" title="Shuffle">🔀</button>
+          <button class="tbtn" data-media="previous" title="Previous">⏮</button>
+          <button class="tbtn tbtn-main" id="btn-play" data-media="resume" title="Play / pause">▶</button>
+          <button class="tbtn" data-media="next" title="Next">⏭</button>
+          <button class="tbtn" id="btn-repeat" data-media="repeat_all" title="Repeat">🔁</button>
+        </div>
+        <div class="vol">
+          <button class="tbtn tbtn-sm" id="btn-mute" data-media="mute" title="Mute">🔊</button>
+          <input type="range" id="vol" min="0" max="100" value="60" title="Volume">
+          <span id="vol-val" class="vol-val">60</span>
+        </div>
+        <div id="up-next" class="up-next"></div>
+      </article>
+
+      <!-- lights -->
+      <article class="dev dev-lights dev-anchor" data-dev="lights">
+        <div class="dev-head"><span class="dev-title">💡 Lights</span><span class="dev-busy"></span></div>
+        <div id="lights" class="lights"><div class="empty">Waiting for the lights…</div></div>
+      </article>
+
+      <!-- thermostat -->
+      <article class="dev dev-thermo dev-anchor" data-dev="thermostat">
+        <div class="dev-head"><span class="dev-title">🌡 Thermostat</span><span class="dev-busy"></span></div>
+        <div class="thermo">
+          <div class="dial-wrap">
+            <svg class="dial" viewBox="0 0 180 180" aria-hidden="true">
+              <defs>
+                <linearGradient id="dial-heat" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fbbf24"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+                <linearGradient id="dial-cool" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#60a5fa"/></linearGradient>
+              </defs>
+              <path id="dial-track" class="dial-track" d=""/>
+              <path id="dial-value" class="dial-value" d=""/>
+              <circle id="dial-now" class="dial-now" cx="90" cy="90" r="5"/>
+            </svg>
+            <div class="dial-center">
+              <div id="th-target" class="th-target">--<span class="th-unit">°</span></div>
+              <div id="th-now" class="th-now">now --°</div>
+              <div id="th-activity" class="th-activity">—</div>
+            </div>
+          </div>
+          <div class="th-controls">
+            <div class="th-row">
+              <button class="tbtn" id="th-minus" title="One degree down">−</button>
+              <span class="hint">target</span>
+              <button class="tbtn" id="th-plus" title="One degree up">+</button>
+            </div>
+            <div class="modes">
+              <button class="mode" data-mode="heat">🔥 Heat</button>
+              <button class="mode" data-mode="cool">❄ Cool</button>
+              <button class="mode" data-mode="auto">⟳ Auto</button>
+              <button class="mode" data-mode="off">⏻ Off</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- phone -->
+      <article class="dev dev-phone dev-anchor" data-dev="phone">
+        <div class="dev-head"><span class="dev-title">📞 Phone</span><span class="dev-busy"></span></div>
+        <div id="call" class="call call-none">
+          <div class="avatar-wrap"><div class="avatar-ring r1"></div><div class="avatar-ring r2"></div><div id="call-avatar" class="avatar">—</div></div>
+          <div class="call-info">
+            <div id="call-name" class="call-name">No call</div>
+            <div id="call-status" class="call-status">Try: "call Mom"</div>
+          </div>
+          <button id="call-hangup" class="btn btn-danger btn-sm hidden">Hang up</button>
+        </div>
+        <div class="phone-row">
+          <select id="contact" title="Contact"></select>
+          <button id="btn-call" class="btn btn-sm">Call</button>
+          <input id="msg-text" type="text" placeholder="Message…" maxlength="200">
+          <button id="btn-send" class="btn btn-sm">Send</button>
+        </div>
+        <div id="messages" class="messages"><div class="empty">No messages yet. Try: "text Alex that I'm running late".</div></div>
+      </article>
+
+      <!-- weather -->
+      <article class="dev dev-weather dev-anchor" data-dev="weather">
+        <div class="dev-head"><span class="dev-title">⛅ Weather</span><span class="dev-busy"></span></div>
+        <div id="weather" class="weather weather-empty">
+          <div class="wx-main">
+            <div id="wx-icon" class="wx-icon">🌤</div>
+            <div>
+              <div id="wx-temp" class="wx-temp">--°</div>
+              <div id="wx-cond" class="wx-cond">Ask: "what's the weather in Berlin?"</div>
+              <div id="wx-city" class="wx-city"></div>
+            </div>
+          </div>
+          <div id="wx-details" class="wx-details"></div>
+          <div id="wx-days" class="wx-days"></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
 </main>
 
-<!-- ringing alarm overlay -->
+<!-- ringing alarm / timer overlay -->
 <div id="ring-overlay" class="overlay hidden">
   <div class="ring-card">
-    <div class="ring-bell">⏰</div>
+    <div id="ring-bell" class="ring-bell">⏰</div>
     <div id="ring-label" class="ring-label">Alarm</div>
     <div id="ring-time" class="ring-time"></div>
     <button id="ring-stop" class="btn btn-big">Stop</button>
+  </div>
+</div>
+
+<!-- settings panel -->
+<div id="settings" class="overlay hidden">
+  <div class="panel">
+    <div class="panel-head">
+      <h2>Settings</h2>
+      <button id="settings-close" class="btn btn-ghost" title="Close (Esc)">✕</button>
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-tab="summary">Latency summary</button>
+      <button class="tab" data-tab="calibrate">VAD calibration</button>
+      <button class="tab" data-tab="status">Current settings</button>
+    </div>
+
+    <section id="tab-summary" class="tab-body">
+      <p class="hint">Median and p90 of every per-turn timing in <code>data/turns.jsonl</code>
+        (same as <code>python -m benchmark.summarize</code>). Values in milliseconds unless the name says otherwise.</p>
+      <div class="row">
+        <label>Turns <select id="sum-last"><option value="10">last 10</option><option value="20" selected>last 20</option><option value="50">last 50</option><option value="0">all</option></select></label>
+        <button id="sum-run" class="btn">Run summary</button>
+        <span id="sum-info" class="hint"></span>
+      </div>
+      <div id="sum-table" class="table-wrap"></div>
+    </section>
+
+    <section id="tab-calibrate" class="tab-body hidden">
+      <p class="hint">Measures what the voice detector hears in your room and suggests <code>VAD_CONFIDENCE</code> and
+        <code>VAD_MIN_VOLUME</code>. The assistant keeps the microphone; it is muted while this runs, so it will not answer.
+        First stay quiet, then talk normally from where you usually sit.</p>
+      <div class="row">
+        <label>Each part <select id="cal-secs"><option value="5">5 s</option><option value="10" selected>10 s</option><option value="15">15 s</option></select></label>
+        <button id="cal-start" class="btn">Start calibration</button>
+        <button id="cal-cancel" class="btn btn-ghost hidden">Cancel</button>
+      </div>
+      <div id="cal-progress" class="cal hidden">
+        <div id="cal-phase" class="cal-phase">—</div>
+        <div class="bar"><div id="cal-bar" class="bar-fill"></div></div>
+        <div id="cal-count" class="hint"></div>
+      </div>
+      <div id="cal-result" class="cal-result hidden"></div>
+    </section>
+
+    <section id="tab-status" class="tab-body hidden">
+      <dl id="cfg" class="cfg"><dt>Waiting for the backend…</dt></dl>
+    </section>
   </div>
 </div>
 

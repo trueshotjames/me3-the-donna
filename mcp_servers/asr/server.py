@@ -30,7 +30,7 @@ import websockets
 from loguru import logger
 from mcp.server.mcpserver import MCPServer
 
-from mcp_servers.common import env, env_float, env_int, setup
+from mcp_servers.common import env, env_float, env_int, log_net_event, setup
 
 setup("asr")
 
@@ -41,6 +41,13 @@ DEFAULT_EOT = env_float("FLUX_EOT_THRESHOLD", 0.7)
 DEFAULT_EAGER_EOT = env_float("FLUX_EAGER_EOT_THRESHOLD", 0.5)
 DEFAULT_EOT_TIMEOUT_MS = env_int("FLUX_EOT_TIMEOUT_MS", 5000)
 MAX_QUEUE = 500
+# While the client's gate is closed no audio arrives. Deepgram closes a streaming socket
+# after ~10 s without audio (documented for v1; Flux undocumented), and reconnecting costs
+# ~1 s, so a short burst of silence is sent after KEEPALIVE_SECS of no audio.
+# FLUX_KEEPALIVE_MODE: silence (default, always accepted) | message (JSON KeepAlive) | off
+KEEPALIVE_SECS = env_float("FLUX_KEEPALIVE_SECS", 5.0)
+KEEPALIVE_MODE = (env("FLUX_KEEPALIVE_MODE", "silence") or "silence").lower()
+KEEPALIVE_SILENCE_MS = 100
 
 mcp = MCPServer("asr", instructions="Streaming speech-to-text (Deepgram Flux) for the ME3 voice assistant.")
 
@@ -59,7 +66,13 @@ class Session:
     closed: bool = False
     bytes_pushed: int = 0
     last_push: float = 0.0
+    last_send: float = 0.0
     reconnects: int = 0
+    conn_id: int = 0  # increments on every (re)connect; Flux word times restart at 0
+    conn_bytes: int = 0  # audio bytes sent on the current connection (incl. keepalive silence)
+    keepalive_bytes: int = 0
+    keepalive_task: asyncio.Task | None = None
+    send_lock: asyncio.Lock = field(default_factory=asyncio.Lock)
 
     def url(self) -> str:
         params = [
@@ -90,7 +103,7 @@ def _put(session: Session, event: dict[str, Any]) -> None:
         session.events.put_nowait(event)
 
 
-async def _reader(session: Session, ws) -> None:
+async def _reader(session: Session, ws, conn_id: int) -> None:
     """Forward Flux messages into the session event queue."""
     try:
         async for raw in ws:
@@ -109,8 +122,11 @@ async def _reader(session: Session, ws) -> None:
                         "transcript": msg.get("transcript", "") or "",
                         "turn_index": msg.get("turn_index"),
                         "end_of_turn_confidence": msg.get("end_of_turn_confidence"),
+                        "audio_window_start": msg.get("audio_window_start"),
                         "audio_window_end": msg.get("audio_window_end"),
                         "words": msg.get("words"),
+                        "trigger": msg.get("trigger"),
+                        "conn": conn_id,
                     },
                 )
             elif mtype == "Connected":
@@ -136,20 +152,65 @@ async def _connect(session: Session) -> None:
         if not DEEPGRAM_API_KEY:
             raise RuntimeError("DEEPGRAM_API_KEY is not set (see .env.example)")
         t0 = time.perf_counter()
-        ws = await websockets.connect(
-            session.url(),
-            additional_headers={"Authorization": f"Token {DEEPGRAM_API_KEY}"},
-            max_size=None,
-            ping_interval=20,
-            ping_timeout=20,
-        )
+        try:
+            ws = await websockets.connect(
+                session.url(),
+                additional_headers={"Authorization": f"Token {DEEPGRAM_API_KEY}"},
+                max_size=None,
+                ping_interval=20,
+                ping_timeout=20,
+            )
+        except Exception as e:
+            log_net_event("Flux", (time.perf_counter() - t0) * 1000, ok=False, reconnect=session.reconnects > 0, error=repr(e))
+            raise
         session.ws = ws
-        session.reader = asyncio.create_task(_reader(session, ws))
+        session.conn_id += 1
+        session.conn_bytes = 0
+        session.last_send = time.time()
+        session.reader = asyncio.create_task(_reader(session, ws, session.conn_id))
+        if session.keepalive_task is None and KEEPALIVE_MODE != "off":
+            session.keepalive_task = asyncio.create_task(_keepalive(session))
         was_reconnect = session.reconnects > 0
         session.reconnects += 1
         logger.info(f"Flux connected in {(time.perf_counter() - t0) * 1000:.0f} ms ({session.url()})")
+        log_net_event("Flux", (time.perf_counter() - t0) * 1000, reconnect=was_reconnect)
         if was_reconnect:
             _put(session, {"event": "Reconnected"})
+
+
+async def _send_audio(s: Session, audio: bytes) -> tuple[int, float]:
+    """Send audio on the current connection; returns (conn_id, stream offset in seconds before it)."""
+    async with s.send_lock:
+        if s.ws is None:
+            await _connect(s)
+        try:
+            await s.ws.send(audio)
+        except websockets.ConnectionClosed:
+            s.ws = None
+            await _connect(s)
+            await s.ws.send(audio)
+        offset = s.conn_bytes / (s.sample_rate * 2)
+        s.conn_bytes += len(audio)
+        s.last_send = time.time()
+        return s.conn_id, offset
+
+
+async def _keepalive(s: Session) -> None:
+    silence = b"\x00" * (s.sample_rate * 2 * KEEPALIVE_SILENCE_MS // 1000)
+    while not s.closed:
+        await asyncio.sleep(1.0)
+        if s.ws is None or time.time() - s.last_send < KEEPALIVE_SECS:
+            continue
+        try:
+            if KEEPALIVE_MODE == "message":
+                async with s.send_lock:
+                    await s.ws.send(json.dumps({"type": "KeepAlive"}))
+                    s.last_send = time.time()
+            else:
+                await _send_audio(s, silence)
+                s.keepalive_bytes += len(silence)
+        except Exception as e:  # noqa: BLE001
+            logger.warning(f"Flux keepalive failed: {e}")
 
 
 def _get(session_id: str) -> Session:
@@ -184,19 +245,15 @@ async def asr_start(
 @mcp.tool()
 async def asr_push(session: str, pcm_base64: str) -> dict[str, Any]:
     """Push a chunk of 16-bit mono PCM (base64) into the session. Call every 60-80 ms while speech is possible."""
+    t_recv = time.time()
     s = _get(session)
     audio = base64.b64decode(pcm_base64)
-    if s.ws is None:
-        await _connect(s)
-    try:
-        await s.ws.send(audio)
-    except websockets.ConnectionClosed:
-        s.ws = None
-        await _connect(s)
-        await s.ws.send(audio)
+    conn, offset = await _send_audio(s, audio)
     s.bytes_pushed += len(audio)
     s.last_push = time.time()
-    return {"ok": True}
+    # conn + offset let the client map Flux word times (seconds of audio on this
+    # connection) back to the wall-clock time each chunk was captured.
+    return {"ok": True, "conn": conn, "offset": round(offset, 4), "t_recv": t_recv}
 
 
 @mcp.tool()
@@ -224,7 +281,7 @@ async def asr_finalize(session: str) -> dict[str, Any]:
     if s.ws is None:
         return {"ok": False, "reason": "not connected"}
     silence = b"\x00" * (s.sample_rate * 2 // 2)  # 0.5 s of 16-bit mono
-    await s.ws.send(silence)
+    await _send_audio(s, silence)
     return {"ok": True}
 
 
@@ -235,6 +292,8 @@ async def asr_stop(session: str) -> dict[str, Any]:
     if s is None:
         return {"ok": True}
     s.closed = True
+    if s.keepalive_task:
+        s.keepalive_task.cancel()
     if s.ws is not None:
         try:
             await s.ws.send(json.dumps({"type": "CloseStream"}))
@@ -243,7 +302,7 @@ async def asr_stop(session: str) -> dict[str, Any]:
             pass
     if s.reader:
         s.reader.cancel()
-    return {"ok": True, "bytes_pushed": s.bytes_pushed}
+    return {"ok": True, "bytes_pushed": s.bytes_pushed, "keepalive_bytes": s.keepalive_bytes}
 
 
 @mcp.tool()
@@ -254,7 +313,13 @@ async def asr_health() -> dict[str, Any]:
         "model": FLUX_MODEL,
         "api_key_set": bool(DEEPGRAM_API_KEY),
         "sessions": {
-            sid: {"connected": s.ws is not None, "bytes_pushed": s.bytes_pushed, "queued": s.events.qsize()}
+            sid: {
+                "connected": s.ws is not None,
+                "bytes_pushed": s.bytes_pushed,
+                "keepalive_bytes": s.keepalive_bytes,
+                "connections": s.conn_id,
+                "queued": s.events.qsize(),
+            }
             for sid, s in SESSIONS.items()
         },
     }

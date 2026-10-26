@@ -1,0 +1,20 @@
+{
+ "name": "13 alarm ring + stop",
+ "timeout": 300,
+ "steps": [
+  {
+   "say": "Set an alarm for {next_minute_spoken}.",
+   "expect_tool": "create_alarm",
+   "expect_args": {
+    "time": "{next_minute}"
+   }
+  },
+  {
+   "say": "Stop.",
+   "when": "alarm_fired",
+   "after": 3.0,
+   "timeout": 120,
+   "expect_tool": "stop_alarm"
+  }
+ ]
+}

@@ -26,6 +26,8 @@ class UIBus:
         self._server = None
         self._handler: CommandHandler | None = None
         self._snapshot_provider: Callable[[], Awaitable[list[dict[str, Any]]]] | None = None
+        self._extra_snapshots: list[Callable[[], Awaitable[list[dict[str, Any]]]]] = []
+        self._commands: dict[str, CommandHandler] = {}  # command type -> handler, tried before on_command's
         self.last_state = "idle"
         self._loop: asyncio.AbstractEventLoop | None = None
 
@@ -35,6 +37,14 @@ class UIBus:
     def snapshot_provider(self, provider: Callable[[], Awaitable[list[dict[str, Any]]]]) -> None:
         """Messages to send to every client that connects (state and the reminder/alarm lists)."""
         self._snapshot_provider = provider
+
+    def add_snapshot_provider(self, provider: Callable[[], Awaitable[list[dict[str, Any]]]]) -> None:
+        """More messages for a new client, sent after the main snapshot (chat history, network status)."""
+        self._extra_snapshots.append(provider)
+
+    def add_command(self, type_: str, handler: CommandHandler) -> None:
+        """Handle one command type here instead of passing it to the on_command handler."""
+        self._commands[type_] = handler
 
     async def start(self) -> None:
         self._loop = asyncio.get_running_loop()
@@ -57,9 +67,9 @@ class UIBus:
         try:
             await self._send(ws, {"type": "hello", "ts": _ms(), "version": 1})
             await self._send(ws, {"type": "state", "ts": _ms(), "state": self.last_state})
-            if self._snapshot_provider:
+            for provider in ([self._snapshot_provider] if self._snapshot_provider else []) + self._extra_snapshots:
                 try:
-                    for msg in await self._snapshot_provider():
+                    for msg in await provider():
                         await self._send(ws, msg)
                 except Exception as e:  # noqa: BLE001
                     logger.warning(f"snapshot for new UI client failed: {e}")
@@ -72,9 +82,10 @@ class UIBus:
                 if not isinstance(msg, dict) or "type" not in msg:
                     continue
                 logger.debug(f"UI command: {msg}")
-                if self._handler:
+                handler = self._commands.get(msg["type"], self._handler)
+                if handler:
                     try:
-                        await self._handler(msg)
+                        await handler(msg)
                     except Exception as e:  # noqa: BLE001
                         logger.error(f"UI command {msg.get('type')} failed: {e!r}")
                         await self._send(ws, {"type": "error", "ts": _ms(), "message": f"{msg.get('type')}: {e}"})

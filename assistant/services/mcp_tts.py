@@ -5,6 +5,10 @@ then pulled with `tts_read` in ~80 ms blocks (MCP audio content blocks) and
 pushed into the pipeline as it arrives, so playback starts after the first
 block rather than after the whole sentence. On barge-in Pipecat calls
 `on_audio_context_interrupted`, which calls `tts_stop` to clear the provider.
+
+On a slow link the blocks can arrive slower than real time, which played as stutters. An adaptive
+playout buffer (assistant/services/playout.py) sits between `tts_read` and the pipeline: it adds
+no delay while audio arrives faster than real time and holds a little back only after underruns.
 """
 
 from __future__ import annotations
@@ -12,7 +16,10 @@ from __future__ import annotations
 import asyncio
 import base64
 import json
+import time
 from typing import AsyncGenerator, AsyncIterator
+
+import numpy as np
 
 from loguru import logger
 from mcp import StdioServerParameters
@@ -23,6 +30,20 @@ from pipecat.services.tts_service import TTSService
 from pipecat.services.settings import TTSSettings
 
 from assistant.mcp_bridge import MCPBridge
+from assistant.processors import speakable
+from assistant.services.playout import AdaptivePlayout
+from assistant.turn_metrics import METRICS
+
+SILENCE_THRESHOLD = 330  # |sample| above this (about -40 dBFS) counts as sound
+
+
+def leading_silence_ms(pcm: bytes, sample_rate: int) -> float | None:
+    """Milliseconds of near-silence at the start of a 16-bit mono PCM block (None if all silent)."""
+    samples = np.frombuffer(pcm[: len(pcm) - len(pcm) % 2], dtype=np.int16)
+    loud = np.flatnonzero(np.abs(samples.astype(np.int32)) > SILENCE_THRESHOLD)
+    if loud.size == 0:
+        return None
+    return round(float(loud[0]) / sample_rate * 1000, 1)
 
 
 class MCPTTSService(TTSService):
@@ -35,6 +56,10 @@ class MCPTTSService(TTSService):
         voice: str = "aura-2-thalia-en",
         server_sample_rate: int = 16000,
         read_wait_ms: int = 400,
+        playout_enabled: bool = True,
+        playout_start_ms: float = 0.0,
+        playout_max_ms: float = 1500.0,
+        playout_max_hold_ms: float = 1000.0,
         sample_rate: int | None = None,
         **kwargs,
     ):
@@ -43,6 +68,10 @@ class MCPTTSService(TTSService):
             push_start_frame=True,
             push_stop_frames=True,
             stop_frame_timeout_s=1.0,
+            # Pipecat stops using a TTS for good after 3 silent contexts in a row. A slow network to
+            # Deepgram (26 Oct: 6.8 s handshakes, then a dropped socket) made her mute for the rest
+            # of the session; each silent context is still reported as an error.
+            max_consecutive_zero_audio_contexts=0,
             settings=TTSSettings(model="deepgram-aura-2-via-mcp", voice=voice, language=None),
             **kwargs,
         )
@@ -51,6 +80,13 @@ class MCPTTSService(TTSService):
         self._read_wait_ms = read_wait_ms
         self._active_streams: dict[str, set[str]] = {}  # context_id -> stream ids in flight
         self._stats = {"sentences": 0, "first_audio_ms_total": 0.0, "reads": 0}
+        self._playout = (
+            AdaptivePlayout(
+                server_sample_rate, start_ms=playout_start_ms, max_ms=playout_max_ms, max_hold_ms=playout_max_hold_ms
+            )
+            if playout_enabled
+            else None
+        )
 
     def can_generate_metrics(self) -> bool:
         return True
@@ -82,20 +118,37 @@ class MCPTTSService(TTSService):
     # ------------------------------------------------------------------- speech
 
     async def run_tts(self, text: str, context_id: str) -> AsyncGenerator[Frame | None, None]:
+        text = speakable(text)
         if not self._bridge.connected:
             yield ErrorFrame(error="TTS MCP server is not connected")
             return
         loop = asyncio.get_running_loop()
         t0 = loop.time()
+        rec: dict = {"t_call": time.time(), "chars": len(text), "chunks": [], "read_ms": [], "audio_bytes": 0}
         try:
             await self.start_tts_usage_metrics(text)
-            info = await self._bridge.call_json("tts_start", {"text": text, "context": context_id}, timeout=10)
+            # tts_start can take seconds when the Aura socket has to reconnect; keep the audio context
+            # alive meanwhile, or Pipecat ends it after 1 s as "completed with no audio".
+            start = asyncio.create_task(
+                self._bridge.call_json("tts_start", {"text": text, "context": context_id}, timeout=10)
+            )
+            while not start.done():
+                self._refresh_audio_context(context_id)
+                await asyncio.wait({start}, timeout=0.5)
+            info = start.result()
+            if not isinstance(info, dict) or "stream" not in info:
+                raise RuntimeError(f"tts_start failed: {str(info)[:200]}")
+            rec["t_started"] = time.time()
             stream = info["stream"]
             self._active_streams.setdefault(context_id, set()).add(stream)
             self._stats["sentences"] += 1
             first = True
+            source = self._read_stream(stream, rec, context_id)
+            if self._playout is not None:
+                # Holding audio back yields nothing to Pipecat, so keep the context alive meanwhile.
+                source = self._playout.pace(source, rec, on_hold=lambda: self._refresh_audio_context(context_id))
             async for frame in self._stream_audio_frames_from_iterator(
-                self._read_stream(stream), in_sample_rate=self._server_sample_rate, context_id=context_id
+                source, in_sample_rate=self._server_sample_rate, context_id=context_id
             ):
                 if first:
                     first = False
@@ -103,40 +156,72 @@ class MCPTTSService(TTSService):
                     self._stats["first_audio_ms_total"] += (loop.time() - t0) * 1000
                 yield frame
         except asyncio.CancelledError:
+            rec["interrupted"] = True
+            if "start" in locals() and not start.done():
+                start.cancel()
             raise
         except Exception as e:  # noqa: BLE001
             logger.error(f"{self}: TTS failed: {e!r}")
+            rec["error"] = repr(e)
             yield ErrorFrame(error=f"TTS MCP error: {e}")
         finally:
             await self.stop_ttfb_metrics()
             streams = self._active_streams.get(context_id)
             if streams:
                 streams.discard(locals().get("stream", ""))
+            rec["audio_s"] = rec["audio_bytes"] / (self._server_sample_rate * 2)
+            METRICS.tts_sentence(rec)
 
-    async def _read_stream(self, stream: str) -> AsyncIterator[bytes]:
-        """Pull audio blocks until the server says eof."""
+    async def _read_stream(self, stream: str, rec: dict | None = None, context_id: str | None = None) -> AsyncIterator[bytes]:
+        """Pull audio blocks until the server says eof.
+
+        Each poll that comes back empty refreshes the audio context: Pipecat ends a context that
+        gets nothing for ``stop_frame_timeout_s`` (1 s), so a first audio slower than that (a slow
+        network to Deepgram) was dropped as "completed with no audio" while the audio was coming.
+        """
         idle_polls = 0
+        lead_buf = b""
         while True:
+            t_call = time.time()
             result = await self._bridge.call("tts_read", {"stream": stream, "wait_ms": self._read_wait_ms}, timeout=10)
+            t_back = time.time()
             self._stats["reads"] += 1
             got_audio = False
             for block in result.content:
                 if isinstance(block, AudioContent):
                     got_audio = True
-                    yield base64.b64decode(block.data)
+                    data = base64.b64decode(block.data)
+                    if rec is not None:
+                        rec["read_ms"].append((t_back - t_call) * 1000)
+                        rec["chunks"].append((t_back, len(data)))
+                        rec["audio_bytes"] += len(data)
+                        if "leading_silence_ms" not in rec:
+                            lead_buf += data
+                            lead = leading_silence_ms(lead_buf, self._server_sample_rate)
+                            if lead is not None or len(lead_buf) > self._server_sample_rate:  # give up after 0.5 s
+                                rec["leading_silence_ms"] = lead if lead is not None else len(lead_buf) / (self._server_sample_rate * 2) * 1000
+                    yield data
                 elif isinstance(block, TextContent):
                     try:
                         status = json.loads(block.text)
                     except json.JSONDecodeError:
                         continue
+                    if rec is not None and isinstance(status.get("meta"), dict):
+                        m = status["meta"]
+                        rec["t_speak_sent"] = m.get("t_speak_sent")
+                        rec["t_first_audio_server"] = m.get("t_first_audio")
                     if status.get("eof"):
                         if status.get("error"):
                             logger.warning(f"{self}: tts_read: {status['error']}")
+                        if rec is not None and status.get("cancelled"):
+                            rec["interrupted"] = True
                         return
             if got_audio:
                 idle_polls = 0
             else:
                 idle_polls += 1
+                if context_id:
+                    self._refresh_audio_context(context_id)
                 if idle_polls * self._read_wait_ms > 15000:
                     logger.warning(f"{self}: no audio for 15 s on stream {stream}; giving up")
                     return
@@ -144,6 +229,8 @@ class MCPTTSService(TTSService):
     async def on_audio_context_interrupted(self, context_id: str):
         """Barge-in: tell the server to clear the provider buffer."""
         streams = self._active_streams.pop(context_id, set())
+        if self._playout is not None:
+            self._playout.reset()  # the transport dropped its queue; held audio dies with run_tts
         try:
             await self._bridge.call("tts_stop", {"stream": next(iter(streams), "")}, timeout=5)
         except Exception as e:  # noqa: BLE001
@@ -160,4 +247,6 @@ class MCPTTSService(TTSService):
         s["first_audio_ms_avg"] = (
             round(s["first_audio_ms_total"] / s["sentences"], 1) if s["sentences"] else None
         )
+        if self._playout is not None:
+            s["playout"] = {**self._playout.totals, "target_ms": round(self._playout.target_ms)}
         return s
