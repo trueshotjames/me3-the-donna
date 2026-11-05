@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# donna start | stop | restart | status | logs   (installed to ~/.local/bin/donna by pi/setup_service.sh)
+set -u
+REPO="@REPO@"
+case "${1:-status}" in
+  start)   systemctl --user start donna && echo "starting: listen for the beep (two rising notes = live)" ;;
+  stop)    systemctl --user stop donna && echo "stopped" ;;
+  restart) systemctl --user restart donna && echo "restarting: listen for the beep" ;;
+  status)  cd "$REPO" && exec .venv/bin/python -m assistant.status ;;
+  logs)    echo "Donna's live output (Ctrl+C to close; she keeps running)"; exec journalctl --user -u donna -f -n 80 -o cat ;;
+  *)       echo "usage: donna start|stop|restart|status|logs"; exit 2 ;;
+esac

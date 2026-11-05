@@ -186,6 +186,8 @@ class Assistant:
         self.notifier = None
         self.announcer = None
         self.chat = self.net = self.levels = None
+        self.cues = self.cue_player = None
+        self.exit_code = 0  # 3 = could not connect (the supervisor restarts her and plays the "down" cue)
 
     async def build(self, transport=None, stt=None):
         """Wire the pipeline. ``transport``/``stt`` can be replaced (benchmark/replay.py feeds scripted turns)."""
@@ -246,6 +248,15 @@ class Assistant:
         self.net = NetMonitor(bus, targets_from(cfg), events_path=DATA_DIR / "net_events.jsonl")
         bus.add_snapshot_provider(self.net.snapshot)
         bus.add_command("net_check", self.net.handle_command)
+        if cfg.cues_enabled:
+            from assistant.cues import CueState, make_cue_player
+
+            self.cue_player = make_cue_player(volume=cfg.cue_volume)
+            self.cues = CueState(
+                self.cue_player.play, DATA_DIR,
+                recovered=os.getenv("DONNA_RECOVERED") == "1", repeat_secs=cfg.cue_down_repeat_secs,
+            )
+            self.net.listeners.append(self.cues.on_net)
         self.net.start()
         self.levels = LevelMeter(bus)
 
@@ -582,6 +593,7 @@ class Assistant:
                 activity,
                 PassFilter(on_pass=self._on_pass),
                 tts,
+                *([self.cue_player] if self.cue_player else []),
                 transport.output(),
                 *([played_tap] if played_tap else []),
                 aggregators.assistant(),
@@ -666,11 +678,32 @@ class Assistant:
             except OSError as e:
                 logger.warning(f"could not write latency log: {e}")
 
+        # Sound cues and supervised restarts (assistant/cues.py, assistant/supervisor.py)
+        if isinstance(stt, MCPSTTService):
+            if self.cues is not None:
+
+                @stt.event_handler("on_connected")
+                async def on_asr_connected(service):
+                    await self.cues.on_live()
+
+            @stt.event_handler("on_connection_error")
+            async def on_asr_failed(service, error):
+                if os.getenv("DONNA_SUPERVISED") == "1":
+                    self._fatal(f"ASR could not connect: {error}")
+
         @aggregators.user().event_handler("on_user_turn_stop_timeout")
         async def on_turn_timeout(aggregator):
             logger.warning("user turn closed by timeout (no end-of-turn from ASR)")
 
         return worker
+
+    def _fatal(self, msg: str) -> None:
+        """Under the supervisor: stop with exit code 3 so it restarts her (and plays the "down" cue) instead of
+        running on with no ears or voice."""
+        logger.error(f"{msg}; exiting so the supervisor restarts her")
+        self.exit_code = 3
+        if self.worker is not None:
+            asyncio.get_running_loop().create_task(self.worker.cancel(reason=msg))
 
     async def _on_pass(self) -> None:
         """v9: the LLM passed on a turn (TV, lyrics, side talk): the screen goes back to idle instead of "Thinking"."""
@@ -767,10 +800,11 @@ class Assistant:
             self.tools_proc.terminate()
 
 
-async def run(cfg: Config) -> None:
+async def run(cfg: Config) -> int:
     app = Assistant(cfg)
     await app.build()
     await app.run()
+    return app.exit_code
 
 
 async def check(cfg: Config) -> int:
@@ -857,10 +891,12 @@ def main() -> None:
     if args.check:
         sys.exit(asyncio.run(check(cfg)))
 
+    code = 0
     try:
-        asyncio.run(run(cfg))
+        code = asyncio.run(run(cfg))
     except KeyboardInterrupt:
         logger.info("stopped")
+    sys.exit(code or 0)
 
 
 if __name__ == "__main__":

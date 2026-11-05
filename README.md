@@ -156,3 +156,31 @@ The voice print part of the voice gate is off (`VOICE_GATE_SPEAKER=0`); the loud
 
 `.env`, everything under `data/` (Telegram login, Spotify token, calibration with your voice print, memory,
 databases) and `app/logs/` are gitignored. Never commit them.
+
+## Running on the Pi without a screen (service + sound cues)
+
+Donna runs as a service on the Pi: it starts at boot, restarts her when something fails, and tells you how she
+is doing with beeps, so you need nothing to look at.
+
+| Sound | Meaning |
+|---|---|
+| one short beep | starting (Pi booted, or `donna start`) |
+| two rising notes | live: connected and listening |
+| two falling notes (repeats every minute) | stopped working: no internet, Deepgram or the LLM unreachable, or she crashed |
+| three rising notes | back working |
+
+One-time setup on the Pi (asks for the Pi password once; also prefers IPv4 and turns IPv6 off on the
+"king james" hotspot, where Deepgram over IPv6 timed out):
+
+```bash
+cd ~/Documents/MLOps/"Machine Exercise 3"/me3-the-donna && git pull && bash pi/setup_service.sh
+```
+
+On the Pi (new terminal): `donna status`, `donna logs` (live output, Ctrl+C closes it, she keeps running),
+`donna stop`, `donna start`, `donna restart`. The desktop icon "Donna logs" opens the same live view.
+
+On the laptop, once: `powershell -ExecutionPolicy Bypass -File tools\donna.ps1 install`, then in a new
+PowerShell window: `donna status | start | stop | restart | logs | ui`. `donna ui` opens the tunnel and her page
+(http://localhost:18780/?ws=18765); the UI is optional and works while she runs as a service.
+
+Settings: `CUES_ENABLED=1`, `CUE_VOLUME=0.3`, `CUE_DOWN_REPEAT_SECS=60`, `UI_PORT=8780` (0 = no page).

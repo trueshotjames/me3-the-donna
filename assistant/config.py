@@ -103,6 +103,10 @@ class Config:
     # Speaker buffer in ms (0 = PortAudio default, about 25-30 ms on a Pi: too small, any CPU stall
     # longer than that is an underrun and she sounds choppy). 100 ms rides out stalls on a busy Pi 4.
     audio_out_buffer_ms: int = field(default_factory=lambda: _int("AUDIO_OUT_BUFFER_MS", 100))
+    # Sound cues (assistant/cues.py): beeps for live / stopped working / back, for running without a screen
+    cues_enabled: bool = field(default_factory=lambda: _bool("CUES_ENABLED", True))
+    cue_volume: float = field(default_factory=lambda: _float("CUE_VOLUME", 0.3))
+    cue_down_repeat_secs: float = field(default_factory=lambda: _float("CUE_DOWN_REPEAT_SECS", 60.0))
     audio_input_device: int | str | None = field(default_factory=lambda: _device("AUDIO_INPUT_DEVICE"))
     audio_output_device: int | str | None = field(default_factory=lambda: _device("AUDIO_OUTPUT_DEVICE"))
     # VAD (Silero on the Pi). It only decides when audio goes to Flux (the gate), so it is
