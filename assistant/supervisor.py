@@ -35,7 +35,9 @@ from loguru import logger
 from assistant.config import DATA_DIR, ROOT, load
 from assistant.cues import play_blocking, write_status
 
-FAST_FAIL_SECS = 60.0  # a run shorter than this counts as a failed start (backoff grows)
+FAST_FAIL_SECS = 60.0
+LOG_FILE = ROOT / "app" / "logs" / "donna.log"  # `donna logs` follows this (the Pi keeps no journal on disk)
+LOG_MAX_BYTES = 20_000_000  # at supervisor start, a bigger log moves to donna.log.1  # a run shorter than this counts as a failed start (backoff grows)
 
 
 def serve_ui(port: int):
@@ -60,6 +62,7 @@ class Supervisor:
     def __init__(self, cfg):
         self.cfg = cfg
         self.proc: subprocess.Popen | None = None
+        self.log = None  # open file handle for the child's output (set in main)
         self.stopping = False
         self.was_down = False
         self._last_down_cue = 0.0
@@ -110,6 +113,8 @@ class Supervisor:
     def start_child(self) -> None:
         env = dict(os.environ, DONNA_SUPERVISED="1", DONNA_RECOVERED="1" if self.was_down else "0", PYTHONUNBUFFERED="1")
         kw: dict = {"cwd": str(ROOT), "env": env}
+        if self.log is not None:
+            kw.update(stdout=self.log, stderr=subprocess.STDOUT)
         if os.name == "posix":
             kw["start_new_session"] = True  # own process group: stop_child() takes the tools server with it
         else:
@@ -177,7 +182,17 @@ def main() -> None:
     from assistant.main import setup_logging
 
     setup_logging(cfg.log_level)
+    log = None
+    try:
+        LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+        if LOG_FILE.exists() and LOG_FILE.stat().st_size > LOG_MAX_BYTES:
+            os.replace(LOG_FILE, LOG_FILE.with_suffix(".log.1"))
+        log = open(LOG_FILE, "a", buffering=1, encoding="utf-8")
+        logger.add(log, level=cfg.log_level, format="{time:HH:mm:ss.SSS} | {level: <7} | [supervisor] {message}")
+    except OSError as e:
+        logger.warning(f"no log file ({e}); output goes to the terminal/journal only")
     sup = Supervisor(cfg)
+    sup.log = log
     ui_port = int(os.getenv("UI_PORT", "8780") or 0)
     httpd = serve_ui(ui_port) if ui_port else None
 

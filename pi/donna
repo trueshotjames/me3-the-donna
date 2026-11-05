@@ -7,6 +7,6 @@ case "${1:-status}" in
   stop)    systemctl --user stop donna && echo "stopped" ;;
   restart) systemctl --user restart donna && echo "restarting: listen for the beep" ;;
   status)  cd "$REPO" && exec .venv/bin/python -m assistant.status ;;
-  logs)    echo "Donna's live output (Ctrl+C to close; she keeps running)"; exec journalctl --user -u donna -f -n 80 -o cat ;;
+  logs)    echo "Donna's live output (Ctrl+C to close; she keeps running)"; exec tail -n 80 -F "$REPO/app/logs/donna.log" ;;
   *)       echo "usage: donna start|stop|restart|status|logs"; exit 2 ;;
 esac
