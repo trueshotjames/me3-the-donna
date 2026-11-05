@@ -90,6 +90,7 @@ class NetMonitor:
         self._wake = asyncio.Event()
         self._ssl = ssl.create_default_context()
         self._last_llm_end: float | None = None
+        self.listeners: list = []  # async callables(status), after every check (sound cues: assistant/cues.py)
         if events_path is not None and events_path.exists():
             self._events_pos = events_path.stat().st_size  # only this session's connects
 
@@ -140,6 +141,11 @@ class NetMonitor:
         msg = self.status()
         if self._bus is not None:
             self._bus.emit("net", **msg)
+        for cb in list(self.listeners):
+            try:
+                await cb(msg)
+            except Exception as e:  # noqa: BLE001
+                logger.warning(f"network listener failed: {e!r}")
         return msg
 
     def rtt(self, name: str) -> float | None:

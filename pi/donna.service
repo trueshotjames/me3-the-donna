@@ -1,0 +1,22 @@
+# Donna as a systemd *user* service (installed by pi/setup_service.sh; @REPO@ is replaced there).
+# Starts at boot (loginctl enable-linger), restarts if the supervisor itself dies, and on stop
+# kills everything she started (KillMode=control-group): no leftover processes holding the speaker.
+[Unit]
+Description=Donna voice assistant (headless, sound cues)
+After=default.target sound.target
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+WorkingDirectory=@REPO@
+ExecStart="@REPO@/.venv/bin/python" -m assistant.supervisor
+Restart=always
+RestartSec=5
+KillMode=control-group
+TimeoutStopSec=20
+Environment=PYTHONUNBUFFERED=1
+# The Spotify web player (MEDIA_BACKEND=spotify) opens a hidden Chromium on the desktop session.
+Environment=WAYLAND_DISPLAY=wayland-0
+
+[Install]
+WantedBy=default.target
