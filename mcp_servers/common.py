@@ -24,6 +24,8 @@ def setup(server_name: str) -> None:
     """Load .env from the project root and route logs to stderr."""
     load_dotenv(ROOT / ".env")
     DATA_DIR.mkdir(exist_ok=True)
+    if os.getenv("MCP_INPROC") == "1":
+        return  # v6: running inside the assistant's process (MCP_TRANSPORT=inproc); its logger is already set up
     logger.remove()
     logger.add(
         sys.stderr,

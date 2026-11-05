@@ -85,7 +85,11 @@ def synth(text: str, voice: str, api_key: str) -> np.ndarray:
         path.write_bytes(r.content)
     with wave.open(str(path), "rb") as w:
         assert w.getframerate() == SR and w.getnchannels() == 1 and w.getsampwidth() == 2, path
-        return np.frombuffer(w.readframes(w.getnframes()), dtype=np.int16).copy()
+    # v5: Aura's streamed WAV header claims a data size of ~4 GB; readframes(getnframes()) preallocated it (the
+    # ~2 GB start-up peak in v4's RAM log, harness only). Take the samples after the "data" chunk header as they are.
+    raw = path.read_bytes()
+    data = raw[raw.find(b"data") + 8:]
+    return np.frombuffer(data[: len(data) // 2 * 2], dtype=np.int16).copy()
 
 
 def pink_noise(secs: float, seed: int = 1) -> np.ndarray:

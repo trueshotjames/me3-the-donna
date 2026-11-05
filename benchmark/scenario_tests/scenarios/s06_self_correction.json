@@ -1,0 +1,17 @@
+{
+ "name": "6 Self-correction mid-sentence",
+ "steps": [
+  {
+   "say": "What's the weather in Rome, no, Milan?",
+   "expect_tool": "get_weather",
+   "expect_args": {
+    "city": "Milan"
+   }
+  },
+  {
+   "say": "Remind me in ten minutes to buy milk, actually, oat milk.",
+   "expect_tool": "create_reminder"
+  }
+ ],
+ "lead_secs": 15
+}

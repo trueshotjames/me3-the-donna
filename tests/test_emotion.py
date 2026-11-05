@@ -80,7 +80,8 @@ async def test_processor_scores_while_speaking_and_smooths_across_turns():
 
 
 @pytest.mark.asyncio
-async def test_injector_rewrites_system_message_each_turn():
+async def test_injector_keeps_system_message_fixed_and_exposes_hint():
+    """v2: the hint goes in the per-turn note (timed_llm.py), never into the system message."""
     current = {"s": Scores(0.9, 0.5, 0.5)}
     hints = []
     inj = VoiceHintInjector("BASE PROMPT", lambda: current["s"], THR, on_hint=lambda h, s: hints.append(h))
@@ -94,7 +95,8 @@ async def test_injector_rewrites_system_message_each_turn():
 
     ctx = LLMContext(messages=[{"role": "system", "content": "BASE PROMPT"}, {"role": "user", "content": "hi"}])
     await inj.process_frame(LLMContextFrame(context=ctx), FrameDirection.DOWNSTREAM)
-    assert ctx.messages[0]["content"] == "BASE PROMPT\n\nVoice: the user sounds energetic and agitated. Match your tone and length to that."
+    assert ctx.messages[0]["content"] == "BASE PROMPT"
+    assert inj.last_hint == "Voice: the user sounds energetic and agitated. Match your tone and length to that."
     assert ctx.messages[1] == {"role": "user", "content": "hi"}
 
     current["s"] = Scores(0.5, 0.5, 0.5)

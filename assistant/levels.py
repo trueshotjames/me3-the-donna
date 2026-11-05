@@ -10,6 +10,7 @@ every 100 ms, and only while a UI is connected (one RMS over ~20 ms of int16 per
 from __future__ import annotations
 
 import asyncio
+import os
 import math
 
 import numpy as np
@@ -36,6 +37,9 @@ def dbfs(audio: bytes) -> tuple[float, float]:
     return max(FLOOR_DB, rms_db), max(FLOOR_DB, peak_db)
 
 
+_LITE = os.environ.get("UI_LITE", "1") not in ("0", "false", "")
+
+
 class LevelMeter(BaseObserver):
     """Keeps the loudest frame since the last tick; ``run()`` sends it as a ``levels`` event."""
 
@@ -47,6 +51,7 @@ class LevelMeter(BaseObserver):
         self._mic_peak: float | None = None
         self._out: float | None = None
         self._task: asyncio.Task | None = None
+        self._silent_sent = False  # UI_LITE: the last message sent was all-silent
 
     async def on_push_frame(self, data: FramePushed):
         frame = data.frame
@@ -89,4 +94,11 @@ class LevelMeter(BaseObserver):
         while True:
             await asyncio.sleep(self._every)
             if self._bus.clients:
-                self._bus.emit("levels", **self.take())
+                msg = self.take()
+                # UI_LITE: while everything is silent, send one silent message and then nothing, so the page
+                # does no work at idle (it resets its meters itself when messages stop)
+                silent = msg["mic_db"] <= FLOOR_DB and msg["out_db"] <= FLOOR_DB
+                if _LITE and silent and self._silent_sent:
+                    continue
+                self._silent_sent = silent
+                self._bus.emit("levels", **msg)

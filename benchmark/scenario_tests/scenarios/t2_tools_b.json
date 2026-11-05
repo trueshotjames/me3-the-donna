@@ -1,0 +1,31 @@
+{
+ "name": "T2 Tool choice B",
+ "timeout": 480,
+ "steps": [
+  {
+   "say": "Set the thermostat to twenty two degrees.",
+   "expect_tool": "set_thermostat"
+  },
+  {
+   "say": "What's the weather in Tokyo tomorrow?",
+   "expect_tool": "get_weather"
+  },
+  {
+   "say": "Text Mom that I'll be late.",
+   "expect_tool": "send_message"
+  },
+  {
+   "say": "Call Dad.",
+   "expect_tool": "make_call"
+  },
+  {
+   "say": "What alarms do I have?",
+   "expect_tool": "list_alarms"
+  },
+  {
+   "say": "What's on in the house right now?",
+   "expect_tool": "home_status"
+  }
+ ],
+ "lead_secs": 15
+}

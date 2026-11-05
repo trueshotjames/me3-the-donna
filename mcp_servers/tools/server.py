@@ -23,6 +23,7 @@ launcher can both reach it), or stdio with --stdio.
 from __future__ import annotations
 
 import argparse
+import asyncio
 import functools
 import inspect
 import json
@@ -138,7 +139,7 @@ def _speakable(dt: datetime) -> str:
 
 @mcp.tool()
 def get_current_time() -> str:
-    """Get the current local date and time. Call this before computing any reminder time."""
+    """Get the current local date and time (when the user asks for it)."""
     dt = now()
     return _j(
         {
@@ -155,7 +156,8 @@ def get_current_time() -> str:
 @mcp.tool()
 def create_reminder(text: str, due_at: str | None = None, due_in_minutes: int | None = None) -> str:
     """Create a reminder. `text` is what to remind about. Give either `due_at` (ISO 8601 local time,
-    e.g. 2026-10-22T18:30:00) or `due_in_minutes` (relative to now); omit both for an undated reminder."""
+    e.g. 2026-10-22T18:30:00) or `due_in_minutes` (relative to now). If the user gave no time, ask when before
+    calling this; omit both only when they say they want no time."""
     due: datetime | None = None
     if due_in_minutes is not None:
         due = now() + timedelta(minutes=int(due_in_minutes))
@@ -163,7 +165,7 @@ def create_reminder(text: str, due_at: str | None = None, due_in_minutes: int | 
         try:
             due = parse_iso(due_at)
         except ValueError:
-            return _j({"error": f"due_at must be ISO 8601, got {due_at!r}. Call get_current_time first."})
+            return _j({"error": f"due_at must be ISO 8601, got {due_at!r}, for example 2026-11-03T18:00."})
     rem = store.create_reminder(text.strip(), due)
     rem["spoken_due"] = _speakable(due) if due else None
     logger.info(f"reminder created: {rem}")
@@ -289,16 +291,26 @@ def _device(fn, *args, **kwargs) -> str:
 
 
 @mcp.tool()
-def control_music(action: str, query: str = "", value: int | None = None) -> str:
+async def control_music(action: str, query: str = "", value: int | None = None) -> str:
     """Music and media control. `action`: play (with `query`: a song, artist, genre like jazz or lo-fi, or a playlist
-    like focus, sleep, workout; empty = favorites or resume), pause, resume, stop, next, previous, volume_up,
-    volume_down, set_volume (`value` 0-100), mute, unmute, shuffle_on, shuffle_off, repeat_off, repeat_one, repeat_all, status."""
+    like focus, sleep, workout; empty or just "music" = resume, or the default playlist when nothing is playing), pause, resume, stop, next, previous,
+    volume_down (halves it), volume_up (doubles it), volume_down_little / volume_up_little ("a bit", "a little": 30 %),
+    set_volume (`value` 0-100, "volume 40"), mute, unmute, shuffle_on, shuffle_off, repeat_off, repeat_one, repeat_all, status."""
     a = (action or "").strip().lower().replace(" ", "_").replace("-", "_")
     a = {"skip": "next", "forward": "next", "back": "previous", "prev": "previous", "unpause": "resume", "continue": "resume",
          "louder": "volume_up", "quieter": "volume_down", "softer": "volume_down", "volume": "set_volume", "now_playing": "status",
-         "what_is_playing": "status", "shuffle": "shuffle_on", "repeat": "repeat_all"}.get(a, a)
+         "what_is_playing": "status", "shuffle": "shuffle_on", "repeat": "repeat_all", "volume_down_bit": "volume_down_little",
+         "volume_up_bit": "volume_up_little", "volume_down_slightly": "volume_down_little",
+         "volume_up_slightly": "volume_up_little"}.get(a, a)
     m = devices.media
-    step = int(value) if value is not None else 10
+
+    def scaled(factor: float):
+        # v9 (King): loudness is heard in ratios, so "down" halves and "down a bit" takes 30 % off (up: the inverse);
+        # a `value` with up/down ("down by 10") is still a plain step
+        cur = int(m.status().get("volume") or 50)
+        new = round(cur * factor)
+        new = min(new, cur - 3) if factor < 1 else max(new, cur + 5)  # always an audible change, even near 0
+        return m.set_volume(max(0, min(100, new)))
     table = {
         "play": lambda: m.play(query),
         "pause": m.pause,
@@ -306,8 +318,10 @@ def control_music(action: str, query: str = "", value: int | None = None) -> str
         "stop": m.stop,
         "next": m.next,
         "previous": m.previous,
-        "volume_up": lambda: m.volume_step(abs(step)),
-        "volume_down": lambda: m.volume_step(-abs(step)),
+        "volume_up": lambda: m.volume_step(abs(int(value))) if value is not None else scaled(2.0),
+        "volume_down": lambda: m.volume_step(-abs(int(value))) if value is not None else scaled(0.5),
+        "volume_up_little": lambda: scaled(1 / 0.7),
+        "volume_down_little": lambda: scaled(0.7),
         "set_volume": lambda: m.set_volume(int(value if value is not None else 50)),
         "mute": lambda: m.set_mute(True),
         "unmute": lambda: m.set_mute(False),
@@ -319,24 +333,32 @@ def control_music(action: str, query: str = "", value: int | None = None) -> str
         "status": m.status,
     }
     if a not in table:
-        return _j({"error": f"unknown action {action!r}; use play, pause, resume, stop, next, previous, volume_up, volume_down, set_volume, mute, unmute, shuffle_on/off, repeat_off/one/all or status"})
-    out = _device(table[a])
+        return _j({"error": f"unknown action {action!r}; use play, pause, resume, stop, next, previous, volume_up(_little), volume_down(_little), set_volume, mute, unmute, shuffle_on/off, repeat_off/one/all or status"})
+    out = await asyncio.to_thread(_device, table[a])  # Spotify is a network call: keep the server responsive
     if a == "status":
         devices.version -= 1  # reading changes nothing
     return out
 
 
 @mcp.tool()
-def set_light(room: str = "all", on: bool | None = None, brightness: int | None = None, color: str | None = None) -> str:
-    """Control the lights. `room` is a room name or "all". Give `on` (true/false), `brightness` (0-100 percent,
+async def set_light(room: str = "", on: bool | None = None, brightness: int | None = None, color: str | None = None) -> str:
+    """Control the lights. `room` is a room name, "all" only when the user says all/every light, or empty when no room
+    is named ("lights on", "turn off the light" = the default room, the living room). Give `on` (true/false), `brightness` (0-100 percent,
     "dim" = 30) and/or `color` ("warm white", "blue", "#ff8800"). "Dim the lights to 20 percent" = brightness=20."""
-    return _device(devices.lights.set, room, on=on, brightness=brightness, color=color)
+    return await asyncio.to_thread(_device, devices.lights.set, room, on=on, brightness=brightness, color=color)  # Tapo bulb: LAN call
 
 
 @mcp.tool()
-def set_thermostat(target: float | None = None, mode: str | None = None) -> str:
+def set_thermostat(target: float | None = None, mode: str | None = None, change: float | None = None) -> str:
     """Set the thermostat: `target` temperature in degrees (the house unit) and/or `mode` heat, cool, auto or off.
-    For "warmer" or "cooler" read home_status first and move the target by 1 degree."""
+    For "warmer" or "cooler" pass `change` instead (+1 warmer, -1 cooler, in degrees); no need to read the status."""
+    # v6 smoke: with "read home_status first", v6 read the status and then only said "Thermostat set" (t6)
+    if change is not None and target is None:
+        try:
+            now = float(devices.thermostat.status()["target"])
+        except Exception as e:  # noqa: BLE001
+            return _j({"error": f"could not read the thermostat target: {e}"})
+        target = now + float(change)
     return _device(devices.thermostat.set, target=target, mode=mode)
 
 
@@ -351,21 +373,23 @@ def home_status() -> str:
 
 
 @mcp.tool()
-def send_message(contact: str, text: str) -> str:
-    """Send a text message to a contact ("text Mom that I'm running late"). `text` is the message as it should be sent."""
-    return _device(devices.phone.send_message, contact, text)
+async def send_message(contact: str, text: str) -> str:
+    """Send a text message to a contact ("text Mom that I'm running late"). `text` is the message exactly as the user
+    would type it to that person: reported speech turned into direct speech (the recipient becomes "you", the user
+    stays "I"), same meaning and language, nothing added. "ask Sam whether he's coming" -> "Are you coming?"."""
+    return await asyncio.to_thread(_device, devices.phone.send_message, contact, text)  # Telegram: network call
 
 
 @mcp.tool()
-def make_call(contact: str) -> str:
+async def make_call(contact: str) -> str:
     """Call a contact by name ("call Mom"). The call rings and then connects; end_call hangs up."""
-    return _device(devices.phone.call, contact)
+    return await asyncio.to_thread(_device, devices.phone.call, contact)  # Telegram: starts it on the phone over ADB
 
 
 @mcp.tool()
-def end_call() -> str:
+async def end_call() -> str:
     """Hang up the current call ("hang up", "end the call")."""
-    return _device(devices.phone.hang_up)
+    return await asyncio.to_thread(_device, devices.phone.hang_up)
 
 
 # ------------------------------------------------------------ internal tools
@@ -386,6 +410,14 @@ def poll_due() -> str:
             "home_version": devices.version,
         }
     )
+
+
+@mcp.tool()
+async def duck_music(on: bool, level: int = 15) -> str:
+    """Internal (assistant/music.py): lower the music to `level` % while someone talks (on), restore it (off)."""
+    out = await asyncio.to_thread(_device, devices.media.duck, bool(on), int(level))
+    devices.version -= 1  # no widget push needed; the next poll shows the volume
+    return out
 
 
 @mcp.tool()
@@ -415,6 +447,9 @@ def main() -> None:
     parser.add_argument("--port", type=int, default=PORT)
     args = parser.parse_args()
     logger.info(f"database: {DB_PATH}")
+    import atexit
+
+    atexit.register(devices.close)  # v9: stops Donna's Spotify speaker with the server (a killed server leaves it; the next start reuses it)
     if args.stdio:
         mcp.run(transport="stdio")
     else:

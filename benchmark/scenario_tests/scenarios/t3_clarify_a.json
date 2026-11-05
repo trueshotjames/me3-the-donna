@@ -1,0 +1,31 @@
+{
+ "name": "T3 Clarify when needed A",
+ "timeout": 480,
+ "steps": [
+  {
+   "say": "Set an alarm."
+  },
+  {
+   "say": "Seven fifteen in the morning.",
+   "expect_tool": "create_alarm",
+   "expect_args": {
+    "time": "07:15"
+   }
+  },
+  {
+   "say": "Send a message to Alex."
+  },
+  {
+   "say": "Tell him dinner is at eight.",
+   "expect_tool": "send_message"
+  },
+  {
+   "say": "Set a timer."
+  },
+  {
+   "say": "Ten minutes.",
+   "expect_tool": "create_timer"
+  }
+ ],
+ "lead_secs": 15
+}

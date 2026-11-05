@@ -1,0 +1,34 @@
+{
+ "name": "T1 Tool choice A",
+ "timeout": 480,
+ "steps": [
+  {
+   "say": "What time is it?",
+   "expect_tool": "get_current_time"
+  },
+  {
+   "say": "Set an alarm for six thirty in the morning.",
+   "expect_tool": "create_alarm",
+   "expect_args": {
+    "time": "06:30"
+   }
+  },
+  {
+   "say": "Remind me in twenty minutes to check the oven.",
+   "expect_tool": "create_reminder"
+  },
+  {
+   "say": "Set a timer for five minutes.",
+   "expect_tool": "create_timer"
+  },
+  {
+   "say": "Play some jazz.",
+   "expect_tool": "control_music"
+  },
+  {
+   "say": "Dim the living room light to twenty percent.",
+   "expect_tool": "set_light"
+  }
+ ],
+ "lead_secs": 15
+}

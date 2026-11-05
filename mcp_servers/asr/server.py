@@ -25,6 +25,7 @@ import time
 import uuid
 from dataclasses import dataclass, field
 from typing import Any
+from urllib.parse import quote
 
 import websockets
 from loguru import logger
@@ -36,7 +37,13 @@ setup("asr")
 
 DEEPGRAM_API_KEY = env("DEEPGRAM_API_KEY")
 FLUX_URL = env("DEEPGRAM_FLUX_URL", "wss://api.deepgram.com/v2/listen")
+# v3: a regional endpoint (DEEPGRAM_FLUX_URL=wss://api.in.deepgram.com/v2/listen) does not fall back by itself;
+# when it will not connect, the global one is tried before the push fails
+FLUX_FALLBACK_URL = env("DEEPGRAM_FLUX_FALLBACK_URL", "wss://api.deepgram.com/v2/listen")
+FLUX_OPEN_TIMEOUT_SECS = env_float("FLUX_OPEN_TIMEOUT_SECS", 5.0)
 FLUX_MODEL = env("DEEPGRAM_FLUX_MODEL", "flux-general-en")
+# v3: words Flux should expect (Flux keyterm prompting), comma separated; the route test misheard these
+KEYTERMS = [k.strip() for k in (env("DEEPGRAM_KEYTERMS", "") or "").split(",") if k.strip()]
 DEFAULT_EOT = env_float("FLUX_EOT_THRESHOLD", 0.7)
 DEFAULT_EAGER_EOT = env_float("FLUX_EAGER_EOT_THRESHOLD", 0.5)
 DEFAULT_EOT_TIMEOUT_MS = env_int("FLUX_EOT_TIMEOUT_MS", 5000)
@@ -74,7 +81,7 @@ class Session:
     keepalive_task: asyncio.Task | None = None
     send_lock: asyncio.Lock = field(default_factory=asyncio.Lock)
 
-    def url(self) -> str:
+    def url(self, base: str | None = None) -> str:
         params = [
             f"model={FLUX_MODEL}",
             f"encoding=linear16",
@@ -84,7 +91,8 @@ class Session:
         ]
         if self.eager_eot_threshold is not None:
             params.append(f"eager_eot_threshold={self.eager_eot_threshold}")
-        return f"{FLUX_URL}?{'&'.join(params)}"
+        params += [f"keyterm={quote(k)}" for k in KEYTERMS]
+        return f"{base or FLUX_URL}?{'&'.join(params)}"
 
 
 SESSIONS: dict[str, Session] = {}
@@ -151,18 +159,25 @@ async def _connect(session: Session) -> None:
             return
         if not DEEPGRAM_API_KEY:
             raise RuntimeError("DEEPGRAM_API_KEY is not set (see .env.example)")
-        t0 = time.perf_counter()
-        try:
-            ws = await websockets.connect(
-                session.url(),
-                additional_headers={"Authorization": f"Token {DEEPGRAM_API_KEY}"},
-                max_size=None,
-                ping_interval=20,
-                ping_timeout=20,
-            )
-        except Exception as e:
-            log_net_event("Flux", (time.perf_counter() - t0) * 1000, ok=False, reconnect=session.reconnects > 0, error=repr(e))
-            raise
+        bases = [FLUX_URL] + ([FLUX_FALLBACK_URL] if FLUX_FALLBACK_URL and FLUX_FALLBACK_URL != FLUX_URL else [])
+        ws = None
+        for i, base in enumerate(bases):
+            t0 = time.perf_counter()
+            try:
+                ws = await websockets.connect(
+                    session.url(base),
+                    additional_headers={"Authorization": f"Token {DEEPGRAM_API_KEY}"},
+                    max_size=None,
+                    open_timeout=FLUX_OPEN_TIMEOUT_SECS,
+                    ping_interval=20,
+                    ping_timeout=20,
+                )
+                break
+            except Exception as e:
+                log_net_event("Flux", (time.perf_counter() - t0) * 1000, ok=False, reconnect=session.reconnects > 0, error=repr(e))
+                if i == len(bases) - 1:
+                    raise
+                logger.warning(f"Flux connect to {base} failed ({e!r}); trying {bases[i + 1]}")
         session.ws = ws
         session.conn_id += 1
         session.conn_bytes = 0
@@ -172,7 +187,7 @@ async def _connect(session: Session) -> None:
             session.keepalive_task = asyncio.create_task(_keepalive(session))
         was_reconnect = session.reconnects > 0
         session.reconnects += 1
-        logger.info(f"Flux connected in {(time.perf_counter() - t0) * 1000:.0f} ms ({session.url()})")
+        logger.info(f"Flux connected in {(time.perf_counter() - t0) * 1000:.0f} ms ({session.url(base)})")
         log_net_event("Flux", (time.perf_counter() - t0) * 1000, reconnect=was_reconnect)
         if was_reconnect:
             _put(session, {"event": "Reconnected"})

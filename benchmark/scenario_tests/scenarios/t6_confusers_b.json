@@ -1,0 +1,39 @@
+{
+ "name": "T6 Look-alike tools B (home, phone, delegate)",
+ "timeout": 540,
+ "steps": [
+  {
+   "say": "How warm is it inside?",
+   "expect_tool": "home_status"
+  },
+  {
+   "say": "How warm is it outside?",
+   "expect_tool": "get_weather"
+  },
+  {
+   "say": "Make it a bit warmer in here.",
+   "expect_tool": "set_thermostat"
+  },
+  {
+   "say": "Turn up the volume.",
+   "expect_tool": "control_music"
+  },
+  {
+   "say": "Call Mom.",
+   "expect_tool": "make_call"
+  },
+  {
+   "say": "Hang up.",
+   "expect_tool": "end_call"
+  },
+  {
+   "say": "Look up the latest news about the Raspberry Pi.",
+   "expect_tool": "delegate"
+  },
+  {
+   "say": "What did we talk about yesterday?",
+   "expect_tool": "recall"
+  }
+ ],
+ "lead_secs": 15
+}

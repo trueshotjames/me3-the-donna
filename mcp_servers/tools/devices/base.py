@@ -98,6 +98,10 @@ class MediaPlayer(Device):
         """off | one | all."""
         raise NotImplementedError
 
+    def duck(self, on: bool, level: int = 15) -> dict[str, Any]:
+        """Lower the music while someone talks (on) and put it back (off). Players that make no sound: no-op."""
+        return self.status()
+
 
 class PhoneDevice(Device):
     """Calls and messages to named contacts."""

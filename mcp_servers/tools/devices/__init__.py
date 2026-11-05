@@ -1,6 +1,6 @@
 """Builds the household devices the tools server uses, simulated by default.
 
-    LIGHT_BACKEND=sim|gpio   THERMOSTAT_BACKEND=sim   MEDIA_BACKEND=sim|mpv   PHONE_BACKEND=sim|telegram
+    LIGHT_BACKEND=sim|tapo|gpio   THERMOSTAT_BACKEND=sim   MEDIA_BACKEND=sim|spotify|mpv   PHONE_BACKEND=sim|telegram|telegram_bot
 
 A backend that cannot start (library missing, no token) logs a warning and falls back to the
 simulation, so the demo never loses a widget because a cable is unplugged.
@@ -85,7 +85,15 @@ def build_devices(load: Callable[[str], dict[str, Any] | None], persist: Callabl
 
     lights: LightDevice
     backend = os.getenv("LIGHT_BACKEND", "sim").lower()
-    if backend == "gpio":
+    if backend == "tapo":
+        try:
+            from mcp_servers.tools.devices.tapo import TapoLights, bulbs_from_env
+
+            lights = TapoLights(bulbs_from_env(os.getenv("TAPO_BULBS")), **kw)
+        except DeviceError as e:
+            logger.warning(f"lights: {e}; using the simulation")
+            lights = SimLights(rooms, **kw)
+    elif backend == "gpio":
         try:
             from mcp_servers.tools.devices.hardware import GpioLights, pins_from_env
 
@@ -100,7 +108,44 @@ def build_devices(load: Callable[[str], dict[str, Any] | None], persist: Callabl
 
     media: MediaPlayer
     backend = os.getenv("MEDIA_BACKEND", "sim").lower()
-    if backend == "mpv":
+    if backend == "spotify":
+        try:
+            from mcp_servers.tools.devices.spotify import SpotifyPlayer
+
+            speaker = None
+            if os.getenv("SPOTIFY_SPEAKER", "0").lower() in ("1", "true", "yes"):
+                # v9: Donna is the Spotify speaker herself (go-librespot), music through the speakerphone
+                from mcp_servers.tools.devices.speaker import Speaker
+
+                try:
+                    speaker = Speaker()
+                    speaker.start()
+                except DeviceError as e:
+                    logger.warning(f"media: {e}; Spotify will play on other devices")
+                    speaker = None
+            media = SpotifyPlayer(device=speaker.name if speaker else None, speaker=speaker)
+            if speaker is None and os.getenv("SPOTIFY_WEBPLAYER", "0").lower() in ("1", "true", "yes"):
+                # v9: Donna as a speaker through Spotify's official Web Playback SDK in a hidden browser window
+                from mcp_servers.tools.devices.webplayer import WebPlayer
+
+                import threading
+
+                wp = WebPlayer(media._access_token)
+                media._speaker, media._device_name = wp, wp.name  # until it is ready, "play" says it is starting
+
+                def _start_webplayer(m=media, w=wp):
+                    try:
+                        w.start()
+                    except DeviceError as e:
+                        w.stop()
+                        m._speaker, m._device_name = None, os.getenv("SPOTIFY_DEVICE", "")
+                        logger.warning(f"media: {e}; Spotify will play on other devices")
+
+                threading.Thread(target=_start_webplayer, name="webplayer-start", daemon=True).start()
+        except DeviceError as e:
+            logger.warning(f"media: {e}; using the simulation")
+            media = SimMediaPlayer(**kw)
+    elif backend == "mpv":
         try:
             from mcp_servers.tools.devices.hardware import MpvPlayer
 
@@ -114,6 +159,16 @@ def build_devices(load: Callable[[str], dict[str, Any] | None], persist: Callabl
     phone: PhoneDevice
     backend = os.getenv("PHONE_BACKEND", "sim").lower()
     if backend == "telegram":
+        # v9: your own Telegram account (Telethon) for messages, your Android phone (ADB) for calls
+        try:
+            from mcp_servers.tools.devices.telegram import TelegramPhone as TelegramUserPhone, aliases_from_env
+
+            phone = TelegramUserPhone(os.getenv("TELEGRAM_API_ID", ""), os.getenv("TELEGRAM_API_HASH", ""),
+                                      aliases_from_env(os.getenv("TELEGRAM_CONTACTS")), **kw)
+        except DeviceError as e:
+            logger.warning(f"phone: {e}; using the simulation")
+            phone = SimPhone(contacts, **kw)
+    elif backend == "telegram_bot":
         try:
             from mcp_servers.tools.devices.hardware import TelegramPhone, chats_from_env
 

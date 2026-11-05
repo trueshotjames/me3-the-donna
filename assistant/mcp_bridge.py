@@ -33,8 +33,25 @@ def stdio_params(module: str, *args: str) -> StdioServerParameters:
     return StdioServerParameters(command=sys.executable, args=["-m", module, *args], env=env, cwd=str(ROOT))
 
 
+class InProcParams:
+    """v6 (MCP_TRANSPORT=inproc): run the MCP server module in this process and talk to it over in-memory MCP
+    streams. Still the real MCP protocol (initialize, tools/list, tools/call as JSON-RPC session messages, through the
+    server's own MCPServer object); it only drops the child process and its pipes (about 80 MB of RAM each)."""
+
+    def __init__(self, module: str):
+        self.module = module
+
+    def __repr__(self) -> str:
+        return f"InProcParams({self.module!r})"
+
+
+def server_params(module: str, transport: str = "stdio"):
+    """The ASR / TTS server as a child process (stdio, v5) or in this process (inproc, v6)."""
+    return InProcParams(module) if transport == "inproc" else stdio_params(module)
+
+
 class MCPBridge:
-    def __init__(self, name: str, *, stdio: StdioServerParameters | None = None, url: str | None = None):
+    def __init__(self, name: str, *, stdio: StdioServerParameters | InProcParams | None = None, url: str | None = None):
         if (stdio is None) == (url is None):
             raise ValueError("give exactly one of stdio= or url=")
         self.name = name
@@ -60,7 +77,15 @@ class MCPBridge:
 
     async def _run(self) -> None:
         try:
-            if self._stdio is not None:
+            if isinstance(self._stdio, InProcParams):
+                import importlib
+
+                from mcp.client._memory import InMemoryTransport
+
+                os.environ["MCP_INPROC"] = "1"  # mcp_servers.common.setup() then leaves our log handlers alone
+                server = importlib.import_module(self._stdio.module).mcp
+                transport = InMemoryTransport(server)
+            elif self._stdio is not None:
                 transport = stdio_client(self._stdio, errlog=sys.stderr)
             else:
                 transport = streamable_http_client(self._url)

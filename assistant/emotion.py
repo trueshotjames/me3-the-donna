@@ -182,6 +182,10 @@ class EmotionProcessor(FrameProcessor):
             return
         if self._spoken < self._min:
             return
+        from assistant.music import MUSIC
+
+        if MUSIC.enabled and MUSIC.playing and not MUSIC.ducked:
+            return  # v9: music plays and no near voice ducked it: this "speech" is lyrics; don't spend CPU scoring it
         self._last_run = time.monotonic()
         self._task = asyncio.create_task(self._score(self._window_audio(), final))
 
@@ -257,7 +261,7 @@ class EmotionProcessor(FrameProcessor):
 
 
 class VoiceHintInjector(FrameProcessor):
-    """Rewrites the system message with the current voice hint before each LLM run."""
+    """Works out the current voice hint before each LLM run (v2: kept in ``last_hint``; the system message stays fixed)."""
 
     def __init__(
         self,
@@ -285,7 +289,9 @@ class VoiceHintInjector(FrameProcessor):
             hint = hint_line(scores, self._thr)
             self.last_hint = hint
             messages = frame.context.messages
-            content = self._base + (f"\n\n{hint}" if hint else "")
+            # v2: the hint no longer goes into the system message (that broke the provider's prompt cache on every
+            # change); TimedGroqLLMService puts last_hint in the per-turn note on the latest user message.
+            content = self._base
             if messages and messages[0].get("role") == "system":
                 messages[0]["content"] = content
             else:

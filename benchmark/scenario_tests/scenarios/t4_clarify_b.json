@@ -1,0 +1,28 @@
+{
+ "name": "T4 Clarify when needed B",
+ "timeout": 480,
+ "steps": [
+  {
+   "say": "Remind me."
+  },
+  {
+   "say": "To take my medicine in thirty minutes.",
+   "expect_tool": "create_reminder"
+  },
+  {
+   "say": "Make a call."
+  },
+  {
+   "say": "Sam.",
+   "expect_tool": "make_call"
+  },
+  {
+   "say": "Text someone that I'm home."
+  },
+  {
+   "say": "Dad.",
+   "expect_tool": "send_message"
+  }
+ ],
+ "lead_secs": 15
+}
