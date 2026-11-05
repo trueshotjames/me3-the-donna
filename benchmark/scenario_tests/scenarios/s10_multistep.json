@@ -1,0 +1,21 @@
+{
+ "name": "10 Multi-step / chained tools",
+ "steps": [
+  {
+   "say": "If it will rain tomorrow in London, remind me at eight in the morning to bring an umbrella.",
+   "expect_tool": "get_weather"
+  },
+  {
+   "say": "Remind me in one hour to buy bread."
+  },
+  {
+   "say": "Read my reminders, then delete the bread one.",
+   "expect_tool": "list_reminders"
+  },
+  {
+   "say": "Yes, delete it."
+  }
+ ],
+ "timeout": 480,
+ "lead_secs": 15
+}

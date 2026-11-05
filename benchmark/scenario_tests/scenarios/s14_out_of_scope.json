@@ -1,0 +1,12 @@
+{
+ "name": "14 Out of scope / refusal",
+ "steps": [
+  {
+   "say": "Order me a pizza."
+  },
+  {
+   "say": "Book a flight to Tokyo for tomorrow."
+  }
+ ],
+ "lead_secs": 15
+}

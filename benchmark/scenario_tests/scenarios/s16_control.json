@@ -1,0 +1,21 @@
+{
+ "name": "16 Conversation control",
+ "steps": [
+  {
+   "say": "What's the weather in Berlin?"
+  },
+  {
+   "say": "Repeat that."
+  },
+  {
+   "say": "Speak slower."
+  },
+  {
+   "say": "Never mind."
+  },
+  {
+   "say": "Goodbye."
+  }
+ ],
+ "lead_secs": 15
+}

@@ -29,6 +29,14 @@ from pipecat.observers.base_observer import BaseObserver, FramePushed
 from assistant.ui_bus import UIBus
 
 
+
+def emit_state(bus, state: str) -> None:
+    """The UI state, also told to the music ducker (v9: music drops while she listens, thinks or speaks)."""
+    bus.emit("state", state=state)
+    from assistant.music import MUSIC
+
+    MUSIC.on_state(state)
+
 class UIEventObserver(BaseObserver):
     """Maps frames to the events documented in assistant/EVENTS.md."""
 
@@ -36,6 +44,7 @@ class UIEventObserver(BaseObserver):
         super().__init__(observe_every_push=False, **kwargs)
         self._bus = bus
         self._chat = chat  # assistant.chat_log.ChatLog, or None
+        self.played_tap = False  # v8: set by main.py when PlayedTextTap feeds played()
         self._on_tool_result = on_tool_result  # async callback(name, args, result_dict)
         self._bot_speaking = False
         self._user_speaking = False
@@ -46,6 +55,15 @@ class UIEventObserver(BaseObserver):
         self._tools_this_reply = 0  # tool calls since the user's turn ended
         self._claim_warned = False
 
+    def played(self, frame) -> None:
+        """A sentence of hers: from the observer, or (v8 PLAYED_TEXT) from the tap after it has played."""
+        if frame.text.strip():
+            logger.info(f"bot says: {frame.text}")
+            self._bus.emit("assistant_text", text=frame.text, final=True)
+            if self._chat:
+                self._chat.assistant(frame.text)
+            self._check_claim(frame.text)
+
     async def on_push_frame(self, data: FramePushed):
         frame = data.frame
         bus = self._bus
@@ -53,23 +71,23 @@ class UIEventObserver(BaseObserver):
             if not self._user_speaking:  # broadcast frames arrive twice
                 self._user_speaking = True
                 logger.info("user turn started")
-                bus.emit("state", state="listening")
+                emit_state(bus, "listening")
         elif isinstance(frame, UserStoppedSpeakingFrame):
             if self._user_speaking:
                 self._user_speaking = False
                 logger.info("user turn stopped; running LLM")
                 self._tools_this_reply = 0
                 self._claim_warned = False
-                bus.emit("state", state="thinking")
+                emit_state(bus, "thinking")
         elif isinstance(frame, LLMFullResponseStartFrame):
             if not self._bot_speaking:
-                bus.emit("state", state="thinking")
+                emit_state(bus, "thinking")
         elif isinstance(frame, BotStartedSpeakingFrame):
             self._bot_speaking = True
-            bus.emit("state", state="speaking")
+            emit_state(bus, "speaking")
         elif isinstance(frame, BotStoppedSpeakingFrame):
             self._bot_speaking = False
-            bus.emit("state", state="idle")
+            emit_state(bus, "idle")
             if self._chat:
                 self._chat.bot_stopped()
         elif isinstance(frame, InterimTranscriptionFrame):
@@ -79,12 +97,8 @@ class UIEventObserver(BaseObserver):
             if self._chat:
                 self._chat.user(frame.text)
         elif isinstance(frame, TTSTextFrame):
-            if frame.text.strip():
-                logger.info(f"bot says: {frame.text}")
-                bus.emit("assistant_text", text=frame.text, final=True)
-                if self._chat:
-                    self._chat.assistant(frame.text)
-                self._check_claim(frame.text)
+            if not self.played_tap:  # v8 (PLAYED_TEXT): otherwise played() gets it once the sentence was heard
+                self.played(frame)
         elif isinstance(frame, InterruptionFrame):
             # Broadcast frames reach the observer twice (upstream and downstream copies).
             if self._bot_speaking and time.monotonic() - self._last_interrupt > 0.2:

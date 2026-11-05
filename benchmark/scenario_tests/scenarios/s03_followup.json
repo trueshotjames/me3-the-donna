@@ -1,0 +1,25 @@
+{
+ "name": "3 Follow-up using context",
+ "steps": [
+  {
+   "say": "What's the weather in Paris?",
+   "expect_tool": "get_weather"
+  },
+  {
+   "say": "And tomorrow?",
+   "expect_tool": "get_weather",
+   "expect_args": {
+    "day": "tomorrow"
+   }
+  },
+  {
+   "say": "Turn on the bedroom light.",
+   "expect_tool": "set_light"
+  },
+  {
+   "say": "Now turn it off.",
+   "expect_tool": "set_light"
+  }
+ ],
+ "lead_secs": 15
+}

@@ -1,0 +1,24 @@
+{
+ "name": "11 Long-running task (website)",
+ "steps": [
+  {
+   "say": "Create a simple website for my bakery called Sunrise Bakery, with warm orange colours.",
+   "expect_tool": "delegate"
+  },
+  {
+   "say": "What's the weather in Manila?",
+   "when": "idle",
+   "after": 3.0,
+   "expect_tool": "get_weather"
+  },
+  {
+   "say": "Is the website done yet?",
+   "when": "idle",
+   "after": 20.0
+  }
+ ],
+ "tail_cap": 240,
+ "tail_secs": 120,
+ "timeout": 600,
+ "lead_secs": 15
+}

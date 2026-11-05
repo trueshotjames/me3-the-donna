@@ -1,0 +1,19 @@
+{
+ "name": "4 Missing info (slot filling)",
+ "steps": [
+  {
+   "say": "Set a reminder."
+  },
+  {
+   "say": "To call the dentist."
+  },
+  {
+   "say": "At five in the afternoon.",
+   "expect_tool": "create_reminder"
+  },
+  {
+   "say": "Set an alarm."
+  }
+ ],
+ "lead_secs": 15
+}

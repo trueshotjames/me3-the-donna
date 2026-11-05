@@ -35,6 +35,7 @@ from assistant.services.playout import AdaptivePlayout
 from assistant.turn_metrics import METRICS
 
 SILENCE_THRESHOLD = 330  # |sample| above this (about -40 dBFS) counts as sound
+TRIM_KEEP_MS = 20.0  # v3: silence kept in front of the first sound of a sentence
 
 
 def leading_silence_ms(pcm: bytes, sample_rate: int) -> float | None:
@@ -60,6 +61,7 @@ class MCPTTSService(TTSService):
         playout_start_ms: float = 0.0,
         playout_max_ms: float = 1500.0,
         playout_max_hold_ms: float = 1000.0,
+        trim_lead_max_ms: float = 400.0,
         sample_rate: int | None = None,
         **kwargs,
     ):
@@ -78,8 +80,10 @@ class MCPTTSService(TTSService):
         self._bridge = MCPBridge("tts", stdio=server_params)
         self._server_sample_rate = server_sample_rate
         self._read_wait_ms = read_wait_ms
+        self._trim_max_bytes = int(max(0.0, trim_lead_max_ms) * server_sample_rate / 1000) * 2
         self._active_streams: dict[str, set[str]] = {}  # context_id -> stream ids in flight
         self._stats = {"sentences": 0, "first_audio_ms_total": 0.0, "reads": 0}
+        self._spoken: dict[str, set[str]] = {}  # v4: reply context -> sentences already sent to Aura
         self._playout = (
             AdaptivePlayout(
                 server_sample_rate, start_ms=playout_start_ms, max_ms=playout_max_ms, max_hold_ms=playout_max_hold_ms
@@ -117,6 +121,25 @@ class MCPTTSService(TTSService):
 
     # ------------------------------------------------------------------- speech
 
+    async def _handle_aggregated_text(self, src_frame, context_id: str | None = None):
+        """v4: one reply never speaks the same sentence twice.
+
+        v3 scenario 1 said "Tokyo. Tokyo.": the LLM wrote it once and PassFilter passed it once, but Pipecat's
+        aggregator handed the same sentence over a second time when the reply ended. Keyed by the reply's context.
+        """
+        key = "".join(c for c in (src_frame.text or "").lower() if c.isalnum())
+        turn = self._turn_context_id
+        if key and turn:
+            seen = self._spoken.setdefault(turn, set())
+            if key in seen:
+                self._stats["dup_sentences"] = self._stats.get("dup_sentences", 0) + 1
+                logger.info(f"{self}: dropped a sentence this reply already spoke: [{src_frame.text.strip()}]")
+                return
+            seen.add(key)
+            while len(self._spoken) > 8:
+                self._spoken.pop(next(iter(self._spoken)))
+        await super()._handle_aggregated_text(src_frame, context_id)
+
     async def run_tts(self, text: str, context_id: str) -> AsyncGenerator[Frame | None, None]:
         text = speakable(text)
         if not self._bridge.connected:
@@ -125,12 +148,13 @@ class MCPTTSService(TTSService):
         loop = asyncio.get_running_loop()
         t0 = loop.time()
         rec: dict = {"t_call": time.time(), "chars": len(text), "chunks": [], "read_ms": [], "audio_bytes": 0}
+        METRICS.tts_begin()  # v2: paired with METRICS.tts_sentence in the finally below
         try:
             await self.start_tts_usage_metrics(text)
             # tts_start can take seconds when the Aura socket has to reconnect; keep the audio context
             # alive meanwhile, or Pipecat ends it after 1 s as "completed with no audio".
             start = asyncio.create_task(
-                self._bridge.call_json("tts_start", {"text": text, "context": context_id}, timeout=10)
+                self._bridge.call_json("tts_start", {"text": text, "context": context_id}, timeout=16)  # v1: server retries the connect
             )
             while not start.done():
                 self._refresh_audio_context(context_id)
@@ -181,6 +205,9 @@ class MCPTTSService(TTSService):
         """
         idle_polls = 0
         lead_buf = b""
+        # v3: Aura starts each sentence with ~0-400 ms of silence (v2 median 91 ms); drop it, keeping TRIM_KEEP_MS
+        trimming = self._trim_max_bytes > 0
+        trimmed = 0
         while True:
             t_call = time.time()
             result = await self._bridge.call("tts_read", {"stream": stream, "wait_ms": self._read_wait_ms}, timeout=10)
@@ -191,6 +218,21 @@ class MCPTTSService(TTSService):
                 if isinstance(block, AudioContent):
                     got_audio = True
                     data = base64.b64decode(block.data)
+                    if trimming:
+                        lead = leading_silence_ms(data, self._server_sample_rate)
+                        room = self._trim_max_bytes - trimmed
+                        if lead is None and len(data) <= room:
+                            trimmed += len(data)  # all silence: drop the block
+                            continue
+                        cut = 0 if lead is None else int(max(0.0, lead - TRIM_KEEP_MS) * self._server_sample_rate / 1000) * 2
+                        cut = min(cut, room - room % 2)
+                        data = data[cut:]
+                        trimmed += cut
+                        trimming = False
+                        if rec is not None:
+                            rec["trimmed_ms"] = round(trimmed / (self._server_sample_rate * 2) * 1000, 1)
+                        if not data:
+                            continue
                     if rec is not None:
                         rec["read_ms"].append((t_back - t_call) * 1000)
                         rec["chunks"].append((t_back, len(data)))
@@ -231,11 +273,15 @@ class MCPTTSService(TTSService):
         streams = self._active_streams.pop(context_id, set())
         if self._playout is not None:
             self._playout.reset()  # the transport dropped its queue; held audio dies with run_tts
+        # v1: fire and forget; a stalled socket used to hold the barge-in path for up to 5 s.
+        asyncio.create_task(self._stop_streams(next(iter(streams), "")))
+        await super().on_audio_context_interrupted(context_id)
+
+    async def _stop_streams(self, stream: str) -> None:
         try:
-            await self._bridge.call("tts_stop", {"stream": next(iter(streams), "")}, timeout=5)
+            await self._bridge.call("tts_stop", {"stream": stream}, timeout=5)
         except Exception as e:  # noqa: BLE001
             logger.warning(f"{self}: tts_stop failed: {e}")
-        await super().on_audio_context_interrupted(context_id)
 
     async def on_audio_context_completed(self, context_id: str):
         self._active_streams.pop(context_id, None)

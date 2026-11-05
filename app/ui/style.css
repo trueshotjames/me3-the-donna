@@ -77,7 +77,7 @@ button { font: inherit; cursor: pointer; }
 
 /* conversation */
 .convo { flex: 1; display: flex; flex-direction: column; gap: 10px; }
-.bubble { background: var(--card-2); border-radius: 12px; padding: 10px 14px; }
+.bubble { background: var(--card-2); border-radius: 12px; padding: 10px 14px; overflow-wrap: anywhere; min-width: 0; }
 .bubble.user { border-left: 3px solid var(--ok); }
 .bubble.bot { border-left: 3px solid var(--speak); }
 .who { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
@@ -85,7 +85,7 @@ button { font: inherit; cursor: pointer; }
 .text.partial::after { content: "▍"; color: var(--accent); animation: blink 1s steps(2) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 .muted { color: var(--muted); }
-.tool-line { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; color: var(--accent); min-height: 18px; }
+.tool-line { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 12px; color: var(--accent); min-height: 18px; max-width: 100%; min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .main-actions { display: flex; justify-content: flex-end; }
 
 /* clock */
@@ -389,3 +389,17 @@ section.card.dev-anchor { position: relative; overflow: hidden; }
 .wx-day-icon { font-size: 22px; margin: 2px 0; }
 .wx-day-temps { font-size: 13px; }
 .wx-days:empty, .wx-details:empty { display: none; }
+
+
+/* ---- v8 UI_LITE: minimal CPU. Idle = no animation at all; only the active state moves; box-shadow and
+   filter animations (which repaint every frame) are replaced by static styles; nothing runs while hidden. ---- */
+.state-listening .ring { animation: none; opacity: .35; }
+.state-listening .bars i { animation: none; }
+.state-thinking .ring.r2, .state-thinking .ring.r3 { animation: none; }
+.state-speaking .ring { animation: none; }
+.th-heating .th-activity, .th-cooling .th-activity { animation: none; }
+.timer.ringing { animation: none; }
+html.paused *, html.paused *::before, html.paused *::after { animation-play-state: paused !important; transition: none !important; }
+
+/* v9: long words or links (a Spotify URL, a file path) wrap instead of widening the window */
+.msg, .bubble, .transcript { overflow-wrap: anywhere; min-width: 0; }

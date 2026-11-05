@@ -7,7 +7,7 @@ run on the Pi yet: treat them as the starting point for the hardware week, not a
 
     LIGHT_BACKEND=gpio      GpioLights: one PWMLED per room (LIGHT_GPIO_PINS="living room:18,bedroom:23")
     MEDIA_BACKEND=mpv       MpvPlayer: mpv through its JSON IPC socket (pip install python-mpv-jsonipc), files in MUSIC_DIR
-    PHONE_BACKEND=telegram  TelegramPhone: messages through a Telegram bot (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS="Mom:12345,...")
+    PHONE_BACKEND=telegram_bot  TelegramPhone: messages through a Telegram bot (TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_IDS="Mom:12345,...")
 
 The thermostat has no hardware backend: a real one would be a subclass of ThermostatDevice that
 talks to the heater's relay or API and keeps the sim's `status()` shape.

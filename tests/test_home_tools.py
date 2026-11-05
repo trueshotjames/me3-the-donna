@@ -96,6 +96,7 @@ def test_parse_color():
 
 def test_thermostat_moves_toward_target(monkeypatch):
     clock = [1000.0]
+    monkeypatch.setattr(sim, "FIXED", False)  # this test covers the drifting (non-fixed) room
     monkeypatch.setattr(sim, "_now", lambda: clock[0])
     th = SimThermostat()
     assert th.status()["current"] == 24.0
@@ -177,6 +178,8 @@ def test_phone_call_and_message(monkeypatch):
 
 def test_build_devices_defaults_to_simulation(monkeypatch):
     monkeypatch.setenv("LIGHT_BACKEND", "gpio")  # no gpiozero here: falls back with a warning
+    monkeypatch.setenv("MEDIA_BACKEND", "sim")  # the real .env may name Spotify
+    monkeypatch.setenv("PHONE_BACKEND", "sim")
     monkeypatch.setenv("LIGHT_ROOMS", "studio, hall")
     monkeypatch.setenv("PHONE_CONTACTS", "Ana,Ben")
     devices = build_devices(lambda n: None, lambda n, s: None)
@@ -195,6 +198,9 @@ def test_build_devices_defaults_to_simulation(monkeypatch):
 
 def test_server_tools_end_to_end(tmp_path, monkeypatch):
     monkeypatch.setenv("ASSISTANT_DB", "test_home.db")
+    for k in ("LIGHT_BACKEND", "MEDIA_BACKEND", "PHONE_BACKEND"):  # the real .env may name Tapo or Spotify
+        monkeypatch.setenv(k, "sim")
+    monkeypatch.delenv("LIGHT_ROOMS", raising=False)
     import importlib
 
     import mcp_servers.common as common
@@ -204,15 +210,20 @@ def test_server_tools_end_to_end(tmp_path, monkeypatch):
 
     server = importlib.reload(server)
     j = lambda s: json.loads(s)  # noqa: E731
-    assert j(server.control_music("play", "lo-fi"))["track"]["genre"] == "lo-fi"
-    assert j(server.control_music("louder"))["volume"] == 70
-    assert j(server.control_music("dance"))["error"]
-    assert j(server.set_light("kitchen", on=True, brightness=30))["lights"][0]["brightness"] == 30
-    assert j(server.set_light("attic", on=True))["error"]
+    run = asyncio.run  # control_music and set_light are async (network devices run in a thread)
+    assert j(run(server.control_music("play", "lo-fi")))["track"]["genre"] == "lo-fi"
+    assert j(run(server.control_music("louder")))["volume"] == 100
+    assert j(run(server.control_music("volume_down")))["volume"] == 50  # halves
+    assert j(run(server.control_music("volume_down_little")))["volume"] == 35  # 30 % off
+    assert j(run(server.control_music("volume_up_little")))["volume"] == 50
+    assert j(run(server.control_music("volume_down", value=10)))["volume"] == 40  # an explicit step
+    assert j(run(server.control_music("dance")))["error"]
+    assert j(run(server.set_light("kitchen", on=True, brightness=30)))["lights"][0]["brightness"] == 30
+    assert j(run(server.set_light("attic", on=True)))["error"]
     assert j(server.set_thermostat(target=21, mode="heat"))["activity"] in ("idle", "heating", "cooling")
-    assert j(server.make_call("Dr. Reyes"))["call"]["state"] == "ringing"
-    assert j(server.end_call())["call"]["state"] == "ended"
-    assert j(server.send_message("work", "on my way"))["message"]["contact"] == "Work"
+    assert j(run(server.make_call("Dr. Reyes")))["call"]["state"] == "ringing"
+    assert j(run(server.end_call()))["call"]["state"] == "ended"
+    assert j(run(server.send_message("work", "on my way")))["message"]["contact"] == "Work"
     assert j(server.create_timer(minutes=0))["error"]
     t = j(server.create_timer(seconds=1, label="egg"))
     assert t["created"] == "timer" and t["spoken_duration"] == "1 second"
@@ -334,4 +345,4 @@ def test_prompt_mentions_the_house_tools():
     p = system_prompt("Pi", "King", 8, delegate=True)
     for name in ("control_music", "set_light", "set_thermostat", "home_status", "create_timer", "get_weather", "send_message", "make_call", "end_call"):
         assert name in p
-    assert "Never delegate the time, the weather" in p
+    assert "Everything else you answer yourself, at once" in p and "weather, reminders, alarms" in p  # v2: shorter rules

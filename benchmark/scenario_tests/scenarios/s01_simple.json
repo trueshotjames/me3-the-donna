@@ -1,0 +1,12 @@
+{
+ "name": "1 Simple question, no tool",
+ "steps": [
+  {
+   "say": "What's fifteen percent of eighty?"
+  },
+  {
+   "say": "What is the capital of Japan?"
+  }
+ ],
+ "lead_secs": 15
+}

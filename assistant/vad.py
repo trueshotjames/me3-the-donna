@@ -30,6 +30,8 @@ class RecordingSileroVAD(SileroVADAnalyzer):
         # Silero frames are 32 ms at 16 kHz (512 samples).
         self._history: deque[tuple[float, float, float]] = deque(maxlen=int(history_secs / 0.032) + 10)
         self._last_conf = 0.0
+        # v7 (DUCK_BARGE_IN): callable(t, confidence, loudness) per frame, called from the VAD's worker thread
+        self.on_frame = None
 
     def voice_confidence(self, buffer) -> float:
         conf = super().voice_confidence(buffer)
@@ -39,7 +41,14 @@ class RecordingSileroVAD(SileroVADAnalyzer):
     def _get_smoothed_volume(self, audio: bytes) -> float:
         vol = super()._get_smoothed_volume(audio)
         # voice_confidence() runs just before this on the same frame (see VADAnalyzer._run_analyzer).
-        self._history.append((time.time(), self._last_conf, _scalar(vol)))
+        t, v = time.time(), _scalar(vol)
+        self._history.append((t, self._last_conf, v))
+        cb = self.on_frame
+        if cb is not None:
+            try:
+                cb(t, self._last_conf, v)
+            except Exception:  # noqa: BLE001
+                pass
         return vol
 
     def frames_between(self, t0: float, t1: float) -> list[tuple[float, float, float]]:

@@ -59,6 +59,8 @@ from pipecat.processors.frame_processor import FrameDirection, FrameProcessor
 QUIET_SECS = 0.8  # the conversation must be idle this long before a "turn" announcement starts
 MAX_HOLD_SECS = 20.0  # speak anyway after this long (a stuck flag must not hold an announcement)
 SPEECH_HOLD_SECS = 4.0  # "speech" announcements (alarms) wait at most this long for his sentence
+# v8 (TOOL_SLOW_SECS): a "One moment." filler that the user talks over is stale; never say it again after his turn
+NO_RETRY = {"tool_slow"}
 SPOKEN_TIMEOUT_SECS = 30.0  # an announcement that never produced speech counts as done after this
 
 # priorities (higher first)
@@ -380,7 +382,7 @@ class Announcer:
             self._current, self._phase, self._outcome = None, "", None
         if outcome == "interrupted":
             retry = ann.retry_text if ann.mode == "tell" else (ann.retry_text or ann.text)
-            if retry and ann.retries < 1:
+            if retry and ann.retries < 1 and ann.source not in NO_RETRY:
                 ann.retries += 1
                 ann.text = retry
                 logger.info(f"announcement #{ann.seq} ({ann.source}) was cut off; saying it again after his query")

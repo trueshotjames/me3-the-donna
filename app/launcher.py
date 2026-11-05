@@ -121,6 +121,10 @@ def serve_ui(port: int) -> ThreadingHTTPServer:
 
 def open_window(url: str, use_browser: bool) -> None:
     if not use_browser:
+        if sys.platform.startswith("linux"):
+            # WebKitGTK's DMA-BUF renderer draws scanline garbage on the Pi 4 (V3D GPU),
+            # especially under WayVNC. Linux-only, and an env var already set still wins.
+            os.environ.setdefault("WEBKIT_DISABLE_DMABUF_RENDERER", "1")
         try:
             import webview  # pywebview
 

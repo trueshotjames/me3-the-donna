@@ -1,0 +1,41 @@
+{
+ "name": "T5 Look-alike tools A (time-based)",
+ "timeout": 540,
+ "steps": [
+  {
+   "say": "Wake me up at seven tomorrow.",
+   "expect_tool": "create_alarm",
+   "expect_args": {
+    "time": "07:00"
+   }
+  },
+  {
+   "say": "Remind me at seven in the evening to call Sam.",
+   "expect_tool": "create_reminder"
+  },
+  {
+   "say": "Count down three minutes.",
+   "expect_tool": "create_timer"
+  },
+  {
+   "say": "Cancel the timer.",
+   "expect_tool": "cancel_timer"
+  },
+  {
+   "say": "What reminders do I have?",
+   "expect_tool": "list_reminders"
+  },
+  {
+   "say": "Mark the Sam reminder as done.",
+   "expect_tool": "complete_reminder"
+  },
+  {
+   "say": "Delete my alarm."
+  },
+  {
+   "say": "Yes.",
+   "expect_tool": "delete_alarm"
+  }
+ ],
+ "lead_secs": 15
+}

@@ -1,0 +1,40 @@
+{
+ "name": "7 Pause mid-sentence",
+ "steps": [
+  {
+   "parts": [
+    {
+     "say": "Remind me to"
+    },
+    {
+     "silence": 1.5
+    },
+    {
+     "say": "umm"
+    },
+    {
+     "silence": 1.2
+    },
+    {
+     "say": "call mom at six in the evening."
+    }
+   ],
+   "expect_tool": "create_reminder"
+  },
+  {
+   "parts": [
+    {
+     "say": "Turn on the"
+    },
+    {
+     "silence": 1.5
+    },
+    {
+     "say": "kitchen light."
+    }
+   ],
+   "expect_tool": "set_light"
+  }
+ ],
+ "lead_secs": 15
+}

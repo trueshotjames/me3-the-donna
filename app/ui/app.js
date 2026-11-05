@@ -84,15 +84,9 @@
     el._timer = setTimeout(() => el.remove(), TOAST_MS);
   }
 
-  // ---------- clock ----------
-  function tickClock() {
-    const d = new Date();
-    const hh = d.getHours() % 12 || 12, mm = String(d.getMinutes()).padStart(2, "0");
-    $("clock").textContent = `${hh}:${mm}`;
-    $("clock-sec").textContent = `${String(d.getSeconds()).padStart(2, "0")} s · ${d.getHours() < 12 ? "AM" : "PM"}`;
-    $("date").textContent = d.toLocaleDateString(undefined, { weekday: "long", year: "numeric", month: "long", day: "numeric" });
-  }
-  tickClock(); setInterval(tickClock, 1000);
+  // v8: no clock widget (removed for CPU); only timers count down
+  // UI_LITE: a hidden or minimised window does no work, and decorative animations pause with it
+  document.addEventListener("visibilitychange", () => { document.documentElement.classList.toggle("paused", document.hidden); });
 
   // ---------- state ----------
   const LABEL = { starting: "Starting…", idle: "Idle", listening: "Listening…", thinking: "Thinking…", speaking: "Speaking" };
@@ -199,10 +193,13 @@
       case "chat_history": Chat.reset(m.items || []); break;
       case "levels": Meters.update(m); break;
       case "net": Net.update(m); break;
-      case "tool_call": $("tool-line").textContent = `⚙ ${m.name}(${JSON.stringify(m.args || {})})`; Home.busy(m.name, m.args); break;
+      case "tool_call": {  // v9: a short chip ("⚙ control_music · play"), never the raw arguments or result JSON
+        const a = m.args || {}, what = a.action || a.room || a.contact || a.city || "";
+        $("tool-line").textContent = `⚙ ${m.name}${what ? " · " + String(what).slice(0, 30) : ""}`; Home.busy(m.name, m.args); break;
+      }
       case "tool_result": {
         const r = m.result, err = r && typeof r === "object" && r.error;
-        $("tool-line").textContent += ` ${err ? "✗ " + err : "✓ " + (typeof r === "string" ? r : JSON.stringify(r))}`.slice(0, 400);
+        $("tool-line").textContent += ` ${err ? "✗ " + String(err).slice(0, 80) : "✓"}`;
         Home.done(m.name, !err);
         break;
       }
@@ -221,7 +218,7 @@
       case "timer_cancelled": toast("Timer cancelled"); Timers.refresh(); break;
       case "home": Home.update(m); break;
       case "weather": Home.weather(m); break;
-      case "time_told": toast(`🕒 ${m.spoken || m.iso}`); $("clock").classList.add("flash"); setTimeout(() => $("clock").classList.remove("flash"), 1500); break;
+      case "time_told": toast(`🕒 ${m.spoken || m.iso}`); break;
       case "muted": setMic(!!m.muted); break;
       case "latency": if (m.stage === "voice_to_voice") $("latency").textContent = `voice-to-voice ${Math.round(m.ms)} ms`; break;
       case "latency_breakdown": if (m.total_ms != null) $("latency").textContent = `voice-to-voice ${Math.round(m.total_ms)} ms`; break;
@@ -299,21 +296,24 @@
     set(key, db) {
       const now = performance.now(), dt = (now - (this["t_" + key] || now)) / 1000; this["t_" + key] = now;
       this.peaks[key] = Math.max(db, this.peaks[key] - 12 * dt);  // peak hold falls 12 dB/s
-      $(`${key}-cover`).style.transform = `scaleX(${1 - this.pct(db)})`;
-      $(`${key}-peak`).style.left = `${this.pct(this.peaks[key]) * 100}%`;
-      $(`${key}-db`).textContent = db <= -89 ? "silent" : `${Math.round(db)} dB`;
+      const cover = `scaleX(${(1 - this.pct(db)).toFixed(2)})`, peak = `${(this.pct(this.peaks[key]) * 100).toFixed(1)}%`;
+      const label = db <= -89 ? "silent" : `${Math.round(db)} dB`, c = (this.cache ||= {})[key] ||= {};
+      if (c.cover !== cover) { $(`${key}-cover`).style.transform = cover; c.cover = cover; }
+      if (c.peak !== peak) { $(`${key}-peak`).style.left = peak; c.peak = peak; }
+      if (c.label !== label) { $(`${key}-db`).textContent = label; c.label = label; }
     },
     update(m) {
-      this.last = performance.now();
+      this.last = performance.now(); this.cleared = false;
       this.set("mic", Math.max(m.mic_db, -90));
       this.set("out", Math.max(m.out_db, -90));
     },
     stale() {
       if (performance.now() - this.last < 1500) return;
-      for (const k of ["mic", "out"]) { $(`${k}-cover`).style.transform = "scaleX(1)"; $(`${k}-peak`).style.left = "0"; $(`${k}-db`).textContent = "—"; }
+      if (this.cleared) return; this.cleared = true; this.cache = {};
+      for (const k of ["mic", "out"]) { $(`${k}-cover`).style.transform = "scaleX(1)"; $(`${k}-peak`).style.left = "0"; $(`${k}-db`).textContent = "—"; this.peaks[k] = -90; }
     },
   };
-  setInterval(() => Meters.stale(), 1000);
+  setInterval(() => { if (!document.hidden) Meters.stale(); }, 2000);
 
   // ---------- internet status ----------
   const Net = {
@@ -478,7 +478,7 @@
       }
     },
   };
-  setInterval(() => Timers.tick(), 500);
+  setInterval(() => { if (!document.hidden && Timers.items.length) Timers.tick(); }, 500);
 
   // ---------- the house: simulated devices, one widget each (events: home, weather, tool_call/result) ----------
   const Home = {
@@ -495,7 +495,7 @@
       const dev = this.DEV[tool]; if (!dev) return;
       let label = this.LABEL[tool] || tool;
       if (tool === "control_music" && args && args.action) label = `${args.action}${args.query ? " " + args.query : ""}`;
-      if (tool === "set_light" && args) label = `${args.room || "all"}${args.on === false ? " off" : args.on ? " on" : ""}${args.brightness != null ? " " + args.brightness + "%" : ""}${args.color ? " " + args.color : ""}`;
+      if (tool === "set_light" && args) label = `${args.room || "lights"}${args.on === false ? " off" : args.on ? " on" : ""}${args.brightness != null ? " " + args.brightness + "%" : ""}${args.color ? " " + args.color : ""}`;
       if (tool === "set_thermostat" && args) label = `${args.target != null ? args.target + "°" : ""} ${args.mode || ""}`.trim();
       for (const el of this.devs(dev)) { el.classList.remove("ok", "fail"); el.classList.add("busy"); el.querySelector(".dev-busy").textContent = `⟳ ${label}`; }
     },
@@ -644,7 +644,7 @@
     callTick() {
       const c = this.call; if (!c) { $("call-status").textContent = 'Try: "call Mom"'; return; }
       if (c.state === "ringing") $("call-status").textContent = "Calling…";
-      else if (c.state === "connected") $("call-status").textContent = `Connected · ${Timers.fmt(Date.now() / 1000 - c.connected_at)}`;
+      else if (c.state === "connected") $("call-status").textContent = "Connected";
       else $("call-status").textContent = `Call ended${c.duration_s ? " · " + Timers.fmt(c.duration_s) : ""}`;
     },
     // ---- weather: the last answer from get_weather
@@ -673,7 +673,7 @@
       }
     },
   };
-  setInterval(() => { Home.playerTick(); Home.callTick(); }, 500);
+  // v8: no ticking song position or call duration; both update when the backend sends a change
   document.querySelectorAll("[data-media]").forEach(b => b.onclick = () => { Sound.ensure(); send({ type: "media", action: b.dataset.media }); });
   $("vol").oninput = () => { $("vol-val").textContent = $("vol").value; };
   $("vol").onchange = () => send({ type: "media", action: "set_volume", value: Number($("vol").value) });

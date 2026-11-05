@@ -13,6 +13,7 @@ Nothing here touches hardware; see devices/hardware.py for the real backends.
 
 from __future__ import annotations
 
+import os
 import random
 import time
 from typing import Any, Callable
@@ -60,8 +61,12 @@ def parse_color(text: str | None) -> tuple[str, str] | None:
 class SimLights(LightDevice):
     backend = "sim"
 
-    def __init__(self, rooms: list[str] | None = None, *, load: Load | None = None, persist: Persist | None = None):
+    def __init__(self, rooms: list[str] | None = None, *, load: Load | None = None, persist: Persist | None = None,
+                 default_room: str | None = None):
         self._rooms = [r.strip().lower() for r in (rooms or DEFAULT_ROOMS) if r.strip()]
+        # "lights on" with no room named = this room (LIGHT_DEFAULT_ROOM, else the first room); "all" = every room
+        want = (default_room if default_room is not None else os.getenv("LIGHT_DEFAULT_ROOM", "")).strip().lower()
+        self._default = next((r for r in self._rooms if want and (r == want or want in r)), self._rooms[0])
         self._persist = persist or (lambda name, state: None)
         saved = (load(self.name) if load else None) or {}
         self._lights: dict[str, dict[str, Any]] = {}
@@ -79,8 +84,10 @@ class SimLights(LightDevice):
         return list(self._rooms)
 
     def _match(self, room: str | None) -> list[str]:
-        r = (room or "all").strip().lower()
-        if r in ("", "all", "every", "everywhere", "the house", "house", "all lights", "all the lights", "lights"):
+        r = (room or "").strip().lower()
+        if r in ("", "default", "light", "lights", "the light", "the lights"):
+            return [self._default]
+        if r in ("all", "every", "everywhere", "the house", "house", "all lights", "all the lights", "every light", "every room"):
             return list(self._rooms)
         for name in self._rooms:  # "the kitchen light" -> kitchen
             if name == r or name in r or r in name:
@@ -119,6 +126,10 @@ MODES = ("heat", "cool", "auto", "off")
 RATE_C_PER_S = 0.05  # 3 degrees a minute: fast enough to watch in a demo
 AMBIENT_C = 24.0  # where the room drifts when the thermostat is off (a warm country)
 AMBIENT_RATE_C_PER_S = 0.01
+# v8 (King): THERMOSTAT_FIXED=1 (default): a plain simulation, the room stays at FIXED_ROOM_C and never warms or cools,
+# so the house state (and the UI) does not change every few seconds; setting the target or mode still works
+FIXED = os.environ.get("THERMOSTAT_FIXED", "1") not in ("0", "false", "")
+FIXED_ROOM_C = 24.0
 
 
 class SimThermostat(ThermostatDevice):
@@ -130,7 +141,7 @@ class SimThermostat(ThermostatDevice):
         self.unit = "F" if str(unit).upper().startswith("F") else "C"
         self._s: dict[str, Any] = {
             "target": float(saved.get("target", 22.0)),
-            "current": float(saved.get("current", 24.0)),
+            "current": FIXED_ROOM_C if FIXED else float(saved.get("current", 24.0)),
             "mode": str(saved.get("mode", "auto")),
             "min": 10.0,
             "max": 32.0,
@@ -143,6 +154,8 @@ class SimThermostat(ThermostatDevice):
         s = self._s
         if s["mode"] == "off":
             return "off"
+        if FIXED:
+            return "idle"
         diff = s["target"] - s["current"]
         if abs(diff) < 0.15:
             return "idle"
@@ -153,6 +166,8 @@ class SimThermostat(ThermostatDevice):
         return "idle"
 
     def tick(self) -> bool:
+        if FIXED:
+            return False
         s = self._s
         now = _now()
         dt = max(0.0, min(60.0, now - s["t"]))

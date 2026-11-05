@@ -1,4 +1,4 @@
-"""Hermes client and task manager against a fake Hermes API server (httpx MockTransport).
+﻿"""Hermes client and task manager against a fake Hermes API server (httpx MockTransport).
 
     .venv\\Scripts\\python -m pytest tests -q
 """
@@ -181,7 +181,7 @@ async def test_task_manager_nudge_and_cancel():
     tm.attach(ann)
     task = tm.delegate("slow thing")
     await asyncio.sleep(0.15)
-    assert task.nudged and len(agg.frames) == 1 and "still running" in agg.frames[0].messages[0]["content"]
+    assert not task.nudged and not agg.frames  # v8: no update without a fresh Hermes step (and never before 60 s)
     assert await tm.cancel() is True
     assert task.state == "cancelled"
     assert tm.latest() is task
@@ -203,20 +203,28 @@ async def test_tools_are_registered_and_callable():
             registered[name] = handler
 
     schemas = tm.register(LLM())
-    assert [s.name for s in schemas] == ["delegate", "task_status"]
-    assert set(registered) == {"delegate", "task_status"}
+    assert [s.name for s in schemas] == ["delegate", "task_status", "cancel_task", "change_task"]  # v2
+    assert set(registered) == {"delegate", "task_status", "cancel_task", "change_task"}
+    spoken = []
+
+    class FakeLLM:
+        async def push_frame(self, frame, *a):
+            if hasattr(frame, "text"):
+                spoken.append(frame.text)
 
     results = []
 
     class Params:
         def __init__(self, arguments):
             self.arguments = arguments
+            self.llm = FakeLLM()
 
         async def result_callback(self, result, properties=None):
             results.append(result)
 
     await registered["delegate"](Params({"task": "look up something"}))
     assert results[-1]["task_id"] == "t1" and results[-1]["state"] == "running"
+    assert spoken == ["On it. That will take a minute or two; I'll tell you when I have it."]  # v2: no second LLM call
     await registered["task_status"](Params({"task_id": "latest"}))
     assert results[-1]["task_id"] == "t1"
     await registered["delegate"](Params({"task": ""}))
@@ -328,3 +336,105 @@ async def test_stuck_flags_expire(monkeypatch):
     assert tr.busy
     await asyncio.sleep(0.15)
     assert not tr.busy and tr.state() == "user=False bot=False llm=False calls=[] turn=False"
+
+
+# ---- v8: delegate briefing and the still-running update (King, 5 Nov) ----
+
+class _SayLog:
+    def __init__(self):
+        self.said = []
+
+    def say(self, text, source, **kw):
+        self.said.append((text, kw))
+
+    def tell(self, text, source, **kw):
+        self.said.append((text, kw))
+
+
+def _task_mgr(monkeypatch, t_start_ago: float):
+    import time as _time
+    from assistant import tasks as tasks_mod
+    from assistant.tasks import Task, TaskManager
+
+    tm = TaskManager(client=None)
+    log = _SayLog()
+    tm._announcer = log
+    task = Task(id="t1", text="Find tonight's Lakers score", kind="research")
+    task.t_start = _time.time() - t_start_ago
+    task.topic = "tonight's Lakers score"
+    return tm, task, log, tasks_mod
+
+
+def test_v8_update_never_before_60_seconds(monkeypatch):
+    import time as _time
+    tm, task, log, _ = _task_mgr(monkeypatch, 40)
+    task.progress, task.t_progress = "searching the web", _time.time()
+    tm._maybe_nudge(task)
+    assert not task.nudged and not log.said
+
+
+def test_v8_update_needs_a_fresh_hermes_step(monkeypatch):
+    import time as _time
+    tm, task, log, _ = _task_mgr(monkeypatch, 90)
+    task.progress, task.t_progress = "searching the web", _time.time() - 70  # a step from long ago
+    tm._maybe_nudge(task)
+    assert not task.nudged and not log.said
+    task.t_progress = None  # no step at all
+    task.progress = ""
+    tm._maybe_nudge(task)
+    assert not log.said
+
+
+def test_v8_update_names_the_request_and_the_new_step(monkeypatch):
+    import time as _time
+    tm, task, log, _ = _task_mgr(monkeypatch, 65)
+    task.progress, task.t_progress = "searching the web for Lakers score tonight", _time.time()
+    tm._maybe_nudge(task)
+    assert task.nudged and len(log.said) == 1
+    text, kw = log.said[0]
+    assert text == "Still on tonight's Lakers score; I'm searching the web for Lakers score tonight now."
+    assert kw["still_wanted"]() is True
+    tm._maybe_nudge(task)
+    assert len(log.said) == 1  # at most once
+
+
+def test_v8_progress_text_uses_the_search_words_only_when_clean():
+    from assistant.tasks import _progress_text
+    assert _progress_text("web_search", "Lakers score tonight") == "searching the web for Lakers score tonight"
+    assert _progress_text("web_search", "https://espn.com/x") == "searching the web"
+    assert _progress_text("write_file") == "working with files"
+
+
+@pytest.mark.asyncio
+async def test_v8_delegate_speaks_the_briefing():
+    fake = FakeHermes(delay=1.0)
+    client = make_client(fake)
+    tm = TaskManager(client)
+    tm.attach(make_announcer(FakeAggregator()))
+    registered = {}
+
+    class LLM:
+        def register_function(self, name, handler, **kw):
+            registered[name] = handler
+
+    tm.register(LLM())
+    spoken, results = [], []
+
+    class FakeLLM:
+        async def push_frame(self, frame, *a):
+            if hasattr(frame, "text"):
+                spoken.append(frame.text)
+
+    class Params:
+        def __init__(self, arguments):
+            self.arguments, self.llm = arguments, FakeLLM()
+
+        async def result_callback(self, result, properties=None):
+            results.append(result)
+
+    brief = "I'll look up tonight's Lakers score; give me about half a minute."
+    await registered["delegate"](Params({"task": "Lakers score tonight", "kind": "lookup", "briefing": brief,
+                                         "topic": "tonight's Lakers score"}))
+    assert spoken == [brief] and tm.latest().topic == "tonight's Lakers score"
+    await tm.close()
+    await client.close()

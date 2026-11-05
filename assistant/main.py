@@ -31,6 +31,9 @@ import time
 from loguru import logger
 
 from assistant.config import DATA_DIR, ROOT, Config, load
+from assistant.engagement import addressed_elsewhere
+
+LATENCY_SANE_SECS = 60.0  # v9: a voice-to-voice "latency" above this is a missed turn start, not a measurement
 
 # ----------------------------------------------------------------------------- helpers
 
@@ -170,7 +173,8 @@ class Assistant:
         from assistant.mcp_bridge import stdio_params
         from assistant.memory import Memory, MemoryStore, Summarizer
         from assistant.processors import PassFilter
-        from assistant.prompts import system_prompt
+        from assistant.prompts import system_prompt, turn_note
+        from assistant.fast_confirm import recent_delete_note
         from assistant.scheduler import Scheduler
         from assistant.settings_ops import SettingsOps
         from assistant.services.hermes_client import HermesClient, HermesError
@@ -239,8 +243,60 @@ class Assistant:
         METRICS.on_problem = lambda msg: bus.emit("warning", message=msg, kind="turn_problem")
         METRICS.net_info = self.net.turn_block
 
+        # v6: near-voice gate (VOICE_GATE) and per-feature switches; see config.py
+        from assistant import fast_confirm as _fc, tasks as _tasks
+        from assistant.mcp_bridge import server_params
+        from assistant.voice_gate import VoiceGate
+
+        _fc.THERMO_GUARD = cfg.v6_fixes
+        _tasks.FIXES = cfg.v6_fixes
+        self.voice_gate = None
+        from assistant.calibrate import load_calibration
+        from assistant.music import MUSIC
+
+        calibration = load_calibration(cfg.calibration_file)
+        MUSIC.enabled = cfg.music_duck
+        if cfg.voice_gate or cfg.voice_gate_speaker == "1":
+            self.voice_gate = VoiceGate(
+                calibration=calibration,
+                music_gap_db=cfg.music_gap_db,
+                music_speaker_min=cfg.music_speaker_min,
+                enabled=cfg.voice_gate,
+                gap_db=cfg.voice_gate_db,
+                seed_db=cfg.voice_gate_seed_db,
+                speaker_mode=cfg.voice_gate_speaker,
+                speaker_min=cfg.voice_gate_speaker_min,
+                sample_rate=cfg.audio_in_sample_rate,
+            )
+        logger.info(
+            f"v6 switches: LLM_EOT={cfg.llm_eot} LLM_EOT_PARTIAL={cfg.llm_eot_partial} SMART_TURN={cfg.smart_turn}"
+            f" VOICE_GATE={cfg.voice_gate} (speaker {cfg.voice_gate_speaker}) FLOOR_CONTROL={cfg.floor_control}"
+            f" MCP_TRANSPORT={cfg.mcp_transport} V6_FIXES={cfg.v6_fixes} SPOKEN_HISTORY={cfg.spoken_history}"
+            f" DANGLING_HOLD_SECS={cfg.dangling_hold_secs} EOT_CHECK={cfg.eot_check}"
+        )
+        logger.info(
+            f"v7 switches: DUCK_BARGE_IN={cfg.duck_barge_in} (conf {cfg.duck_conf}, {cfg.duck_frames} frames, decide"
+            f" {cfg.duck_decide_secs} s, pace {cfg.duck_pace}) EOT_ADAPTIVE={cfg.eot_adaptive}"
+            f" (statement hold {cfg.statement_hold_secs} s) LLM_HEDGE_SECS={cfg.llm_hedge_secs} META_FILTER={cfg.meta_filter}"
+        )
+        logger.info(
+            f"v8 switches: VAD_HOOK_FILTER={cfg.vad_hook_filter} WEATHER_DIRECT={cfg.weather_direct}"
+            f" SPEAKING_RATE={cfg.speaking_rate} TOOL_SLOW_SECS={cfg.tool_slow_secs} SIDE_TALK_RULE={cfg.side_talk_rule}"
+            f" V8_FIXES={cfg.v8_fixes}"
+        )
+        # v7 (DUCK_BARGE_IN): her audio pauses on the user's speech onset while the STT service decides
+        self.duck = None
+        if cfg.duck_barge_in:
+            from assistant.duck import Duck
+
+            self.duck = Duck(pace=cfg.duck_pace, max_secs=cfg.duck_max_secs)
+            self.duck.install(transport.output())
+        import assistant.processors as _proc
+
+        _proc.META = cfg.meta_filter
+
         self.stt = stt = stt or MCPSTTService(
-            server_params=stdio_params("mcp_servers.asr.server"),
+            server_params=server_params("mcp_servers.asr.server", cfg.mcp_transport),
             sample_rate=cfg.audio_in_sample_rate,
             push_interval_ms=cfg.asr_push_ms,
             eot_threshold=cfg.flux_eot_threshold,
@@ -252,16 +308,43 @@ class Assistant:
             preroll_ms=cfg.preroll_ms,
             bot_hangover_secs=cfg.bot_hangover_secs,
             gate_noise_tail_secs=cfg.gate_noise_tail_secs,
+            smart_turn=cfg.smart_turn,
+            smart_turn_threshold=cfg.smart_turn_threshold,
+            vad_stop_secs=cfg.vad_stop_secs,
+            smart_turn_threads=cfg.smart_turn_threads,
+            dangling_hold_secs=cfg.dangling_hold_secs,
+            unsure_hold_p=cfg.unsure_hold_p,
+            unsure_hold_secs=cfg.unsure_hold_secs,
+            unsure_hold_min_words=cfg.unsure_hold_min_words,
+            llm_eot=cfg.llm_eot,
+            llm_eot_partial=cfg.llm_eot_partial,
+            llm_wait_hold_secs=cfg.llm_wait_hold_secs,
+            voice_gate=self.voice_gate,
+            floor_control=cfg.floor_control,
+            floor_max_defer_secs=cfg.floor_max_defer_secs,
+            duck=self.duck,
+            duck_conf=cfg.duck_conf,
+            duck_frames=cfg.duck_frames,
+            duck_min_volume=cfg.vad_min_volume,
+            duck_decide_secs=cfg.duck_decide_secs,
+            duck_no_turn_secs=cfg.duck_no_turn_secs,
+            duck_max_secs=cfg.duck_max_secs,
+            eot_adaptive=cfg.eot_adaptive,
+            statement_hold_secs=cfg.statement_hold_secs,
         )
+        if (self.duck is not None or cfg.music_duck) and hasattr(stt, "vad_frame"):
+            vad.on_frame = stt.vad_frame  # v9: also while music plays, to duck it on a near voice
+            stt.vad_hook_filter = cfg.vad_hook_filter
 
         self.tts = tts = MCPTTSService(
-            server_params=stdio_params("mcp_servers.tts.server"),
+            server_params=server_params("mcp_servers.tts.server", cfg.mcp_transport),
             voice=cfg.tts_voice,
             server_sample_rate=cfg.tts_sample_rate,
             playout_enabled=cfg.tts_playout,
             playout_start_ms=cfg.tts_playout_start_ms,
             playout_max_ms=cfg.tts_playout_max_ms,
             playout_max_hold_ms=cfg.tts_playout_max_hold_ms,
+            trim_lead_max_ms=cfg.tts_trim_lead_max_ms,
         )
 
         async def on_rate_limited(retry_after: float, info: dict) -> None:
@@ -300,6 +383,18 @@ class Assistant:
             history_messages=cfg.llm_history_messages,
             on_rate_limited=on_rate_limited,
             on_messages=self.memory.observe if self.memory else None,
+            # v2: time and voice hint ride on the latest user message, so the system prompt stays cacheable
+            turn_note=lambda: turn_note(
+                self.hint.last_hint if self.hint is not None else None,
+                self.tasks.note() if self.tasks is not None else None,
+                recent_delete_note(),
+            ),
+            first_token_timeout_secs=cfg.llm_first_token_timeout_secs,
+            hedge_secs=cfg.llm_hedge_secs,
+            # v5: "Kayla, you're talking to the radio." -> the turn note asks for <pass/> (contacts are not strangers)
+            engagement=lambda text: addressed_elsewhere(
+                text, cfg.assistant_name, ("Mom", "Dad", "Alex", "Sam", "Work", "Reyes", "Dr")
+            ),
             settings=GroqLLMService.Settings(
                 model=cfg.llm_model,
                 temperature=cfg.llm_temperature,
@@ -311,10 +406,40 @@ class Assistant:
             ),
         )
         logger.info(f"fast LLM: {cfg.llm_model} at {cfg.llm_base_url} {cfg.llm_extra_body or ''}")
+        if cfg.llm_eot and not cfg.smart_turn and hasattr(stt, "llm_verdict"):
+            # v6: the first output of an early (speculative) reply decides the end of turn
+            llm.on_verdict = stt.llm_verdict
+            llm.wait_note = True
+            if cfg.eot_check == "separate":
+                # v6 Pi run: <wait/> inside the answer request suppressed tool calls; a parallel check decides instead
+                from assistant.eot_check import CutOffCheck
+
+                llm.wait_note = False
+                llm.cut_check = CutOffCheck(
+                    llm._client, model=cfg.eot_check_model, extra_body=cfg.llm_extra_body,
+                    reasoning_effort=cfg.llm_reasoning_effort, timeout_secs=cfg.eot_check_timeout_secs,
+                    adaptive=cfg.eot_adaptive,
+                )
 
         self.tools_client = MCPClient(StreamableHttpParameters(url=cfg.tools_mcp_url), tools_filter=LLM_TOOLS)
         tools = await self.tools_client.tools()
         standard_tools = list(tools.standard_tools)
+        if cfg.fast_confirm:
+            import assistant.fast_confirm as _fcm
+            from assistant.fast_confirm import wrap_tools
+
+            _fcm.WEATHER_DIRECT = cfg.weather_direct
+            _fcm.TOOL_SLOW_SECS = cfg.tool_slow_secs
+            _fcm.V8_FIXES = cfg.v8_fixes
+
+            async def on_tool_slow(name: str) -> None:
+                bus.emit("tool_slow", tool=name, seconds=cfg.tool_slow_secs)
+                if self.scheduler is not None:
+                    await self.scheduler.say_now("One moment.", source="tool_slow")
+
+            _fcm.ON_SLOW = on_tool_slow
+            # v1: action tools speak their confirmation directly (no second LLM call)
+            standard_tools = wrap_tools(standard_tools, self.tools_client)
 
         # Hermes: background tasks through delegate / task_status. Skipped (with a warning) when the
         # API server is not reachable, so the assistant still runs without it.
@@ -329,6 +454,7 @@ class Assistant:
                     max_secs=cfg.hermes_max_secs,
                     on_event=bus.emit,
                     on_record=METRICS.task_record,
+                    workdir=cfg.hermes_workdir or None,
                 )
                 standard_tools += self.tasks.register(llm)
             except HermesError as e:
@@ -337,6 +463,12 @@ class Assistant:
                 self.hermes = None
         if self.memory is not None:
             standard_tools += self.memory.register(llm)
+        if cfg.speaking_rate:
+            from assistant.speaking_rate import SpeakingRate
+
+            # v8 (SPEAKING_RATE): "speak slower" changes Aura's speed through the TTS MCP server
+            self.rate = SpeakingRate(tts)
+            standard_tools += self.rate.register(llm)
         logger.info(f"LLM tools: {[t.name for t in standard_tools]}")
 
         self._prompt_args = dict(
@@ -344,11 +476,24 @@ class Assistant:
             user_name=cfg.user_name,
             engagement_window_secs=cfg.engagement_window_secs,
             delegate=self.tasks is not None,
+            wait_rule=bool(getattr(llm, "on_verdict", None)),  # kept with EOT_CHECK=separate: same prompt as the Pi run
+            fixes=cfg.v6_fixes,
+            speaking_rate=cfg.speaking_rate,
+            side_talk=cfg.side_talk_rule,
         )
         base_prompt = system_prompt(**self._prompt_args, memory=self.memory.note if self.memory else None)
         self._context = context = LLMContext(
             messages=[{"role": "system", "content": base_prompt}], tools=ToolsSchema(standard_tools)
         )
+        if hasattr(stt, "prev_reply"):
+            # v7 (EOT_ADAPTIVE): an answer to her question ("Sam.", "Ten minutes.") is never held as a statement
+            def prev_reply() -> str:
+                for m in reversed(context.get_messages()):
+                    if isinstance(m, dict) and m.get("role") == "assistant" and isinstance(m.get("content"), str):
+                        return m["content"]
+                return ""
+
+            stt.prev_reply = prev_reply
         aggregators = LLMContextAggregatorPair(
             context,
             user_params=LLMUserAggregatorParams(user_turn_stop_timeout=cfg.user_turn_stop_timeout),
@@ -386,6 +531,10 @@ class Assistant:
             extra_processors_in, extra_processors_llm = [emotion], [self.hint]
             logger.info(f"voice tone hints on ({cfg.emotion_model.name}, thresholds {cfg.emotion_thresholds})")
 
+        # v8 (PLAYED_TEXT): her sentences reach the chat and the spoken history only after they have played
+        from assistant.processors import PlayedTextTap
+
+        played_tap = PlayedTextTap() if cfg.played_text else None
         pipeline = Pipeline(
             [
                 transport.input(),
@@ -396,15 +545,37 @@ class Assistant:
                 *extra_processors_llm,
                 llm,
                 activity,
-                PassFilter(),
+                PassFilter(on_pass=self._on_pass),
                 tts,
                 transport.output(),
+                *([played_tap] if played_tap else []),
                 aggregators.assistant(),
             ]
         )
 
         latency = UserBotLatencyObserver()
         ui_observer = UIEventObserver(bus, on_tool_result=scheduler.on_tool_result, chat=self.chat)
+        from assistant.reprompt import Reprompter
+
+        # v4: a question left unanswered is asked once more after REPROMPT_SECS of silence (0 = off)
+        self.reprompter = Reprompter(
+            lambda text: scheduler.say(text, source="reprompt", wait="turn", ttl=5), secs=cfg.reprompt_secs
+        )
+
+        # v6 (SPOKEN_HISTORY): her spoken replies back into the history when Pipecat dropped them (assistant/spoken.py)
+        observers = [latency, ui_observer, TurnMetricsObserver(), self.levels, self.reprompter]
+        self.spoken = None
+        if cfg.spoken_history and hasattr(llm, "spoken"):
+            from assistant.spoken import SpokenHistory
+
+            self.spoken = llm.spoken = SpokenHistory(context)
+            observers.append(self.spoken)
+        if played_tap is not None:
+            ui_observer.played_tap = True
+            played_tap.listeners.append(ui_observer.played)
+            if self.spoken is not None:
+                self.spoken.played_tap = True
+                played_tap.listeners.append(self.spoken.played)
 
         self.worker = worker = PipelineWorker(
             pipeline,
@@ -414,7 +585,7 @@ class Assistant:
                 enable_metrics=True,
                 enable_usage_metrics=True,
             ),
-            observers=[latency, ui_observer, TurnMetricsObserver(), self.levels],
+            observers=observers,
             idle_timeout_secs=None,  # always-on assistant; never cancel for silence
         )
         announcer.attach(worker, aggregators.assistant())
@@ -426,11 +597,19 @@ class Assistant:
         @latency.event_handler("on_latency_measured")
         async def on_latency(observer, seconds: float):
             ms = round(seconds * 1000, 1)
+            if seconds > LATENCY_SANE_SECS:
+                logger.warning(f"voice-to-voice latency {ms} ms not reported: the turn start was missed (a barge-in)")
+                return
             bus.emit("latency", stage="voice_to_voice", ms=ms)
             logger.info(f"voice-to-voice latency: {ms} ms")
 
         @latency.event_handler("on_latency_breakdown")
         async def on_breakdown(observer, breakdown):
+            if breakdown.total_secs > LATENCY_SANE_SECS:
+                # v9: King's Spotify run showed "232465 ms": Pipecat counted from client connect because the turn began
+                # as a barge-in and its start was missed. Not a real latency; leave it out of the UI and the log file.
+                logger.warning(f"latency breakdown skipped: total {breakdown.total_secs:.1f} s (turn start missed)")
+                return
             for line in breakdown.turn_contribution_lines():
                 logger.info(f"  {line}")
             record = {
@@ -458,6 +637,13 @@ class Assistant:
 
         return worker
 
+    async def _on_pass(self) -> None:
+        """v9: the LLM passed on a turn (TV, lyrics, side talk): the screen goes back to idle instead of "Thinking"."""
+        if self.bus is not None:
+            from assistant.ui_events import emit_state
+
+            emit_state(self.bus, "idle")
+
     def _set_memory_note(self, note: str) -> None:
         """A new memory note is ready: rebuild the system prompt in place (no restart, no pipeline change)."""
         from assistant.prompts import system_prompt
@@ -477,6 +663,21 @@ class Assistant:
         if self.memory:
             await self.memory.start()
         self.bus.emit("state", state="idle")
+        if self.cfg.music_duck and self.tools_bridge is not None:
+            from assistant.music import MUSIC
+
+            tools = self.tools_bridge
+
+            async def duck(on: bool, level: int):
+                res = await tools.call_json("duck_music", {"on": on, "level": level}, timeout=5)
+                if isinstance(res, dict) and res.get("error"):
+                    raise RuntimeError(res["error"])
+                return res
+
+            MUSIC.attach(duck, level=self.cfg.music_duck_level, restore_secs=self.cfg.music_restore_secs)
+            MUSIC.start()
+            logger.info(f"music-aware listening on: duck to {self.cfg.music_duck_level}%, restore after "
+                        f"{self.cfg.music_restore_secs} s idle; gate {'calibrated' if self.voice_gate is not None and self.voice_gate.calibrated else 'NOT calibrated (python -m assistant.calibrate)'}")
         if self.levels:
             self.levels.start()
         logger.info("assistant ready: say something")
@@ -505,6 +706,12 @@ class Assistant:
             logger.info(f"ASR stats: {self.stt.stats}")
         if getattr(self.tts, "stats", None) is not None:
             logger.info(f"TTS stats: {self.tts.stats}")
+        if getattr(self, "duck", None) is not None:
+            logger.info(f"duck stats: {self.duck.stats}")
+        if getattr(self.llm, "hedges", None) and self.llm.hedges.get("fired"):
+            logger.info(f"LLM hedge stats: {self.llm.hedges}")
+        if getattr(self.llm, "cut_check", None) is not None:
+            logger.info(f"cut-off check stats: {self.llm.cut_check.stats}")
         if self.emotion:
             logger.info(f"voice tone stats: {self.emotion.stats}")
         if self.tasks:

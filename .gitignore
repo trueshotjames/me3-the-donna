@@ -1,7 +1,33 @@
 # Benchmark tool for classmates lives in its own repo; keep it out of this one.
 fd-benchmark/
 fd-benchmark.zip
-fd-benchmark/
-fd-benchmark.zip
+
+# Secrets: never commit. (Git has no trailing comments: a "# ..." after a pattern becomes part of it.)
+.env
+.env.*
+!.env.example
+# data/ is runtime state: databases, memory, calibration (your voice print), Spotify token,
+# Telegram login (data/telegram.session), browser profile. All of it stays on the machine.
+data/
+pi-logs/
+
+# Local environments, caches, logs, backups
+.venv/
 .venv-export/
+__pycache__/
+*.pyc
 .pytest_cache/
+app/logs/
+backup/
+versions/
+*.lnk
+
+# Run outputs (regenerate with the benchmark scripts)
+benchmark/audio_results/
+benchmark/replay_results/
+benchmark/scenario_tests/results/
+
+# Windows build of go-librespot (download it per tools/go-librespot/README.md)
+tools/go-librespot/*.exe
+tools/go-librespot/*.dll
+tools/go-librespot/go-librespot

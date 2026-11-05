@@ -109,6 +109,8 @@ class Turn:
     interrupted_at: float | None = None  # barge-in detected while she was speaking
     interrupted_stop: float | None = None
     voice: dict | None = None  # Wav2Small scores used for this turn's prompt, plus the hint line
+    smart_turn: list[dict] = field(default_factory=list)  # v2: {t, p, ms, audio_s} per Smart Turn run
+    flux_after_local_ms: float | None = None  # v2: Flux's EndOfTurn this long after the local (Smart Turn) end
     closed: bool = False
 
 
@@ -126,6 +128,7 @@ class Recorder:
         self._finalize_task: asyncio.Task | None = None
         self._pending_vad_start: float | None = None
         self._pending_gate: tuple[float, str, float] | None = None
+        self.tts_in_flight = 0  # v2: sentences still being synthesized (a slow one must not close the record)
         self.on_problem: Callable[[str], None] | None = None  # UI warning for a turn that failed quietly
         self.net_info: Callable[[Turn, dict], dict | None] | None = None  # NetMonitor.turn_block (assistant/netstatus.py)
 
@@ -250,8 +253,22 @@ class Recorder:
             self._reply_turn().llm_calls.append(call)
         return call
 
+    def tts_begin(self) -> None:
+        self.tts_in_flight += 1
+
     def tts_sentence(self, record: dict) -> None:
+        self.tts_in_flight = max(0, self.tts_in_flight - 1)
         self._reply_turn().tts.append(record)
+
+    def smart_turn(self, t: float, p: float, ms: float, audio_s: float) -> None:
+        if self.current is not None and not self.current.closed:
+            self.current.smart_turn.append({"t": t, "p": round(p, 3), "ms": round(ms, 1), "audio_s": round(audio_s, 2)})
+
+    def flux_after_local(self, t: float, saved_ms: float, transcript: str) -> None:
+        turn = self.current
+        if turn is not None and turn.eot is not None and turn.eot_trigger == "smart_turn":
+            turn.flux_after_local_ms = round(saved_ms, 1)
+            turn.flux_final_transcript = transcript
 
     def voice_hint(self, hint: str | None, scores: dict | None) -> None:
         """Called by the VoiceHintInjector just before each LLM run."""
@@ -338,6 +355,11 @@ class Recorder:
                 # A follow-up LLM call can still be waiting (Groq 429 after "One moment."): keep the
                 # record open for it, up to 30 s after she stopped.
                 if self._llm_in_flight(turn) and time.time() - (turn.bot_stopped or 0) < 30:
+                    self._schedule_finalize(1.0)
+                    return
+                # v2: a sentence still on its way from a slow TTS belongs to this reply (v1 closed the record
+                # 1.5 s after she stopped, so a late sentence became "no reply" plus a stray bot turn)
+                if self.tts_in_flight > 0 and time.time() - (turn.bot_stopped or turn.eot or 0) < 30:
                     self._schedule_finalize(1.0)
                     return
                 self._finalize(turn)
@@ -662,6 +684,13 @@ class Recorder:
             if turn.interrupted_at
             else None,
             "voice": turn.voice,
+            "smart_turn": {
+                "runs": turn.smart_turn,
+                "flux_eot_after_local_ms": turn.flux_after_local_ms,
+                "flux_final_transcript": getattr(turn, "flux_final_transcript", None),
+            }
+            if (turn.smart_turn or turn.flux_after_local_ms is not None)
+            else None,
         }
         if kept and not e2e and turn.kind == "user" and T5 is not None:
             record["note"] = "no reply audio (passed, interrupted or failed)"

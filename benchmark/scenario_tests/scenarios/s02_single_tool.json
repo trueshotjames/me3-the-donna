@@ -1,0 +1,14 @@
+{
+ "name": "2 Single tool call",
+ "steps": [
+  {
+   "say": "What's the weather in Berlin?",
+   "expect_tool": "get_weather"
+  },
+  {
+   "say": "Turn on the kitchen light.",
+   "expect_tool": "set_light"
+  }
+ ],
+ "lead_secs": 15
+}

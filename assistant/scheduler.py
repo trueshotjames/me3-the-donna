@@ -82,6 +82,8 @@ class Scheduler:
         self._last_timer_announce: dict[int, float] = {}
         self._home_version: int | None = None  # last home_version seen in poll_due
         self._muted = False
+        self._call_muted = False  # muted because a Telegram call is ringing/connected (undone when it ends)
+        self._call_seen: float | None = None  # started_at of the call already handled (a manual unmute sticks)
         self._settings = None  # SettingsOps: summarize / VAD calibration / config (assistant/settings_ops.py)
 
     def set_settings(self, settings) -> None:
@@ -223,7 +225,35 @@ class Scheduler:
         if not isinstance(snap, dict) or snap.get("error"):
             return None
         self._home_version = snap.get("version", self._home_version)
+        from assistant.music import MUSIC
+
+        MUSIC.update_media(snap.get("media"))  # v9: is music playing (stricter gate, ducking)?
+        await self._sync_call_mute(snap.get("phone"))
         return {"type": "home", "ts": int(time.time() * 1000), **snap}
+
+    async def _set_muted(self, muted: bool) -> None:
+        self._muted = muted
+        if self._announcer is not None:
+            self._announcer.set_muted(muted)
+        if self._task:
+            await self._task.queue_frame(STTMuteFrame(mute=muted))
+        self._bus.emit("muted", muted=muted)
+
+    async def _sync_call_mute(self, phone: dict[str, Any] | None) -> None:
+        """While a phone call rings or is connected, Donna stops listening (the speakerphone hears the call).
+        Once per call: if the user unmutes her during the call, that sticks. Unmutes when the call ends."""
+        call = (phone or {}).get("call") or {}
+        on_call = call.get("state") in ("ringing", "connected")
+        if on_call and call.get("started_at") != self._call_seen:
+            self._call_seen = call.get("started_at")
+            if not self._muted:
+                logger.info(f"call with {call.get('contact')}: Donna stops listening until it ends")
+                self._call_muted = True
+                await self._set_muted(True)
+        elif not on_call and self._call_muted:
+            logger.info("call ended: Donna listens again")
+            self._call_muted = False
+            await self._set_muted(False)
 
     async def push_snapshots(self) -> None:
         for msg in await self.snapshot_messages():
@@ -238,6 +268,10 @@ class Scheduler:
         """Called by the UI observer after every LLM tool call; turns results into widget events."""
         if not isinstance(result, dict) or result.get("error"):
             return
+        if name == "control_music":
+            from assistant.music import MUSIC
+
+            MUSIC.update_media(result)  # v9: "play X" -> the stricter gate applies at once, not at the next poll
         if name == "create_reminder":
             self._bus.emit("reminder_created", id=result.get("id"), text=result.get("text"), due_at=result.get("due_at"))
         elif name == "create_alarm":
@@ -336,12 +370,8 @@ class Scheduler:
         elif kind == "home_refresh":
             await self.push_home()
         elif kind == "mute":
-            self._muted = bool(msg.get("muted", True))
-            if self._announcer is not None:
-                self._announcer.set_muted(self._muted)
-            if self._task:
-                await self._task.queue_frame(STTMuteFrame(mute=self._muted))
-            self._bus.emit("muted", muted=self._muted)
+            self._call_muted = False  # the user decided; a call in progress no longer controls it
+            await self._set_muted(bool(msg.get("muted", True)))
         elif kind == "interrupt":
             if self._task:
                 await self._task.queue_frame(InterruptionFrame())

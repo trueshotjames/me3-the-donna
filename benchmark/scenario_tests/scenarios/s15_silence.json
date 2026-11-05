@@ -1,0 +1,11 @@
+{
+ "name": "15 Silence / no response",
+ "steps": [
+  {
+   "say": "Set a reminder."
+  }
+ ],
+ "tail_cap": 30,
+ "tail_secs": 40,
+ "lead_secs": 15
+}

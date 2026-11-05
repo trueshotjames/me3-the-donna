@@ -1,0 +1,12 @@
+{
+ "name": "5 Ambiguous request",
+ "steps": [
+  {
+   "say": "Is it cold outside?"
+  },
+  {
+   "say": "Turn it on."
+  }
+ ],
+ "lead_secs": 15
+}

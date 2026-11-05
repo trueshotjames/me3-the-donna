@@ -1,0 +1,27 @@
+{
+ "name": "8 Barge-in (interrupt)",
+ "steps": [
+  {
+   "say": "Tell me a long story about a lighthouse keeper."
+  },
+  {
+   "say": "Stop.",
+   "when": "speaking",
+   "after": 3.0
+  },
+  {
+   "say": "Describe the history of Rome in detail."
+  },
+  {
+   "say": "Wait, I meant Tokyo.",
+   "when": "speaking",
+   "after": 3.0
+  },
+  {
+   "say": "Shorter please.",
+   "when": "speaking",
+   "after": 2.0
+  }
+ ],
+ "lead_secs": 15
+}

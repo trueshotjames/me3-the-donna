@@ -1,0 +1,21 @@
+{
+ "name": "9 Backchannel, not an interrupt",
+ "steps": [
+  {
+   "say": "Tell me a long story about a lighthouse keeper."
+  },
+  {
+   "say": "Mm-hm.",
+   "when": "speaking",
+   "after": 3.0,
+   "gain_db": -6
+  },
+  {
+   "say": "Okay.",
+   "when": "speaking",
+   "after": 3.0,
+   "gain_db": -6
+  }
+ ],
+ "lead_secs": 15
+}
