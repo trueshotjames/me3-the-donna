@@ -117,9 +117,44 @@ def make_transport(cfg: Config):
     No VAD here: Pipecat 1.13 ignores ``vad_analyzer`` on transport params. The VAD is a
     VADProcessor in the pipeline (see build()).
     """
-    from pipecat.transports.local.audio import LocalAudioTransport, LocalAudioTransportParams
+    from pipecat.transports.local.audio import (
+        LocalAudioOutputTransport,
+        LocalAudioTransport,
+        LocalAudioTransportParams,
+    )
 
-    return LocalAudioTransport(
+    buffer_ms = cfg.audio_out_buffer_ms
+
+    class BufferedAudioOutput(LocalAudioOutputTransport):
+        """Pipecat's PyAudio output, opened with a speaker buffer of ``buffer_ms``.
+
+        Pipecat opens the stream without frames_per_buffer, which gave the Jabra on the Pi a
+        ~30 ms ALSA buffer (period 287, buffer 1435 frames at 48 kHz): any stall longer than
+        that underran (XRUN) and her voice broke up. PortAudio's ALSA buffer is two periods,
+        so a period of buffer_ms / 2 gives a buffer of buffer_ms.
+        """
+
+        async def setup(self, setup):
+            if buffer_ms <= 0:
+                return await super().setup(setup)
+            # Skip LocalAudioOutputTransport.setup (it opens the stream with the default buffer).
+            await super(LocalAudioOutputTransport, self).setup(setup)
+            self._out_stream = self._py_audio.open(
+                format=self._py_audio.get_format_from_width(2),
+                channels=self._params.audio_out_channels,
+                rate=self.sample_rate,
+                output=True,
+                output_device_index=self._params.output_device_index,
+                frames_per_buffer=max(64, int(self.sample_rate * buffer_ms / 2000)),
+            )
+
+    class BufferedAudioTransport(LocalAudioTransport):
+        def output(self):
+            if not self._output:
+                self._output = BufferedAudioOutput(self._pyaudio, self._params)
+            return self._output
+
+    return BufferedAudioTransport(
         LocalAudioTransportParams(
             audio_in_enabled=True,
             audio_out_enabled=True,

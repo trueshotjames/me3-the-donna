@@ -100,6 +100,9 @@ class Config:
     # audio
     audio_in_sample_rate: int = field(default_factory=lambda: _int("AUDIO_IN_SAMPLE_RATE", 16000))
     audio_out_sample_rate: int = field(default_factory=lambda: _int("AUDIO_OUT_SAMPLE_RATE", 16000))
+    # Speaker buffer in ms (0 = PortAudio default, about 25-30 ms on a Pi: too small, any CPU stall
+    # longer than that is an underrun and she sounds choppy). 100 ms rides out stalls on a busy Pi 4.
+    audio_out_buffer_ms: int = field(default_factory=lambda: _int("AUDIO_OUT_BUFFER_MS", 100))
     audio_input_device: int | str | None = field(default_factory=lambda: _device("AUDIO_INPUT_DEVICE"))
     audio_output_device: int | str | None = field(default_factory=lambda: _device("AUDIO_OUTPUT_DEVICE"))
     # VAD (Silero on the Pi). It only decides when audio goes to Flux (the gate), so it is
