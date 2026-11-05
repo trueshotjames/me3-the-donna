@@ -64,6 +64,34 @@ Copy the logins from the laptop or redo them on the Pi (each is a secret, never 
 (`python -m mcp_servers.tools.devices.spotify_login --no-browser`). `data/calibration.json` is per room and
 microphone, so run the calibration on the Pi itself.
 
+### Telegram on the Pi (messages)
+
+Donna texts from your own Telegram account through Telethon (pure Python, installed by `install_pi.sh`).
+Run these in a terminal on the Pi, from `~/me3`:
+
+1. In `.env`, set:
+   ```
+   PHONE_BACKEND=telegram
+   TELEGRAM_API_ID=...        # my.telegram.org > API development tools (same values as on the laptop)
+   TELEGRAM_API_HASH=...
+   TELEGRAM_ALLOWED=Love      # only these contacts can be messaged (comma-separated)
+   JABRA_BUTTONS=0            # no calls on the Pi, so the call buttons are not needed
+   ```
+2. Log in once, either way:
+   - **New login (simplest):** `.venv/bin/python -m mcp_servers.tools.devices.telegram_login`. Enter your phone
+     number with the country code, then the code Telegram sends to your Telegram app, then your 2FA password if
+     you have one. It prints "Logged in as ... N Telegram contacts".
+   - **Or copy the laptop's login:** copy `data/telegram.session` to `~/me3/data/` over a private channel (USB
+     stick or `scp`, never git or chat), then `chmod 600 ~/me3/data/telegram.session`. A session used on two
+     machines at once can be logged out by Telegram, so prefer a new login if both will run.
+3. Start Donna. The tools log (`app/logs/mcp-tools.log`) should show `phone: Telegram as <your name>, N contacts`.
+   If it says "using the simulation", the line before it gives the reason (missing keys, not logged in).
+4. Test: "Text Love that I'm testing Donna." She reads it back and asks "Send it?"; only a clear "yes" sends it.
+
+Calls do not work on the Pi: they press Call in Telegram Desktop through Windows UI Automation. Leave
+`TELEGRAM_CALLS` unset; a call request is then refused with a spoken error, and messages keep working. To log
+Donna out, use Telegram > Settings > Devices on your phone. Untested on a real Pi so far.
+
 ### What works on the Pi, and what is untested
 
 The voice pipeline last ran on a Pi 4 on Oct 27 (local `pi-logs/`, not in the repo); everything after that was built and tested on the
