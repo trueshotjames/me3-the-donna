@@ -195,6 +195,30 @@ class WebPlayer:
             logger.warning(f"webplayer: {kind} {data.get('message', '')}")
 
     # ------------------------------------------------------------------- browser
+    def ensure_widevine(self) -> Path | None:
+        """Pi: point Donna's own Chromium profile at the installed Widevine (DRM), or Spotify's player fails with
+        "initialization_error: Failed to initialize player".
+
+        Chromium only loads a system Widevine (/opt/WidevineCdm, from libwidevinecdm0) when the profile has
+        WidevineCdm/latest-component-updated-widevine-cdm saying where it is. A normal desktop profile has it,
+        Donna's separate profile (data/webplayer-profile) did not (found and fixed on the Pi, 5 Nov 2026). An
+        existing pointer is left alone: Chromium may have rewritten it to its own copy. Chrome/Edge (laptop) bring
+        their own Widevine, so this does nothing on Windows.
+        """
+        if sys.platform.startswith("win"):
+            return None
+        pointer = self.profile_dir / "WidevineCdm" / "latest-component-updated-widevine-cdm"
+        if pointer.exists():
+            return pointer
+        for d in (os.getenv("WIDEVINE_CDM_DIR"), "/opt/WidevineCdm", "/usr/lib/chromium/WidevineCdm"):
+            if d and (Path(d) / "manifest.json").exists():
+                pointer.parent.mkdir(parents=True, exist_ok=True)
+                pointer.write_text(json.dumps({"Path": d}, separators=(",", ":")), encoding="utf-8")
+                logger.info(f"webplayer: Widevine pointer written ({d})")
+                return pointer
+        logger.warning("webplayer: no Widevine found (sudo apt install libwidevinecdm0); Spotify will not play")
+        return None
+
     def start(self, wait_secs: float = 20.0) -> None:
         browser = find_browser()
         if not browser:
@@ -202,6 +226,7 @@ class WebPlayer:
         self._server = ThreadingHTTPServer(("127.0.0.1", self.port), self._handler())
         threading.Thread(target=self._server.serve_forever, name="webplayer-http", daemon=True).start()
         self.profile_dir.mkdir(parents=True, exist_ok=True)
+        self.ensure_widevine()
         args = [browser, f"--app=http://127.0.0.1:{self.port}/", f"--user-data-dir={self.profile_dir}",
                 "--autoplay-policy=no-user-gesture-required", "--no-first-run", "--no-default-browser-check",
                 "--window-position=-2400,-2400", "--window-size=320,240", "--disable-background-timer-throttling",
