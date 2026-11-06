@@ -32,6 +32,12 @@ CUES: dict[str, list[tuple[float, float]]] = {
     "live": [(523, 0.12), (0, 0.04), (784, 0.18)],
     "down": [(587, 0.18), (0, 0.05), (392, 0.30)],
     "back": [(523, 0.10), (0, 0.03), (659, 0.10), (0, 0.03), (784, 0.20)],
+    # Telegram calls placed from this machine (mcp_servers/tools/devices/telegram_calls.py)
+    "call_ring": [(425, 1.0)],  # repeats while the other side rings
+    "call_incoming": [(659, 0.15), (0, 0.05), (523, 0.15), (0, 0.05), (659, 0.15), (0, 0.05), (523, 0.15)],  # repeats
+    "call_connected": [(523, 0.08), (0, 0.03), (659, 0.12)],
+    "call_end": [(659, 0.12), (0, 0.03), (440, 0.20)],  # cancelled, hung up, or no answer
+    "call_busy": [(425, 0.25), (0, 0.25), (425, 0.25), (0, 0.25), (425, 0.25)],  # declined or busy
 }
 
 STATUS_FILE_NAME = "donna_status.json"

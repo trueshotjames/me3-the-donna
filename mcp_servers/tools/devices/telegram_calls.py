@@ -5,12 +5,21 @@ sound devices, so on the Pi the user talks on the Jabra with no phone or Telegra
 Everything async here runs on the Telethon loop (telegram._Loop).
 
 Optional .env: TELEGRAM_CALL_MIC, TELEGRAM_CALL_SPEAKER = part of a device name (default: Jabra, else the first).
+
+py-tgcalls plays no call sounds of its own, so CallSounds plays Donna's own tones (assistant/cues.py) on the default
+output: ringing, connected, ended, busy. On the Pi that is the Jabra, at the master volume.
 """
 
 from __future__ import annotations
 
 import asyncio
 import os
+import shutil
+import subprocess
+import tempfile
+import threading
+import wave
+from pathlib import Path
 from typing import Any, Callable
 
 try:
@@ -24,6 +33,102 @@ from mcp_servers.tools.devices.base import DeviceError
 
 RING_SECS = 45
 ENDED = {"CallDeclined": "declined", "CallBusy": "busy", "TimedOutAnswer": "no answer", "CallDiscarded": "hung up"}
+
+
+RING_GAP_SECS = {"call_ring": 3.0, "call_incoming": 1.5}
+BUSY_REASONS = ("declined", "busy")
+_SOUND_DIR = Path(tempfile.gettempdir()) / "donna-call-sounds"
+
+
+def _sound_file(kind: str) -> Path:
+    from assistant.cues import tone
+
+    path = _SOUND_DIR / f"{kind}.wav"
+    if not path.exists():
+        _SOUND_DIR.mkdir(parents=True, exist_ok=True)
+        with wave.open(str(path), "wb") as w:
+            w.setnchannels(1)
+            w.setsampwidth(2)
+            w.setframerate(48000)
+            w.writeframes(tone(kind, 48000, 0.3))
+    return path
+
+
+def play_sound(kind: str) -> subprocess.Popen | None:
+    """Start a tone; the returned process can be stopped early. Never raises: a sound must not break a call."""
+    try:
+        path = str(_sound_file(kind))
+        if os.name == "nt":
+            import winsound
+
+            winsound.PlaySound(path, winsound.SND_FILENAME | winsound.SND_ASYNC)
+            return None
+        player = shutil.which("pw-play") or shutil.which("aplay")
+        return subprocess.Popen([player, path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL) if player else None
+    except Exception as e:  # noqa: BLE001
+        logger.debug(f"phone: call sound failed: {e!r}")
+        return None
+
+
+class CallSounds:
+    """One call's sounds. Each step is safe to reach twice, since Telegram and py-tgcalls both report the same events."""
+
+    def __init__(self, player: Callable[[str], Any] = play_sound):
+        self._player = player
+        self._lock = threading.Lock()
+        self._stop = threading.Event()
+        self._proc: Any = None
+        self._ringing = False
+        self.active = False
+
+    def _halt(self) -> None:
+        self._stop.set()
+        self._stop = threading.Event()
+        if self._proc is not None:
+            try:
+                self._proc.terminate()
+            except Exception:  # noqa: BLE001
+                pass
+            self._proc = None
+
+    def _loop(self, kind: str, stop: threading.Event) -> None:
+        while not stop.is_set():
+            with self._lock:
+                if stop.is_set():
+                    return
+                self._proc = self._player(kind)
+            stop.wait(sum(s for _f, s in _cue(kind)) + RING_GAP_SECS[kind])
+
+    def ringing(self, kind: str = "call_ring") -> None:
+        with self._lock:
+            self._halt()
+            self.active, self._ringing = True, True
+            stop = self._stop
+        threading.Thread(target=self._loop, args=(kind, stop), name="call-ring", daemon=True).start()
+
+    def connected(self) -> None:
+        with self._lock:
+            if not (self.active and self._ringing):
+                return
+            self._ringing = False
+            self._halt()
+            self._proc = self._player("call_connected")
+
+    def finish(self, kind: str | None = "call_end") -> None:
+        """Stop ringing and play the closing sound once; kind None stops silently."""
+        with self._lock:
+            if not self.active:
+                return
+            self.active, self._ringing = False, False
+            self._halt()
+            if kind:
+                self._proc = self._player(kind)
+
+
+def _cue(kind: str) -> list[tuple[float, float]]:
+    from assistant.cues import CUES
+
+    return CUES[kind]
 
 
 def pick_device(devices: list[Any], wanted: str | None) -> Any | None:
