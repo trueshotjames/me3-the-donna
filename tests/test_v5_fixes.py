@@ -1,4 +1,4 @@
-"""v5: ASR post-fix, engagement check, re-prompt filter, reminder capitals, invented-dialogue filter."""
+"""v5: ASR post-fix, engagement check, reminder capitals, invented-dialogue filter."""
 
 import asyncio
 
@@ -8,7 +8,6 @@ from pipecat.processors.frame_processor import FrameDirection
 from assistant.engagement import addressed_elsewhere
 from assistant.fast_confirm import _reminder
 from assistant.processors import PassFilter
-from assistant.reprompt import slot_question
 from assistant.services.mcp_stt import asr_fix, dangling
 
 
@@ -25,12 +24,6 @@ def test_engagement():
     assert addressed_elsewhere("Stay tuned for the weather after the break.", "Pi", known)
     for t in ("Okay, set a timer.", "Sam.", "Pi, what time is it?", "Can we talk about something else?"):
         assert addressed_elsewhere(t, "Pi", known) is None
-
-
-def test_slot_question():
-    assert slot_question("When should I remind you?")
-    assert not slot_question("Would you like the forecast for tomorrow as well?")
-    assert not slot_question("Do you want me to delete both reminders?")
 
 
 def test_reminder_capitals():

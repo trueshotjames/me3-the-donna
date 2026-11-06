@@ -445,6 +445,10 @@ def wrap_tools(standard_tools: list, client) -> list:
             await params.llm.push_frame(LLMFullResponseStartFrame())
             await params.llm.push_frame(LLMTextFrame(say))
             await params.llm.push_frame(LLMFullResponseEndFrame())
+            from assistant import tool_comment as tc
+
+            if tc.ENABLED and name in tc.TOOLS:
+                tc.TAIL.start(params.llm, say, text, _last_user(params))  # v11 (TOOL_COMMENT): maybe a short tail
 
         return handler
 
