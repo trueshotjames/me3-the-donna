@@ -298,12 +298,12 @@ async def control_music(action: str, query: str = "", value: int | None = None) 
     set_volume (`value` 0-100, "volume 40"), mute, unmute, shuffle_on, shuffle_off, repeat_off, repeat_one, repeat_all, status."""
     a = (action or "").strip().lower().replace(" ", "_").replace("-", "_")
     a = {"skip": "next", "forward": "next", "back": "previous", "prev": "previous", "unpause": "resume", "continue": "resume",
-    if a in ("play", "pause", "resume", "stop"):
-        devices.drop_music_hold()  # during a call, this choice wins over the automatic pause
          "louder": "volume_up", "quieter": "volume_down", "softer": "volume_down", "volume": "set_volume", "now_playing": "status",
          "what_is_playing": "status", "shuffle": "shuffle_on", "repeat": "repeat_all", "volume_down_bit": "volume_down_little",
          "volume_up_bit": "volume_up_little", "volume_down_slightly": "volume_down_little",
          "volume_up_slightly": "volume_up_little"}.get(a, a)
+    if a in ("play", "pause", "resume", "stop"):
+        devices.drop_music_hold()  # during a call, this choice wins over the automatic pause
     m = devices.media
 
     def scaled(factor: float):
