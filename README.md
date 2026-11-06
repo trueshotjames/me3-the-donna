@@ -68,13 +68,22 @@ microphone, so run the calibration on the Pi itself.
 
 v11 is `main` from Nov 6 (PRs #16 and #17). Do these steps on the Pi, in order:
 
-1. Stop her and pull the code:
+1. Stop her (`donna stop`; if she was started from the desktop icon, close her window instead) and get `main`.
+   The Pi has been left on feature branches before, and a plain `git pull` would keep it there:
    ```bash
    donna stop
-   cd ~/Documents/MLOps/"Machine Exercise 3"/me3-the-donna && git pull
+   cd ~/Documents/MLOps/"Machine Exercise 3"/me3-the-donna
+   git status                    # note the branch; commit or stash nothing without asking the user
+   git checkout main && git pull
    .venv/bin/pip install -r requirements.txt     # no new packages in v11; harmless to run
    ```
-2. Edit `.env` (keep every other line as it is; both switches are off in code, so they must be in `.env`):
+2. Edit Donna's own `.env` in this folder (not `fd-benchmark/.env`). `git pull` never touches it, and both switches
+   are off in code, so they must be in `.env`. First see which keys already exist, so that each key ends up there
+   once (a second line next to an old `HOLD_TOOL_CALLS=0` leaves two conflicting entries):
+   ```bash
+   grep -nE '^(TOOL_COMMENT|HOLD_TOOL_CALLS|EAGER_END_OF_TURN|FAST_CONFIRM|WEATHER_DIRECT|REPROMPT_SECS)=' .env
+   ```
+   Change the value where a key exists, add a line where it does not, keep every other line as it is:
    ```
    HOLD_TOOL_CALLS=1        # v11: a tool call from an early reply waits for the confirmed turn (needs EAGER_END_OF_TURN=1)
    TOOL_COMMENT=1           # v11: a short tail of hers after a fixed reminder / sent message / plain weather reply
@@ -82,7 +91,7 @@ v11 is `main` from Nov 6 (PRs #16 and #17). Do these steps on the Pi, in order:
    If a line `REPROMPT_SECS=...` is there, delete it: the "Are you still there?" reprompt is gone in v11
    (the setting is ignored now). Check that `EAGER_END_OF_TURN=1` and `WEATHER_DIRECT=1` are set and that `FAST_CONFIRM` is not 0 (on by default).
 3. Run the tests: `.venv/bin/python -m pytest -q tests` (all should pass; no network or keys needed).
-4. Start her: `donna start` (one beep, then two rising notes = live).
+4. Start her: `donna start` (one beep, then two rising notes = live), or the desktop icon if that is how she runs.
 5. Check `app/logs/donna.log` for the two start-up lines:
    `v11 switch: HOLD_TOOL_CALLS=True` and `v11 switch: TOOL_COMMENT=True tools=['create_reminder', 'get_weather', 'send_message']`.
 6. Try it: "What's the weather in Manila?", "Remind me to call the dentist at 3 PM tomorrow.", and a message with
@@ -139,6 +148,7 @@ Windows laptop. The code paths below are written to run on the Pi, but **only th
 | room calibration (`assistant.calibrate`) | numpy + PyAudio, expected to work; run on the Pi |
 | scenario runner (`benchmark/scenario_tests/run_scenarios.ps1`) | Windows PowerShell; on the Pi run `benchmark/audio_replay.py` per scenario |
 | Hermes Agent | `hermes/setup.sh` installs it as a systemd user service; check RAM with `free -m` |
+| v11 `HOLD_TOOL_CALLS`, `TOOL_COMMENT` | pure Python, laptop-tested on Nov 6; untested on the Pi. `BENCHMARK_MODE` runs have no tools, so neither acts there |
 
 **Memory (4 GB):** not yet measured with every feature on. The two big optional pieces are the Chromium speaker
 (estimated 250-350 MB) and Hermes. Watch `free -m` the first time; if it gets tight, turn off the browser speaker
