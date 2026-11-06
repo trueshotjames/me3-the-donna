@@ -88,8 +88,7 @@ Run these in a terminal on the Pi, from `~/me3`:
    If it says "using the simulation", the line before it gives the reason (missing keys, not logged in).
 4. Test: "Text Love that I'm testing Donna." She reads it back and asks "Send it?"; only a clear "yes" sends it.
 
-Calls do not work on the Pi: they press Call in Telegram Desktop through Windows UI Automation. Leave
-`TELEGRAM_CALLS` unset; a call request is then refused with a spoken error, and messages keep working. To log
+Calls run on the Pi through `py-tgcalls` (`TELEGRAM_CALLS=direct`, the default there): you talk on the Jabra. To log
 Donna out, use Telegram > Settings > Devices on your phone. Untested on a real Pi so far.
 
 ### What works on the Pi, and what is untested
@@ -102,11 +101,11 @@ Windows laptop. The code paths below are written to run on the Pi, but **only th
 | mic, Silero VAD, ASR/TTS MCP servers, LLM, barge-in, tools server, UI | ran on Oct 27 (v5); later versions are laptop-tested only |
 | reminders, alarms, timers, weather, memory, voice tone (Wav2Small) | pure Python / onnxruntime, expected to work; untested on the Pi since v5 |
 | Tapo L530E light (python-kasa, LAN) | same code as the laptop; untested on the Pi |
-| Telegram messages (Telethon), consent "Send it?" flow | pure Python; copy `data/telegram.session` or log in again; untested on the Pi |
+| Telegram messages (Telethon), consent "Send it?" flow | pure Python; copy `data/telegram.session` or log in again |
 | Jabra red/green call buttons (hidapi) | needs the udev rule `install_pi.sh` adds; untested on the Pi |
 | Spotify: Donna as the speaker (`SPOTIFY_WEBPLAYER=1`) | needs `install_pi.sh --spotify` (Chromium + Widevine); untested. Costs ~250-350 MB RAM. On the Wayland desktop the small player window may show on screen; if so, switch to X11 (`sudo raspi-config` > Advanced > Wayland > X11) |
 | Spotify on another device (`SPOTIFY_WEBPLAYER=0`, `SPOTIFY_DEVICE=<phone or laptop>`) | Web API only, no browser; the safe fallback |
-| **Telegram calls** | **not on the Pi.** Calls press Call in Telegram Desktop through Windows UI Automation, and Telegram Desktop has no ARM Linux build. On the Pi, `TELEGRAM_CALLS=adb` starts the call on an Android phone over USB instead (written, never tested). Messages work either way |
+| Telegram calls | `TELEGRAM_CALLS=direct` (default on the Pi, `py-tgcalls`, you talk on the Jabra); not yet tried on a real call. The laptop stays on `desktop`; `adb` is untested. |
 | room calibration (`assistant.calibrate`) | numpy + PyAudio, expected to work; run on the Pi |
 | scenario runner (`benchmark/scenario_tests/run_scenarios.ps1`) | Windows PowerShell; on the Pi run `benchmark/audio_replay.py` per scenario |
 | Hermes Agent | `hermes/setup.sh` installs it as a systemd user service; check RAM with `free -m` |

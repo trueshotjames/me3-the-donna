@@ -80,13 +80,18 @@ Donna messages and calls from **your own** Telegram account (Telethon, the clien
    - `desktop` (Windows, default there): opens the contact's chat in Telegram Desktop and presses Call through UI
      Automation (`uiautomation`). You talk through the PC's default audio device. **Windows only**: Telegram
      Desktop has no Linux ARM build and the automation is Windows-specific.
-   - `adb` (default on the Pi): starts the call on an Android phone over USB (USB debugging on, Telegram >
+   - `direct` (default on the Pi, also works on Windows): a real call through `py-tgcalls`; you talk on the Jabra.
+     Red hangs up; green answers an incoming call while the Jabra blinks. Donna stops listening during the call.
+   - `adb`: starts the call on an Android phone over USB (USB debugging on, Telegram >
      Settings > Privacy > Sync Contacts on). Written against Android's contacts intents; **never tested**.
+
+Music pauses when a call starts or is attempted, and resumes when it ends or fails (`Devices.place_call`). If you
+change the music yourself during a call, it stays as you set it.
 
 ## Jabra phone buttons (JABRA_BUTTONS=1)
 
 During a Telegram call the Jabra Speak's red button hangs up and green answers (`jabra.py`, through hidapi).
-Windows needs nothing more. On the Pi the HID node must be readable: `app/install_pi.sh` adds
+Windows needs nothing more. On the Pi `jabra.py` uses hidapi's `hidraw` module and the HID node must be readable: `app/install_pi.sh` adds
 `/etc/udev/rules.d/50-jabra.rules` (`KERNEL=="hidraw*", ATTRS{idVendor}=="0b0e", MODE="0666"`). Untested on the Pi.
 
 ## On the Raspberry Pi
@@ -97,6 +102,6 @@ Windows needs nothing more. On the Pi the HID node must be readable: `app/instal
 | Spotify Web API | same code; log in on the Pi with `spotify_login --no-browser` |
 | Spotify browser speaker | `bash app/install_pi.sh --spotify` (Chromium + libwidevinecdm0). The browser gets `--password-store=basic` on Linux so no keyring dialog blocks it; extra flags via `SPOTIFY_WEBPLAYER_ARGS`. On Wayland the small window may be visible (switch the desktop to X11 in raspi-config). A shell watchdog closes Chromium when the tools server dies. Untested on the Pi |
 | Telegram messages | pure Python; untested on the Pi |
-| Telegram calls | desktop mode impossible on the Pi; adb mode untested |
+| Telegram calls | `direct` mode; desktop mode impossible on the Pi; adb mode untested |
 | GPIO lights | `python3-gpiozero` from apt (installed by `install_pi.sh`); untested |
 

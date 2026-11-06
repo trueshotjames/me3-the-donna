@@ -2,18 +2,21 @@
 
 - Messages go out from your own Telegram account through Telethon (the Telegram client API, not a bot), so
   Donna can text any of your Telegram contacts and they see it from you.
-- Calls start on your Android phone over ADB: Telegram puts a "Voice call" entry on each synced contact in
-  Android's contacts, and opening that entry starts the call without a tap. You talk on the phone; Donna only
-  sets the call up. (Telegram Desktop has no such hook, and the Pi has no Telegram app, so the phone it is.)
+- Calls have three modes (TELEGRAM_CALLS):
+  direct (default off Windows): a real call from this machine through py-tgcalls; you talk on the Jabra (telegram_calls.py).
+  desktop (default on Windows): Donna presses Call in Telegram Desktop; you talk on the computer.
+  adb: Donna starts the call on an Android phone over USB, through the "Voice call" entry Telegram adds to each
+  synced contact; you talk on the phone.
 
 Setup (once): see devices/README.md, "Telegram". In short:
-    pip install telethon                       # pure Python, also on the Pi
+    pip install telethon py-tgcalls            # also on the Pi
     .env: TELEGRAM_API_ID, TELEGRAM_API_HASH   # from my.telegram.org > API development tools (you paste them)
     python -m mcp_servers.tools.devices.telegram_login    # log in once; writes data/telegram.session (secret)
-    phone: USB debugging on, plugged in (or `adb connect`); Telegram > Settings > Privacy > Sync Contacts on
+    adb mode only: USB debugging on, plugged in (or `adb connect`); Telegram > Settings > Privacy > Sync Contacts on
 Optional:
     TELEGRAM_CONTACTS="Mom:Maria Santos,Bro:@kingsbrother"   # short names for Telegram contacts or usernames
-    TELEGRAM_CALLS=desktop | adb   # desktop (Windows default): Donna presses Call in Telegram Desktop here
+    TELEGRAM_CALLS=direct | desktop | adb
+    TELEGRAM_CALL_MIC, TELEGRAM_CALL_SPEAKER   # direct mode: part of a device name (default: Jabra)
     TELEGRAM_ALLOWED="Love"   # only these contacts can be messaged or called (unset: all contacts)
     ADB_PATH (default: adb on PATH)   ADB_SERIAL (when more than one phone is connected)
 
@@ -283,9 +286,11 @@ class TelegramPhone(PhoneDevice):
             raise DeviceError("Telegram is not logged in yet: run python -m mcp_servers.tools.devices.telegram_login")
         self._api_id, self._api_hash = int(api_id), api_hash
         self._aliases = aliases or {}
-        self._calls = (os.getenv("TELEGRAM_CALLS") or ("desktop" if os.name == "nt" else "adb")).strip().lower()
+        self._calls = (os.getenv("TELEGRAM_CALLS") or ("desktop" if os.name == "nt" else "direct")).strip().lower()
         self._adb = adb or Adb(os.getenv("ADB_PATH"), os.getenv("ADB_SERIAL"))
         self._desktop: DesktopCaller | None = None
+        self._direct: Any = None  # telegram_calls.DirectCaller, started in _start()
+        self._direct_error = ""
         if self._calls == "desktop":
             try:
                 self._desktop = DesktopCaller()
@@ -354,10 +359,40 @@ class TelegramPhone(PhoneDevice):
             self._blocked = {k.lower() for k, u in by_name.items() if u.id not in ok_ids}
             by_name = {k: u for k, u in by_name.items() if u.id in ok_ids}
         self._users = by_name
+        if self._calls == "direct":
+            await self._start_direct(client)
 
         @client.on(events.Raw(types.UpdatePhoneCall))
         async def _on_call(update):  # noqa: ANN001
             self._on_phone_call(update.phone_call)
+
+    async def _start_direct(self, client: Any) -> None:
+        """A problem here costs calls only: messages keep working and make_call says what is wrong."""
+        try:
+            from mcp_servers.tools.devices.telegram_calls import DirectCaller
+
+            direct = DirectCaller(client, self._direct_ended, self._direct_incoming)
+            await direct.start()
+            self._direct = direct
+        except ImportError:
+            self._direct_error = "py-tgcalls is not installed, so I cannot place calls here"
+        except Exception as e:  # noqa: BLE001
+            self._direct_error = f"the call engine did not start: {e}"
+        if self._direct_error:
+            logger.warning(f"phone: {self._direct_error}")
+
+    def _direct_ended(self, reason: str) -> None:
+        call = self._call
+        if call and call["state"] != "ended":
+            call["ended_reason"] = reason
+        self._call_ended()
+
+    def _direct_incoming(self, peer: int | None) -> None:
+        """Blink the Jabra while someone is calling; green answers (_on_jabra_hook)."""
+        if peer is not None:
+            logger.info("phone: incoming Telegram call; the Jabra's green button answers")
+        if self._jabra is not None:
+            self._jabra.set_leds(ring=peer is not None)
 
     def _on_phone_call(self, pc: Any) -> None:
         from telethon.tl import types
@@ -374,6 +409,8 @@ class TelegramPhone(PhoneDevice):
             call["state"], call["ended_at"] = "ended", now
             call["duration_s"] = int(getattr(pc, "duration", 0) or (now - call["connected_at"] if call.get("connected_at") else 0))
             self._call_handle = None
+            if self._jabra is not None:
+                self._jabra.set_leds()
         self._dirty = True
 
     # ------------------------------------------------------------------- PhoneDevice
@@ -426,6 +463,19 @@ class TelegramPhone(PhoneDevice):
         cur = self._call
         if cur and cur["state"] in ("ringing", "connected") and time.time() - cur["started_at"] < STALE_CALL_SECS:
             raise DeviceError(f"already on a call with {cur['contact']}; say hang up first")
+        if self._calls == "direct":
+            if self._direct is None:
+                raise DeviceError(self._direct_error or "calls are not available on this computer")
+            self._call_handle = None
+            self._call = {"contact": name, "state": "ringing", "started_at": time.time(), "connected_at": None, "ended_at": None, "duration_s": 0}
+            try:
+                self._loop.run(self._direct.dial(self._users[name].id))
+            except Exception:
+                self._call = None
+                raise
+            if self._jabra is not None:
+                self._jabra.set_leds(off_hook=True)
+            return {"call": dict(self._call), "note": "Telegram call ringing from this device; the user talks on the speakerphone"}
         if self._calls == "desktop":
             if self._desktop is None:
                 raise DeviceError("Telegram Desktop calls are not available on this computer")
@@ -450,6 +500,9 @@ class TelegramPhone(PhoneDevice):
         call = self._call
         if not call or call["state"] == "ended":
             raise DeviceError("there is no call to end")
+        if self._direct is not None and self._loop.run(self._direct.hang_up()):
+            self._call_ended()
+            return {"call": dict(call)}
         if self._call_handle is None:
             if self._desktop is not None and self._desktop.end_call():
                 self._call_ended()
@@ -493,6 +546,18 @@ class TelegramPhone(PhoneDevice):
                 self.hang_up()
             except DeviceError as e:
                 logger.warning(f"phone: Jabra hang up failed: {e}")
+        elif off_hook and not active and self._direct is not None:
+            peer = self._loop.run(self._direct.answer())
+            if peer is None:
+                if self._jabra is not None:
+                    self._jabra.set_leds()
+                return
+            name = next((n for n, u in self._users.items() if u.id == peer), "incoming call")
+            logger.info(f"phone: Jabra green button: answering {name}")
+            self._call = {"contact": name, "state": "ringing", "started_at": time.time(), "connected_at": None, "ended_at": None, "duration_s": 0}
+            self._dirty = True
+            if self._jabra is not None:
+                self._jabra.set_leds(off_hook=True)
         elif off_hook and not active and self._desktop is not None:
             name = self._desktop.answer()
             if name:
@@ -511,7 +576,8 @@ class TelegramPhone(PhoneDevice):
             if self._desktop.in_call() is False:
                 logger.info("phone: Telegram Desktop's call window closed: the call ended")
                 self._call_ended()
-        if call and call["state"] in ("ringing", "connected") and time.time() - call["started_at"] > STALE_CALL_SECS:
+        stale = self._direct is None or call is None or call["state"] == "ringing"  # direct: Telegram reports the end
+        if stale and call and call["state"] in ("ringing", "connected") and time.time() - call["started_at"] > STALE_CALL_SECS:
             call["state"], call["ended_at"] = "ended", time.time()  # Telegram never told us; do not show it forever
             self._dirty = True
         if self._dirty:

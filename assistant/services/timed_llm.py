@@ -279,6 +279,9 @@ class TimedGroqLLMService(GroqLLMService):
         if self._history_messages:
             trimmed = trim_history(list(msgs), self._history_messages)
             if len(trimmed) < len(msgs):
+                # The trim hides old user messages; message consent counts turns, so keep that count going up.
+                dropped = sum(m.get("role") == "user" for m in msgs) - sum(m.get("role") == "user" for m in trimmed)
+                context.trimmed_user_turns = getattr(context, "trimmed_user_turns", 0) + dropped
                 context.set_messages(trimmed)
                 logger.debug(f"{self}: history trimmed to {len(trimmed)} messages")
         call = METRICS.llm_call()
