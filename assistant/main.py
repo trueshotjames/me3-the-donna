@@ -508,6 +508,15 @@ class Assistant:
                         await self.scheduler.say_now("One moment.", source="tool_slow")
 
                 _fcm.ON_SLOW = on_tool_slow
+                import assistant.tool_comment as _tc
+
+                _tc.ENABLED = cfg.tool_comment  # v11: a short LLM tail after some fixed replies
+                _tc.TOOLS = {t.strip() for t in cfg.tool_comment_tools.split(",") if t.strip()}
+                _tc.TAIL.client, _tc.TAIL.model = llm._client, cfg.llm_model
+                _tc.TAIL.extra_body, _tc.TAIL.reasoning_effort = cfg.llm_extra_body or {}, cfg.llm_reasoning_effort
+                _tc.TAIL.user_name = cfg.user_name or "the user"
+                _tc.TAIL.speed_of = lambda: self.rate.speed if getattr(self, "rate", None) is not None else cfg.tts_speed
+                logger.info(f"v11 switch: TOOL_COMMENT={cfg.tool_comment} tools={sorted(_tc.TOOLS)}")
                 # v1: action tools speak their confirmation directly (no second LLM call)
                 standard_tools = wrap_tools(standard_tools, self.tools_client)
 
@@ -635,15 +644,9 @@ class Assistant:
 
         latency = UserBotLatencyObserver()
         ui_observer = UIEventObserver(bus, on_tool_result=scheduler.on_tool_result, chat=self.chat)
-        from assistant.reprompt import Reprompter
-
-        # v4: a question left unanswered is asked once more after REPROMPT_SECS of silence (0 = off)
-        self.reprompter = Reprompter(
-            lambda text: scheduler.say(text, source="reprompt", wait="turn", ttl=5), secs=cfg.reprompt_secs
-        )
 
         # v6 (SPOKEN_HISTORY): her spoken replies back into the history when Pipecat dropped them (assistant/spoken.py)
-        observers = [latency, ui_observer, TurnMetricsObserver(), self.levels, self.reprompter]
+        observers = [latency, ui_observer, TurnMetricsObserver(), self.levels]
         self.spoken = None
         if cfg.spoken_history and hasattr(llm, "spoken"):
             from assistant.spoken import SpokenHistory

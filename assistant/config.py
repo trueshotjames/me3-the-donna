@@ -180,6 +180,12 @@ class Config:
     # v11 (HOLD_TOOL_CALLS): a tool call from an early (speculative) reply is held until the turn is confirmed and then
     # run, instead of Pipecat dropping the early reply and calling the LLM again (assistant/tool_hold.py). Off = v10.
     hold_tool_calls: bool = field(default_factory=lambda: _bool("HOLD_TOOL_CALLS", False))
+    # v11 (TOOL_COMMENT): after the fixed reply of these tools, the LLM may add a tail of at most 8 words, or pass
+    # (assistant/tool_comment.py). Off = the fixed reply alone, as in v10.
+    tool_comment: bool = field(default_factory=lambda: _bool("TOOL_COMMENT", False))
+    tool_comment_tools: str = field(
+        default_factory=lambda: os.getenv("TOOL_COMMENT_TOOLS", "create_reminder,send_message,get_weather")
+    )
     # v8 (PLAYED_TEXT): the chat and the spoken history take her sentences after they have played (not when
     # synthesised), so words she never got to say are not shown or remembered when she is cut off
     played_text: bool = field(default_factory=lambda: _bool("PLAYED_TEXT", True))
@@ -229,7 +235,6 @@ class Config:
     donna_persona: bool = field(default_factory=lambda: _bool("DONNA_PERSONA", False))
     # v10: start-up speaking rate (also read by the TTS MCP server); "normal speed" returns to it
     tts_speed: float = field(default_factory=lambda: _float("TTS_SPEED", 1.0))
-    reprompt_secs: float = field(default_factory=lambda: _float("REPROMPT_SECS", 8.0))  # v4: 0 = never re-prompt
     user_turn_stop_timeout: float = field(default_factory=lambda: _float("USER_TURN_STOP_TIMEOUT", 5.0))
     engagement_window_secs: float = field(default_factory=lambda: _float("ENGAGEMENT_WINDOW_SECS", 8.0))
     # streaming over MCP

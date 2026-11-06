@@ -5,7 +5,15 @@ from __future__ import annotations
 import re
 
 from loguru import logger
-from pipecat.frames.frames import Frame, LLMFullResponseEndFrame, LLMFullResponseStartFrame, LLMTextFrame, TTSTextFrame
+from pipecat.frames.frames import (
+    Frame,
+    InterruptionFrame,
+    LLMFullResponseEndFrame,
+    LLMFullResponseStartFrame,
+    LLMTextFrame,
+    TTSTextFrame,
+    UserStartedSpeakingFrame,
+)
 from pipecat.processors.frame_processor import FrameDirection, FrameProcessor
 
 PASS_TOKEN = "<pass"
@@ -208,6 +216,11 @@ class PassFilter(FrameProcessor):
         await self.push_frame(LLMTextFrame(sentence), direction)
     async def process_frame(self, frame: Frame, direction: FrameDirection):
         await super().process_frame(frame, direction)
+
+        if isinstance(frame, (InterruptionFrame, UserStartedSpeakingFrame)):
+            from assistant.tool_comment import TAIL
+
+            TAIL.cancel("the user spoke")  # v11 (TOOL_COMMENT): a tail not yet ready is never spoken after this
 
         if isinstance(frame, LLMFullResponseStartFrame):
             self._held, self._text, self._deciding, self._dropping = [], "", True, False
