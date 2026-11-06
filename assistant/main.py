@@ -108,6 +108,18 @@ async def connect_tools_server(cfg: Config):
             await asyncio.sleep(0.5 if attempt < 6 else 1.0)
 
 
+class NullToolsBridge:
+    """BENCHMARK_MODE stands in for the tools server: never connected, so the scheduler polls nothing."""
+
+    connected = False
+
+    async def call_json(self, name: str, arguments: dict | None = None, timeout: float | None = None) -> dict:
+        return {"error": f"{name} is not available in benchmark mode"}
+
+    async def close(self) -> None:
+        pass
+
+
 # ------------------------------------------------------------------------------ main
 
 
@@ -192,6 +204,9 @@ class Assistant:
     async def build(self, transport=None, stt=None):
         """Wire the pipeline. ``transport``/``stt`` can be replaced (benchmark/replay.py feeds scripted turns)."""
         cfg = self.cfg
+        if cfg.benchmark_mode and transport is None:
+            # make_transport would open the speakerphone
+            raise RuntimeError("BENCHMARK_MODE needs a transport from the benchmark: it never opens the speakerphone")
         from mcp.client.session_group import StreamableHttpParameters
         from pipecat.observers.user_bot_latency_observer import UserBotLatencyObserver
         from pipecat.pipeline.pipeline import Pipeline
@@ -260,7 +275,12 @@ class Assistant:
         self.net.start()
         self.levels = LevelMeter(bus)
 
-        self.tools_bridge, self.tools_proc = await connect_tools_server(cfg)
+        if cfg.benchmark_mode:
+            # The tools server owns Telegram, Spotify, the lights, the Jabra buttons and the database: never start it.
+            self.tools_bridge, self.tools_proc = NullToolsBridge(), None
+            logger.info("benchmark mode: no tools, no delegation, no memory, no cues, no audio devices")
+        else:
+            self.tools_bridge, self.tools_proc = await connect_tools_server(cfg)
         self.scheduler = scheduler = Scheduler(
             self.tools_bridge, bus, poll_secs=cfg.scheduler_poll_secs, reannounce_secs=cfg.alarm_repeat_announce_secs
         )
@@ -467,25 +487,27 @@ class Assistant:
                     adaptive=cfg.eot_adaptive,
                 )
 
-        self.tools_client = MCPClient(StreamableHttpParameters(url=cfg.tools_mcp_url), tools_filter=LLM_TOOLS)
-        tools = await self.tools_client.tools()
-        standard_tools = list(tools.standard_tools)
-        if cfg.fast_confirm:
-            import assistant.fast_confirm as _fcm
-            from assistant.fast_confirm import wrap_tools
+        standard_tools: list = []
+        if not cfg.benchmark_mode:
+            self.tools_client = MCPClient(StreamableHttpParameters(url=cfg.tools_mcp_url), tools_filter=LLM_TOOLS)
+            tools = await self.tools_client.tools()
+            standard_tools = list(tools.standard_tools)
+            if cfg.fast_confirm:
+                import assistant.fast_confirm as _fcm
+                from assistant.fast_confirm import wrap_tools
 
-            _fcm.WEATHER_DIRECT = cfg.weather_direct
-            _fcm.TOOL_SLOW_SECS = cfg.tool_slow_secs
-            _fcm.V8_FIXES = cfg.v8_fixes
+                _fcm.WEATHER_DIRECT = cfg.weather_direct
+                _fcm.TOOL_SLOW_SECS = cfg.tool_slow_secs
+                _fcm.V8_FIXES = cfg.v8_fixes
 
-            async def on_tool_slow(name: str) -> None:
-                bus.emit("tool_slow", tool=name, seconds=cfg.tool_slow_secs)
-                if self.scheduler is not None:
-                    await self.scheduler.say_now("One moment.", source="tool_slow")
+                async def on_tool_slow(name: str) -> None:
+                    bus.emit("tool_slow", tool=name, seconds=cfg.tool_slow_secs)
+                    if self.scheduler is not None:
+                        await self.scheduler.say_now("One moment.", source="tool_slow")
 
-            _fcm.ON_SLOW = on_tool_slow
-            # v1: action tools speak their confirmation directly (no second LLM call)
-            standard_tools = wrap_tools(standard_tools, self.tools_client)
+                _fcm.ON_SLOW = on_tool_slow
+                # v1: action tools speak their confirmation directly (no second LLM call)
+                standard_tools = wrap_tools(standard_tools, self.tools_client)
 
         # Hermes: background tasks through delegate / task_status. Skipped (with a warning) when the
         # API server is not reachable, so the assistant still runs without it.
@@ -526,11 +548,13 @@ class Assistant:
             fixes=cfg.v6_fixes,
             speaking_rate=cfg.speaking_rate,
             side_talk=cfg.side_talk_rule,
+            no_tools=cfg.benchmark_mode,
         )
         base_prompt = system_prompt(**self._prompt_args, memory=self.memory.note if self.memory else None)
-        self._context = context = LLMContext(
-            messages=[{"role": "system", "content": base_prompt}], tools=ToolsSchema(standard_tools)
-        )
+        if cfg.benchmark_mode and standard_tools:
+            raise RuntimeError(f"benchmark mode must offer no tools, got {[t.name for t in standard_tools]}")
+        context_args = {"tools": ToolsSchema(standard_tools)} if standard_tools else {}
+        self._context = context = LLMContext(messages=[{"role": "system", "content": base_prompt}], **context_args)
         if hasattr(stt, "prev_reply"):
             # v7 (EOT_ADAPTIVE): an answer to her question ("Sam.", "Ten minutes.") is never held as a statement
             def prev_reply() -> str:

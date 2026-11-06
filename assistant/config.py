@@ -68,6 +68,8 @@ class Config:
     llm_provider_sort: str = field(default_factory=lambda: _get("LLM_PROVIDER_SORT", ""))
     llm_allow_fallbacks: bool = field(default_factory=lambda: _bool("LLM_ALLOW_FALLBACKS", True))
     # Hermes Agent (capable brain for delegated tasks), reached over its API server
+    # BENCHMARK_MODE: no tools, no delegation, no memory, no cues, no audio devices (set by fd-benchmark's launcher)
+    benchmark_mode: bool = field(default_factory=lambda: _bool("BENCHMARK_MODE", False))
     hermes_enabled: bool = field(default_factory=lambda: _bool("HERMES_ENABLED", True))
     hermes_url: str = field(default_factory=lambda: _get("HERMES_URL", "http://127.0.0.1:8642"))
     hermes_api_key: str = field(default_factory=lambda: _get("HERMES_API_KEY"))
@@ -254,6 +256,13 @@ class Config:
         return sys.executable
 
     def __post_init__(self) -> None:
+        if self.benchmark_mode:
+            # Everything that can act on the world or touch her real data is off, whatever .env says.
+            self.hermes_enabled = False
+            self.memory_enabled = False
+            self.cues_enabled = False
+            self.music_duck = False
+            self.speaking_rate = False
         # gpt-oss models must reason; OpenRouter answers 400 "Reasoning is mandatory" to "none".
         # An old Qwen-era LLM_REASONING_EFFORT=none in .env would otherwise break every turn.
         if "gpt-oss" in self.llm_model and self.llm_reasoning_effort.strip().lower() in ("", "none", "off", "0"):
