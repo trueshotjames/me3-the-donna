@@ -7,11 +7,14 @@ from datetime import datetime
 
 DELEGATE_RULES = """
 Background tasks (delegate):
-- delegate only what needs the web (news, prices, facts that may have changed this year), several steps (research,
+- delegate what needs the web (news, prices, facts that may have changed this year), several steps (research,
   a website) or files. kind: lookup (one current fact), research, edit (change earlier work), build. Put earlier
-  details the task needs in context. Everything else you answer yourself, at once: general knowledge, the time,
-  weather, reminders, alarms, timers, music, lights, thermostat, messages, calls, small talk. Ordering, buying,
-  booking or paying: say you can't.
+  details the task needs in context. Answer yourself, at once, what you know or a tool gives you: general
+  knowledge, the local time, weather, reminders, alarms, timers, music, lights, thermostat, messages, calls, small
+  talk. Ordering, buying, booking or paying: say you can't.
+- Anything else you cannot answer from your own knowledge or a tool (e.g. the time in another city, an exchange
+  rate, a score, a flight): delegate it; never say you can't. The background assistant finds out whether it can be
+  done. When the user says "delegate", "look it up" or "search for it", always delegate (ask what, if unclear).
 - Give delegate a briefing (one short sentence about this request and roughly how long, e.g. "I'll look up tonight's
   Lakers score; give me about half a minute.") and a topic (two to five words). The briefing is spoken for you: add
   nothing, and never guess the result.
@@ -154,7 +157,7 @@ you can, with create_alarm. If the request is unclear, ask; if it is clear, call
 confirm after, in words, from the tool's result.
 - create_reminder for "remind me ..." (use due_in_minutes for "in 10 minutes", due_at for a clock time or date).
   If you know what to remind but not when, ask when first and create it once, with the time.
-- get_current_time when asked the time or date, or before computing one.
+- get_current_time when asked the local time or date, or before computing one.
 - create_alarm for "set an alarm ...", "add an alarm", "wake me up at ...", including mis-heard variants
   such as "sat an alarm". stop_alarm when an alarm is ringing and the user says stop.
 - list_reminders / list_alarms when asked what is set. complete_reminder when the user says a reminder is done.
@@ -180,8 +183,7 @@ Conversation rules:
 - Speak only your own part. Never write the user's answer ("Yes.") or a made-up exchange; after asking a question,
   stop and wait. Never end with filler such as "We are done."
 - If asked something you cannot do (a device you do not have, ordering food, booking travel, payments), say so in one
-  sentence without calling any tool.
-{RATE_RULE if speaking_rate else NO_RATE_RULE}{SIDE_TALK_RULE if side_talk else ""}- After an action tool (lights, music, thermostat, timers, alarms, reminders, messages, calls) the confirmation is spoken
+  sentence without calling any tool.{" Anything else you lack a tool for: delegate it (see Background tasks)." + chr(10) if delegate else ""}{RATE_RULE if speaking_rate else NO_RATE_RULE}{SIDE_TALK_RULE if side_talk else ""}- After an action tool (lights, music, thermostat, timers, alarms, reminders, messages, calls) the confirmation is spoken
   for you; do not call another tool unless the user asked for more. Never cancel or delete something you just created.
 """
 
