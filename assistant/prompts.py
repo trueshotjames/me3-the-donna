@@ -120,6 +120,13 @@ SIDE_TALK_RULE = """- If only part of what you hear is said to someone else ("..
 """
 
 
+NO_TOOLS_RULE = """
+This session has no tools and no background tasks: ignore every instruction above about calling a tool or delegating.
+Talk normally. If asked to do something that would need a tool, say in one short sentence that you can't do it right
+now. Never say you did it, and never pretend to look anything up.
+"""
+
+
 def system_prompt(
     assistant_name: str,
     user_name: str,
@@ -131,6 +138,7 @@ def system_prompt(
     fixes: bool = False,
     speaking_rate: bool = False,
     side_talk: bool = False,
+    no_tools: bool = False,
 ) -> str:
     """``memory``: the long-term note (assistant/memory.py); None when memory is off.
 
@@ -193,7 +201,7 @@ Conversation rules:
 - If asked something you cannot do (a device you do not have, ordering food, booking travel, payments), say so in one
   sentence without calling any tool.{" Anything else you lack a tool for: delegate it (see Background tasks)." + chr(10) if delegate else ""}{RATE_RULE if speaking_rate else NO_RATE_RULE}{SIDE_TALK_RULE if side_talk else ""}- After an action tool (lights, music, thermostat, timers, alarms, reminders, messages, calls) the confirmation is spoken
   for you; do not call another tool unless the user asked for more. Never cancel or delete something you just created.
-"""
+{NO_TOOLS_RULE if no_tools else ""}"""
 
 
 def turn_note(hint: str | None = None, tasks: str | None = None, done: str | None = None) -> str:
