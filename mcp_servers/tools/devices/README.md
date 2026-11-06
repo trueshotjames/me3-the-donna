@@ -81,7 +81,8 @@ Donna messages and calls from **your own** Telegram account (Telethon, the clien
      Automation (`uiautomation`). You talk through the PC's default audio device. **Windows only**: Telegram
      Desktop has no Linux ARM build and the automation is Windows-specific.
    - `direct` (default on the Pi, also works on Windows): a real call through `py-tgcalls`; you talk on the Jabra.
-     Red hangs up; green answers an incoming call while the Jabra blinks. Donna stops listening during the call.
+     Red hangs up; green answers an incoming call while the Jabra blinks. Donna stops listening once the call connects. Ringing, connected, ended and busy sounds play on the default
+     output (the Jabra); they are Donna's own tones from `assistant/cues.py`.
    - `adb`: starts the call on an Android phone over USB (USB debugging on, Telegram >
      Settings > Privacy > Sync Contacts on). Written against Android's contacts intents; **never tested**.
 
@@ -90,7 +91,8 @@ change the music yourself during a call, it stays as you set it.
 
 ## Jabra phone buttons (JABRA_BUTTONS=1)
 
-During a Telegram call the Jabra Speak's red button hangs up and green answers (`jabra.py`, through hidapi).
+The Jabra's + and - buttons set the master volume (on the Pi, the PipeWire output that Donna, Spotify and calls
+share). During a Telegram call the Jabra Speak's red button hangs up and green answers (`jabra.py`, through hidapi).
 Windows needs nothing more. On the Pi `jabra.py` uses hidapi's `hidraw` module and the HID node must be readable: `app/install_pi.sh` adds
 `/etc/udev/rules.d/50-jabra.rules` (`KERNEL=="hidraw*", ATTRS{idVendor}=="0b0e", MODE="0666"`). Untested on the Pi.
 

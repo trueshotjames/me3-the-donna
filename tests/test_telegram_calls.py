@@ -55,6 +55,7 @@ class _Tg:
 def _caller(tg, ended):
     c = DirectCaller.__new__(DirectCaller)
     c._tg, c._on_end, c._task, c._peer, c.incoming = tg, ended.append, None, None, None
+    c._on_connected = lambda: None
     c._streams = lambda: ("send", "play")
     return c
 
@@ -130,3 +131,60 @@ def test_yes_sends_after_the_history_trim():
     assert c.decide("Love", "I love you", fc._user_turn(NS(context=ctx)), "Yes.") == ("send", "I love you")
 
 
+
+
+def _sounds():
+    from mcp_servers.tools.devices.telegram_calls import CallSounds
+
+    played = []
+    return CallSounds(player=lambda kind: played.append(kind)), played
+
+
+def _wait_for(cond):
+    import time
+
+    for _ in range(200):
+        if cond():
+            return
+        time.sleep(0.005)
+    raise AssertionError("timed out")
+
+
+def test_call_sounds_ring_connect_end():
+    s, played = _sounds()
+    s.ringing()
+    _wait_for(lambda: played == ["call_ring"])
+    s.connected()
+    s.connected()  # Telegram and py-tgcalls both report it
+    s.finish()
+    s.finish()
+    assert played == ["call_ring", "call_connected", "call_end"]
+
+
+def test_cancelling_while_ringing_plays_the_end_sound_once():
+    s, played = _sounds()
+    s.ringing()
+    _wait_for(lambda: played)
+    s.finish()
+    s.finish("call_busy")  # the server's echo of our own cancel
+    assert played == ["call_ring", "call_end"]
+
+
+def test_declined_plays_busy_and_a_missed_incoming_call_goes_quiet():
+    s, played = _sounds()
+    s.ringing()
+    _wait_for(lambda: played)
+    s.finish("call_busy")
+    assert played[-1] == "call_busy"
+    s2, played2 = _sounds()
+    s2.ringing("call_incoming")
+    _wait_for(lambda: played2 == ["call_incoming"])
+    s2.finish(None)
+    assert played2 == ["call_incoming"]
+
+
+def test_every_call_sound_renders():
+    from assistant.cues import CUES, tone
+
+    for kind in [k for k in CUES if k.startswith("call_")]:
+        assert len(tone(kind, 16000, 0.3)) > 1000

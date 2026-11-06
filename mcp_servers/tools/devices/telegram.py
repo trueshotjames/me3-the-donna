@@ -272,6 +272,19 @@ class DesktopCaller:
                     return True
         return False
 
+class _NoSounds:
+    """Telegram Desktop and the phone play their own call sounds."""
+
+    def connected(self) -> None:
+        pass
+
+    def ringing(self, kind: str = "") -> None:
+        pass
+
+    def finish(self, kind: str | None = "") -> None:
+        pass
+
+
 class TelegramPhone(PhoneDevice):
     backend = "telegram"
 
@@ -291,6 +304,7 @@ class TelegramPhone(PhoneDevice):
         self._desktop: DesktopCaller | None = None
         self._direct: Any = None  # telegram_calls.DirectCaller, started in _start()
         self._direct_error = ""
+        self._sounds: Any = _NoSounds()
         if self._calls == "desktop":
             try:
                 self._desktop = DesktopCaller()
@@ -371,9 +385,12 @@ class TelegramPhone(PhoneDevice):
         try:
             from mcp_servers.tools.devices.telegram_calls import DirectCaller
 
-            direct = DirectCaller(client, self._direct_ended, self._direct_incoming)
+            direct = DirectCaller(client, self._direct_ended, self._direct_incoming, self._direct_connected)
             await direct.start()
             self._direct = direct
+            from mcp_servers.tools.devices.telegram_calls import CallSounds
+
+            self._sounds = CallSounds()
         except ImportError:
             self._direct_error = "py-tgcalls is not installed, so I cannot place calls here"
         except Exception as e:  # noqa: BLE001
@@ -381,7 +398,17 @@ class TelegramPhone(PhoneDevice):
         if self._direct_error:
             logger.warning(f"phone: {self._direct_error}")
 
+    def _direct_connected(self) -> None:
+        call = self._call
+        if call and call["state"] == "ringing":
+            call["state"], call["connected_at"] = "connected", time.time()
+            self._dirty = True
+        self._sounds.connected()
+
     def _direct_ended(self, reason: str) -> None:
+        from mcp_servers.tools.devices.telegram_calls import BUSY_REASONS
+
+        self._sounds.finish("call_busy" if reason in BUSY_REASONS else "call_end")
         call = self._call
         if call and call["state"] != "ended":
             call["ended_reason"] = reason
@@ -391,6 +418,9 @@ class TelegramPhone(PhoneDevice):
         """Blink the Jabra while someone is calling; green answers (_on_jabra_hook)."""
         if peer is not None:
             logger.info("phone: incoming Telegram call; the Jabra's green button answers")
+            self._sounds.ringing("call_incoming")
+        else:
+            self._sounds.finish(None)
         if self._jabra is not None:
             self._jabra.set_leds(ring=peer is not None)
 
@@ -405,7 +435,9 @@ class TelegramPhone(PhoneDevice):
         now = time.time()
         if isinstance(pc, types.PhoneCall) and call["state"] != "connected":
             call["state"], call["connected_at"] = "connected", now
+            self._sounds.connected()
         elif isinstance(pc, types.PhoneCallDiscarded):
+            self._sounds.finish("call_busy" if call["state"] == "ringing" else "call_end")  # our own cancel played already
             call["state"], call["ended_at"] = "ended", now
             call["duration_s"] = int(getattr(pc, "duration", 0) or (now - call["connected_at"] if call.get("connected_at") else 0))
             self._call_handle = None
@@ -473,6 +505,7 @@ class TelegramPhone(PhoneDevice):
             except Exception:
                 self._call = None
                 raise
+            self._sounds.ringing()
             if self._jabra is not None:
                 self._jabra.set_leds(off_hook=True)
             return {"call": dict(self._call), "note": "Telegram call ringing from this device; the user talks on the speakerphone"}
@@ -500,6 +533,7 @@ class TelegramPhone(PhoneDevice):
         call = self._call
         if not call or call["state"] == "ended":
             raise DeviceError("there is no call to end")
+        self._sounds.finish()
         if self._direct is not None and self._loop.run(self._direct.hang_up()):
             self._call_ended()
             return {"call": dict(call)}
@@ -526,6 +560,7 @@ class TelegramPhone(PhoneDevice):
 
     def _call_ended(self) -> None:
         """Mark the current call ended (hung up here, or Telegram Desktop's call window closed)."""
+        self._sounds.finish()
         call = self._call
         if call and call["state"] != "ended":
             now = time.time()
