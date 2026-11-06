@@ -81,7 +81,7 @@ Donna messages and calls from **your own** Telegram account (Telethon, the clien
      Automation (`uiautomation`). You talk through the PC's default audio device. **Windows only**: Telegram
      Desktop has no Linux ARM build and the automation is Windows-specific.
    - `direct` (default on the Pi, also works on Windows): a real call through `py-tgcalls`; you talk on the Jabra.
-     Red hangs up; green answers an incoming call while the Jabra blinks. Donna stops listening during the call.
+     Red hangs up; green answers an incoming call while the Jabra blinks. Donna stops listening once the call connects.
    - `adb`: starts the call on an Android phone over USB (USB debugging on, Telegram >
      Settings > Privacy > Sync Contacts on). Written against Android's contacts intents; **never tested**.
 

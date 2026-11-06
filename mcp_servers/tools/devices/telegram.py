@@ -371,7 +371,7 @@ class TelegramPhone(PhoneDevice):
         try:
             from mcp_servers.tools.devices.telegram_calls import DirectCaller
 
-            direct = DirectCaller(client, self._direct_ended, self._direct_incoming)
+            direct = DirectCaller(client, self._direct_ended, self._direct_incoming, self._direct_connected)
             await direct.start()
             self._direct = direct
         except ImportError:
@@ -380,6 +380,12 @@ class TelegramPhone(PhoneDevice):
             self._direct_error = f"the call engine did not start: {e}"
         if self._direct_error:
             logger.warning(f"phone: {self._direct_error}")
+
+    def _direct_connected(self) -> None:
+        call = self._call
+        if call and call["state"] == "ringing":
+            call["state"], call["connected_at"] = "connected", time.time()
+            self._dirty = True
 
     def _direct_ended(self, reason: str) -> None:
         call = self._call
