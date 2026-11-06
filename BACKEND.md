@@ -31,7 +31,7 @@ subprocesses.
 | `assistant/mcp_bridge.py` | small MCP client (inproc, stdio or HTTP) |
 | `assistant/vad.py`, `duck.py` | Silero VAD; duck-and-decide barge-in (pause her audio, stop on words, resume on "okay") |
 | `assistant/voice_gate.py`, `engagement.py` | near-voice gate (TV/radio/side talk), name/broadcast check |
-| `assistant/eot_check.py`, `reprompt.py` | "cut off mid-sentence?" check; ask once more after silence |
+| `assistant/eot_check.py` | "cut off mid-sentence?" check |
 | `assistant/fast_confirm.py`, `message_consent.py` | template confirmations for simple tools; hard-coded "Send it?" consent |
 | `assistant/music.py`, `calibrate.py` | music ducking and the stricter gate while music plays; room calibration |
 | `assistant/spoken.py`, `processors.py` | what she actually said goes into history; `PassFilter`, text clean-up |

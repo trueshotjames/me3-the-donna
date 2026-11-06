@@ -628,15 +628,9 @@ class Assistant:
 
         latency = UserBotLatencyObserver()
         ui_observer = UIEventObserver(bus, on_tool_result=scheduler.on_tool_result, chat=self.chat)
-        from assistant.reprompt import Reprompter
-
-        # v4: a question left unanswered is asked once more after REPROMPT_SECS of silence (0 = off)
-        self.reprompter = Reprompter(
-            lambda text: scheduler.say(text, source="reprompt", wait="turn", ttl=5), secs=cfg.reprompt_secs
-        )
 
         # v6 (SPOKEN_HISTORY): her spoken replies back into the history when Pipecat dropped them (assistant/spoken.py)
-        observers = [latency, ui_observer, TurnMetricsObserver(), self.levels, self.reprompter]
+        observers = [latency, ui_observer, TurnMetricsObserver(), self.levels]
         self.spoken = None
         if cfg.spoken_history and hasattr(llm, "spoken"):
             from assistant.spoken import SpokenHistory

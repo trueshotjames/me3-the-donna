@@ -226,7 +226,6 @@ class Config:
     donna_persona: bool = field(default_factory=lambda: _bool("DONNA_PERSONA", False))
     # v10: start-up speaking rate (also read by the TTS MCP server); "normal speed" returns to it
     tts_speed: float = field(default_factory=lambda: _float("TTS_SPEED", 1.0))
-    reprompt_secs: float = field(default_factory=lambda: _float("REPROMPT_SECS", 8.0))  # v4: 0 = never re-prompt
     user_turn_stop_timeout: float = field(default_factory=lambda: _float("USER_TURN_STOP_TIMEOUT", 5.0))
     engagement_window_secs: float = field(default_factory=lambda: _float("ENGAGEMENT_WINDOW_SECS", 8.0))
     # streaming over MCP
