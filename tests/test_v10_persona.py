@@ -39,3 +39,14 @@ def test_normal_speed_returns_to_base():
     assert next_speed(0.95, "normal") == 1.0  # old behaviour without a base
     assert sentence(0.95, 0.95, "normal") == "This is my normal speed."
     assert sentence(0.8, 0.95, "normal") == "Okay, back to my normal speed."
+
+
+def test_markdown_not_read_aloud():
+    from assistant.processors import markdown_removed, unspeakable_removed
+
+    assert unspeakable_removed("**1. Root causes** ***fossil fuel combustion***") == "1. Root causes fossil fuel combustion"
+    assert markdown_removed("## Summary\n- first point\n* second") == "Summary\nfirst point\nsecond"
+    assert markdown_removed("Use `pip install` here.") == "Use pip install here."
+    # ordinary text is untouched
+    for t in ("Twelve degrees tonight.", "It's a well-known snake_case name.", "Minus 5 - plus 3."):
+        assert markdown_removed(t) == t
