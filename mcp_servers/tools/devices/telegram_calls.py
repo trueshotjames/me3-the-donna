@@ -28,10 +28,10 @@ ENDED = {"CallDeclined": "declined", "CallBusy": "busy", "TimedOutAnswer": "no a
 
 def pick_device(devices: list[Any], wanted: str | None) -> Any | None:
     """The device whose name contains `wanted` (default: Jabra, else the first). Never a "Monitor of ..." source."""
-    real = [d for d in devices if not d.name.lower().startswith("monitor of")]
+    real = [d for d in devices if not d.title.lower().startswith("monitor of")]
     if wanted and wanted.strip():
-        return next((d for d in real if wanted.strip().lower() in d.name.lower()), None)
-    return next((d for d in real if "jabra" in d.name.lower()), real[0] if real else None)
+        return next((d for d in real if wanted.strip().lower() in d.title.lower()), None)
+    return next((d for d in real if "jabra" in d.title.lower()), real[0] if real else None)
 
 
 def end_reason(e: Exception) -> str:
@@ -80,7 +80,7 @@ class DirectCaller:
         speaker = pick_device(list(MediaDevices.speaker_devices()), os.getenv("TELEGRAM_CALL_SPEAKER"))
         if mic is None or speaker is None:
             raise DeviceError(f"I can't find a {'microphone' if mic is None else 'speaker'} for the call")
-        logger.info(f"phone: call audio: mic {mic.name!r}, speaker {speaker.name!r}")
+        logger.info(f"phone: call audio: mic {mic.title!r}, speaker {speaker.title!r}")
         return (
             MediaStream(mic, audio_parameters=AudioParameters(48000, 1), video_flags=MediaStream.Flags.IGNORE),
             RecordStream(speaker, audio_parameters=AudioParameters(48000, 2)),

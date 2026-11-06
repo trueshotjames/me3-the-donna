@@ -10,14 +10,14 @@ from mcp_servers.tools.devices.telegram_calls import DirectCaller, end_reason, p
 
 
 def _devs(*names):
-    return [NS(name=n) for n in names]
+    return [NS(title=n) for n in names]
 
 
 def test_pick_device_prefers_jabra_and_skips_monitors():
     devs = _devs("Monitor of Jabra", "Built-in Audio Stereo", "Jabra SPEAK 510 USB Mono")
-    assert pick_device(devs, None).name == "Jabra SPEAK 510 USB Mono"
-    assert pick_device(_devs("Monitor of X", "Laptop Mic"), "").name == "Laptop Mic"
-    assert pick_device(devs, "built-in").name == "Built-in Audio Stereo"
+    assert pick_device(devs, None).title == "Jabra SPEAK 510 USB Mono"
+    assert pick_device(_devs("Monitor of X", "Laptop Mic"), "").title == "Laptop Mic"
+    assert pick_device(devs, "built-in").title == "Built-in Audio Stereo"
     assert pick_device(devs, "nope") is None
     assert pick_device(_devs("Monitor of X"), None) is None
 
