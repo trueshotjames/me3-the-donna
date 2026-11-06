@@ -57,7 +57,32 @@ MCP_TRANSPORT=inproc               # ASR/TTS servers inside the assistant proces
 LIGHT_BACKEND=tapo                 # + TAPO_BULBS, TAPO_USERNAME, TAPO_PASSWORD
 MEDIA_BACKEND=spotify              # + SPOTIFY_CLIENT_ID, SPOTIFY_WEBPLAYER=1
 PHONE_BACKEND=telegram             # + TELEGRAM_API_ID, TELEGRAM_API_HASH, TELEGRAM_ALLOWED=Love
+FAST_CONFIRM=1                     # fixed spoken confirmation for simple tools
+WEATHER_DIRECT=1                   # plain weather questions use the tool's own sentence
+TOOL_COMMENT=1                     # v11: she may add up to 8 words after that fixed reply, or nothing
+HOLD_TOOL_CALLS=1                  # v11: a tool call from an early reply waits for the confirmed turn
+EAGER_END_OF_TURN=1                # HOLD_TOOL_CALLS only acts on early replies, so keep this on
 ```
+
+**Updating a Pi that is already set up.** `.env` is not in git, so `git pull` brings the code but never these
+settings. On the Pi, in Donna's folder (`~/Documents/MLOps/"Machine Exercise 3"/me3-the-donna`):
+
+```bash
+git status                         # stop and look if you see local edits or another branch
+git checkout main && git pull
+grep -nE '^(TOOL_COMMENT|HOLD_TOOL_CALLS|EAGER_END_OF_TURN|FAST_CONFIRM|WEATHER_DIRECT)=' .env
+```
+
+In `.env`, make sure each of those five keys appears once with the value `1`: change the value if the key is
+there, add a line if it is not, and leave every other line alone. Then run `donna restart`, or close and reopen
+Donna if she was started from the desktop. Her log (`donna logs`) should show:
+
+```
+v11 switch: TOOL_COMMENT=True tools=['create_reminder', 'get_weather', 'send_message']
+v11 switch: HOLD_TOOL_CALLS=True
+```
+
+These keys go in Donna's own `.env` only. `BENCHMARK_MODE` runs have no tools, so neither switch acts there.
 
 Copy the logins from the laptop or redo them on the Pi (each is a secret, never commit it):
 `data/telegram.session` (or `python -m mcp_servers.tools.devices.telegram_login`) and the Spotify login
@@ -106,6 +131,7 @@ Windows laptop. The code paths below are written to run on the Pi, but **only th
 | Spotify: Donna as the speaker (`SPOTIFY_WEBPLAYER=1`) | needs `install_pi.sh --spotify` (Chromium + Widevine); untested. Costs ~250-350 MB RAM. On the Wayland desktop the small player window may show on screen; if so, switch to X11 (`sudo raspi-config` > Advanced > Wayland > X11) |
 | Spotify on another device (`SPOTIFY_WEBPLAYER=0`, `SPOTIFY_DEVICE=<phone or laptop>`) | Web API only, no browser; the safe fallback |
 | Telegram calls | `TELEGRAM_CALLS=direct` (default on the Pi, `py-tgcalls`, you talk on the Jabra); not yet tried on a real call. The laptop stays on `desktop`; `adb` is untested. |
+| short tail after a fixed reply (`TOOL_COMMENT=1`), held tool calls (`HOLD_TOOL_CALLS=1`) | pure Python, same code as the laptop; untested on the Pi |
 | room calibration (`assistant.calibrate`) | numpy + PyAudio, expected to work; run on the Pi |
 | scenario runner (`benchmark/scenario_tests/run_scenarios.ps1`) | Windows PowerShell; on the Pi run `benchmark/audio_replay.py` per scenario |
 | Hermes Agent | `hermes/setup.sh` installs it as a systemd user service; check RAM with `free -m` |
@@ -137,6 +163,8 @@ scripted stub backend so the UI works without keys).
 - **Messages need your yes**: `send_message` never sends a first draft. She reads it back ("To Love: ... Send
   it?") and sends only on a clear yes in the next turn; anything else revises or cancels it
   (`assistant/message_consent.py`). Only contacts in `TELEGRAM_ALLOWED` can be messaged or called.
+- **A few words of her own**: after the fixed reply to a reminder, a sent message or a plain weather question, she
+  may add up to 8 words, or nothing (`TOOL_COMMENT=1`, `assistant/tool_comment.py`). Silence is a valid result.
 - **Music-aware listening**: music ducks to 15 % while you talk or she speaks, and a stricter gate stops song
   lyrics from opening turns (`assistant/music.py`, using the calibration).
 - **Multi-step tasks**: `delegate` hands work like "create a website for my bakery" to Hermes Agent, which works

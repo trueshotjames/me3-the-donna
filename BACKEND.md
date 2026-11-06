@@ -60,6 +60,13 @@ Setup for the Pi and Windows is in `README.md`.
 
 - `TURN_START_STRATEGY=asr` lets Flux's StartOfTurn start turns; `vad` uses local Silero (faster, more false starts).
 - `EAGER_END_OF_TURN=1` answers Flux's EagerEndOfTurn early and discards the answer if you keep talking.
+- `HOLD_TOOL_CALLS=1` keeps a tool call from an early reply, unexecuted, until the turn is confirmed, instead of
+  running the LLM a second time (`assistant/tool_hold.py`). It needs `EAGER_END_OF_TURN=1`. Look for `tool hold:` in
+  the log. Off in code by default, on in `.env.example`.
+- `TOOL_COMMENT=1` lets a small separate LLM request add up to 8 words after the fixed reply, or nothing
+  (`assistant/tool_comment.py`). It needs `FAST_CONFIRM=1`; plain weather also needs `WEATHER_DIRECT=1`.
+  `TOOL_COMMENT_TOOLS` sets the tools (default `create_reminder,send_message,get_weather`). Off in code by default,
+  on in `.env.example`.
 - `DUCK_BARGE_IN=1`: barge-in pauses her audio at your speech onset and decides with her silent.
 - `VOICE_GATE=1`, `VOICE_GATE_DB`: turns much quieter than your learned level are not for her.
   `VOICE_GATE_SPEAKER=0` keeps the voice print off.
