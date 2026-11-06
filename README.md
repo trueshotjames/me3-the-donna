@@ -81,27 +81,36 @@ v11 is `main` from Nov 6 (PRs #16 and #17). Do these steps on the Pi, in order:
    are off in code, so they must be in `.env`. First see which keys already exist, so that each key ends up there
    once (a second line next to an old `HOLD_TOOL_CALLS=0` leaves two conflicting entries):
    ```bash
-   grep -nE '^(TOOL_COMMENT|HOLD_TOOL_CALLS|EAGER_END_OF_TURN|FAST_CONFIRM|WEATHER_DIRECT|REPROMPT_SECS)=' .env
+   grep -nE '^(TOOL_COMMENT|HOLD_TOOL_CALLS|EAGER_END_OF_TURN|FAST_CONFIRM|WEATHER_DIRECT|DONNA_PERSONA|DEEPGRAM_AURA_VOICE|TTS_SPEED|REPROMPT_SECS)=' .env
    ```
    Change the value where a key exists, add a line where it does not, keep every other line as it is:
    ```
    HOLD_TOOL_CALLS=1        # v11: a tool call from an early reply waits for the confirmed turn (needs EAGER_END_OF_TURN=1)
    TOOL_COMMENT=1           # v11: a short tail of hers after a fixed reminder / sent message / plain weather reply
+   DONNA_PERSONA=1          # v10: Donna's personality (off in code; without it she keeps the old persona)
+   DEEPGRAM_AURA_VOICE=aura-2-hera-en   # v10: her voice (the code default is thalia)
+   TTS_SPEED=0.95           # v10: start-up speaking rate (the code default is 1.0)
    ```
+   The three v10 lines matter if the Pi's `.env` predates v10. The start-up log does not warn when they are missing;
+   check the line `v10 switches: DONNA_PERSONA=True TTS_SPEED=0.95 voice=aura-2-hera-en`.
    If a line `REPROMPT_SECS=...` is there, delete it: the "Are you still there?" reprompt is gone in v11
    (the setting is ignored now). Check that `EAGER_END_OF_TURN=1` and `WEATHER_DIRECT=1` are set and that `FAST_CONFIRM` is not 0 (on by default).
-3. Run the tests: `.venv/bin/python -m pytest -q tests` (all should pass; no network or keys needed).
+3. Run the tests: `.venv/bin/python -m pytest -q tests` (all should pass, on the Pi too; no network or keys needed).
 4. Start her: `donna start` (one beep, then two rising notes = live), or the desktop icon if that is how she runs.
 5. Check `app/logs/donna.log` for the two start-up lines:
    `v11 switch: HOLD_TOOL_CALLS=True` and `v11 switch: TOOL_COMMENT=True tools=['create_reminder', 'get_weather', 'send_message']`.
 6. Try it: "What's the weather in Manila?", "Remind me to call the dentist at 3 PM tomorrow.", and a message with
-   its "yes". After each fixed reply she may add a few words, or nothing. Each try logs one line,
+   its "yes". With `PHONE_BACKEND=telegram` (the Pi) that "yes" sends a **real** Telegram message: send it only to
+   a contact who expects it (for example "Text Love that I'm testing Donna"), or answer "no" to test the read-back
+   only. After each fixed reply she may add a few words, or nothing. Each try logs one line,
    `tool comment spoken|passed|dropped (...) in N ms`. If every line says `dropped (not ready ...)`, the LLM is slower
    than her fixed reply on this link; that is safe (she just says the fixed reply), and the line shows the ms.
    A tool call from an early reply logs `tool hold: ... holding until the turn is confirmed`, then
    `tool hold: turn confirmed; running [...]` or `tool hold: dropped [...]`.
 
-To go back to v10 behaviour without changing code, set both switches to 0 and `donna restart`.
+To go back without changing code, set `HOLD_TOOL_CALLS=0` and `TOOL_COMMENT=0` and `donna restart`. That turns
+off both v11 features, but it is not all of v10: the "Are you still there?" reprompt is deleted in v11 and does not
+come back. For exactly v10, check out the v10 merge (`git checkout 5386c15`), and `git checkout main` to return.
 
 ### Telegram on the Pi (messages)
 
