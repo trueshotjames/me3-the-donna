@@ -222,6 +222,10 @@ class Config:
     side_talk_rule: bool = field(default_factory=lambda: _bool("SIDE_TALK_RULE", False))
     # V8_FIXES: bugs found in the v8 run (the same music "play" twice in one turn is not run or spoken again)
     v8_fixes: bool = field(default_factory=lambda: _bool("V8_FIXES", False))
+    # v10 (DONNA_PERSONA): Donna's personality, speaking style and tone-aware register in the system prompt
+    donna_persona: bool = field(default_factory=lambda: _bool("DONNA_PERSONA", False))
+    # v10: start-up speaking rate (also read by the TTS MCP server); "normal speed" returns to it
+    tts_speed: float = field(default_factory=lambda: _float("TTS_SPEED", 1.0))
     reprompt_secs: float = field(default_factory=lambda: _float("REPROMPT_SECS", 8.0))  # v4: 0 = never re-prompt
     user_turn_stop_timeout: float = field(default_factory=lambda: _float("USER_TURN_STOP_TIMEOUT", 5.0))
     engagement_window_secs: float = field(default_factory=lambda: _float("ENGAGEMENT_WINDOW_SECS", 8.0))

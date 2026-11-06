@@ -350,6 +350,7 @@ class Assistant:
             f" SPEAKING_RATE={cfg.speaking_rate} TOOL_SLOW_SECS={cfg.tool_slow_secs} SIDE_TALK_RULE={cfg.side_talk_rule}"
             f" V8_FIXES={cfg.v8_fixes}"
         )
+        logger.info(f"v10 switches: DONNA_PERSONA={cfg.donna_persona} TTS_SPEED={cfg.tts_speed} voice={cfg.tts_voice}")
         # v7 (DUCK_BARGE_IN): her audio pauses on the user's speech onset while the STT service decides
         self.duck = None
         if cfg.duck_barge_in:
@@ -535,7 +536,7 @@ class Assistant:
             from assistant.speaking_rate import SpeakingRate
 
             # v8 (SPEAKING_RATE): "speak slower" changes Aura's speed through the TTS MCP server
-            self.rate = SpeakingRate(tts)
+            self.rate = SpeakingRate(tts, base=cfg.tts_speed)
             standard_tools += self.rate.register(llm)
         logger.info(f"LLM tools: {[t.name for t in standard_tools]}")
 
@@ -549,6 +550,7 @@ class Assistant:
             speaking_rate=cfg.speaking_rate,
             side_talk=cfg.side_talk_rule,
             no_tools=cfg.benchmark_mode,
+            persona=cfg.donna_persona,
         )
         base_prompt = system_prompt(**self._prompt_args, memory=self.memory.note if self.memory else None)
         if cfg.benchmark_mode and standard_tools:
