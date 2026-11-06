@@ -345,4 +345,18 @@ def test_prompt_mentions_the_house_tools():
     p = system_prompt("Pi", "King", 8, delegate=True)
     for name in ("control_music", "set_light", "set_thermostat", "home_status", "create_timer", "get_weather", "send_message", "make_call", "end_call"):
         assert name in p
-    assert "Everything else you answer yourself, at once" in p and "weather, reminders, alarms" in p  # v2: shorter rules
+    assert "Answer yourself, at once" in p and "weather, reminders, alarms" in p  # v2: shorter rules
+
+
+def test_prompt_delegates_instead_of_refusing():
+    """6 Nov: "delegate" then "the current time in Washington, DC" got "I can't retrieve the current time":
+    the rules put "the time" on the answer-yourself list and get_current_time knows only the local clock."""
+    from assistant.prompts import system_prompt
+
+    p = system_prompt("Pi", "King", 8, delegate=True)
+    assert "the local time" in p and "the time in another city" in p
+    assert "never say you can't" in p and '"delegate", "look it up"' in p
+    assert "Anything else you lack a tool for: delegate it" in p
+    assert "Ordering, buying" in p  # the clear can'ts stay refused
+    off = system_prompt("Pi", "King", 8)
+    assert "delegate it" not in off and "payments), say so" in off
