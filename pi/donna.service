@@ -3,12 +3,15 @@
 # kills everything she started (KillMode=control-group): no leftover processes holding the speaker.
 [Unit]
 Description=Donna voice assistant (headless, sound cues)
-After=default.target sound.target
+# Her audio goes through PipeWire (AUDIO_*_DEVICE=pipewire), so it has to be up first.
+After=sound.target pipewire.service pipewire-pulse.service wireplumber.service
+Wants=pipewire.service pipewire-pulse.service wireplumber.service
 StartLimitIntervalSec=0
 
 [Service]
 Type=simple
 WorkingDirectory=@REPO@
+ExecStartPre=-/bin/bash "@REPO@/pi/wait_audio.sh"
 ExecStart="@REPO@/.venv/bin/python" -m assistant.supervisor
 Restart=always
 RestartSec=5

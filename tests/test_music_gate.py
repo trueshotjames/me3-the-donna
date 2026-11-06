@@ -106,8 +106,11 @@ def test_music_state_ducks_on_near_voice_and_restores_when_idle():
         m.on_state("speaking")  # she speaks over music: duck again
         await asyncio.sleep(0.01)
         assert calls[-1] == (True, 15)
-        m.update_media({"state": "paused"})
-        assert not m.playing and not m.ducked
+        m.update_media({"state": "paused"})  # "stop the music" is said while ducked: the volume must still come back
+        assert not m.playing and m.ducked
+        m.on_state("idle")
+        await asyncio.sleep(0.6)
+        assert calls[-1] == (False, 15) and not m.ducked
         m._task.cancel()
 
     asyncio.run(scenario())
@@ -131,3 +134,6 @@ def test_spotify_duck_restores_and_louder_steps_from_real_volume(tmp_path, monke
     p.duck(True, 15)
     p.duck(False)
     assert fake.player["device"]["volume_percent"] == 70
+    p.duck(True, 15)
+    p.stop()  # stopped while ducked: the restore still works
+    assert p.duck(False)["ducked"] is False and fake.player["device"]["volume_percent"] == 70

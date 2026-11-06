@@ -52,8 +52,7 @@ class MusicState:
         self.playing = playing
         if "ducked" in media:
             self.ducked = bool(media["ducked"])
-        if not playing:
-            self.ducked = False
+        # Stopped while ducked ("stop the music" always is): stay ducked, so run() still restores the volume.
 
     def on_state(self, state: str) -> None:
         """The assistant's UI state; she speaking also ducks, and idle starts the restore countdown."""

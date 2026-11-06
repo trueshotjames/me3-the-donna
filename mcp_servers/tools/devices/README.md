@@ -59,7 +59,8 @@ Spotify as the speaker "Donna"; `control_music` always plays there.
 - Laptop: uses Chrome (or Edge) with its own profile in `data/webplayer-profile/`. Make the Jabra the Windows
   default playback device.
 - Pi (64-bit Raspberry Pi OS with the desktop): `sudo apt install chromium libwidevinecdm0` (Spotify's player
-  needs Widevine DRM), make the speakerphone the default output, set `SPOTIFY_WEBPLAYER=1`. Not yet tested on
+  needs Widevine DRM), make the speakerphone the default output, set `AUDIO_INPUT_DEVICE=pipewire` and `AUDIO_OUTPUT_DEVICE=pipewire`
+  (with `Jabra` there Donna locks the card and the music goes to the headphone jack), set `SPOTIFY_WEBPLAYER=1`. Not yet tested on
   the Pi: check that "Donna speaker ready" appears in the tools log and watch RAM (`free -m`) while playing.
 - go-librespot (`speaker.py`, `SPOTIFY_SPEAKER=1`, `tools/install_speaker_pi.sh`) is kept but off: Spotify refuses
   its audio keys for newer accounts (go-librespot #279, librespot #1649), so it plays silence.
