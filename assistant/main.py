@@ -458,6 +458,7 @@ class Assistant:
             ),
             first_token_timeout_secs=cfg.llm_first_token_timeout_secs,
             hedge_secs=cfg.llm_hedge_secs,
+            hold_tool_calls=cfg.hold_tool_calls,  # v11
             # v5: "Kayla, you're talking to the radio." -> the turn note asks for <pass/> (contacts are not strangers)
             engagement=lambda text: addressed_elsewhere(
                 text, cfg.assistant_name, ("Mom", "Dad", "Alex", "Sam", "Work", "Reyes", "Dr")
@@ -557,6 +558,12 @@ class Assistant:
             raise RuntimeError(f"benchmark mode must offer no tools, got {[t.name for t in standard_tools]}")
         context_args = {"tools": ToolsSchema(standard_tools)} if standard_tools else {}
         self._context = context = LLMContext(messages=[{"role": "system", "content": base_prompt}], **context_args)
+        if hasattr(llm, "tool_hold"):
+            # v11 (HOLD_TOOL_CALLS): a held tool call runs against the conversation, for the same words only
+            llm.real_context = context
+            if hasattr(stt, "_last_commit"):
+                llm.committed_text = lambda: stt._last_commit
+        logger.info(f"v11 switch: HOLD_TOOL_CALLS={cfg.hold_tool_calls}")
         if hasattr(stt, "prev_reply"):
             # v7 (EOT_ADAPTIVE): an answer to her question ("Sam.", "Ten minutes.") is never held as a statement
             def prev_reply() -> str:
