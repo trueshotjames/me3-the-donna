@@ -24,6 +24,7 @@ from typing import Awaitable, Callable
 from loguru import logger
 from pipecat.services.groq.llm import GroqLLMService
 
+from assistant.tool_hold import HeldCalls, ToolHold
 from assistant.turn_metrics import METRICS
 from assistant.voice_gate import FLAGS
 
@@ -183,9 +184,18 @@ class TimedGroqLLMService(GroqLLMService):
         first_token_timeout_secs: float = 0.0,  # v3: no first token by then -> one retry with the providers swapped
         engagement: Callable[[str], str | None] | None = None,  # v5: assistant/engagement.py check on the user text
         hedge_secs: float = 0.0,  # v7: no first token by then -> a second request, providers swapped; first one wins
+        hold_tool_calls: bool = False,  # v11: a tool call from an early reply waits for the turn (assistant/tool_hold.py)
         **kwargs,
     ):
         super().__init__(*args, **kwargs)
+        # v11 (HOLD_TOOL_CALLS): main.py sets real_context (the conversation) and committed_text (the STT service's
+        # last committed transcript) so a held call runs against the right history and only for the same words
+        self.tool_hold = ToolHold(enabled=hold_tool_calls)
+        self.real_context = None
+        self.committed_text: Callable[[], str | None] | None = None
+        self._hold_task: asyncio.Task | None = None
+        self._last_speculative_call: dict | None = None
+        self._last_speculative_text = ""
         self._turn_note = turn_note
         self._engagement = engagement
         # v6 (LLM_EOT): async callable(kind, user_text) told whether a speculative reply starts with <wait/>;
@@ -290,6 +300,8 @@ class TimedGroqLLMService(GroqLLMService):
         gate = getattr(self, "_speculation_gate", None)
         call["speculative"] = speculative = bool(gate is not None and gate.is_speculating)
         user_text = _last_user_text(msgs)
+        if speculative:
+            self._last_speculative_call, self._last_speculative_text = call, user_text
         noted = self._add_turn_note(context, call)
         wait_msg = None
         separate = self.cut_check is not None and speculative and self.on_verdict is not None and bool(user_text)
@@ -355,6 +367,95 @@ class TimedGroqLLMService(GroqLLMService):
                     logger.warning(f"{self}: LLM end-of-turn verdict failed: {e!r}")
 
         return _TimedStream(stream, call, on_verdict=on_verdict)
+
+    # ------------------------------------------------------------------ v11: hold early tool calls
+
+    async def run_function_calls(self, function_calls):
+        hold = self.tool_hold
+        if hold.enabled and function_calls and self._speculation_gate.is_speculating:
+            # Pipecat would withdraw the early reply here (EagerEndOfTurnCancelFrame) and answer the committed turn
+            # with a second LLM call. Keep the calls instead; nothing runs until the turn is confirmed.
+            ctx = self.real_context
+            hold.hold(HeldCalls(
+                calls=list(function_calls),
+                user_text=self._last_speculative_text,
+                record=self._last_speculative_call,
+                user_msgs_at_hold=_count_user(ctx.get_messages()) if ctx is not None else 0,
+            ))
+            return
+        await super().run_function_calls(function_calls)
+
+    async def process_frame(self, frame, direction):
+        from pipecat.frames.frames import LLMContextFrame
+
+        if isinstance(frame, LLMContextFrame) and self.tool_hold.held is not None:
+            # a new inference answers the turn instead (the speculation was replaced)
+            self.tool_hold.drop("a new inference started")
+        await super().process_frame(frame, direction)
+
+    async def push_frame(self, frame, direction=None):
+        from pipecat.frames.frames import (
+            CancelFrame,
+            EagerEndOfTurnCancelFrame,
+            EndFrame,
+            InterruptionFrame,
+            UserStartedSpeakingFrame,
+            UserStoppedSpeakingFrame,
+        )
+        from pipecat.processors.frame_processor import FrameDirection
+
+        direction = FrameDirection.DOWNSTREAM if direction is None else direction
+        hold = self.tool_hold
+        if direction == FrameDirection.DOWNSTREAM and hold.enabled:
+            if isinstance(frame, (EagerEndOfTurnCancelFrame, InterruptionFrame, UserStartedSpeakingFrame,
+                                  EndFrame, CancelFrame)):
+                hold.drop(type(frame).__name__)
+                if self._hold_task is not None and not self._hold_task.done():
+                    # confirmed a moment ago but not started yet: an interruption still stops it
+                    self._hold_task.cancel()
+                    logger.info(f"tool hold: {type(frame).__name__} before the held call started; not running it")
+            elif isinstance(frame, UserStoppedSpeakingFrame) and hold.held is not None:
+                held = hold.take()
+                await super().push_frame(frame, direction)  # the gate releases the held reply (and stops speculating)
+                self._hold_task = self.create_task(self._run_held(held), "tool_hold")
+                return
+        await super().push_frame(frame, direction)
+
+    async def _run_held(self, held: HeldCalls) -> None:
+        from pipecat.frames.frames import LLMRunFrame
+        from pipecat.processors.frame_processor import FrameDirection
+
+        hold = self.tool_hold
+        if self._speculation_gate.is_speculating:  # safeguard 1: never while the gate still speculates
+            hold.held = held
+            hold.drop("the gate is still speculating")
+            await self.push_frame(LLMRunFrame(), FrameDirection.UPSTREAM)
+            return
+        committed = None
+        if self.committed_text is not None:
+            try:
+                committed = self.committed_text()
+            except Exception as e:  # noqa: BLE001
+                logger.debug(f"tool hold: committed_text failed: {e!r}")
+        if not hold.matches(held.user_text, committed):
+            # safeguard 2: different words. Pipecat did not re-run the LLM (it saw a match), so ask it now.
+            hold.mismatch(held, committed or "")
+            await self.push_frame(LLMRunFrame(), FrameDirection.UPSTREAM)
+            return
+        ctx = self.real_context
+        if ctx is not None:
+            # the user aggregator writes the committed message right after UserStoppedSpeakingFrame; the tool call
+            # must come after it in the history
+            deadline = time.time() + 0.5
+            while _count_user(ctx.get_messages()) <= held.user_msgs_at_hold and time.time() < deadline:
+                await asyncio.sleep(0.005)
+        calls = held.calls
+        if ctx is not None:
+            import dataclasses
+
+            calls = [dataclasses.replace(c, context=ctx) for c in calls]
+        hold.released(held, (time.time() - held.t_held) * 1000)
+        await super().run_function_calls(calls)
 
     async def _first_token_or_retry(self, context, call: dict):
         """v3: the v2 route test saw two 14-15 s first-token stalls at OpenRouter. Wait up to the timeout, counted
@@ -518,6 +619,10 @@ class TimedGroqLLMService(GroqLLMService):
                 call["turn_note"] = note
                 return m, original
         return None
+
+
+def _count_user(msgs) -> int:
+    return sum(1 for m in msgs if isinstance(m, dict) and m.get("role") == "user")
 
 
 def _last_user_text(msgs) -> str:

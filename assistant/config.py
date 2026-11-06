@@ -177,6 +177,9 @@ class Config:
     # SPOKEN_HISTORY: what she said aloud goes into the history even when Pipecat dropped it (speculative replies,
     # replies the user cut off); see assistant/spoken.py
     spoken_history: bool = field(default_factory=lambda: _bool("SPOKEN_HISTORY", False))
+    # v11 (HOLD_TOOL_CALLS): a tool call from an early (speculative) reply is held until the turn is confirmed and then
+    # run, instead of Pipecat dropping the early reply and calling the LLM again (assistant/tool_hold.py). Off = v10.
+    hold_tool_calls: bool = field(default_factory=lambda: _bool("HOLD_TOOL_CALLS", False))
     # v8 (PLAYED_TEXT): the chat and the spoken history take her sentences after they have played (not when
     # synthesised), so words she never got to say are not shown or remembered when she is cut off
     played_text: bool = field(default_factory=lambda: _bool("PLAYED_TEXT", True))
