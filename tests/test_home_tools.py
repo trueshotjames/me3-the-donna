@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import asyncio
 import json
+import sys
 import time
 from types import SimpleNamespace
 
@@ -177,7 +178,8 @@ def test_phone_call_and_message(monkeypatch):
 
 
 def test_build_devices_defaults_to_simulation(monkeypatch):
-    monkeypatch.setenv("LIGHT_BACKEND", "gpio")  # no gpiozero here: falls back with a warning
+    monkeypatch.setenv("LIGHT_BACKEND", "gpio")  # no gpiozero: falls back with a warning
+    monkeypatch.setitem(sys.modules, "gpiozero", None)  # even on a Pi, where gpiozero is installed
     monkeypatch.setenv("MEDIA_BACKEND", "sim")  # the real .env may name Spotify
     monkeypatch.setenv("PHONE_BACKEND", "sim")
     monkeypatch.setenv("LIGHT_ROOMS", "studio, hall")
