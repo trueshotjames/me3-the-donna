@@ -11,11 +11,17 @@ read/write access to the hidraw node, e.g. /etc/udev/rules.d/50-jabra.rules:
     KERNEL=="hidraw*", ATTRS{idVendor}=="0b0e", MODE="0666"
 then `sudo udevadm control --reload && sudo udevadm trigger`.
 
+The + and - buttons arrive as input report 1 (Consumer page), byte 1: bit 0 Volume Down, bit 1 Volume Up. Windows
+and the Pi's desktop act on them already; with no desktop nothing does, so on Linux a press that changed nothing
+moves the PipeWire output, which Donna, Spotify and calls all play through.
+
 JABRA_BUTTONS=0 turns it off.
 """
 
 from __future__ import annotations
 
+import shutil
+import subprocess
 import threading
 import time
 from typing import Callable
@@ -33,6 +39,11 @@ REPORT_ID = 0x03
 HOOK_BIT, MUTE_BIT = 0x01, 0x10  # input report 3, byte 1
 LED_OFF_HOOK, LED_MUTE, LED_RING = 0x01, 0x04, 0x08  # output report 3, byte 1
 RETRY_SECS = 2.0
+CONSUMER_REPORT = 0x01
+VOL_DOWN_BIT, VOL_UP_BIT = 0x01, 0x02  # input report 1, byte 1
+VOLUME_STEP = "5%"
+DESKTOP_WAIT_SECS = 0.25  # time for the desktop to act on the press first
+SINK = "@DEFAULT_AUDIO_SINK@"
 
 
 def parse_report(report: bytes | list[int]) -> dict[str, bool] | None:
@@ -41,6 +52,22 @@ def parse_report(report: bytes | list[int]) -> dict[str, bool] | None:
     if len(r) < 2 or r[0] != REPORT_ID:
         return None
     return {"hook": bool(r[1] & HOOK_BIT), "mute": bool(r[1] & MUTE_BIT)}
+
+
+def _wpctl(*args: str) -> str:
+    try:
+        return subprocess.run(["wpctl", *args], capture_output=True, text=True, timeout=2).stdout.strip()
+    except (OSError, subprocess.SubprocessError) as e:
+        logger.debug(f"jabra: wpctl failed: {e!r}")
+        return ""
+
+
+def volume_press(up: bool) -> None:
+    """One step of the master volume, unless the desktop already took this press (it would count twice)."""
+    before = _wpctl("get-volume", SINK)
+    time.sleep(DESKTOP_WAIT_SECS)
+    if _wpctl("get-volume", SINK) == before:
+        _wpctl("set-volume", "-l", "1.0", SINK, VOLUME_STEP + ("+" if up else "-"))
 
 
 def _hid():
@@ -68,6 +95,8 @@ class JabraButtons:
         self._dev = self._open()
         self._leds = 0
         self._on_hook = on_hook
+        self._volume = shutil.which("wpctl") is not None  # Linux with PipeWire; Windows handles these keys itself
+        self._vol_bits = 0
         self._hook: bool | None = None
         self._lock = threading.Lock()
         self._stop = threading.Event()
@@ -115,6 +144,9 @@ class JabraButtons:
             if not r:
                 time.sleep(0.02)
                 continue
+            if r[0] == CONSUMER_REPORT and len(r) > 1:
+                self._on_volume(r[1])
+                continue
             ev = parse_report(r)
             logger.debug(f"jabra: report {bytes(r).hex()} -> {ev}")
             if ev is None or ev["hook"] == self._hook:
@@ -124,6 +156,12 @@ class JabraButtons:
                 self._on_hook(ev["hook"])
             except Exception as e:  # noqa: BLE001
                 logger.warning(f"jabra: button handler failed: {e!r}")
+
+    def _on_volume(self, bits: int) -> None:
+        pressed = bits & ~self._vol_bits  # a press, not the release or a held button
+        self._vol_bits = bits
+        if self._volume and pressed & (VOL_UP_BIT | VOL_DOWN_BIT):
+            threading.Thread(target=volume_press, args=(bool(pressed & VOL_UP_BIT),), name="jabra-volume", daemon=True).start()
 
     def set_leds(self, *, off_hook: bool = False, ring: bool = False, mute: bool = False) -> None:
         """Light the Jabra's call LEDs; off_hook=True makes the next red press send hook = 0."""

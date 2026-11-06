@@ -90,7 +90,8 @@ change the music yourself during a call, it stays as you set it.
 
 ## Jabra phone buttons (JABRA_BUTTONS=1)
 
-During a Telegram call the Jabra Speak's red button hangs up and green answers (`jabra.py`, through hidapi).
+The Jabra's + and - buttons set the master volume (on the Pi, the PipeWire output that Donna, Spotify and calls
+share). During a Telegram call the Jabra Speak's red button hangs up and green answers (`jabra.py`, through hidapi).
 Windows needs nothing more. On the Pi `jabra.py` uses hidapi's `hidraw` module and the HID node must be readable: `app/install_pi.sh` adds
 `/etc/udev/rules.d/50-jabra.rules` (`KERNEL=="hidraw*", ATTRS{idVendor}=="0b0e", MODE="0666"`). Untested on the Pi.
 
