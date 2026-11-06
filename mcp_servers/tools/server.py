@@ -383,7 +383,7 @@ async def send_message(contact: str, text: str) -> str:
 @mcp.tool()
 async def make_call(contact: str) -> str:
     """Call a contact by name ("call Mom"). The call rings and then connects; end_call hangs up."""
-    return await asyncio.to_thread(_device, devices.phone.call, contact)  # Telegram: starts it on the phone over ADB
+    return await asyncio.to_thread(_device, devices.phone.call, contact)  # Telegram: see devices/telegram.py
 
 
 @mcp.tool()

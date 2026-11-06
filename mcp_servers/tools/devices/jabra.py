@@ -42,14 +42,26 @@ def parse_report(report: bytes | list[int]) -> dict[str, bool] | None:
     return {"hook": bool(r[1] & HOOK_BIT), "mute": bool(r[1] & MUTE_BIT)}
 
 
+def _hid():
+    """hidapi's module. On Linux `hid` is the libusb build, which reports usage page 0, so prefer `hidraw` there."""
+    try:
+        import hidraw
+
+        return hidraw
+    except ImportError:
+        pass
+    try:
+        import hid
+    except ImportError as e:
+        raise RuntimeError("hidapi is not installed (pip install hidapi)") from e
+    return hid
+
+
 class JabraButtons:
     """Reads the Jabra's phone buttons in a daemon thread and calls on_hook(off_hook: bool) when the hook changes."""
 
     def __init__(self, on_hook: Callable[[bool], None], *, path: bytes | None = None):
-        try:
-            import hid
-        except ImportError as e:
-            raise RuntimeError("hidapi is not installed (pip install hidapi)") from e
+        hid = _hid()
         if path is None:
             found = [d for d in hid.enumerate(JABRA_VENDOR) if d.get("usage_page") == TELEPHONY_PAGE]
             if not found:

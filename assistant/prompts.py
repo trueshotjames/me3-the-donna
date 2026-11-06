@@ -28,6 +28,15 @@ Background tasks (delegate):
 import os as _os
 
 
+def _where_calls_ring() -> str:
+    mode = (_os.getenv("TELEGRAM_CALLS") or ("desktop" if _os.name == "nt" else "direct")).strip().lower()
+    if mode == "adb":
+        return "A call starts on the user's phone and they talk there."
+    if mode == "desktop":
+        return "A call rings from Telegram on the user's computer and they talk there."
+    return "A call rings from here and the user talks on the speakerphone."
+
+
 def _phone_contacts_rule() -> str:
     """v9: with PHONE_BACKEND=telegram the contacts are real people: read a message back before sending it."""
     if _os.getenv("PHONE_BACKEND", "sim").lower() == "telegram":
@@ -38,8 +47,7 @@ def _phone_contacts_rule() -> str:
   enforces it: call send_message as soon as you know who and what; it is NOT sent, the app reads it back and asks
   "Send it?". If the user then says yes, call send_message again with the same contact and text (that sends it).
   If they revise or add ("add that ...", "change it to ...", "make it shorter"), call send_message with the full
-  revised text as one message (it is read back again). If they say no, cancel or never mind, drop it (no tool). A call rings from Telegram
-  on the user's computer and they talk there.
+  revised text as one message (it is read back again). If they say no, cancel or never mind, drop it (no tool). {_where_calls_ring()}
 """
     return """  The contacts are Mom, Dad, Alex, Sam, Dr. Reyes and Work; if a name is unknown the tool says so.
 """

@@ -337,9 +337,10 @@ async def relative_thermostat(params, client) -> None:
 
 
 def _user_turn(params) -> int:
-    """Index of the current user turn (number of user messages in the context)."""
+    """Index of the current user turn: user messages in the context plus those the history trim removed."""
     try:
-        return sum(1 for m in params.context.get_messages() if isinstance(m, dict) and m.get("role") == "user")
+        here = sum(1 for m in params.context.get_messages() if isinstance(m, dict) and m.get("role") == "user")
+        return here + getattr(params.context, "trimmed_user_turns", 0)
     except Exception:  # noqa: BLE001
         return 0
 
