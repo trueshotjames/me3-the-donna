@@ -41,12 +41,14 @@ def end_reason(e: Exception) -> str:
 class DirectCaller:
     """One call at a time. on_end(reason) runs on the loop when a call fails or nobody answers."""
 
-    def __init__(self, client: Any, on_end: Callable[[str], None], on_incoming: Callable[[int | None], None]):
+    def __init__(self, client: Any, on_end: Callable[[str], None], on_incoming: Callable[[int | None], None],
+                 on_connected: Callable[[], None]):
         from pytgcalls import PyTgCalls  # here, on the loop: its constructor takes the running event loop
 
         self._tg = PyTgCalls(client)
         self._on_end = on_end
         self._on_incoming = on_incoming
+        self._on_connected = on_connected
         self._task: asyncio.Task | None = None
         self._peer: int | None = None
         self.incoming: int | None = None
@@ -91,6 +93,7 @@ class DirectCaller:
 
         try:
             await self._tg.play(peer, send, CallConfig(timeout=RING_SECS))  # returns once the call is connected
+            self._on_connected()
             await self._tg.record(peer, play)
         except asyncio.CancelledError:
             raise

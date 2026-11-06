@@ -55,6 +55,7 @@ class _Tg:
 def _caller(tg, ended):
     c = DirectCaller.__new__(DirectCaller)
     c._tg, c._on_end, c._task, c._peer, c.incoming = tg, ended.append, None, None, None
+    c._on_connected = lambda: None
     c._streams = lambda: ("send", "play")
     return c
 

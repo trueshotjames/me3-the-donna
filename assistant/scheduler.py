@@ -240,10 +240,11 @@ class Scheduler:
         self._bus.emit("muted", muted=muted)
 
     async def _sync_call_mute(self, phone: dict[str, Any] | None) -> None:
-        """While a phone call rings or is connected, Donna stops listening (the speakerphone hears the call).
-        Once per call: if the user unmutes her during the call, that sticks. Unmutes when the call ends."""
+        """While a phone call is connected, Donna stops listening (the speakerphone hears the call). She keeps
+        listening while it rings, so "hang up" still works. Once per call: if the user unmutes her during the call,
+        that sticks. Unmutes when the call ends."""
         call = (phone or {}).get("call") or {}
-        on_call = call.get("state") in ("ringing", "connected")
+        on_call = call.get("state") == "connected"
         if on_call and call.get("started_at") != self._call_seen:
             self._call_seen = call.get("started_at")
             if not self._muted:
