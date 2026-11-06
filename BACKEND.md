@@ -66,3 +66,9 @@ Setup for the Pi and Windows is in `README.md`.
 - `MUSIC_DUCK=1`, `MUSIC_DUCK_LEVEL=15`: music level while you talk.
 - `AUDIO_OUT_SAMPLE_RATE=48000` for a Jabra on the Pi; `16000` on a laptop.
 - `LLM_MODEL`: the fast model; `LLM_PROVIDER_ORDER=groq` keeps it on Groq hardware.
+- `HOLD_TOOL_CALLS=1` (v11, `assistant/tool_hold.py`): a tool call from an early reply (`EAGER_END_OF_TURN=1`)
+  waits for the confirmed turn and then runs once, instead of a second LLM call. Off in code.
+- `TOOL_COMMENT=1` (v11, `assistant/tool_comment.py`): after the fixed reply of `create_reminder`, a sent
+  `send_message` or a plain weather answer, a separate tool-less LLM request may add up to 8 words, or nothing.
+  Dropped when late, long, a question, a repeat, interrupted or on an error. `TOOL_COMMENT_TOOLS` picks the tools.
+  Off in code.

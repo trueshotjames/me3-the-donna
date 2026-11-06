@@ -64,6 +64,36 @@ Copy the logins from the laptop or redo them on the Pi (each is a secret, never 
 (`python -m mcp_servers.tools.devices.spotify_login --no-browser`). `data/calibration.json` is per room and
 microphone, so run the calibration on the Pi itself.
 
+### Updating the Pi to v11 (for whoever runs the Pi, person or agent)
+
+v11 is `main` from Nov 6 (PRs #16 and #17). Do these steps on the Pi, in order:
+
+1. Stop her and pull the code:
+   ```bash
+   donna stop
+   cd ~/Documents/MLOps/"Machine Exercise 3"/me3-the-donna && git pull
+   .venv/bin/pip install -r requirements.txt     # no new packages in v11; harmless to run
+   ```
+2. Edit `.env` (keep every other line as it is; both switches are off in code, so they must be in `.env`):
+   ```
+   HOLD_TOOL_CALLS=1        # v11: a tool call from an early reply waits for the confirmed turn (needs EAGER_END_OF_TURN=1)
+   TOOL_COMMENT=1           # v11: a short tail of hers after a fixed reminder / sent message / plain weather reply
+   ```
+   If a line `REPROMPT_SECS=...` is there, delete it: the "Are you still there?" reprompt is gone in v11
+   (the setting is ignored now). Check that `EAGER_END_OF_TURN=1` and `WEATHER_DIRECT=1` are set and that `FAST_CONFIRM` is not 0 (on by default).
+3. Run the tests: `.venv/bin/python -m pytest -q tests` (all should pass; no network or keys needed).
+4. Start her: `donna start` (one beep, then two rising notes = live).
+5. Check `app/logs/donna.log` for the two start-up lines:
+   `v11 switch: HOLD_TOOL_CALLS=True` and `v11 switch: TOOL_COMMENT=True tools=['create_reminder', 'get_weather', 'send_message']`.
+6. Try it: "What's the weather in Manila?", "Remind me to call the dentist at 3 PM tomorrow.", and a message with
+   its "yes". After each fixed reply she may add a few words, or nothing. Each try logs one line,
+   `tool comment spoken|passed|dropped (...) in N ms`. If every line says `dropped (not ready ...)`, the LLM is slower
+   than her fixed reply on this link; that is safe (she just says the fixed reply), and the line shows the ms.
+   A tool call from an early reply logs `tool hold: ... holding until the turn is confirmed`, then
+   `tool hold: turn confirmed; running [...]` or `tool hold: dropped [...]`.
+
+To go back to v10 behaviour without changing code, set both switches to 0 and `donna restart`.
+
 ### Telegram on the Pi (messages)
 
 Donna texts from your own Telegram account through Telethon (pure Python, installed by `install_pi.sh`).
@@ -144,6 +174,8 @@ scripted stub backend so the UI works without keys).
   it is done.
 - **Memory**: a running note and searchable transcripts of earlier conversations (`data/memory/`).
 - **Speaking rate**: "speak slower" / "faster" changes Aura's speed.
+- **A word of her own after fixed replies** (`TOOL_COMMENT=1`, v11): after "I'll remind you to ...", "Message sent
+  to ..." or a plain weather answer she may add a few words ("Good luck with that."), or nothing.
 
 The voice print part of the voice gate is off (`VOICE_GATE_SPEAKER=0`); the loudness gate still runs.
 
