@@ -85,6 +85,9 @@ Donna messages and calls from **your own** Telegram account (Telethon, the clien
    - `adb`: starts the call on an Android phone over USB (USB debugging on, Telegram >
      Settings > Privacy > Sync Contacts on). Written against Android's contacts intents; **never tested**.
 
+Music pauses when a call starts or is attempted, and resumes when it ends or fails (`Devices.place_call`). If you
+change the music yourself during a call, it stays as you set it.
+
 ## Jabra phone buttons (JABRA_BUTTONS=1)
 
 During a Telegram call the Jabra Speak's red button hangs up and green answers (`jabra.py`, through hidapi).

@@ -298,6 +298,8 @@ async def control_music(action: str, query: str = "", value: int | None = None) 
     set_volume (`value` 0-100, "volume 40"), mute, unmute, shuffle_on, shuffle_off, repeat_off, repeat_one, repeat_all, status."""
     a = (action or "").strip().lower().replace(" ", "_").replace("-", "_")
     a = {"skip": "next", "forward": "next", "back": "previous", "prev": "previous", "unpause": "resume", "continue": "resume",
+    if a in ("play", "pause", "resume", "stop"):
+        devices.drop_music_hold()  # during a call, this choice wins over the automatic pause
          "louder": "volume_up", "quieter": "volume_down", "softer": "volume_down", "volume": "set_volume", "now_playing": "status",
          "what_is_playing": "status", "shuffle": "shuffle_on", "repeat": "repeat_all", "volume_down_bit": "volume_down_little",
          "volume_up_bit": "volume_up_little", "volume_down_slightly": "volume_down_little",
@@ -383,7 +385,7 @@ async def send_message(contact: str, text: str) -> str:
 @mcp.tool()
 async def make_call(contact: str) -> str:
     """Call a contact by name ("call Mom"). The call rings and then connects; end_call hangs up."""
-    return await asyncio.to_thread(_device, devices.phone.call, contact)  # Telegram: see devices/telegram.py
+    return await asyncio.to_thread(_device, devices.place_call, contact)  # Telegram: see devices/telegram.py
 
 
 @mcp.tool()

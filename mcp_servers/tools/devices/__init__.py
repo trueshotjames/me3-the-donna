@@ -9,6 +9,7 @@ simulation, so the demo never loses a widget because a cable is unplugged.
 from __future__ import annotations
 
 import os
+import threading
 from typing import Any, Callable
 
 try:
@@ -39,6 +40,10 @@ class Devices:
         self.media = media
         self.phone = phone
         self.version = 1
+        self._hold_lock = threading.Lock()
+        self._music_held = False  # paused for a call, resumes when the call ends
+        self._dialing = False
+        self._held_call = None  # started_at of the call already seen, so a choice made during it sticks
 
     @property
     def all(self) -> list[Device]:
@@ -55,9 +60,72 @@ class Devices:
                 changed = d.tick() or changed
             except Exception as e:  # noqa: BLE001
                 logger.warning(f"{d.name} tick failed: {e!r}")
+        self._sync_call_music()
         if changed:
             self.bump()
         return changed
+
+    # Music and calls. The pause goes through the player like any other, so Spotify, the house snapshot, the UI and
+    # assistant/music.py all see it. Only the music this paused comes back, and "play" or "stop" during a call wins.
+    def _call_now(self) -> dict[str, Any] | None:
+        call = self.phone.status().get("call")
+        return call if call and call.get("state") in ("ringing", "connected") else None
+
+    def _sync_call_music(self) -> None:
+        """From tick(), which must stay quick: the player is slow, so it is called on a thread."""
+        try:
+            call = self._call_now()
+        except Exception as e:  # noqa: BLE001
+            logger.warning(f"music: could not read the call state: {e!r}")
+            return
+        if call and call.get("started_at") != self._held_call:
+            self._held_call = call.get("started_at")  # e.g. an incoming call answered on the Jabra
+            threading.Thread(target=self.hold_music, name="call-music", daemon=True).start()
+        elif not call and self._music_held and not self._dialing:
+            threading.Thread(target=self.release_music, name="call-music", daemon=True).start()
+
+    def hold_music(self) -> None:
+        with self._hold_lock:
+            if self._music_held:
+                return
+            try:
+                if self.media.status().get("state") != "playing":
+                    return
+                self.media.pause()
+            except Exception as e:  # noqa: BLE001
+                logger.warning(f"music: could not pause for the call: {e!r}")
+                return
+            self._music_held = True
+        logger.info("music: paused for the call")
+        self.bump()
+
+    def release_music(self) -> None:
+        with self._hold_lock:
+            if not self._music_held or self._dialing or self._call_now():
+                return
+            self._music_held = False
+            try:
+                if self.media.status().get("state") == "paused":
+                    self.media.resume()
+            except Exception as e:  # noqa: BLE001
+                logger.warning(f"music: could not resume after the call: {e!r}")
+                return
+        logger.info("music: resumed after the call")
+        self.bump()
+
+    def drop_music_hold(self) -> None:
+        """The user changed the music themselves; leave it as they set it."""
+        self._music_held = False
+
+    def place_call(self, contact: str) -> dict[str, Any]:
+        """Pause the music, then call. If the attempt fails, the music comes back at once."""
+        self._dialing = True
+        self.hold_music()
+        try:
+            return self.phone.call(contact)
+        finally:
+            self._dialing = False
+            self.release_music()
 
     def status(self) -> dict[str, Any]:
         return {
