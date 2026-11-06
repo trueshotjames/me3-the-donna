@@ -28,28 +28,30 @@ SCHEMA = FunctionSchema(
 )
 
 
-def next_speed(current: float, rate: str) -> float:
+def next_speed(current: float, rate: str, base: float = 1.0) -> float:
+    """v10: "normal" returns to ``base`` (TTS_SPEED), not always 1.0."""
     rate = (rate or "").strip().lower()
     if rate == "slower":
         return round(max(SLOWEST, current - STEP), 2)
     if rate == "faster":
         return round(min(FASTEST, current + STEP), 2)
-    return 1.0
+    return round(float(base), 2)
 
 
 def sentence(old: float, new: float, rate: str) -> str:
     rate = (rate or "").strip().lower()
     if rate == "normal":
-        return "Okay, back to my normal speed." if old != 1.0 else "This is my normal speed."
+        return "Okay, back to my normal speed." if old != new else "This is my normal speed."
     if new == old:
         return "This is as slow as I can go." if rate == "slower" else "This is as fast as I can go."
     return "Okay, I'll speak more slowly." if rate == "slower" else "Okay, I'll speak faster."
 
 
 class SpeakingRate:
-    def __init__(self, tts) -> None:
+    def __init__(self, tts, base: float = 1.0) -> None:
         self._tts = tts  # MCPTTSService: its MCP bridge to the TTS server
-        self.speed = 1.0
+        self.base = round(min(1.5, max(0.7, float(base))), 2)  # v10: TTS_SPEED, the speed the server starts at
+        self.speed = self.base
 
     def register(self, llm) -> list[FunctionSchema]:
         llm.register_function("set_speaking_rate", self._tool)
@@ -65,7 +67,7 @@ class SpeakingRate:
 
         rate = str((params.arguments or {}).get("rate") or "normal")
         old = self.speed
-        new = next_speed(old, rate)
+        new = next_speed(old, rate, self.base)
         try:
             res = await self._tts._bridge.call_json("tts_set_speed", {"speed": new}, timeout=10)
         except Exception as e:  # noqa: BLE001

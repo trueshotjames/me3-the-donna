@@ -57,8 +57,24 @@ META = False  # set by main.py (META_FILTER)
 _META_IN = re.compile(r"(?<=[.!?])\s*(?=" + _META.pattern[len(r"^\s*"):] + ")", re.IGNORECASE)
 
 
+# v10 (fd-bench 6 Nov): a long answer came back as markdown and she read "star star root causes star star" aloud
+_MD_HEADING = re.compile(r"(?m)^\s*#{1,6}\s+")
+_MD_BULLET = re.compile(r"(?m)^\s*[-+*]\s+(?=\S)")
+_MD_MARK = re.compile(r"\*+|`+|(?<!\w)_{2,}|_{2,}(?!\w)")
+
+
+def markdown_removed(text: str) -> str:
+    """Text without markdown emphasis, headings, bullets and inline-code marks (the words stay)."""
+    if not any(c in text for c in "*#`_-+"):
+        return text
+    text = _MD_HEADING.sub("", text)
+    text = _MD_BULLET.sub("", text)
+    return _MD_MARK.sub("", text)
+
+
 def unspeakable_removed(text: str) -> str:
-    """Text without markup tags and JSON objects; an unclosed "{" drops the rest of the text."""
+    """Text without markup tags, markdown and JSON objects; an unclosed "{" drops the rest of the text."""
+    text = markdown_removed(text)
     text = _TOOL_CHANNEL.sub("", text)
     text = _TAG.sub("", text)
     prev = None
