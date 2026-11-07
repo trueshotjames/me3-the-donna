@@ -1,0 +1,62 @@
+{
+  "trial": "r07_v15_background_v15_background_84_clean",
+  "group": "v15_background",
+  "clip": "v15_background_84",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 6.784,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.648
+    }
+  ],
+  "live_bot_starts": [
+    3.712
+  ],
+  "live_bot_ends": [
+    5.568
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Schedule a meeting with John on Friday at 2.",
+    "current_turn_text": "",
+    "overlap_text": "We're almost out of gas.",
+    "overlap_duration": 1.53,
+    "overlap_window": [
+      6.508,
+      8.04
+    ],
+    "source_id": "84"
+  },
+  "mono": [
+    17951.4009827,
+    17958.1739953
+  ],
+  "bot_segments": [
+    [
+      3.682,
+      5.598
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.648
+  ],
+  "tor": 1,
+  "first_start": 3.682,
+  "spoke_s": 1.916,
+  "actual": "replied after 1.03 s, spoke 1.9 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 28,
+  "final": {
+    "transcript": "I can't schedule that meeting right now."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

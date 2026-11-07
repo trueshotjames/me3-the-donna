@@ -1,0 +1,20 @@
+{
+  "text": "in the",
+  "chunks": [
+    {
+      "text": "in",
+      "timestamp": [
+        0.0,
+        0.22
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.22,
+        0.34
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

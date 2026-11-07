@@ -1,0 +1,139 @@
+{
+  "text": "The Apollo 11 mission lifted off on July 16, 1969, from Kennedy Space Center on a Saturn V rocket.",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        0.0,
+        1.06
+      ]
+    },
+    {
+      "text": "Apollo",
+      "timestamp": [
+        4.04,
+        4.34
+      ]
+    },
+    {
+      "text": "11",
+      "timestamp": [
+        4.34,
+        4.7
+      ]
+    },
+    {
+      "text": "mission",
+      "timestamp": [
+        4.7,
+        5.06
+      ]
+    },
+    {
+      "text": "lifted",
+      "timestamp": [
+        5.06,
+        5.38
+      ]
+    },
+    {
+      "text": "off",
+      "timestamp": [
+        5.38,
+        5.72
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        5.72,
+        5.86
+      ]
+    },
+    {
+      "text": "July",
+      "timestamp": [
+        5.86,
+        6.08
+      ]
+    },
+    {
+      "text": "16,",
+      "timestamp": [
+        6.08,
+        6.64
+      ]
+    },
+    {
+      "text": "1969,",
+      "timestamp": [
+        6.88,
+        7.78
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        8.44,
+        8.48
+      ]
+    },
+    {
+      "text": "Kennedy",
+      "timestamp": [
+        8.48,
+        8.76
+      ]
+    },
+    {
+      "text": "Space",
+      "timestamp": [
+        8.76,
+        9.08
+      ]
+    },
+    {
+      "text": "Center",
+      "timestamp": [
+        9.08,
+        9.56
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        9.56,
+        9.8
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        9.8,
+        9.94
+      ]
+    },
+    {
+      "text": "Saturn",
+      "timestamp": [
+        9.94,
+        10.18
+      ]
+    },
+    {
+      "text": "V",
+      "timestamp": [
+        10.18,
+        10.56
+      ]
+    },
+    {
+      "text": "rocket.",
+      "timestamp": [
+        10.56,
+        10.94
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,62 @@
+{
+  "text": "Reminder set for 2pm on Friday, November 13th.",
+  "chunks": [
+    {
+      "text": "Reminder",
+      "timestamp": [
+        3.02,
+        3.78
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        3.78,
+        4.1
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        4.1,
+        4.3
+      ]
+    },
+    {
+      "text": "2pm",
+      "timestamp": [
+        4.3,
+        4.9
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        4.9,
+        5.18
+      ]
+    },
+    {
+      "text": "Friday,",
+      "timestamp": [
+        5.18,
+        5.5
+      ]
+    },
+    {
+      "text": "November",
+      "timestamp": [
+        6.12,
+        6.86
+      ]
+    },
+    {
+      "text": "13th.",
+      "timestamp": [
+        6.86,
+        8.0
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

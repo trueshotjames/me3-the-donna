@@ -1,0 +1,53 @@
+{
+  "trial": "r08_false_tt_false_background_000",
+  "group": "false_tt",
+  "clip": "false_background_000",
+  "variant": "main",
+  "expected": "stay silent",
+  "duration": 9.728,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.718
+    }
+  ],
+  "live_bot_starts": [],
+  "live_bot_ends": [],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "kind": "background",
+    "kind_label": "background speech",
+    "level_db": -15,
+    "text": "Your coffee's getting cold.",
+    "source": "v15_background_27"
+  },
+  "mono": [
+    18368.8740566,
+    18378.5897787
+  ],
+  "bot_segments": [],
+  "play_first": [
+    0.0,
+    1.718
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "actual": "silent",
+  "verdict": "✓ silent",
+  "ok": true,
+  "marks": 15,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ silent",
+    "ok": true,
+    "transcript": ""
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

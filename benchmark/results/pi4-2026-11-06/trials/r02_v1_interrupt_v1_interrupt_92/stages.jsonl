@@ -1,0 +1,45 @@
+{"stage": "vad_start", "t": 16545.714407884, "pid": 9960, "src": "ws", "recv": 16577.0688589, "lt": 16577.053081961, "tt": 0.2883}
+{"stage": "vad_start", "t": 16545.714465476, "pid": 9960, "src": "ws", "recv": 16577.0688824, "lt": 16577.053139553, "tt": 0.2884}
+{"stage": "asr_partial", "t": 16545.972171157, "pid": 9960, "text": "How", "src": "ws", "recv": 16577.3272574, "lt": 16577.310845234, "tt": 0.5461}
+{"stage": "asr_partial", "t": 16546.453876734, "pid": 9960, "text": "How often should", "src": "ws", "recv": 16577.8115012, "lt": 16577.792550811, "tt": 1.0278}
+{"stage": "interrupted", "t": 16546.456671735, "pid": 9960, "src": "ws", "recv": 16577.8136529, "lt": 16577.795345812, "tt": 1.0306}
+{"stage": "interrupted", "t": 16546.456758512, "pid": 9960, "src": "ws", "recv": 16577.8136677, "lt": 16577.795432589, "tt": 1.0307}
+{"stage": "bot_stopped", "t": 16546.501055012, "pid": 9960, "src": "ws", "recv": 16577.8576112, "lt": 16577.839729089, "tt": 1.075}
+{"stage": "bot_stopped", "t": 16546.501187992, "pid": 9960, "src": "ws", "recv": 16577.8576285, "lt": 16577.839862069, "tt": 1.0751}
+{"stage": "llm_request", "t": 16546.5151717, "pid": 9960, "messages": 33, "chars": 12320, "est_tokens": 3080, "src": "ws", "recv": 16577.8733722, "lt": 16577.853845777, "tt": 1.0891}
+{"stage": "asr_partial", "t": 16546.684354565, "pid": 9960, "text": "How often should I", "src": "ws", "recv": 16578.0388608, "lt": 16578.023028642, "tt": 1.2583}
+{"stage": "asr_partial", "t": 16546.931344885, "pid": 9960, "text": "How often should I change", "src": "ws", "recv": 16578.2859664, "lt": 16578.270018962, "tt": 1.5052}
+{"stage": "asr_partial", "t": 16547.164218907, "pid": 9960, "text": "How often should I change the", "src": "ws", "recv": 16578.5187172, "lt": 16578.502892984, "tt": 1.7381}
+{"stage": "asr_partial", "t": 16547.411471131, "pid": 9960, "text": "How often should I change the oil", "src": "ws", "recv": 16578.7660757, "lt": 16578.750145208, "tt": 1.9854}
+{"stage": "asr_partial", "t": 16547.644982293, "pid": 9960, "text": "How often should I change the oil in my", "src": "ws", "recv": 16578.9995245, "lt": 16578.98365637, "tt": 2.2189}
+{"stage": "asr_partial", "t": 16547.891174865, "pid": 9960, "text": "How often should I change the oil in my car", "src": "ws", "recv": 16579.2458175, "lt": 16579.229848942, "tt": 2.4651}
+{"stage": "asr_partial", "t": 16547.96411955, "pid": 9960, "text": "How often should I change the oil in my car?", "src": "ws", "recv": 16579.318695, "lt": 16579.302793627, "tt": 2.538}
+{"stage": "asr_partial", "t": 16548.124530084, "pid": 9960, "text": "How often should I change the oil in my car? Oh,", "src": "ws", "recv": 16579.479104, "lt": 16579.463204161, "tt": 2.6984}
+{"stage": "asr_partial", "t": 16548.371227186, "pid": 9960, "text": "How often should I change the oil in my car before", "src": "ws", "recv": 16579.7258714, "lt": 16579.709901263, "tt": 2.9451}
+{"stage": "asr_partial", "t": 16548.604586109, "pid": 9960, "text": "How often should I change the oil in my car? Oh,", "src": "ws", "recv": 16579.9591686, "lt": 16579.943260186, "tt": 3.1785}
+{"stage": "asr_partial", "t": 16548.859377792, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I", "src": "ws", "recv": 16580.214918, "lt": 16580.198051869, "tt": 3.4333}
+{"stage": "asr_partial", "t": 16549.084739449, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget.", "src": "ws", "recv": 16580.4393748, "lt": 16580.423413526, "tt": 3.6586}
+{"stage": "asr_partial", "t": 16549.331719621, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you", "src": "ws", "recv": 16580.6864171, "lt": 16580.670393698, "tt": 3.9056}
+{"stage": "asr_partial", "t": 16549.564847085, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you remind", "src": "ws", "recv": 16580.9195029, "lt": 16580.903521162, "tt": 4.1388}
+{"stage": "asr_partial", "t": 16549.816643732, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you remind me to", "src": "ws", "recv": 16581.1716496, "lt": 16581.155317809, "tt": 4.3905}
+{"stage": "asr_partial", "t": 16550.04760365, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you remind me to call", "src": "ws", "recv": 16581.4023307, "lt": 16581.386277727, "tt": 4.6215}
+{"stage": "asr_partial", "t": 16550.292033134, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you remind me to call the", "src": "ws", "recv": 16581.6468065, "lt": 16581.630707211, "tt": 4.8659}
+{"stage": "asr_partial", "t": 16550.527148349, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you remind me to call the mechanic", "src": "ws", "recv": 16581.8818275, "lt": 16581.865822426, "tt": 5.1011}
+{"stage": "asr_partial", "t": 16550.771856422, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you remind me to call the mechanics", "src": "ws", "recv": 16582.1264866, "lt": 16582.110530499, "tt": 5.3458}
+{"stage": "asr_partial", "t": 16550.848524874, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you remind me to call the mechanic tomorrow?", "src": "ws", "recv": 16582.2037974, "lt": 16582.187198951, "tt": 5.4224}
+{"stage": "asr_partial", "t": 16550.967977476, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you remind me to call the mechanic tomorrow?", "src": "ws", "recv": 16582.3227052, "lt": 16582.306651553, "tt": 5.5419}
+{"stage": "vad_end", "t": 16550.993218575, "pid": 9960, "src": "ws", "recv": 16582.3528579, "lt": 16582.331892652, "tt": 5.5671}
+{"stage": "vad_end", "t": 16550.993271408, "pid": 9960, "src": "ws", "recv": 16582.352881, "lt": 16582.331945485, "tt": 5.5672}
+{"stage": "llm_request", "t": 16551.004382061, "pid": 9960, "speculative": true, "messages": 34, "chars": 12434, "est_tokens": 3108, "src": "ws", "recv": 16582.3603447, "lt": 16582.343056138, "tt": 5.5783}
+{"stage": "asr_final", "t": 16551.059029094, "pid": 9960, "text": "How often should I change the oil in my car? Oh, before I forget, can you remind me to call the mechanic tomorrow?", "src": "ws", "recv": 16582.4173331, "lt": 16582.397703171002, "tt": 5.6329}
+{"stage": "user_stopped", "t": 16551.07040215, "pid": 9960, "src": "ws", "recv": 16582.4318746, "lt": 16582.409076227, "tt": 5.6443}
+{"stage": "user_stopped", "t": 16551.07062137, "pid": 9960, "src": "ws", "recv": 16582.431897, "lt": 16582.409295447, "tt": 5.6445}
+{"stage": "llm_first_token", "t": 16551.673104904, "pid": 9960, "src": "ws", "recv": 16583.0341345, "lt": 16583.011778981, "tt": 6.247}
+{"stage": "llm_usage", "t": 16551.797078466, "pid": 9960, "prompt_tokens": 2632, "completion_tokens": 212, "src": "ws", "recv": 16583.1556184, "lt": 16583.135752543, "tt": 6.371}
+{"stage": "tts_request", "t": 16551.819562786, "pid": 9960, "src": "ws", "recv": 16583.1787077, "lt": 16583.158236863, "tt": 6.3935}
+{"stage": "tts_first_audio", "t": 16552.067923664, "pid": 9960, "src": "ws", "recv": 16583.4235061, "lt": 16583.406597741, "tt": 6.6418}
+{"stage": "audio_out", "t": 16552.074459672, "pid": 9960, "src": "ws", "recv": 16583.4342016, "lt": 16583.413133749, "tt": 6.6484}
+{"stage": "audio_out", "t": 16552.074550356, "pid": 9960, "src": "ws", "recv": 16583.4342189, "lt": 16583.413224433, "tt": 6.6485}
+{"stage": "bot_stopped", "t": 16564.563123939, "pid": 9960, "src": "ws", "recv": 16595.9182595, "lt": 16595.901798016, "tt": 19.137}
+{"stage": "bot_stopped", "t": 16564.563202345, "pid": 9960, "src": "ws", "recv": 16595.9182776, "lt": 16595.901876422, "tt": 19.1371}
+{"stage": "llm_request", "t": 16564.56939958, "pid": 9960, "messages": 35, "chars": 12677, "est_tokens": 3169, "src": "ws", "recv": 16595.9235212, "lt": 16595.908073657, "tt": 19.1433}

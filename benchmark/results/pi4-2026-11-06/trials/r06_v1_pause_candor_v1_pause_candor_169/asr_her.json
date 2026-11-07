@@ -1,0 +1,69 @@
+{
+  "text": "Got it. Sounds like you've got everything under control.",
+  "chunks": [
+    {
+      "text": "Got",
+      "timestamp": [
+        10.83,
+        11.25
+      ]
+    },
+    {
+      "text": "it.",
+      "timestamp": [
+        11.25,
+        11.43
+      ]
+    },
+    {
+      "text": "Sounds",
+      "timestamp": [
+        11.67,
+        11.95
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        11.95,
+        12.21
+      ]
+    },
+    {
+      "text": "you've",
+      "timestamp": [
+        12.21,
+        12.37
+      ]
+    },
+    {
+      "text": "got",
+      "timestamp": [
+        12.37,
+        12.53
+      ]
+    },
+    {
+      "text": "everything",
+      "timestamp": [
+        12.53,
+        12.97
+      ]
+    },
+    {
+      "text": "under",
+      "timestamp": [
+        12.97,
+        13.19
+      ]
+    },
+    {
+      "text": "control.",
+      "timestamp": [
+        13.19,
+        13.63
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

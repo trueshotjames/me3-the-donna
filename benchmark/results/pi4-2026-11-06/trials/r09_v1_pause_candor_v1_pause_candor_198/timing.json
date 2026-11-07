@@ -1,0 +1,70 @@
+{
+  "trial": "r09_v1_pause_candor_v1_pause_candor_198",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_198",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 13.92,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 9.92
+    }
+  ],
+  "live_bot_starts": [
+    1.472,
+    11.488
+  ],
+  "live_bot_ends": [
+    1.824,
+    13.408
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 4
+  },
+  "clip_meta": {
+    "pause": [
+      1.0499999999999545,
+      2.5399999999999636
+    ],
+    "source_id": "198",
+    "text": "Okay Okay Well it doesn't go out the nose I said what It was like you know covid into your"
+  },
+  "mono": [
+    18615.6971736,
+    18629.5979915
+  ],
+  "bot_segments": [
+    [
+      1.442,
+      1.854
+    ],
+    [
+      11.458,
+      13.438
+    ]
+  ],
+  "play_first": [
+    0.0,
+    9.92
+  ],
+  "tor": 0,
+  "first_start": 1.442,
+  "spoke_s": 0.41200000000000014,
+  "cut_in_during_pause": true,
+  "actual": "spoke 0.4 s at 1.4 s (in the pause)",
+  "verdict": "✓ TOR 0?",
+  "ok": true,
+  "marks": 114,
+  "final": {
+    "tor": 0,
+    "words": 2,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "Got it. I'm not sure what you'd like me to do."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

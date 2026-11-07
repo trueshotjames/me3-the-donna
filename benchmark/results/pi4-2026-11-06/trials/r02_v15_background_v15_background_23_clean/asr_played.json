@@ -1,0 +1,62 @@
+{
+  "text": "Play the latest episode of my favorite podcast.",
+  "chunks": [
+    {
+      "text": "Play",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.18,
+        0.32
+      ]
+    },
+    {
+      "text": "latest",
+      "timestamp": [
+        0.32,
+        0.6
+      ]
+    },
+    {
+      "text": "episode",
+      "timestamp": [
+        0.6,
+        1.02
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        1.02,
+        1.18
+      ]
+    },
+    {
+      "text": "my",
+      "timestamp": [
+        1.18,
+        1.34
+      ]
+    },
+    {
+      "text": "favorite",
+      "timestamp": [
+        1.34,
+        1.6
+      ]
+    },
+    {
+      "text": "podcast.",
+      "timestamp": [
+        1.6,
+        2.04
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,65 @@
+{"stage": "vad_start", "t": 18208.601138193, "pid": 9960, "src": "ws", "recv": 18239.9830776, "lt": 18239.93981227, "tt": 0.2632}
+{"stage": "vad_start", "t": 18208.601226451, "pid": 9960, "src": "ws", "recv": 18239.9831005, "lt": 18239.939900528, "tt": 0.2633}
+{"stage": "interrupted", "t": 18209.085848756, "pid": 9960, "src": "ws", "recv": 18240.4680357, "lt": 18240.424522833, "tt": 0.748}
+{"stage": "interrupted", "t": 18209.085936792, "pid": 9960, "src": "ws", "recv": 18240.4680575, "lt": 18240.424610869, "tt": 0.748}
+{"stage": "asr_partial", "t": 18209.209859926, "pid": 9960, "text": "What are some", "src": "ws", "recv": 18240.5903736, "lt": 18240.548534003, "tt": 0.872}
+{"stage": "asr_partial", "t": 18209.443521279, "pid": 9960, "text": "What are some benefits", "src": "ws", "recv": 18240.8240807, "lt": 18240.782195356, "tt": 1.1056}
+{"stage": "asr_partial", "t": 18209.692520347, "pid": 9960, "text": "What are some benefits", "src": "ws", "recv": 18241.0737169, "lt": 18241.031194424, "tt": 1.3546}
+{"stage": "asr_partial", "t": 18209.923456531, "pid": 9960, "text": "What are some benefits of", "src": "ws", "recv": 18241.3041781, "lt": 18241.262130608, "tt": 1.5856}
+{"stage": "asr_partial", "t": 18210.171558388, "pid": 9960, "text": "What are some benefits of eating", "src": "ws", "recv": 18241.5524251, "lt": 18241.510232465, "tt": 1.8337}
+{"stage": "asr_partial", "t": 18210.40346756, "pid": 9960, "text": "What are some benefits of eating", "src": "ws", "recv": 18241.7843954, "lt": 18241.742141637, "tt": 2.0656}
+{"stage": "asr_partial", "t": 18210.654547658, "pid": 9960, "text": "What are some benefits of eating fruits and", "src": "ws", "recv": 18242.0360131, "lt": 18241.993221735, "tt": 2.3167}
+{"stage": "asr_partial", "t": 18210.883449385, "pid": 9960, "text": "What are some benefits of eating fruits and vegetables", "src": "ws", "recv": 18242.264371, "lt": 18242.222123462, "tt": 2.5456}
+{"stage": "asr_partial", "t": 18211.129635915, "pid": 9960, "text": "What are some benefits of eating fruits and vegetable", "src": "ws", "recv": 18242.5103329, "lt": 18242.468309992, "tt": 2.7917}
+{"stage": "asr_partial", "t": 18211.363587672, "pid": 9960, "text": "What are some benefits of eating fruits and vegetables?", "src": "ws", "recv": 18242.7442224, "lt": 18242.702261749, "tt": 3.0257}
+{"stage": "asr_final", "t": 18211.424543001, "pid": 9960, "text": "What are some benefits of eating fruits and vegetables?", "src": "ws", "recv": 18242.806292, "lt": 18242.763217078, "tt": 3.0867}
+{"stage": "llm_request", "t": 18211.428446471, "pid": 9960, "speculative": true, "messages": 14, "chars": 11635, "est_tokens": 2909, "src": "ws", "recv": 18242.810204, "lt": 18242.767120548, "tt": 3.0906}
+{"stage": "user_stopped", "t": 18211.432765139, "pid": 9960, "src": "ws", "recv": 18242.8199507, "lt": 18242.771439216, "tt": 3.0949}
+{"stage": "user_stopped", "t": 18211.43283125, "pid": 9960, "src": "ws", "recv": 18242.8199769, "lt": 18242.771505327, "tt": 3.0949}
+{"stage": "vad_end", "t": 18211.475723713, "pid": 9960, "src": "ws", "recv": 18242.8571699, "lt": 18242.81439779, "tt": 3.1378}
+{"stage": "vad_end", "t": 18211.476129856, "pid": 9960, "src": "ws", "recv": 18242.8571896, "lt": 18242.814803933, "tt": 3.1382}
+{"stage": "llm_first_token", "t": 18212.013648813, "pid": 9960, "src": "ws", "recv": 18243.4035078, "lt": 18243.35232289, "tt": 3.6758}
+{"stage": "llm_usage", "t": 18212.026023084, "pid": 9960, "prompt_tokens": 2761, "completion_tokens": 66, "src": "ws", "recv": 18243.4127006, "lt": 18243.364697161, "tt": 3.6881}
+{"stage": "tts_request", "t": 18212.05772365, "pid": 9960, "src": "ws", "recv": 18243.4447228, "lt": 18243.396397727, "tt": 3.7198}
+{"stage": "tts_first_audio", "t": 18212.226908607, "pid": 9960, "src": "ws", "recv": 18243.6072612, "lt": 18243.565582684, "tt": 3.889}
+{"stage": "audio_out", "t": 18212.231242127, "pid": 9960, "src": "ws", "recv": 18243.6162789, "lt": 18243.569916204, "tt": 3.8934}
+{"stage": "audio_out", "t": 18212.23132644, "pid": 9960, "src": "ws", "recv": 18243.6162968, "lt": 18243.570000517, "tt": 3.8934}
+{"stage": "vad_start", "t": 18214.299492128, "pid": 9960, "src": "ws", "recv": 18245.680379, "lt": 18245.638166205, "tt": 5.9616}
+{"stage": "vad_start", "t": 18214.29956959, "pid": 9960, "src": "ws", "recv": 18245.6804018, "lt": 18245.638243667, "tt": 5.9617}
+{"stage": "vad_end", "t": 18214.739709785, "pid": 9960, "src": "ws", "recv": 18246.120672, "lt": 18246.078383862, "tt": 6.4018}
+{"stage": "vad_end", "t": 18214.739764173, "pid": 9960, "src": "ws", "recv": 18246.1206996, "lt": 18246.07843825, "tt": 6.4019}
+{"stage": "asr_partial", "t": 18214.783783177, "pid": 9960, "text": "By the way,", "src": "ws", "recv": 18246.1692891, "lt": 18246.122457254, "tt": 6.4459}
+{"stage": "interrupted", "t": 18214.787751461, "pid": 9960, "src": "ws", "recv": 18246.1729656, "lt": 18246.126425538, "tt": 6.4499}
+{"stage": "interrupted", "t": 18214.787855552, "pid": 9960, "src": "ws", "recv": 18246.1729947, "lt": 18246.126529629, "tt": 6.45}
+{"stage": "bot_stopped", "t": 18214.847169328, "pid": 9960, "src": "ws", "recv": 18246.23064, "lt": 18246.185843405, "tt": 6.5093}
+{"stage": "bot_stopped", "t": 18214.847262161, "pid": 9960, "src": "ws", "recv": 18246.2306622, "lt": 18246.185936238002, "tt": 6.5094}
+{"stage": "vad_start", "t": 18214.999290906, "pid": 9960, "src": "ws", "recv": 18246.3797138, "lt": 18246.337964983, "tt": 6.6614}
+{"stage": "vad_start", "t": 18214.999347776, "pid": 9960, "src": "ws", "recv": 18246.3797367, "lt": 18246.338021853, "tt": 6.6615}
+{"stage": "asr_partial", "t": 18215.043217041, "pid": 9960, "text": "By the way,", "src": "ws", "recv": 18246.4238921, "lt": 18246.381891118, "tt": 6.7053}
+{"stage": "asr_partial", "t": 18215.24824042, "pid": 9960, "text": "By the way, how", "src": "ws", "recv": 18246.6308852, "lt": 18246.586914497, "tt": 6.9104}
+{"stage": "asr_partial", "t": 18215.526046016, "pid": 9960, "text": "By the way, how about", "src": "ws", "recv": 18246.9067356, "lt": 18246.864720093, "tt": 7.1882}
+{"stage": "asr_partial", "t": 18215.727032464, "pid": 9960, "text": "By the way, how about we", "src": "ws", "recv": 18247.1097458, "lt": 18247.065706541, "tt": 7.3891}
+{"stage": "asr_partial", "t": 18216.005304925, "pid": 9960, "text": "By the way, how about we just", "src": "ws", "recv": 18247.3859041, "lt": 18247.343979002, "tt": 7.6674}
+{"stage": "asr_partial", "t": 18216.207795409, "pid": 9960, "text": "By the way, how about we discuss", "src": "ws", "recv": 18247.5908645, "lt": 18247.546469486, "tt": 7.8699}
+{"stage": "asr_partial", "t": 18216.486071315, "pid": 9960, "text": "By the way, how about we discuss a", "src": "ws", "recv": 18247.8668218, "lt": 18247.824745392, "tt": 8.1482}
+{"stage": "asr_partial", "t": 18216.690380499, "pid": 9960, "text": "By the way, how about we discuss extra", "src": "ws", "recv": 18248.0735189, "lt": 18248.029054576, "tt": 8.3525}
+{"stage": "asr_partial", "t": 18216.965494314, "pid": 9960, "text": "By the way, how about we discuss exercise", "src": "ws", "recv": 18248.3462084, "lt": 18248.304168391, "tt": 8.6276}
+{"stage": "asr_partial", "t": 18217.167037088, "pid": 9960, "text": "By the way, how about we discuss exercise we", "src": "ws", "recv": 18248.5495155, "lt": 18248.505711165, "tt": 8.8291}
+{"stage": "asr_partial", "t": 18217.445260717, "pid": 9960, "text": "By the way, how about we discuss exercise routines", "src": "ws", "recv": 18248.8259043, "lt": 18248.783934794, "tt": 9.1074}
+{"stage": "asr_partial", "t": 18217.650075005, "pid": 9960, "text": "By the way, how about we discuss exercise routines and", "src": "ws", "recv": 18249.0329654, "lt": 18248.988749082, "tt": 9.3122}
+{"stage": "vad_end", "t": 18217.782962842, "pid": 9960, "src": "ws", "recv": 18249.1639703, "lt": 18249.121636919, "tt": 9.4451}
+{"stage": "vad_end", "t": 18217.78301723, "pid": 9960, "src": "ws", "recv": 18249.1639919, "lt": 18249.121691307, "tt": 9.4451}
+{"stage": "asr_partial", "t": 18217.930300294, "pid": 9960, "text": "By the way, how about we discuss exercise routines instead?", "src": "ws", "recv": 18249.3114055, "lt": 18249.268974371, "tt": 9.5924}
+{"stage": "llm_request", "t": 18217.933353552, "pid": 9960, "speculative": true, "messages": 15, "chars": 11694, "est_tokens": 2924, "src": "ws", "recv": 18249.3145537, "lt": 18249.272027629002, "tt": 9.5955}
+{"stage": "asr_final", "t": 18218.015512005, "pid": 9960, "text": "By the way, how about we discuss exercise routines instead?", "src": "ws", "recv": 18249.3974882, "lt": 18249.354186082, "tt": 9.6776}
+{"stage": "user_stopped", "t": 18218.023235964, "pid": 9960, "src": "ws", "recv": 18249.4069976, "lt": 18249.361910041, "tt": 9.6853}
+{"stage": "user_stopped", "t": 18218.023305445, "pid": 9960, "src": "ws", "recv": 18249.4070171, "lt": 18249.361979522, "tt": 9.6854}
+{"stage": "llm_first_token", "t": 18218.439412144, "pid": 9960, "src": "ws", "recv": 18249.8216726, "lt": 18249.778086221, "tt": 10.1015}
+{"stage": "llm_usage", "t": 18218.474081006, "pid": 9960, "prompt_tokens": 2777, "completion_tokens": 61, "src": "ws", "recv": 18249.8629423, "lt": 18249.812755083, "tt": 10.1362}
+{"stage": "tts_request", "t": 18218.507269646, "pid": 9960, "src": "ws", "recv": 18249.8934129, "lt": 18249.845943723, "tt": 10.1694}
+{"stage": "tts_first_audio", "t": 18218.732219053, "pid": 9960, "src": "ws", "recv": 18250.1135593, "lt": 18250.07089313, "tt": 10.3943}
+{"stage": "audio_out", "t": 18218.738330791, "pid": 9960, "src": "ws", "recv": 18250.1367519, "lt": 18250.077004868, "tt": 10.4004}
+{"stage": "audio_out", "t": 18218.738416327, "pid": 9960, "src": "ws", "recv": 18250.1367714, "lt": 18250.077090404, "tt": 10.4005}
+{"stage": "bot_stopped", "t": 18231.512844366, "pid": 9960, "src": "ws", "recv": 18262.8939315, "lt": 18262.851518443, "tt": 23.175}
+{"stage": "bot_stopped", "t": 18231.512923346, "pid": 9960, "src": "ws", "recv": 18262.8939542, "lt": 18262.851597423, "tt": 23.175}
+{"stage": "llm_request", "t": 18231.518964215, "pid": 9960, "messages": 16, "chars": 11912, "est_tokens": 2978, "src": "ws", "recv": 18262.8991948, "lt": 18262.857638292, "tt": 23.1811}

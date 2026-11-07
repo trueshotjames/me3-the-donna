@@ -1,0 +1,49 @@
+{"stage": "vad_start", "t": 17715.043749841, "pid": 9960, "src": "ws", "recv": 17746.4180887, "lt": 17746.382423918, "tt": 0.1776}
+{"stage": "vad_start", "t": 17715.043847136, "pid": 9960, "src": "ws", "recv": 17746.4181128, "lt": 17746.382521213, "tt": 0.1777}
+{"stage": "asr_partial", "t": 17715.44166946, "pid": 9960, "text": "How", "src": "ws", "recv": 17746.8145221, "lt": 17746.780343537, "tt": 0.5756}
+{"stage": "interrupted", "t": 17715.564093684, "pid": 9960, "src": "ws", "recv": 17746.9382481, "lt": 17746.902767761, "tt": 0.698}
+{"stage": "interrupted", "t": 17715.564187071, "pid": 9960, "src": "ws", "recv": 17746.938274, "lt": 17746.902861148, "tt": 0.6981}
+{"stage": "asr_partial", "t": 17715.766136112, "pid": 9960, "text": "How far is", "src": "ws", "recv": 17747.1400699, "lt": 17747.104810189, "tt": 0.9}
+{"stage": "asr_partial", "t": 17716.002082819, "pid": 9960, "text": "How far is it from", "src": "ws", "recv": 17747.3749863, "lt": 17747.340756896, "tt": 1.136}
+{"stage": "asr_partial", "t": 17716.245769021, "pid": 9960, "text": "How far is it from Bay", "src": "ws", "recv": 17747.6198862, "lt": 17747.584443098, "tt": 1.3797}
+{"stage": "asr_partial", "t": 17716.481832559, "pid": 9960, "text": "How far is it from Beijing", "src": "ws", "recv": 17747.8547218, "lt": 17747.820506636, "tt": 1.6157}
+{"stage": "asr_partial", "t": 17716.726133624, "pid": 9960, "text": "How far is it from Beijing to", "src": "ws", "recv": 17748.1000593, "lt": 17748.064807701, "tt": 1.86}
+{"stage": "asr_partial", "t": 17716.962753582, "pid": 9960, "text": "How far is it from Beijing to Shanghai", "src": "ws", "recv": 17748.3357639, "lt": 17748.301427659, "tt": 2.0966}
+{"stage": "llm_request", "t": 17717.099681309, "pid": 9960, "speculative": true, "messages": 20, "chars": 9979, "est_tokens": 2495, "src": "ws", "recv": 17748.4735474, "lt": 17748.438355386, "tt": 2.2336}
+{"stage": "llm_cancel", "t": 17717.203108437, "pid": 9960, "src": "ws", "recv": 17748.5752745, "lt": 17748.541782514, "tt": 2.337}
+{"stage": "llm_request", "t": 17717.289941088, "pid": 9960, "speculative": true, "messages": 20, "chars": 9980, "est_tokens": 2495, "src": "ws", "recv": 17748.6634802, "lt": 17748.628615165002, "tt": 2.4238}
+{"stage": "asr_final", "t": 17717.328920562, "pid": 9960, "text": "How far is it from Beijing to Shanghai?", "src": "ws", "recv": 17748.7051578, "lt": 17748.667594639, "tt": 2.4628}
+{"stage": "vad_end", "t": 17717.335076726, "pid": 9960, "src": "ws", "recv": 17748.7119189, "lt": 17748.673750803002, "tt": 2.469}
+{"stage": "vad_end", "t": 17717.335130447, "pid": 9960, "src": "ws", "recv": 17748.7119464, "lt": 17748.673804524, "tt": 2.469}
+{"stage": "user_stopped", "t": 17717.342571687, "pid": 9960, "src": "ws", "recv": 17748.7316891, "lt": 17748.681245764, "tt": 2.4765}
+{"stage": "user_stopped", "t": 17717.342660649, "pid": 9960, "src": "ws", "recv": 17748.7317113, "lt": 17748.681334726, "tt": 2.4765}
+{"stage": "llm_first_token", "t": 17717.830520492, "pid": 9960, "src": "ws", "recv": 17749.2037904, "lt": 17749.169194569, "tt": 2.9644}
+{"stage": "llm_usage", "t": 17717.965959071, "pid": 9960, "prompt_tokens": 2511, "completion_tokens": 30, "src": "ws", "recv": 17749.3400746, "lt": 17749.304633148, "tt": 3.0998}
+{"stage": "tts_request", "t": 17717.9810174, "pid": 9960, "src": "ws", "recv": 17749.3571508, "lt": 17749.319691477, "tt": 3.1149}
+{"stage": "tts_first_audio", "t": 17718.225666868, "pid": 9960, "src": "ws", "recv": 17749.5997665, "lt": 17749.564340945, "tt": 3.3596}
+{"stage": "audio_out", "t": 17718.23230573, "pid": 9960, "src": "ws", "recv": 17749.6101278, "lt": 17749.570979807, "tt": 3.3662}
+{"stage": "audio_out", "t": 17718.232390821, "pid": 9960, "src": "ws", "recv": 17749.6101501, "lt": 17749.571064898, "tt": 3.3663}
+{"stage": "vad_start", "t": 17719.996068696, "pid": 9960, "src": "ws", "recv": 17751.3688295, "lt": 17751.334742773, "tt": 5.13}
+{"stage": "vad_start", "t": 17719.996126547, "pid": 9960, "src": "ws", "recv": 17751.3688546, "lt": 17751.334800624, "tt": 5.13}
+{"stage": "asr_partial", "t": 17720.167106699, "pid": 9960, "text": "D", "src": "ws", "recv": 17751.5418739, "lt": 17751.505780776, "tt": 5.301}
+{"stage": "asr_partial", "t": 17720.648152979, "pid": 9960, "text": "Doctor. Chan,", "src": "ws", "recv": 17752.0243222, "lt": 17751.986827056, "tt": 5.782}
+{"stage": "interrupted", "t": 17720.650929129, "pid": 9960, "src": "ws", "recv": 17752.0263357, "lt": 17751.989603206, "tt": 5.7848}
+{"stage": "interrupted", "t": 17720.651015684, "pid": 9960, "src": "ws", "recv": 17752.0263541, "lt": 17751.989689761, "tt": 5.7849}
+{"stage": "bot_stopped", "t": 17720.680749922, "pid": 9960, "src": "ws", "recv": 17752.0583407, "lt": 17752.019423999, "tt": 5.8146}
+{"stage": "bot_stopped", "t": 17720.680993919, "pid": 9960, "src": "ws", "recv": 17752.058362, "lt": 17752.019667996, "tt": 5.8149}
+{"stage": "asr_partial", "t": 17720.846020867, "pid": 9960, "text": "Doctor. Chen, I'll", "src": "ws", "recv": 17752.2190432, "lt": 17752.184694944, "tt": 5.9799}
+{"stage": "asr_partial", "t": 17721.125706877, "pid": 9960, "text": "Doctor Chen, I'll bring the", "src": "ws", "recv": 17752.4987594, "lt": 17752.464380954, "tt": 6.2596}
+{"stage": "asr_partial", "t": 17721.322774461, "pid": 9960, "text": "Doctor Chen, I'll bring the lab", "src": "ws", "recv": 17752.6959404, "lt": 17752.661448538, "tt": 6.4567}
+{"stage": "asr_partial", "t": 17721.605835132, "pid": 9960, "text": "Doctor Chen, I'll bring the lab results", "src": "ws", "recv": 17752.978987, "lt": 17752.944509209, "tt": 6.7397}
+{"stage": "asr_partial", "t": 17721.805913159, "pid": 9960, "text": "Doctor Chen, I'll bring the lab results to", "src": "ws", "recv": 17753.1791049, "lt": 17753.144587236002, "tt": 6.9398}
+{"stage": "asr_partial", "t": 17722.087009077, "pid": 9960, "text": "Doctor Chen, I'll bring the lab results tomorrow.", "src": "ws", "recv": 17753.4610013, "lt": 17753.425683154, "tt": 7.2209}
+{"stage": "asr_partial", "t": 17722.285915915, "pid": 9960, "text": "Doctor Chen, I'll bring the lab results tomorrow.", "src": "ws", "recv": 17753.6590075, "lt": 17753.624589992, "tt": 7.4198}
+{"stage": "vad_end", "t": 17722.366571367, "pid": 9960, "src": "ws", "recv": 17753.7439138, "lt": 17753.705245444, "tt": 7.5005}
+{"stage": "vad_end", "t": 17722.366625014, "pid": 9960, "src": "ws", "recv": 17753.7439398, "lt": 17753.705299091, "tt": 7.5005}
+{"stage": "llm_request", "t": 17722.377014717, "pid": 9960, "speculative": true, "messages": 21, "chars": 10029, "est_tokens": 2507, "src": "ws", "recv": 17753.75076, "lt": 17753.715688794, "tt": 7.5109}
+{"stage": "asr_partial", "t": 17722.566607783, "pid": 9960, "text": "Doctor Chen, I'll bring the lab results tomorrow.", "src": "ws", "recv": 17753.9396827, "lt": 17753.90528186, "tt": 7.7005}
+{"stage": "asr_final", "t": 17722.729099504, "pid": 9960, "text": "Doctor Chen, I'll bring the lab results tomorrow.", "src": "ws", "recv": 17754.1034369, "lt": 17754.067773581, "tt": 7.863}
+{"stage": "user_stopped", "t": 17722.736996368, "pid": 9960, "src": "ws", "recv": 17754.1132382, "lt": 17754.075670445, "tt": 7.8709}
+{"stage": "user_stopped", "t": 17722.737064682, "pid": 9960, "src": "ws", "recv": 17754.1132665, "lt": 17754.075738759002, "tt": 7.871}
+{"stage": "llm_first_token", "t": 17723.528758547, "pid": 9960, "src": "ws", "recv": 17754.9020372, "lt": 17754.867432624, "tt": 8.6626}
+{"stage": "llm_usage", "t": 17723.537783323, "pid": 9960, "prompt_tokens": 2490, "completion_tokens": 51, "src": "ws", "recv": 17754.9128787, "lt": 17754.8764574, "tt": 8.6717}

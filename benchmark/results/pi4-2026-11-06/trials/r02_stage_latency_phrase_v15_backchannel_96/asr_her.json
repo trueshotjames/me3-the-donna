@@ -1,0 +1,517 @@
+{
+  "text": "the gig economy is a labor market built around short term. Flexible jobs that people take on instead of traditional full -time positions. It relies on digital platforms that connect workers with customers, letting anyone offer services like ride sharing, food delivery, freelance design, tutoring, or home repairs. Because gigs are usually paid per task or per hour, workers can choose when and how much they work, giving them control over their schedules.",
+  "chunks": [
+    {
+      "text": "the",
+      "timestamp": [
+        0.0,
+        0.16
+      ]
+    },
+    {
+      "text": "gig",
+      "timestamp": [
+        0.16,
+        0.42
+      ]
+    },
+    {
+      "text": "economy",
+      "timestamp": [
+        2.56,
+        3.9
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        3.9,
+        4.22
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.22,
+        4.36
+      ]
+    },
+    {
+      "text": "labor",
+      "timestamp": [
+        4.36,
+        4.58
+      ]
+    },
+    {
+      "text": "market",
+      "timestamp": [
+        4.58,
+        4.96
+      ]
+    },
+    {
+      "text": "built",
+      "timestamp": [
+        4.96,
+        5.22
+      ]
+    },
+    {
+      "text": "around",
+      "timestamp": [
+        5.22,
+        5.56
+      ]
+    },
+    {
+      "text": "short",
+      "timestamp": [
+        5.56,
+        5.92
+      ]
+    },
+    {
+      "text": "term.",
+      "timestamp": [
+        5.92,
+        6.26
+      ]
+    },
+    {
+      "text": "Flexible",
+      "timestamp": [
+        6.72,
+        7.18
+      ]
+    },
+    {
+      "text": "jobs",
+      "timestamp": [
+        7.18,
+        7.54
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        7.54,
+        7.72
+      ]
+    },
+    {
+      "text": "people",
+      "timestamp": [
+        7.72,
+        7.96
+      ]
+    },
+    {
+      "text": "take",
+      "timestamp": [
+        7.96,
+        8.26
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        8.26,
+        8.5
+      ]
+    },
+    {
+      "text": "instead",
+      "timestamp": [
+        8.5,
+        8.86
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        8.86,
+        9.06
+      ]
+    },
+    {
+      "text": "traditional",
+      "timestamp": [
+        9.06,
+        9.56
+      ]
+    },
+    {
+      "text": "full",
+      "timestamp": [
+        9.56,
+        9.9
+      ]
+    },
+    {
+      "text": "-time",
+      "timestamp": [
+        9.9,
+        10.14
+      ]
+    },
+    {
+      "text": "positions.",
+      "timestamp": [
+        10.14,
+        10.6
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        11.0,
+        11.08
+      ]
+    },
+    {
+      "text": "relies",
+      "timestamp": [
+        11.08,
+        11.42
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        11.42,
+        11.68
+      ]
+    },
+    {
+      "text": "digital",
+      "timestamp": [
+        11.68,
+        11.98
+      ]
+    },
+    {
+      "text": "platforms",
+      "timestamp": [
+        11.98,
+        12.54
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        12.54,
+        12.88
+      ]
+    },
+    {
+      "text": "connect",
+      "timestamp": [
+        12.88,
+        13.24
+      ]
+    },
+    {
+      "text": "workers",
+      "timestamp": [
+        13.24,
+        13.58
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        13.58,
+        13.84
+      ]
+    },
+    {
+      "text": "customers,",
+      "timestamp": [
+        13.84,
+        14.38
+      ]
+    },
+    {
+      "text": "letting",
+      "timestamp": [
+        14.98,
+        15.22
+      ]
+    },
+    {
+      "text": "anyone",
+      "timestamp": [
+        15.22,
+        15.68
+      ]
+    },
+    {
+      "text": "offer",
+      "timestamp": [
+        15.68,
+        16.06
+      ]
+    },
+    {
+      "text": "services",
+      "timestamp": [
+        16.06,
+        16.58
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        16.58,
+        16.92
+      ]
+    },
+    {
+      "text": "ride",
+      "timestamp": [
+        16.92,
+        17.22
+      ]
+    },
+    {
+      "text": "sharing,",
+      "timestamp": [
+        17.22,
+        17.62
+      ]
+    },
+    {
+      "text": "food",
+      "timestamp": [
+        17.98,
+        18.12
+      ]
+    },
+    {
+      "text": "delivery,",
+      "timestamp": [
+        18.12,
+        18.56
+      ]
+    },
+    {
+      "text": "freelance",
+      "timestamp": [
+        19.14,
+        19.5
+      ]
+    },
+    {
+      "text": "design,",
+      "timestamp": [
+        19.5,
+        20.12
+      ]
+    },
+    {
+      "text": "tutoring,",
+      "timestamp": [
+        20.56,
+        20.76
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        21.36,
+        21.54
+      ]
+    },
+    {
+      "text": "home",
+      "timestamp": [
+        21.54,
+        21.8
+      ]
+    },
+    {
+      "text": "repairs.",
+      "timestamp": [
+        21.8,
+        22.14
+      ]
+    },
+    {
+      "text": "Because",
+      "timestamp": [
+        22.72,
+        23.06
+      ]
+    },
+    {
+      "text": "gigs",
+      "timestamp": [
+        23.06,
+        23.52
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        23.52,
+        23.8
+      ]
+    },
+    {
+      "text": "usually",
+      "timestamp": [
+        23.8,
+        24.16
+      ]
+    },
+    {
+      "text": "paid",
+      "timestamp": [
+        24.16,
+        24.6
+      ]
+    },
+    {
+      "text": "per",
+      "timestamp": [
+        24.6,
+        24.92
+      ]
+    },
+    {
+      "text": "task",
+      "timestamp": [
+        24.92,
+        25.42
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        25.42,
+        25.64
+      ]
+    },
+    {
+      "text": "per",
+      "timestamp": [
+        25.64,
+        25.86
+      ]
+    },
+    {
+      "text": "hour,",
+      "timestamp": [
+        25.86,
+        26.18
+      ]
+    },
+    {
+      "text": "workers",
+      "timestamp": [
+        26.58,
+        26.92
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        26.92,
+        27.26
+      ]
+    },
+    {
+      "text": "choose",
+      "timestamp": [
+        27.26,
+        27.6
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        27.6,
+        28.1
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        28.1,
+        28.4
+      ]
+    },
+    {
+      "text": "how",
+      "timestamp": [
+        28.4,
+        28.66
+      ]
+    },
+    {
+      "text": "much",
+      "timestamp": [
+        28.66,
+        28.92
+      ]
+    },
+    {
+      "text": "they",
+      "timestamp": [
+        28.92,
+        29.12
+      ]
+    },
+    {
+      "text": "work,",
+      "timestamp": [
+        29.12,
+        29.46
+      ]
+    },
+    {
+      "text": "giving",
+      "timestamp": [
+        29.96,
+        30.12
+      ]
+    },
+    {
+      "text": "them",
+      "timestamp": [
+        30.12,
+        30.36
+      ]
+    },
+    {
+      "text": "control",
+      "timestamp": [
+        30.36,
+        30.84
+      ]
+    },
+    {
+      "text": "over",
+      "timestamp": [
+        30.84,
+        31.18
+      ]
+    },
+    {
+      "text": "their",
+      "timestamp": [
+        31.18,
+        31.38
+      ]
+    },
+    {
+      "text": "schedules.",
+      "timestamp": [
+        31.38,
+        31.72
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

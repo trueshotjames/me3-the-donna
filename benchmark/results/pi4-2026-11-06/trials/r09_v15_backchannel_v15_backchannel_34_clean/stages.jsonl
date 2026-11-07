@@ -1,0 +1,25 @@
+{"stage": "vad_start", "t": 18534.00627185, "pid": 9960, "src": "ws", "recv": 18565.3924875, "lt": 18565.344945927, "tt": 0.1321}
+{"stage": "vad_start", "t": 18534.006361572, "pid": 9960, "src": "ws", "recv": 18565.392512, "lt": 18565.345035649, "tt": 0.1321}
+{"stage": "interrupted", "t": 18534.485036666, "pid": 9960, "src": "ws", "recv": 18565.8714585, "lt": 18565.823710743, "tt": 0.6108}
+{"stage": "interrupted", "t": 18534.48512685, "pid": 9960, "src": "ws", "recv": 18565.8714825, "lt": 18565.823800927, "tt": 0.6109}
+{"stage": "asr_partial", "t": 18534.606648462, "pid": 9960, "text": "outlined", "src": "ws", "recv": 18565.9930794, "lt": 18565.945322539, "tt": 0.7324}
+{"stage": "asr_partial", "t": 18534.805063024, "pid": 9960, "text": "Outline sleep", "src": "ws", "recv": 18566.1902071, "lt": 18566.143737101, "tt": 0.9308}
+{"stage": "asr_partial", "t": 18535.046884476, "pid": 9960, "text": "Outline sleep science", "src": "ws", "recv": 18566.4328289, "lt": 18566.385558553, "tt": 1.1727}
+{"stage": "asr_partial", "t": 18535.285378954, "pid": 9960, "text": "Outline sleep science", "src": "ws", "recv": 18566.6706963, "lt": 18566.624053031, "tt": 1.4112}
+{"stage": "asr_partial", "t": 18535.526084729, "pid": 9960, "text": "Outline sleep science clearly", "src": "ws", "recv": 18566.9113183, "lt": 18566.864758806, "tt": 1.6519}
+{"stage": "vad_end", "t": 18535.602887292, "pid": 9960, "src": "ws", "recv": 18566.9933517, "lt": 18566.941561369, "tt": 1.7287}
+{"stage": "vad_end", "t": 18535.602941458, "pid": 9960, "src": "ws", "recv": 18566.9933802, "lt": 18566.941615535, "tt": 1.7287}
+{"stage": "llm_request", "t": 18535.61411978, "pid": 9960, "speculative": true, "messages": 22, "chars": 10326, "est_tokens": 2582, "src": "ws", "recv": 18566.9998396, "lt": 18566.952793857, "tt": 1.7399}
+{"stage": "asr_partial", "t": 18535.764964315, "pid": 9960, "text": "Outline sleep science clearly.", "src": "ws", "recv": 18567.1500333, "lt": 18567.103638392, "tt": 1.8908}
+{"stage": "llm_usage", "t": 18536.18263783, "pid": 9960, "prompt_tokens": 2486, "completion_tokens": 56, "src": "ws", "recv": 18567.569635, "lt": 18567.521311907, "tt": 2.3084}
+{"stage": "asr_final", "t": 18536.225362078, "pid": 9960, "text": "Outline sleep science clearly.", "src": "ws", "recv": 18567.6115745, "lt": 18567.564036155, "tt": 2.3511}
+{"stage": "user_stopped", "t": 18536.232295358, "pid": 9960, "src": "ws", "recv": 18567.6218952, "lt": 18567.570969435, "tt": 2.3581}
+{"stage": "user_stopped", "t": 18536.232365728, "pid": 9960, "src": "ws", "recv": 18567.6219172, "lt": 18567.571039805, "tt": 2.3582}
+{"stage": "llm_first_token", "t": 18536.235287854, "pid": 9960, "src": "ws", "recv": 18567.6262753, "lt": 18567.573961931, "tt": 2.3611}
+{"stage": "tts_request", "t": 18536.264475317, "pid": 9960, "src": "ws", "recv": 18567.6558364, "lt": 18567.603149394, "tt": 2.3903}
+{"stage": "tts_first_audio", "t": 18536.468051559, "pid": 9960, "src": "ws", "recv": 18567.8533246, "lt": 18567.806725636, "tt": 2.5938}
+{"stage": "audio_out", "t": 18536.472781985, "pid": 9960, "src": "ws", "recv": 18567.8621585, "lt": 18567.811456062, "tt": 2.5986}
+{"stage": "audio_out", "t": 18536.472868318, "pid": 9960, "src": "ws", "recv": 18567.8621812, "lt": 18567.811542395, "tt": 2.5987}
+{"stage": "bot_stopped", "t": 18546.281611061, "pid": 9960, "src": "ws", "recv": 18577.668423, "lt": 18577.620285138, "tt": 12.4074}
+{"stage": "bot_stopped", "t": 18546.28169682, "pid": 9960, "src": "ws", "recv": 18577.6684461, "lt": 18577.620370897, "tt": 12.4075}
+{"stage": "llm_request", "t": 18546.288986301, "pid": 9960, "messages": 23, "chars": 10485, "est_tokens": 2621, "src": "ws", "recv": 18577.6746168, "lt": 18577.627660378, "tt": 12.4148}

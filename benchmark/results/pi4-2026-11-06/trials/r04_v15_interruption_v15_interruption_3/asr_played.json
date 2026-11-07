@@ -1,0 +1,118 @@
+{
+  "text": "What's the latest in smart home devices? Hold on, what time is the meeting scheduled today?",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.46
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.46,
+        0.58
+      ]
+    },
+    {
+      "text": "latest",
+      "timestamp": [
+        0.58,
+        0.94
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        0.94,
+        1.2
+      ]
+    },
+    {
+      "text": "smart",
+      "timestamp": [
+        1.2,
+        1.5
+      ]
+    },
+    {
+      "text": "home",
+      "timestamp": [
+        1.5,
+        1.72
+      ]
+    },
+    {
+      "text": "devices?",
+      "timestamp": [
+        1.72,
+        2.18
+      ]
+    },
+    {
+      "text": "Hold",
+      "timestamp": [
+        4.75,
+        5.09
+      ]
+    },
+    {
+      "text": "on,",
+      "timestamp": [
+        5.09,
+        5.29
+      ]
+    },
+    {
+      "text": "what",
+      "timestamp": [
+        5.39,
+        5.51
+      ]
+    },
+    {
+      "text": "time",
+      "timestamp": [
+        5.51,
+        5.77
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        5.77,
+        5.93
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.93,
+        6.03
+      ]
+    },
+    {
+      "text": "meeting",
+      "timestamp": [
+        6.03,
+        6.19
+      ]
+    },
+    {
+      "text": "scheduled",
+      "timestamp": [
+        6.19,
+        6.57
+      ]
+    },
+    {
+      "text": "today?",
+      "timestamp": [
+        6.57,
+        7.01
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

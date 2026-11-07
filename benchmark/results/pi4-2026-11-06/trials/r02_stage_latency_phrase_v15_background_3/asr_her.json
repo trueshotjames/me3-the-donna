@@ -1,0 +1,83 @@
+{
+  "text": "I'm sorry, but I can't check the current time right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        2.22,
+        2.7
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        2.7,
+        3.0
+      ]
+    },
+    {
+      "text": "but",
+      "timestamp": [
+        3.38,
+        3.52
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        3.52,
+        3.64
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.64,
+        3.92
+      ]
+    },
+    {
+      "text": "check",
+      "timestamp": [
+        3.92,
+        4.06
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.06,
+        4.22
+      ]
+    },
+    {
+      "text": "current",
+      "timestamp": [
+        4.22,
+        4.46
+      ]
+    },
+    {
+      "text": "time",
+      "timestamp": [
+        4.46,
+        4.76
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.76,
+        4.96
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        4.96,
+        5.22
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

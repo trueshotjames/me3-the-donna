@@ -1,0 +1,98 @@
+{
+  "trial": "r11_v15_backchannel_v15_backchannel_52",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_52",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 47.68,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.68
+    },
+    {
+      "name": "overlap",
+      "t": 5.148,
+      "len": 0.836
+    }
+  ],
+  "live_bot_starts": [
+    3.648,
+    6.336
+  ],
+  "live_bot_ends": [
+    5.44
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Offer an exhaustive overview of tornadoes.",
+    "current_turn_text": "",
+    "overlap_text": "uh-huh yeah",
+    "overlap_duration": 0.84,
+    "overlap_window": [
+      6.554,
+      7.390000000000001
+    ],
+    "source_id": "52"
+  },
+  "mono": [
+    19135.6868452,
+    19183.360031
+  ],
+  "bot_segments": [
+    [
+      3.618,
+      5.47
+    ],
+    [
+      6.306,
+      47.68
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.68
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2839999999999998,
+  "t_resp": 0.32399999999999984,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.186,
+    5.982
+  ],
+  "tor": 1,
+  "first_start": 6.306,
+  "spoke_s": 7.678,
+  "latency": 0.32200000000000006,
+  "actual": "stopped after 0.28 s, back 0.32 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 30,
+  "final": {
+    "t_stop": 0.2839999999999998,
+    "t_resp": 0.32399999999999984,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": 45.36388140161729,
+      "pitch_mean": -29.07031191371172,
+      "pitch_sd": 1.759995627109852,
+      "intensity_mean": -9.27008741019214,
+      "intensity_sd": 2.5939620371238563,
+      "utmosv2": null
+    },
+    "transcript": "Tornadoes are violently rotating columns of air that extend from a thunderstorm to the ground, capable of destroying structures in seconds. They form most often in the United States, especially in the central tornado alley, where warm, moist air from the gulf meets cool, dry air from the rockies. A supercell thunderstorm creates a rotating updraft called the mesocyclone, and when the rotation tigh",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

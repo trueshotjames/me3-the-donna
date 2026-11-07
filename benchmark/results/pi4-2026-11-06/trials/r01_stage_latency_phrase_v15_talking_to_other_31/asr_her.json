@@ -1,0 +1,69 @@
+{
+  "text": "I'm not able to check live scores right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        2.49,
+        2.97
+      ]
+    },
+    {
+      "text": "not",
+      "timestamp": [
+        2.97,
+        3.09
+      ]
+    },
+    {
+      "text": "able",
+      "timestamp": [
+        3.09,
+        3.27
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        3.27,
+        3.43
+      ]
+    },
+    {
+      "text": "check",
+      "timestamp": [
+        3.43,
+        3.63
+      ]
+    },
+    {
+      "text": "live",
+      "timestamp": [
+        3.63,
+        3.91
+      ]
+    },
+    {
+      "text": "scores",
+      "timestamp": [
+        3.91,
+        4.21
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.21,
+        4.55
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        4.55,
+        4.83
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

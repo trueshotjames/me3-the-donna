@@ -1,0 +1,132 @@
+{
+  "text": "I've been trying to eat healthier lately. Oh before I forget, can we discuss some exercise tips instead?",
+  "chunks": [
+    {
+      "text": "I've",
+      "timestamp": [
+        0.0,
+        0.34
+      ]
+    },
+    {
+      "text": "been",
+      "timestamp": [
+        0.34,
+        0.44
+      ]
+    },
+    {
+      "text": "trying",
+      "timestamp": [
+        0.44,
+        0.64
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.64,
+        0.8
+      ]
+    },
+    {
+      "text": "eat",
+      "timestamp": [
+        0.8,
+        0.94
+      ]
+    },
+    {
+      "text": "healthier",
+      "timestamp": [
+        0.94,
+        1.36
+      ]
+    },
+    {
+      "text": "lately.",
+      "timestamp": [
+        1.36,
+        2.2
+      ]
+    },
+    {
+      "text": "Oh",
+      "timestamp": [
+        5.22,
+        5.46
+      ]
+    },
+    {
+      "text": "before",
+      "timestamp": [
+        5.46,
+        5.76
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        5.76,
+        5.98
+      ]
+    },
+    {
+      "text": "forget,",
+      "timestamp": [
+        5.98,
+        6.38
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        6.58,
+        6.98
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        6.98,
+        7.1
+      ]
+    },
+    {
+      "text": "discuss",
+      "timestamp": [
+        7.1,
+        7.38
+      ]
+    },
+    {
+      "text": "some",
+      "timestamp": [
+        7.38,
+        7.62
+      ]
+    },
+    {
+      "text": "exercise",
+      "timestamp": [
+        7.62,
+        8.04
+      ]
+    },
+    {
+      "text": "tips",
+      "timestamp": [
+        8.04,
+        8.44
+      ]
+    },
+    {
+      "text": "instead?",
+      "timestamp": [
+        8.44,
+        8.8
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,90 @@
+{
+  "trial": "r02_stage_latency_phrase_v15_talking_to_other_15",
+  "group": "stage_latency",
+  "clip": "phrase_v15_talking_to_other_15",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 8.832,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.008
+    }
+  ],
+  "live_bot_starts": [
+    0.0,
+    2.912
+  ],
+  "live_bot_ends": [
+    0.288,
+    7.616
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Give me a fun fact about dolphins.",
+    "source": "v15_talking_to_other_15"
+  },
+  "mono": [
+    15777.9540111,
+    15786.7816545
+  ],
+  "bot_segments": [
+    [
+      0.0,
+      0.318
+    ],
+    [
+      2.882,
+      7.646
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.008
+  ],
+  "tor": 1,
+  "first_start": 2.882,
+  "spoke_s": 4.763999999999999,
+  "user_end": 1.758,
+  "latency": 1.124,
+  "actual": "replied 1.12 s after speech end",
+  "verdict": "✓ 1.12 s",
+  "ok": true,
+  "marks": 30,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.124,
+      "e2e": 0.9414,
+      "e2e_source": "marks",
+      "asr_final": 0.4717,
+      "llm_ttft": 0.2581,
+      "tts_ttfb": 0.1662,
+      "endpointing": 0.1381,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Give me a fun fact about dolphins.",
+      "wer": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2685,
+      "context_source": "usage",
+      "context_messages": 22
+    },
+    "transcript": "Dolphins use signature whistles as personal names, each unique to an individual."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

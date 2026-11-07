@@ -1,0 +1,64 @@
+{
+  "trial": "r04_v1_pause_synth_v1_pause_synth_115",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_115",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 11.584,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 7.5626875
+    }
+  ],
+  "live_bot_starts": [
+    8.608
+  ],
+  "live_bot_ends": [
+    11.2
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      5.04,
+      6.640000000000001
+    ],
+    "source_id": "115",
+    "text": "Technology is changing so fast. It's unreal, especially in the area of artificial intelligence, which is pretty evolving every day."
+  },
+  "mono": [
+    17051.9957234,
+    17063.5820489
+  ],
+  "bot_segments": [
+    [
+      8.578,
+      11.23
+    ]
+  ],
+  "play_first": [
+    0.0,
+    7.5626875
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 63,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "AI is indeed advancing at a remarkable pace."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

@@ -1,0 +1,97 @@
+{
+  "text": "Check the status of my flight. Mom, have you fed the cat yet?",
+  "chunks": [
+    {
+      "text": "Check",
+      "timestamp": [
+        0.0,
+        0.2
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.2,
+        0.36
+      ]
+    },
+    {
+      "text": "status",
+      "timestamp": [
+        0.36,
+        0.68
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        0.68,
+        0.88
+      ]
+    },
+    {
+      "text": "my",
+      "timestamp": [
+        0.88,
+        1.0
+      ]
+    },
+    {
+      "text": "flight.",
+      "timestamp": [
+        1.0,
+        1.28
+      ]
+    },
+    {
+      "text": "Mom,",
+      "timestamp": [
+        3.94,
+        4.34
+      ]
+    },
+    {
+      "text": "have",
+      "timestamp": [
+        4.46,
+        4.52
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        4.52,
+        4.62
+      ]
+    },
+    {
+      "text": "fed",
+      "timestamp": [
+        4.62,
+        4.78
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.78,
+        4.88
+      ]
+    },
+    {
+      "text": "cat",
+      "timestamp": [
+        4.88,
+        5.16
+      ]
+    },
+    {
+      "text": "yet?",
+      "timestamp": [
+        5.16,
+        5.38
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

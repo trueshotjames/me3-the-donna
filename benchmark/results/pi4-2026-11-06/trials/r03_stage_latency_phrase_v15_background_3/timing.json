@@ -1,0 +1,86 @@
+{
+  "trial": "r03_stage_latency_phrase_v15_background_3",
+  "group": "stage_latency",
+  "clip": "phrase_v15_background_3",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 5.632,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.752
+    }
+  ],
+  "live_bot_starts": [
+    0.128,
+    2.4
+  ],
+  "live_bot_ends": [
+    0.32,
+    4.416
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "What's the time in Tokyo?",
+    "source": "v15_background_3"
+  },
+  "mono": [
+    16044.9959379,
+    16050.6217735
+  ],
+  "bot_segments": [
+    [
+      2.37,
+      4.446
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.752
+  ],
+  "tor": 1,
+  "first_start": 2.37,
+  "spoke_s": 2.0759999999999996,
+  "user_end": 1.502,
+  "latency": 0.8680000000000001,
+  "actual": "replied 0.87 s after speech end",
+  "verdict": "✓ 0.87 s",
+  "ok": true,
+  "marks": 26,
+  "final": {
+    "stages": {
+      "e2e_heard": 0.868,
+      "e2e": 0.7181,
+      "e2e_source": "marks",
+      "asr_final": 0.0,
+      "llm_ttft": 0.5512,
+      "tts_ttfb": 0.2312,
+      "endpointing": 0.137,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "What's the time in Tokyo",
+      "wer": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2545,
+      "context_source": "usage",
+      "context_messages": 51
+    },
+    "transcript": "I'm unable to get the current time right now."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

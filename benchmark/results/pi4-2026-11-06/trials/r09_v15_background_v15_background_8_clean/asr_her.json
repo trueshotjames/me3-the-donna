@@ -1,0 +1,62 @@
+{
+  "text": "I can't read your heart rate right now.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        1.87,
+        2.23
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        2.23,
+        2.51
+      ]
+    },
+    {
+      "text": "read",
+      "timestamp": [
+        2.51,
+        2.59
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        2.59,
+        2.75
+      ]
+    },
+    {
+      "text": "heart",
+      "timestamp": [
+        2.75,
+        2.97
+      ]
+    },
+    {
+      "text": "rate",
+      "timestamp": [
+        2.97,
+        3.15
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        3.15,
+        3.33
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        3.33,
+        3.57
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

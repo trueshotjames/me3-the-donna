@@ -1,0 +1,68 @@
+{"stage": "vad_start", "t": 19051.599773557, "pid": 9960, "src": "ws", "recv": 19082.9928339, "lt": 19082.938447634002, "tt": 0.3179}
+{"stage": "vad_start", "t": 19051.599870741, "pid": 9960, "src": "ws", "recv": 19082.9928597, "lt": 19082.938544818, "tt": 0.318}
+{"stage": "asr_partial", "t": 19051.964373257, "pid": 9960, "text": "I", "src": "ws", "recv": 19083.3558412, "lt": 19083.303047334, "tt": 0.6825}
+{"stage": "interrupted", "t": 19052.089126654, "pid": 9960, "src": "ws", "recv": 19083.4819549, "lt": 19083.427800731, "tt": 0.8073}
+{"stage": "interrupted", "t": 19052.089221153, "pid": 9960, "src": "ws", "recv": 19083.4819819, "lt": 19083.42789523, "tt": 0.8074}
+{"stage": "asr_partial", "t": 19052.243356636, "pid": 9960, "text": "I'm concerned", "src": "ws", "recv": 19083.6348286, "lt": 19083.582030713, "tt": 0.9615}
+{"stage": "asr_partial", "t": 19052.366431847, "pid": 9960, "text": "I'm considering a", "src": "ws", "recv": 19083.7578834, "lt": 19083.705105924, "tt": 1.0846}
+{"stage": "asr_partial", "t": 19052.60369262, "pid": 9960, "text": "I'm considering a job", "src": "ws", "recv": 19083.9952472, "lt": 19083.942366697, "tt": 1.3218}
+{"stage": "asr_partial", "t": 19052.846672427, "pid": 9960, "text": "I'm considering a job offer", "src": "ws", "recv": 19084.2383286, "lt": 19084.185346504, "tt": 1.5648}
+{"stage": "asr_partial", "t": 19052.973260583, "pid": 9960, "text": "I'm considering a job offer.", "src": "ws", "recv": 19084.3658206, "lt": 19084.31193466, "tt": 1.6914}
+{"stage": "llm_request", "t": 19053.088858204, "pid": 9960, "speculative": true, "messages": 26, "chars": 10376, "est_tokens": 2594, "src": "ws", "recv": 19084.480311, "lt": 19084.427532281, "tt": 1.807}
+{"stage": "asr_final", "t": 19053.171769663, "pid": 9960, "text": "I'm considering a job offer.", "src": "ws", "recv": 19084.5637512, "lt": 19084.51044374, "tt": 1.8899}
+{"stage": "user_stopped", "t": 19053.177708898, "pid": 9960, "src": "ws", "recv": 19084.5711413, "lt": 19084.516382975, "tt": 1.8959}
+{"stage": "user_stopped", "t": 19053.177776193, "pid": 9960, "src": "ws", "recv": 19084.5711631, "lt": 19084.51645027, "tt": 1.8959}
+{"stage": "interrupted", "t": 19053.649105308, "pid": 9960, "src": "ws", "recv": 19085.0426548, "lt": 19084.987779385, "tt": 2.3673}
+{"stage": "interrupted", "t": 19053.649191585, "pid": 9960, "src": "ws", "recv": 19085.0426755, "lt": 19084.987865662, "tt": 2.3673}
+{"stage": "asr_partial", "t": 19053.849134706, "pid": 9960, "text": "the position of", "src": "ws", "recv": 19085.2411627, "lt": 19085.187808783, "tt": 2.5673}
+{"stage": "asr_partial", "t": 19054.123570427, "pid": 9960, "text": "The position offers", "src": "ws", "recv": 19085.5150536, "lt": 19085.462244504, "tt": 2.8417}
+{"stage": "asr_partial", "t": 19054.323787174, "pid": 9960, "text": "The position offers a good", "src": "ws", "recv": 19085.7153367, "lt": 19085.662461251, "tt": 3.0419}
+{"stage": "asr_partial", "t": 19054.603897206, "pid": 9960, "text": "The position offers a good salary", "src": "ws", "recv": 19085.995419, "lt": 19085.942571283, "tt": 3.3221}
+{"stage": "asr_partial", "t": 19054.813614448, "pid": 9960, "text": "The position offers a good salary", "src": "ws", "recv": 19086.2071519, "lt": 19086.152288525, "tt": 3.5318}
+{"stage": "asr_partial", "t": 19055.083910174, "pid": 9960, "text": "The position offers a good salary,", "src": "ws", "recv": 19086.4754416, "lt": 19086.422584251, "tt": 3.8021}
+{"stage": "vad_end", "t": 19055.14558724, "pid": 9960, "src": "ws", "recv": 19086.5420108, "lt": 19086.484261317, "tt": 3.8637}
+{"stage": "vad_end", "t": 19055.145642258, "pid": 9960, "src": "ws", "recv": 19086.5420501, "lt": 19086.484316335, "tt": 3.8638}
+{"stage": "llm_request", "t": 19055.156356907, "pid": 9960, "speculative": true, "messages": 27, "chars": 10409, "est_tokens": 2602, "src": "ws", "recv": 19086.5478367, "lt": 19086.495030984, "tt": 3.8745}
+{"stage": "asr_partial", "t": 19055.324102711, "pid": 9960, "text": "The position offers a good salary,", "src": "ws", "recv": 19086.7156236, "lt": 19086.662776788, "tt": 4.0423}
+{"stage": "vad_start", "t": 19055.339866085, "pid": 9960, "src": "ws", "recv": 19086.7316995, "lt": 19086.678540162, "tt": 4.058}
+{"stage": "vad_start", "t": 19055.339922103, "pid": 9960, "src": "ws", "recv": 19086.7317245, "lt": 19086.67859618, "tt": 4.0581}
+{"stage": "llm_cancel", "t": 19055.342883628, "pid": 9960, "src": "ws", "recv": 19086.7334074, "lt": 19086.681557705, "tt": 4.061}
+{"stage": "asr_partial", "t": 19055.567196014, "pid": 9960, "text": "The position offers a good salary, but", "src": "ws", "recv": 19086.9590874, "lt": 19086.905870091, "tt": 4.2854}
+{"stage": "asr_partial", "t": 19055.763943444, "pid": 9960, "text": "The position offers a good salary, but I'm", "src": "ws", "recv": 19087.1555726, "lt": 19087.102617521, "tt": 4.4821}
+{"stage": "asr_partial", "t": 19056.04352387, "pid": 9960, "text": "The position offers a good salary, but I'm not sure", "src": "ws", "recv": 19087.4350984, "lt": 19087.382197947, "tt": 4.7617}
+{"stage": "asr_partial", "t": 19056.283923275, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the", "src": "ws", "recv": 19087.6754726, "lt": 19087.622597352, "tt": 5.0021}
+{"stage": "asr_partial", "t": 19056.523993516, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company", "src": "ws", "recv": 19087.9156185, "lt": 19087.862667593, "tt": 5.2422}
+{"stage": "asr_partial", "t": 19056.76472138, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company co", "src": "ws", "recv": 19088.1575668, "lt": 19088.103395457, "tt": 5.4829}
+{"stage": "asr_partial", "t": 19057.005676834, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture", "src": "ws", "recv": 19088.3991425, "lt": 19088.344350911, "tt": 5.7238}
+{"stage": "asr_partial", "t": 19057.24518545, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture and", "src": "ws", "recv": 19088.6377721, "lt": 19088.583859527, "tt": 5.9633}
+{"stage": "asr_partial", "t": 19057.484101388, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture and", "src": "ws", "recv": 19088.8756576, "lt": 19088.822775465, "tt": 6.2023}
+{"stage": "asr_partial", "t": 19057.68377962, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture and", "src": "ws", "recv": 19089.0754087, "lt": 19089.022453697, "tt": 6.4019}
+{"stage": "asr_partial", "t": 19057.963584523, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture and", "src": "ws", "recv": 19089.3551935, "lt": 19089.3022586, "tt": 6.6817}
+{"stage": "asr_partial", "t": 19058.204398218, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so", "src": "ws", "recv": 19089.5959672, "lt": 19089.543072295, "tt": 6.9226}
+{"stage": "asr_partial", "t": 19058.446185922, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so", "src": "ws", "recv": 19089.8383206, "lt": 19089.784859999, "tt": 7.1643}
+{"stage": "vad_end", "t": 19058.603794626, "pid": 9960, "src": "ws", "recv": 19089.9957755, "lt": 19089.942468703, "tt": 7.322}
+{"stage": "vad_end", "t": 19058.603890958, "pid": 9960, "src": "ws", "recv": 19089.995795, "lt": 19089.942565035, "tt": 7.322}
+{"stage": "asr_partial", "t": 19058.687696258, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so", "src": "ws", "recv": 19090.079692, "lt": 19090.026370335, "tt": 7.4059}
+{"stage": "asr_partial", "t": 19058.924640419, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so", "src": "ws", "recv": 19090.3162042, "lt": 19090.263314496002, "tt": 7.6428}
+{"stage": "asr_partial", "t": 19059.123822821, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so", "src": "ws", "recv": 19090.5154597, "lt": 19090.462496898, "tt": 7.842}
+{"stage": "vad_start", "t": 19059.276291633, "pid": 9960, "src": "ws", "recv": 19090.6675055, "lt": 19090.61496571, "tt": 7.9944}
+{"stage": "vad_start", "t": 19059.276350244, "pid": 9960, "src": "ws", "recv": 19090.6675297, "lt": 19090.615024321, "tt": 7.9945}
+{"stage": "asr_partial", "t": 19059.40456614, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so", "src": "ws", "recv": 19090.7961929, "lt": 19090.743240217, "tt": 8.1227}
+{"stage": "asr_partial", "t": 19059.604318426, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so what are", "src": "ws", "recv": 19090.9960641, "lt": 19090.942992503, "tt": 8.3225}
+{"stage": "asr_partial", "t": 19059.887462034, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so what are the good", "src": "ws", "recv": 19091.2791222, "lt": 19091.226136111, "tt": 8.6056}
+{"stage": "asr_partial", "t": 19060.126317433, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so what are the growth", "src": "ws", "recv": 19091.5178269, "lt": 19091.46499151, "tt": 8.8445}
+{"stage": "asr_partial", "t": 19060.367477364, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so what are the growth options", "src": "ws", "recv": 19091.7596189, "lt": 19091.706151441, "tt": 9.0856}
+{"stage": "asr_partial", "t": 19060.607915969, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so what are the growth opportunities", "src": "ws", "recv": 19091.9988571, "lt": 19091.946590046, "tt": 9.3261}
+{"stage": "vad_end", "t": 19060.840907595, "pid": 9960, "src": "ws", "recv": 19092.2331108, "lt": 19092.179581672, "tt": 9.5591}
+{"stage": "vad_end", "t": 19060.84096252, "pid": 9960, "src": "ws", "recv": 19092.2331393, "lt": 19092.179636597, "tt": 9.5591}
+{"stage": "asr_partial", "t": 19060.853645463, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so what are the growth opportunities that", "src": "ws", "recv": 19092.2463565, "lt": 19092.19231954, "tt": 9.5718}
+{"stage": "asr_final", "t": 19062.401315037, "pid": 9960, "text": "The position offers a good salary, but I'm not sure about the company culture. And so what are the growth opportunities that", "src": "ws", "recv": 19093.7972515, "lt": 19093.739989114, "tt": 11.1195}
+{"stage": "llm_request", "t": 19062.40946736, "pid": 9960, "messages": 27, "chars": 10500, "est_tokens": 2625, "src": "ws", "recv": 19093.807336, "lt": 19093.748141437, "tt": 11.1276}
+{"stage": "user_stopped", "t": 19062.409566488, "pid": 9960, "src": "ws", "recv": 19093.8073577, "lt": 19093.748240565, "tt": 11.1277}
+{"stage": "user_stopped", "t": 19062.409621043, "pid": 9960, "src": "ws", "recv": 19093.8073699, "lt": 19093.74829512, "tt": 11.1278}
+{"stage": "llm_first_token", "t": 19063.049314142, "pid": 9960, "src": "ws", "recv": 19094.4418286, "lt": 19094.387988219, "tt": 11.7675}
+{"stage": "llm_usage", "t": 19063.108896692, "pid": 9960, "prompt_tokens": 2432, "completion_tokens": 79, "src": "ws", "recv": 19094.5031882, "lt": 19094.447570769, "tt": 11.8271}
+{"stage": "tts_request", "t": 19063.127183521, "pid": 9960, "src": "ws", "recv": 19094.5217033, "lt": 19094.465857598, "tt": 11.8453}
+{"stage": "tts_first_audio", "t": 19063.290037261, "pid": 9960, "src": "ws", "recv": 19094.6815902, "lt": 19094.628711338, "tt": 12.0082}
+{"stage": "audio_out", "t": 19063.294840693, "pid": 9960, "src": "ws", "recv": 19094.691966, "lt": 19094.63351477, "tt": 12.013}
+{"stage": "audio_out", "t": 19063.29493658, "pid": 9960, "src": "ws", "recv": 19094.6919886, "lt": 19094.633610657, "tt": 12.0131}

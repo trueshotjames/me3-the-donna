@@ -1,0 +1,111 @@
+{
+  "text": "Ouch! Looks like your shoe just got a bite -sized review from the neighborhood canine.",
+  "chunks": [
+    {
+      "text": "Ouch!",
+      "timestamp": [
+        2.83,
+        3.31
+      ]
+    },
+    {
+      "text": "Looks",
+      "timestamp": [
+        3.77,
+        4.07
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        4.07,
+        4.37
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        4.37,
+        4.51
+      ]
+    },
+    {
+      "text": "shoe",
+      "timestamp": [
+        4.51,
+        4.81
+      ]
+    },
+    {
+      "text": "just",
+      "timestamp": [
+        4.81,
+        5.11
+      ]
+    },
+    {
+      "text": "got",
+      "timestamp": [
+        5.11,
+        5.31
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        5.31,
+        5.39
+      ]
+    },
+    {
+      "text": "bite",
+      "timestamp": [
+        5.39,
+        5.65
+      ]
+    },
+    {
+      "text": "-sized",
+      "timestamp": [
+        5.65,
+        5.91
+      ]
+    },
+    {
+      "text": "review",
+      "timestamp": [
+        5.91,
+        6.41
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        6.41,
+        6.69
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        6.69,
+        6.83
+      ]
+    },
+    {
+      "text": "neighborhood",
+      "timestamp": [
+        6.83,
+        7.21
+      ]
+    },
+    {
+      "text": "canine.",
+      "timestamp": [
+        7.21,
+        7.83
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

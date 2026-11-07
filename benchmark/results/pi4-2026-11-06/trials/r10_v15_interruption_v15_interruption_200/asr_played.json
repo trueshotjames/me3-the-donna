@@ -1,0 +1,132 @@
+{
+  "text": "I want to learn a new language. Can we talk about something else like tips for better sleep?",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.0,
+        0.28
+      ]
+    },
+    {
+      "text": "want",
+      "timestamp": [
+        0.28,
+        0.4
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.4,
+        0.48
+      ]
+    },
+    {
+      "text": "learn",
+      "timestamp": [
+        0.48,
+        0.66
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.66,
+        0.82
+      ]
+    },
+    {
+      "text": "new",
+      "timestamp": [
+        0.82,
+        0.98
+      ]
+    },
+    {
+      "text": "language.",
+      "timestamp": [
+        0.98,
+        1.36
+      ]
+    },
+    {
+      "text": "Can",
+      "timestamp": [
+        4.78,
+        5.18
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        5.18,
+        5.3
+      ]
+    },
+    {
+      "text": "talk",
+      "timestamp": [
+        5.3,
+        5.46
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        5.46,
+        5.68
+      ]
+    },
+    {
+      "text": "something",
+      "timestamp": [
+        5.68,
+        5.92
+      ]
+    },
+    {
+      "text": "else",
+      "timestamp": [
+        5.92,
+        6.18
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        6.18,
+        6.44
+      ]
+    },
+    {
+      "text": "tips",
+      "timestamp": [
+        6.44,
+        7.16
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        7.16,
+        7.52
+      ]
+    },
+    {
+      "text": "better",
+      "timestamp": [
+        7.52,
+        7.68
+      ]
+    },
+    {
+      "text": "sleep?",
+      "timestamp": [
+        7.68,
+        7.96
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

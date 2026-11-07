@@ -1,0 +1,91 @@
+{
+  "trial": "r08_v15_backchannel_v15_backchannel_98",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_98",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 25.6,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.072
+    },
+    {
+      "name": "overlap",
+      "t": 1.5,
+      "len": 0.9749375
+    }
+  ],
+  "live_bot_starts": [
+    0.0,
+    4.288
+  ],
+  "live_bot_ends": [
+    0.384,
+    25.248
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Detail startups comprehensively.",
+    "current_turn_text": "",
+    "overlap_text": "mm-hmm yeah",
+    "overlap_duration": 0.97,
+    "overlap_window": [
+      5.997,
+      6.9719999999999995
+    ],
+    "source_id": "98"
+  },
+  "mono": [
+    18143.1970958,
+    18168.7983564
+  ],
+  "bot_segments": [
+    [
+      0.0,
+      0.414
+    ],
+    [
+      4.258,
+      25.278
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.072
+  ],
+  "overlap_played": true,
+  "t_stop": null,
+  "t_resp": 1.7830624999999998,
+  "bot_speaking_at_onset": false,
+  "spoke_through": false,
+  "overlap": [
+    1.5,
+    2.4749375000000002
+  ],
+  "tor": 1,
+  "first_start": 4.258,
+  "spoke_s": 6.216937499999999,
+  "latency": 1.7830624999999998,
+  "actual": "was already silent, back 1.78 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 31,
+  "final": {
+    "t_stop": null,
+    "t_resp": 1.7830624999999998,
+    "label": "Resume",
+    "transcript": "Startups are newly founded companies aiming to solve problems with innovative products or services. They typically begin with a small team of founders who invest time, expertise, and often personal savings. Early funding often comes from friends, family, or angel investors before seeking venture capital. Venture capital firms provide larger sums in exchange for equity. 7 23 23 24 25",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

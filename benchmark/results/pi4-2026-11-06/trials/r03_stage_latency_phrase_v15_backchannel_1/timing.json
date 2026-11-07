@@ -1,0 +1,86 @@
+{
+  "trial": "r03_stage_latency_phrase_v15_backchannel_1",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_1",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 14.976,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.712
+    }
+  ],
+  "live_bot_starts": [
+    0.096,
+    4.16
+  ],
+  "live_bot_ends": [
+    0.288,
+    14.624
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Present a thorough explanation of global warming.",
+    "source": "v15_backchannel_1"
+  },
+  "mono": [
+    15984.7832703,
+    15999.7422291
+  ],
+  "bot_segments": [
+    [
+      4.13,
+      14.654
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.712
+  ],
+  "tor": 1,
+  "first_start": 4.13,
+  "spoke_s": 6.582,
+  "user_end": 2.462,
+  "latency": 1.6679999999999997,
+  "actual": "replied 1.67 s after speech end",
+  "verdict": "✓ 1.67 s",
+  "ok": true,
+  "marks": 29,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.668,
+      "e2e": 1.5052,
+      "e2e_source": "marks",
+      "asr_final": 1.1693,
+      "llm_ttft": 0.0117,
+      "tts_ttfb": 0.2585,
+      "endpointing": 0.138,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Present a thorough explanation of global warming.",
+      "wer": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2647,
+      "context_source": "usage",
+      "context_messages": 46
+    },
+    "transcript": "global warming is the steady rise in Earth's average temperature. It is driven mainly by greenhouse gases that humans release, such as carbon dioxide from burning coal, oil, and gas."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

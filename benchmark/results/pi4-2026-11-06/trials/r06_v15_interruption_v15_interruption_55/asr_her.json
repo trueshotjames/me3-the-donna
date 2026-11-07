@@ -1,0 +1,111 @@
+{
+  "text": "Try the thriller night run. It's fast. Sure. What would you like to talk about?",
+  "chunks": [
+    {
+      "text": "Try",
+      "timestamp": [
+        3.18,
+        3.72
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.72,
+        3.94
+      ]
+    },
+    {
+      "text": "thriller",
+      "timestamp": [
+        3.94,
+        4.24
+      ]
+    },
+    {
+      "text": "night",
+      "timestamp": [
+        4.24,
+        4.66
+      ]
+    },
+    {
+      "text": "run.",
+      "timestamp": [
+        4.66,
+        5.08
+      ]
+    },
+    {
+      "text": "It's",
+      "timestamp": [
+        5.38,
+        5.52
+      ]
+    },
+    {
+      "text": "fast.",
+      "timestamp": [
+        5.52,
+        5.7
+      ]
+    },
+    {
+      "text": "Sure.",
+      "timestamp": [
+        7.56,
+        8.1
+      ]
+    },
+    {
+      "text": "What",
+      "timestamp": [
+        8.42,
+        8.78
+      ]
+    },
+    {
+      "text": "would",
+      "timestamp": [
+        8.78,
+        8.92
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        8.92,
+        9.04
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        9.04,
+        9.2
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        9.2,
+        9.34
+      ]
+    },
+    {
+      "text": "talk",
+      "timestamp": [
+        9.34,
+        9.58
+      ]
+    },
+    {
+      "text": "about?",
+      "timestamp": [
+        9.58,
+        9.8
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

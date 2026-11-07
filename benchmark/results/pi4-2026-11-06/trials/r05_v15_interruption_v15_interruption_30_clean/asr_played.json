@@ -1,0 +1,62 @@
+{
+  "text": "My tomatoes are not growing well this season.",
+  "chunks": [
+    {
+      "text": "My",
+      "timestamp": [
+        0.0,
+        0.42
+      ]
+    },
+    {
+      "text": "tomatoes",
+      "timestamp": [
+        0.42,
+        0.84
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        0.84,
+        1.04
+      ]
+    },
+    {
+      "text": "not",
+      "timestamp": [
+        1.04,
+        1.2
+      ]
+    },
+    {
+      "text": "growing",
+      "timestamp": [
+        1.2,
+        1.46
+      ]
+    },
+    {
+      "text": "well",
+      "timestamp": [
+        1.46,
+        1.66
+      ]
+    },
+    {
+      "text": "this",
+      "timestamp": [
+        1.66,
+        1.9
+      ]
+    },
+    {
+      "text": "season.",
+      "timestamp": [
+        1.9,
+        2.24
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

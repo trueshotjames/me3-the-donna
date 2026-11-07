@@ -1,0 +1,24 @@
+{"stage": "vad_start", "t": 18843.824778113, "pid": 9960, "src": "ws", "recv": 18875.2148069, "lt": 18875.16345219, "tt": 0.1908}
+{"stage": "vad_start", "t": 18843.824866501, "pid": 9960, "src": "ws", "recv": 18875.2148284, "lt": 18875.163540578, "tt": 0.1909}
+{"stage": "asr_partial", "t": 18844.204547653, "pid": 9960, "text": "When", "src": "ws", "recv": 18875.5940121, "lt": 18875.54322173, "tt": 0.5706}
+{"stage": "interrupted", "t": 18844.325883754, "pid": 9960, "src": "ws", "recv": 18875.7160889, "lt": 18875.664557831, "tt": 0.6919}
+{"stage": "interrupted", "t": 18844.325978198, "pid": 9960, "src": "ws", "recv": 18875.7161084, "lt": 18875.664652275, "tt": 0.692}
+{"stage": "asr_partial", "t": 18844.443890794, "pid": 9960, "text": "When is the next", "src": "ws", "recv": 18875.8330318, "lt": 18875.782564871, "tt": 0.81}
+{"stage": "asr_partial", "t": 18844.650021196, "pid": 9960, "text": "When is the next", "src": "ws", "recv": 18876.0410164, "lt": 18875.988695273, "tt": 1.0161}
+{"stage": "asr_partial", "t": 18844.884193627, "pid": 9960, "text": "When is the next full moon", "src": "ws", "recv": 18876.273389, "lt": 18876.222867704, "tt": 1.2503}
+{"stage": "asr_partial", "t": 18845.008874139, "pid": 9960, "text": "When is the next full moon?", "src": "ws", "recv": 18876.3978042, "lt": 18876.347548216, "tt": 1.3749}
+{"stage": "vad_end", "t": 18845.071171915, "pid": 9960, "src": "ws", "recv": 18876.4645915, "lt": 18876.409845992, "tt": 1.4372}
+{"stage": "vad_end", "t": 18845.071225544, "pid": 9960, "src": "ws", "recv": 18876.4646112, "lt": 18876.409899621, "tt": 1.4373}
+{"stage": "llm_request", "t": 18845.082301104, "pid": 9960, "speculative": true, "messages": 30, "chars": 11776, "est_tokens": 2944, "src": "ws", "recv": 18876.4714289, "lt": 18876.420975181, "tt": 1.4484}
+{"stage": "asr_final", "t": 18845.158807966, "pid": 9960, "text": "When is the next full moon?", "src": "ws", "recv": 18876.5496026, "lt": 18876.497482043, "tt": 1.5249}
+{"stage": "user_stopped", "t": 18845.16830382, "pid": 9960, "src": "ws", "recv": 18876.5617881, "lt": 18876.506977897, "tt": 1.5344}
+{"stage": "user_stopped", "t": 18845.168402078, "pid": 9960, "src": "ws", "recv": 18876.5618161, "lt": 18876.507076155, "tt": 1.5345}
+{"stage": "llm_first_token", "t": 18845.530667784, "pid": 9960, "src": "ws", "recv": 18876.9231749, "lt": 18876.869341861002, "tt": 1.8967}
+{"stage": "llm_usage", "t": 18845.545576697, "pid": 9960, "prompt_tokens": 2682, "completion_tokens": 42, "src": "ws", "recv": 18876.9375349, "lt": 18876.884250774, "tt": 1.9116}
+{"stage": "tts_request", "t": 18845.566468053, "pid": 9960, "src": "ws", "recv": 18876.9584051, "lt": 18876.90514213, "tt": 1.9325}
+{"stage": "tts_first_audio", "t": 18845.780666433, "pid": 9960, "src": "ws", "recv": 18877.1701747, "lt": 18877.11934051, "tt": 2.1467}
+{"stage": "audio_out", "t": 18845.786684783, "pid": 9960, "src": "ws", "recv": 18877.1808498, "lt": 18877.12535886, "tt": 2.1527}
+{"stage": "audio_out", "t": 18845.78676869, "pid": 9960, "src": "ws", "recv": 18877.1808732, "lt": 18877.125442767, "tt": 2.1528}
+{"stage": "bot_stopped", "t": 18848.873531637, "pid": 9960, "src": "ws", "recv": 18880.2642484, "lt": 18880.212205714, "tt": 5.2396}
+{"stage": "bot_stopped", "t": 18848.873942615, "pid": 9960, "src": "ws", "recv": 18880.2642671, "lt": 18880.212616692, "tt": 5.24}
+{"stage": "llm_request", "t": 18848.881153731, "pid": 9960, "messages": 31, "chars": 11832, "est_tokens": 2958, "src": "ws", "recv": 18880.2694159, "lt": 18880.219827808, "tt": 5.2472}

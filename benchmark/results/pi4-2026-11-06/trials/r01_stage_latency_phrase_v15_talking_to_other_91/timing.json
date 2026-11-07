@@ -1,0 +1,86 @@
+{
+  "trial": "r01_stage_latency_phrase_v15_talking_to_other_91",
+  "group": "stage_latency",
+  "clip": "phrase_v15_talking_to_other_91",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 7.744,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.2
+    }
+  ],
+  "live_bot_starts": [
+    4.736,
+    5.952
+  ],
+  "live_bot_ends": [
+    5.472,
+    6.528
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Translate 'good morning' into Spanish.",
+    "source": "v15_talking_to_other_91"
+  },
+  "mono": [
+    15569.6473335,
+    15577.4374867
+  ],
+  "bot_segments": [
+    [
+      4.706,
+      6.558
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.2
+  ],
+  "tor": 1,
+  "first_start": 4.706,
+  "spoke_s": 1.8519999999999994,
+  "user_end": 1.95,
+  "latency": 2.7560000000000002,
+  "actual": "replied 2.76 s after speech end",
+  "verdict": "✓ 2.76 s",
+  "ok": true,
+  "marks": 26,
+  "final": {
+    "stages": {
+      "e2e_heard": 2.756,
+      "e2e": 1.4334,
+      "e2e_source": "marks",
+      "asr_final": 0.1564,
+      "llm_ttft": 1.0553,
+      "tts_ttfb": 0.1876,
+      "endpointing": 0.1449,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Translate good morning into Spanish.",
+      "wer": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2285,
+      "context_source": "usage",
+      "context_messages": 2
+    },
+    "transcript": "Buenos dias."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

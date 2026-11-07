@@ -1,0 +1,104 @@
+{
+  "text": "It sounds like you're reflecting on that past relationship and where things stand now.",
+  "chunks": [
+    {
+      "text": "It",
+      "timestamp": [
+        9.81,
+        10.15
+      ]
+    },
+    {
+      "text": "sounds",
+      "timestamp": [
+        10.15,
+        10.35
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        10.35,
+        10.61
+      ]
+    },
+    {
+      "text": "you're",
+      "timestamp": [
+        10.61,
+        10.79
+      ]
+    },
+    {
+      "text": "reflecting",
+      "timestamp": [
+        10.79,
+        11.09
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        11.09,
+        11.35
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        11.35,
+        11.47
+      ]
+    },
+    {
+      "text": "past",
+      "timestamp": [
+        11.47,
+        11.77
+      ]
+    },
+    {
+      "text": "relationship",
+      "timestamp": [
+        11.77,
+        12.41
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        12.41,
+        12.71
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        12.71,
+        12.87
+      ]
+    },
+    {
+      "text": "things",
+      "timestamp": [
+        12.87,
+        13.11
+      ]
+    },
+    {
+      "text": "stand",
+      "timestamp": [
+        13.11,
+        13.43
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        13.43,
+        13.79
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

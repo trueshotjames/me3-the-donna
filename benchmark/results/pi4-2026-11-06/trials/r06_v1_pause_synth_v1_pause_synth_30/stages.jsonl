@@ -1,0 +1,80 @@
+{"stage": "vad_start", "t": 17628.89887, "pid": 9960, "src": "ws", "recv": 17660.2715755, "lt": 17660.237544077, "tt": 0.2088}
+{"stage": "vad_start", "t": 17628.898958961, "pid": 9960, "src": "ws", "recv": 17660.2715999, "lt": 17660.237633038, "tt": 0.2089}
+{"stage": "interrupted", "t": 17629.289900165, "pid": 9960, "src": "ws", "recv": 17660.6637994, "lt": 17660.628574242, "tt": 0.5998}
+{"stage": "interrupted", "t": 17629.289988719, "pid": 9960, "src": "ws", "recv": 17660.6638312, "lt": 17660.628662796, "tt": 0.5999}
+{"stage": "asr_partial", "t": 17629.410562132, "pid": 9960, "text": "How do I", "src": "ws", "recv": 17660.7821496, "lt": 17660.749236209, "tt": 0.7205}
+{"stage": "asr_partial", "t": 17629.60462477, "pid": 9960, "text": "How do I make the", "src": "ws", "recv": 17660.9761447, "lt": 17660.943298847, "tt": 0.9146}
+{"stage": "asr_partial", "t": 17629.847461425, "pid": 9960, "text": "How do I make that see", "src": "ws", "recv": 17661.2208488, "lt": 17661.186135502, "tt": 1.1574}
+{"stage": "asr_partial", "t": 17630.084368655, "pid": 9960, "text": "How do I make that soup", "src": "ws", "recv": 17661.4559256, "lt": 17661.423042732, "tt": 1.3943}
+{"stage": "asr_partial", "t": 17630.323971832, "pid": 9960, "text": "How do I make that soup you may", "src": "ws", "recv": 17661.6956821, "lt": 17661.662645909, "tt": 1.6339}
+{"stage": "asr_partial", "t": 17630.562608114, "pid": 9960, "text": "How do I make that soup you mentioned", "src": "ws", "recv": 17661.9342061, "lt": 17661.901282191, "tt": 1.8726}
+{"stage": "asr_partial", "t": 17630.807434892, "pid": 9960, "text": "How do I make that soup you mentioned for", "src": "ws", "recv": 17662.1813341, "lt": 17662.146108969002, "tt": 2.1174}
+{"stage": "asr_partial", "t": 17630.88706593, "pid": 9960, "text": "How do I make that soup you mentioned first?", "src": "ws", "recv": 17662.258708, "lt": 17662.225740007, "tt": 2.197}
+{"stage": "llm_request", "t": 17630.973241793, "pid": 9960, "speculative": true, "messages": 37, "chars": 11385, "est_tokens": 2846, "src": "ws", "recv": 17662.3471357, "lt": 17662.31191587, "tt": 2.2832}
+{"stage": "asr_final", "t": 17631.027775849, "pid": 9960, "text": "How do I make that soup you mentioned first?", "src": "ws", "recv": 17662.4020996, "lt": 17662.366449926, "tt": 2.3377}
+{"stage": "user_stopped", "t": 17631.038430567, "pid": 9960, "src": "ws", "recv": 17662.4142418, "lt": 17662.377104644, "tt": 2.3484}
+{"stage": "user_stopped", "t": 17631.038534936, "pid": 9960, "src": "ws", "recv": 17662.4142656, "lt": 17662.377209013, "tt": 2.3485}
+{"stage": "interrupted", "t": 17631.450404247, "pid": 9960, "src": "ws", "recv": 17662.8236736, "lt": 17662.789078324, "tt": 2.7604}
+{"stage": "interrupted", "t": 17631.450489227, "pid": 9960, "src": "ws", "recv": 17662.8236989, "lt": 17662.789163304, "tt": 2.7604}
+{"stage": "asr_partial", "t": 17631.650633122, "pid": 9960, "text": "you start with", "src": "ws", "recv": 17663.0224161, "lt": 17662.989307199, "tt": 2.9606}
+{"stage": "vad_end", "t": 17631.676900885, "pid": 9960, "src": "ws", "recv": 17663.0488154, "lt": 17663.015574962, "tt": 2.9868}
+{"stage": "vad_end", "t": 17631.676952403, "pid": 9960, "src": "ws", "recv": 17663.0488399, "lt": 17663.01562648, "tt": 2.9869}
+{"stage": "asr_partial", "t": 17631.883443941, "pid": 9960, "text": "you start with", "src": "ws", "recv": 17663.2551364, "lt": 17663.222118018, "tt": 3.1934}
+{"stage": "vad_start", "t": 17631.965207877, "pid": 9960, "src": "ws", "recv": 17663.3365236, "lt": 17663.303881954, "tt": 3.2752}
+{"stage": "vad_start", "t": 17631.965265913, "pid": 9960, "src": "ws", "recv": 17663.3365476, "lt": 17663.30393999, "tt": 3.2752}
+{"stage": "asr_partial", "t": 17632.130615171, "pid": 9960, "text": "you start with chow", "src": "ws", "recv": 17663.5024176, "lt": 17663.469289248, "tt": 3.4406}
+{"stage": "asr_partial", "t": 17632.363896391, "pid": 9960, "text": "You start with chopping", "src": "ws", "recv": 17663.735709, "lt": 17663.702570468, "tt": 3.6738}
+{"stage": "asr_partial", "t": 17632.610592701, "pid": 9960, "text": "You start with chopping all", "src": "ws", "recv": 17663.9822469, "lt": 17663.949266778, "tt": 3.9205}
+{"stage": "asr_partial", "t": 17632.844050493, "pid": 9960, "text": "You start with chopping all the", "src": "ws", "recv": 17664.2157006, "lt": 17664.18272457, "tt": 4.154}
+{"stage": "asr_partial", "t": 17633.091946474, "pid": 9960, "text": "You start with chopping all the vegetable", "src": "ws", "recv": 17664.4639133, "lt": 17664.430620551, "tt": 4.4019}
+{"stage": "asr_partial", "t": 17633.328094732, "pid": 9960, "text": "You start with chopping all the vegetables,", "src": "ws", "recv": 17664.699709, "lt": 17664.666768809002, "tt": 4.638}
+{"stage": "asr_partial", "t": 17633.570115879, "pid": 9960, "text": "You start with chopping all the vegetables.", "src": "ws", "recv": 17664.9417897, "lt": 17664.908789956, "tt": 4.8801}
+{"stage": "asr_partial", "t": 17633.80398611, "pid": 9960, "text": "You start with chopping all the vegetables and", "src": "ws", "recv": 17665.1756068, "lt": 17665.142660187, "tt": 5.1139}
+{"stage": "asr_partial", "t": 17634.0619985, "pid": 9960, "text": "You start with chopping all the vegetables, and while", "src": "ws", "recv": 17665.438434, "lt": 17665.400672577, "tt": 5.3719}
+{"stage": "asr_partial", "t": 17634.288255531, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're", "src": "ws", "recv": 17665.6601037, "lt": 17665.626929608, "tt": 5.5982}
+{"stage": "asr_partial", "t": 17634.530590803, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it", "src": "ws", "recv": 17665.9023083, "lt": 17665.86926488, "tt": 5.8405}
+{"stage": "asr_partial", "t": 17634.765187933, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make", "src": "ws", "recv": 17666.1368502, "lt": 17666.10386201, "tt": 6.0751}
+{"stage": "asr_partial", "t": 17635.010522112, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure", "src": "ws", "recv": 17666.3823179, "lt": 17666.349196189, "tt": 6.3205}
+{"stage": "asr_partial", "t": 17635.244690376, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to", "src": "ws", "recv": 17666.6163404, "lt": 17666.583364453, "tt": 6.5546}
+{"stage": "asr_partial", "t": 17635.490790454, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to", "src": "ws", "recv": 17666.8624458, "lt": 17666.829464531, "tt": 6.8007}
+{"stage": "asr_partial", "t": 17635.7237274, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to", "src": "ws", "recv": 17667.0955362, "lt": 17667.062401477, "tt": 7.0337}
+{"stage": "asr_partial", "t": 17635.970532006, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to", "src": "ws", "recv": 17667.3423394, "lt": 17667.309206083, "tt": 7.2805}
+{"stage": "vad_end", "t": 17635.996593679, "pid": 9960, "src": "ws", "recv": 17667.368595, "lt": 17667.335267756, "tt": 7.3065}
+{"stage": "vad_end", "t": 17635.996645271, "pid": 9960, "src": "ws", "recv": 17667.3686173, "lt": 17667.335319348, "tt": 7.3066}
+{"stage": "asr_partial", "t": 17636.203716597, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to", "src": "ws", "recv": 17667.575471, "lt": 17667.542390674, "tt": 7.5137}
+{"stage": "asr_partial", "t": 17636.450681701, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to", "src": "ws", "recv": 17667.8224038, "lt": 17667.789355778, "tt": 7.7606}
+{"stage": "asr_partial", "t": 17636.685314996, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to", "src": "ws", "recv": 17668.0570066, "lt": 17668.023989073, "tt": 7.9953}
+{"stage": "asr_partial", "t": 17636.930461493, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to", "src": "ws", "recv": 17668.302239, "lt": 17668.26913557, "tt": 8.2404}
+{"stage": "asr_partial", "t": 17637.218401749, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to", "src": "ws", "recv": 17668.5902032, "lt": 17668.557075826, "tt": 8.5284}
+{"stage": "vad_start", "t": 17637.310596147, "pid": 9960, "src": "ws", "recv": 17668.6821221, "lt": 17668.649270224, "tt": 8.6205}
+{"stage": "vad_start", "t": 17637.310668128, "pid": 9960, "src": "ws", "recv": 17668.6821458, "lt": 17668.649342205, "tt": 8.6206}
+{"stage": "asr_partial", "t": 17637.410602522, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep", "src": "ws", "recv": 17668.784114, "lt": 17668.749276599, "tt": 8.7206}
+{"stage": "asr_partial", "t": 17637.644294903, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an", "src": "ws", "recv": 17669.0160129, "lt": 17668.98296898, "tt": 8.9542}
+{"stage": "asr_partial", "t": 17637.890657977, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on", "src": "ws", "recv": 17669.2623947, "lt": 17669.229332054, "tt": 9.2006}
+{"stage": "asr_partial", "t": 17638.127722372, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the", "src": "ws", "recv": 17669.4995248, "lt": 17669.466396449, "tt": 9.4377}
+{"stage": "asr_partial", "t": 17638.374258203, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat", "src": "ws", "recv": 17669.7465265, "lt": 17669.71293228, "tt": 9.6842}
+{"stage": "vad_end", "t": 17638.496188099, "pid": 9960, "src": "ws", "recv": 17669.8679219, "lt": 17669.834862176, "tt": 9.8061}
+{"stage": "vad_end", "t": 17638.496244505, "pid": 9960, "src": "ws", "recv": 17669.8679464, "lt": 17669.834918582, "tt": 9.8062}
+{"stage": "asr_partial", "t": 17638.612249734, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat.", "src": "ws", "recv": 17669.9844443, "lt": 17669.950923811, "tt": 9.9222}
+{"stage": "llm_request", "t": 17638.615428194, "pid": 9960, "speculative": true, "messages": 38, "chars": 11490, "est_tokens": 2872, "src": "ws", "recv": 17669.9877599, "lt": 17669.954102271, "tt": 9.9254}
+{"stage": "vad_start", "t": 17638.783863839, "pid": 9960, "src": "ws", "recv": 17670.1559803, "lt": 17670.122537916, "tt": 10.0938}
+{"stage": "vad_start", "t": 17638.783919691, "pid": 9960, "src": "ws", "recv": 17670.1560052, "lt": 17670.122593768, "tt": 10.0939}
+{"stage": "llm_cancel", "t": 17638.786804988, "pid": 9960, "src": "ws", "recv": 17670.1575431, "lt": 17670.125479065002, "tt": 10.0968}
+{"stage": "asr_partial", "t": 17638.850939923, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat.", "src": "ws", "recv": 17670.2227354, "lt": 17670.189614, "tt": 10.1609}
+{"stage": "asr_partial", "t": 17639.089295357, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat. You don", "src": "ws", "recv": 17670.4610939, "lt": 17670.427969434, "tt": 10.3992}
+{"stage": "asr_partial", "t": 17639.331003638, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat. You don't want", "src": "ws", "recv": 17670.7028506, "lt": 17670.669677715, "tt": 10.641}
+{"stage": "asr_partial", "t": 17639.567377875, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat. You don't want any", "src": "ws", "recv": 17670.9392063, "lt": 17670.906051952, "tt": 10.8773}
+{"stage": "asr_partial", "t": 17639.815742109, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat. You don't want anything", "src": "ws", "recv": 17671.1880602, "lt": 17671.154416186, "tt": 11.1257}
+{"stage": "asr_partial", "t": 17640.044707013, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat. You don't want anything to", "src": "ws", "recv": 17671.4164854, "lt": 17671.38338109, "tt": 11.3547}
+{"stage": "vad_end", "t": 17640.252938066, "pid": 9960, "src": "ws", "recv": 17671.6249977, "lt": 17671.591612143002, "tt": 11.5629}
+{"stage": "vad_end", "t": 17640.252992324, "pid": 9960, "src": "ws", "recv": 17671.6250209, "lt": 17671.591666401, "tt": 11.5629}
+{"stage": "asr_partial", "t": 17640.300722855, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat. You don't want anything to burn.", "src": "ws", "recv": 17671.6735136, "lt": 17671.639396932, "tt": 11.6107}
+{"stage": "llm_request", "t": 17640.304871247, "pid": 9960, "speculative": true, "messages": 38, "chars": 11523, "est_tokens": 2881, "src": "ws", "recv": 17671.6782613, "lt": 17671.643545324, "tt": 11.6148}
+{"stage": "asr_partial", "t": 17640.404807993, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat. You don't want anything to burn.", "src": "ws", "recv": 17671.7766339, "lt": 17671.74348207, "tt": 11.7148}
+{"stage": "llm_cancel", "t": 17640.566889717, "pid": 9960, "src": "ws", "recv": 17671.9379198, "lt": 17671.905563794, "tt": 11.8768}
+{"stage": "asr_final", "t": 17642.178418897, "pid": 9960, "text": "You start with chopping all the vegetables. And while you're at it, make sure to keep an eye on the heat. You don't want anything to", "src": "ws", "recv": 17673.5520431, "lt": 17673.517092974, "tt": 13.4884}
+{"stage": "llm_request", "t": 17642.183623035, "pid": 9960, "messages": 38, "chars": 11517, "est_tokens": 2879, "src": "ws", "recv": 17673.5577865, "lt": 17673.522297112002, "tt": 13.4936}
+{"stage": "user_stopped", "t": 17642.18369533, "pid": 9960, "src": "ws", "recv": 17673.5578074, "lt": 17673.522369407, "tt": 13.4936}
+{"stage": "user_stopped", "t": 17642.183729311, "pid": 9960, "src": "ws", "recv": 17673.5578212, "lt": 17673.522403388, "tt": 13.4937}
+{"stage": "llm_first_token", "t": 17642.782353649, "pid": 9960, "src": "ws", "recv": 17674.1550162, "lt": 17674.121027726, "tt": 14.0923}
+{"stage": "llm_usage", "t": 17642.793707322, "pid": 9960, "prompt_tokens": 2452, "completion_tokens": 29, "src": "ws", "recv": 17674.1673535, "lt": 17674.132381399, "tt": 14.1037}

@@ -1,0 +1,38 @@
+{"stage": "vad_start", "t": 18171.159929286, "pid": 9960, "src": "ws", "recv": 18202.5396769, "lt": 18202.498603363, "tt": 0.1977}
+{"stage": "vad_start", "t": 18171.159986545, "pid": 9960, "src": "ws", "recv": 18202.5396999, "lt": 18202.498660622, "tt": 0.1977}
+{"stage": "vad_end", "t": 18171.582347424, "pid": 9960, "src": "ws", "recv": 18202.962648, "lt": 18202.921021501, "tt": 0.6201}
+{"stage": "vad_end", "t": 18171.582402127, "pid": 9960, "src": "ws", "recv": 18202.962666, "lt": 18202.921076204, "tt": 0.6201}
+{"stage": "vad_start", "t": 18172.500548041, "pid": 9960, "src": "ws", "recv": 18203.8803561, "lt": 18203.839222118, "tt": 1.5383}
+{"stage": "vad_start", "t": 18172.500605689, "pid": 9960, "src": "ws", "recv": 18203.8803753, "lt": 18203.839279766, "tt": 1.5383}
+{"stage": "asr_partial", "t": 18173.29072752, "pid": 9960, "text": "Well, the", "src": "ws", "recv": 18204.6773652, "lt": 18204.629401597, "tt": 2.3284}
+{"stage": "interrupted", "t": 18173.295002541, "pid": 9960, "src": "ws", "recv": 18204.6808789, "lt": 18204.633676618, "tt": 2.3327}
+{"stage": "interrupted", "t": 18173.295131057, "pid": 9960, "src": "ws", "recv": 18204.6808957, "lt": 18204.633805134, "tt": 2.3329}
+{"stage": "bot_stopped", "t": 18173.343667524, "pid": 9960, "src": "ws", "recv": 18204.738457, "lt": 18204.682341601, "tt": 2.3814}
+{"stage": "bot_stopped", "t": 18173.343800448, "pid": 9960, "src": "ws", "recv": 18204.7384824, "lt": 18204.682474525, "tt": 2.3815}
+{"stage": "llm_request", "t": 18173.368126366, "pid": 9960, "messages": 66, "chars": 15608, "est_tokens": 3902, "src": "ws", "recv": 18204.7506201, "lt": 18204.706800443, "tt": 2.4058}
+{"stage": "asr_partial", "t": 18173.530014525, "pid": 9960, "text": "Well, it was", "src": "ws", "recv": 18204.9112214, "lt": 18204.868688602, "tt": 2.5677}
+{"stage": "asr_partial", "t": 18173.766438787, "pid": 9960, "text": "Well, it was", "src": "ws", "recv": 18205.1466886, "lt": 18205.105112864, "tt": 2.8042}
+{"stage": "asr_partial", "t": 18173.966965518, "pid": 9960, "text": "Well, it was... you", "src": "ws", "recv": 18205.3489685, "lt": 18205.305639595, "tt": 3.0047}
+{"stage": "asr_partial", "t": 18174.246369835, "pid": 9960, "text": "Well, it was easily", "src": "ws", "recv": 18205.6265822, "lt": 18205.585043912, "tt": 3.2841}
+{"stage": "asr_partial", "t": 18174.446194167, "pid": 9960, "text": "Well, it was easily trimmed", "src": "ws", "recv": 18205.8266509, "lt": 18205.784868244, "tt": 3.4839}
+{"stage": "asr_partial", "t": 18174.72541195, "pid": 9960, "text": "Well, it was easily transferred", "src": "ws", "recv": 18206.1053236, "lt": 18206.064086027, "tt": 3.7631}
+{"stage": "asr_partial", "t": 18174.922760979, "pid": 9960, "text": "Well, it was easily transferable", "src": "ws", "recv": 18206.3027848, "lt": 18206.261435056, "tt": 3.9605}
+{"stage": "asr_partial", "t": 18175.205892583, "pid": 9960, "text": "Well, it was easily transferable to your", "src": "ws", "recv": 18206.5861585, "lt": 18206.54456666, "tt": 4.2436}
+{"stage": "asr_partial", "t": 18175.406671199, "pid": 9960, "text": "Well, it was easily transferable to your bank", "src": "ws", "recv": 18206.7881371, "lt": 18206.745345276002, "tt": 4.4444}
+{"stage": "asr_partial", "t": 18175.686301458, "pid": 9960, "text": "Well, it was easily transferable to your bank thus", "src": "ws", "recv": 18207.0665948, "lt": 18207.024975535, "tt": 4.724}
+{"stage": "asr_partial", "t": 18175.882445096, "pid": 9960, "text": "Well, it was easily transferable to your bank. That's", "src": "ws", "recv": 18207.2624972, "lt": 18207.221119173, "tt": 4.9202}
+{"stage": "asr_partial", "t": 18176.165879159, "pid": 9960, "text": "Well, it was easily transferable to your bank. That's the only", "src": "ws", "recv": 18207.5461044, "lt": 18207.504553236, "tt": 5.2036}
+{"stage": "asr_partial", "t": 18176.365892822, "pid": 9960, "text": "Well, it was easily transferable to your bank. That's the only good thing", "src": "ws", "recv": 18207.7461207, "lt": 18207.704566899, "tt": 5.4036}
+{"stage": "asr_partial", "t": 18176.651217805, "pid": 9960, "text": "Well, it was easily transferable to your bank. That's the only good thing about", "src": "ws", "recv": 18208.0318558, "lt": 18207.989891882, "tt": 5.6889}
+{"stage": "asr_partial", "t": 18176.845916239, "pid": 9960, "text": "Well, it was easily transferable to your bank. That's the only good thing about that.", "src": "ws", "recv": 18208.2263806, "lt": 18208.184590316, "tt": 5.8836}
+{"stage": "asr_partial", "t": 18177.126046028, "pid": 9960, "text": "Well, it was easily transferable to your bank. That's the only good thing about that. But", "src": "ws", "recv": 18208.5061335, "lt": 18208.464720105, "tt": 6.1638}
+{"stage": "vad_end", "t": 18177.207676377, "pid": 9960, "src": "ws", "recv": 18208.588285, "lt": 18208.546350454, "tt": 6.2454}
+{"stage": "vad_end", "t": 18177.207728006, "pid": 9960, "src": "ws", "recv": 18208.588307, "lt": 18208.546402083, "tt": 6.2454}
+{"stage": "asr_partial", "t": 18177.326266078, "pid": 9960, "text": "Well, it was easily transferable to your bank. That's the only good thing about that. But", "src": "ws", "recv": 18208.7066214, "lt": 18208.664940155, "tt": 6.364}
+{"stage": "asr_partial", "t": 18177.60656805, "pid": 9960, "text": "Well, it was easily transferable to your bank. That's the only good thing about that. But", "src": "ws", "recv": 18208.9868623, "lt": 18208.945242127, "tt": 6.6443}
+{"stage": "asr_final", "t": 18179.520907939, "pid": 9960, "text": "Well, it was easily transferable to your bank. That's the only good thing about that. But", "src": "ws", "recv": 18210.9041603, "lt": 18210.859582016, "tt": 8.5586}
+{"stage": "llm_request", "t": 18179.527941906, "pid": 9960, "messages": 67, "chars": 15697, "est_tokens": 3924, "src": "ws", "recv": 18210.9126758, "lt": 18210.866615983, "tt": 8.5657}
+{"stage": "user_stopped", "t": 18179.52810583, "pid": 9960, "src": "ws", "recv": 18210.9126964, "lt": 18210.866779907, "tt": 8.5658}
+{"stage": "user_stopped", "t": 18179.528175755, "pid": 9960, "src": "ws", "recv": 18210.9127081, "lt": 18210.866849832, "tt": 8.5659}
+{"stage": "llm_first_token", "t": 18180.484472359, "pid": 9960, "src": "ws", "recv": 18211.8654409, "lt": 18211.823146436, "tt": 9.5222}
+{"stage": "llm_usage", "t": 18180.495944159, "pid": 9960, "prompt_tokens": 2813, "completion_tokens": 63, "src": "ws", "recv": 18211.878455, "lt": 18211.834618236, "tt": 9.5337}

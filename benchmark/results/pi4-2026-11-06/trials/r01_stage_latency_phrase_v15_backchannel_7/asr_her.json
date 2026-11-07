@@ -1,0 +1,202 @@
+{
+  "text": "The stock market is a collection of exchanges where investors buy and sell shares of publicly traded companies. It provides companies with capital to grow by issuing stock.",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        3.7,
+        4.14
+      ]
+    },
+    {
+      "text": "stock",
+      "timestamp": [
+        4.14,
+        4.38
+      ]
+    },
+    {
+      "text": "market",
+      "timestamp": [
+        4.38,
+        4.74
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        4.74,
+        4.98
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.98,
+        5.08
+      ]
+    },
+    {
+      "text": "collection",
+      "timestamp": [
+        5.08,
+        5.42
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        5.42,
+        5.64
+      ]
+    },
+    {
+      "text": "exchanges",
+      "timestamp": [
+        5.64,
+        6.1
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        6.1,
+        6.48
+      ]
+    },
+    {
+      "text": "investors",
+      "timestamp": [
+        6.48,
+        6.9
+      ]
+    },
+    {
+      "text": "buy",
+      "timestamp": [
+        6.9,
+        7.38
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        7.38,
+        7.62
+      ]
+    },
+    {
+      "text": "sell",
+      "timestamp": [
+        7.62,
+        7.88
+      ]
+    },
+    {
+      "text": "shares",
+      "timestamp": [
+        7.88,
+        8.24
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        8.24,
+        8.5
+      ]
+    },
+    {
+      "text": "publicly",
+      "timestamp": [
+        8.5,
+        8.82
+      ]
+    },
+    {
+      "text": "traded",
+      "timestamp": [
+        8.82,
+        9.26
+      ]
+    },
+    {
+      "text": "companies.",
+      "timestamp": [
+        9.26,
+        9.78
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        10.1,
+        10.2
+      ]
+    },
+    {
+      "text": "provides",
+      "timestamp": [
+        10.2,
+        10.48
+      ]
+    },
+    {
+      "text": "companies",
+      "timestamp": [
+        10.48,
+        10.94
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        10.94,
+        11.2
+      ]
+    },
+    {
+      "text": "capital",
+      "timestamp": [
+        11.2,
+        11.58
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        11.58,
+        11.82
+      ]
+    },
+    {
+      "text": "grow",
+      "timestamp": [
+        11.82,
+        12.12
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        12.12,
+        12.44
+      ]
+    },
+    {
+      "text": "issuing",
+      "timestamp": [
+        12.44,
+        12.74
+      ]
+    },
+    {
+      "text": "stock.",
+      "timestamp": [
+        12.74,
+        13.2
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

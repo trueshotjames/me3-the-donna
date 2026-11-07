@@ -1,0 +1,32 @@
+{"stage": "vad_start", "t": 15908.503883975, "pid": 9960, "src": "ws", "recv": 15939.8484629, "lt": 15939.842558052, "tt": 0.2298}
+{"stage": "vad_start", "t": 15908.503940549, "pid": 9960, "src": "ws", "recv": 15939.8484881, "lt": 15939.842614626, "tt": 0.2299}
+{"stage": "asr_partial", "t": 15908.895544598, "pid": 9960, "text": "What's the", "src": "ws", "recv": 15940.2439538, "lt": 15940.234218675, "tt": 0.6215}
+{"stage": "interrupted", "t": 15908.89842734, "pid": 9960, "src": "ws", "recv": 15940.2456632, "lt": 15940.237101417, "tt": 0.6244}
+{"stage": "interrupted", "t": 15908.898516228, "pid": 9960, "src": "ws", "recv": 15940.2456818, "lt": 15940.237190305, "tt": 0.6245}
+{"stage": "bot_stopped", "t": 15908.934973316, "pid": 9960, "src": "ws", "recv": 15940.2805881, "lt": 15940.273647393, "tt": 0.6609}
+{"stage": "bot_stopped", "t": 15908.935058556, "pid": 9960, "src": "ws", "recv": 15940.2806099, "lt": 15940.273732633, "tt": 0.661}
+{"stage": "llm_request", "t": 15908.945051285, "pid": 9960, "messages": 38, "chars": 13770, "est_tokens": 3442, "src": "ws", "recv": 15940.2900486, "lt": 15940.283725362, "tt": 0.671}
+{"stage": "asr_partial", "t": 15909.125003532, "pid": 9960, "text": "What's the score", "src": "ws", "recv": 15940.4696872, "lt": 15940.463677609001, "tt": 0.8509}
+{"stage": "asr_partial", "t": 15909.378796056, "pid": 9960, "text": "What's the score of the", "src": "ws", "recv": 15940.7249274, "lt": 15940.717470133, "tt": 1.1047}
+{"stage": "asr_partial", "t": 15909.609227404, "pid": 9960, "text": "What's the score of the man", "src": "ws", "recv": 15940.9543301, "lt": 15940.947901481, "tt": 1.3352}
+{"stage": "asr_partial", "t": 15909.853444509, "pid": 9960, "text": "What's the score of the mariners", "src": "ws", "recv": 15941.1981049, "lt": 15941.192118586001, "tt": 1.5794}
+{"stage": "asr_partial", "t": 15910.048758289, "pid": 9960, "text": "What's the score of the mariners", "src": "ws", "recv": 15941.3938424, "lt": 15941.387432366, "tt": 1.7747}
+{"stage": "asr_partial", "t": 15910.085615725, "pid": 9960, "text": "What's the score of the Mariners", "src": "ws", "recv": 15941.4303911, "lt": 15941.424289802, "tt": 1.8116}
+{"stage": "vad_end", "t": 15910.17349868, "pid": 9960, "src": "ws", "recv": 15941.5209017, "lt": 15941.512172757, "tt": 1.8994}
+{"stage": "vad_end", "t": 15910.173561716, "pid": 9960, "src": "ws", "recv": 15941.5209248, "lt": 15941.512235793, "tt": 1.8995}
+{"stage": "llm_request", "t": 15910.173671363, "pid": 9960, "speculative": true, "messages": 39, "chars": 13802, "est_tokens": 3450, "src": "ws", "recv": 15941.5209414, "lt": 15941.51234544, "tt": 1.8996}
+{"stage": "llm_cancel", "t": 15910.36652347, "pid": 9960, "src": "ws", "recv": 15941.7102969, "lt": 15941.705197547, "tt": 2.0925}
+{"stage": "asr_partial", "t": 15910.412921936, "pid": 9960, "text": "What's the score of the Mariners game?", "src": "ws", "recv": 15941.7580864, "lt": 15941.751596013, "tt": 2.1389}
+{"stage": "llm_request", "t": 15910.416073767, "pid": 9960, "speculative": true, "messages": 40, "chars": 14102, "est_tokens": 3526, "src": "ws", "recv": 15941.7612875, "lt": 15941.754747844001, "tt": 2.142}
+{"stage": "asr_final", "t": 15910.536715634, "pid": 9960, "text": "What's the score of the Mariners game?", "src": "ws", "recv": 15941.8834178, "lt": 15941.875389711, "tt": 2.2627}
+{"stage": "user_stopped", "t": 15910.544800386, "pid": 9960, "src": "ws", "recv": 15941.892718, "lt": 15941.883474463, "tt": 2.2707}
+{"stage": "user_stopped", "t": 15910.544869497, "pid": 9960, "src": "ws", "recv": 15941.8927359, "lt": 15941.883543574, "tt": 2.2708}
+{"stage": "llm_first_token", "t": 15911.147554706, "pid": 9960, "src": "ws", "recv": 15942.4930917, "lt": 15942.486228783, "tt": 2.8735}
+{"stage": "llm_usage", "t": 15911.173875271, "pid": 9960, "prompt_tokens": 2555, "completion_tokens": 40, "src": "ws", "recv": 15942.5221322, "lt": 15942.512549348, "tt": 2.8998}
+{"stage": "tts_request", "t": 15911.192782501, "pid": 9960, "src": "ws", "recv": 15942.5408702, "lt": 15942.531456578, "tt": 2.9187}
+{"stage": "tts_first_audio", "t": 15911.401967815, "pid": 9960, "src": "ws", "recv": 15942.7501873, "lt": 15942.740641892, "tt": 3.1279}
+{"stage": "audio_out", "t": 15911.412939161, "pid": 9960, "src": "ws", "recv": 15942.7689475, "lt": 15942.751613238, "tt": 3.1389}
+{"stage": "audio_out", "t": 15911.41308277, "pid": 9960, "src": "ws", "recv": 15942.7689692, "lt": 15942.751756847, "tt": 3.139}
+{"stage": "bot_stopped", "t": 15914.514668028, "pid": 9960, "src": "ws", "recv": 15945.862478, "lt": 15945.853342105, "tt": 6.2406}
+{"stage": "bot_stopped", "t": 15914.51505632, "pid": 9960, "src": "ws", "recv": 15945.8625005, "lt": 15945.853730397, "tt": 6.241}
+{"stage": "llm_request", "t": 15914.524317854, "pid": 9960, "messages": 41, "chars": 14158, "est_tokens": 3540, "src": "ws", "recv": 15945.8708434, "lt": 15945.862991931, "tt": 6.2503}

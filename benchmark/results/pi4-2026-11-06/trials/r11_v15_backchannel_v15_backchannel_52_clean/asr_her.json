@@ -1,0 +1,251 @@
+{
+  "text": "Tornadoes are violently rotating columns of air that extend from a thunderstorm to the ground, capable of destroying structures in seconds. They form most often in the United States, especially in the central tornado alley.",
+  "chunks": [
+    {
+      "text": "Tornadoes",
+      "timestamp": [
+        3.81,
+        4.53
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        4.53,
+        4.65
+      ]
+    },
+    {
+      "text": "violently",
+      "timestamp": [
+        4.65,
+        5.13
+      ]
+    },
+    {
+      "text": "rotating",
+      "timestamp": [
+        5.13,
+        5.71
+      ]
+    },
+    {
+      "text": "columns",
+      "timestamp": [
+        5.71,
+        6.13
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        6.13,
+        6.39
+      ]
+    },
+    {
+      "text": "air",
+      "timestamp": [
+        6.39,
+        6.59
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        6.59,
+        6.77
+      ]
+    },
+    {
+      "text": "extend",
+      "timestamp": [
+        6.77,
+        7.21
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        7.21,
+        7.51
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        7.51,
+        7.69
+      ]
+    },
+    {
+      "text": "thunderstorm",
+      "timestamp": [
+        7.69,
+        8.01
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        8.01,
+        8.45
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        8.45,
+        8.57
+      ]
+    },
+    {
+      "text": "ground,",
+      "timestamp": [
+        8.57,
+        8.97
+      ]
+    },
+    {
+      "text": "capable",
+      "timestamp": [
+        9.27,
+        9.71
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        9.71,
+        10.03
+      ]
+    },
+    {
+      "text": "destroying",
+      "timestamp": [
+        10.03,
+        10.43
+      ]
+    },
+    {
+      "text": "structures",
+      "timestamp": [
+        10.43,
+        10.93
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        10.93,
+        11.25
+      ]
+    },
+    {
+      "text": "seconds.",
+      "timestamp": [
+        11.25,
+        11.65
+      ]
+    },
+    {
+      "text": "They",
+      "timestamp": [
+        11.97,
+        12.01
+      ]
+    },
+    {
+      "text": "form",
+      "timestamp": [
+        12.01,
+        12.27
+      ]
+    },
+    {
+      "text": "most",
+      "timestamp": [
+        12.27,
+        12.59
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        12.59,
+        13.01
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        13.01,
+        13.21
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        13.21,
+        13.31
+      ]
+    },
+    {
+      "text": "United",
+      "timestamp": [
+        13.31,
+        13.59
+      ]
+    },
+    {
+      "text": "States,",
+      "timestamp": [
+        13.59,
+        14.19
+      ]
+    },
+    {
+      "text": "especially",
+      "timestamp": [
+        14.61,
+        15.05
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        15.05,
+        15.41
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        15.41,
+        15.51
+      ]
+    },
+    {
+      "text": "central",
+      "timestamp": [
+        15.51,
+        15.89
+      ]
+    },
+    {
+      "text": "tornado",
+      "timestamp": [
+        15.89,
+        16.39
+      ]
+    },
+    {
+      "text": "alley.",
+      "timestamp": [
+        16.39,
+        16.83
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

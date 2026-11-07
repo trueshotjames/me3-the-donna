@@ -1,0 +1,62 @@
+{
+  "trial": "r10_v15_talking_to_other_v15_talking_to_other_51_clean",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_51",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 7.264,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.488
+    }
+  ],
+  "live_bot_starts": [
+    3.136
+  ],
+  "live_bot_ends": [
+    6.048
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "What's the exchange rate for Japanese yen?",
+    "current_turn_text": "Emma, sushi tonight? Your call.",
+    "overlap_text": "Emma, sushi tonight? Your call.",
+    "overlap_duration": 1.76,
+    "overlap_window": [
+      6.368,
+      8.133000000000001
+    ],
+    "source_id": "51"
+  },
+  "mono": [
+    18749.9751698,
+    18757.2135351
+  ],
+  "bot_segments": [
+    [
+      3.106,
+      6.078
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.488
+  ],
+  "tor": 1,
+  "first_start": 3.106,
+  "spoke_s": 2.9720000000000004,
+  "actual": "replied after 0.62 s, spoke 3.0 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 27,
+  "final": {
+    "transcript": "I'm sorry, I can't look up exchange rates right now."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

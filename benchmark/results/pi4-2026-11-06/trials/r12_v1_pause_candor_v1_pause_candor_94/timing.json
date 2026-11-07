@@ -1,0 +1,64 @@
+{
+  "trial": "r12_v1_pause_candor_v1_pause_candor_94",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_94",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 14.144,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 8.32
+    }
+  ],
+  "live_bot_starts": [
+    11.168
+  ],
+  "live_bot_ends": [
+    13.792
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      1.7899999999999636,
+      2.769999999999982
+    ],
+    "source_id": "94",
+    "text": "look you up man Um But there was a site advertised on the work from home thread that"
+  },
+  "mono": [
+    19630.406136,
+    19644.5428465
+  ],
+  "bot_segments": [
+    [
+      11.138,
+      13.822
+    ]
+  ],
+  "play_first": [
+    0.0,
+    8.32
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 76,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "I'm sorry, but I can't look that up right now."
+  },
+  "scored_at": "2026-11-06T19:14:54+08:00"
+}

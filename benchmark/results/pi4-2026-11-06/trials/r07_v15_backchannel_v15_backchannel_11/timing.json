@@ -1,0 +1,99 @@
+{
+  "trial": "r07_v15_backchannel_v15_backchannel_11",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_11",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 33.536,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.136
+    },
+    {
+      "name": "overlap",
+      "t": 4.54,
+      "len": 0.9749375
+    }
+  ],
+  "live_bot_starts": [
+    3.04,
+    5.792
+  ],
+  "live_bot_ends": [
+    4.864,
+    33.184
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Summarize black holes comprehensively.",
+    "current_turn_text": "",
+    "overlap_text": "mm-hmm yeah",
+    "overlap_duration": 0.97,
+    "overlap_window": [
+      5.997,
+      6.9719999999999995
+    ],
+    "source_id": "11"
+  },
+  "mono": [
+    18082.7750559,
+    18116.3202475
+  ],
+  "bot_segments": [
+    [
+      3.01,
+      4.894
+    ],
+    [
+      6.178,
+      33.214
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.136
+  ],
+  "overlap_played": true,
+  "t_stop": 0.31599999999999984,
+  "t_resp": 0.6630624999999997,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.578,
+    5.5149375
+  ],
+  "tor": 1,
+  "first_start": 6.178,
+  "spoke_s": 7.3369375,
+  "latency": 0.6630624999999997,
+  "actual": "stopped after 0.32 s, back 0.66 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 29,
+  "final": {
+    "t_stop": 0.31599999999999984,
+    "t_resp": 0.6630624999999997,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -34.70367008170152,
+      "pitch_mean": -30.21809223192227,
+      "pitch_sd": 1.5896419024133053,
+      "intensity_mean": -2.3923372287715843,
+      "intensity_sd": 0.9916886505605742,
+      "utmosv2": null
+    },
+    "transcript": "Black holes are regions of space -time where gravity is so strong that nothing, not even light, can escape. They form when massive stars collapse under their own weight after exhausting nuclear fuel. The boundary around a black hole called the event horizon marks the point of no return. Inside the horizon, all matter is crushed toward a singularity, a point of infinite density where known physics ",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

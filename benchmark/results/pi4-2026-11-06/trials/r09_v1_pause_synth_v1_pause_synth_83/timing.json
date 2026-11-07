@@ -1,0 +1,66 @@
+{
+  "trial": "r09_v1_pause_synth_v1_pause_synth_83",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_83",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 18.24,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 11.7226875
+    }
+  ],
+  "live_bot_starts": [
+    6.912,
+    13.216
+  ],
+  "live_bot_ends": [
+    7.136,
+    17.888
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 3
+  },
+  "clip_meta": {
+    "pause": [
+      4.38,
+      6.82
+    ],
+    "source_id": "83",
+    "text": "I listen to a lot of different music, but any bands are my favorite. There's this one band [UH] Yes. Let me remember [UH] us write the paper kites. They're amazing."
+  },
+  "mono": [
+    18440.0712108,
+    18458.303569
+  ],
+  "bot_segments": [
+    [
+      13.186,
+      17.918
+    ]
+  ],
+  "play_first": [
+    0.0,
+    11.7226875
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 118,
+  "final": {
+    "tor": 0,
+    "words": 1,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "Which paper kites are truly amazing, light, colorful, and fun to fly?"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

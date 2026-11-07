@@ -1,0 +1,52 @@
+{"stage": "vad_start", "t": 19500.680292032, "pid": 9960, "src": "ws", "recv": 19532.0789709, "lt": 19532.018966109, "tt": 0.1822}
+{"stage": "vad_start", "t": 19500.680383938, "pid": 9960, "src": "ws", "recv": 19532.078995, "lt": 19532.019058015, "tt": 0.1823}
+{"stage": "interrupted", "t": 19501.004817427, "pid": 9960, "src": "ws", "recv": 19532.403706, "lt": 19532.343491504, "tt": 0.5067}
+{"stage": "interrupted", "t": 19501.004909574, "pid": 9960, "src": "ws", "recv": 19532.4037258, "lt": 19532.343583651, "tt": 0.5068}
+{"stage": "llm_request", "t": 19501.128088173, "pid": 9960, "speculative": true, "messages": 16, "chars": 11977, "est_tokens": 2994, "src": "ws", "recv": 19532.5264136, "lt": 19532.466762250002, "tt": 0.63}
+{"stage": "asr_final", "t": 19501.177404656, "pid": 9960, "text": "Yeah.", "src": "ws", "recv": 19532.5756278, "lt": 19532.516078733, "tt": 0.6793}
+{"stage": "user_stopped", "t": 19501.183666345, "pid": 9960, "src": "ws", "recv": 19532.5840702, "lt": 19532.522340422, "tt": 0.6856}
+{"stage": "user_stopped", "t": 19501.183736381, "pid": 9960, "src": "ws", "recv": 19532.5840894, "lt": 19532.522410458, "tt": 0.6856}
+{"stage": "asr_partial", "t": 19501.522647929, "pid": 9960, "text": "So", "src": "ws", "recv": 19532.9203257, "lt": 19532.861322006, "tt": 1.0245}
+{"stage": "vad_end", "t": 19501.603058082, "pid": 9960, "src": "ws", "recv": 19533.0000087, "lt": 19532.941732159, "tt": 1.105}
+{"stage": "vad_end", "t": 19501.603113656, "pid": 9960, "src": "ws", "recv": 19533.0000285, "lt": 19532.941787733, "tt": 1.105}
+{"stage": "llm_first_token", "t": 19501.681944604, "pid": 9960, "src": "ws", "recv": 19533.0821368, "lt": 19533.020618681, "tt": 1.1838}
+{"stage": "llm_usage", "t": 19501.694601777, "pid": 9960, "prompt_tokens": 2454, "completion_tokens": 56, "src": "ws", "recv": 19533.0946817, "lt": 19533.033275854, "tt": 1.1965}
+{"stage": "tts_request", "t": 19501.714112447, "pid": 9960, "src": "ws", "recv": 19533.1145225, "lt": 19533.052786524, "tt": 1.216}
+{"stage": "vad_start", "t": 19501.723594063, "pid": 9960, "src": "ws", "recv": 19533.1252276, "lt": 19533.062268140002, "tt": 1.2255}
+{"stage": "vad_start", "t": 19501.723659859, "pid": 9960, "src": "ws", "recv": 19533.1252486, "lt": 19533.062333936, "tt": 1.2256}
+{"stage": "tts_first_audio", "t": 19501.755226875, "pid": 9960, "src": "ws", "recv": 19533.1544529, "lt": 19533.093900952, "tt": 1.2571}
+{"stage": "audio_out", "t": 19501.762097946, "pid": 9960, "src": "ws", "recv": 19533.1653471, "lt": 19533.100772023, "tt": 1.264}
+{"stage": "audio_out", "t": 19501.762178093, "pid": 9960, "src": "ws", "recv": 19533.1653638, "lt": 19533.10085217, "tt": 1.2641}
+{"stage": "asr_partial", "t": 19501.787292552, "pid": 9960, "text": "So", "src": "ws", "recv": 19533.1904676, "lt": 19533.125966629, "tt": 1.2892}
+{"stage": "asr_partial", "t": 19502.002651431, "pid": 9960, "text": "So", "src": "ws", "recv": 19533.40032, "lt": 19533.341325508, "tt": 1.5045}
+{"stage": "asr_partial", "t": 19502.248048046, "pid": 9960, "text": "So", "src": "ws", "recv": 19533.6456372, "lt": 19533.586722123, "tt": 1.7499}
+{"stage": "asr_partial", "t": 19502.482759912, "pid": 9960, "text": "So", "src": "ws", "recv": 19533.8805137, "lt": 19533.821433989, "tt": 1.9847}
+{"stage": "asr_partial", "t": 19502.964516874, "pid": 9960, "text": "So, um, you", "src": "ws", "recv": 19534.365363, "lt": 19534.303190951, "tt": 2.4664}
+{"stage": "interrupted", "t": 19502.967341009, "pid": 9960, "src": "ws", "recv": 19534.3675393, "lt": 19534.306015086, "tt": 2.4692}
+{"stage": "interrupted", "t": 19502.967426453, "pid": 9960, "src": "ws", "recv": 19534.3675605, "lt": 19534.30610053, "tt": 2.4693}
+{"stage": "bot_stopped", "t": 19502.990724987, "pid": 9960, "src": "ws", "recv": 19534.3935083, "lt": 19534.329399064, "tt": 2.4926}
+{"stage": "bot_stopped", "t": 19502.990835838, "pid": 9960, "src": "ws", "recv": 19534.3935284, "lt": 19534.329509915002, "tt": 2.4927}
+{"stage": "asr_partial", "t": 19503.207868142, "pid": 9960, "text": "So, um, you do a", "src": "ws", "recv": 19534.6055587, "lt": 19534.546542219, "tt": 2.7098}
+{"stage": "asr_partial", "t": 19503.44285993, "pid": 9960, "text": "So, um, you do a lot of", "src": "ws", "recv": 19534.8406453, "lt": 19534.781534007, "tt": 2.9448}
+{"stage": "asr_partial", "t": 19503.689633197, "pid": 9960, "text": "So, um, you do a lot of these,", "src": "ws", "recv": 19535.0873798, "lt": 19535.028307274, "tt": 3.1915}
+{"stage": "asr_partial", "t": 19503.922977966, "pid": 9960, "text": "So, um, you do a lot of these, like,", "src": "ws", "recv": 19535.320706, "lt": 19535.261652043002, "tt": 3.4249}
+{"stage": "asr_partial", "t": 19504.167952438, "pid": 9960, "text": "So, um, you do a lot of these, like, online things", "src": "ws", "recv": 19535.5656649, "lt": 19535.506626515, "tt": 3.6698}
+{"stage": "asr_partial", "t": 19504.403931733, "pid": 9960, "text": "So, um, you do a lot of these, like, online things, like", "src": "ws", "recv": 19535.8016963, "lt": 19535.74260581, "tt": 3.9058}
+{"stage": "asr_partial", "t": 19504.648238323, "pid": 9960, "text": "So, um, you do a lot of these, like, online things, like surveys,", "src": "ws", "recv": 19536.0458609, "lt": 19535.9869124, "tt": 4.1501}
+{"stage": "asr_partial", "t": 19504.886354668, "pid": 9960, "text": "So, um, you do a lot of these, like, online things, like surveys and stuff.", "src": "ws", "recv": 19536.2841122, "lt": 19536.225028745, "tt": 4.3882}
+{"stage": "asr_partial", "t": 19505.130570759, "pid": 9960, "text": "So, um, you do a lot of these, like, online things, like surveys and stuff like", "src": "ws", "recv": 19536.5291495, "lt": 19536.469244836, "tt": 4.6325}
+{"stage": "asr_partial", "t": 19505.36596869, "pid": 9960, "text": "So, um, you do a lot of these, like, online things, like surveys and stuff like that.", "src": "ws", "recv": 19536.7637964, "lt": 19536.704642767, "tt": 4.8679}
+{"stage": "vad_end", "t": 19505.54351353, "pid": 9960, "src": "ws", "recv": 19536.9416016, "lt": 19536.882187607, "tt": 5.0454}
+{"stage": "vad_end", "t": 19505.543566029, "pid": 9960, "src": "ws", "recv": 19536.9416217, "lt": 19536.882240106, "tt": 5.0455}
+{"stage": "asr_partial", "t": 19505.61628549, "pid": 9960, "text": "So, um, you do a lot of these, like, online things, like surveys and stuff like that.", "src": "ws", "recv": 19537.0148903, "lt": 19536.954959567, "tt": 5.1182}
+{"stage": "llm_request", "t": 19505.619891931, "pid": 9960, "speculative": true, "messages": 17, "chars": 12062, "est_tokens": 3016, "src": "ws", "recv": 19537.020406, "lt": 19536.958566008, "tt": 5.1218}
+{"stage": "asr_partial", "t": 19505.849288374, "pid": 9960, "text": "So, um, you do a lot of these, like, online things, like surveys and stuff like that.", "src": "ws", "recv": 19537.2486286, "lt": 19537.187962451, "tt": 5.3512}
+{"stage": "llm_usage", "t": 19506.221543193, "pid": 9960, "prompt_tokens": 2435, "completion_tokens": 50, "src": "ws", "recv": 19537.619584, "lt": 19537.560217270002, "tt": 5.7234}
+{"stage": "asr_final", "t": 19506.6958872, "pid": 9960, "text": "So, um, you do a lot of these, like, online things, like surveys and stuff like that.", "src": "ws", "recv": 19538.094831, "lt": 19538.034561277, "tt": 6.1978}
+{"stage": "user_stopped", "t": 19506.703470244, "pid": 9960, "src": "ws", "recv": 19538.1033827, "lt": 19538.042144321, "tt": 6.2054}
+{"stage": "user_stopped", "t": 19506.703540892, "pid": 9960, "src": "ws", "recv": 19538.1034009, "lt": 19538.042214969, "tt": 6.2054}
+{"stage": "llm_first_token", "t": 19506.708760944, "pid": 9960, "src": "ws", "recv": 19538.1129925, "lt": 19538.047435021, "tt": 6.2107}
+{"stage": "tts_request", "t": 19506.735364034, "pid": 9960, "src": "ws", "recv": 19538.1378704, "lt": 19538.074038111, "tt": 6.2373}
+{"stage": "tts_first_audio", "t": 19506.898302778, "pid": 9960, "src": "ws", "recv": 19538.2958599, "lt": 19538.236976855, "tt": 6.4002}
+{"stage": "audio_out", "t": 19506.902735173, "pid": 9960, "src": "ws", "recv": 19538.3050685, "lt": 19538.24140925, "tt": 6.4046}
+{"stage": "audio_out", "t": 19506.902820191, "pid": 9960, "src": "ws", "recv": 19538.3050895, "lt": 19538.241494268, "tt": 6.4047}

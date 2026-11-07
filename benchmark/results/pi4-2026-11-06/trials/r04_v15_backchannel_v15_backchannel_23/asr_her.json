@@ -1,0 +1,195 @@
+{
+  "text": "Data privacy means keeping personal information safe, limiting who can see or use it, and giving individuals control over how their data is collected, stored, and shared.",
+  "chunks": [
+    {
+      "text": "Data",
+      "timestamp": [
+        2.93,
+        3.43
+      ]
+    },
+    {
+      "text": "privacy",
+      "timestamp": [
+        3.43,
+        3.83
+      ]
+    },
+    {
+      "text": "means",
+      "timestamp": [
+        3.83,
+        4.19
+      ]
+    },
+    {
+      "text": "keeping",
+      "timestamp": [
+        4.19,
+        4.53
+      ]
+    },
+    {
+      "text": "personal",
+      "timestamp": [
+        4.53,
+        5.03
+      ]
+    },
+    {
+      "text": "information",
+      "timestamp": [
+        5.03,
+        5.95
+      ]
+    },
+    {
+      "text": "safe,",
+      "timestamp": [
+        5.95,
+        6.71
+      ]
+    },
+    {
+      "text": "limiting",
+      "timestamp": [
+        7.09,
+        7.41
+      ]
+    },
+    {
+      "text": "who",
+      "timestamp": [
+        7.41,
+        7.73
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        7.73,
+        7.91
+      ]
+    },
+    {
+      "text": "see",
+      "timestamp": [
+        7.91,
+        8.23
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        8.23,
+        8.39
+      ]
+    },
+    {
+      "text": "use",
+      "timestamp": [
+        8.39,
+        8.69
+      ]
+    },
+    {
+      "text": "it,",
+      "timestamp": [
+        8.69,
+        8.93
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        9.35,
+        9.43
+      ]
+    },
+    {
+      "text": "giving",
+      "timestamp": [
+        9.43,
+        9.69
+      ]
+    },
+    {
+      "text": "individuals",
+      "timestamp": [
+        9.69,
+        10.37
+      ]
+    },
+    {
+      "text": "control",
+      "timestamp": [
+        10.37,
+        10.91
+      ]
+    },
+    {
+      "text": "over",
+      "timestamp": [
+        10.91,
+        11.29
+      ]
+    },
+    {
+      "text": "how",
+      "timestamp": [
+        11.29,
+        11.57
+      ]
+    },
+    {
+      "text": "their",
+      "timestamp": [
+        11.57,
+        11.77
+      ]
+    },
+    {
+      "text": "data",
+      "timestamp": [
+        11.77,
+        12.07
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        12.07,
+        12.25
+      ]
+    },
+    {
+      "text": "collected,",
+      "timestamp": [
+        12.25,
+        12.71
+      ]
+    },
+    {
+      "text": "stored,",
+      "timestamp": [
+        13.09,
+        13.43
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.79,
+        13.85
+      ]
+    },
+    {
+      "text": "shared.",
+      "timestamp": [
+        13.85,
+        14.23
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

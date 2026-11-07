@@ -1,0 +1,54 @@
+{"stage": "vad_start", "t": 17172.808888133, "pid": 9960, "src": "ws", "recv": 17204.1743859, "lt": 17204.14756221, "tt": 0.343}
+{"stage": "vad_start", "t": 17172.808979798, "pid": 9960, "src": "ws", "recv": 17204.1744091, "lt": 17204.147653875, "tt": 0.3431}
+{"stage": "asr_partial", "t": 17173.203275095, "pid": 9960, "text": "What", "src": "ws", "recv": 17204.5681873, "lt": 17204.541949172, "tt": 0.7374}
+{"stage": "interrupted", "t": 17173.325053668, "pid": 9960, "src": "ws", "recv": 17204.6908721, "lt": 17204.663727745, "tt": 0.8591}
+{"stage": "interrupted", "t": 17173.325141167, "pid": 9960, "src": "ws", "recv": 17204.6908965, "lt": 17204.663815244, "tt": 0.8592}
+{"stage": "asr_partial", "t": 17173.449699168, "pid": 9960, "text": "What's the", "src": "ws", "recv": 17204.8155756, "lt": 17204.788373245, "tt": 0.9838}
+{"stage": "asr_partial", "t": 17173.683215866, "pid": 9960, "text": "What's the latest", "src": "ws", "recv": 17205.0521482, "lt": 17205.021889943, "tt": 1.2173}
+{"stage": "asr_partial", "t": 17173.945273538, "pid": 9960, "text": "What's the latest in", "src": "ws", "recv": 17205.3096695, "lt": 17205.283947615, "tt": 1.4794}
+{"stage": "asr_partial", "t": 17174.164268068, "pid": 9960, "text": "What's the latest in smart", "src": "ws", "recv": 17205.5287868, "lt": 17205.502942145, "tt": 1.6984}
+{"stage": "asr_partial", "t": 17174.407042409, "pid": 9960, "text": "What's the latest in smart home", "src": "ws", "recv": 17205.7717367, "lt": 17205.745716486, "tt": 1.9411}
+{"stage": "asr_partial", "t": 17174.643946176, "pid": 9960, "text": "What's the latest in smart home device", "src": "ws", "recv": 17206.0084217, "lt": 17205.982620253, "tt": 2.178}
+{"stage": "asr_partial", "t": 17174.807058782, "pid": 9960, "text": "What's the latest in smart home devices?", "src": "ws", "recv": 17206.1715458, "lt": 17206.145732859, "tt": 2.3411}
+{"stage": "llm_request", "t": 17174.892179263, "pid": 9960, "speculative": true, "messages": 23, "chars": 10398, "est_tokens": 2600, "src": "ws", "recv": 17206.2568846, "lt": 17206.23085334, "tt": 2.4263}
+{"stage": "asr_final", "t": 17174.93719262, "pid": 9960, "text": "What's the latest in smart home devices?", "src": "ws", "recv": 17206.3042297, "lt": 17206.275866697, "tt": 2.4713}
+{"stage": "vad_end", "t": 17174.942542867, "pid": 9960, "src": "ws", "recv": 17206.3100414, "lt": 17206.281216944, "tt": 2.4766}
+{"stage": "vad_end", "t": 17174.942597885, "pid": 9960, "src": "ws", "recv": 17206.3100601, "lt": 17206.281271962, "tt": 2.4767}
+{"stage": "user_stopped", "t": 17174.949373318, "pid": 9960, "src": "ws", "recv": 17206.3211222, "lt": 17206.288047395, "tt": 2.4835}
+{"stage": "user_stopped", "t": 17174.949462909, "pid": 9960, "src": "ws", "recv": 17206.3211373, "lt": 17206.288136986, "tt": 2.4835}
+{"stage": "llm_first_token", "t": 17175.481302951, "pid": 9960, "src": "ws", "recv": 17206.8461853, "lt": 17206.819977028, "tt": 3.0154}
+{"stage": "llm_usage", "t": 17175.516807966, "pid": 9960, "prompt_tokens": 2472, "completion_tokens": 96, "src": "ws", "recv": 17206.8860168, "lt": 17206.855482043, "tt": 3.0509}
+{"stage": "tts_request", "t": 17175.548366567, "pid": 9960, "src": "ws", "recv": 17206.9190907, "lt": 17206.887040644, "tt": 3.0824}
+{"stage": "tts_first_audio", "t": 17175.785416203, "pid": 9960, "src": "ws", "recv": 17207.1498928, "lt": 17207.124090280002, "tt": 3.3195}
+{"stage": "audio_out", "t": 17175.79025303, "pid": 9960, "src": "ws", "recv": 17207.1589177, "lt": 17207.128927107, "tt": 3.3243}
+{"stage": "audio_out", "t": 17175.790337585, "pid": 9960, "src": "ws", "recv": 17207.15894, "lt": 17207.129011662, "tt": 3.3244}
+{"stage": "vad_start", "t": 17177.606122317, "pid": 9960, "src": "ws", "recv": 17208.9704191, "lt": 17208.944796394, "tt": 5.1402}
+{"stage": "vad_start", "t": 17177.60617915, "pid": 9960, "src": "ws", "recv": 17208.970443, "lt": 17208.944853227, "tt": 5.1403}
+{"stage": "asr_partial", "t": 17177.771259121, "pid": 9960, "text": "Hold", "src": "ws", "recv": 17209.1371737, "lt": 17209.109933198, "tt": 5.3053}
+{"stage": "asr_partial", "t": 17178.255003585, "pid": 9960, "text": "Hold on one", "src": "ws", "recv": 17209.624191, "lt": 17209.593677662, "tt": 5.7891}
+{"stage": "interrupted", "t": 17178.258583262, "pid": 9960, "src": "ws", "recv": 17209.6272205, "lt": 17209.597257339, "tt": 5.7927}
+{"stage": "interrupted", "t": 17178.258677076, "pid": 9960, "src": "ws", "recv": 17209.6272489, "lt": 17209.597351153, "tt": 5.7928}
+{"stage": "bot_stopped", "t": 17178.302138508, "pid": 9960, "src": "ws", "recv": 17209.6762346, "lt": 17209.640812585, "tt": 5.8362}
+{"stage": "bot_stopped", "t": 17178.302393542, "pid": 9960, "src": "ws", "recv": 17209.6762733, "lt": 17209.641067619, "tt": 5.8365}
+{"stage": "asr_partial", "t": 17178.483724326, "pid": 9960, "text": "Hold on. What time", "src": "ws", "recv": 17209.8484303, "lt": 17209.822398403, "tt": 6.0178}
+{"stage": "asr_partial", "t": 17178.727036679, "pid": 9960, "text": "Hold on. What time is the", "src": "ws", "recv": 17210.0916168, "lt": 17210.065710756, "tt": 6.2611}
+{"stage": "asr_partial", "t": 17178.967135776, "pid": 9960, "text": "Hold on. What time is the meeting", "src": "ws", "recv": 17210.3316454, "lt": 17210.305809853002, "tt": 6.5012}
+{"stage": "asr_partial", "t": 17179.207113764, "pid": 9960, "text": "Hold on. What time is the meeting scheduled", "src": "ws", "recv": 17210.5716413, "lt": 17210.545787841, "tt": 6.7412}
+{"stage": "asr_partial", "t": 17179.444063012, "pid": 9960, "text": "Hold on. What time is the meeting scheduled", "src": "ws", "recv": 17210.8086723, "lt": 17210.782737089, "tt": 6.9781}
+{"stage": "asr_partial", "t": 17179.60719534, "pid": 9960, "text": "Hold on. What time is the meeting scheduled today?", "src": "ws", "recv": 17210.9718604, "lt": 17210.945869417, "tt": 7.1413}
+{"stage": "asr_partial", "t": 17179.688493425, "pid": 9960, "text": "Hold on. What time is the meeting scheduled today?", "src": "ws", "recv": 17211.0539455, "lt": 17211.027167502, "tt": 7.2226}
+{"stage": "llm_request", "t": 17179.770795311, "pid": 9960, "speculative": true, "messages": 25, "chars": 10618, "est_tokens": 2654, "src": "ws", "recv": 17211.1355917, "lt": 17211.109469388, "tt": 7.3049}
+{"stage": "asr_final", "t": 17179.812450192, "pid": 9960, "text": "Hold on. What time is the meeting scheduled today?", "src": "ws", "recv": 17211.1794353, "lt": 17211.151124269, "tt": 7.3465}
+{"stage": "user_stopped", "t": 17179.823935936, "pid": 9960, "src": "ws", "recv": 17211.1925542, "lt": 17211.162610013, "tt": 7.358}
+{"stage": "user_stopped", "t": 17179.824037176, "pid": 9960, "src": "ws", "recv": 17211.1925751, "lt": 17211.162711253, "tt": 7.3581}
+{"stage": "vad_end", "t": 17179.875770689, "pid": 9960, "src": "ws", "recv": 17211.239503, "lt": 17211.214444766, "tt": 7.4099}
+{"stage": "vad_end", "t": 17179.875825392, "pid": 9960, "src": "ws", "recv": 17211.2395272, "lt": 17211.214499469, "tt": 7.4099}
+{"stage": "llm_first_token", "t": 17180.52991852, "pid": 9960, "src": "ws", "recv": 17211.8958582, "lt": 17211.868592597, "tt": 8.064}
+{"stage": "llm_usage", "t": 17180.544829702, "pid": 9960, "prompt_tokens": 2511, "completion_tokens": 60, "src": "ws", "recv": 17211.91223, "lt": 17211.883503779, "tt": 8.0789}
+{"stage": "tts_request", "t": 17180.563976775, "pid": 9960, "src": "ws", "recv": 17211.9319344, "lt": 17211.902650852, "tt": 8.0981}
+{"stage": "tts_first_audio", "t": 17180.775512844, "pid": 9960, "src": "ws", "recv": 17212.1418909, "lt": 17212.114186921, "tt": 8.3096}
+{"stage": "audio_out", "t": 17180.782806567, "pid": 9960, "src": "ws", "recv": 17212.1520904, "lt": 17212.121480644, "tt": 8.3169}
+{"stage": "audio_out", "t": 17180.782889547, "pid": 9960, "src": "ws", "recv": 17212.1521192, "lt": 17212.121563624, "tt": 8.317}
+{"stage": "bot_stopped", "t": 17183.671493141, "pid": 9960, "src": "ws", "recv": 17215.0365074, "lt": 17215.010167218, "tt": 11.2056}
+{"stage": "bot_stopped", "t": 17183.671574307, "pid": 9960, "src": "ws", "recv": 17215.0365279, "lt": 17215.010248384002, "tt": 11.2057}
+{"stage": "llm_request", "t": 17183.677785488, "pid": 9960, "messages": 26, "chars": 10669, "est_tokens": 2667, "src": "ws", "recv": 17215.0419088, "lt": 17215.016459565, "tt": 11.2119}

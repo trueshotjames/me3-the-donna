@@ -1,0 +1,99 @@
+{
+  "trial": "r07_v15_background_v15_background_84",
+  "group": "v15_background",
+  "clip": "v15_background_84",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 9.088,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.648
+    },
+    {
+      "name": "overlap",
+      "t": 4.9239375,
+      "len": 1.5319375
+    }
+  ],
+  "live_bot_starts": [
+    3.424,
+    6.304
+  ],
+  "live_bot_ends": [
+    5.632,
+    7.872
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Schedule a meeting with John on Friday at 2.",
+    "current_turn_text": "",
+    "overlap_text": "We're almost out of gas.",
+    "overlap_duration": 1.53,
+    "overlap_window": [
+      6.508,
+      8.04
+    ],
+    "source_id": "84"
+  },
+  "mono": [
+    17936.0970574,
+    17945.1823058
+  ],
+  "bot_segments": [
+    [
+      3.394,
+      5.662
+    ],
+    [
+      6.274,
+      7.902
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.648
+  ],
+  "overlap_played": true,
+  "t_stop": 0.6680000000000001,
+  "t_resp": 0.03599999999999959,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.994,
+    6.238
+  ],
+  "tor": 1,
+  "first_start": 6.455875,
+  "spoke_s": 1.4461250000000003,
+  "latency": 0.0,
+  "actual": "stopped after 0.67 s, back 0.04 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 34,
+  "final": {
+    "t_stop": 0.6680000000000001,
+    "t_resp": 0.03599999999999959,
+    "label": "Unknown",
+    "voice_delta": {
+      "wpm": -75.05910165484636,
+      "pitch_mean": -78.0334618643738,
+      "pitch_sd": -14.839461929981823,
+      "intensity_mean": -3.2039147602734346,
+      "intensity_sd": 0.1865937989169275,
+      "utmosv2": null
+    },
+    "transcript": "Reminder set for 2pm on Friday, November 13th.",
+    "judge_label": "Unknown",
+    "ok": false,
+    "verdict": "✗ Unknown"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

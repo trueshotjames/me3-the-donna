@@ -1,0 +1,7 @@
+{
+  "task": "behaviour",
+  "label": "Respond",
+  "tag": "C_RESPOND",
+  "raw": "{ \"behaviour\": [\"C_RESPOND\"] }",
+  "judge": "openrouter/openai/gpt-4o"
+}

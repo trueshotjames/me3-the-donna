@@ -1,0 +1,27 @@
+{
+  "text": "Mute the TV.",
+  "chunks": [
+    {
+      "text": "Mute",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.26,
+        0.38
+      ]
+    },
+    {
+      "text": "TV.",
+      "timestamp": [
+        0.38,
+        0.64
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

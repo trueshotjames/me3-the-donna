@@ -1,0 +1,21 @@
+{"stage": "vad_start", "t": 16735.056853127, "pid": 9960, "src": "ws", "recv": 16766.4163203, "lt": 16766.395527204, "tt": 0.2227}
+{"stage": "vad_start", "t": 16735.056947125, "pid": 9960, "src": "ws", "recv": 16766.4163417, "lt": 16766.395621202, "tt": 0.2228}
+{"stage": "interrupted", "t": 16735.570751729, "pid": 9960, "src": "ws", "recv": 16766.9300278, "lt": 16766.909425806, "tt": 0.7366}
+{"stage": "interrupted", "t": 16735.570844024, "pid": 9960, "src": "ws", "recv": 16766.9300486, "lt": 16766.909518101, "tt": 0.7367}
+{"stage": "asr_partial", "t": 16735.683971149, "pid": 9960, "text": "Actually, can you", "src": "ws", "recv": 16767.0421981, "lt": 16767.022645226, "tt": 0.8498}
+{"stage": "asr_partial", "t": 16735.925507573, "pid": 9960, "text": "Actually, can you tell me", "src": "ws", "recv": 16767.2831425, "lt": 16767.26418165, "tt": 1.0913}
+{"stage": "asr_partial", "t": 16736.164938747, "pid": 9960, "text": "Actually, can you tell me which", "src": "ws", "recv": 16767.5227442, "lt": 16767.503612824, "tt": 1.3308}
+{"stage": "asr_partial", "t": 16736.40490871, "pid": 9960, "text": "Actually, can you tell me which", "src": "ws", "recv": 16767.7626611, "lt": 16767.743582787, "tt": 1.5707}
+{"stage": "asr_partial", "t": 16736.645762199, "pid": 9960, "text": "Actually, can you tell me which apps are", "src": "ws", "recv": 16768.0046751, "lt": 16767.984436276, "tt": 1.8116}
+{"stage": "asr_partial", "t": 16736.884423975, "pid": 9960, "text": "Actually, can you tell me which apps are good", "src": "ws", "recv": 16768.2420333, "lt": 16768.223098052, "tt": 2.0503}
+{"stage": "asr_partial", "t": 16737.125903864, "pid": 9960, "text": "Actually, can you tell me which apps are good for", "src": "ws", "recv": 16768.4855106, "lt": 16768.464577941, "tt": 2.2917}
+{"stage": "asr_partial", "t": 16737.364418549, "pid": 9960, "text": "Actually, can you tell me which apps are good for language", "src": "ws", "recv": 16768.722435, "lt": 16768.703092626, "tt": 2.5302}
+{"stage": "asr_partial", "t": 16737.604502678, "pid": 9960, "text": "Actually, can you tell me which apps are good for language", "src": "ws", "recv": 16768.9623269, "lt": 16768.943176755, "tt": 2.7703}
+{"stage": "asr_partial", "t": 16737.844892006, "pid": 9960, "text": "Actually, can you tell me which apps are good for language learning", "src": "ws", "recv": 16769.2025613, "lt": 16769.183566083, "tt": 3.0107}
+{"stage": "llm_request", "t": 16737.891267357, "pid": 9960, "speculative": true, "messages": 53, "chars": 14008, "est_tokens": 3502, "src": "ws", "recv": 16769.2490973, "lt": 16769.229941434, "tt": 3.0571}
+{"stage": "asr_final", "t": 16737.931069513, "pid": 9960, "text": "Actually, can you tell me which apps are good for language learning", "src": "ws", "recv": 16769.2908288, "lt": 16769.26974359, "tt": 3.0969}
+{"stage": "user_stopped", "t": 16737.941624804, "pid": 9960, "src": "ws", "recv": 16769.3032538, "lt": 16769.280298881, "tt": 3.1075}
+{"stage": "user_stopped", "t": 16737.942053632, "pid": 9960, "src": "ws", "recv": 16769.3032803, "lt": 16769.280727709, "tt": 3.1079}
+{"stage": "llm_first_token", "t": 16737.948690547, "pid": 9960, "src": "ws", "recv": 16769.3092405, "lt": 16769.287364624, "tt": 3.1145}
+{"stage": "vad_end", "t": 16738.062239519, "pid": 9960, "src": "ws", "recv": 16769.4189887, "lt": 16769.400913596, "tt": 3.2281}
+{"stage": "vad_end", "t": 16738.062293666, "pid": 9960, "src": "ws", "recv": 16769.4190089, "lt": 16769.400967743, "tt": 3.2281}

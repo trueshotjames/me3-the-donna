@@ -1,0 +1,111 @@
+{
+  "text": "Set a 10 minute timer for pasta. Turn the oven off when the timer beeps.",
+  "chunks": [
+    {
+      "text": "Set",
+      "timestamp": [
+        0.0,
+        0.16
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.16,
+        0.28
+      ]
+    },
+    {
+      "text": "10",
+      "timestamp": [
+        0.28,
+        0.44
+      ]
+    },
+    {
+      "text": "minute",
+      "timestamp": [
+        0.44,
+        0.64
+      ]
+    },
+    {
+      "text": "timer",
+      "timestamp": [
+        0.64,
+        1.0
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        1.0,
+        1.18
+      ]
+    },
+    {
+      "text": "pasta.",
+      "timestamp": [
+        1.18,
+        1.6
+      ]
+    },
+    {
+      "text": "Turn",
+      "timestamp": [
+        4.49,
+        4.89
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.89,
+        5.05
+      ]
+    },
+    {
+      "text": "oven",
+      "timestamp": [
+        5.05,
+        5.19
+      ]
+    },
+    {
+      "text": "off",
+      "timestamp": [
+        5.19,
+        5.51
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        5.51,
+        5.69
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.69,
+        5.75
+      ]
+    },
+    {
+      "text": "timer",
+      "timestamp": [
+        5.75,
+        6.03
+      ]
+    },
+    {
+      "text": "beeps.",
+      "timestamp": [
+        6.03,
+        6.33
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

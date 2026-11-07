@@ -1,0 +1,55 @@
+{
+  "text": "Set a 10 minute timer for pasta.",
+  "chunks": [
+    {
+      "text": "Set",
+      "timestamp": [
+        0.0,
+        0.16
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.16,
+        0.26
+      ]
+    },
+    {
+      "text": "10",
+      "timestamp": [
+        0.26,
+        0.42
+      ]
+    },
+    {
+      "text": "minute",
+      "timestamp": [
+        0.42,
+        0.62
+      ]
+    },
+    {
+      "text": "timer",
+      "timestamp": [
+        0.62,
+        1.0
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        1.0,
+        1.18
+      ]
+    },
+    {
+      "text": "pasta.",
+      "timestamp": [
+        1.18,
+        1.56
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

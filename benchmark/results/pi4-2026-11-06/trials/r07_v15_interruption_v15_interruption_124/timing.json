@@ -1,0 +1,101 @@
+{
+  "trial": "r07_v15_interruption_v15_interruption_124",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_124",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 14.944,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.168
+    },
+    {
+      "name": "overlap",
+      "t": 4.8599375,
+      "len": 1.696
+    }
+  ],
+  "live_bot_starts": [
+    3.36,
+    7.776,
+    12.256
+  ],
+  "live_bot_ends": [
+    5.248,
+    11.712,
+    14.592
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "How often should I exercise?",
+    "current_turn_text": "Can we talk about yoga specifically?",
+    "overlap_text": "Can we talk about yoga specifically?",
+    "overlap_duration": 1.7,
+    "overlap_window": [
+      5.824,
+      7.52
+    ],
+    "source_id": "124"
+  },
+  "mono": [
+    18025.7683593,
+    18040.702613
+  ],
+  "bot_segments": [
+    [
+      3.33,
+      5.278
+    ],
+    [
+      7.746,
+      14.622
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.168
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2839999999999998,
+  "t_resp": 1.1900625000000007,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.994,
+    6.5559375
+  ],
+  "tor": 1,
+  "first_start": 7.746,
+  "spoke_s": 6.809937499999998,
+  "latency": 1.1900625000000007,
+  "actual": "stopped after 0.28 s, back 1.19 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 46,
+  "final": {
+    "t_stop": 0.2839999999999998,
+    "t_resp": 1.1900625000000007,
+    "label": "Respond",
+    "voice_delta": {
+      "wpm": -53.743315508021354,
+      "pitch_mean": 4.730193291971602,
+      "pitch_sd": 5.5856310609257065,
+      "intensity_mean": -8.059906074927483,
+      "intensity_sd": 1.3121875622043664,
+      "utmosv2": null
+    },
+    "transcript": "Drink water before. During yoga improves flexibility, strength and mindfulness. Aim for three to five sessions a week.",
+    "judge_label": "Respond",
+    "ok": true,
+    "verdict": "✓ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

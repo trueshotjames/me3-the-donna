@@ -1,0 +1,55 @@
+{
+  "text": "Give me a fun fact about dolphins.",
+  "chunks": [
+    {
+      "text": "Give",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "me",
+      "timestamp": [
+        0.18,
+        0.34
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.34,
+        0.44
+      ]
+    },
+    {
+      "text": "fun",
+      "timestamp": [
+        0.44,
+        0.66
+      ]
+    },
+    {
+      "text": "fact",
+      "timestamp": [
+        0.66,
+        1.02
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        1.02,
+        1.26
+      ]
+    },
+    {
+      "text": "dolphins.",
+      "timestamp": [
+        1.26,
+        1.7
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

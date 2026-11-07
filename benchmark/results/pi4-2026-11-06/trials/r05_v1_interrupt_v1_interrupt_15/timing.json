@@ -1,0 +1,84 @@
+{
+  "trial": "r05_v1_interrupt_v1_interrupt_15",
+  "group": "v1_interrupt",
+  "clip": "v1_interrupt_15",
+  "variant": "main",
+  "expected": "stop, then answer the new request",
+  "duration": 16.064,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.488
+    },
+    {
+      "name": "overlap",
+      "t": 4.9559375,
+      "len": 3.0826875
+    }
+  ],
+  "live_bot_starts": [
+    3.456,
+    9.344
+  ],
+  "live_bot_ends": [
+    5.312,
+    15.648
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 3
+  },
+  "clip_meta": {
+    "context_text": "Can you suggest a good mystery novel?",
+    "interrupt_text": "Can we talk about something else? What about movies?",
+    "source_id": "15"
+  },
+  "mono": [
+    17325.2323836,
+    17341.2782125
+  ],
+  "bot_segments": [
+    [
+      3.426,
+      5.342
+    ],
+    [
+      9.314,
+      15.678
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.488
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2519999999999998,
+  "t_resp": 1.2753750000000004,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.09,
+    8.038625
+  ],
+  "tor": 1,
+  "first_start": 9.314,
+  "spoke_s": 6.364000000000001,
+  "latency": 1.2753750000000004,
+  "actual": "stopped after 0.25 s, back 1.28 s after",
+  "verdict": "✓ yielded, 1.28 s",
+  "ok": true,
+  "marks": 73,
+  "final": {
+    "tor": 1,
+    "words": 16,
+    "latency": 1.2753750000000004,
+    "t_stop": 0.2519999999999998,
+    "verdict": "✓ yielded, 1.28 s",
+    "ok": true,
+    "rating": 0,
+    "transcript": "Try the Guest List by Lucy Trying a mystery thriller, Nines Out, Sharp Twists, Witty Dialogue, and a clever family who done it."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

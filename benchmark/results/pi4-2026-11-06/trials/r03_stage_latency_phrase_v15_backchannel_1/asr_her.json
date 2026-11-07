@@ -1,0 +1,216 @@
+{
+  "text": "global warming is the steady rise in Earth's average temperature. It is driven mainly by greenhouse gases that humans release, such as carbon dioxide from burning coal, oil, and gas.",
+  "chunks": [
+    {
+      "text": "global",
+      "timestamp": [
+        3.63,
+        4.23
+      ]
+    },
+    {
+      "text": "warming",
+      "timestamp": [
+        4.23,
+        4.73
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        4.73,
+        4.91
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.91,
+        5.07
+      ]
+    },
+    {
+      "text": "steady",
+      "timestamp": [
+        5.07,
+        5.33
+      ]
+    },
+    {
+      "text": "rise",
+      "timestamp": [
+        5.33,
+        5.69
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        5.69,
+        5.87
+      ]
+    },
+    {
+      "text": "Earth's",
+      "timestamp": [
+        5.87,
+        6.21
+      ]
+    },
+    {
+      "text": "average",
+      "timestamp": [
+        6.21,
+        6.49
+      ]
+    },
+    {
+      "text": "temperature.",
+      "timestamp": [
+        6.49,
+        7.07
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        7.21,
+        7.25
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        7.25,
+        7.37
+      ]
+    },
+    {
+      "text": "driven",
+      "timestamp": [
+        7.37,
+        7.53
+      ]
+    },
+    {
+      "text": "mainly",
+      "timestamp": [
+        7.53,
+        7.89
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        7.89,
+        8.13
+      ]
+    },
+    {
+      "text": "greenhouse",
+      "timestamp": [
+        8.13,
+        8.49
+      ]
+    },
+    {
+      "text": "gases",
+      "timestamp": [
+        8.49,
+        9.05
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        9.05,
+        9.29
+      ]
+    },
+    {
+      "text": "humans",
+      "timestamp": [
+        9.29,
+        9.55
+      ]
+    },
+    {
+      "text": "release,",
+      "timestamp": [
+        9.55,
+        10.09
+      ]
+    },
+    {
+      "text": "such",
+      "timestamp": [
+        10.27,
+        10.69
+      ]
+    },
+    {
+      "text": "as",
+      "timestamp": [
+        10.69,
+        10.83
+      ]
+    },
+    {
+      "text": "carbon",
+      "timestamp": [
+        10.83,
+        11.07
+      ]
+    },
+    {
+      "text": "dioxide",
+      "timestamp": [
+        11.07,
+        11.59
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        11.59,
+        11.93
+      ]
+    },
+    {
+      "text": "burning",
+      "timestamp": [
+        11.93,
+        12.21
+      ]
+    },
+    {
+      "text": "coal,",
+      "timestamp": [
+        12.21,
+        12.61
+      ]
+    },
+    {
+      "text": "oil,",
+      "timestamp": [
+        13.03,
+        13.35
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.91,
+        13.99
+      ]
+    },
+    {
+      "text": "gas.",
+      "timestamp": [
+        13.99,
+        14.29
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

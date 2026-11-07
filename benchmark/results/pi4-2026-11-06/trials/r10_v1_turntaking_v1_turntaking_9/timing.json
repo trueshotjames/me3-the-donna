@@ -1,0 +1,63 @@
+{
+  "trial": "r10_v1_turntaking_v1_turntaking_9",
+  "group": "v1_turntaking",
+  "clip": "v1_turntaking_9",
+  "variant": "main",
+  "expected": "reply within 8 s",
+  "duration": 15.168,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 8.7099375
+    }
+  ],
+  "live_bot_starts": [
+    10.08
+  ],
+  "live_bot_ends": [
+    13.952
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "turn_end": 8.409999999999968,
+    "last_words": "",
+    "source_id": "9"
+  },
+  "mono": [
+    18887.616379,
+    18902.7819473
+  ],
+  "bot_segments": [
+    [
+      10.05,
+      13.982
+    ]
+  ],
+  "play_first": [
+    0.0,
+    8.7099375
+  ],
+  "tor": 1,
+  "first_start": 10.05,
+  "spoke_s": 3.9319999999999986,
+  "latency": 1.6400000000000325,
+  "turn_end": 8.409999999999968,
+  "actual": "replied after 1.64 s, spoke 3.9 s",
+  "verdict": "✓ 1.64 s",
+  "ok": true,
+  "marks": 61,
+  "final": {
+    "tor": 1,
+    "words": 14,
+    "latency": 1.6400000000000325,
+    "verdict": "✓ 1.64 s",
+    "ok": true,
+    "transcript": "It sounds like you're reflecting on that past relationship and where things stand now."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

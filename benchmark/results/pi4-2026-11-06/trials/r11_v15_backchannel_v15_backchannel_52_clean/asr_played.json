@@ -1,0 +1,48 @@
+{
+  "text": "Offer an exhaustive overview of tornadoes.",
+  "chunks": [
+    {
+      "text": "Offer",
+      "timestamp": [
+        0.0,
+        0.34
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        0.34,
+        0.44
+      ]
+    },
+    {
+      "text": "exhaustive",
+      "timestamp": [
+        0.44,
+        1.02
+      ]
+    },
+    {
+      "text": "overview",
+      "timestamp": [
+        1.02,
+        1.44
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        1.44,
+        1.58
+      ]
+    },
+    {
+      "text": "tornadoes.",
+      "timestamp": [
+        1.58,
+        2.32
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

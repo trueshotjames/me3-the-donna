@@ -1,0 +1,76 @@
+{
+  "text": "coverage for all devices. Sounds urgent. Check the door quickly.",
+  "chunks": [
+    {
+      "text": "coverage",
+      "timestamp": [
+        0.0,
+        0.42
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        0.42,
+        0.68
+      ]
+    },
+    {
+      "text": "all",
+      "timestamp": [
+        0.68,
+        0.88
+      ]
+    },
+    {
+      "text": "devices.",
+      "timestamp": [
+        0.88,
+        1.32
+      ]
+    },
+    {
+      "text": "Sounds",
+      "timestamp": [
+        6.65,
+        7.09
+      ]
+    },
+    {
+      "text": "urgent.",
+      "timestamp": [
+        7.09,
+        7.43
+      ]
+    },
+    {
+      "text": "Check",
+      "timestamp": [
+        7.97,
+        8.07
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        8.07,
+        8.25
+      ]
+    },
+    {
+      "text": "door",
+      "timestamp": [
+        8.25,
+        8.43
+      ]
+    },
+    {
+      "text": "quickly.",
+      "timestamp": [
+        8.43,
+        8.79
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

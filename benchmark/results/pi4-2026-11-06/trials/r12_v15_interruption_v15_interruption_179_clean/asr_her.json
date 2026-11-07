@@ -1,0 +1,125 @@
+{
+  "text": "Pick a language you enjoy. Set a short daily study goal. Use an app or online lessons.",
+  "chunks": [
+    {
+      "text": "Pick",
+      "timestamp": [
+        4.27,
+        4.75
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.75,
+        4.89
+      ]
+    },
+    {
+      "text": "language",
+      "timestamp": [
+        4.89,
+        5.11
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        5.11,
+        5.37
+      ]
+    },
+    {
+      "text": "enjoy.",
+      "timestamp": [
+        5.37,
+        5.71
+      ]
+    },
+    {
+      "text": "Set",
+      "timestamp": [
+        6.37,
+        6.61
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        6.61,
+        6.75
+      ]
+    },
+    {
+      "text": "short",
+      "timestamp": [
+        6.75,
+        6.95
+      ]
+    },
+    {
+      "text": "daily",
+      "timestamp": [
+        6.95,
+        7.23
+      ]
+    },
+    {
+      "text": "study",
+      "timestamp": [
+        7.23,
+        7.53
+      ]
+    },
+    {
+      "text": "goal.",
+      "timestamp": [
+        7.53,
+        7.85
+      ]
+    },
+    {
+      "text": "Use",
+      "timestamp": [
+        8.43,
+        8.77
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        8.77,
+        8.89
+      ]
+    },
+    {
+      "text": "app",
+      "timestamp": [
+        8.89,
+        9.25
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        9.25,
+        9.63
+      ]
+    },
+    {
+      "text": "online",
+      "timestamp": [
+        9.63,
+        9.91
+      ]
+    },
+    {
+      "text": "lessons.",
+      "timestamp": [
+        9.91,
+        10.35
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

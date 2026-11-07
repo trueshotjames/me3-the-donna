@@ -1,0 +1,78 @@
+{"stage": "vad_start", "t": 16571.60375231, "pid": 9960, "src": "ws", "recv": 16602.9601366, "lt": 16602.942426387, "tt": 0.2898}
+{"stage": "vad_start", "t": 16571.603847864, "pid": 9960, "src": "ws", "recv": 16602.9601576, "lt": 16602.942521941, "tt": 0.2899}
+{"stage": "asr_partial", "t": 16572.052320641, "pid": 9960, "text": "The", "src": "ws", "recv": 16603.4076403, "lt": 16603.390994718, "tt": 0.7384}
+{"stage": "interrupted", "t": 16572.169529255, "pid": 9960, "src": "ws", "recv": 16603.5259911, "lt": 16603.508203332, "tt": 0.8556}
+{"stage": "interrupted", "t": 16572.16961781, "pid": 9960, "src": "ws", "recv": 16603.5260103, "lt": 16603.508291887, "tt": 0.8557}
+{"stage": "asr_partial", "t": 16572.324829229, "pid": 9960, "text": "The main point of", "src": "ws", "recv": 16603.6798259, "lt": 16603.663503306, "tt": 1.0109}
+{"stage": "asr_partial", "t": 16572.564564167, "pid": 9960, "text": "The main point of the game", "src": "ws", "recv": 16603.919486, "lt": 16603.903238244002, "tt": 1.2507}
+{"stage": "asr_partial", "t": 16572.767045161, "pid": 9960, "text": "The main point of the game is to", "src": "ws", "recv": 16604.1221506, "lt": 16604.105719238, "tt": 1.4531}
+{"stage": "asr_partial", "t": 16573.045473506, "pid": 9960, "text": "The main point of the game is to", "src": "ws", "recv": 16604.4004525, "lt": 16604.384147583, "tt": 1.7316}
+{"stage": "asr_partial", "t": 16573.248287866, "pid": 9960, "text": "The main point of the game is to collect", "src": "ws", "recv": 16604.6033085, "lt": 16604.586961943, "tt": 1.9344}
+{"stage": "asr_partial", "t": 16573.525422951, "pid": 9960, "text": "The main point of the game is to collect as many", "src": "ws", "recv": 16604.8804487, "lt": 16604.864097028, "tt": 2.2115}
+{"stage": "asr_partial", "t": 16573.727935463, "pid": 9960, "text": "The main point of the game is to collect as many", "src": "ws", "recv": 16605.0830611, "lt": 16605.06660954, "tt": 2.414}
+{"stage": "asr_partial", "t": 16574.005101528, "pid": 9960, "text": "The main point of the game is to collect as many points", "src": "ws", "recv": 16605.3601285, "lt": 16605.343775605, "tt": 2.6912}
+{"stage": "asr_partial", "t": 16574.208229329, "pid": 9960, "text": "The main point of the game is to collect as many points as", "src": "ws", "recv": 16605.5632777, "lt": 16605.546903406, "tt": 2.8943}
+{"stage": "asr_partial", "t": 16574.485522708, "pid": 9960, "text": "The main point of the game is to collect as many points as possible.", "src": "ws", "recv": 16605.840583, "lt": 16605.824196785, "tt": 3.1716}
+{"stage": "asr_partial", "t": 16574.69525596, "pid": 9960, "text": "The main point of the game is to collect as many points as possible.", "src": "ws", "recv": 16606.0511601, "lt": 16606.033930037, "tt": 3.3813}
+{"stage": "asr_partial", "t": 16574.965630855, "pid": 9960, "text": "The main point of the game is to collect as many points as possible you are", "src": "ws", "recv": 16606.3206655, "lt": 16606.304304932, "tt": 3.6517}
+{"stage": "asr_partial", "t": 16575.168956764, "pid": 9960, "text": "The main point of the game is to collect as many points as possible, you earn points", "src": "ws", "recv": 16606.524029, "lt": 16606.507630841, "tt": 3.855}
+{"stage": "asr_partial", "t": 16575.448719, "pid": 9960, "text": "The main point of the game is to collect as many points as possible, you earn points by", "src": "ws", "recv": 16606.8037172, "lt": 16606.787393077, "tt": 4.1348}
+{"stage": "asr_partial", "t": 16575.649051929, "pid": 9960, "text": "The main point of the game is to collect as many points as possible, you earn points by", "src": "ws", "recv": 16607.0043285, "lt": 16606.987726006, "tt": 4.3351}
+{"stage": "vad_end", "t": 16575.731454235, "pid": 9960, "src": "ws", "recv": 16607.0871114, "lt": 16607.070128312, "tt": 4.4175}
+{"stage": "vad_end", "t": 16575.731525993, "pid": 9960, "src": "ws", "recv": 16607.0871317, "lt": 16607.07020007, "tt": 4.4176}
+{"stage": "vad_start", "t": 16575.853883782, "pid": 9960, "src": "ws", "recv": 16607.2088017, "lt": 16607.192557859, "tt": 4.54}
+{"stage": "vad_start", "t": 16575.853939281, "pid": 9960, "src": "ws", "recv": 16607.208823, "lt": 16607.192613358002, "tt": 4.54}
+{"stage": "asr_partial", "t": 16575.929495657, "pid": 9960, "text": "The main point of the game is to collect as many points as possible, you earn points by", "src": "ws", "recv": 16607.284799, "lt": 16607.268169734, "tt": 4.6156}
+{"stage": "asr_partial", "t": 16576.128607195, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by cap", "src": "ws", "recv": 16607.4839838, "lt": 16607.467281272002, "tt": 4.8147}
+{"stage": "asr_partial", "t": 16576.409488139, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing", "src": "ws", "recv": 16607.7647185, "lt": 16607.748162216, "tt": 5.0956}
+{"stage": "asr_partial", "t": 16576.607437099, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing", "src": "ws", "recv": 16607.9625907, "lt": 16607.946111176, "tt": 5.2935}
+{"stage": "asr_partial", "t": 16576.891375911, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territory", "src": "ws", "recv": 16608.2486115, "lt": 16608.230049988, "tt": 5.5775}
+{"stage": "asr_partial", "t": 16577.132054931, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territory.", "src": "ws", "recv": 16608.4895528, "lt": 16608.470729008, "tt": 5.8181}
+{"stage": "vad_end", "t": 16577.264723772, "pid": 9960, "src": "ws", "recv": 16608.6204207, "lt": 16608.603397849, "tt": 5.9508}
+{"stage": "vad_end", "t": 16577.264777086, "pid": 9960, "src": "ws", "recv": 16608.6204426, "lt": 16608.603451163, "tt": 5.9509}
+{"stage": "asr_partial", "t": 16577.372804505, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories.", "src": "ws", "recv": 16608.7285187, "lt": 16608.711478582, "tt": 6.0589}
+{"stage": "llm_request", "t": 16577.375881965, "pid": 9960, "speculative": true, "messages": 36, "chars": 12787, "est_tokens": 3197, "src": "ws", "recv": 16608.7315005, "lt": 16608.714556042, "tt": 6.062}
+{"stage": "asr_partial", "t": 16577.567605691, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories.", "src": "ws", "recv": 16608.9230089, "lt": 16608.906279768, "tt": 6.2537}
+{"stage": "vad_start", "t": 16577.808913425, "pid": 9960, "src": "ws", "recv": 16609.1646355, "lt": 16609.147587502, "tt": 6.495}
+{"stage": "vad_start", "t": 16577.808971072, "pid": 9960, "src": "ws", "recv": 16609.1646565, "lt": 16609.147645149, "tt": 6.4951}
+{"stage": "llm_cancel", "t": 16577.811850461, "pid": 9960, "src": "ws", "recv": 16609.1659342, "lt": 16609.150524538, "tt": 6.4979}
+{"stage": "asr_partial", "t": 16577.850543479, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories.", "src": "ws", "recv": 16609.2057092, "lt": 16609.189217556, "tt": 6.5366}
+{"stage": "asr_partial", "t": 16578.048519106, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and", "src": "ws", "recv": 16609.4037296, "lt": 16609.387193183, "tt": 6.7346}
+{"stage": "asr_partial", "t": 16578.329042593, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and", "src": "ws", "recv": 16609.6843811, "lt": 16609.66771667, "tt": 7.0151}
+{"stage": "asr_partial", "t": 16578.528496941, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and", "src": "ws", "recv": 16609.8837986, "lt": 16609.867171018, "tt": 7.2146}
+{"stage": "asr_partial", "t": 16578.809042501, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and", "src": "ws", "recv": 16610.1643427, "lt": 16610.147716578, "tt": 7.4951}
+{"stage": "vad_end", "t": 16578.960480008, "pid": 9960, "src": "ws", "recv": 16610.3161494, "lt": 16610.299154085, "tt": 7.6466}
+{"stage": "vad_end", "t": 16578.960533637, "pid": 9960, "src": "ws", "recv": 16610.3161704, "lt": 16610.299207714, "tt": 7.6466}
+{"stage": "asr_partial", "t": 16579.009666761, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and", "src": "ws", "recv": 16610.3655127, "lt": 16610.348340838, "tt": 7.6958}
+{"stage": "asr_partial", "t": 16579.287824334, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and", "src": "ws", "recv": 16610.6431522, "lt": 16610.626498411, "tt": 7.9739}
+{"stage": "asr_partial", "t": 16579.489057937, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and", "src": "ws", "recv": 16610.8444803, "lt": 16610.827732014, "tt": 8.1751}
+{"stage": "asr_partial", "t": 16579.769479777, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and", "src": "ws", "recv": 16611.1250521, "lt": 16611.108153854, "tt": 8.4556}
+{"stage": "asr_partial", "t": 16579.969519581, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and", "src": "ws", "recv": 16611.3246333, "lt": 16611.308193658002, "tt": 8.6556}
+{"stage": "vad_start", "t": 16580.429490472, "pid": 9960, "src": "ws", "recv": 16611.7844622, "lt": 16611.768164549, "tt": 9.1156}
+{"stage": "vad_start", "t": 16580.429545304, "pid": 9960, "src": "ws", "recv": 16611.7844834, "lt": 16611.768219381, "tt": 9.1156}
+{"stage": "asr_partial", "t": 16580.729674797, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each", "src": "ws", "recv": 16612.0850836, "lt": 16612.068348874, "tt": 9.4158}
+{"stage": "asr_partial", "t": 16580.9289825, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each territory", "src": "ws", "recv": 16612.2843066, "lt": 16612.267656577, "tt": 9.6151}
+{"stage": "asr_partial", "t": 16581.209256249, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each territory", "src": "ws", "recv": 16612.5644656, "lt": 16612.547930326, "tt": 9.8953}
+{"stage": "asr_partial", "t": 16581.409043316, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each territory is", "src": "ws", "recv": 16612.7642811, "lt": 16612.747717393002, "tt": 10.0951}
+{"stage": "asr_partial", "t": 16581.689001366, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each territory is different", "src": "ws", "recv": 16613.0441067, "lt": 16613.027675443, "tt": 10.3751}
+{"stage": "asr_partial", "t": 16581.889318001, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each territory is different value.", "src": "ws", "recv": 16613.2450183, "lt": 16613.227992078002, "tt": 10.5754}
+{"stage": "vad_end", "t": 16581.933477208, "pid": 9960, "src": "ws", "recv": 16613.297279, "lt": 16613.272151285, "tt": 10.6196}
+{"stage": "vad_end", "t": 16581.933530967, "pid": 9960, "src": "ws", "recv": 16613.2973004, "lt": 16613.272205044, "tt": 10.6196}
+{"stage": "llm_request", "t": 16581.946605742, "pid": 9960, "speculative": true, "messages": 36, "chars": 12826, "est_tokens": 3206, "src": "ws", "recv": 16613.3021394, "lt": 16613.285279819, "tt": 10.6327}
+{"stage": "asr_partial", "t": 16582.131825942, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each territory is different value.", "src": "ws", "recv": 16613.4872069, "lt": 16613.470500019, "tt": 10.8179}
+{"stage": "asr_partial", "t": 16582.173057335, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each territory has different value.", "src": "ws", "recv": 16613.5288886, "lt": 16613.511731412, "tt": 10.8591}
+{"stage": "llm_cancel", "t": 16582.173136705, "pid": 9960, "src": "ws", "recv": 16613.5289103, "lt": 16613.511810782, "tt": 10.8592}
+{"stage": "llm_request", "t": 16582.178820131, "pid": 9960, "speculative": true, "messages": 36, "chars": 12827, "est_tokens": 3207, "src": "ws", "recv": 16613.5367289, "lt": 16613.517494208, "tt": 10.8649}
+{"stage": "asr_partial", "t": 16582.411910546, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each territory has different value.", "src": "ws", "recv": 16613.7690429, "lt": 16613.750584623, "tt": 11.098}
+{"stage": "llm_usage", "t": 16583.038970038, "pid": 9960, "prompt_tokens": 2703, "completion_tokens": 40, "src": "ws", "recv": 16614.3950601, "lt": 16614.377644115, "tt": 11.7251}
+{"stage": "asr_final", "t": 16583.060904477, "pid": 9960, "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories, and each territory has different value.", "src": "ws", "recv": 16614.4178221, "lt": 16614.399578554, "tt": 11.747}
+{"stage": "user_stopped", "t": 16583.069493033, "pid": 9960, "src": "ws", "recv": 16614.4275459, "lt": 16614.40816711, "tt": 11.7556}
+{"stage": "user_stopped", "t": 16583.069564606, "pid": 9960, "src": "ws", "recv": 16614.4275717, "lt": 16614.408238683, "tt": 11.7557}
+{"stage": "llm_first_token", "t": 16583.075266495, "pid": 9960, "src": "ws", "recv": 16614.4362107, "lt": 16614.413940572, "tt": 11.7614}
+{"stage": "tts_request", "t": 16583.100415985, "pid": 9960, "src": "ws", "recv": 16614.4601547, "lt": 16614.439090062002, "tt": 11.7865}
+{"stage": "tts_first_audio", "t": 16583.282622613, "pid": 9960, "src": "ws", "recv": 16614.6380544, "lt": 16614.62129669, "tt": 11.9687}
+{"stage": "audio_out", "t": 16583.287258386, "pid": 9960, "src": "ws", "recv": 16614.6471774, "lt": 16614.625932463, "tt": 11.9733}
+{"stage": "audio_out", "t": 16583.287341256, "pid": 9960, "src": "ws", "recv": 16614.6471987, "lt": 16614.626015333, "tt": 11.9734}
+{"stage": "bot_stopped", "t": 16588.095111568, "pid": 9960, "src": "ws", "recv": 16619.4506091, "lt": 16619.433785645, "tt": 16.7812}
+{"stage": "bot_stopped", "t": 16588.095192826, "pid": 9960, "src": "ws", "recv": 16619.4506288, "lt": 16619.433866903, "tt": 16.7813}
+{"stage": "llm_request", "t": 16588.101435986, "pid": 9960, "messages": 37, "chars": 12913, "est_tokens": 3228, "src": "ws", "recv": 16619.4560556, "lt": 16619.440110063, "tt": 16.7875}

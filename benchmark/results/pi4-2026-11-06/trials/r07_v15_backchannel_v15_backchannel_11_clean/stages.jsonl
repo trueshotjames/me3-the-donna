@@ -1,0 +1,27 @@
+{"stage": "vad_start", "t": 18091.641460292, "pid": 9960, "src": "ws", "recv": 18123.0199684, "lt": 18122.980134369, "tt": 0.1354}
+{"stage": "vad_start", "t": 18091.641517643, "pid": 9960, "src": "ws", "recv": 18123.0199922, "lt": 18122.98019172, "tt": 0.1355}
+{"stage": "asr_partial", "t": 18091.722440556, "pid": 9960, "text": "So", "src": "ws", "recv": 18123.1011141, "lt": 18123.061114633, "tt": 0.2164}
+{"stage": "asr_partial", "t": 18092.204332763, "pid": 9960, "text": "Summarize", "src": "ws", "recv": 18123.5862399, "lt": 18123.543006840002, "tt": 0.6983}
+{"stage": "interrupted", "t": 18092.207164468, "pid": 9960, "src": "ws", "recv": 18123.5884938, "lt": 18123.545838545, "tt": 0.7011}
+{"stage": "interrupted", "t": 18092.207251874, "pid": 9960, "src": "ws", "recv": 18123.5885098, "lt": 18123.545925951, "tt": 0.7012}
+{"stage": "bot_stopped", "t": 18092.233122365, "pid": 9960, "src": "ws", "recv": 18123.6200985, "lt": 18123.571796442, "tt": 0.7271}
+{"stage": "bot_stopped", "t": 18092.233235642, "pid": 9960, "src": "ws", "recv": 18123.6201207, "lt": 18123.571909719, "tt": 0.7272}
+{"stage": "llm_request", "t": 18092.249140053, "pid": 9960, "messages": 59, "chars": 13925, "est_tokens": 3481, "src": "ws", "recv": 18123.6302495, "lt": 18123.58781413, "tt": 0.7431}
+{"stage": "asr_partial", "t": 18092.443154532, "pid": 9960, "text": "Summarize black", "src": "ws", "recv": 18123.8218959, "lt": 18123.781828609, "tt": 0.9371}
+{"stage": "asr_partial", "t": 18092.683040213, "pid": 9960, "text": "Summarize black holes", "src": "ws", "recv": 18124.0623064, "lt": 18124.02171429, "tt": 1.177}
+{"stage": "asr_partial", "t": 18092.923300501, "pid": 9960, "text": "Summarize black holes", "src": "ws", "recv": 18124.3020711, "lt": 18124.261974578, "tt": 1.4173}
+{"stage": "asr_partial", "t": 18093.162327138, "pid": 9960, "text": "Summarize black holes comprehensive", "src": "ws", "recv": 18124.5411708, "lt": 18124.501001215, "tt": 1.6563}
+{"stage": "asr_partial", "t": 18093.403298528, "pid": 9960, "text": "Summarize black holes comprehensively", "src": "ws", "recv": 18124.78206, "lt": 18124.741972605, "tt": 1.8973}
+{"stage": "vad_end", "t": 18093.493804469, "pid": 9960, "src": "ws", "recv": 18124.8731382, "lt": 18124.832478546, "tt": 1.9878}
+{"stage": "vad_end", "t": 18093.493859209, "pid": 9960, "src": "ws", "recv": 18124.8731711, "lt": 18124.832533286, "tt": 1.9878}
+{"stage": "asr_partial", "t": 18093.646027841, "pid": 9960, "text": "Summarize black holes comprehensively.", "src": "ws", "recv": 18125.0256344, "lt": 18124.984701918, "tt": 2.14}
+{"stage": "llm_request", "t": 18093.649396706, "pid": 9960, "speculative": true, "messages": 60, "chars": 13963, "est_tokens": 3491, "src": "ws", "recv": 18125.0297434, "lt": 18124.988070783, "tt": 2.1434}
+{"stage": "asr_final", "t": 18094.058299623, "pid": 9960, "text": "Summarize black holes comprehensively.", "src": "ws", "recv": 18125.4404244, "lt": 18125.3969737, "tt": 2.5523}
+{"stage": "user_stopped", "t": 18094.070069753, "pid": 9960, "src": "ws", "recv": 18125.4555154, "lt": 18125.40874383, "tt": 2.564}
+{"stage": "user_stopped", "t": 18094.07017203, "pid": 9960, "src": "ws", "recv": 18125.4555358, "lt": 18125.408846107, "tt": 2.5641}
+{"stage": "llm_first_token", "t": 18094.154355291, "pid": 9960, "src": "ws", "recv": 18125.5335822, "lt": 18125.493029368, "tt": 2.6483}
+{"stage": "tts_request", "t": 18094.217504, "pid": 9960, "src": "ws", "recv": 18125.6062388, "lt": 18125.556178077, "tt": 2.7115}
+{"stage": "llm_usage", "t": 18094.37728511, "pid": 9960, "prompt_tokens": 2704, "completion_tokens": 266, "src": "ws", "recv": 18125.769896, "lt": 18125.715959187, "tt": 2.8713}
+{"stage": "tts_first_audio", "t": 18094.473981788, "pid": 9960, "src": "ws", "recv": 18125.8554133, "lt": 18125.812655865, "tt": 2.968}
+{"stage": "audio_out", "t": 18094.482296777, "pid": 9960, "src": "ws", "recv": 18125.867447, "lt": 18125.820970854, "tt": 2.9763}
+{"stage": "audio_out", "t": 18094.482384517, "pid": 9960, "src": "ws", "recv": 18125.8674687, "lt": 18125.821058594, "tt": 2.9764}

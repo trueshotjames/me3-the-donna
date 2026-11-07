@@ -1,0 +1,7 @@
+{
+  "task": "behaviour",
+  "label": "Resume",
+  "tag": "C_RESUME",
+  "raw": "{ \"behaviour\": [\"C_RESUME\"] }",
+  "judge": "openrouter/openai/gpt-4o"
+}

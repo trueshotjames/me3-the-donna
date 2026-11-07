@@ -1,0 +1,111 @@
+{
+  "text": "How long should I steep green tea? Yo Mark, meeting's bumped to three o 'clock.",
+  "chunks": [
+    {
+      "text": "How",
+      "timestamp": [
+        0.0,
+        0.16
+      ]
+    },
+    {
+      "text": "long",
+      "timestamp": [
+        0.16,
+        0.4
+      ]
+    },
+    {
+      "text": "should",
+      "timestamp": [
+        0.4,
+        0.66
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        0.66,
+        0.8
+      ]
+    },
+    {
+      "text": "steep",
+      "timestamp": [
+        0.8,
+        1.16
+      ]
+    },
+    {
+      "text": "green",
+      "timestamp": [
+        1.16,
+        1.52
+      ]
+    },
+    {
+      "text": "tea?",
+      "timestamp": [
+        1.52,
+        1.86
+      ]
+    },
+    {
+      "text": "Yo",
+      "timestamp": [
+        4.82,
+        5.0
+      ]
+    },
+    {
+      "text": "Mark,",
+      "timestamp": [
+        5.0,
+        5.28
+      ]
+    },
+    {
+      "text": "meeting's",
+      "timestamp": [
+        5.46,
+        5.8
+      ]
+    },
+    {
+      "text": "bumped",
+      "timestamp": [
+        5.8,
+        5.92
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        5.92,
+        6.12
+      ]
+    },
+    {
+      "text": "three",
+      "timestamp": [
+        6.12,
+        6.28
+      ]
+    },
+    {
+      "text": "o",
+      "timestamp": [
+        6.28,
+        6.36
+      ]
+    },
+    {
+      "text": "'clock.",
+      "timestamp": [
+        6.36,
+        6.64
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

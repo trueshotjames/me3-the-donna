@@ -1,0 +1,62 @@
+{
+  "trial": "r07_v15_interruption_v15_interruption_124_clean",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_124",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 10.176,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.168
+    }
+  ],
+  "live_bot_starts": [
+    3.136
+  ],
+  "live_bot_ends": [
+    9.632
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "How often should I exercise?",
+    "current_turn_text": "Can we talk about yoga specifically?",
+    "overlap_text": "Can we talk about yoga specifically?",
+    "overlap_duration": 1.7,
+    "overlap_window": [
+      5.824,
+      7.52
+    ],
+    "source_id": "124"
+  },
+  "mono": [
+    18046.9419916,
+    18057.1179927
+  ],
+  "bot_segments": [
+    [
+      3.106,
+      9.662
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.168
+  ],
+  "tor": 1,
+  "first_start": 3.106,
+  "spoke_s": 6.556000000000001,
+  "actual": "replied after 0.94 s, spoke 6.6 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 25,
+  "final": {
+    "transcript": "Aim for at least three moderate workouts or five light sessions each week, mixing cardio, strength, and flexibility."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

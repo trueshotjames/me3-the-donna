@@ -1,0 +1,63 @@
+{
+  "trial": "r03_v1_turntaking_v1_turntaking_94",
+  "group": "v1_turntaking",
+  "clip": "v1_turntaking_94",
+  "variant": "main",
+  "expected": "reply within 8 s",
+  "duration": 12.256,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 4.6199375
+    }
+  ],
+  "live_bot_starts": [
+    5.856
+  ],
+  "live_bot_ends": [
+    11.04
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "turn_end": 4.319999999999936,
+    "last_words": "",
+    "source_id": "94"
+  },
+  "mono": [
+    16799.5938326,
+    16811.8378879
+  ],
+  "bot_segments": [
+    [
+      5.826,
+      11.07
+    ]
+  ],
+  "play_first": [
+    0.0,
+    4.6199375
+  ],
+  "tor": 1,
+  "first_start": 5.826,
+  "spoke_s": 5.244000000000001,
+  "latency": 1.5060000000000633,
+  "turn_end": 4.319999999999936,
+  "actual": "replied after 1.51 s, spoke 5.2 s",
+  "verdict": "✓ 1.51 s",
+  "ok": true,
+  "marks": 37,
+  "final": {
+    "tor": 1,
+    "words": 13,
+    "latency": 1.5060000000000633,
+    "verdict": "✓ 1.51 s",
+    "ok": true,
+    "transcript": "Duolingo, Babble, Memorize, and Busu are popular language learning apps that work well."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

@@ -1,0 +1,244 @@
+{
+  "text": "fruits and vegetables provide essential exercise routines improve cardiovascular health build strength boost flexibility and Support mental well -being a balanced plan mixes aerobic activities like walking or cycling with strength training and stretching",
+  "chunks": [
+    {
+      "text": "fruits",
+      "timestamp": [
+        3.86,
+        4.38
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        4.38,
+        4.6
+      ]
+    },
+    {
+      "text": "vegetables",
+      "timestamp": [
+        4.6,
+        5.04
+      ]
+    },
+    {
+      "text": "provide",
+      "timestamp": [
+        5.04,
+        5.58
+      ]
+    },
+    {
+      "text": "essential",
+      "timestamp": [
+        5.58,
+        6.0
+      ]
+    },
+    {
+      "text": "exercise",
+      "timestamp": [
+        9.84,
+        10.68
+      ]
+    },
+    {
+      "text": "routines",
+      "timestamp": [
+        10.68,
+        11.34
+      ]
+    },
+    {
+      "text": "improve",
+      "timestamp": [
+        11.34,
+        11.78
+      ]
+    },
+    {
+      "text": "cardiovascular",
+      "timestamp": [
+        11.78,
+        12.24
+      ]
+    },
+    {
+      "text": "health",
+      "timestamp": [
+        12.24,
+        13.04
+      ]
+    },
+    {
+      "text": "build",
+      "timestamp": [
+        13.04,
+        13.6
+      ]
+    },
+    {
+      "text": "strength",
+      "timestamp": [
+        13.6,
+        14.08
+      ]
+    },
+    {
+      "text": "boost",
+      "timestamp": [
+        14.08,
+        14.72
+      ]
+    },
+    {
+      "text": "flexibility",
+      "timestamp": [
+        14.72,
+        15.44
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        15.44,
+        16.16
+      ]
+    },
+    {
+      "text": "Support",
+      "timestamp": [
+        16.16,
+        16.46
+      ]
+    },
+    {
+      "text": "mental",
+      "timestamp": [
+        16.46,
+        16.92
+      ]
+    },
+    {
+      "text": "well",
+      "timestamp": [
+        16.92,
+        17.14
+      ]
+    },
+    {
+      "text": "-being",
+      "timestamp": [
+        17.14,
+        17.44
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        17.44,
+        17.76
+      ]
+    },
+    {
+      "text": "balanced",
+      "timestamp": [
+        17.76,
+        18.14
+      ]
+    },
+    {
+      "text": "plan",
+      "timestamp": [
+        18.14,
+        18.56
+      ]
+    },
+    {
+      "text": "mixes",
+      "timestamp": [
+        18.56,
+        18.98
+      ]
+    },
+    {
+      "text": "aerobic",
+      "timestamp": [
+        18.98,
+        19.44
+      ]
+    },
+    {
+      "text": "activities",
+      "timestamp": [
+        19.44,
+        19.96
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        19.96,
+        20.32
+      ]
+    },
+    {
+      "text": "walking",
+      "timestamp": [
+        20.32,
+        20.72
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        20.72,
+        21.0
+      ]
+    },
+    {
+      "text": "cycling",
+      "timestamp": [
+        21.0,
+        21.38
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        21.38,
+        21.64
+      ]
+    },
+    {
+      "text": "strength",
+      "timestamp": [
+        21.64,
+        21.96
+      ]
+    },
+    {
+      "text": "training",
+      "timestamp": [
+        21.96,
+        22.36
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        22.36,
+        22.62
+      ]
+    },
+    {
+      "text": "stretching",
+      "timestamp": [
+        22.62,
+        22.96
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

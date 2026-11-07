@@ -1,0 +1,69 @@
+{
+  "text": "I can't check the time in Tokyo right now.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        1.87,
+        2.31
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        2.31,
+        2.55
+      ]
+    },
+    {
+      "text": "check",
+      "timestamp": [
+        2.55,
+        2.71
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        2.71,
+        2.85
+      ]
+    },
+    {
+      "text": "time",
+      "timestamp": [
+        2.85,
+        3.09
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        3.09,
+        3.23
+      ]
+    },
+    {
+      "text": "Tokyo",
+      "timestamp": [
+        3.23,
+        3.47
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        3.47,
+        3.79
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        3.79,
+        4.07
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

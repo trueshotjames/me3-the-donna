@@ -1,0 +1,27 @@
+{
+  "text": "Detail startups comprehensive.",
+  "chunks": [
+    {
+      "text": "Detail",
+      "timestamp": [
+        0.0,
+        0.5
+      ]
+    },
+    {
+      "text": "startups",
+      "timestamp": [
+        0.5,
+        0.84
+      ]
+    },
+    {
+      "text": "comprehensive.",
+      "timestamp": [
+        0.84,
+        1.38
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,63 @@
+{
+  "trial": "r09_v1_turntaking_v1_turntaking_72",
+  "group": "v1_turntaking",
+  "clip": "v1_turntaking_72",
+  "variant": "main",
+  "expected": "reply within 8 s",
+  "duration": 9.632,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 5.9299375
+    }
+  ],
+  "live_bot_starts": [
+    6.656
+  ],
+  "live_bot_ends": [
+    8.416
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "turn_end": 5.6299999999999955,
+    "last_words": "",
+    "source_id": "72"
+  },
+  "mono": [
+    18635.8317476,
+    18645.4701056
+  ],
+  "bot_segments": [
+    [
+      6.626,
+      8.446
+    ]
+  ],
+  "play_first": [
+    0.0,
+    5.9299375
+  ],
+  "tor": 1,
+  "first_start": 6.626,
+  "spoke_s": 1.8199999999999994,
+  "latency": 0.9960000000000049,
+  "turn_end": 5.6299999999999955,
+  "actual": "replied after 1.00 s, spoke 1.8 s",
+  "verdict": "✓ 1.00 s",
+  "ok": true,
+  "marks": 47,
+  "final": {
+    "tor": 1,
+    "words": 12,
+    "latency": 0.9960000000000049,
+    "verdict": "✓ 1.00 s",
+    "ok": true,
+    "transcript": "Could you let me know what you'd like me to help with?"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

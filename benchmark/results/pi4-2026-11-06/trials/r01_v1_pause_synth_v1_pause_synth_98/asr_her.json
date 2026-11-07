@@ -1,0 +1,76 @@
+{
+  "text": "For high -energy thrills, try the alpine zipline and interlocking.",
+  "chunks": [
+    {
+      "text": "For",
+      "timestamp": [
+        9.49,
+        9.77
+      ]
+    },
+    {
+      "text": "high",
+      "timestamp": [
+        9.77,
+        9.99
+      ]
+    },
+    {
+      "text": "-energy",
+      "timestamp": [
+        9.99,
+        10.25
+      ]
+    },
+    {
+      "text": "thrills,",
+      "timestamp": [
+        10.25,
+        10.85
+      ]
+    },
+    {
+      "text": "try",
+      "timestamp": [
+        11.01,
+        11.15
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        11.15,
+        11.29
+      ]
+    },
+    {
+      "text": "alpine",
+      "timestamp": [
+        11.29,
+        11.71
+      ]
+    },
+    {
+      "text": "zipline",
+      "timestamp": [
+        11.71,
+        12.31
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        12.31,
+        12.41
+      ]
+    },
+    {
+      "text": "interlocking.",
+      "timestamp": [
+        12.41,
+        13.09
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

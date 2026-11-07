@@ -1,0 +1,69 @@
+{
+  "text": "offer an exhaustive overview of tornadoes. Uh -huh, yeah.",
+  "chunks": [
+    {
+      "text": "offer",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        0.26,
+        0.44
+      ]
+    },
+    {
+      "text": "exhaustive",
+      "timestamp": [
+        0.44,
+        1.02
+      ]
+    },
+    {
+      "text": "overview",
+      "timestamp": [
+        1.02,
+        1.44
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        1.44,
+        1.58
+      ]
+    },
+    {
+      "text": "tornadoes.",
+      "timestamp": [
+        1.58,
+        2.5
+      ]
+    },
+    {
+      "text": "Uh",
+      "timestamp": [
+        4.95,
+        5.39
+      ]
+    },
+    {
+      "text": "-huh,",
+      "timestamp": [
+        5.39,
+        5.53
+      ]
+    },
+    {
+      "text": "yeah.",
+      "timestamp": [
+        5.65,
+        5.81
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

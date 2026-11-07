@@ -1,0 +1,69 @@
+{
+  "text": "I'm not able to get wide scores right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        2.45,
+        2.93
+      ]
+    },
+    {
+      "text": "not",
+      "timestamp": [
+        2.93,
+        3.07
+      ]
+    },
+    {
+      "text": "able",
+      "timestamp": [
+        3.07,
+        3.31
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        3.31,
+        3.49
+      ]
+    },
+    {
+      "text": "get",
+      "timestamp": [
+        3.49,
+        3.65
+      ]
+    },
+    {
+      "text": "wide",
+      "timestamp": [
+        3.65,
+        3.89
+      ]
+    },
+    {
+      "text": "scores",
+      "timestamp": [
+        3.89,
+        4.19
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.19,
+        4.53
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        4.53,
+        4.83
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

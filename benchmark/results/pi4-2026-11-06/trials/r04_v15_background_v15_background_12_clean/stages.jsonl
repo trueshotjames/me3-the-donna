@@ -1,0 +1,27 @@
+{"stage": "vad_start", "t": 17121.227443499, "pid": 9960, "src": "ws", "recv": 17152.5926129, "lt": 17152.566117576, "tt": 0.1853}
+{"stage": "vad_start", "t": 17121.227541424, "pid": 9960, "src": "ws", "recv": 17152.5926332, "lt": 17152.566215501, "tt": 0.1854}
+{"stage": "asr_partial", "t": 17121.643751494, "pid": 9960, "text": "Check", "src": "ws", "recv": 17153.0076011, "lt": 17152.982425571, "tt": 0.6016}
+{"stage": "interrupted", "t": 17121.776523204, "pid": 9960, "src": "ws", "recv": 17153.1416084, "lt": 17153.115197281, "tt": 0.7343}
+{"stage": "interrupted", "t": 17121.776618869, "pid": 9960, "src": "ws", "recv": 17153.141632, "lt": 17153.115292946, "tt": 0.7344}
+{"stage": "asr_partial", "t": 17121.887354302, "pid": 9960, "text": "Check the status", "src": "ws", "recv": 17153.2531949, "lt": 17153.226028379002, "tt": 0.8452}
+{"stage": "asr_partial", "t": 17122.1669686, "pid": 9960, "text": "Check the status of", "src": "ws", "recv": 17153.5308883, "lt": 17153.505642677, "tt": 1.1248}
+{"stage": "asr_partial", "t": 17122.371235776, "pid": 9960, "text": "Check the status of my", "src": "ws", "recv": 17153.7377332, "lt": 17153.709909853, "tt": 1.329}
+{"stage": "asr_partial", "t": 17122.646973086, "pid": 9960, "text": "Check the status of my flight.", "src": "ws", "recv": 17154.0111011, "lt": 17153.985647163, "tt": 1.6048}
+{"stage": "vad_end", "t": 17122.727830748, "pid": 9960, "src": "ws", "recv": 17154.0923017, "lt": 17154.066504825, "tt": 1.6856}
+{"stage": "vad_end", "t": 17122.727884711, "pid": 9960, "src": "ws", "recv": 17154.0923226, "lt": 17154.066558788, "tt": 1.6857}
+{"stage": "asr_partial", "t": 17122.850456253, "pid": 9960, "text": "Check the status of my flight.", "src": "ws", "recv": 17154.2160714, "lt": 17154.18913033, "tt": 1.8083}
+{"stage": "llm_request", "t": 17122.855141435, "pid": 9960, "speculative": true, "messages": 17, "chars": 9929, "est_tokens": 2482, "src": "ws", "recv": 17154.2213196, "lt": 17154.193815512, "tt": 1.813}
+{"stage": "asr_partial", "t": 17123.127035608, "pid": 9960, "text": "Check the status of my flight.", "src": "ws", "recv": 17154.4908222, "lt": 17154.465709685, "tt": 2.0848}
+{"stage": "asr_partial", "t": 17123.327563572, "pid": 9960, "text": "Check the status of my flight.", "src": "ws", "recv": 17154.692248, "lt": 17154.666237649, "tt": 2.2854}
+{"stage": "llm_usage", "t": 17123.421700511, "pid": 9960, "prompt_tokens": 2497, "completion_tokens": 86, "src": "ws", "recv": 17154.7860528, "lt": 17154.760374588, "tt": 2.3795}
+{"stage": "asr_final", "t": 17123.45051511, "pid": 9960, "text": "Check the status of my flight.", "src": "ws", "recv": 17154.8161178, "lt": 17154.789189187, "tt": 2.4083}
+{"stage": "user_stopped", "t": 17123.463640629, "pid": 9960, "src": "ws", "recv": 17154.8329011, "lt": 17154.802314706, "tt": 2.4215}
+{"stage": "user_stopped", "t": 17123.463709721, "pid": 9960, "src": "ws", "recv": 17154.8329187, "lt": 17154.802383798, "tt": 2.4215}
+{"stage": "llm_first_token", "t": 17123.467283861, "pid": 9960, "src": "ws", "recv": 17154.8368966, "lt": 17154.805957938, "tt": 2.4251}
+{"stage": "tts_request", "t": 17123.489726985, "pid": 9960, "src": "ws", "recv": 17154.8582773, "lt": 17154.828401062, "tt": 2.4475}
+{"stage": "tts_first_audio", "t": 17123.539122619, "pid": 9960, "src": "ws", "recv": 17154.9041392, "lt": 17154.877796696, "tt": 2.4969}
+{"stage": "audio_out", "t": 17123.54568111, "pid": 9960, "src": "ws", "recv": 17154.9151132, "lt": 17154.884355187, "tt": 2.5035}
+{"stage": "audio_out", "t": 17123.545768313, "pid": 9960, "src": "ws", "recv": 17154.915131, "lt": 17154.88444239, "tt": 2.5036}
+{"stage": "bot_stopped", "t": 17125.512140616, "pid": 9960, "src": "ws", "recv": 17156.8761347, "lt": 17156.850814693, "tt": 4.47}
+{"stage": "bot_stopped", "t": 17125.512219022, "pid": 9960, "src": "ws", "recv": 17156.8761541, "lt": 17156.850893099, "tt": 4.47}
+{"stage": "llm_request", "t": 17125.518313519, "pid": 9960, "messages": 18, "chars": 9969, "est_tokens": 2492, "src": "ws", "recv": 17156.881708, "lt": 17156.856987596, "tt": 4.4761}

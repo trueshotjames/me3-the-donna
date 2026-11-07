@@ -1,0 +1,125 @@
+{
+  "text": "I understand. It's hard when you care about a cause but can't be close to help directly.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        13.55,
+        13.73
+      ]
+    },
+    {
+      "text": "understand.",
+      "timestamp": [
+        13.73,
+        14.21
+      ]
+    },
+    {
+      "text": "It's",
+      "timestamp": [
+        14.85,
+        15.03
+      ]
+    },
+    {
+      "text": "hard",
+      "timestamp": [
+        15.03,
+        15.21
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        15.21,
+        15.37
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        15.37,
+        15.47
+      ]
+    },
+    {
+      "text": "care",
+      "timestamp": [
+        15.47,
+        15.67
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        15.67,
+        15.87
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        15.87,
+        15.99
+      ]
+    },
+    {
+      "text": "cause",
+      "timestamp": [
+        15.99,
+        16.35
+      ]
+    },
+    {
+      "text": "but",
+      "timestamp": [
+        16.35,
+        16.57
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        16.57,
+        16.85
+      ]
+    },
+    {
+      "text": "be",
+      "timestamp": [
+        16.85,
+        16.93
+      ]
+    },
+    {
+      "text": "close",
+      "timestamp": [
+        16.93,
+        17.21
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        17.21,
+        17.37
+      ]
+    },
+    {
+      "text": "help",
+      "timestamp": [
+        17.37,
+        17.53
+      ]
+    },
+    {
+      "text": "directly.",
+      "timestamp": [
+        17.53,
+        17.93
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

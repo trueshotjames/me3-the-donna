@@ -1,0 +1,90 @@
+{
+  "text": "Which paper kites are truly amazing, light, colorful, and fun to fly?",
+  "chunks": [
+    {
+      "text": "Which",
+      "timestamp": [
+        6.64,
+        7.04
+      ]
+    },
+    {
+      "text": "paper",
+      "timestamp": [
+        12.38,
+        13.26
+      ]
+    },
+    {
+      "text": "kites",
+      "timestamp": [
+        13.26,
+        13.68
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        13.68,
+        13.8
+      ]
+    },
+    {
+      "text": "truly",
+      "timestamp": [
+        13.8,
+        14.1
+      ]
+    },
+    {
+      "text": "amazing,",
+      "timestamp": [
+        14.1,
+        14.52
+      ]
+    },
+    {
+      "text": "light,",
+      "timestamp": [
+        15.02,
+        15.34
+      ]
+    },
+    {
+      "text": "colorful,",
+      "timestamp": [
+        15.78,
+        16.2
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        16.86,
+        16.94
+      ]
+    },
+    {
+      "text": "fun",
+      "timestamp": [
+        16.94,
+        17.18
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        17.18,
+        17.4
+      ]
+    },
+    {
+      "text": "fly?",
+      "timestamp": [
+        17.4,
+        17.64
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

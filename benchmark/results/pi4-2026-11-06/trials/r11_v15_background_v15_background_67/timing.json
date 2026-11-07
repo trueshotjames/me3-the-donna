@@ -1,0 +1,99 @@
+{
+  "trial": "r11_v15_background_v15_background_67",
+  "group": "v15_background",
+  "clip": "v15_background_67",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 9.12,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.88
+    },
+    {
+      "name": "overlap",
+      "t": 4.22,
+      "len": 1.532
+    }
+  ],
+  "live_bot_starts": [
+    2.72,
+    5.92
+  ],
+  "live_bot_ends": [
+    4.768,
+    7.904
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Remind me to stand up every hour.",
+    "current_turn_text": "",
+    "overlap_text": "Let's bake cookies later.",
+    "overlap_duration": 1.53,
+    "overlap_window": [
+      5.672,
+      7.204
+    ],
+    "source_id": "67"
+  },
+  "mono": [
+    19298.7032939,
+    19307.8380457
+  ],
+  "bot_segments": [
+    [
+      2.69,
+      4.798
+    ],
+    [
+      5.89,
+      7.934
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.88
+  ],
+  "overlap_played": true,
+  "t_stop": 0.508,
+  "t_resp": 0.2599999999999998,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.29,
+    5.63
+  ],
+  "tor": 1,
+  "first_start": 5.89,
+  "spoke_s": 2.0440000000000005,
+  "latency": 0.1379999999999999,
+  "actual": "stopped after 0.51 s, back 0.26 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 30,
+  "final": {
+    "t_stop": 0.508,
+    "t_resp": 0.2599999999999998,
+    "label": "Unknown",
+    "voice_delta": {
+      "wpm": -10.243902439024367,
+      "pitch_mean": 48.381276766046454,
+      "pitch_sd": 45.53929931064678,
+      "intensity_mean": -1.4092723898218722,
+      "intensity_sd": 2.0579184901875234,
+      "utmosv2": null
+    },
+    "transcript": "attempt to create reminder. Reminder set for now. Stand up.",
+    "judge_label": "Unknown",
+    "ok": false,
+    "verdict": "✗ Unknown"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

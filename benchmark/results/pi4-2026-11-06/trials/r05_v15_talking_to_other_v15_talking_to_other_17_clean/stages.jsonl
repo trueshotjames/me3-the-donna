@@ -1,0 +1,27 @@
+{"stage": "vad_start", "t": 17337.062750269, "pid": 9960, "src": "ws", "recv": 17368.4316245, "lt": 17368.401424346, "tt": 0.2128}
+{"stage": "vad_start", "t": 17337.062880268, "pid": 9960, "src": "ws", "recv": 17368.4316453, "lt": 17368.401554345, "tt": 0.213}
+{"stage": "asr_partial", "t": 17337.444149651, "pid": 9960, "text": "What", "src": "ws", "recv": 17368.8114239, "lt": 17368.782823728, "tt": 0.5942}
+{"stage": "interrupted", "t": 17337.570167823, "pid": 9960, "src": "ws", "recv": 17368.9396859, "lt": 17368.9088419, "tt": 0.7202}
+{"stage": "interrupted", "t": 17337.570255155, "pid": 9960, "src": "ws", "recv": 17368.9397067, "lt": 17368.908929232, "tt": 0.7203}
+{"stage": "asr_partial", "t": 17337.724104458, "pid": 9960, "text": "What movies", "src": "ws", "recv": 17369.0921294, "lt": 17369.062778535, "tt": 0.8742}
+{"stage": "asr_partial", "t": 17337.964409598, "pid": 9960, "text": "What movies are", "src": "ws", "recv": 17369.3317572, "lt": 17369.303083675, "tt": 1.1145}
+{"stage": "asr_partial", "t": 17338.16676142, "pid": 9960, "text": "What movies are playing the", "src": "ws", "recv": 17369.5338531, "lt": 17369.505435497, "tt": 1.3168}
+{"stage": "asr_partial", "t": 17338.444149037, "pid": 9960, "text": "What movies are playing near by", "src": "ws", "recv": 17369.8112241, "lt": 17369.782823114, "tt": 1.5942}
+{"stage": "asr_partial", "t": 17338.647008964, "pid": 9960, "text": "What movies are playing nearby to", "src": "ws", "recv": 17370.0140613, "lt": 17369.985683041, "tt": 1.7971}
+{"stage": "asr_partial", "t": 17338.92388955, "pid": 9960, "text": "What movies are playing nearby tonight", "src": "ws", "recv": 17370.2910437, "lt": 17370.262563627, "tt": 2.074}
+{"stage": "vad_end", "t": 17338.945721461, "pid": 9960, "src": "ws", "recv": 17370.3184731, "lt": 17370.284395538, "tt": 2.0958}
+{"stage": "vad_end", "t": 17338.945773071, "pid": 9960, "src": "ws", "recv": 17370.3184976, "lt": 17370.284447148, "tt": 2.0959}
+{"stage": "llm_request", "t": 17338.957094632, "pid": 9960, "speculative": true, "messages": 44, "chars": 11718, "est_tokens": 2930, "src": "ws", "recv": 17370.324775, "lt": 17370.295768709, "tt": 2.1072}
+{"stage": "asr_partial", "t": 17339.046975685, "pid": 9960, "text": "What movies are playing nearby tonight?", "src": "ws", "recv": 17370.4140675, "lt": 17370.385649762, "tt": 2.1971}
+{"stage": "asr_final", "t": 17339.157074447, "pid": 9960, "text": "What movies are playing nearby tonight?", "src": "ws", "recv": 17370.5254102, "lt": 17370.495748524, "tt": 2.3072}
+{"stage": "user_stopped", "t": 17339.164920107, "pid": 9960, "src": "ws", "recv": 17370.5351485, "lt": 17370.503594184, "tt": 2.315}
+{"stage": "user_stopped", "t": 17339.164989218, "pid": 9960, "src": "ws", "recv": 17370.5351649, "lt": 17370.503663295, "tt": 2.3151}
+{"stage": "llm_first_token", "t": 17339.456114255, "pid": 9960, "src": "ws", "recv": 17370.8259197, "lt": 17370.794788332, "tt": 2.6062}
+{"stage": "llm_usage", "t": 17339.473365186, "pid": 9960, "prompt_tokens": 2466, "completion_tokens": 52, "src": "ws", "recv": 17370.8463279, "lt": 17370.812039263, "tt": 2.6234}
+{"stage": "tts_request", "t": 17339.500296865, "pid": 9960, "src": "ws", "recv": 17370.8721317, "lt": 17370.838970942, "tt": 2.6504}
+{"stage": "tts_first_audio", "t": 17339.550100219, "pid": 9960, "src": "ws", "recv": 17370.9184116, "lt": 17370.888774296, "tt": 2.7002}
+{"stage": "audio_out", "t": 17339.557752771, "pid": 9960, "src": "ws", "recv": 17370.9316984, "lt": 17370.896426848, "tt": 2.7078}
+{"stage": "audio_out", "t": 17339.557860307, "pid": 9960, "src": "ws", "recv": 17370.931717, "lt": 17370.896534384, "tt": 2.7079}
+{"stage": "bot_stopped", "t": 17342.167354516, "pid": 9960, "src": "ws", "recv": 17373.5370857, "lt": 17373.506028593, "tt": 5.3174}
+{"stage": "bot_stopped", "t": 17342.167499699, "pid": 9960, "src": "ws", "recv": 17373.537106, "lt": 17373.506173776, "tt": 5.3176}
+{"stage": "llm_request", "t": 17342.180496776, "pid": 9960, "messages": 45, "chars": 11771, "est_tokens": 2943, "src": "ws", "recv": 17373.5505697, "lt": 17373.519170853, "tt": 5.3306}

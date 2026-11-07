@@ -1,0 +1,83 @@
+{
+  "text": "Remind me to stand up every hour. Let's bake cookies later.",
+  "chunks": [
+    {
+      "text": "Remind",
+      "timestamp": [
+        0.0,
+        0.32
+      ]
+    },
+    {
+      "text": "me",
+      "timestamp": [
+        0.32,
+        0.42
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.42,
+        0.52
+      ]
+    },
+    {
+      "text": "stand",
+      "timestamp": [
+        0.52,
+        0.74
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        0.74,
+        0.98
+      ]
+    },
+    {
+      "text": "every",
+      "timestamp": [
+        0.98,
+        1.2
+      ]
+    },
+    {
+      "text": "hour.",
+      "timestamp": [
+        1.2,
+        1.48
+      ]
+    },
+    {
+      "text": "Let's",
+      "timestamp": [
+        3.99,
+        4.51
+      ]
+    },
+    {
+      "text": "bake",
+      "timestamp": [
+        4.51,
+        4.67
+      ]
+    },
+    {
+      "text": "cookies",
+      "timestamp": [
+        4.67,
+        4.95
+      ]
+    },
+    {
+      "text": "later.",
+      "timestamp": [
+        4.95,
+        5.29
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

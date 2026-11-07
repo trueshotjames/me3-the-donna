@@ -1,0 +1,90 @@
+{
+  "text": "Dolphins use signature whistles as personal names, each unique to an individual.",
+  "chunks": [
+    {
+      "text": "Dolphins",
+      "timestamp": [
+        1.86,
+        3.32
+      ]
+    },
+    {
+      "text": "use",
+      "timestamp": [
+        3.32,
+        3.52
+      ]
+    },
+    {
+      "text": "signature",
+      "timestamp": [
+        3.52,
+        3.84
+      ]
+    },
+    {
+      "text": "whistles",
+      "timestamp": [
+        3.84,
+        4.28
+      ]
+    },
+    {
+      "text": "as",
+      "timestamp": [
+        4.28,
+        4.6
+      ]
+    },
+    {
+      "text": "personal",
+      "timestamp": [
+        4.6,
+        5.0
+      ]
+    },
+    {
+      "text": "names,",
+      "timestamp": [
+        5.0,
+        5.5
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        5.76,
+        6.16
+      ]
+    },
+    {
+      "text": "unique",
+      "timestamp": [
+        6.16,
+        6.52
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        6.52,
+        6.76
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        6.76,
+        6.86
+      ]
+    },
+    {
+      "text": "individual.",
+      "timestamp": [
+        6.86,
+        7.28
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

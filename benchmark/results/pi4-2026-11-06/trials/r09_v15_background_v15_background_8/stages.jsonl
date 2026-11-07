@@ -1,0 +1,42 @@
+{"stage": "vad_start", "t": 18553.140083617, "pid": 9960, "src": "ws", "recv": 18584.5264576, "lt": 18584.478757694, "tt": 0.1938}
+{"stage": "vad_start", "t": 18553.140173968, "pid": 9960, "src": "ws", "recv": 18584.5264844, "lt": 18584.478848045, "tt": 0.1939}
+{"stage": "asr_partial", "t": 18553.486308407, "pid": 9960, "text": "What", "src": "ws", "recv": 18584.8728582, "lt": 18584.824982484, "tt": 0.54}
+{"stage": "interrupted", "t": 18553.605000003, "pid": 9960, "src": "ws", "recv": 18584.9914991, "lt": 18584.94367408, "tt": 0.6587}
+{"stage": "interrupted", "t": 18553.605091632, "pid": 9960, "src": "ws", "recv": 18584.9915336, "lt": 18584.943765709, "tt": 0.6588}
+{"stage": "asr_partial", "t": 18553.722198185, "pid": 9960, "text": "What's my", "src": "ws", "recv": 18585.1075204, "lt": 18585.060872262, "tt": 0.7759}
+{"stage": "asr_partial", "t": 18553.964621947, "pid": 9960, "text": "What's my current high", "src": "ws", "recv": 18585.3519019, "lt": 18585.303296024, "tt": 1.0184}
+{"stage": "asr_partial", "t": 18554.208074183, "pid": 9960, "text": "What's my current heart rate", "src": "ws", "recv": 18585.5944797, "lt": 18585.54674826, "tt": 1.2618}
+{"stage": "asr_partial", "t": 18554.24516882, "pid": 9960, "text": "What's my current heart rate?", "src": "ws", "recv": 18585.6305368, "lt": 18585.583842897002, "tt": 1.2989}
+{"stage": "vad_end", "t": 18554.322257405, "pid": 9960, "src": "ws", "recv": 18585.711836, "lt": 18585.660931482, "tt": 1.376}
+{"stage": "vad_end", "t": 18554.322308109, "pid": 9960, "src": "ws", "recv": 18585.7118603, "lt": 18585.660982186, "tt": 1.376}
+{"stage": "llm_request", "t": 18554.332575177, "pid": 9960, "speculative": true, "messages": 24, "chars": 10514, "est_tokens": 2628, "src": "ws", "recv": 18585.7182628, "lt": 18585.671249254, "tt": 1.3863}
+{"stage": "asr_final", "t": 18554.458744751, "pid": 9960, "text": "What's my current heart rate?", "src": "ws", "recv": 18585.8453599, "lt": 18585.797418828, "tt": 1.5125}
+{"stage": "user_stopped", "t": 18554.46649069, "pid": 9960, "src": "ws", "recv": 18585.8547053, "lt": 18585.805164767, "tt": 1.5202}
+{"stage": "user_stopped", "t": 18554.46655919, "pid": 9960, "src": "ws", "recv": 18585.8547279, "lt": 18585.805233267, "tt": 1.5203}
+{"stage": "llm_first_token", "t": 18555.077324324, "pid": 9960, "src": "ws", "recv": 18586.4666415, "lt": 18586.415998401, "tt": 2.1311}
+{"stage": "llm_usage", "t": 18555.096219177, "pid": 9960, "prompt_tokens": 2491, "completion_tokens": 37, "src": "ws", "recv": 18586.4865058, "lt": 18586.434893254, "tt": 2.15}
+{"stage": "tts_request", "t": 18555.122026402, "pid": 9960, "src": "ws", "recv": 18586.5113315, "lt": 18586.460700479, "tt": 2.1758}
+{"stage": "tts_first_audio", "t": 18555.167079811, "pid": 9960, "src": "ws", "recv": 18586.5541008, "lt": 18586.505753888, "tt": 2.2208}
+{"stage": "audio_out", "t": 18555.174765306, "pid": 9960, "src": "ws", "recv": 18586.5656144, "lt": 18586.513439383, "tt": 2.2285}
+{"stage": "audio_out", "t": 18555.174851583, "pid": 9960, "src": "ws", "recv": 18586.5656381, "lt": 18586.51352566, "tt": 2.2286}
+{"stage": "bot_stopped", "t": 18556.66232262, "pid": 9960, "src": "ws", "recv": 18588.0483248, "lt": 18588.000996697, "tt": 3.7161}
+{"stage": "bot_stopped", "t": 18556.662405879, "pid": 9960, "src": "ws", "recv": 18588.0483478, "lt": 18588.001079956, "tt": 3.7161}
+{"stage": "llm_request", "t": 18556.668878551, "pid": 9960, "messages": 25, "chars": 10553, "est_tokens": 2638, "src": "ws", "recv": 18588.0535765, "lt": 18588.007552628, "tt": 3.7226}
+{"stage": "vad_start", "t": 18557.103859509, "pid": 9960, "src": "ws", "recv": 18588.4889457, "lt": 18588.442533586, "tt": 4.1576}
+{"stage": "vad_start", "t": 18557.10391412, "pid": 9960, "src": "ws", "recv": 18588.4889696, "lt": 18588.442588197002, "tt": 4.1577}
+{"stage": "asr_partial", "t": 18557.241586378, "pid": 9960, "text": "I", "src": "ws", "recv": 18588.6269637, "lt": 18588.580260455, "tt": 4.2953}
+{"stage": "interrupted", "t": 18557.49914722, "pid": 9960, "src": "ws", "recv": 18588.8863088, "lt": 18588.837821297002, "tt": 4.5529}
+{"stage": "interrupted", "t": 18557.499241312, "pid": 9960, "src": "ws", "recv": 18588.8863395, "lt": 18588.837915389002, "tt": 4.553}
+{"stage": "asr_partial", "t": 18557.721888648, "pid": 9960, "text": "I think we ran", "src": "ws", "recv": 18589.1073526, "lt": 18589.060562725, "tt": 4.7756}
+{"stage": "asr_partial", "t": 18557.971583161, "pid": 9960, "text": "I think we ran out of", "src": "ws", "recv": 18589.3582563, "lt": 18589.310257238, "tt": 5.0253}
+{"stage": "asr_partial", "t": 18558.204735673, "pid": 9960, "text": "I think we ran out of people", "src": "ws", "recv": 18589.5938875, "lt": 18589.54340975, "tt": 5.2585}
+{"stage": "asr_partial", "t": 18558.454690665, "pid": 9960, "text": "I think we ran out of paper", "src": "ws", "recv": 18589.8404458, "lt": 18589.793364742, "tt": 5.5084}
+{"stage": "asr_partial", "t": 18558.682299794, "pid": 9960, "text": "I think we ran out of paper towels", "src": "ws", "recv": 18590.0677478, "lt": 18590.020973871, "tt": 5.736}
+{"stage": "asr_partial", "t": 18558.766473469, "pid": 9960, "text": "I think we ran out of paper towels.", "src": "ws", "recv": 18590.1531961, "lt": 18590.105147546, "tt": 5.8202}
+{"stage": "llm_request", "t": 18558.814900147, "pid": 9960, "speculative": true, "messages": 26, "chars": 10588, "est_tokens": 2647, "src": "ws", "recv": 18590.2001722, "lt": 18590.153574224, "tt": 5.8686}
+{"stage": "asr_final", "t": 18558.859820981, "pid": 9960, "text": "I think we ran out of paper towels.", "src": "ws", "recv": 18590.2458638, "lt": 18590.198495058, "tt": 5.9136}
+{"stage": "user_stopped", "t": 18558.866947443, "pid": 9960, "src": "ws", "recv": 18590.2561645, "lt": 18590.20562152, "tt": 5.9207}
+{"stage": "user_stopped", "t": 18558.867045146, "pid": 9960, "src": "ws", "recv": 18590.2561889, "lt": 18590.205719223, "tt": 5.9208}
+{"stage": "llm_first_token", "t": 18558.873701576, "pid": 9960, "src": "ws", "recv": 18590.2631805, "lt": 18590.212375653, "tt": 5.9274}
+{"stage": "vad_end", "t": 18558.959071982, "pid": 9960, "src": "ws", "recv": 18590.3436734, "lt": 18590.297746059, "tt": 6.0128}
+{"stage": "vad_end", "t": 18558.959125778, "pid": 9960, "src": "ws", "recv": 18590.3436963, "lt": 18590.297799855, "tt": 6.0129}

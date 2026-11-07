@@ -1,0 +1,84 @@
+{
+  "trial": "r02_v1_interrupt_v1_interrupt_92",
+  "group": "v1_interrupt",
+  "clip": "v1_interrupt_92",
+  "variant": "main",
+  "expected": "stop, then answer the new request",
+  "duration": 19.552,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.776
+    },
+    {
+      "name": "overlap",
+      "t": 1.5,
+      "len": 4.469375
+    }
+  ],
+  "live_bot_starts": [
+    0.0,
+    6.848
+  ],
+  "live_bot_ends": [
+    0.384,
+    19.2
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "How often should I change the oil in my car?",
+    "interrupt_text": "Oh, before I forget, can you remind me to call the mechanic tomorrow?",
+    "source_id": "92"
+  },
+  "mono": [
+    16576.7361055,
+    16596.2868129
+  ],
+  "bot_segments": [
+    [
+      0.0,
+      0.414
+    ],
+    [
+      6.818,
+      19.23
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.776
+  ],
+  "overlap_played": true,
+  "t_stop": null,
+  "t_resp": 1.38,
+  "bot_speaking_at_onset": false,
+  "spoke_through": false,
+  "overlap": [
+    1.5,
+    5.438
+  ],
+  "tor": 1,
+  "first_start": 6.818,
+  "spoke_s": 7.151375,
+  "latency": 0.8486249999999993,
+  "actual": "was already silent, back 1.38 s after",
+  "verdict": "✓ yielded, 0.85 s",
+  "ok": true,
+  "marks": 45,
+  "final": {
+    "tor": 1,
+    "words": 24,
+    "latency": 1.38,
+    "t_stop": null,
+    "verdict": "✓ yielded, 1.38 s",
+    "ok": true,
+    "rating": 2,
+    "transcript": "I can't set reminders right now, but changing your car's oil every 5 to 7 ,000 miles is a good rule of thumb. I'm unable to create reminders at the moment. I can't set a reminder right now. I'm not able to set reminders right now."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

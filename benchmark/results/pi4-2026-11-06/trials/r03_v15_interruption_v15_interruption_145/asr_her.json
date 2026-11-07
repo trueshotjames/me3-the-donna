@@ -1,0 +1,167 @@
+{
+  "text": "That's great, small, balanced change. Sure, focus on mixing cardio like brisk walking or cycling with strength training 2 -3 times a week.",
+  "chunks": [
+    {
+      "text": "That's",
+      "timestamp": [
+        3.15,
+        3.95
+      ]
+    },
+    {
+      "text": "great,",
+      "timestamp": [
+        3.95,
+        4.21
+      ]
+    },
+    {
+      "text": "small,",
+      "timestamp": [
+        4.41,
+        4.65
+      ]
+    },
+    {
+      "text": "balanced",
+      "timestamp": [
+        4.91,
+        5.21
+      ]
+    },
+    {
+      "text": "change.",
+      "timestamp": [
+        5.21,
+        5.49
+      ]
+    },
+    {
+      "text": "Sure,",
+      "timestamp": [
+        10.24,
+        10.68
+      ]
+    },
+    {
+      "text": "focus",
+      "timestamp": [
+        11.14,
+        11.46
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        11.46,
+        11.7
+      ]
+    },
+    {
+      "text": "mixing",
+      "timestamp": [
+        11.7,
+        11.98
+      ]
+    },
+    {
+      "text": "cardio",
+      "timestamp": [
+        11.98,
+        12.52
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        12.52,
+        12.8
+      ]
+    },
+    {
+      "text": "brisk",
+      "timestamp": [
+        12.8,
+        13.14
+      ]
+    },
+    {
+      "text": "walking",
+      "timestamp": [
+        13.14,
+        13.5
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        13.5,
+        13.88
+      ]
+    },
+    {
+      "text": "cycling",
+      "timestamp": [
+        13.88,
+        14.24
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        14.24,
+        14.5
+      ]
+    },
+    {
+      "text": "strength",
+      "timestamp": [
+        14.5,
+        14.8
+      ]
+    },
+    {
+      "text": "training",
+      "timestamp": [
+        14.8,
+        15.3
+      ]
+    },
+    {
+      "text": "2",
+      "timestamp": [
+        15.3,
+        15.62
+      ]
+    },
+    {
+      "text": "-3",
+      "timestamp": [
+        15.62,
+        15.94
+      ]
+    },
+    {
+      "text": "times",
+      "timestamp": [
+        15.94,
+        16.18
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        16.18,
+        16.4
+      ]
+    },
+    {
+      "text": "week.",
+      "timestamp": [
+        16.4,
+        16.62
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

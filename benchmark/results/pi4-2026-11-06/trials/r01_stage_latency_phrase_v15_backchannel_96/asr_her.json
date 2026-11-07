@@ -1,0 +1,405 @@
+{
+  "text": "The gig economy is a labor market where short -term, flexible jobs, often called gigs, replace traditional full -time employment. Workers find these gigs through online platforms that match demand with supply, such as ride -sharing, food delivery, freelance design, or on -demand tutoring services. Because gigs are usually paid per task rather than by salary, free.",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        2.7,
+        3.18
+      ]
+    },
+    {
+      "text": "gig",
+      "timestamp": [
+        3.18,
+        3.34
+      ]
+    },
+    {
+      "text": "economy",
+      "timestamp": [
+        3.34,
+        3.78
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        3.78,
+        4.14
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.14,
+        4.26
+      ]
+    },
+    {
+      "text": "labor",
+      "timestamp": [
+        4.26,
+        4.48
+      ]
+    },
+    {
+      "text": "market",
+      "timestamp": [
+        4.48,
+        4.9
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        4.9,
+        5.18
+      ]
+    },
+    {
+      "text": "short",
+      "timestamp": [
+        5.18,
+        5.52
+      ]
+    },
+    {
+      "text": "-term,",
+      "timestamp": [
+        5.52,
+        5.82
+      ]
+    },
+    {
+      "text": "flexible",
+      "timestamp": [
+        6.1,
+        6.38
+      ]
+    },
+    {
+      "text": "jobs,",
+      "timestamp": [
+        6.38,
+        6.9
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        7.16,
+        7.42
+      ]
+    },
+    {
+      "text": "called",
+      "timestamp": [
+        7.42,
+        7.72
+      ]
+    },
+    {
+      "text": "gigs,",
+      "timestamp": [
+        7.72,
+        8.12
+      ]
+    },
+    {
+      "text": "replace",
+      "timestamp": [
+        8.54,
+        8.82
+      ]
+    },
+    {
+      "text": "traditional",
+      "timestamp": [
+        8.82,
+        9.56
+      ]
+    },
+    {
+      "text": "full",
+      "timestamp": [
+        9.56,
+        9.86
+      ]
+    },
+    {
+      "text": "-time",
+      "timestamp": [
+        9.86,
+        10.12
+      ]
+    },
+    {
+      "text": "employment.",
+      "timestamp": [
+        10.12,
+        10.62
+      ]
+    },
+    {
+      "text": "Workers",
+      "timestamp": [
+        11.06,
+        11.22
+      ]
+    },
+    {
+      "text": "find",
+      "timestamp": [
+        11.22,
+        11.62
+      ]
+    },
+    {
+      "text": "these",
+      "timestamp": [
+        11.62,
+        11.84
+      ]
+    },
+    {
+      "text": "gigs",
+      "timestamp": [
+        11.84,
+        12.18
+      ]
+    },
+    {
+      "text": "through",
+      "timestamp": [
+        12.18,
+        12.48
+      ]
+    },
+    {
+      "text": "online",
+      "timestamp": [
+        12.48,
+        12.88
+      ]
+    },
+    {
+      "text": "platforms",
+      "timestamp": [
+        12.88,
+        13.4
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        13.4,
+        13.82
+      ]
+    },
+    {
+      "text": "match",
+      "timestamp": [
+        13.82,
+        14.16
+      ]
+    },
+    {
+      "text": "demand",
+      "timestamp": [
+        14.16,
+        14.52
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        14.52,
+        14.76
+      ]
+    },
+    {
+      "text": "supply,",
+      "timestamp": [
+        14.76,
+        15.26
+      ]
+    },
+    {
+      "text": "such",
+      "timestamp": [
+        15.74,
+        15.94
+      ]
+    },
+    {
+      "text": "as",
+      "timestamp": [
+        15.94,
+        16.1
+      ]
+    },
+    {
+      "text": "ride",
+      "timestamp": [
+        16.1,
+        16.36
+      ]
+    },
+    {
+      "text": "-sharing,",
+      "timestamp": [
+        16.36,
+        16.78
+      ]
+    },
+    {
+      "text": "food",
+      "timestamp": [
+        17.26,
+        17.42
+      ]
+    },
+    {
+      "text": "delivery,",
+      "timestamp": [
+        17.42,
+        17.84
+      ]
+    },
+    {
+      "text": "freelance",
+      "timestamp": [
+        18.32,
+        18.7
+      ]
+    },
+    {
+      "text": "design,",
+      "timestamp": [
+        18.7,
+        19.3
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        19.6,
+        19.68
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        19.68,
+        19.94
+      ]
+    },
+    {
+      "text": "-demand",
+      "timestamp": [
+        19.94,
+        20.3
+      ]
+    },
+    {
+      "text": "tutoring",
+      "timestamp": [
+        20.3,
+        20.56
+      ]
+    },
+    {
+      "text": "services.",
+      "timestamp": [
+        20.56,
+        21.24
+      ]
+    },
+    {
+      "text": "Because",
+      "timestamp": [
+        21.56,
+        21.74
+      ]
+    },
+    {
+      "text": "gigs",
+      "timestamp": [
+        21.74,
+        22.06
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        22.06,
+        22.26
+      ]
+    },
+    {
+      "text": "usually",
+      "timestamp": [
+        22.26,
+        22.54
+      ]
+    },
+    {
+      "text": "paid",
+      "timestamp": [
+        22.54,
+        22.88
+      ]
+    },
+    {
+      "text": "per",
+      "timestamp": [
+        22.88,
+        23.12
+      ]
+    },
+    {
+      "text": "task",
+      "timestamp": [
+        23.12,
+        23.62
+      ]
+    },
+    {
+      "text": "rather",
+      "timestamp": [
+        23.62,
+        23.96
+      ]
+    },
+    {
+      "text": "than",
+      "timestamp": [
+        23.96,
+        24.2
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        24.2,
+        24.38
+      ]
+    },
+    {
+      "text": "salary,",
+      "timestamp": [
+        24.38,
+        24.78
+      ]
+    },
+    {
+      "text": "free.",
+      "timestamp": [
+        24.78,
+        24.9
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

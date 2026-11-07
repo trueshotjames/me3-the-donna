@@ -1,0 +1,811 @@
+{
+  "text": "Tornadoes are violently rotating columns of air that extend from a thunderstorm to the ground, capable of destroying structures in seconds. They form most often in the United States, especially in the central tornado alley, where warm, moist air from the gulf meets cool, dry air from the rockies. A supercell thunderstorm creates a rotating updraft called the mesocyclone, and when the rotation tightens and intensifies, a funnel can touch the surface, becoming a tornado. Tornadoes are classified by the enhanced frigida scale, ranging from EF -0 with winds around 65 miles per hour to EF -5 exceeding 200 miles per hour, causing catastrophic damage. Most tornadoes are short -lived, lasting only a few minutes.",
+  "chunks": [
+    {
+      "text": "Tornadoes",
+      "timestamp": [
+        3.28,
+        4.22
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        4.22,
+        4.34
+      ]
+    },
+    {
+      "text": "violently",
+      "timestamp": [
+        4.34,
+        4.86
+      ]
+    },
+    {
+      "text": "rotating",
+      "timestamp": [
+        4.86,
+        5.4
+      ]
+    },
+    {
+      "text": "columns",
+      "timestamp": [
+        5.4,
+        6.66
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        6.66,
+        6.94
+      ]
+    },
+    {
+      "text": "air",
+      "timestamp": [
+        6.94,
+        7.16
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        7.16,
+        7.34
+      ]
+    },
+    {
+      "text": "extend",
+      "timestamp": [
+        7.34,
+        7.76
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        7.76,
+        8.0
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        8.0,
+        8.18
+      ]
+    },
+    {
+      "text": "thunderstorm",
+      "timestamp": [
+        8.18,
+        8.42
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        8.42,
+        8.84
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        8.84,
+        8.94
+      ]
+    },
+    {
+      "text": "ground,",
+      "timestamp": [
+        8.94,
+        9.32
+      ]
+    },
+    {
+      "text": "capable",
+      "timestamp": [
+        9.72,
+        10.12
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        10.12,
+        10.44
+      ]
+    },
+    {
+      "text": "destroying",
+      "timestamp": [
+        10.44,
+        10.86
+      ]
+    },
+    {
+      "text": "structures",
+      "timestamp": [
+        10.86,
+        11.32
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        11.32,
+        11.68
+      ]
+    },
+    {
+      "text": "seconds.",
+      "timestamp": [
+        11.68,
+        12.1
+      ]
+    },
+    {
+      "text": "They",
+      "timestamp": [
+        12.4,
+        12.48
+      ]
+    },
+    {
+      "text": "form",
+      "timestamp": [
+        12.48,
+        12.7
+      ]
+    },
+    {
+      "text": "most",
+      "timestamp": [
+        12.7,
+        13.02
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        13.02,
+        13.42
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        13.42,
+        13.58
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        13.58,
+        13.7
+      ]
+    },
+    {
+      "text": "United",
+      "timestamp": [
+        13.7,
+        13.88
+      ]
+    },
+    {
+      "text": "States,",
+      "timestamp": [
+        13.88,
+        14.42
+      ]
+    },
+    {
+      "text": "especially",
+      "timestamp": [
+        14.74,
+        15.26
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        15.26,
+        15.5
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        15.5,
+        15.6
+      ]
+    },
+    {
+      "text": "central",
+      "timestamp": [
+        15.6,
+        15.88
+      ]
+    },
+    {
+      "text": "tornado",
+      "timestamp": [
+        15.88,
+        16.44
+      ]
+    },
+    {
+      "text": "alley,",
+      "timestamp": [
+        16.44,
+        16.86
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        17.22,
+        17.4
+      ]
+    },
+    {
+      "text": "warm,",
+      "timestamp": [
+        17.4,
+        17.76
+      ]
+    },
+    {
+      "text": "moist",
+      "timestamp": [
+        17.84,
+        18.04
+      ]
+    },
+    {
+      "text": "air",
+      "timestamp": [
+        18.04,
+        18.42
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        18.42,
+        18.6
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        18.6,
+        18.74
+      ]
+    },
+    {
+      "text": "gulf",
+      "timestamp": [
+        18.74,
+        19.04
+      ]
+    },
+    {
+      "text": "meets",
+      "timestamp": [
+        19.04,
+        19.28
+      ]
+    },
+    {
+      "text": "cool,",
+      "timestamp": [
+        19.28,
+        19.64
+      ]
+    },
+    {
+      "text": "dry",
+      "timestamp": [
+        19.72,
+        19.98
+      ]
+    },
+    {
+      "text": "air",
+      "timestamp": [
+        19.98,
+        20.28
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        20.28,
+        20.5
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        20.5,
+        20.6
+      ]
+    },
+    {
+      "text": "rockies.",
+      "timestamp": [
+        20.6,
+        21.14
+      ]
+    },
+    {
+      "text": "A",
+      "timestamp": [
+        21.24,
+        21.36
+      ]
+    },
+    {
+      "text": "supercell",
+      "timestamp": [
+        21.36,
+        21.8
+      ]
+    },
+    {
+      "text": "thunderstorm",
+      "timestamp": [
+        21.8,
+        22.24
+      ]
+    },
+    {
+      "text": "creates",
+      "timestamp": [
+        22.24,
+        22.9
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        22.9,
+        23.12
+      ]
+    },
+    {
+      "text": "rotating",
+      "timestamp": [
+        23.12,
+        23.52
+      ]
+    },
+    {
+      "text": "updraft",
+      "timestamp": [
+        23.52,
+        24.06
+      ]
+    },
+    {
+      "text": "called",
+      "timestamp": [
+        24.06,
+        24.38
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        24.38,
+        24.56
+      ]
+    },
+    {
+      "text": "mesocyclone,",
+      "timestamp": [
+        24.56,
+        25.56
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        25.66,
+        26.08
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        26.08,
+        26.2
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        26.2,
+        26.34
+      ]
+    },
+    {
+      "text": "rotation",
+      "timestamp": [
+        26.34,
+        26.74
+      ]
+    },
+    {
+      "text": "tightens",
+      "timestamp": [
+        26.74,
+        27.34
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        27.34,
+        27.48
+      ]
+    },
+    {
+      "text": "intensifies,",
+      "timestamp": [
+        27.48,
+        28.12
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        28.62,
+        28.74
+      ]
+    },
+    {
+      "text": "funnel",
+      "timestamp": [
+        28.74,
+        28.98
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        28.98,
+        29.2
+      ]
+    },
+    {
+      "text": "touch",
+      "timestamp": [
+        29.2,
+        29.48
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        29.48,
+        29.64
+      ]
+    },
+    {
+      "text": "surface,",
+      "timestamp": [
+        29.64,
+        30.0
+      ]
+    },
+    {
+      "text": "becoming",
+      "timestamp": [
+        30.3,
+        30.64
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        30.64,
+        30.86
+      ]
+    },
+    {
+      "text": "tornado.",
+      "timestamp": [
+        30.86,
+        31.18
+      ]
+    },
+    {
+      "text": "Tornadoes",
+      "timestamp": [
+        31.18,
+        32.12
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        32.12,
+        32.24
+      ]
+    },
+    {
+      "text": "classified",
+      "timestamp": [
+        32.24,
+        32.66
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        32.66,
+        33.08
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        33.08,
+        33.22
+      ]
+    },
+    {
+      "text": "enhanced",
+      "timestamp": [
+        33.22,
+        33.68
+      ]
+    },
+    {
+      "text": "frigida",
+      "timestamp": [
+        33.68,
+        34.28
+      ]
+    },
+    {
+      "text": "scale,",
+      "timestamp": [
+        34.28,
+        34.64
+      ]
+    },
+    {
+      "text": "ranging",
+      "timestamp": [
+        35.06,
+        35.32
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        35.32,
+        35.6
+      ]
+    },
+    {
+      "text": "EF",
+      "timestamp": [
+        35.6,
+        36.0
+      ]
+    },
+    {
+      "text": "-0",
+      "timestamp": [
+        36.0,
+        36.32
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        36.32,
+        36.64
+      ]
+    },
+    {
+      "text": "winds",
+      "timestamp": [
+        36.64,
+        36.96
+      ]
+    },
+    {
+      "text": "around",
+      "timestamp": [
+        36.96,
+        37.22
+      ]
+    },
+    {
+      "text": "65",
+      "timestamp": [
+        37.22,
+        37.76
+      ]
+    },
+    {
+      "text": "miles",
+      "timestamp": [
+        37.76,
+        38.14
+      ]
+    },
+    {
+      "text": "per",
+      "timestamp": [
+        38.14,
+        38.46
+      ]
+    },
+    {
+      "text": "hour",
+      "timestamp": [
+        38.46,
+        38.72
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        38.72,
+        38.94
+      ]
+    },
+    {
+      "text": "EF",
+      "timestamp": [
+        38.94,
+        39.34
+      ]
+    },
+    {
+      "text": "-5",
+      "timestamp": [
+        39.34,
+        39.76
+      ]
+    },
+    {
+      "text": "exceeding",
+      "timestamp": [
+        39.76,
+        40.56
+      ]
+    },
+    {
+      "text": "200",
+      "timestamp": [
+        40.56,
+        40.86
+      ]
+    },
+    {
+      "text": "miles",
+      "timestamp": [
+        40.86,
+        41.4
+      ]
+    },
+    {
+      "text": "per",
+      "timestamp": [
+        41.4,
+        41.68
+      ]
+    },
+    {
+      "text": "hour,",
+      "timestamp": [
+        41.68,
+        42.02
+      ]
+    },
+    {
+      "text": "causing",
+      "timestamp": [
+        42.24,
+        42.66
+      ]
+    },
+    {
+      "text": "catastrophic",
+      "timestamp": [
+        42.66,
+        43.08
+      ]
+    },
+    {
+      "text": "damage.",
+      "timestamp": [
+        43.08,
+        43.78
+      ]
+    },
+    {
+      "text": "Most",
+      "timestamp": [
+        44.12,
+        44.3
+      ]
+    },
+    {
+      "text": "tornadoes",
+      "timestamp": [
+        44.3,
+        44.98
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        44.98,
+        45.04
+      ]
+    },
+    {
+      "text": "short",
+      "timestamp": [
+        45.04,
+        45.34
+      ]
+    },
+    {
+      "text": "-lived,",
+      "timestamp": [
+        45.34,
+        45.64
+      ]
+    },
+    {
+      "text": "lasting",
+      "timestamp": [
+        46.02,
+        46.42
+      ]
+    },
+    {
+      "text": "only",
+      "timestamp": [
+        46.42,
+        46.72
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        46.72,
+        46.9
+      ]
+    },
+    {
+      "text": "few",
+      "timestamp": [
+        46.9,
+        47.1
+      ]
+    },
+    {
+      "text": "minutes.",
+      "timestamp": [
+        47.1,
+        47.4
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

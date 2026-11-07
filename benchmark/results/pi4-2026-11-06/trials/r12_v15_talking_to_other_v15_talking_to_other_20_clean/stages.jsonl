@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 19455.817860834, "pid": 9960, "src": "ws", "recv": 19487.2164152, "lt": 19487.156534911, "tt": 0.1517}
+{"stage": "vad_start", "t": 19455.817958073, "pid": 9960, "src": "ws", "recv": 19487.2164356, "lt": 19487.15663215, "tt": 0.1518}
+{"stage": "interrupted", "t": 19456.248923595, "pid": 9960, "src": "ws", "recv": 19487.6462555, "lt": 19487.587597672, "tt": 0.5827}
+{"stage": "interrupted", "t": 19456.249011427, "pid": 9960, "src": "ws", "recv": 19487.6462748, "lt": 19487.587685504, "tt": 0.5828}
+{"stage": "asr_partial", "t": 19456.362969803, "pid": 9960, "text": "Send a message", "src": "ws", "recv": 19487.7599866, "lt": 19487.701643880002, "tt": 0.6968}
+{"stage": "asr_partial", "t": 19456.523369697, "pid": 9960, "text": "Send a message", "src": "ws", "recv": 19487.9203802, "lt": 19487.862043774, "tt": 0.8572}
+{"stage": "asr_partial", "t": 19456.76290719, "pid": 9960, "text": "Send a message to add", "src": "ws", "recv": 19488.1600566, "lt": 19488.101581267, "tt": 1.0967}
+{"stage": "asr_partial", "t": 19457.002646476, "pid": 9960, "text": "Send a message to Alex", "src": "ws", "recv": 19488.3997459, "lt": 19488.341320553, "tt": 1.3364}
+{"stage": "asr_partial", "t": 19457.242886738, "pid": 9960, "text": "Send a message to Alex saying", "src": "ws", "recv": 19488.6400944, "lt": 19488.581560815, "tt": 1.5767}
+{"stage": "asr_partial", "t": 19457.483928694, "pid": 9960, "text": "Send a message to Alex saying I'll", "src": "ws", "recv": 19488.8809469, "lt": 19488.822602771, "tt": 1.8177}
+{"stage": "asr_partial", "t": 19457.722893285, "pid": 9960, "text": "Send a message to Alex saying, I'll be", "src": "ws", "recv": 19489.1200419, "lt": 19489.061567362, "tt": 2.0567}
+{"stage": "vad_end", "t": 19457.830839839, "pid": 9960, "src": "ws", "recv": 19489.2282534, "lt": 19489.169513916, "tt": 2.1646}
+{"stage": "vad_end", "t": 19457.830893727, "pid": 9960, "src": "ws", "recv": 19489.2282771, "lt": 19489.169567804, "tt": 2.1647}
+{"stage": "asr_partial", "t": 19457.965820647, "pid": 9960, "text": "Send a message to Alex saying I'll be late.", "src": "ws", "recv": 19489.3632833, "lt": 19489.304494724, "tt": 2.2996}
+{"stage": "llm_request", "t": 19457.968907131, "pid": 9960, "speculative": true, "messages": 36, "chars": 15716, "est_tokens": 3929, "src": "ws", "recv": 19489.3665976, "lt": 19489.307581208, "tt": 2.3027}
+{"stage": "asr_partial", "t": 19458.248641766, "pid": 9960, "text": "Send a message to Alex saying, I'll be late.", "src": "ws", "recv": 19489.6456505, "lt": 19489.587315843, "tt": 2.5824}
+{"stage": "asr_final", "t": 19458.373246189, "pid": 9960, "text": "Send a message to Alex saying, I'll be late.", "src": "ws", "recv": 19489.7726099, "lt": 19489.711920266, "tt": 2.707}
+{"stage": "user_stopped", "t": 19458.382920451, "pid": 9960, "src": "ws", "recv": 19489.7838107, "lt": 19489.721594528, "tt": 2.7167}
+{"stage": "user_stopped", "t": 19458.383444909, "pid": 9960, "src": "ws", "recv": 19489.7838296, "lt": 19489.722118986, "tt": 2.7172}
+{"stage": "llm_first_token", "t": 19458.524641813, "pid": 9960, "src": "ws", "recv": 19489.9222665, "lt": 19489.86331589, "tt": 2.8584}
+{"stage": "llm_usage", "t": 19458.540358712, "pid": 9960, "prompt_tokens": 3107, "completion_tokens": 77, "src": "ws", "recv": 19489.9405436, "lt": 19489.879032789002, "tt": 2.8742}
+{"stage": "tts_request", "t": 19458.561283441, "pid": 9960, "src": "ws", "recv": 19489.9616505, "lt": 19489.899957518, "tt": 2.8951}
+{"stage": "tts_first_audio", "t": 19458.772303622, "pid": 9960, "src": "ws", "recv": 19490.1689743, "lt": 19490.110977699, "tt": 3.1061}
+{"stage": "audio_out", "t": 19458.776753498, "pid": 9960, "src": "ws", "recv": 19490.1785393, "lt": 19490.115427575, "tt": 3.1106}
+{"stage": "audio_out", "t": 19458.776838515, "pid": 9960, "src": "ws", "recv": 19490.1785568, "lt": 19490.115512592, "tt": 3.1106}
+{"stage": "bot_stopped", "t": 19460.427150101, "pid": 9960, "src": "ws", "recv": 19491.8245047, "lt": 19491.765824178, "tt": 4.7609}
+{"stage": "bot_stopped", "t": 19460.427231933, "pid": 9960, "src": "ws", "recv": 19491.824524, "lt": 19491.76590601, "tt": 4.761}
+{"stage": "llm_request", "t": 19460.433482808, "pid": 9960, "messages": 37, "chars": 15753, "est_tokens": 3938, "src": "ws", "recv": 19491.8298648, "lt": 19491.772156885, "tt": 4.7673}

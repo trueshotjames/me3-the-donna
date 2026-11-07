@@ -1,0 +1,146 @@
+{
+  "text": "lean...start by adding more vegetables and lean proteins, swap sugary drinks for water, and plan balanced meals ahead of time.",
+  "chunks": [
+    {
+      "text": "lean...start",
+      "timestamp": [
+        3.33,
+        3.93
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        3.93,
+        4.17
+      ]
+    },
+    {
+      "text": "adding",
+      "timestamp": [
+        4.17,
+        4.43
+      ]
+    },
+    {
+      "text": "more",
+      "timestamp": [
+        4.43,
+        4.71
+      ]
+    },
+    {
+      "text": "vegetables",
+      "timestamp": [
+        4.71,
+        5.21
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        5.21,
+        5.53
+      ]
+    },
+    {
+      "text": "lean",
+      "timestamp": [
+        5.53,
+        5.73
+      ]
+    },
+    {
+      "text": "proteins,",
+      "timestamp": [
+        5.73,
+        6.19
+      ]
+    },
+    {
+      "text": "swap",
+      "timestamp": [
+        6.83,
+        7.15
+      ]
+    },
+    {
+      "text": "sugary",
+      "timestamp": [
+        7.15,
+        7.65
+      ]
+    },
+    {
+      "text": "drinks",
+      "timestamp": [
+        7.65,
+        7.91
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        7.91,
+        8.13
+      ]
+    },
+    {
+      "text": "water,",
+      "timestamp": [
+        8.13,
+        8.41
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        8.81,
+        9.03
+      ]
+    },
+    {
+      "text": "plan",
+      "timestamp": [
+        9.03,
+        9.31
+      ]
+    },
+    {
+      "text": "balanced",
+      "timestamp": [
+        9.31,
+        9.75
+      ]
+    },
+    {
+      "text": "meals",
+      "timestamp": [
+        9.75,
+        10.09
+      ]
+    },
+    {
+      "text": "ahead",
+      "timestamp": [
+        10.09,
+        10.45
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        10.45,
+        10.61
+      ]
+    },
+    {
+      "text": "time.",
+      "timestamp": [
+        10.61,
+        10.91
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

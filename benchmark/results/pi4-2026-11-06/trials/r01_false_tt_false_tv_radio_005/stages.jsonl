@@ -1,0 +1,19 @@
+{"stage": "vad_start", "t": 16354.359399218, "pid": 9960, "src": "ws", "recv": 16385.7123879, "lt": 16385.698073295, "tt": 0.6134}
+{"stage": "vad_start", "t": 16354.359497662, "pid": 9960, "src": "ws", "recv": 16385.7124129, "lt": 16385.698171739, "tt": 0.6135}
+{"stage": "interrupted", "t": 16354.811104183, "pid": 9960, "src": "ws", "recv": 16386.1641923, "lt": 16386.149778259998, "tt": 1.0651}
+{"stage": "interrupted", "t": 16354.811192904, "pid": 9960, "src": "ws", "recv": 16386.1642155, "lt": 16386.149866981003, "tt": 1.0652}
+{"stage": "asr_partial", "t": 16354.934603803, "pid": 9960, "text": "Actually,", "src": "ws", "recv": 16386.2861456, "lt": 16386.27327788, "tt": 1.1886}
+{"stage": "asr_partial", "t": 16355.045631484, "pid": 9960, "text": "Actually, can we", "src": "ws", "recv": 16386.3973851, "lt": 16386.384305560998, "tt": 1.2996}
+{"stage": "asr_partial", "t": 16355.286222321, "pid": 9960, "text": "Actually, can we talk about", "src": "ws", "recv": 16386.6377843, "lt": 16386.624896398, "tt": 1.5402}
+{"stage": "asr_partial", "t": 16355.525283122, "pid": 9960, "text": "Actually, can we talk about on", "src": "ws", "recv": 16386.8769104, "lt": 16386.863957199, "tt": 1.7793}
+{"stage": "asr_partial", "t": 16355.766486581, "pid": 9960, "text": "Actually, can we talk about online", "src": "ws", "recv": 16387.1184839, "lt": 16387.105160658, "tt": 2.0205}
+{"stage": "asr_partial", "t": 16356.005095424, "pid": 9960, "text": "Actually, can we talk about online shopping", "src": "ws", "recv": 16387.3569503, "lt": 16387.343769501, "tt": 2.2591}
+{"stage": "asr_partial", "t": 16356.24656638, "pid": 9960, "text": "Actually, can we talk about online shopping in", "src": "ws", "recv": 16387.5981741, "lt": 16387.585240457, "tt": 2.5006}
+{"stage": "asr_partial", "t": 16356.452588756, "pid": 9960, "text": "Actually, can we talk about online shopping instead?", "src": "ws", "recv": 16387.8046576, "lt": 16387.791262833, "tt": 2.7066}
+{"stage": "llm_request", "t": 16356.490140254, "pid": 9960, "speculative": true, "messages": 18, "chars": 10215, "est_tokens": 2554, "src": "ws", "recv": 16387.8417457, "lt": 16387.828814331, "tt": 2.7442}
+{"stage": "vad_end", "t": 16356.513849479, "pid": 9960, "src": "ws", "recv": 16387.8689481, "lt": 16387.852523556, "tt": 2.7679}
+{"stage": "vad_end", "t": 16356.51390933, "pid": 9960, "src": "ws", "recv": 16387.8689696, "lt": 16387.852583407002, "tt": 2.7679}
+{"stage": "asr_final", "t": 16356.539955249, "pid": 9960, "text": "Actually, can we talk about online shopping instead?", "src": "ws", "recv": 16387.8962043, "lt": 16387.878629326, "tt": 2.794}
+{"stage": "user_stopped", "t": 16356.551963841, "pid": 9960, "src": "ws", "recv": 16387.9072779, "lt": 16387.890637918, "tt": 2.806}
+{"stage": "user_stopped", "t": 16356.552097191, "pid": 9960, "src": "ws", "recv": 16387.9072992, "lt": 16387.890771268, "tt": 2.8061}
+{"stage": "llm_first_token", "t": 16356.558759109, "pid": 9960, "src": "ws", "recv": 16387.9160822, "lt": 16387.897433186, "tt": 2.8128}

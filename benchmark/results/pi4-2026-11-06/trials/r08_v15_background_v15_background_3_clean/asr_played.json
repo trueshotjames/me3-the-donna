@@ -1,0 +1,41 @@
+{
+  "text": "What's the time in Tokyo?",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.26,
+        0.38
+      ]
+    },
+    {
+      "text": "time",
+      "timestamp": [
+        0.38,
+        0.68
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        0.68,
+        0.86
+      ]
+    },
+    {
+      "text": "Tokyo?",
+      "timestamp": [
+        0.86,
+        1.12
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

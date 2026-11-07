@@ -1,0 +1,50 @@
+{"stage": "vad_start", "t": 18477.078085352, "pid": 9960, "src": "ws", "recv": 18508.4640161, "lt": 18508.416759429, "tt": 0.1321}
+{"stage": "vad_start", "t": 18477.078182277, "pid": 9960, "src": "ws", "recv": 18508.4640353, "lt": 18508.416856354, "tt": 0.1322}
+{"stage": "interrupted", "t": 18477.563930265, "pid": 9960, "src": "ws", "recv": 18508.9497608, "lt": 18508.902604342, "tt": 0.618}
+{"stage": "interrupted", "t": 18477.56404793, "pid": 9960, "src": "ws", "recv": 18508.9497846, "lt": 18508.902722007, "tt": 0.6181}
+{"stage": "asr_partial", "t": 18477.685595436, "pid": 9960, "text": "Give me a", "src": "ws", "recv": 18509.0700825, "lt": 18509.024269513, "tt": 0.7396}
+{"stage": "asr_partial", "t": 18477.881750354, "pid": 9960, "text": "Give me a phone", "src": "ws", "recv": 18509.2666543, "lt": 18509.220424431, "tt": 0.9358}
+{"stage": "asr_partial", "t": 18478.126974365, "pid": 9960, "text": "Give me a fun fact", "src": "ws", "recv": 18509.5144089, "lt": 18509.465648442, "tt": 1.181}
+{"stage": "asr_partial", "t": 18478.364147212, "pid": 9960, "text": "Give me a fun fact about", "src": "ws", "recv": 18509.7488186, "lt": 18509.702821289, "tt": 1.4182}
+{"stage": "asr_partial", "t": 18478.602615105, "pid": 9960, "text": "Give me a fun fact about", "src": "ws", "recv": 18509.9889575, "lt": 18509.941289182, "tt": 1.6567}
+{"stage": "asr_partial", "t": 18478.8423386, "pid": 9960, "text": "Give me a fun fact about golf.", "src": "ws", "recv": 18510.2270196, "lt": 18510.181012677, "tt": 1.8964}
+{"stage": "asr_partial", "t": 18478.965538999, "pid": 9960, "text": "Give me a fun fact about dolphins", "src": "ws", "recv": 18510.3500826, "lt": 18510.304213076, "tt": 2.0196}
+{"stage": "asr_partial", "t": 18479.001469187, "pid": 9960, "text": "Give me a fun fact about dolphins.", "src": "ws", "recv": 18510.3859287, "lt": 18510.340143264, "tt": 2.0555}
+{"stage": "llm_request", "t": 18479.087039539, "pid": 9960, "speculative": true, "messages": 16, "chars": 9931, "est_tokens": 2483, "src": "ws", "recv": 18510.4738514, "lt": 18510.425713616, "tt": 2.1411}
+{"stage": "vad_end", "t": 18479.190493097, "pid": 9960, "src": "ws", "recv": 18510.574736, "lt": 18510.529167174, "tt": 2.2445}
+{"stage": "vad_end", "t": 18479.190559875, "pid": 9960, "src": "ws", "recv": 18510.574759, "lt": 18510.529233952002, "tt": 2.2446}
+{"stage": "asr_partial", "t": 18479.321787438, "pid": 9960, "text": "Give me a fun fact about dolphins.", "src": "ws", "recv": 18510.7064047, "lt": 18510.660461515, "tt": 2.3758}
+{"stage": "asr_partial", "t": 18479.567212465, "pid": 9960, "text": "Give me a fun fact about dolphins.", "src": "ws", "recv": 18510.9531113, "lt": 18510.905886542, "tt": 2.6213}
+{"stage": "asr_final", "t": 18479.728234204, "pid": 9960, "text": "Give me a fun fact about dolphins.", "src": "ws", "recv": 18511.1181193, "lt": 18511.066908281, "tt": 2.7823}
+{"stage": "user_stopped", "t": 18479.746984663, "pid": 9960, "src": "ws", "recv": 18511.1443856, "lt": 18511.08565874, "tt": 2.801}
+{"stage": "user_stopped", "t": 18479.747053626, "pid": 9960, "src": "ws", "recv": 18511.1444095, "lt": 18511.085727703, "tt": 2.8011}
+{"stage": "llm_first_token", "t": 18479.752485587, "pid": 9960, "src": "ws", "recv": 18511.1525346, "lt": 18511.091159664, "tt": 2.8065}
+{"stage": "llm_usage", "t": 18479.76412293, "pid": 9960, "prompt_tokens": 2477, "completion_tokens": 37, "src": "ws", "recv": 18511.1576935, "lt": 18511.102797007, "tt": 2.8182}
+{"stage": "tts_request", "t": 18479.803959979, "pid": 9960, "src": "ws", "recv": 18511.1957861, "lt": 18511.142634056, "tt": 2.858}
+{"stage": "tts_first_audio", "t": 18479.978518324, "pid": 9960, "src": "ws", "recv": 18511.3633402, "lt": 18511.317192401, "tt": 3.0326}
+{"stage": "audio_out", "t": 18479.983902379, "pid": 9960, "src": "ws", "recv": 18511.3756111, "lt": 18511.322576456, "tt": 3.038}
+{"stage": "audio_out", "t": 18479.983987822, "pid": 9960, "src": "ws", "recv": 18511.3756312, "lt": 18511.322661899, "tt": 3.038}
+{"stage": "vad_start", "t": 18481.779760205, "pid": 9960, "src": "ws", "recv": 18513.1641757, "lt": 18513.118434282, "tt": 4.8338}
+{"stage": "vad_start", "t": 18481.779817649, "pid": 9960, "src": "ws", "recv": 18513.1641958, "lt": 18513.118491726, "tt": 4.8339}
+{"stage": "asr_partial", "t": 18482.409408565, "pid": 9960, "text": "Rumi", "src": "ws", "recv": 18513.8001239, "lt": 18513.748082642, "tt": 5.4635}
+{"stage": "interrupted", "t": 18482.413769145, "pid": 9960, "src": "ws", "recv": 18513.8035557, "lt": 18513.752443222, "tt": 5.4678}
+{"stage": "interrupted", "t": 18482.413898385, "pid": 9960, "src": "ws", "recv": 18513.8035752, "lt": 18513.752572462, "tt": 5.4679}
+{"stage": "bot_stopped", "t": 18482.448477507, "pid": 9960, "src": "ws", "recv": 18513.83825, "lt": 18513.787151584, "tt": 5.5025}
+{"stage": "bot_stopped", "t": 18482.449037337, "pid": 9960, "src": "ws", "recv": 18513.8382878, "lt": 18513.787711414, "tt": 5.5031}
+{"stage": "asr_partial", "t": 18482.61175643, "pid": 9960, "text": "Rumi fridge is", "src": "ws", "recv": 18513.9975238, "lt": 18513.950430507, "tt": 5.6658}
+{"stage": "asr_partial", "t": 18482.84254898, "pid": 9960, "text": "Rumi fridges after", "src": "ws", "recv": 18514.2276394, "lt": 18514.181223057, "tt": 5.8966}
+{"stage": "asr_partial", "t": 18483.091284937, "pid": 9960, "text": "Rumi fridges empty again", "src": "ws", "recv": 18514.4769938, "lt": 18514.429959014, "tt": 6.1453}
+{"stage": "asr_partial", "t": 18483.161789802, "pid": 9960, "text": "Rumi, fridge is empty again.", "src": "ws", "recv": 18514.5464202, "lt": 18514.500463879, "tt": 6.2158}
+{"stage": "asr_partial", "t": 18483.285783283, "pid": 9960, "text": "Rumi, fridge is empty again.", "src": "ws", "recv": 18514.6704403, "lt": 18514.62445736, "tt": 6.3398}
+{"stage": "llm_request", "t": 18483.325770737, "pid": 9960, "speculative": true, "messages": 17, "chars": 9959, "est_tokens": 2490, "src": "ws", "recv": 18514.7102094, "lt": 18514.664444814, "tt": 6.3798}
+{"stage": "llm_cancel", "t": 18483.573062852, "pid": 9960, "src": "ws", "recv": 18514.9586795, "lt": 18514.911736929, "tt": 6.6271}
+{"stage": "asr_partial", "t": 18483.80202282, "pid": 9960, "text": "Rumi, fridge is empty again. Grocery", "src": "ws", "recv": 18515.186622, "lt": 18515.140696897, "tt": 6.8561}
+{"stage": "asr_partial", "t": 18483.883580883, "pid": 9960, "text": "Rumi, fridge is empty again. Groceries,", "src": "ws", "recv": 18515.2700195, "lt": 18515.22225496, "tt": 6.9376}
+{"stage": "asr_partial", "t": 18483.963055238, "pid": 9960, "text": "Rumi, fridge is empty again. Groceries?", "src": "ws", "recv": 18515.3476746, "lt": 18515.301729315, "tt": 7.0171}
+{"stage": "vad_end", "t": 18484.01696437, "pid": 9960, "src": "ws", "recv": 18515.4060769, "lt": 18515.355638447, "tt": 7.071}
+{"stage": "vad_end", "t": 18484.01702998, "pid": 9960, "src": "ws", "recv": 18515.4061013, "lt": 18515.355704057, "tt": 7.0711}
+{"stage": "llm_request", "t": 18484.027689774, "pid": 9960, "speculative": true, "messages": 17, "chars": 9970, "est_tokens": 2492, "src": "ws", "recv": 18515.4129841, "lt": 18515.366363851, "tt": 7.0817}
+{"stage": "asr_final", "t": 18484.091233614, "pid": 9960, "text": "Rumi, fridge is empty again. Groceries?", "src": "ws", "recv": 18515.4820931, "lt": 18515.429907691, "tt": 7.1453}
+{"stage": "user_stopped", "t": 18484.10559014, "pid": 9960, "src": "ws", "recv": 18515.4936247, "lt": 18515.444264217, "tt": 7.1596}
+{"stage": "user_stopped", "t": 18484.105658177, "pid": 9960, "src": "ws", "recv": 18515.4936455, "lt": 18515.444332254, "tt": 7.1597}
+{"stage": "llm_first_token", "t": 18484.112146686, "pid": 9960, "src": "ws", "recv": 18515.5014187, "lt": 18515.450820763, "tt": 7.1662}

@@ -1,0 +1,244 @@
+{
+  "text": "astronomy explores the universe beyond Earth, from nearby planets to the farthest galaxies. It studies how light, gravity, and matter interact across billions of years. Stars form from collapsing clouds of gas and dust.",
+  "chunks": [
+    {
+      "text": "astronomy",
+      "timestamp": [
+        0.0,
+        1.18
+      ]
+    },
+    {
+      "text": "explores",
+      "timestamp": [
+        2.81,
+        3.63
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.63,
+        3.95
+      ]
+    },
+    {
+      "text": "universe",
+      "timestamp": [
+        3.95,
+        4.31
+      ]
+    },
+    {
+      "text": "beyond",
+      "timestamp": [
+        4.31,
+        4.73
+      ]
+    },
+    {
+      "text": "Earth,",
+      "timestamp": [
+        4.73,
+        5.19
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        5.79,
+        5.97
+      ]
+    },
+    {
+      "text": "nearby",
+      "timestamp": [
+        5.97,
+        6.27
+      ]
+    },
+    {
+      "text": "planets",
+      "timestamp": [
+        6.27,
+        6.87
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        6.87,
+        7.29
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        7.29,
+        7.45
+      ]
+    },
+    {
+      "text": "farthest",
+      "timestamp": [
+        7.45,
+        7.83
+      ]
+    },
+    {
+      "text": "galaxies.",
+      "timestamp": [
+        7.83,
+        8.37
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        8.75,
+        8.83
+      ]
+    },
+    {
+      "text": "studies",
+      "timestamp": [
+        8.83,
+        9.27
+      ]
+    },
+    {
+      "text": "how",
+      "timestamp": [
+        9.27,
+        9.53
+      ]
+    },
+    {
+      "text": "light,",
+      "timestamp": [
+        9.53,
+        9.91
+      ]
+    },
+    {
+      "text": "gravity,",
+      "timestamp": [
+        10.31,
+        10.59
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        10.83,
+        10.95
+      ]
+    },
+    {
+      "text": "matter",
+      "timestamp": [
+        10.95,
+        11.31
+      ]
+    },
+    {
+      "text": "interact",
+      "timestamp": [
+        11.31,
+        12.07
+      ]
+    },
+    {
+      "text": "across",
+      "timestamp": [
+        12.07,
+        12.47
+      ]
+    },
+    {
+      "text": "billions",
+      "timestamp": [
+        12.47,
+        13.29
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        13.29,
+        13.69
+      ]
+    },
+    {
+      "text": "years.",
+      "timestamp": [
+        13.69,
+        14.03
+      ]
+    },
+    {
+      "text": "Stars",
+      "timestamp": [
+        14.35,
+        14.55
+      ]
+    },
+    {
+      "text": "form",
+      "timestamp": [
+        14.55,
+        15.03
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        15.03,
+        15.25
+      ]
+    },
+    {
+      "text": "collapsing",
+      "timestamp": [
+        15.25,
+        15.75
+      ]
+    },
+    {
+      "text": "clouds",
+      "timestamp": [
+        15.75,
+        16.25
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        16.25,
+        16.41
+      ]
+    },
+    {
+      "text": "gas",
+      "timestamp": [
+        16.41,
+        16.67
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        16.67,
+        16.87
+      ]
+    },
+    {
+      "text": "dust.",
+      "timestamp": [
+        16.87,
+        17.19
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

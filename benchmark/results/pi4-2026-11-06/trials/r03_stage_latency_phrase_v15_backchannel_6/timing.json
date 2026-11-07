@@ -1,0 +1,77 @@
+{
+  "trial": "r03_stage_latency_phrase_v15_backchannel_6",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_6",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 10.4,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.392
+    }
+  ],
+  "live_bot_starts": [
+    0.0
+  ],
+  "live_bot_ends": [
+    0.224
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Discuss climate change exhaustively.",
+    "source": "v15_backchannel_6"
+  },
+  "mono": [
+    16005.9780232,
+    16016.350222
+  ],
+  "bot_segments": [],
+  "play_first": [
+    0.0,
+    2.392
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "user_end": 2.142,
+  "latency": null,
+  "actual": "no reply",
+  "verdict": "✗ no reply",
+  "ok": false,
+  "marks": 26,
+  "final": {
+    "stages": {
+      "e2e_heard": null,
+      "e2e": null,
+      "e2e_source": null,
+      "asr_final": 1.1272,
+      "llm_ttft": 0.0119,
+      "tts_ttfb": null,
+      "endpointing": 0.1421,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request"
+      ],
+      "transcript": "Discuss climate change exhaustively.",
+      "wer": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2634,
+      "context_source": "usage",
+      "context_messages": 48
+    },
+    "transcript": "in the"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

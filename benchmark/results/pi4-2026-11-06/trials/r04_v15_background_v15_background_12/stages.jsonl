@@ -1,0 +1,42 @@
+{"stage": "vad_start", "t": 17101.195842421, "pid": 9960, "src": "ws", "recv": 17132.5606157, "lt": 17132.534516498, "tt": 0.1858}
+{"stage": "vad_start", "t": 17101.195936272, "pid": 9960, "src": "ws", "recv": 17132.5606382, "lt": 17132.534610349, "tt": 0.1858}
+{"stage": "interrupted", "t": 17101.689807857, "pid": 9960, "src": "ws", "recv": 17133.0543665, "lt": 17133.028481934, "tt": 0.6797}
+{"stage": "interrupted", "t": 17101.689900078, "pid": 9960, "src": "ws", "recv": 17133.054385, "lt": 17133.028574155, "tt": 0.6798}
+{"stage": "asr_partial", "t": 17101.804436351, "pid": 9960, "text": "Check the", "src": "ws", "recv": 17133.1677403, "lt": 17133.143110428, "tt": 0.7943}
+{"stage": "asr_partial", "t": 17102.04376362, "pid": 9960, "text": "Check the status of", "src": "ws", "recv": 17133.4066334, "lt": 17133.382437697, "tt": 1.0337}
+{"stage": "asr_partial", "t": 17102.285416952, "pid": 9960, "text": "Check the status of my", "src": "ws", "recv": 17133.6495302, "lt": 17133.624091029, "tt": 1.2753}
+{"stage": "asr_partial", "t": 17102.523960434, "pid": 9960, "text": "Check the status of my flight", "src": "ws", "recv": 17133.8872691, "lt": 17133.862634511, "tt": 1.5139}
+{"stage": "vad_end", "t": 17102.696120571, "pid": 9960, "src": "ws", "recv": 17134.0598308, "lt": 17134.034794648, "tt": 1.686}
+{"stage": "vad_end", "t": 17102.69617544, "pid": 9960, "src": "ws", "recv": 17134.0598533, "lt": 17134.034849517, "tt": 1.6861}
+{"stage": "asr_partial", "t": 17102.769215164, "pid": 9960, "text": "Check the status of my flight.", "src": "ws", "recv": 17134.1336629, "lt": 17134.107889241, "tt": 1.7591}
+{"stage": "llm_request", "t": 17102.773045597, "pid": 9960, "speculative": true, "messages": 14, "chars": 9829, "est_tokens": 2457, "src": "ws", "recv": 17134.1408237, "lt": 17134.111719674, "tt": 1.763}
+{"stage": "asr_partial", "t": 17103.005261141, "pid": 9960, "text": "Check the status of my flight.", "src": "ws", "recv": 17134.3687009, "lt": 17134.343935218, "tt": 1.9952}
+{"stage": "asr_final", "t": 17103.215131968, "pid": 9960, "text": "Check the status of my flight.", "src": "ws", "recv": 17134.5794311, "lt": 17134.553806045, "tt": 2.205}
+{"stage": "user_stopped", "t": 17103.221916271, "pid": 9960, "src": "ws", "recv": 17134.5876171, "lt": 17134.560590348, "tt": 2.2118}
+{"stage": "user_stopped", "t": 17103.221984881, "pid": 9960, "src": "ws", "recv": 17134.587643, "lt": 17134.560658958, "tt": 2.2119}
+{"stage": "llm_first_token", "t": 17103.284489979, "pid": 9960, "src": "ws", "recv": 17134.648475, "lt": 17134.623164056, "tt": 2.2744}
+{"stage": "llm_usage", "t": 17103.300502573, "pid": 9960, "prompt_tokens": 2503, "completion_tokens": 42, "src": "ws", "recv": 17134.6669773, "lt": 17134.639176650002, "tt": 2.2904}
+{"stage": "tts_request", "t": 17103.323761353, "pid": 9960, "src": "ws", "recv": 17134.6910568, "lt": 17134.66243543, "tt": 2.3137}
+{"stage": "tts_first_audio", "t": 17103.537696331, "pid": 9960, "src": "ws", "recv": 17134.9025179, "lt": 17134.876370408, "tt": 2.5276}
+{"stage": "audio_out", "t": 17103.544791631, "pid": 9960, "src": "ws", "recv": 17134.9134705, "lt": 17134.883465708, "tt": 2.5347}
+{"stage": "audio_out", "t": 17103.544879204, "pid": 9960, "src": "ws", "recv": 17134.9134875, "lt": 17134.883553281, "tt": 2.5348}
+{"stage": "vad_start", "t": 17105.322463235, "pid": 9960, "src": "ws", "recv": 17136.6870745, "lt": 17136.661137312, "tt": 4.3124}
+{"stage": "vad_start", "t": 17105.322528123, "pid": 9960, "src": "ws", "recv": 17136.6870962, "lt": 17136.6612022, "tt": 4.3124}
+{"stage": "asr_partial", "t": 17105.453551114, "pid": 9960, "text": "My", "src": "ws", "recv": 17136.8169058, "lt": 17136.792225191, "tt": 4.4435}
+{"stage": "bot_stopped", "t": 17105.473629286, "pid": 9960, "src": "ws", "recv": 17136.8389071, "lt": 17136.812303363, "tt": 4.4635}
+{"stage": "bot_stopped", "t": 17105.474037947, "pid": 9960, "src": "ws", "recv": 17136.8389258, "lt": 17136.812712024, "tt": 4.4639}
+{"stage": "llm_request", "t": 17105.481118191, "pid": 9960, "messages": 15, "chars": 9869, "est_tokens": 2467, "src": "ws", "recv": 17136.8442746, "lt": 17136.819792268, "tt": 4.471}
+{"stage": "interrupted", "t": 17105.693058973, "pid": 9960, "src": "ws", "recv": 17137.0578979, "lt": 17137.03173305, "tt": 4.683}
+{"stage": "interrupted", "t": 17105.693150342, "pid": 9960, "src": "ws", "recv": 17137.0579198, "lt": 17137.031824419, "tt": 4.6831}
+{"stage": "asr_partial", "t": 17105.930540339, "pid": 9960, "text": "Mom, have you", "src": "ws", "recv": 17137.2939193, "lt": 17137.269214416, "tt": 4.9205}
+{"stage": "asr_partial", "t": 17106.166955293, "pid": 9960, "text": "Mom, have you fed the", "src": "ws", "recv": 17137.5304639, "lt": 17137.50562937, "tt": 5.1569}
+{"stage": "asr_partial", "t": 17106.419138084, "pid": 9960, "text": "Mom, have you fed the cat", "src": "ws", "recv": 17137.7833328, "lt": 17137.757812161, "tt": 5.409}
+{"stage": "asr_partial", "t": 17106.603827007, "pid": 9960, "text": "Mom, have you fed the cat yet?", "src": "ws", "recv": 17137.9671923, "lt": 17137.942501084, "tt": 5.5937}
+{"stage": "asr_partial", "t": 17106.643898556, "pid": 9960, "text": "Mom, have you fed the cat yet?", "src": "ws", "recv": 17138.0073386, "lt": 17137.982572633002, "tt": 5.6338}
+{"stage": "vad_end", "t": 17106.725302008, "pid": 9960, "src": "ws", "recv": 17138.0934411, "lt": 17138.063976085, "tt": 5.7152}
+{"stage": "vad_end", "t": 17106.725355396, "pid": 9960, "src": "ws", "recv": 17138.0934652, "lt": 17138.064029473, "tt": 5.7153}
+{"stage": "llm_request", "t": 17106.736403941, "pid": 9960, "speculative": true, "messages": 16, "chars": 9899, "est_tokens": 2475, "src": "ws", "recv": 17138.1003564, "lt": 17138.075078018, "tt": 5.7263}
+{"stage": "asr_final", "t": 17106.860835016, "pid": 9960, "text": "Mom, have you fed the cat yet?", "src": "ws", "recv": 17138.2256061, "lt": 17138.199509093, "tt": 5.8507}
+{"stage": "user_stopped", "t": 17106.868608751, "pid": 9960, "src": "ws", "recv": 17138.2358127, "lt": 17138.207282828, "tt": 5.8585}
+{"stage": "user_stopped", "t": 17106.868676768, "pid": 9960, "src": "ws", "recv": 17138.2358342, "lt": 17138.207350845, "tt": 5.8586}
+{"stage": "llm_first_token", "t": 17106.871824265, "pid": 9960, "src": "ws", "recv": 17138.239296, "lt": 17138.210498342, "tt": 5.8617}

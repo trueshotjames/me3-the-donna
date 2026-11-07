@@ -1,0 +1,25 @@
+{"stage": "vad_start", "t": 16104.377887857, "pid": 9960, "src": "ws", "recv": 16135.7268395, "lt": 16135.716561934, "tt": 0.2317}
+{"stage": "vad_start", "t": 16104.37797593, "pid": 9960, "src": "ws", "recv": 16135.7268631, "lt": 16135.716650007, "tt": 0.2318}
+{"stage": "interrupted", "t": 16104.806607046, "pid": 9960, "src": "ws", "recv": 16136.1556953, "lt": 16136.145281123001, "tt": 0.6605}
+{"stage": "interrupted", "t": 16104.806696415, "pid": 9960, "src": "ws", "recv": 16136.1557169, "lt": 16136.145370492, "tt": 0.6606}
+{"stage": "asr_partial", "t": 16104.924304, "pid": 9960, "text": "Translate", "src": "ws", "recv": 16136.2720914, "lt": 16136.262978077, "tt": 0.7782}
+{"stage": "asr_partial", "t": 16105.127954041, "pid": 9960, "text": "Translate good", "src": "ws", "recv": 16136.4757474, "lt": 16136.466628118, "tt": 0.9818}
+{"stage": "asr_partial", "t": 16105.411687519, "pid": 9960, "text": "Translate good morning", "src": "ws", "recv": 16136.7600381, "lt": 16136.750361596, "tt": 1.2655}
+{"stage": "asr_partial", "t": 16105.606112248, "pid": 9960, "text": "Translate good morning and", "src": "ws", "recv": 16136.9539125, "lt": 16136.944786325, "tt": 1.46}
+{"stage": "asr_partial", "t": 16105.884526033, "pid": 9960, "text": "Translate good morning into", "src": "ws", "recv": 16137.2325877, "lt": 16137.22320011, "tt": 1.7384}
+{"stage": "asr_partial", "t": 16106.172170444, "pid": 9960, "text": "Translate good morning into Spanish.", "src": "ws", "recv": 16137.5203586, "lt": 16137.510844521, "tt": 2.026}
+{"stage": "vad_end", "t": 16106.231910855, "pid": 9960, "src": "ws", "recv": 16137.5840282, "lt": 16137.570584932, "tt": 2.0858}
+{"stage": "vad_end", "t": 16106.231962743, "pid": 9960, "src": "ws", "recv": 16137.5840498, "lt": 16137.57063682, "tt": 2.0858}
+{"stage": "llm_request", "t": 16106.242195209, "pid": 9960, "speculative": true, "messages": 62, "chars": 16325, "est_tokens": 4081, "src": "ws", "recv": 16137.5910539, "lt": 16137.580869286001, "tt": 2.0961}
+{"stage": "asr_final", "t": 16106.315827337, "pid": 9960, "text": "Translate good morning into Spanish.", "src": "ws", "recv": 16137.6670624, "lt": 16137.654501414001, "tt": 2.1697}
+{"stage": "user_stopped", "t": 16106.326457798, "pid": 9960, "src": "ws", "recv": 16137.6793243, "lt": 16137.665131875001, "tt": 2.1803}
+{"stage": "user_stopped", "t": 16106.32660376, "pid": 9960, "src": "ws", "recv": 16137.6793446, "lt": 16137.665277837, "tt": 2.1805}
+{"stage": "llm_first_token", "t": 16106.87397426, "pid": 9960, "src": "ws", "recv": 16138.2233778, "lt": 16138.212648337, "tt": 2.7278}
+{"stage": "llm_usage", "t": 16107.029227084, "pid": 9960, "prompt_tokens": 2513, "completion_tokens": 22, "src": "ws", "recv": 16138.379217, "lt": 16138.367901161, "tt": 2.8831}
+{"stage": "tts_request", "t": 16107.044876558, "pid": 9960, "src": "ws", "recv": 16138.3955729, "lt": 16138.383550635, "tt": 2.8987}
+{"stage": "tts_first_audio", "t": 16107.08183712, "pid": 9960, "src": "ws", "recv": 16138.4304796, "lt": 16138.420511197, "tt": 2.9357}
+{"stage": "audio_out", "t": 16107.08868735, "pid": 9960, "src": "ws", "recv": 16138.4417458, "lt": 16138.427361427, "tt": 2.9425}
+{"stage": "audio_out", "t": 16107.08877083, "pid": 9960, "src": "ws", "recv": 16138.4417667, "lt": 16138.427444907, "tt": 2.9426}
+{"stage": "bot_stopped", "t": 16108.936377239, "pid": 9960, "src": "ws", "recv": 16140.2845172, "lt": 16140.275051316, "tt": 4.7902}
+{"stage": "bot_stopped", "t": 16108.936460127, "pid": 9960, "src": "ws", "recv": 16140.2845486, "lt": 16140.275134204001, "tt": 4.7903}
+{"stage": "llm_request", "t": 16108.94263131, "pid": 9960, "messages": 63, "chars": 16337, "est_tokens": 4084, "src": "ws", "recv": 16140.2901844, "lt": 16140.281305387, "tt": 4.7965}

@@ -1,0 +1,70 @@
+{
+  "trial": "r10_v1_pause_synth_v1_pause_synth_49",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_49",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 14.048,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 9.248
+    }
+  ],
+  "live_bot_starts": [
+    0.032,
+    9.696
+  ],
+  "live_bot_ends": [
+    0.32,
+    13.696
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      5.9399999999999995,
+      7.2
+    ],
+    "source_id": "49",
+    "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town [UH] yeah, maybe somewhere like the mountains or maybe somewhere by the."
+  },
+  "mono": [
+    18696.0479905,
+    18710.0787483
+  ],
+  "bot_segments": [
+    [
+      0.002,
+      0.35
+    ],
+    [
+      9.666,
+      13.726
+    ]
+  ],
+  "play_first": [
+    0.0,
+    9.248
+  ],
+  "tor": 0,
+  "first_start": 0.002,
+  "spoke_s": 0.348,
+  "cut_in_during_pause": false,
+  "actual": "spoke 0.3 s at 0.0 s",
+  "verdict": "✓ TOR 0?",
+  "ok": true,
+  "marks": 63,
+  "final": {
+    "tor": 0,
+    "words": 1,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "Do you have a specific mountain area or distance in mind for the weekend trip?"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

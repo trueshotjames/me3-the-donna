@@ -1,0 +1,34 @@
+{
+  "text": "Define the word ephemeral.",
+  "chunks": [
+    {
+      "text": "Define",
+      "timestamp": [
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.4,
+        0.48
+      ]
+    },
+    {
+      "text": "word",
+      "timestamp": [
+        0.48,
+        0.7
+      ]
+    },
+    {
+      "text": "ephemeral.",
+      "timestamp": [
+        0.7,
+        1.36
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

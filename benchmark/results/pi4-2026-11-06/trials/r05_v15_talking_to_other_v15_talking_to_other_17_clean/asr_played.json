@@ -1,0 +1,48 @@
+{
+  "text": "What movies are playing nearby tonight?",
+  "chunks": [
+    {
+      "text": "What",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "movies",
+      "timestamp": [
+        0.18,
+        0.5
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        0.5,
+        0.74
+      ]
+    },
+    {
+      "text": "playing",
+      "timestamp": [
+        0.74,
+        1.0
+      ]
+    },
+    {
+      "text": "nearby",
+      "timestamp": [
+        1.0,
+        1.36
+      ]
+    },
+    {
+      "text": "tonight?",
+      "timestamp": [
+        1.36,
+        1.74
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

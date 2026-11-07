@@ -1,0 +1,69 @@
+{
+  "text": "Present a thorough explanation of global warming. Yes, yeah.",
+  "chunks": [
+    {
+      "text": "Present",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.26,
+        0.48
+      ]
+    },
+    {
+      "text": "thorough",
+      "timestamp": [
+        0.48,
+        0.66
+      ]
+    },
+    {
+      "text": "explanation",
+      "timestamp": [
+        0.66,
+        1.22
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        1.22,
+        1.5
+      ]
+    },
+    {
+      "text": "global",
+      "timestamp": [
+        1.5,
+        1.78
+      ]
+    },
+    {
+      "text": "warming.",
+      "timestamp": [
+        1.78,
+        2.24
+      ]
+    },
+    {
+      "text": "Yes,",
+      "timestamp": [
+        5.37,
+        5.93
+      ]
+    },
+    {
+      "text": "yeah.",
+      "timestamp": [
+        6.09,
+        6.23
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

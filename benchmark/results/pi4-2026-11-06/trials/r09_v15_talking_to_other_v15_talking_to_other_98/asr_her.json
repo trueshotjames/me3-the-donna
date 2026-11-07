@@ -1,0 +1,41 @@
+{
+  "text": "Dolphins can recognize themselves as",
+  "chunks": [
+    {
+      "text": "Dolphins",
+      "timestamp": [
+        2.7,
+        3.6
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        3.6,
+        3.76
+      ]
+    },
+    {
+      "text": "recognize",
+      "timestamp": [
+        3.76,
+        4.26
+      ]
+    },
+    {
+      "text": "themselves",
+      "timestamp": [
+        4.26,
+        4.72
+      ]
+    },
+    {
+      "text": "as",
+      "timestamp": [
+        4.72,
+        4.92
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

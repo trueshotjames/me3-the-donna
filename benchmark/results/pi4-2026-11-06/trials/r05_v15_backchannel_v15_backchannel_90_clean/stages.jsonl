@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 17470.24418904, "pid": 9960, "src": "ws", "recv": 17501.6136856, "lt": 17501.582863117, "tt": 0.2101}
+{"stage": "vad_start", "t": 17470.244259521, "pid": 9960, "src": "ws", "recv": 17501.6137083, "lt": 17501.582933598, "tt": 0.2101}
+{"stage": "asr_partial", "t": 17470.449547329, "pid": 9960, "text": "This", "src": "ws", "recv": 17501.8193517, "lt": 17501.788221406, "tt": 0.4154}
+{"stage": "asr_partial", "t": 17470.927012233, "pid": 9960, "text": "Discuss more", "src": "ws", "recv": 17502.2993323, "lt": 17502.265686310002, "tt": 0.8929}
+{"stage": "interrupted", "t": 17470.92986653, "pid": 9960, "src": "ws", "recv": 17502.301326, "lt": 17502.268540607, "tt": 0.8957}
+{"stage": "interrupted", "t": 17470.929955214, "pid": 9960, "src": "ws", "recv": 17502.3013451, "lt": 17502.268629291, "tt": 0.8958}
+{"stage": "bot_stopped", "t": 17470.975959895, "pid": 9960, "src": "ws", "recv": 17502.3463646, "lt": 17502.314633972, "tt": 0.9418}
+{"stage": "bot_stopped", "t": 17470.976090431, "pid": 9960, "src": "ws", "recv": 17502.3463888, "lt": 17502.314764508, "tt": 0.942}
+{"stage": "llm_request", "t": 17470.989658612, "pid": 9960, "messages": 17, "chars": 10401, "est_tokens": 2600, "src": "ws", "recv": 17502.3611523, "lt": 17502.328332689, "tt": 0.9555}
+{"stage": "asr_partial", "t": 17471.168125294, "pid": 9960, "text": "Discuss moral", "src": "ws", "recv": 17502.5384829, "lt": 17502.506799371, "tt": 1.134}
+{"stage": "asr_partial", "t": 17471.404820855, "pid": 9960, "text": "Discuss moral dilemm", "src": "ws", "recv": 17502.774068, "lt": 17502.743494932, "tt": 1.3707}
+{"stage": "asr_partial", "t": 17471.606930462, "pid": 9960, "text": "Discuss moral dilemmas full", "src": "ws", "recv": 17502.9761925, "lt": 17502.945604539, "tt": 1.5728}
+{"stage": "asr_partial", "t": 17471.684781576, "pid": 9960, "text": "Discuss moral dilemmas fully", "src": "ws", "recv": 17503.0538637, "lt": 17503.023455653, "tt": 1.6507}
+{"stage": "vad_end", "t": 17471.775598323, "pid": 9960, "src": "ws", "recv": 17503.1495573, "lt": 17503.114272400002, "tt": 1.7415}
+{"stage": "vad_end", "t": 17471.775650766, "pid": 9960, "src": "ws", "recv": 17503.1495817, "lt": 17503.114324843, "tt": 1.7415}
+{"stage": "llm_request", "t": 17471.786209282, "pid": 9960, "speculative": true, "messages": 18, "chars": 10429, "est_tokens": 2607, "src": "ws", "recv": 17503.1558715, "lt": 17503.124883359, "tt": 1.7521}
+{"stage": "asr_partial", "t": 17471.827672983, "pid": 9960, "text": "Discuss moral dilemmas fully.", "src": "ws", "recv": 17503.2018529, "lt": 17503.16634706, "tt": 1.7936}
+{"stage": "asr_partial", "t": 17471.884963392, "pid": 9960, "text": "Discuss moral dilemmas fully.", "src": "ws", "recv": 17503.2541309, "lt": 17503.223637469, "tt": 1.8508}
+{"stage": "asr_partial", "t": 17472.105746375, "pid": 9960, "text": "Discuss moral dilemmas fully.", "src": "ws", "recv": 17503.4757761, "lt": 17503.444420452, "tt": 2.0716}
+{"stage": "llm_usage", "t": 17472.631553283, "pid": 9960, "prompt_tokens": 2624, "completion_tokens": 243, "src": "ws", "recv": 17504.0011529, "lt": 17503.97022736, "tt": 2.5974}
+{"stage": "asr_final", "t": 17472.90519012, "pid": 9960, "text": "Discuss moral dilemmas fully.", "src": "ws", "recv": 17504.2753927, "lt": 17504.243864197, "tt": 2.8711}
+{"stage": "user_stopped", "t": 17472.912229291, "pid": 9960, "src": "ws", "recv": 17504.297427, "lt": 17504.250903368, "tt": 2.8781}
+{"stage": "user_stopped", "t": 17472.912299587, "pid": 9960, "src": "ws", "recv": 17504.29745, "lt": 17504.250973664, "tt": 2.8782}
+{"stage": "llm_first_token", "t": 17472.917386634, "pid": 9960, "src": "ws", "recv": 17504.3114492, "lt": 17504.256060711, "tt": 2.8833}
+{"stage": "tts_request", "t": 17473.000122223, "pid": 9960, "src": "ws", "recv": 17504.3840532, "lt": 17504.3387963, "tt": 2.966}
+{"stage": "tts_first_audio", "t": 17473.231609294, "pid": 9960, "src": "ws", "recv": 17504.6004871, "lt": 17504.570283371, "tt": 3.1975}
+{"stage": "audio_out", "t": 17473.235900444, "pid": 9960, "src": "ws", "recv": 17504.609554, "lt": 17504.574574521, "tt": 3.2018}
+{"stage": "audio_out", "t": 17473.235984961, "pid": 9960, "src": "ws", "recv": 17504.6095747, "lt": 17504.574659038, "tt": 3.2019}

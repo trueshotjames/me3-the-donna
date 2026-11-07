@@ -1,0 +1,237 @@
+{
+  "text": "Start with basic chords like G, C, try a consistent bedtime. Dindalights an hour before, avoid screens, and keep the room cool and quiet. Start with basic chords like G, C, and D.",
+  "chunks": [
+    {
+      "text": "Start",
+      "timestamp": [
+        3.06,
+        3.58
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        3.58,
+        3.84
+      ]
+    },
+    {
+      "text": "basic",
+      "timestamp": [
+        3.84,
+        4.16
+      ]
+    },
+    {
+      "text": "chords",
+      "timestamp": [
+        4.16,
+        4.48
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        4.48,
+        4.72
+      ]
+    },
+    {
+      "text": "G,",
+      "timestamp": [
+        4.72,
+        5.02
+      ]
+    },
+    {
+      "text": "C,",
+      "timestamp": [
+        5.34,
+        5.72
+      ]
+    },
+    {
+      "text": "try",
+      "timestamp": [
+        8.99,
+        9.53
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        9.53,
+        9.69
+      ]
+    },
+    {
+      "text": "consistent",
+      "timestamp": [
+        9.69,
+        10.01
+      ]
+    },
+    {
+      "text": "bedtime.",
+      "timestamp": [
+        10.01,
+        10.47
+      ]
+    },
+    {
+      "text": "Dindalights",
+      "timestamp": [
+        11.23,
+        11.71
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        11.71,
+        11.85
+      ]
+    },
+    {
+      "text": "hour",
+      "timestamp": [
+        11.85,
+        12.05
+      ]
+    },
+    {
+      "text": "before,",
+      "timestamp": [
+        12.05,
+        12.39
+      ]
+    },
+    {
+      "text": "avoid",
+      "timestamp": [
+        13.01,
+        13.37
+      ]
+    },
+    {
+      "text": "screens,",
+      "timestamp": [
+        13.37,
+        13.81
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        14.53,
+        14.61
+      ]
+    },
+    {
+      "text": "keep",
+      "timestamp": [
+        14.61,
+        14.81
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        14.81,
+        14.99
+      ]
+    },
+    {
+      "text": "room",
+      "timestamp": [
+        14.99,
+        15.15
+      ]
+    },
+    {
+      "text": "cool",
+      "timestamp": [
+        15.15,
+        15.51
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        15.51,
+        15.71
+      ]
+    },
+    {
+      "text": "quiet.",
+      "timestamp": [
+        15.71,
+        16.07
+      ]
+    },
+    {
+      "text": "Start",
+      "timestamp": [
+        16.39,
+        16.69
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        16.69,
+        16.95
+      ]
+    },
+    {
+      "text": "basic",
+      "timestamp": [
+        16.95,
+        17.29
+      ]
+    },
+    {
+      "text": "chords",
+      "timestamp": [
+        17.29,
+        17.71
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        17.71,
+        18.03
+      ]
+    },
+    {
+      "text": "G,",
+      "timestamp": [
+        18.03,
+        18.45
+      ]
+    },
+    {
+      "text": "C,",
+      "timestamp": [
+        18.85,
+        19.19
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        19.73,
+        19.83
+      ]
+    },
+    {
+      "text": "D.",
+      "timestamp": [
+        19.83,
+        20.13
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

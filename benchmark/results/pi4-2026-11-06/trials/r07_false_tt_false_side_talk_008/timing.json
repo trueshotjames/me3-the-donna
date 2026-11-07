@@ -1,0 +1,53 @@
+{
+  "trial": "r07_false_tt_false_side_talk_008",
+  "group": "false_tt",
+  "clip": "false_side_talk_008",
+  "variant": "main",
+  "expected": "stay silent",
+  "duration": 10.208,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.183
+    }
+  ],
+  "live_bot_starts": [],
+  "live_bot_ends": [],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "kind": "side_talk",
+    "kind_label": "side talk",
+    "level_db": -8,
+    "text": "Chris, your laptop's still on the table, man.",
+    "source": "v15_talking_to_other_81"
+  },
+  "mono": [
+    17898.0256399,
+    17908.2221174
+  ],
+  "bot_segments": [],
+  "play_first": [
+    0.0,
+    2.183
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "actual": "silent",
+  "verdict": "✓ silent",
+  "ok": true,
+  "marks": 19,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ silent",
+    "ok": true,
+    "transcript": ""
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

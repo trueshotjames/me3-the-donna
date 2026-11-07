@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 16319.895792076, "pid": 9960, "src": "ws", "recv": 16351.2482905, "lt": 16351.234466153, "tt": 0.1978}
+{"stage": "vad_start", "t": 16319.895890945, "pid": 9960, "src": "ws", "recv": 16351.2483122, "lt": 16351.234565022, "tt": 0.1979}
+{"stage": "interrupted", "t": 16320.381075164, "pid": 9960, "src": "ws", "recv": 16351.7336167, "lt": 16351.719749241, "tt": 0.6831}
+{"stage": "interrupted", "t": 16320.381160348, "pid": 9960, "src": "ws", "recv": 16351.7336425, "lt": 16351.719834425001, "tt": 0.6832}
+{"stage": "asr_partial", "t": 16320.484915916, "pid": 9960, "text": "What's this", "src": "ws", "recv": 16351.835861, "lt": 16351.823589993, "tt": 0.7869}
+{"stage": "asr_partial", "t": 16320.648941738, "pid": 9960, "text": "What's the score", "src": "ws", "recv": 16352.0007205, "lt": 16351.987615815, "tt": 0.9509}
+{"stage": "asr_partial", "t": 16320.926153401, "pid": 9960, "text": "What's the score of", "src": "ws", "recv": 16352.2780279, "lt": 16352.264827478, "tt": 1.2281}
+{"stage": "asr_partial", "t": 16321.128660377, "pid": 9960, "text": "What's the score of the man", "src": "ws", "recv": 16352.4797869, "lt": 16352.467334454, "tt": 1.4307}
+{"stage": "asr_partial", "t": 16321.406232423, "pid": 9960, "text": "What's the score of the mariner's", "src": "ws", "recv": 16352.7574622, "lt": 16352.7449065, "tt": 1.7082}
+{"stage": "asr_partial", "t": 16321.525556151, "pid": 9960, "text": "What's the score of the mariners", "src": "ws", "recv": 16352.8765108, "lt": 16352.864230228, "tt": 1.8276}
+{"stage": "asr_partial", "t": 16321.567286005, "pid": 9960, "text": "What's the score of the Mariners", "src": "ws", "recv": 16352.9183838, "lt": 16352.905960082, "tt": 1.8693}
+{"stage": "asr_partial", "t": 16321.621029784, "pid": 9960, "text": "What's the score of the Mariners game", "src": "ws", "recv": 16352.9733833, "lt": 16352.959703861, "tt": 1.923}
+{"stage": "asr_partial", "t": 16321.725544084, "pid": 9960, "text": "What's the score of the Mariners game?", "src": "ws", "recv": 16353.0766246, "lt": 16353.064218161, "tt": 2.0275}
+{"stage": "vad_end", "t": 16321.748411264, "pid": 9960, "src": "ws", "recv": 16353.1039513, "lt": 16353.087085341, "tt": 2.0504}
+{"stage": "vad_end", "t": 16321.748464652, "pid": 9960, "src": "ws", "recv": 16353.1039946, "lt": 16353.087138729, "tt": 2.0505}
+{"stage": "llm_request", "t": 16321.759020021, "pid": 9960, "speculative": true, "messages": 13, "chars": 9853, "est_tokens": 2463, "src": "ws", "recv": 16353.1110506, "lt": 16353.097694098, "tt": 2.061}
+{"stage": "asr_final", "t": 16321.837496643, "pid": 9960, "text": "What's the score of the Mariners game?", "src": "ws", "recv": 16353.1909687, "lt": 16353.17617072, "tt": 2.1395}
+{"stage": "user_stopped", "t": 16321.847566074, "pid": 9960, "src": "ws", "recv": 16353.2017706, "lt": 16353.186240151, "tt": 2.1496}
+{"stage": "user_stopped", "t": 16321.847625425, "pid": 9960, "src": "ws", "recv": 16353.2017936, "lt": 16353.186299502, "tt": 2.1496}
+{"stage": "llm_first_token", "t": 16322.363761594, "pid": 9960, "src": "ws", "recv": 16353.720534, "lt": 16353.702435671, "tt": 2.6658}
+{"stage": "llm_usage", "t": 16322.372259026, "pid": 9960, "prompt_tokens": 2560, "completion_tokens": 39, "src": "ws", "recv": 16353.7262348, "lt": 16353.710933103, "tt": 2.6743}
+{"stage": "tts_request", "t": 16322.394870987, "pid": 9960, "src": "ws", "recv": 16353.7502303, "lt": 16353.733545064, "tt": 2.6969}
+{"stage": "tts_first_audio", "t": 16322.442886374, "pid": 9960, "src": "ws", "recv": 16353.7951986, "lt": 16353.781560451, "tt": 2.7449}
+{"stage": "audio_out", "t": 16322.449584588, "pid": 9960, "src": "ws", "recv": 16353.8082007, "lt": 16353.788258665, "tt": 2.7516}
+{"stage": "audio_out", "t": 16322.449668901, "pid": 9960, "src": "ws", "recv": 16353.8082244, "lt": 16353.788342978, "tt": 2.7517}
+{"stage": "bot_stopped", "t": 16324.578143601, "pid": 9960, "src": "ws", "recv": 16355.9295004, "lt": 16355.916817678, "tt": 4.8801}
+{"stage": "bot_stopped", "t": 16324.578225137, "pid": 9960, "src": "ws", "recv": 16355.9295189, "lt": 16355.916899214, "tt": 4.8802}
+{"stage": "llm_request", "t": 16324.584392043, "pid": 9960, "messages": 14, "chars": 9895, "est_tokens": 2474, "src": "ws", "recv": 16355.9347784, "lt": 16355.92306612, "tt": 4.8864}

@@ -1,0 +1,90 @@
+{
+  "text": "Calculate 15 % of 86. Bestie, can you believe that plot twist?",
+  "chunks": [
+    {
+      "text": "Calculate",
+      "timestamp": [
+        0.0,
+        0.44
+      ]
+    },
+    {
+      "text": "15",
+      "timestamp": [
+        0.44,
+        0.76
+      ]
+    },
+    {
+      "text": "%",
+      "timestamp": [
+        0.76,
+        1.04
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        1.04,
+        1.16
+      ]
+    },
+    {
+      "text": "86.",
+      "timestamp": [
+        1.16,
+        1.64
+      ]
+    },
+    {
+      "text": "Bestie,",
+      "timestamp": [
+        4.92,
+        5.44
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        5.7,
+        5.8
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        5.8,
+        5.92
+      ]
+    },
+    {
+      "text": "believe",
+      "timestamp": [
+        5.92,
+        6.14
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        6.14,
+        6.36
+      ]
+    },
+    {
+      "text": "plot",
+      "timestamp": [
+        6.36,
+        6.6
+      ]
+    },
+    {
+      "text": "twist?",
+      "timestamp": [
+        6.6,
+        6.86
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

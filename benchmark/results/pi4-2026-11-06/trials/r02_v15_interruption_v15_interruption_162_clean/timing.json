@@ -1,0 +1,70 @@
+{
+  "trial": "r02_v15_interruption_v15_interruption_162_clean",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_162",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 12.864,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.064
+    }
+  ],
+  "live_bot_starts": [
+    3.84,
+    5.344,
+    7.072,
+    8.8,
+    10.528
+  ],
+  "live_bot_ends": [
+    4.992,
+    6.688,
+    8.288,
+    10.144,
+    12.512
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "What are some effective ways to manage stress?",
+    "current_turn_text": "Oh, before I forget, I need to add milk to my shopping list.",
+    "overlap_text": "Oh, before I forget, I need to add milk to my shopping list.",
+    "overlap_duration": 4.13,
+    "overlap_window": [
+      6.784,
+      10.911999999999999
+    ],
+    "source_id": "162"
+  },
+  "mono": [
+    16705.8646352,
+    16718.7180726
+  ],
+  "bot_segments": [
+    [
+      3.81,
+      12.542
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.064
+  ],
+  "tor": 1,
+  "first_start": 3.81,
+  "spoke_s": 7.254,
+  "actual": "replied after 0.75 s, spoke 7.3 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 27,
+  "final": {
+    "transcript": "Practice deep breathing, exercise regularly, set clear boundaries, keep a short duly journal, and take brief breaks to stretch your walk."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

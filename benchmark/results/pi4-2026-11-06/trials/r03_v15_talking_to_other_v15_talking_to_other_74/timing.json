@@ -1,0 +1,99 @@
+{
+  "trial": "r03_v15_talking_to_other_v15_talking_to_other_74",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_74",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 13.056,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.552
+    },
+    {
+      "name": "overlap",
+      "t": 4.7639375,
+      "len": 2.322
+    }
+  ],
+  "live_bot_starts": [
+    3.264,
+    8.256
+  ],
+  "live_bot_ends": [
+    5.056,
+    11.84
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Translate 'I love sushi' to Japanese.",
+    "current_turn_text": "Hey Jamie, you fed the dog already, yeah?",
+    "overlap_text": "Hey Jamie, you fed the dog already, yeah?",
+    "overlap_duration": 2.32,
+    "overlap_window": [
+      6.322,
+      8.644
+    ],
+    "source_id": "74"
+  },
+  "mono": [
+    16817.9590062,
+    16831.0057173
+  ],
+  "bot_segments": [
+    [
+      3.234,
+      5.086
+    ],
+    [
+      8.226,
+      11.87
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.552
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2840000000000007,
+  "t_resp": 1.1400625000000009,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.802,
+    7.0859375
+  ],
+  "tor": 1,
+  "first_start": 8.226,
+  "spoke_s": 3.6439999999999984,
+  "latency": 1.1400625000000009,
+  "actual": "stopped after 0.28 s, back 1.14 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 59,
+  "final": {
+    "t_stop": 0.2840000000000007,
+    "t_resp": 1.1400625000000009,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -45.725042506679586,
+      "pitch_mean": 12.353090587075826,
+      "pitch_sd": 17.603724595318063,
+      "intensity_mean": -2.794000167398451,
+      "intensity_sd": 1.3664506667567542,
+      "utmosv2": null
+    },
+    "transcript": "I love sushi in Japanese. I love sushi translates to Shoushigadahau Kidesu.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

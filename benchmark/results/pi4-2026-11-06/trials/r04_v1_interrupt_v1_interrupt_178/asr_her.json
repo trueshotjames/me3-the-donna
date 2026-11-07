@@ -1,0 +1,251 @@
+{
+  "text": "Soyophy is great. Start with healthy soil, water consistently, but avoid overwatering and choose plants seeded to your climate and some might. Also, mulch to retain moisture and regularly remove weeds to keep plants thriving.",
+  "chunks": [
+    {
+      "text": "Soyophy",
+      "timestamp": [
+        2.35,
+        3.11
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        3.11,
+        3.43
+      ]
+    },
+    {
+      "text": "great.",
+      "timestamp": [
+        3.43,
+        3.75
+      ]
+    },
+    {
+      "text": "Start",
+      "timestamp": [
+        9.09,
+        9.27
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        9.27,
+        9.49
+      ]
+    },
+    {
+      "text": "healthy",
+      "timestamp": [
+        9.49,
+        9.73
+      ]
+    },
+    {
+      "text": "soil,",
+      "timestamp": [
+        9.73,
+        10.11
+      ]
+    },
+    {
+      "text": "water",
+      "timestamp": [
+        10.67,
+        10.99
+      ]
+    },
+    {
+      "text": "consistently,",
+      "timestamp": [
+        10.99,
+        11.59
+      ]
+    },
+    {
+      "text": "but",
+      "timestamp": [
+        12.11,
+        12.23
+      ]
+    },
+    {
+      "text": "avoid",
+      "timestamp": [
+        12.23,
+        12.51
+      ]
+    },
+    {
+      "text": "overwatering",
+      "timestamp": [
+        12.51,
+        13.33
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.33,
+        13.77
+      ]
+    },
+    {
+      "text": "choose",
+      "timestamp": [
+        13.77,
+        14.01
+      ]
+    },
+    {
+      "text": "plants",
+      "timestamp": [
+        14.01,
+        14.37
+      ]
+    },
+    {
+      "text": "seeded",
+      "timestamp": [
+        14.37,
+        14.77
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        14.77,
+        14.91
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        14.91,
+        14.99
+      ]
+    },
+    {
+      "text": "climate",
+      "timestamp": [
+        14.99,
+        15.39
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        15.39,
+        15.69
+      ]
+    },
+    {
+      "text": "some",
+      "timestamp": [
+        15.69,
+        15.91
+      ]
+    },
+    {
+      "text": "might.",
+      "timestamp": [
+        15.91,
+        16.13
+      ]
+    },
+    {
+      "text": "Also,",
+      "timestamp": [
+        16.39,
+        16.71
+      ]
+    },
+    {
+      "text": "mulch",
+      "timestamp": [
+        17.11,
+        17.63
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        17.63,
+        17.79
+      ]
+    },
+    {
+      "text": "retain",
+      "timestamp": [
+        17.79,
+        18.17
+      ]
+    },
+    {
+      "text": "moisture",
+      "timestamp": [
+        18.17,
+        18.69
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        18.69,
+        19.09
+      ]
+    },
+    {
+      "text": "regularly",
+      "timestamp": [
+        19.09,
+        19.53
+      ]
+    },
+    {
+      "text": "remove",
+      "timestamp": [
+        19.53,
+        20.05
+      ]
+    },
+    {
+      "text": "weeds",
+      "timestamp": [
+        20.05,
+        20.61
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        20.61,
+        20.89
+      ]
+    },
+    {
+      "text": "keep",
+      "timestamp": [
+        20.89,
+        21.09
+      ]
+    },
+    {
+      "text": "plants",
+      "timestamp": [
+        21.09,
+        21.47
+      ]
+    },
+    {
+      "text": "thriving.",
+      "timestamp": [
+        21.47,
+        22.01
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

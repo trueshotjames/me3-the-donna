@@ -1,0 +1,76 @@
+{
+  "text": "ephemeral means lasting only a short time, fleeting or temporary.",
+  "chunks": [
+    {
+      "text": "ephemeral",
+      "timestamp": [
+        1.84,
+        2.82
+      ]
+    },
+    {
+      "text": "means",
+      "timestamp": [
+        2.82,
+        3.02
+      ]
+    },
+    {
+      "text": "lasting",
+      "timestamp": [
+        3.02,
+        3.52
+      ]
+    },
+    {
+      "text": "only",
+      "timestamp": [
+        3.52,
+        3.88
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        3.88,
+        4.04
+      ]
+    },
+    {
+      "text": "short",
+      "timestamp": [
+        4.04,
+        4.28
+      ]
+    },
+    {
+      "text": "time,",
+      "timestamp": [
+        4.28,
+        4.64
+      ]
+    },
+    {
+      "text": "fleeting",
+      "timestamp": [
+        5.12,
+        5.54
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        5.54,
+        5.78
+      ]
+    },
+    {
+      "text": "temporary.",
+      "timestamp": [
+        5.78,
+        6.16
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

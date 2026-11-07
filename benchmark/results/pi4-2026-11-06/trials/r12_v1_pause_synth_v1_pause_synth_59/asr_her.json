@@ -1,0 +1,181 @@
+{
+  "text": "backstreet. Start with the wall color you love. Then pick a curtain fabric that echoes that hue or its accent tones for a cohesive look.",
+  "chunks": [
+    {
+      "text": "backstreet.",
+      "timestamp": [
+        0.0,
+        0.58
+      ]
+    },
+    {
+      "text": "Start",
+      "timestamp": [
+        8.22,
+        8.6
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        8.6,
+        8.82
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        8.82,
+        8.94
+      ]
+    },
+    {
+      "text": "wall",
+      "timestamp": [
+        8.94,
+        9.16
+      ]
+    },
+    {
+      "text": "color",
+      "timestamp": [
+        9.16,
+        9.48
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        9.48,
+        9.68
+      ]
+    },
+    {
+      "text": "love.",
+      "timestamp": [
+        9.68,
+        9.96
+      ]
+    },
+    {
+      "text": "Then",
+      "timestamp": [
+        10.28,
+        10.58
+      ]
+    },
+    {
+      "text": "pick",
+      "timestamp": [
+        10.58,
+        10.98
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        10.98,
+        11.12
+      ]
+    },
+    {
+      "text": "curtain",
+      "timestamp": [
+        11.12,
+        11.34
+      ]
+    },
+    {
+      "text": "fabric",
+      "timestamp": [
+        11.34,
+        11.76
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        11.76,
+        12.08
+      ]
+    },
+    {
+      "text": "echoes",
+      "timestamp": [
+        12.08,
+        12.46
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        12.46,
+        12.72
+      ]
+    },
+    {
+      "text": "hue",
+      "timestamp": [
+        12.72,
+        13.04
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        13.04,
+        13.34
+      ]
+    },
+    {
+      "text": "its",
+      "timestamp": [
+        13.34,
+        13.5
+      ]
+    },
+    {
+      "text": "accent",
+      "timestamp": [
+        13.5,
+        13.86
+      ]
+    },
+    {
+      "text": "tones",
+      "timestamp": [
+        13.86,
+        14.26
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        14.26,
+        14.56
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        14.56,
+        14.7
+      ]
+    },
+    {
+      "text": "cohesive",
+      "timestamp": [
+        14.7,
+        15.04
+      ]
+    },
+    {
+      "text": "look.",
+      "timestamp": [
+        15.04,
+        15.44
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

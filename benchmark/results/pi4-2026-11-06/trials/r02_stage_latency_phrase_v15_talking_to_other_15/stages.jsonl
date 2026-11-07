@@ -1,0 +1,30 @@
+{"stage": "vad_start", "t": 15746.877529704, "pid": 9960, "src": "ws", "recv": 15778.2197577, "lt": 15778.216203781, "tt": 0.2351}
+{"stage": "vad_start", "t": 15746.87758737, "pid": 9960, "src": "ws", "recv": 15778.2197802, "lt": 15778.216261447, "tt": 0.2351}
+{"stage": "asr_partial", "t": 15747.007826532, "pid": 9960, "text": "Can", "src": "ws", "recv": 15778.3504426, "lt": 15778.346500609001, "tt": 0.3654}
+{"stage": "asr_partial", "t": 15747.489748156, "pid": 9960, "text": "Give me a fun", "src": "ws", "recv": 15778.8354063, "lt": 15778.828422233, "tt": 0.8473}
+{"stage": "interrupted", "t": 15747.492616435, "pid": 9960, "src": "ws", "recv": 15778.8373789, "lt": 15778.831290512, "tt": 0.8501}
+{"stage": "interrupted", "t": 15747.492706916, "pid": 9960, "src": "ws", "recv": 15778.8374009, "lt": 15778.831380993, "tt": 0.8502}
+{"stage": "bot_stopped", "t": 15747.530697246, "pid": 9960, "src": "ws", "recv": 15778.8740894, "lt": 15778.869371323, "tt": 0.8882}
+{"stage": "bot_stopped", "t": 15747.530783467, "pid": 9960, "src": "ws", "recv": 15778.8741168, "lt": 15778.869457544, "tt": 0.8883}
+{"stage": "llm_request", "t": 15747.540634809, "pid": 9960, "messages": 21, "chars": 11330, "est_tokens": 2832, "src": "ws", "recv": 15778.8831932, "lt": 15778.879308886, "tt": 0.8982}
+{"stage": "asr_partial", "t": 15747.727079559, "pid": 9960, "text": "Give me a fun fact", "src": "ws", "recv": 15779.06934, "lt": 15779.065753636, "tt": 1.0846}
+{"stage": "asr_partial", "t": 15747.973652682, "pid": 9960, "text": "Give me a fun fact about", "src": "ws", "recv": 15779.3195885, "lt": 15779.312326759, "tt": 1.3312}
+{"stage": "asr_partial", "t": 15748.207082151, "pid": 9960, "text": "Give me a fun fact about doll", "src": "ws", "recv": 15779.5493467, "lt": 15779.545756228, "tt": 1.5646}
+{"stage": "asr_partial", "t": 15748.447634292, "pid": 9960, "text": "Give me a fun fact about dolph", "src": "ws", "recv": 15779.7899263, "lt": 15779.786308369, "tt": 1.8052}
+{"stage": "vad_end", "t": 15748.538546288, "pid": 9960, "src": "ws", "recv": 15779.881314, "lt": 15779.877220365, "tt": 1.8961}
+{"stage": "vad_end", "t": 15748.538597843, "pid": 9960, "src": "ws", "recv": 15779.8813405, "lt": 15779.87727192, "tt": 1.8961}
+{"stage": "asr_partial", "t": 15748.688230859, "pid": 9960, "text": "Give me a fun fact about dolphins.", "src": "ws", "recv": 15780.0310778, "lt": 15780.026904936, "tt": 2.0458}
+{"stage": "llm_request", "t": 15748.691410523, "pid": 9960, "speculative": true, "messages": 22, "chars": 11364, "est_tokens": 2841, "src": "ws", "recv": 15780.0346897, "lt": 15780.030084600001, "tt": 2.0489}
+{"stage": "asr_partial", "t": 15748.927760475, "pid": 9960, "text": "Give me a fun fact about dolphins.", "src": "ws", "recv": 15780.2704209, "lt": 15780.266434552, "tt": 2.2853}
+{"stage": "asr_final", "t": 15749.010251926, "pid": 9960, "text": "Give me a fun fact about dolphins.", "src": "ws", "recv": 15780.3539867, "lt": 15780.348926003, "tt": 2.3678}
+{"stage": "user_stopped", "t": 15749.018332142, "pid": 9960, "src": "ws", "recv": 15780.3659712, "lt": 15780.357006219001, "tt": 2.3759}
+{"stage": "user_stopped", "t": 15749.018401419, "pid": 9960, "src": "ws", "recv": 15780.3660037, "lt": 15780.357075496, "tt": 2.3759}
+{"stage": "llm_first_token", "t": 15749.268341167, "pid": 9960, "src": "ws", "recv": 15780.6124168, "lt": 15780.607015244, "tt": 2.6259}
+{"stage": "llm_usage", "t": 15749.286097264, "pid": 9960, "prompt_tokens": 2685, "completion_tokens": 40, "src": "ws", "recv": 15780.6315131, "lt": 15780.624771341, "tt": 2.6436}
+{"stage": "tts_request", "t": 15749.309462532, "pid": 9960, "src": "ws", "recv": 15780.6556042, "lt": 15780.648136609001, "tt": 2.667}
+{"stage": "tts_first_audio", "t": 15749.475679678, "pid": 9960, "src": "ws", "recv": 15780.8179273, "lt": 15780.814353755, "tt": 2.8332}
+{"stage": "audio_out", "t": 15749.479974533, "pid": 9960, "src": "ws", "recv": 15780.8274153, "lt": 15780.81864861, "tt": 2.8375}
+{"stage": "audio_out", "t": 15749.480098568, "pid": 9960, "src": "ws", "recv": 15780.827443, "lt": 15780.818772645, "tt": 2.8376}
+{"stage": "bot_stopped", "t": 15754.210064604, "pid": 9960, "src": "ws", "recv": 15785.5530309, "lt": 15785.548738681, "tt": 7.5676}
+{"stage": "bot_stopped", "t": 15754.210146991, "pid": 9960, "src": "ws", "recv": 15785.5530512, "lt": 15785.548821068, "tt": 7.5677}
+{"stage": "llm_request", "t": 15754.216403155, "pid": 9960, "messages": 23, "chars": 11444, "est_tokens": 2861, "src": "ws", "recv": 15785.558091, "lt": 15785.555077232, "tt": 7.5739}

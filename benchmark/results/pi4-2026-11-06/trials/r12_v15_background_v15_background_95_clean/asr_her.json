@@ -1,0 +1,55 @@
+{
+  "text": "I can't set a timer right now.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        2.54,
+        3.12
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.12,
+        3.36
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        3.36,
+        3.46
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        3.46,
+        3.56
+      ]
+    },
+    {
+      "text": "timer",
+      "timestamp": [
+        3.56,
+        3.82
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        3.82,
+        4.04
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        4.04,
+        4.28
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

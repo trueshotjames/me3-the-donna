@@ -1,0 +1,55 @@
+{
+  "text": "What's the latest in smart home devices?",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.46
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.46,
+        0.58
+      ]
+    },
+    {
+      "text": "latest",
+      "timestamp": [
+        0.58,
+        0.94
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        0.94,
+        1.22
+      ]
+    },
+    {
+      "text": "smart",
+      "timestamp": [
+        1.22,
+        1.5
+      ]
+    },
+    {
+      "text": "home",
+      "timestamp": [
+        1.5,
+        1.72
+      ]
+    },
+    {
+      "text": "devices?",
+      "timestamp": [
+        1.72,
+        2.02
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

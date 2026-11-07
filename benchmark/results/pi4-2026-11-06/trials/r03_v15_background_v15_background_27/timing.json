@@ -1,0 +1,101 @@
+{
+  "trial": "r03_v15_background_v15_background_27",
+  "group": "v15_background",
+  "clip": "v15_background_27",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 9.152,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.784
+    },
+    {
+      "name": "overlap",
+      "t": 4.252,
+      "len": 1.718
+    }
+  ],
+  "live_bot_starts": [
+    2.752,
+    5.856,
+    6.592
+  ],
+  "live_bot_ends": [
+    4.864,
+    6.208,
+    7.936
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Define the word 'ephemeral'.",
+    "current_turn_text": "",
+    "overlap_text": "Your coffee's getting cold.",
+    "overlap_duration": 1.72,
+    "overlap_window": [
+      5.625,
+      7.343
+    ],
+    "source_id": "27"
+  },
+  "mono": [
+    16850.8290129,
+    16859.9657515
+  ],
+  "bot_segments": [
+    [
+      2.722,
+      4.894
+    ],
+    [
+      5.826,
+      7.966
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.784
+  ],
+  "overlap_played": true,
+  "t_stop": 0.54,
+  "t_resp": 0.0039999999999995595,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.354,
+    5.822
+  ],
+  "tor": 1,
+  "first_start": 5.97,
+  "spoke_s": 1.9960000000000004,
+  "latency": 0.0,
+  "actual": "stopped after 0.54 s, back 0.00 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 29,
+  "final": {
+    "t_stop": 0.54,
+    "t_resp": 0.0039999999999995595,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -38.981288981288955,
+      "pitch_mean": -34.2466644093449,
+      "pitch_sd": -18.56606234247198,
+      "intensity_mean": -8.243201488615451,
+      "intensity_sd": 1.9907316134845132,
+      "utmosv2": null
+    },
+    "transcript": "ephemeral means lasting only a short time, fleeting or temporary.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

@@ -1,0 +1,24 @@
+{"stage": "vad_start", "t": 16041.787597955, "pid": 9960, "src": "ws", "recv": 16073.1359166, "lt": 16073.126272032001, "tt": 0.2338}
+{"stage": "vad_start", "t": 16041.787698009, "pid": 9960, "src": "ws", "recv": 16073.1359397, "lt": 16073.126372086, "tt": 0.2339}
+{"stage": "interrupted", "t": 16042.207153168, "pid": 9960, "src": "ws", "recv": 16073.5556192, "lt": 16073.545827245, "tt": 0.6534}
+{"stage": "interrupted", "t": 16042.207239704, "pid": 9960, "src": "ws", "recv": 16073.5556418, "lt": 16073.545913781, "tt": 0.6535}
+{"stage": "asr_partial", "t": 16042.331431209, "pid": 9960, "text": "What's my", "src": "ws", "recv": 16073.6783614, "lt": 16073.670105286, "tt": 0.7776}
+{"stage": "asr_partial", "t": 16042.448665188, "pid": 9960, "text": "What's my current", "src": "ws", "recv": 16073.7964946, "lt": 16073.787339265, "tt": 0.8949}
+{"stage": "asr_partial", "t": 16042.686977433, "pid": 9960, "text": "What's my current heart", "src": "ws", "recv": 16074.0345468, "lt": 16074.02565151, "tt": 1.1332}
+{"stage": "asr_partial", "t": 16042.887539163, "pid": 9960, "text": "What's my current heart rate?", "src": "ws", "recv": 16074.235129, "lt": 16074.226213240001, "tt": 1.3338}
+{"stage": "asr_partial", "t": 16042.927025009, "pid": 9960, "text": "What's my current heart rate?", "src": "ws", "recv": 16074.2740595, "lt": 16074.265699086, "tt": 1.3732}
+{"stage": "vad_end", "t": 16042.96600888, "pid": 9960, "src": "ws", "recv": 16074.3181888, "lt": 16074.304682957, "tt": 1.4122}
+{"stage": "vad_end", "t": 16042.966060916, "pid": 9960, "src": "ws", "recv": 16074.3182102, "lt": 16074.304734993, "tt": 1.4123}
+{"stage": "llm_request", "t": 16042.976762451, "pid": 9960, "speculative": true, "messages": 56, "chars": 15624, "est_tokens": 3906, "src": "ws", "recv": 16074.3242021, "lt": 16074.315436528, "tt": 1.423}
+{"stage": "asr_final", "t": 16043.041217545, "pid": 9960, "text": "What's my current heart rate?", "src": "ws", "recv": 16074.3926409, "lt": 16074.379891622, "tt": 1.4874}
+{"stage": "user_stopped", "t": 16043.053943776, "pid": 9960, "src": "ws", "recv": 16074.4049067, "lt": 16074.392617853, "tt": 1.5002}
+{"stage": "user_stopped", "t": 16043.054013887, "pid": 9960, "src": "ws", "recv": 16074.4049286, "lt": 16074.392687964, "tt": 1.5002}
+{"stage": "llm_first_token", "t": 16043.443928687, "pid": 9960, "src": "ws", "recv": 16074.7920263, "lt": 16074.782602764, "tt": 1.8901}
+{"stage": "llm_usage", "t": 16043.465529421, "pid": 9960, "prompt_tokens": 2551, "completion_tokens": 48, "src": "ws", "recv": 16074.8141582, "lt": 16074.804203498, "tt": 1.9117}
+{"stage": "tts_request", "t": 16043.486793844, "pid": 9960, "src": "ws", "recv": 16074.8386843, "lt": 16074.825467921, "tt": 1.933}
+{"stage": "tts_first_audio", "t": 16043.539328585, "pid": 9960, "src": "ws", "recv": 16074.887892, "lt": 16074.878002662, "tt": 1.9855}
+{"stage": "audio_out", "t": 16043.547067971, "pid": 9960, "src": "ws", "recv": 16074.9009798, "lt": 16074.885742048, "tt": 1.9933}
+{"stage": "audio_out", "t": 16043.547168395, "pid": 9960, "src": "ws", "recv": 16074.9010014, "lt": 16074.885842472, "tt": 1.9934}
+{"stage": "bot_stopped", "t": 16045.035952231, "pid": 9960, "src": "ws", "recv": 16076.3823521, "lt": 16076.374626308, "tt": 3.4822}
+{"stage": "bot_stopped", "t": 16045.036074952, "pid": 9960, "src": "ws", "recv": 16076.3823747, "lt": 16076.374749029, "tt": 3.4823}
+{"stage": "llm_request", "t": 16045.042542076, "pid": 9960, "messages": 57, "chars": 15663, "est_tokens": 3916, "src": "ws", "recv": 16076.390063, "lt": 16076.381216153, "tt": 3.4888}

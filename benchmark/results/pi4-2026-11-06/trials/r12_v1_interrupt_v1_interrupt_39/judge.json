@@ -1,0 +1,7 @@
+{
+  "task": "interruption_rating",
+  "response_text": "morning workouts can boost metabolism. But the best time is when you can stay consistent. For diet, focus on balanced meals with protein, fiber and healthy fats. Stay hydrated and limit processed sugars.",
+  "rating": 5,
+  "raw": "Analysis: The user's interrupting turn shifts the topic from exercise to diet tips. The AI's response acknowledges the initial topic of exercise briefly before transitioning to provide diet tips, which aligns with the user's request. The AI offers specific advice on balanced meals, hydration, and limiting processed sugars, which is directly related to the user's interest in diet tips.\n\nI would rate the AI's response as 5.",
+  "judge": "openrouter/openai/gpt-4o"
+}

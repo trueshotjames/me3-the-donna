@@ -1,0 +1,328 @@
+{
+  "text": "The gig economy is a labor market built around short term flexible jobs rather than permanent positions. Workers, often called freelancers, contractors or gig workers, find work through online platforms that match them with customers who need specific tasks done. These platforms such as Ride Share,",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        2.64,
+        3.22
+      ]
+    },
+    {
+      "text": "gig",
+      "timestamp": [
+        3.22,
+        3.34
+      ]
+    },
+    {
+      "text": "economy",
+      "timestamp": [
+        3.34,
+        3.74
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        3.74,
+        4.02
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.02,
+        4.12
+      ]
+    },
+    {
+      "text": "labor",
+      "timestamp": [
+        4.12,
+        4.34
+      ]
+    },
+    {
+      "text": "market",
+      "timestamp": [
+        4.34,
+        4.74
+      ]
+    },
+    {
+      "text": "built",
+      "timestamp": [
+        4.74,
+        5.0
+      ]
+    },
+    {
+      "text": "around",
+      "timestamp": [
+        5.0,
+        5.26
+      ]
+    },
+    {
+      "text": "short",
+      "timestamp": [
+        5.26,
+        5.6
+      ]
+    },
+    {
+      "text": "term",
+      "timestamp": [
+        5.6,
+        5.88
+      ]
+    },
+    {
+      "text": "flexible",
+      "timestamp": [
+        5.88,
+        6.18
+      ]
+    },
+    {
+      "text": "jobs",
+      "timestamp": [
+        6.18,
+        6.82
+      ]
+    },
+    {
+      "text": "rather",
+      "timestamp": [
+        6.82,
+        7.2
+      ]
+    },
+    {
+      "text": "than",
+      "timestamp": [
+        7.2,
+        7.42
+      ]
+    },
+    {
+      "text": "permanent",
+      "timestamp": [
+        7.42,
+        7.76
+      ]
+    },
+    {
+      "text": "positions.",
+      "timestamp": [
+        7.76,
+        8.3
+      ]
+    },
+    {
+      "text": "Workers,",
+      "timestamp": [
+        8.66,
+        8.84
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        9.26,
+        9.56
+      ]
+    },
+    {
+      "text": "called",
+      "timestamp": [
+        9.56,
+        9.82
+      ]
+    },
+    {
+      "text": "freelancers,",
+      "timestamp": [
+        9.82,
+        10.6
+      ]
+    },
+    {
+      "text": "contractors",
+      "timestamp": [
+        10.76,
+        11.2
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        11.2,
+        11.78
+      ]
+    },
+    {
+      "text": "gig",
+      "timestamp": [
+        11.78,
+        11.98
+      ]
+    },
+    {
+      "text": "workers,",
+      "timestamp": [
+        11.98,
+        12.36
+      ]
+    },
+    {
+      "text": "find",
+      "timestamp": [
+        12.82,
+        13.08
+      ]
+    },
+    {
+      "text": "work",
+      "timestamp": [
+        13.08,
+        13.36
+      ]
+    },
+    {
+      "text": "through",
+      "timestamp": [
+        13.36,
+        13.58
+      ]
+    },
+    {
+      "text": "online",
+      "timestamp": [
+        13.58,
+        13.9
+      ]
+    },
+    {
+      "text": "platforms",
+      "timestamp": [
+        13.9,
+        14.4
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        14.4,
+        14.78
+      ]
+    },
+    {
+      "text": "match",
+      "timestamp": [
+        14.78,
+        15.1
+      ]
+    },
+    {
+      "text": "them",
+      "timestamp": [
+        15.1,
+        15.24
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        15.24,
+        15.38
+      ]
+    },
+    {
+      "text": "customers",
+      "timestamp": [
+        15.38,
+        15.76
+      ]
+    },
+    {
+      "text": "who",
+      "timestamp": [
+        15.76,
+        16.06
+      ]
+    },
+    {
+      "text": "need",
+      "timestamp": [
+        16.06,
+        16.24
+      ]
+    },
+    {
+      "text": "specific",
+      "timestamp": [
+        16.24,
+        16.6
+      ]
+    },
+    {
+      "text": "tasks",
+      "timestamp": [
+        16.6,
+        17.16
+      ]
+    },
+    {
+      "text": "done.",
+      "timestamp": [
+        17.16,
+        17.52
+      ]
+    },
+    {
+      "text": "These",
+      "timestamp": [
+        17.74,
+        17.96
+      ]
+    },
+    {
+      "text": "platforms",
+      "timestamp": [
+        17.96,
+        18.54
+      ]
+    },
+    {
+      "text": "such",
+      "timestamp": [
+        18.54,
+        18.96
+      ]
+    },
+    {
+      "text": "as",
+      "timestamp": [
+        18.96,
+        19.08
+      ]
+    },
+    {
+      "text": "Ride",
+      "timestamp": [
+        19.08,
+        19.36
+      ]
+    },
+    {
+      "text": "Share,",
+      "timestamp": [
+        19.36,
+        19.68
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

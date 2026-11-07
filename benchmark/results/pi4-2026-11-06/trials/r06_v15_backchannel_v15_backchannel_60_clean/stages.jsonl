@@ -1,0 +1,25 @@
+{"stage": "vad_start", "t": 17787.390023603, "pid": 9960, "src": "ws", "recv": 17818.7637899, "lt": 17818.72869768, "tt": 0.1721}
+{"stage": "vad_start", "t": 17787.390081454, "pid": 9960, "src": "ws", "recv": 17818.7638148, "lt": 17818.728755531, "tt": 0.1722}
+{"stage": "asr_partial", "t": 17788.045170129, "pid": 9960, "text": "Explain a", "src": "ws", "recv": 17819.4222611, "lt": 17819.383844206, "tt": 0.8273}
+{"stage": "interrupted", "t": 17788.04794565, "pid": 9960, "src": "ws", "recv": 17819.4244762, "lt": 17819.386619727, "tt": 0.8301}
+{"stage": "interrupted", "t": 17788.048061815, "pid": 9960, "src": "ws", "recv": 17819.4245064, "lt": 17819.386735892, "tt": 0.8302}
+{"stage": "bot_stopped", "t": 17788.080392502, "pid": 9960, "src": "ws", "recv": 17819.4620176, "lt": 17819.419066579, "tt": 0.8625}
+{"stage": "bot_stopped", "t": 17788.080637925, "pid": 9960, "src": "ws", "recv": 17819.4620431, "lt": 17819.419312002, "tt": 0.8628}
+{"stage": "llm_request", "t": 17788.096110416, "pid": 9960, "messages": 26, "chars": 10526, "est_tokens": 2632, "src": "ws", "recv": 17819.4723067, "lt": 17819.434784493, "tt": 0.8782}
+{"stage": "asr_partial", "t": 17788.329823893, "pid": 9960, "text": "Explain astronomy", "src": "ws", "recv": 17819.7037794, "lt": 17819.66849797, "tt": 1.1119}
+{"stage": "asr_partial", "t": 17788.526670406, "pid": 9960, "text": "Explain astronomy and", "src": "ws", "recv": 17819.9010282, "lt": 17819.865344483, "tt": 1.3088}
+{"stage": "asr_partial", "t": 17788.728934259, "pid": 9960, "text": "Explain astronomy in-depth", "src": "ws", "recv": 17820.1049008, "lt": 17820.067608336, "tt": 1.511}
+{"stage": "asr_partial", "t": 17788.805105878, "pid": 9960, "text": "Explain astronomy in-depth.", "src": "ws", "recv": 17820.1791326, "lt": 17820.143779955, "tt": 1.5872}
+{"stage": "llm_request", "t": 17788.890497289, "pid": 9960, "speculative": true, "messages": 27, "chars": 10553, "est_tokens": 2638, "src": "ws", "recv": 17820.2678339, "lt": 17820.229171366, "tt": 1.6726}
+{"stage": "vad_end", "t": 17788.902552082, "pid": 9960, "src": "ws", "recv": 17820.2983325, "lt": 17820.241226159, "tt": 1.6847}
+{"stage": "vad_end", "t": 17788.902612026, "pid": 9960, "src": "ws", "recv": 17820.2983627, "lt": 17820.241286103, "tt": 1.6847}
+{"stage": "asr_partial", "t": 17789.042613807, "pid": 9960, "text": "Explain astronomy in-depth.", "src": "ws", "recv": 17820.4167325, "lt": 17820.381287884, "tt": 1.8247}
+{"stage": "asr_final", "t": 17789.297530166, "pid": 9960, "text": "Explain astronomy in-depth.", "src": "ws", "recv": 17820.6732893, "lt": 17820.636204243, "tt": 2.0796}
+{"stage": "user_stopped", "t": 17789.306319149, "pid": 9960, "src": "ws", "recv": 17820.684515, "lt": 17820.644993226, "tt": 2.0884}
+{"stage": "user_stopped", "t": 17789.306395852, "pid": 9960, "src": "ws", "recv": 17820.6845389, "lt": 17820.645069929, "tt": 2.0885}
+{"stage": "llm_first_token", "t": 17789.491064554, "pid": 9960, "src": "ws", "recv": 17820.8662002, "lt": 17820.829738631, "tt": 2.2732}
+{"stage": "tts_request", "t": 17789.506491361, "pid": 9960, "src": "ws", "recv": 17820.8843035, "lt": 17820.845165438, "tt": 2.2886}
+{"stage": "llm_usage", "t": 17789.633544749, "pid": 9960, "prompt_tokens": 2532, "completion_tokens": 224, "src": "ws", "recv": 17821.0145334, "lt": 17820.972218826, "tt": 2.4157}
+{"stage": "tts_first_audio", "t": 17789.711815194, "pid": 9960, "src": "ws", "recv": 17821.0869283, "lt": 17821.050489271, "tt": 2.4939}
+{"stage": "audio_out", "t": 17789.718286057, "pid": 9960, "src": "ws", "recv": 17821.1002504, "lt": 17821.056960134, "tt": 2.5004}
+{"stage": "audio_out", "t": 17789.718373556, "pid": 9960, "src": "ws", "recv": 17821.1002756, "lt": 17821.057047633, "tt": 2.5005}

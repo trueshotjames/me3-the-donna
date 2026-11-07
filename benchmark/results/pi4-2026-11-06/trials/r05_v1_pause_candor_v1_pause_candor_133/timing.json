@@ -1,0 +1,64 @@
+{
+  "trial": "r05_v1_pause_candor_v1_pause_candor_133",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_133",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 18.528,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 10.56
+    }
+  ],
+  "live_bot_starts": [
+    13.824
+  ],
+  "live_bot_ends": [
+    18.176
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      3.3299999999999272,
+      4.0
+    ],
+    "source_id": "133",
+    "text": "yeah it's a it's a great it's a great thing to be interested in and I'm you know I'm bummed we have uh I live in the Chicago area and we have"
+  },
+  "mono": [
+    17452.9493586,
+    17471.4550385
+  ],
+  "bot_segments": [
+    [
+      13.602,
+      18.206
+    ]
+  ],
+  "play_first": [
+    0.0,
+    10.56
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 79,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "I understand. It's hard when you care about a cause but can't be close to help directly."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

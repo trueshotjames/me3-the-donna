@@ -1,0 +1,167 @@
+{
+  "text": "Try the Guest List by Lucy Trying a mystery thriller, Nines Out, Sharp Twists, Witty Dialogue, and a clever family who done it.",
+  "chunks": [
+    {
+      "text": "Try",
+      "timestamp": [
+        3.06,
+        3.56
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.56,
+        3.72
+      ]
+    },
+    {
+      "text": "Guest",
+      "timestamp": [
+        3.72,
+        4.02
+      ]
+    },
+    {
+      "text": "List",
+      "timestamp": [
+        4.02,
+        4.36
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        4.36,
+        4.84
+      ]
+    },
+    {
+      "text": "Lucy",
+      "timestamp": [
+        4.84,
+        5.18
+      ]
+    },
+    {
+      "text": "Trying",
+      "timestamp": [
+        7.19,
+        8.39
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        8.39,
+        9.69
+      ]
+    },
+    {
+      "text": "mystery",
+      "timestamp": [
+        9.69,
+        9.91
+      ]
+    },
+    {
+      "text": "thriller,",
+      "timestamp": [
+        9.91,
+        10.33
+      ]
+    },
+    {
+      "text": "Nines",
+      "timestamp": [
+        10.75,
+        11.07
+      ]
+    },
+    {
+      "text": "Out,",
+      "timestamp": [
+        11.07,
+        11.35
+      ]
+    },
+    {
+      "text": "Sharp",
+      "timestamp": [
+        11.73,
+        12.01
+      ]
+    },
+    {
+      "text": "Twists,",
+      "timestamp": [
+        12.01,
+        12.57
+      ]
+    },
+    {
+      "text": "Witty",
+      "timestamp": [
+        12.91,
+        13.25
+      ]
+    },
+    {
+      "text": "Dialogue,",
+      "timestamp": [
+        13.25,
+        13.87
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        14.23,
+        14.27
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        14.27,
+        14.39
+      ]
+    },
+    {
+      "text": "clever",
+      "timestamp": [
+        14.39,
+        14.57
+      ]
+    },
+    {
+      "text": "family",
+      "timestamp": [
+        14.57,
+        15.07
+      ]
+    },
+    {
+      "text": "who",
+      "timestamp": [
+        15.07,
+        15.27
+      ]
+    },
+    {
+      "text": "done",
+      "timestamp": [
+        15.27,
+        15.45
+      ]
+    },
+    {
+      "text": "it.",
+      "timestamp": [
+        15.45,
+        15.61
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

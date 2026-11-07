@@ -1,0 +1,24 @@
+{"stage": "vad_start", "t": 15715.040651321, "pid": 9960, "src": "ws", "recv": 15746.3839067, "lt": 15746.379325398, "tt": 0.1748}
+{"stage": "vad_start", "t": 15715.040750209, "pid": 9960, "src": "ws", "recv": 15746.3839272, "lt": 15746.379424286, "tt": 0.1749}
+{"stage": "interrupted", "t": 15715.526838046, "pid": 9960, "src": "ws", "recv": 15746.8698997, "lt": 15746.865512123, "tt": 0.661}
+{"stage": "interrupted", "t": 15715.526926156, "pid": 9960, "src": "ws", "recv": 15746.8699237, "lt": 15746.865600233, "tt": 0.6611}
+{"stage": "asr_partial", "t": 15715.648565628, "pid": 9960, "text": "Explain the", "src": "ws", "recv": 15746.9903136, "lt": 15746.987239705, "tt": 0.7828}
+{"stage": "asr_partial", "t": 15715.844307024, "pid": 9960, "text": "Explain the gig", "src": "ws", "recv": 15747.1860379, "lt": 15747.182981101, "tt": 0.9785}
+{"stage": "asr_partial", "t": 15716.1308814, "pid": 9960, "text": "Explain the gigaf", "src": "ws", "recv": 15747.4733469, "lt": 15747.469555477, "tt": 1.2651}
+{"stage": "asr_partial", "t": 15716.324404639, "pid": 9960, "text": "Explain the gig economy", "src": "ws", "recv": 15747.6661758, "lt": 15747.663078716, "tt": 1.4586}
+{"stage": "asr_partial", "t": 15716.609789529, "pid": 9960, "text": "Explain the gig economy and", "src": "ws", "recv": 15747.9518712, "lt": 15747.948463606, "tt": 1.744}
+{"stage": "asr_partial", "t": 15716.804408476, "pid": 9960, "text": "Explain the gig economy in-depth", "src": "ws", "recv": 15748.1461828, "lt": 15748.143082553, "tt": 1.9386}
+{"stage": "vad_end", "t": 15716.986816573, "pid": 9960, "src": "ws", "recv": 15748.3288989, "lt": 15748.32549065, "tt": 2.121}
+{"stage": "vad_end", "t": 15716.986868776, "pid": 9960, "src": "ws", "recv": 15748.3289187, "lt": 15748.325542853001, "tt": 2.1211}
+{"stage": "asr_partial", "t": 15717.090770373, "pid": 9960, "text": "Explain the gig economy in-depth.", "src": "ws", "recv": 15748.4330868, "lt": 15748.429444450001, "tt": 2.225}
+{"stage": "llm_request", "t": 15717.093905983, "pid": 9960, "speculative": true, "messages": 20, "chars": 11038, "est_tokens": 2760, "src": "ws", "recv": 15748.436243, "lt": 15748.43258006, "tt": 2.2281}
+{"stage": "asr_partial", "t": 15717.284933955, "pid": 9960, "text": "Explain the gig economy in-depth.", "src": "ws", "recv": 15748.6266815, "lt": 15748.623608032, "tt": 2.4191}
+{"stage": "asr_final", "t": 15717.493078089, "pid": 9960, "text": "Explain the gig economy in-depth.", "src": "ws", "recv": 15748.8364118, "lt": 15748.831752166001, "tt": 2.6273}
+{"stage": "user_stopped", "t": 15717.502021701, "pid": 9960, "src": "ws", "recv": 15748.8482019, "lt": 15748.840695778, "tt": 2.6362}
+{"stage": "user_stopped", "t": 15717.502131219, "pid": 9960, "src": "ws", "recv": 15748.8482288, "lt": 15748.840805296, "tt": 2.6363}
+{"stage": "llm_first_token", "t": 15717.601755868, "pid": 9960, "src": "ws", "recv": 15748.9466471, "lt": 15748.940429945, "tt": 2.7359}
+{"stage": "tts_request", "t": 15717.655892185, "pid": 9960, "src": "ws", "recv": 15749.0038973, "lt": 15748.994566262, "tt": 2.7901}
+{"stage": "llm_usage", "t": 15717.787850327, "pid": 9960, "prompt_tokens": 2587, "completion_tokens": 307, "src": "ws", "recv": 15749.1451712, "lt": 15749.126524404, "tt": 2.922}
+{"stage": "tts_first_audio", "t": 15717.88041984, "pid": 9960, "src": "ws", "recv": 15749.2241832, "lt": 15749.219093917, "tt": 3.0146}
+{"stage": "audio_out", "t": 15717.888570222, "pid": 9960, "src": "ws", "recv": 15749.2390984, "lt": 15749.227244299, "tt": 3.0228}
+{"stage": "audio_out", "t": 15717.888663387, "pid": 9960, "src": "ws", "recv": 15749.2391156, "lt": 15749.227337464, "tt": 3.0228}

@@ -1,0 +1,29 @@
+{"stage": "vad_start", "t": 19158.887938866, "pid": 9960, "src": "ws", "recv": 19190.2806797, "lt": 19190.226612943, "tt": 0.1181}
+{"stage": "vad_start", "t": 19158.887995421, "pid": 9960, "src": "ws", "recv": 19190.2807008, "lt": 19190.226669498, "tt": 0.1182}
+{"stage": "asr_partial", "t": 19159.725927064, "pid": 9960, "text": "Offer an", "src": "ws", "recv": 19191.1221282, "lt": 19191.064601141, "tt": 0.9561}
+{"stage": "interrupted", "t": 19159.728773164, "pid": 9960, "src": "ws", "recv": 19191.1242174, "lt": 19191.067447241, "tt": 0.9589}
+{"stage": "interrupted", "t": 19159.728896199, "pid": 9960, "src": "ws", "recv": 19191.1242374, "lt": 19191.067570276, "tt": 0.9591}
+{"stage": "bot_stopped", "t": 19159.764575524, "pid": 9960, "src": "ws", "recv": 19191.1601461, "lt": 19191.103249601, "tt": 0.9947}
+{"stage": "bot_stopped", "t": 19159.764664135, "pid": 9960, "src": "ws", "recv": 19191.160172, "lt": 19191.103338212, "tt": 0.9948}
+{"stage": "llm_request", "t": 19159.776458213, "pid": 9960, "messages": 15, "chars": 10616, "est_tokens": 2654, "src": "ws", "recv": 19191.1695686, "lt": 19191.11513229, "tt": 1.0066}
+{"stage": "asr_partial", "t": 19160.083998745, "pid": 9960, "text": "Offer an exhaust", "src": "ws", "recv": 19191.4770357, "lt": 19191.422672822002, "tt": 1.3142}
+{"stage": "asr_partial", "t": 19160.20564462, "pid": 9960, "text": "Offer an exhaustive", "src": "ws", "recv": 19191.5989811, "lt": 19191.544318697, "tt": 1.4358}
+{"stage": "asr_partial", "t": 19160.406648208, "pid": 9960, "text": "Offer an exhaustive overview", "src": "ws", "recv": 19191.7996895, "lt": 19191.745322285, "tt": 1.6368}
+{"stage": "asr_partial", "t": 19160.683084385, "pid": 9960, "text": "Offer an exhaustive overview", "src": "ws", "recv": 19192.0759652, "lt": 19192.021758462, "tt": 1.9132}
+{"stage": "asr_partial", "t": 19160.886657094, "pid": 9960, "text": "Offer an exhaustive overview of Tor", "src": "ws", "recv": 19192.2796235, "lt": 19192.225331171, "tt": 2.1168}
+{"stage": "asr_partial", "t": 19161.16575063, "pid": 9960, "text": "Offer an exhaustive overview of tornadoes.", "src": "ws", "recv": 19192.5600184, "lt": 19192.504424707, "tt": 2.3959}
+{"stage": "asr_partial", "t": 19161.205843575, "pid": 9960, "text": "Offer an exhaustive overview of tornadoes.", "src": "ws", "recv": 19192.6002192, "lt": 19192.544517652, "tt": 2.436}
+{"stage": "llm_request", "t": 19161.268308893, "pid": 9960, "speculative": true, "messages": 16, "chars": 10658, "est_tokens": 2664, "src": "ws", "recv": 19192.6614776, "lt": 19192.60698297, "tt": 2.4985}
+{"stage": "vad_end", "t": 19161.30699726, "pid": 9960, "src": "ws", "recv": 19192.7010412, "lt": 19192.645671337, "tt": 2.5372}
+{"stage": "vad_end", "t": 19161.307092814, "pid": 9960, "src": "ws", "recv": 19192.7010651, "lt": 19192.645766891, "tt": 2.5372}
+{"stage": "asr_partial", "t": 19161.365069588, "pid": 9960, "text": "Offer an exhaustive overview of tornadoes.", "src": "ws", "recv": 19192.7584123, "lt": 19192.703743665, "tt": 2.5952}
+{"stage": "asr_partial", "t": 19161.643545205, "pid": 9960, "text": "Offer an exhaustive overview of tornadoes.", "src": "ws", "recv": 19193.0365015, "lt": 19192.982219282, "tt": 2.8737}
+{"stage": "asr_final", "t": 19162.293585023, "pid": 9960, "text": "Offer an exhaustive overview of tornadoes.", "src": "ws", "recv": 19193.6882272, "lt": 19193.6322591, "tt": 3.5237}
+{"stage": "user_stopped", "t": 19162.301979138, "pid": 9960, "src": "ws", "recv": 19193.7108727, "lt": 19193.640653215, "tt": 3.5321}
+{"stage": "user_stopped", "t": 19162.302056656, "pid": 9960, "src": "ws", "recv": 19193.7108954, "lt": 19193.640730733, "tt": 3.5322}
+{"stage": "llm_first_token", "t": 19162.306581385, "pid": 9960, "src": "ws", "recv": 19193.7209312, "lt": 19193.645255462, "tt": 3.5367}
+{"stage": "tts_request", "t": 19162.4038525, "pid": 9960, "src": "ws", "recv": 19193.8192784, "lt": 19193.742526577, "tt": 3.634}
+{"stage": "llm_usage", "t": 19162.404162312, "pid": 9960, "prompt_tokens": 2850, "completion_tokens": 385, "src": "ws", "recv": 19193.8193077, "lt": 19193.742836389, "tt": 3.6343}
+{"stage": "tts_first_audio", "t": 19162.617873301, "pid": 9960, "src": "ws", "recv": 19194.0104747, "lt": 19193.956547378, "tt": 3.848}
+{"stage": "audio_out", "t": 19162.622209274, "pid": 9960, "src": "ws", "recv": 19194.0241601, "lt": 19193.960883351, "tt": 3.8524}
+{"stage": "audio_out", "t": 19162.622297051, "pid": 9960, "src": "ws", "recv": 19194.0241826, "lt": 19193.960971128, "tt": 3.8525}

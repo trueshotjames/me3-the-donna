@@ -1,0 +1,39 @@
+{"stage": "vad_start", "t": 17561.571287354, "pid": 9960, "src": "ws", "recv": 17592.9429982, "lt": 17592.909961431, "tt": 0.1452}
+{"stage": "vad_start", "t": 17561.57137839, "pid": 9960, "src": "ws", "recv": 17592.9430218, "lt": 17592.910052467, "tt": 0.1453}
+{"stage": "interrupted", "t": 17562.168287651, "pid": 9960, "src": "ws", "recv": 17593.5403105, "lt": 17593.506961728, "tt": 0.7422}
+{"stage": "interrupted", "t": 17562.168379669, "pid": 9960, "src": "ws", "recv": 17593.5403338, "lt": 17593.507053746, "tt": 0.7423}
+{"stage": "asr_partial", "t": 17562.403574974, "pid": 9960, "text": "The official business", "src": "ws", "recv": 17593.7743547, "lt": 17593.742249051, "tt": 0.9775}
+{"stage": "asr_partial", "t": 17562.659410982, "pid": 9960, "text": "The official businessman", "src": "ws", "recv": 17594.0336988, "lt": 17593.998085059, "tt": 1.2333}
+{"stage": "asr_partial", "t": 17562.883470687, "pid": 9960, "text": "The official businessman", "src": "ws", "recv": 17594.2540979, "lt": 17594.222144764, "tt": 1.4574}
+{"stage": "asr_partial", "t": 17563.12643195, "pid": 9960, "text": "official businessman and", "src": "ws", "recv": 17594.497226, "lt": 17594.465106027, "tt": 1.7003}
+{"stage": "asr_partial", "t": 17563.365796443, "pid": 9960, "text": "official businessman and movie", "src": "ws", "recv": 17594.7367601, "lt": 17594.70447052, "tt": 1.9397}
+{"stage": "asr_partial", "t": 17563.606214812, "pid": 9960, "text": "official businessman in movies and", "src": "ws", "recv": 17594.9769978, "lt": 17594.944888889, "tt": 2.1801}
+{"stage": "asr_partial", "t": 17563.843282649, "pid": 9960, "text": "official businessman and movies and such that", "src": "ws", "recv": 17595.2139558, "lt": 17595.181956726, "tt": 2.4172}
+{"stage": "asr_partial", "t": 17564.08697081, "pid": 9960, "text": "official businessman and movies and such then", "src": "ws", "recv": 17595.4579537, "lt": 17595.425644887, "tt": 2.6609}
+{"stage": "asr_partial", "t": 17564.323878927, "pid": 9960, "text": "official businessman in movies and such then.", "src": "ws", "recv": 17595.6944869, "lt": 17595.662553004, "tt": 2.8978}
+{"stage": "asr_partial", "t": 17564.566580175, "pid": 9960, "text": "official businessman in movies and such, then that's", "src": "ws", "recv": 17595.9374774, "lt": 17595.905254252, "tt": 3.1405}
+{"stage": "asr_partial", "t": 17564.803456626, "pid": 9960, "text": "official businessman in movies and such, then that's what I", "src": "ws", "recv": 17596.1741053, "lt": 17596.142130703, "tt": 3.3774}
+{"stage": "asr_partial", "t": 17565.046394315, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing", "src": "ws", "recv": 17596.4172015, "lt": 17596.385068392, "tt": 3.6203}
+{"stage": "asr_partial", "t": 17565.283415171, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now", "src": "ws", "recv": 17596.654156, "lt": 17596.622089248, "tt": 3.8573}
+{"stage": "asr_partial", "t": 17565.326461167, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now.", "src": "ws", "recv": 17596.6972526, "lt": 17596.665135244, "tt": 3.9004}
+{"stage": "vad_end", "t": 17565.345857016, "pid": 9960, "src": "ws", "recv": 17596.7217669, "lt": 17596.684531093, "tt": 3.9198}
+{"stage": "vad_end", "t": 17565.345910201, "pid": 9960, "src": "ws", "recv": 17596.7217938, "lt": 17596.684584278, "tt": 3.9198}
+{"stage": "llm_request", "t": 17565.357082375, "pid": 9960, "speculative": true, "messages": 30, "chars": 11058, "est_tokens": 2764, "src": "ws", "recv": 17596.7278593, "lt": 17596.695756452, "tt": 3.931}
+{"stage": "asr_partial", "t": 17565.527094518, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now.", "src": "ws", "recv": 17596.8981218, "lt": 17596.865768595, "tt": 4.101}
+{"stage": "vad_start", "t": 17565.662406651, "pid": 9960, "src": "ws", "recv": 17597.0335866, "lt": 17597.001080728, "tt": 4.2363}
+{"stage": "vad_start", "t": 17565.662462206, "pid": 9960, "src": "ws", "recv": 17597.0336177, "lt": 17597.001136283, "tt": 4.2364}
+{"stage": "llm_cancel", "t": 17565.665418262, "pid": 9960, "src": "ws", "recv": 17597.0349974, "lt": 17597.004092339, "tt": 4.2393}
+{"stage": "asr_partial", "t": 17565.763627195, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now.", "src": "ws", "recv": 17597.134429, "lt": 17597.102301272, "tt": 4.3375}
+{"stage": "asr_partial", "t": 17566.243981476, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now. I don't know", "src": "ws", "recv": 17597.6147938, "lt": 17597.582655553, "tt": 4.8179}
+{"stage": "asr_partial", "t": 17566.486315414, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now. I don't know. Just", "src": "ws", "recv": 17597.8571869, "lt": 17597.824989491, "tt": 5.0602}
+{"stage": "asr_partial", "t": 17566.735677096, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now. I don't know. It just makes", "src": "ws", "recv": 17598.1086367, "lt": 17598.074351173, "tt": 5.3096}
+{"stage": "asr_partial", "t": 17566.775919387, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now. I don't know. It just makes me happy", "src": "ws", "recv": 17598.1500177, "lt": 17598.114593464, "tt": 5.3498}
+{"stage": "vad_end", "t": 17566.812137062, "pid": 9960, "src": "ws", "recv": 17598.1896739, "lt": 17598.150811139, "tt": 5.386}
+{"stage": "vad_end", "t": 17566.812323023, "pid": 9960, "src": "ws", "recv": 17598.1896965, "lt": 17598.1509971, "tt": 5.3862}
+{"stage": "llm_request", "t": 17566.823774731, "pid": 9960, "speculative": true, "messages": 30, "chars": 11095, "est_tokens": 2774, "src": "ws", "recv": 17598.1945679, "lt": 17598.162448808, "tt": 5.3977}
+{"stage": "asr_partial", "t": 17566.857817933, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now. I don't know. It just makes me happy.", "src": "ws", "recv": 17598.2311587, "lt": 17598.19649201, "tt": 5.4317}
+{"stage": "llm_usage", "t": 17567.544818655, "pid": 9960, "prompt_tokens": 2425, "completion_tokens": 41, "src": "ws", "recv": 17598.9175562, "lt": 17598.883492732, "tt": 6.1187}
+{"stage": "asr_final", "t": 17567.671216809, "pid": 9960, "text": "official businessman in movies and such, then that's what I'm seeing right now. I don't know. It just makes me happy.", "src": "ws", "recv": 17599.0431047, "lt": 17599.009890886, "tt": 6.2451}
+{"stage": "user_stopped", "t": 17567.679467075, "pid": 9960, "src": "ws", "recv": 17599.0552583, "lt": 17599.018141152, "tt": 6.2534}
+{"stage": "user_stopped", "t": 17567.679571407, "pid": 9960, "src": "ws", "recv": 17599.0552821, "lt": 17599.018245484, "tt": 6.2535}
+{"stage": "llm_first_token", "t": 17567.683242991, "pid": 9960, "src": "ws", "recv": 17599.0586766, "lt": 17599.021917068, "tt": 6.2571}

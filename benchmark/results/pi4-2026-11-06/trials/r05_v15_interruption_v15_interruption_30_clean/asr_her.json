@@ -1,0 +1,230 @@
+{
+  "text": "Try moving the tomatoes to a sunnier spot. Use a balanced fertilizer and water consistently at the soil level each morning. Make sure they get at least six hours of direct sunlight.",
+  "chunks": [
+    {
+      "text": "Try",
+      "timestamp": [
+        3.76,
+        4.28
+      ]
+    },
+    {
+      "text": "moving",
+      "timestamp": [
+        4.28,
+        4.56
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.56,
+        4.78
+      ]
+    },
+    {
+      "text": "tomatoes",
+      "timestamp": [
+        4.78,
+        5.14
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        5.14,
+        5.44
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        5.44,
+        5.58
+      ]
+    },
+    {
+      "text": "sunnier",
+      "timestamp": [
+        5.58,
+        5.88
+      ]
+    },
+    {
+      "text": "spot.",
+      "timestamp": [
+        5.88,
+        6.26
+      ]
+    },
+    {
+      "text": "Use",
+      "timestamp": [
+        6.74,
+        6.84
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        6.84,
+        6.94
+      ]
+    },
+    {
+      "text": "balanced",
+      "timestamp": [
+        6.94,
+        7.26
+      ]
+    },
+    {
+      "text": "fertilizer",
+      "timestamp": [
+        7.26,
+        7.9
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        7.9,
+        8.2
+      ]
+    },
+    {
+      "text": "water",
+      "timestamp": [
+        8.2,
+        8.46
+      ]
+    },
+    {
+      "text": "consistently",
+      "timestamp": [
+        8.46,
+        9.12
+      ]
+    },
+    {
+      "text": "at",
+      "timestamp": [
+        9.12,
+        9.44
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        9.44,
+        9.54
+      ]
+    },
+    {
+      "text": "soil",
+      "timestamp": [
+        9.54,
+        9.76
+      ]
+    },
+    {
+      "text": "level",
+      "timestamp": [
+        9.76,
+        10.06
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        10.06,
+        10.34
+      ]
+    },
+    {
+      "text": "morning.",
+      "timestamp": [
+        10.34,
+        10.66
+      ]
+    },
+    {
+      "text": "Make",
+      "timestamp": [
+        10.8,
+        10.92
+      ]
+    },
+    {
+      "text": "sure",
+      "timestamp": [
+        10.92,
+        11.14
+      ]
+    },
+    {
+      "text": "they",
+      "timestamp": [
+        11.14,
+        11.3
+      ]
+    },
+    {
+      "text": "get",
+      "timestamp": [
+        11.3,
+        11.48
+      ]
+    },
+    {
+      "text": "at",
+      "timestamp": [
+        11.48,
+        11.66
+      ]
+    },
+    {
+      "text": "least",
+      "timestamp": [
+        11.66,
+        11.82
+      ]
+    },
+    {
+      "text": "six",
+      "timestamp": [
+        11.82,
+        12.2
+      ]
+    },
+    {
+      "text": "hours",
+      "timestamp": [
+        12.2,
+        12.58
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        12.58,
+        12.82
+      ]
+    },
+    {
+      "text": "direct",
+      "timestamp": [
+        12.82,
+        13.14
+      ]
+    },
+    {
+      "text": "sunlight.",
+      "timestamp": [
+        13.14,
+        13.62
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

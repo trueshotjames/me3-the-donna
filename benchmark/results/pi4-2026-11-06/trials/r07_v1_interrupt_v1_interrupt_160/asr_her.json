@@ -1,0 +1,307 @@
+{
+  "text": "It usually takes one to three years of consistent... It usually takes a few years of consistent study and practice to become fluent, often around two to three years for intensive learners. I'm not able to check the live soccer score right now.",
+  "chunks": [
+    {
+      "text": "It",
+      "timestamp": [
+        4.94,
+        5.38
+      ]
+    },
+    {
+      "text": "usually",
+      "timestamp": [
+        5.38,
+        5.68
+      ]
+    },
+    {
+      "text": "takes",
+      "timestamp": [
+        5.68,
+        6.06
+      ]
+    },
+    {
+      "text": "one",
+      "timestamp": [
+        6.06,
+        6.34
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        6.34,
+        6.5
+      ]
+    },
+    {
+      "text": "three",
+      "timestamp": [
+        6.5,
+        6.74
+      ]
+    },
+    {
+      "text": "years",
+      "timestamp": [
+        6.74,
+        7.04
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        7.04,
+        7.3
+      ]
+    },
+    {
+      "text": "consistent...",
+      "timestamp": [
+        7.3,
+        8.12
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        11.07,
+        11.45
+      ]
+    },
+    {
+      "text": "usually",
+      "timestamp": [
+        11.45,
+        11.77
+      ]
+    },
+    {
+      "text": "takes",
+      "timestamp": [
+        11.77,
+        12.13
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        12.13,
+        12.29
+      ]
+    },
+    {
+      "text": "few",
+      "timestamp": [
+        12.29,
+        12.43
+      ]
+    },
+    {
+      "text": "years",
+      "timestamp": [
+        12.43,
+        12.65
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        12.65,
+        12.81
+      ]
+    },
+    {
+      "text": "consistent",
+      "timestamp": [
+        12.81,
+        13.23
+      ]
+    },
+    {
+      "text": "study",
+      "timestamp": [
+        13.23,
+        13.63
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.63,
+        13.81
+      ]
+    },
+    {
+      "text": "practice",
+      "timestamp": [
+        13.81,
+        14.19
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        14.19,
+        14.39
+      ]
+    },
+    {
+      "text": "become",
+      "timestamp": [
+        14.39,
+        14.65
+      ]
+    },
+    {
+      "text": "fluent,",
+      "timestamp": [
+        14.65,
+        15.11
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        15.55,
+        15.95
+      ]
+    },
+    {
+      "text": "around",
+      "timestamp": [
+        15.95,
+        16.23
+      ]
+    },
+    {
+      "text": "two",
+      "timestamp": [
+        16.23,
+        16.49
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        16.49,
+        16.59
+      ]
+    },
+    {
+      "text": "three",
+      "timestamp": [
+        16.59,
+        16.81
+      ]
+    },
+    {
+      "text": "years",
+      "timestamp": [
+        16.81,
+        17.09
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        17.09,
+        17.31
+      ]
+    },
+    {
+      "text": "intensive",
+      "timestamp": [
+        17.31,
+        17.71
+      ]
+    },
+    {
+      "text": "learners.",
+      "timestamp": [
+        17.71,
+        18.15
+      ]
+    },
+    {
+      "text": "I'm",
+      "timestamp": [
+        18.53,
+        18.63
+      ]
+    },
+    {
+      "text": "not",
+      "timestamp": [
+        18.63,
+        18.79
+      ]
+    },
+    {
+      "text": "able",
+      "timestamp": [
+        18.79,
+        19.03
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        19.03,
+        19.19
+      ]
+    },
+    {
+      "text": "check",
+      "timestamp": [
+        19.19,
+        19.41
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        19.41,
+        19.57
+      ]
+    },
+    {
+      "text": "live",
+      "timestamp": [
+        19.57,
+        19.75
+      ]
+    },
+    {
+      "text": "soccer",
+      "timestamp": [
+        19.75,
+        20.03
+      ]
+    },
+    {
+      "text": "score",
+      "timestamp": [
+        20.03,
+        20.37
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        20.37,
+        20.59
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        20.59,
+        20.83
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

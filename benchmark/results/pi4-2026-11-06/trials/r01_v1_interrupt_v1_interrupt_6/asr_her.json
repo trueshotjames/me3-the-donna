@@ -1,0 +1,223 @@
+{
+  "text": "Consider Paris for its art and cafe. You'll need a Shannon visa if you're not a citizen of a visa -exempt country. Check your passport's eligibility and apply before you travel.",
+  "chunks": [
+    {
+      "text": "Consider",
+      "timestamp": [
+        3.54,
+        4.24
+      ]
+    },
+    {
+      "text": "Paris",
+      "timestamp": [
+        4.24,
+        4.66
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        4.66,
+        4.94
+      ]
+    },
+    {
+      "text": "its",
+      "timestamp": [
+        4.94,
+        5.1
+      ]
+    },
+    {
+      "text": "art",
+      "timestamp": [
+        5.1,
+        5.42
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        5.42,
+        5.64
+      ]
+    },
+    {
+      "text": "cafe.",
+      "timestamp": [
+        5.64,
+        5.9
+      ]
+    },
+    {
+      "text": "You'll",
+      "timestamp": [
+        9.68,
+        10.02
+      ]
+    },
+    {
+      "text": "need",
+      "timestamp": [
+        10.02,
+        10.2
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        10.2,
+        10.36
+      ]
+    },
+    {
+      "text": "Shannon",
+      "timestamp": [
+        10.36,
+        10.58
+      ]
+    },
+    {
+      "text": "visa",
+      "timestamp": [
+        10.58,
+        10.94
+      ]
+    },
+    {
+      "text": "if",
+      "timestamp": [
+        10.94,
+        11.3
+      ]
+    },
+    {
+      "text": "you're",
+      "timestamp": [
+        11.3,
+        11.46
+      ]
+    },
+    {
+      "text": "not",
+      "timestamp": [
+        11.46,
+        11.64
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.64,
+        11.78
+      ]
+    },
+    {
+      "text": "citizen",
+      "timestamp": [
+        11.78,
+        12.1
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        12.1,
+        12.4
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        12.4,
+        12.5
+      ]
+    },
+    {
+      "text": "visa",
+      "timestamp": [
+        12.5,
+        12.76
+      ]
+    },
+    {
+      "text": "-exempt",
+      "timestamp": [
+        12.76,
+        13.12
+      ]
+    },
+    {
+      "text": "country.",
+      "timestamp": [
+        13.12,
+        13.62
+      ]
+    },
+    {
+      "text": "Check",
+      "timestamp": [
+        14.08,
+        14.28
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        14.28,
+        14.44
+      ]
+    },
+    {
+      "text": "passport's",
+      "timestamp": [
+        14.44,
+        15.04
+      ]
+    },
+    {
+      "text": "eligibility",
+      "timestamp": [
+        15.04,
+        15.44
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        15.44,
+        15.98
+      ]
+    },
+    {
+      "text": "apply",
+      "timestamp": [
+        15.98,
+        16.28
+      ]
+    },
+    {
+      "text": "before",
+      "timestamp": [
+        16.28,
+        16.6
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        16.6,
+        16.82
+      ]
+    },
+    {
+      "text": "travel.",
+      "timestamp": [
+        16.82,
+        17.14
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

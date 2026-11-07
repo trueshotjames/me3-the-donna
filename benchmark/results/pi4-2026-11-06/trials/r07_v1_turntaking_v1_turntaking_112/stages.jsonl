@@ -1,0 +1,36 @@
+{"stage": "vad_start", "t": 17933.244943657, "pid": 9960, "src": "ws", "recv": 17964.6227481, "lt": 17964.583617734, "tt": 0.2671}
+{"stage": "vad_start", "t": 17933.245044341, "pid": 9960, "src": "ws", "recv": 17964.6227719, "lt": 17964.583718418, "tt": 0.2672}
+{"stage": "interrupted", "t": 17933.769399975, "pid": 9960, "src": "ws", "recv": 17965.1470341, "lt": 17965.108074052, "tt": 0.7916}
+{"stage": "interrupted", "t": 17933.769489492, "pid": 9960, "src": "ws", "recv": 17965.1470587, "lt": 17965.108163569, "tt": 0.7917}
+{"stage": "asr_partial", "t": 17933.926516247, "pid": 9960, "text": "Nice to meet", "src": "ws", "recv": 17965.3028594, "lt": 17965.265190324, "tt": 0.9487}
+{"stage": "asr_partial", "t": 17934.173462542, "pid": 9960, "text": "Nice to meet you,", "src": "ws", "recv": 17965.5497769, "lt": 17965.512136619, "tt": 1.1956}
+{"stage": "asr_partial", "t": 17934.406376605, "pid": 9960, "text": "Nice to meet you too.", "src": "ws", "recv": 17965.7828809, "lt": 17965.745050682, "tt": 1.4285}
+{"stage": "asr_partial", "t": 17934.654031132, "pid": 9960, "text": "Nice to meet you, chairs. You", "src": "ws", "recv": 17966.0305338, "lt": 17965.992705209, "tt": 1.6762}
+{"stage": "asr_partial", "t": 17934.885315216, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my", "src": "ws", "recv": 17966.2616647, "lt": 17966.223989293, "tt": 1.9075}
+{"stage": "asr_partial", "t": 17935.134171116, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair.", "src": "ws", "recv": 17966.5105367, "lt": 17966.472845193, "tt": 2.1563}
+{"stage": "asr_partial", "t": 17935.209702226, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair.", "src": "ws", "recv": 17966.586004, "lt": 17966.548376303, "tt": 2.2319}
+{"stage": "asr_partial", "t": 17935.366322541, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. I'm", "src": "ws", "recv": 17966.7447624, "lt": 17966.704996618, "tt": 2.3885}
+{"stage": "asr_partial", "t": 17935.612676991, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently,", "src": "ws", "recv": 17966.9901793, "lt": 17966.951351068, "tt": 2.6348}
+{"stage": "asr_partial", "t": 17935.843103641, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently, I", "src": "ws", "recv": 17967.219564, "lt": 17967.181777718, "tt": 2.8653}
+{"stage": "asr_partial", "t": 17936.092675422, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently, I didn't", "src": "ws", "recv": 17967.470188, "lt": 17967.431349499002, "tt": 3.1148}
+{"stage": "asr_partial", "t": 17936.323857377, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently, I didn't bother", "src": "ws", "recv": 17967.7007814, "lt": 17967.662531454, "tt": 3.346}
+{"stage": "asr_partial", "t": 17936.572886683, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently, I didn't bother to", "src": "ws", "recv": 17967.9506115, "lt": 17967.91156076, "tt": 3.5951}
+{"stage": "asr_partial", "t": 17936.802714748, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently, I didn't bother to brush", "src": "ws", "recv": 17968.1791553, "lt": 17968.141388825, "tt": 3.8249}
+{"stage": "asr_partial", "t": 17937.053002946, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently, I didn't bother to brush it down", "src": "ws", "recv": 17968.4317224, "lt": 17968.391677023, "tt": 4.0752}
+{"stage": "asr_partial", "t": 17937.28347541, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently, I didn't bother to brush it today.", "src": "ws", "recv": 17968.6599354, "lt": 17968.622149487, "tt": 4.3056}
+{"stage": "vad_end", "t": 17937.30532671, "pid": 9960, "src": "ws", "recv": 17968.6879295, "lt": 17968.644000787, "tt": 4.3275}
+{"stage": "vad_end", "t": 17937.305381191, "pid": 9960, "src": "ws", "recv": 17968.6879516, "lt": 17968.644055268, "tt": 4.3276}
+{"stage": "llm_request", "t": 17937.316964824, "pid": 9960, "speculative": true, "messages": 44, "chars": 12169, "est_tokens": 3042, "src": "ws", "recv": 17968.6934548, "lt": 17968.655638901, "tt": 4.3391}
+{"stage": "asr_partial", "t": 17937.533945975, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently, I didn't bother to brush it today.", "src": "ws", "recv": 17968.9102408, "lt": 17968.872620052, "tt": 4.5561}
+{"stage": "llm_usage", "t": 17937.923268523, "pid": 9960, "prompt_tokens": 2461, "completion_tokens": 28, "src": "ws", "recv": 17969.2999696, "lt": 17969.261942600002, "tt": 4.9454}
+{"stage": "asr_final", "t": 17938.378872612, "pid": 9960, "text": "Nice to meet you, Ter. Excuse my hair. Apparently, I didn't bother to brush it today.", "src": "ws", "recv": 17969.7594907, "lt": 17969.717546689, "tt": 5.401}
+{"stage": "user_stopped", "t": 17938.393228098, "pid": 9960, "src": "ws", "recv": 17969.7825055, "lt": 17969.731902175, "tt": 5.4154}
+{"stage": "user_stopped", "t": 17938.393351782, "pid": 9960, "src": "ws", "recv": 17969.7825788, "lt": 17969.732025859, "tt": 5.4155}
+{"stage": "llm_first_token", "t": 17938.399256041, "pid": 9960, "src": "ws", "recv": 17969.7912549, "lt": 17969.737930118, "tt": 5.4214}
+{"stage": "tts_request", "t": 17938.44987437, "pid": 9960, "src": "ws", "recv": 17969.8304894, "lt": 17969.788548447, "tt": 5.472}
+{"stage": "tts_first_audio", "t": 17938.620358642, "pid": 9960, "src": "ws", "recv": 17969.9974109, "lt": 17969.959032719, "tt": 5.6425}
+{"stage": "audio_out", "t": 17938.626041219, "pid": 9960, "src": "ws", "recv": 17970.0069333, "lt": 17969.964715296, "tt": 5.6482}
+{"stage": "audio_out", "t": 17938.626130921, "pid": 9960, "src": "ws", "recv": 17970.006955, "lt": 17969.964804998, "tt": 5.6483}
+{"stage": "bot_stopped", "t": 17940.873883871, "pid": 9960, "src": "ws", "recv": 17972.2506151, "lt": 17972.212557948, "tt": 7.8961}
+{"stage": "bot_stopped", "t": 17940.873966295, "pid": 9960, "src": "ws", "recv": 17972.2506386, "lt": 17972.212640372, "tt": 7.8961}
+{"stage": "llm_request", "t": 17940.879976405, "pid": 9960, "messages": 46, "chars": 12267, "est_tokens": 3067, "src": "ws", "recv": 17972.2560333, "lt": 17972.218650482002, "tt": 7.9021}

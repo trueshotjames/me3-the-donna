@@ -1,0 +1,29 @@
+{"stage": "vad_start", "t": 16616.339102003, "pid": 9960, "src": "ws", "recv": 16647.6962765, "lt": 16647.67777608, "tt": 0.2252}
+{"stage": "vad_start", "t": 16616.339195483, "pid": 9960, "src": "ws", "recv": 16647.6962977, "lt": 16647.67786956, "tt": 0.2253}
+{"stage": "asr_partial", "t": 16616.725660779, "pid": 9960, "text": "Place", "src": "ws", "recv": 16648.0816183, "lt": 16648.064334856, "tt": 0.6118}
+{"stage": "interrupted", "t": 16616.852727974, "pid": 9960, "src": "ws", "recv": 16648.210297, "lt": 16648.191402051, "tt": 0.7389}
+{"stage": "interrupted", "t": 16616.852814529, "pid": 9960, "src": "ws", "recv": 16648.2103184, "lt": 16648.191488606, "tt": 0.7389}
+{"stage": "asr_partial", "t": 16617.012664802, "pid": 9960, "text": "Play the latest", "src": "ws", "recv": 16648.3688509, "lt": 16648.351338879, "tt": 0.8988}
+{"stage": "asr_partial", "t": 16617.205007433, "pid": 9960, "text": "Play the latest", "src": "ws", "recv": 16648.56085, "lt": 16648.54368151, "tt": 1.0911}
+{"stage": "asr_partial", "t": 16617.490336866, "pid": 9960, "text": "Play the latest episode", "src": "ws", "recv": 16648.8462464, "lt": 16648.829010943, "tt": 1.3765}
+{"stage": "asr_partial", "t": 16617.685228206, "pid": 9960, "text": "Play the latest episode of my", "src": "ws", "recv": 16649.0409308, "lt": 16649.023902283, "tt": 1.5714}
+{"stage": "asr_partial", "t": 16617.970258939, "pid": 9960, "text": "Play the latest episode of my favorite", "src": "ws", "recv": 16649.326218, "lt": 16649.308933016, "tt": 1.8564}
+{"stage": "asr_partial", "t": 16618.205721052, "pid": 9960, "text": "Play the latest episode of my favorite part", "src": "ws", "recv": 16649.5616859, "lt": 16649.544395129, "tt": 2.0918}
+{"stage": "asr_partial", "t": 16618.453382082, "pid": 9960, "text": "Play the latest episode of my favorite podcast", "src": "ws", "recv": 16649.8098088, "lt": 16649.792056159, "tt": 2.3395}
+{"stage": "llm_request", "t": 16618.528993645, "pid": 9960, "speculative": true, "messages": 41, "chars": 13077, "est_tokens": 3269, "src": "ws", "recv": 16649.885332, "lt": 16649.867667722, "tt": 2.4151}
+{"stage": "llm_cancel", "t": 16618.577088932, "pid": 9960, "src": "ws", "recv": 16649.9332398, "lt": 16649.915763009, "tt": 2.4632}
+{"stage": "vad_end", "t": 16618.671859859, "pid": 9960, "src": "ws", "recv": 16650.0280208, "lt": 16650.010533936, "tt": 2.558}
+{"stage": "vad_end", "t": 16618.671915543, "pid": 9960, "src": "ws", "recv": 16650.0280391, "lt": 16650.01058962, "tt": 2.558}
+{"stage": "llm_request", "t": 16618.690517396, "pid": 9960, "speculative": true, "messages": 41, "chars": 13078, "est_tokens": 3270, "src": "ws", "recv": 16650.0469834, "lt": 16650.029191473, "tt": 2.5766}
+{"stage": "asr_final", "t": 16618.759874706, "pid": 9960, "text": "Play the latest episode of my favorite podcast,", "src": "ws", "recv": 16650.1197499, "lt": 16650.098548783, "tt": 2.646}
+{"stage": "user_stopped", "t": 16618.772119714, "pid": 9960, "src": "ws", "recv": 16650.1328576, "lt": 16650.110793791002, "tt": 2.6582}
+{"stage": "user_stopped", "t": 16618.772223102, "pid": 9960, "src": "ws", "recv": 16650.1328902, "lt": 16650.110897179, "tt": 2.6583}
+{"stage": "llm_first_token", "t": 16619.388276106, "pid": 9960, "src": "ws", "recv": 16650.7455086, "lt": 16650.726950183, "tt": 3.2744}
+{"stage": "llm_usage", "t": 16619.414004126, "pid": 9960, "prompt_tokens": 2613, "completion_tokens": 42, "src": "ws", "recv": 16650.7733166, "lt": 16650.752678203, "tt": 3.3001}
+{"stage": "tts_request", "t": 16619.43381563, "pid": 9960, "src": "ws", "recv": 16650.792508, "lt": 16650.772489707, "tt": 3.3199}
+{"stage": "tts_first_audio", "t": 16619.606359017, "pid": 9960, "src": "ws", "recv": 16650.96186, "lt": 16650.945033094, "tt": 3.4925}
+{"stage": "audio_out", "t": 16619.610759516, "pid": 9960, "src": "ws", "recv": 16650.9716825, "lt": 16650.949433593, "tt": 3.4969}
+{"stage": "audio_out", "t": 16619.610927588, "pid": 9960, "src": "ws", "recv": 16650.9716978, "lt": 16650.949601665, "tt": 3.4971}
+{"stage": "bot_stopped", "t": 16621.539843987, "pid": 9960, "src": "ws", "recv": 16652.8970699, "lt": 16652.878518064, "tt": 5.426}
+{"stage": "bot_stopped", "t": 16621.539955763, "pid": 9960, "src": "ws", "recv": 16652.8970874, "lt": 16652.87862984, "tt": 5.4261}
+{"stage": "llm_request", "t": 16621.549266088, "pid": 9960, "messages": 42, "chars": 13110, "est_tokens": 3278, "src": "ws", "recv": 16652.9063638, "lt": 16652.887940165, "tt": 5.4354}

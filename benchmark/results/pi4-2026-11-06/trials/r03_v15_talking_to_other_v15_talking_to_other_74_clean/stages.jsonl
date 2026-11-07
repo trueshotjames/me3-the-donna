@@ -1,0 +1,31 @@
+{"stage": "vad_start", "t": 16806.090532395, "pid": 9960, "src": "ws", "recv": 16837.4489798, "lt": 16837.429206472, "tt": 0.2166}
+{"stage": "vad_start", "t": 16806.090589746, "pid": 9960, "src": "ws", "recv": 16837.4490005, "lt": 16837.429263823, "tt": 0.2166}
+{"stage": "interrupted", "t": 16806.529348347, "pid": 9960, "src": "ws", "recv": 16837.889451, "lt": 16837.868022424, "tt": 0.6554}
+{"stage": "interrupted", "t": 16806.529437068, "pid": 9960, "src": "ws", "recv": 16837.8894698, "lt": 16837.868111145, "tt": 0.6555}
+{"stage": "asr_partial", "t": 16806.643742701, "pid": 9960, "text": "Translate", "src": "ws", "recv": 16838.0024328, "lt": 16837.982416778, "tt": 0.7698}
+{"stage": "asr_partial", "t": 16806.806848026, "pid": 9960, "text": "Translate", "src": "ws", "recv": 16838.165542, "lt": 16838.145522103, "tt": 0.9329}
+{"stage": "asr_partial", "t": 16807.006951952, "pid": 9960, "text": "Translate I Love", "src": "ws", "recv": 16838.3656283, "lt": 16838.345626029, "tt": 1.133}
+{"stage": "asr_partial", "t": 16807.284297207, "pid": 9960, "text": "Translate I Love So", "src": "ws", "recv": 16838.6429631, "lt": 16838.622971284, "tt": 1.4103}
+{"stage": "asr_partial", "t": 16807.487012026, "pid": 9960, "text": "Translate I Love Sushi", "src": "ws", "recv": 16838.845717, "lt": 16838.825686103, "tt": 1.6131}
+{"stage": "asr_partial", "t": 16807.767008376, "pid": 9960, "text": "Translate I Love Sushi to", "src": "ws", "recv": 16839.1257491, "lt": 16839.105682453, "tt": 1.8931}
+{"stage": "asr_partial", "t": 16807.966614309, "pid": 9960, "text": "Translate I Love Sushi to Japanese", "src": "ws", "recv": 16839.325395, "lt": 16839.305288386, "tt": 2.0927}
+{"stage": "asr_partial", "t": 16808.243892565, "pid": 9960, "text": "Translate I Love Sushi to Japanese", "src": "ws", "recv": 16839.602621, "lt": 16839.582566642, "tt": 2.3699}
+{"stage": "llm_request", "t": 16808.287956465, "pid": 9960, "speculative": true, "messages": 18, "chars": 10123, "est_tokens": 2531, "src": "ws", "recv": 16839.646265, "lt": 16839.626630542, "tt": 2.414}
+{"stage": "vad_end", "t": 16808.324450703, "pid": 9960, "src": "ws", "recv": 16839.6860711, "lt": 16839.66312478, "tt": 2.4505}
+{"stage": "vad_end", "t": 16808.324509572, "pid": 9960, "src": "ws", "recv": 16839.6860999, "lt": 16839.663183649, "tt": 2.4506}
+{"stage": "llm_cancel", "t": 16808.405574722, "pid": 9960, "src": "ws", "recv": 16839.7654648, "lt": 16839.744248799, "tt": 2.5316}
+{"stage": "llm_request", "t": 16808.490999872, "pid": 9960, "speculative": true, "messages": 18, "chars": 10124, "est_tokens": 2531, "src": "ws", "recv": 16839.8514022, "lt": 16839.829673949, "tt": 2.617}
+{"stage": "llm_cancel", "t": 16808.725414916, "pid": 9960, "src": "ws", "recv": 16840.0835402, "lt": 16840.064088993, "tt": 2.8515}
+{"stage": "llm_request", "t": 16808.768274054, "pid": 9960, "speculative": true, "messages": 18, "chars": 10124, "est_tokens": 2531, "src": "ws", "recv": 16840.1268797, "lt": 16840.106948131, "tt": 2.8943}
+{"stage": "asr_final", "t": 16808.825139421, "pid": 9960, "text": "Translate I love sushi to Japanese.", "src": "ws", "recv": 16840.1851674, "lt": 16840.163813498, "tt": 2.9512}
+{"stage": "user_stopped", "t": 16808.833700126, "pid": 9960, "src": "ws", "recv": 16840.1973156, "lt": 16840.172374203, "tt": 2.9597}
+{"stage": "user_stopped", "t": 16808.833769348, "pid": 9960, "src": "ws", "recv": 16840.1973507, "lt": 16840.172443425, "tt": 2.9598}
+{"stage": "llm_first_token", "t": 16809.520262175, "pid": 9960, "src": "ws", "recv": 16840.8822732, "lt": 16840.858936252, "tt": 3.6463}
+{"stage": "llm_usage", "t": 16809.539904128, "pid": 9960, "prompt_tokens": 2494, "completion_tokens": 29, "src": "ws", "recv": 16840.9017435, "lt": 16840.878578205, "tt": 3.666}
+{"stage": "tts_request", "t": 16809.56129367, "pid": 9960, "src": "ws", "recv": 16840.9228606, "lt": 16840.899967747002, "tt": 3.6873}
+{"stage": "tts_first_audio", "t": 16809.73453842, "pid": 9960, "src": "ws", "recv": 16841.0942084, "lt": 16841.073212497, "tt": 3.8606}
+{"stage": "audio_out", "t": 16809.741672459, "pid": 9960, "src": "ws", "recv": 16841.1055459, "lt": 16841.080346536, "tt": 3.8677}
+{"stage": "audio_out", "t": 16809.741754865, "pid": 9960, "src": "ws", "recv": 16841.105564, "lt": 16841.080428942, "tt": 3.8678}
+{"stage": "bot_stopped", "t": 16812.149898657, "pid": 9960, "src": "ws", "recv": 16843.5089344, "lt": 16843.488572734, "tt": 6.2759}
+{"stage": "bot_stopped", "t": 16812.149977915, "pid": 9960, "src": "ws", "recv": 16843.5089551, "lt": 16843.488651992, "tt": 6.276}
+{"stage": "llm_request", "t": 16812.156131799, "pid": 9960, "messages": 19, "chars": 10135, "est_tokens": 2534, "src": "ws", "recv": 16843.5142453, "lt": 16843.494805876002, "tt": 6.2822}

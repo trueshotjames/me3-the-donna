@@ -1,0 +1,76 @@
+{
+  "text": "I heard there's a new phone model coming out soon.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.0,
+        0.44
+      ]
+    },
+    {
+      "text": "heard",
+      "timestamp": [
+        0.44,
+        0.58
+      ]
+    },
+    {
+      "text": "there's",
+      "timestamp": [
+        0.58,
+        0.86
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.86,
+        0.96
+      ]
+    },
+    {
+      "text": "new",
+      "timestamp": [
+        0.96,
+        1.12
+      ]
+    },
+    {
+      "text": "phone",
+      "timestamp": [
+        1.12,
+        1.46
+      ]
+    },
+    {
+      "text": "model",
+      "timestamp": [
+        1.46,
+        1.94
+      ]
+    },
+    {
+      "text": "coming",
+      "timestamp": [
+        1.94,
+        2.3
+      ]
+    },
+    {
+      "text": "out",
+      "timestamp": [
+        2.3,
+        2.52
+      ]
+    },
+    {
+      "text": "soon.",
+      "timestamp": [
+        2.52,
+        2.88
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

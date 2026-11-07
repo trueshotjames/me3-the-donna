@@ -1,0 +1,84 @@
+{
+  "trial": "r06_v1_interrupt_v1_interrupt_157",
+  "group": "v1_interrupt",
+  "clip": "v1_interrupt_157",
+  "variant": "main",
+  "expected": "stop, then answer the new request",
+  "duration": 16.064,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.224
+    },
+    {
+      "name": "overlap",
+      "t": 1.596,
+      "len": 3.253375
+    }
+  ],
+  "live_bot_starts": [
+    0.096,
+    6.528
+  ],
+  "live_bot_ends": [
+    0.768,
+    15.712
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Which exercise should I start with as a beginner?",
+    "interrupt_text": "Oh, before I forget, can you set an alarm for 7 AM?",
+    "source_id": "157"
+  },
+  "mono": [
+    17842.4784531,
+    17858.5272753
+  ],
+  "bot_segments": [
+    [
+      0.066,
+      0.798
+    ],
+    [
+      6.274,
+      15.742
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.224
+  ],
+  "overlap_played": true,
+  "t_stop": null,
+  "t_resp": 1.4246249999999998,
+  "bot_speaking_at_onset": false,
+  "spoke_through": false,
+  "overlap": [
+    1.596,
+    4.849375
+  ],
+  "tor": 1,
+  "first_start": 6.274,
+  "spoke_s": 6.575375,
+  "latency": 1.4246249999999998,
+  "actual": "was already silent, back 1.42 s after",
+  "verdict": "✓ yielded, 1.42 s",
+  "ok": true,
+  "marks": 53,
+  "final": {
+    "tor": 1,
+    "words": 20,
+    "latency": 1.4246249999999998,
+    "t_stop": null,
+    "verdict": "✓ yielded, 1.42 s",
+    "ok": true,
+    "rating": 1,
+    "transcript": "group billion. Start with brisk walking or gentle body weight moves like squats, lunges and push -ups. Doing a few minutes each and gradually increasing time and intensity."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

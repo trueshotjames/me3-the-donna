@@ -1,0 +1,84 @@
+{
+  "trial": "r10_v1_interrupt_v1_interrupt_29",
+  "group": "v1_interrupt",
+  "clip": "v1_interrupt_29",
+  "variant": "main",
+  "expected": "stop, then answer the new request",
+  "duration": 18.88,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.032
+    },
+    {
+      "name": "overlap",
+      "t": 5.436,
+      "len": 3.424
+    }
+  ],
+  "live_bot_starts": [
+    3.936,
+    10.24
+  ],
+  "live_bot_ends": [
+    5.824,
+    18.528
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 3
+  },
+  "clip_meta": {
+    "context_text": "I want to plan a trip for the upcoming holiday",
+    "interrupt_text": "Can we talk about something else? I need some book recommendations.",
+    "source_id": "29"
+  },
+  "mono": [
+    18971.095516,
+    18989.9820713
+  ],
+  "bot_segments": [
+    [
+      3.906,
+      5.854
+    ],
+    [
+      10.21,
+      18.558
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.032
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2519999999999998,
+  "t_resp": 1.3500000000000014,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.602,
+    8.86
+  ],
+  "tor": 1,
+  "first_start": 10.21,
+  "spoke_s": 6.649999999999999,
+  "latency": 1.3500000000000014,
+  "actual": "stopped after 0.25 s, back 1.35 s after",
+  "verdict": "✓ yielded, 1.35 s",
+  "ok": true,
+  "marks": 74,
+  "final": {
+    "tor": 1,
+    "words": 21,
+    "latency": 1.3500000000000014,
+    "t_stop": 0.2519999999999998,
+    "verdict": "✓ yielded, 1.35 s",
+    "ok": true,
+    "rating": 5,
+    "transcript": "Where would you like to go and what dates are you if you enjoy atmospheric mysteries? Try the shadow of the wind by Carlos Ruiz Zephon. It leaves a haunting story set in post -war Barcelona"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

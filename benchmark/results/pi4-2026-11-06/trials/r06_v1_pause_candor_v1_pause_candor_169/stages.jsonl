@@ -1,0 +1,62 @@
+{"stage": "vad_start", "t": 17694.560705451, "pid": 9960, "src": "ws", "recv": 17725.9346098, "lt": 17725.899379528, "tt": 0.1429}
+{"stage": "vad_start", "t": 17694.560803524, "pid": 9960, "src": "ws", "recv": 17725.9346335, "lt": 17725.899477601, "tt": 0.143}
+{"stage": "interrupted", "t": 17695.171811914, "pid": 9960, "src": "ws", "recv": 17726.5459585, "lt": 17726.510485991, "tt": 0.754}
+{"stage": "interrupted", "t": 17695.17189295, "pid": 9960, "src": "ws", "recv": 17726.5459827, "lt": 17726.510567027, "tt": 0.754}
+{"stage": "asr_partial", "t": 17695.324801901, "pid": 9960, "text": "I mean, it", "src": "ws", "recv": 17726.6984227, "lt": 17726.663475978, "tt": 0.9069}
+{"stage": "asr_partial", "t": 17695.562529382, "pid": 9960, "text": "I mean, it's all", "src": "ws", "recv": 17726.9351509, "lt": 17726.901203459, "tt": 1.1447}
+{"stage": "asr_partial", "t": 17695.766524618, "pid": 9960, "text": "I mean, it's all good.", "src": "ws", "recv": 17727.1415457, "lt": 17727.105198695, "tt": 1.3487}
+{"stage": "asr_partial", "t": 17696.042531822, "pid": 9960, "text": "I mean, it's all good.", "src": "ws", "recv": 17727.4152425, "lt": 17727.381205899, "tt": 1.6247}
+{"stage": "asr_partial", "t": 17696.245631163, "pid": 9960, "text": "I mean, it's all good. Like,", "src": "ws", "recv": 17727.6184097, "lt": 17727.58430524, "tt": 1.8278}
+{"stage": "asr_partial", "t": 17696.52287274, "pid": 9960, "text": "I mean, it's all good. Like, I", "src": "ws", "recv": 17727.8955689, "lt": 17727.861546817, "tt": 2.105}
+{"stage": "asr_partial", "t": 17696.726632665, "pid": 9960, "text": "I mean, it's all good. Like, I already", "src": "ws", "recv": 17728.1003064, "lt": 17728.065306742, "tt": 2.3088}
+{"stage": "asr_partial", "t": 17697.002698164, "pid": 9960, "text": "I mean, it's all good. Like, I already know", "src": "ws", "recv": 17728.3754362, "lt": 17728.341372241, "tt": 2.5848}
+{"stage": "asr_partial", "t": 17697.206330628, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like", "src": "ws", "recv": 17728.5800915, "lt": 17728.545004705, "tt": 2.7885}
+{"stage": "vad_end", "t": 17697.40709296, "pid": 9960, "src": "ws", "recv": 17728.7801059, "lt": 17728.745767037, "tt": 2.9892}
+{"stage": "vad_end", "t": 17697.407146719, "pid": 9960, "src": "ws", "recv": 17728.7801322, "lt": 17728.745820796, "tt": 2.9893}
+{"stage": "asr_partial", "t": 17697.483578816, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like,", "src": "ws", "recv": 17728.857691, "lt": 17728.822252893002, "tt": 3.0657}
+{"stage": "asr_partial", "t": 17697.686564713, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like,", "src": "ws", "recv": 17729.0602694, "lt": 17729.02523879, "tt": 3.2687}
+{"stage": "asr_partial", "t": 17697.962781414, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like,", "src": "ws", "recv": 17729.3354797, "lt": 17729.301455491, "tt": 3.5449}
+{"stage": "asr_partial", "t": 17698.166776373, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like,", "src": "ws", "recv": 17729.5404607, "lt": 17729.50545045, "tt": 3.7489}
+{"stage": "vad_start", "t": 17698.267556183, "pid": 9960, "src": "ws", "recv": 17729.6398776, "lt": 17729.60623026, "tt": 3.8497}
+{"stage": "vad_start", "t": 17698.267612793, "pid": 9960, "src": "ws", "recv": 17729.6399008, "lt": 17729.60628687, "tt": 3.8498}
+{"stage": "asr_partial", "t": 17698.442714041, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm", "src": "ws", "recv": 17729.8153619, "lt": 17729.781388118, "tt": 4.0249}
+{"stage": "asr_partial", "t": 17698.647221142, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna play", "src": "ws", "recv": 17730.0216654, "lt": 17729.985895219, "tt": 4.2294}
+{"stage": "asr_partial", "t": 17698.922647205, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put it in", "src": "ws", "recv": 17730.2953329, "lt": 17730.261321282, "tt": 4.5048}
+{"stage": "asr_partial", "t": 17699.126969178, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work", "src": "ws", "recv": 17730.5006731, "lt": 17730.465643255, "tt": 4.7091}
+{"stage": "asr_partial", "t": 17699.403695354, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work and", "src": "ws", "recv": 17730.7766555, "lt": 17730.742369431002, "tt": 4.9858}
+{"stage": "asr_partial", "t": 17699.607035748, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work and then", "src": "ws", "recv": 17730.9808074, "lt": 17730.945709825, "tt": 5.1892}
+{"stage": "asr_partial", "t": 17699.888338403, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I", "src": "ws", "recv": 17731.262305, "lt": 17731.22701248, "tt": 5.4705}
+{"stage": "asr_partial", "t": 17700.087743531, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna", "src": "ws", "recv": 17731.4629676, "lt": 17731.426417608, "tt": 5.6699}
+{"stage": "asr_partial", "t": 17700.364231581, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get", "src": "ws", "recv": 17731.7381326, "lt": 17731.702905658, "tt": 5.9464}
+{"stage": "asr_partial", "t": 17700.56689576, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back", "src": "ws", "recv": 17731.9414827, "lt": 17731.905569837, "tt": 6.149}
+{"stage": "asr_partial", "t": 17700.847122856, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to work", "src": "ws", "recv": 17732.2198264, "lt": 17732.185796933, "tt": 6.4293}
+{"stage": "asr_partial", "t": 17701.046855313, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I", "src": "ws", "recv": 17732.4213981, "lt": 17732.38552939, "tt": 6.629}
+{"stage": "asr_partial", "t": 17701.329403212, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was", "src": "ws", "recv": 17732.7020515, "lt": 17732.668077289, "tt": 6.9116}
+{"stage": "asr_partial", "t": 17701.527119028, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and", "src": "ws", "recv": 17732.9020823, "lt": 17732.865793105, "tt": 7.1093}
+{"stage": "asr_partial", "t": 17701.806665613, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and then I", "src": "ws", "recv": 17733.1795872, "lt": 17733.14533969, "tt": 7.3888}
+{"stage": "asr_partial", "t": 17702.008989575, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and then I'm gonna", "src": "ws", "recv": 17733.3837456, "lt": 17733.347663652, "tt": 7.5911}
+{"stage": "asr_partial", "t": 17702.286991846, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and then I'm gonna pass", "src": "ws", "recv": 17733.6600107, "lt": 17733.625665923, "tt": 7.8691}
+{"stage": "asr_partial", "t": 17702.487517608, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and then I'm gonna pass where I", "src": "ws", "recv": 17733.8625006, "lt": 17733.826191685, "tt": 8.0697}
+{"stage": "asr_partial", "t": 17702.767006713, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and then I'm gonna pass where I was.", "src": "ws", "recv": 17734.1399051, "lt": 17734.10568079, "tt": 8.3492}
+{"stage": "asr_partial", "t": 17702.966557116, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and then I'm gonna pass where I was. So", "src": "ws", "recv": 17734.3403782, "lt": 17734.305231193, "tt": 8.5487}
+{"stage": "vad_end", "t": 17703.068155897, "pid": 9960, "src": "ws", "recv": 17734.4412041, "lt": 17734.406829974, "tt": 8.6503}
+{"stage": "vad_end", "t": 17703.068211452, "pid": 9960, "src": "ws", "recv": 17734.4412281, "lt": 17734.406885529, "tt": 8.6504}
+{"stage": "vad_start", "t": 17703.260358245, "pid": 9960, "src": "ws", "recv": 17734.6327642, "lt": 17734.599032322, "tt": 8.8425}
+{"stage": "vad_start", "t": 17703.260413763, "pid": 9960, "src": "ws", "recv": 17734.6327886, "lt": 17734.59908784, "tt": 8.8426}
+{"stage": "vad_end", "t": 17704.028053095, "pid": 9960, "src": "ws", "recv": 17735.4011516, "lt": 17735.366727172, "tt": 9.6102}
+{"stage": "vad_end", "t": 17704.028110872, "pid": 9960, "src": "ws", "recv": 17735.4011753, "lt": 17735.366784949, "tt": 9.6103}
+{"stage": "asr_partial", "t": 17704.133542586, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and then I'm gonna pass where I was. So not a big deal", "src": "ws", "recv": 17735.5067925, "lt": 17735.472216663, "tt": 9.7157}
+{"stage": "llm_request", "t": 17704.13664951, "pid": 9960, "speculative": true, "messages": 18, "chars": 9884, "est_tokens": 2471, "src": "ws", "recv": 17735.5101632, "lt": 17735.475323587, "tt": 9.7188}
+{"stage": "asr_partial", "t": 17704.203283934, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and then I'm gonna pass where I was. So not a big deal.", "src": "ws", "recv": 17735.5760792, "lt": 17735.541958011, "tt": 9.7854}
+{"stage": "asr_final", "t": 17704.939188368, "pid": 9960, "text": "I mean, it's all good. Like, I already know, like, I'm gonna put in the work, and then I'm gonna get back to where I was, and then I'm gonna pass where I was. So not a big deal.", "src": "ws", "recv": 17736.3130247, "lt": 17736.277862445, "tt": 10.5213}
+{"stage": "user_stopped", "t": 17704.946247946, "pid": 9960, "src": "ws", "recv": 17736.3216918, "lt": 17736.284922023002, "tt": 10.5284}
+{"stage": "user_stopped", "t": 17704.946316408, "pid": 9960, "src": "ws", "recv": 17736.3217113, "lt": 17736.284990485, "tt": 10.5285}
+{"stage": "llm_first_token", "t": 17705.083133099, "pid": 9960, "src": "ws", "recv": 17736.4589719, "lt": 17736.421807176, "tt": 10.6653}
+{"stage": "llm_usage", "t": 17705.213600091, "pid": 9960, "prompt_tokens": 2501, "completion_tokens": 35, "src": "ws", "recv": 17736.5882727, "lt": 17736.552274168, "tt": 10.7957}
+{"stage": "tts_request", "t": 17705.230134291, "pid": 9960, "src": "ws", "recv": 17736.6055037, "lt": 17736.568808368, "tt": 10.8123}
+{"stage": "tts_first_audio", "t": 17705.441216865, "pid": 9960, "src": "ws", "recv": 17736.8149913, "lt": 17736.779890942, "tt": 11.0234}
+{"stage": "audio_out", "t": 17705.447573119, "pid": 9960, "src": "ws", "recv": 17736.8252159, "lt": 17736.786247196, "tt": 11.0297}
+{"stage": "audio_out", "t": 17705.447656192, "pid": 9960, "src": "ws", "recv": 17736.8252391, "lt": 17736.786330269, "tt": 11.0298}
+{"stage": "bot_stopped", "t": 17708.176050647, "pid": 9960, "src": "ws", "recv": 17739.549091, "lt": 17739.514724724, "tt": 13.7582}
+{"stage": "bot_stopped", "t": 17708.176134924, "pid": 9960, "src": "ws", "recv": 17739.5491109, "lt": 17739.514809001, "tt": 13.7583}
+{"stage": "llm_request", "t": 17708.182279328, "pid": 9960, "messages": 19, "chars": 9941, "est_tokens": 2485, "src": "ws", "recv": 17739.5546446, "lt": 17739.520953405, "tt": 13.7644}

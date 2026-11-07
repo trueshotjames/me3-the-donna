@@ -1,0 +1,55 @@
+{
+  "text": "Explain the gig economy in depth. Exactly.",
+  "chunks": [
+    {
+      "text": "Explain",
+      "timestamp": [
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.4,
+        0.58
+      ]
+    },
+    {
+      "text": "gig",
+      "timestamp": [
+        0.58,
+        0.74
+      ]
+    },
+    {
+      "text": "economy",
+      "timestamp": [
+        0.74,
+        1.2
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        1.2,
+        1.4
+      ]
+    },
+    {
+      "text": "depth.",
+      "timestamp": [
+        1.4,
+        1.72
+      ]
+    },
+    {
+      "text": "Exactly.",
+      "timestamp": [
+        4.63,
+        5.35
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

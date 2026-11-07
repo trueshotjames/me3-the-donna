@@ -1,0 +1,66 @@
+{"stage": "vad_start", "t": 16332.11961343, "pid": 9960, "src": "ws", "recv": 16363.4722432, "lt": 16363.458287507001, "tt": 0.1657}
+{"stage": "vad_start", "t": 16332.119708836, "pid": 9960, "src": "ws", "recv": 16363.4722699, "lt": 16363.458382913, "tt": 0.1658}
+{"stage": "interrupted", "t": 16332.693064982, "pid": 9960, "src": "ws", "recv": 16364.0457917, "lt": 16364.031739059, "tt": 0.7392}
+{"stage": "interrupted", "t": 16332.693220573, "pid": 9960, "src": "ws", "recv": 16364.0458162, "lt": 16364.031894650001, "tt": 0.7393}
+{"stage": "asr_final", "t": 16332.743060086, "pid": 9960, "text": "Yeah.", "src": "ws", "recv": 16364.0943392, "lt": 16364.081734163, "tt": 0.7891}
+{"stage": "llm_request", "t": 16332.746695448, "pid": 9960, "speculative": true, "messages": 15, "chars": 9900, "est_tokens": 2475, "src": "ws", "recv": 16364.0993556, "lt": 16364.085369525, "tt": 0.7928}
+{"stage": "user_stopped", "t": 16332.751256595, "pid": 9960, "src": "ws", "recv": 16364.1085585, "lt": 16364.089930672, "tt": 0.7973}
+{"stage": "user_stopped", "t": 16332.751322502, "pid": 9960, "src": "ws", "recv": 16364.1085747, "lt": 16364.089996579, "tt": 0.7974}
+{"stage": "llm_first_token", "t": 16333.270718982, "pid": 9960, "src": "ws", "recv": 16364.62775, "lt": 16364.609393059, "tt": 1.3168}
+{"stage": "llm_usage", "t": 16333.284249778, "pid": 9960, "prompt_tokens": 2441, "completion_tokens": 34, "src": "ws", "recv": 16364.6409582, "lt": 16364.622923855, "tt": 1.3303}
+{"stage": "tts_request", "t": 16333.306231654, "pid": 9960, "src": "ws", "recv": 16364.6603005, "lt": 16364.644905731, "tt": 1.3523}
+{"stage": "interrupted", "t": 16333.413754638, "pid": 9960, "src": "ws", "recv": 16364.7698876, "lt": 16364.752428715, "tt": 1.4598}
+{"stage": "interrupted", "t": 16333.413970728, "pid": 9960, "src": "ws", "recv": 16364.7699095, "lt": 16364.752644805, "tt": 1.4601}
+{"stage": "asr_partial", "t": 16333.605433433, "pid": 9960, "text": "I think it's", "src": "ws", "recv": 16364.9570871, "lt": 16364.94410751, "tt": 1.6515}
+{"stage": "asr_partial", "t": 16333.885807556, "pid": 9960, "text": "I think it's a funny", "src": "ws", "recv": 16365.2370284, "lt": 16365.224481633, "tt": 1.9319}
+{"stage": "asr_partial", "t": 16334.088766655, "pid": 9960, "text": "I think it's a funny state,", "src": "ws", "recv": 16365.4401913, "lt": 16365.427440732, "tt": 2.1349}
+{"stage": "asr_partial", "t": 16334.369594828, "pid": 9960, "text": "I think it's a funny state, actually.", "src": "ws", "recv": 16365.721263, "lt": 16365.708268905, "tt": 2.4157}
+{"stage": "asr_partial", "t": 16334.568989305, "pid": 9960, "text": "I think it's a funny state, actually, in a", "src": "ws", "recv": 16365.920383, "lt": 16365.907663382, "tt": 2.6151}
+{"stage": "asr_partial", "t": 16334.845901693, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of", "src": "ws", "recv": 16366.1974137, "lt": 16366.18457577, "tt": 2.892}
+{"stage": "asr_partial", "t": 16335.049040383, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways.", "src": "ws", "recv": 16366.4004037, "lt": 16366.387714460001, "tt": 3.0951}
+{"stage": "asr_partial", "t": 16335.325646905, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really", "src": "ws", "recv": 16366.6768497, "lt": 16366.664320982, "tt": 3.3717}
+{"stage": "asr_partial", "t": 16335.528674966, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss", "src": "ws", "recv": 16366.8801603, "lt": 16366.867349043001, "tt": 3.5748}
+{"stage": "asr_partial", "t": 16335.805846573, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it.", "src": "ws", "recv": 16367.1573693, "lt": 16367.14452065, "tt": 3.8519}
+{"stage": "asr_partial", "t": 16336.012406925, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot.", "src": "ws", "recv": 16367.3661923, "lt": 16367.351081002, "tt": 4.0585}
+{"stage": "asr_partial", "t": 16336.289482663, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot.", "src": "ws", "recv": 16367.6410096, "lt": 16367.62815674, "tt": 4.3356}
+{"stage": "asr_partial", "t": 16336.488513866, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I look", "src": "ws", "recv": 16367.8399883, "lt": 16367.827187943, "tt": 4.5346}
+{"stage": "asr_partial", "t": 16336.768905304, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for", "src": "ws", "recv": 16368.1202088, "lt": 16368.107579381, "tt": 4.815}
+{"stage": "asr_partial", "t": 16336.96922788, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six", "src": "ws", "recv": 16368.3205913, "lt": 16368.307901957, "tt": 5.0153}
+{"stage": "asr_partial", "t": 16337.24983613, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years.", "src": "ws", "recv": 16368.6024249, "lt": 16368.588510207, "tt": 5.2959}
+{"stage": "asr_partial", "t": 16337.454437339, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and", "src": "ws", "recv": 16368.810584, "lt": 16368.793111416, "tt": 5.5005}
+{"stage": "asr_partial", "t": 16337.728894405, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and", "src": "ws", "recv": 16369.0802349, "lt": 16369.067568482, "tt": 5.775}
+{"stage": "vad_end", "t": 16337.905226964, "pid": 9960, "src": "ws", "recv": 16369.2568974, "lt": 16369.243901041, "tt": 5.9513}
+{"stage": "vad_end", "t": 16337.905280111, "pid": 9960, "src": "ws", "recv": 16369.2569199, "lt": 16369.243954188, "tt": 5.9514}
+{"stage": "asr_partial", "t": 16337.930648316, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and", "src": "ws", "recv": 16369.2827942, "lt": 16369.269322393, "tt": 5.9767}
+{"stage": "asr_partial", "t": 16338.208987779, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and", "src": "ws", "recv": 16369.5602988, "lt": 16369.547661856, "tt": 6.2551}
+{"stage": "vad_start", "t": 16338.641274929, "pid": 9960, "src": "ws", "recv": 16369.9922802, "lt": 16369.979949006, "tt": 6.6874}
+{"stage": "vad_start", "t": 16338.64133904, "pid": 9960, "src": "ws", "recv": 16369.9923085, "lt": 16369.980013117, "tt": 6.6874}
+{"stage": "asr_partial", "t": 16338.889124381, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's a", "src": "ws", "recv": 16370.2405444, "lt": 16370.227798458, "tt": 6.9352}
+{"stage": "asr_partial", "t": 16339.166222581, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really", "src": "ws", "recv": 16370.5175187, "lt": 16370.504896658, "tt": 7.2123}
+{"stage": "asr_partial", "t": 16339.368755149, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love", "src": "ws", "recv": 16370.7202071, "lt": 16370.707429226, "tt": 7.4148}
+{"stage": "asr_partial", "t": 16339.646521823, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it.", "src": "ws", "recv": 16370.997957, "lt": 16370.9851959, "tt": 7.6926}
+{"stage": "asr_partial", "t": 16339.8494802, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there.", "src": "ws", "recv": 16371.201014, "lt": 16371.188154277, "tt": 7.8956}
+{"stage": "asr_partial", "t": 16340.128802762, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but", "src": "ws", "recv": 16371.4801525, "lt": 16371.467476839, "tt": 8.1749}
+{"stage": "asr_partial", "t": 16340.329967791, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but it's", "src": "ws", "recv": 16371.6815638, "lt": 16371.668641868, "tt": 8.3761}
+{"stage": "asr_partial", "t": 16340.609934789, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but it's also", "src": "ws", "recv": 16371.9612919, "lt": 16371.948608866, "tt": 8.656}
+{"stage": "asr_partial", "t": 16340.81000298, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but it's also our", "src": "ws", "recv": 16372.1616427, "lt": 16372.148677057, "tt": 8.8561}
+{"stage": "asr_partial", "t": 16341.089543817, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but it's also a really", "src": "ws", "recv": 16372.4408893, "lt": 16372.428217894, "tt": 9.1356}
+{"stage": "asr_partial", "t": 16341.290087335, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but it's also a really fun", "src": "ws", "recv": 16372.6419718, "lt": 16372.628761412001, "tt": 9.3362}
+{"stage": "asr_partial", "t": 16341.568039451, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but it's also a really funny", "src": "ws", "recv": 16372.9194118, "lt": 16372.906713528, "tt": 9.6141}
+{"stage": "asr_partial", "t": 16341.770558444, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but it's also a really funny state", "src": "ws", "recv": 16373.1227495, "lt": 16373.109232521, "tt": 9.8166}
+{"stage": "asr_partial", "t": 16342.046551714, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but it's also a really funny state.", "src": "ws", "recv": 16373.3979807, "lt": 16373.385225791, "tt": 10.0926}
+{"stage": "vad_end", "t": 16342.132178154, "pid": 9960, "src": "ws", "recv": 16373.4839636, "lt": 16373.470852231, "tt": 10.1783}
+{"stage": "vad_end", "t": 16342.132234246, "pid": 9960, "src": "ws", "recv": 16373.4839866, "lt": 16373.470908323001, "tt": 10.1783}
+{"stage": "llm_request", "t": 16342.220584208, "pid": 9960, "speculative": true, "messages": 16, "chars": 10080, "est_tokens": 2520, "src": "ws", "recv": 16373.5731772, "lt": 16373.559258285, "tt": 10.2667}
+{"stage": "llm_usage", "t": 16342.823408285, "pid": 9960, "prompt_tokens": 2509, "completion_tokens": 38, "src": "ws", "recv": 16374.1754529, "lt": 16374.162082362, "tt": 10.8695}
+{"stage": "asr_final", "t": 16342.869679101, "pid": 9960, "text": "I think it's a funny state, actually, in a lot of ways. I really miss it a lot. I lived there for six years, and it's... I really love it there, but it's also a really funny state.", "src": "ws", "recv": 16374.2224864, "lt": 16374.208353178, "tt": 10.9158}
+{"stage": "user_stopped", "t": 16342.879308612, "pid": 9960, "src": "ws", "recv": 16374.2332421, "lt": 16374.217982689, "tt": 10.9254}
+{"stage": "user_stopped", "t": 16342.879377259, "pid": 9960, "src": "ws", "recv": 16374.2332643, "lt": 16374.218051336, "tt": 10.9255}
+{"stage": "llm_first_token", "t": 16342.884967783, "pid": 9960, "src": "ws", "recv": 16374.2415577, "lt": 16374.22364186, "tt": 10.9311}
+{"stage": "tts_request", "t": 16342.908102978, "pid": 9960, "src": "ws", "recv": 16374.26298, "lt": 16374.246777055001, "tt": 10.9542}
+{"stage": "tts_first_audio", "t": 16343.115396968, "pid": 9960, "src": "ws", "recv": 16374.4666977, "lt": 16374.454071045, "tt": 11.1615}
+{"stage": "audio_out", "t": 16343.120278074, "pid": 9960, "src": "ws", "recv": 16374.4785939, "lt": 16374.458952151, "tt": 11.1664}
+{"stage": "audio_out", "t": 16343.120362703, "pid": 9960, "src": "ws", "recv": 16374.4786145, "lt": 16374.459036780001, "tt": 11.1664}
+{"stage": "bot_stopped", "t": 16347.167278341, "pid": 9960, "src": "ws", "recv": 16378.5190055, "lt": 16378.505952418, "tt": 15.2134}
+{"stage": "bot_stopped", "t": 16347.167361211, "pid": 9960, "src": "ws", "recv": 16378.5190268, "lt": 16378.506035288001, "tt": 15.2134}
+{"stage": "llm_request", "t": 16347.173423006, "pid": 9960, "messages": 17, "chars": 10163, "est_tokens": 2541, "src": "ws", "recv": 16378.5241534, "lt": 16378.512097083, "tt": 15.2195}

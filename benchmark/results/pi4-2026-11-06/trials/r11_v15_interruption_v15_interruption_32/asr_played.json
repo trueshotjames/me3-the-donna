@@ -1,0 +1,146 @@
+{
+  "text": "I heard there's a new phone model coming out soon. Hold that thought. What were the top songs this year?",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.0,
+        0.44
+      ]
+    },
+    {
+      "text": "heard",
+      "timestamp": [
+        0.44,
+        0.58
+      ]
+    },
+    {
+      "text": "there's",
+      "timestamp": [
+        0.58,
+        0.86
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.86,
+        0.96
+      ]
+    },
+    {
+      "text": "new",
+      "timestamp": [
+        0.96,
+        1.12
+      ]
+    },
+    {
+      "text": "phone",
+      "timestamp": [
+        1.12,
+        1.48
+      ]
+    },
+    {
+      "text": "model",
+      "timestamp": [
+        1.48,
+        1.94
+      ]
+    },
+    {
+      "text": "coming",
+      "timestamp": [
+        1.94,
+        2.3
+      ]
+    },
+    {
+      "text": "out",
+      "timestamp": [
+        2.3,
+        2.52
+      ]
+    },
+    {
+      "text": "soon.",
+      "timestamp": [
+        2.52,
+        2.92
+      ]
+    },
+    {
+      "text": "Hold",
+      "timestamp": [
+        6.02,
+        6.54
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        6.54,
+        6.76
+      ]
+    },
+    {
+      "text": "thought.",
+      "timestamp": [
+        6.76,
+        7.04
+      ]
+    },
+    {
+      "text": "What",
+      "timestamp": [
+        7.72,
+        7.98
+      ]
+    },
+    {
+      "text": "were",
+      "timestamp": [
+        7.98,
+        8.1
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        8.1,
+        8.2
+      ]
+    },
+    {
+      "text": "top",
+      "timestamp": [
+        8.2,
+        8.38
+      ]
+    },
+    {
+      "text": "songs",
+      "timestamp": [
+        8.38,
+        8.64
+      ]
+    },
+    {
+      "text": "this",
+      "timestamp": [
+        8.64,
+        8.82
+      ]
+    },
+    {
+      "text": "year?",
+      "timestamp": [
+        8.82,
+        9.02
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

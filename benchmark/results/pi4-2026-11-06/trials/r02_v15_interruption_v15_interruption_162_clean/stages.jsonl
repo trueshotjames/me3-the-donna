@@ -1,0 +1,27 @@
+{"stage": "vad_start", "t": 16675.410136337, "pid": 9960, "src": "ws", "recv": 16706.7682399, "lt": 16706.748810414, "tt": 0.8642}
+{"stage": "vad_start", "t": 16675.410232392, "pid": 9960, "src": "ws", "recv": 16706.7682618, "lt": 16706.748906469, "tt": 0.8643}
+{"stage": "interrupted", "t": 16675.887921384, "pid": 9960, "src": "ws", "recv": 16707.2464076, "lt": 16707.226595461, "tt": 1.342}
+{"stage": "interrupted", "t": 16675.88802803, "pid": 9960, "src": "ws", "recv": 16707.2464319, "lt": 16707.226702107, "tt": 1.3421}
+{"stage": "asr_partial", "t": 16676.004650551, "pid": 9960, "text": "What is some of", "src": "ws", "recv": 16707.3617029, "lt": 16707.343324628, "tt": 1.4587}
+{"stage": "asr_partial", "t": 16676.244854761, "pid": 9960, "text": "What are some effect", "src": "ws", "recv": 16707.6014556, "lt": 16707.583528838, "tt": 1.699}
+{"stage": "asr_partial", "t": 16676.451045537, "pid": 9960, "text": "What is some effective", "src": "ws", "recv": 16707.8084449, "lt": 16707.789719614, "tt": 1.9051}
+{"stage": "asr_partial", "t": 16676.724382785, "pid": 9960, "text": "What are some effective ways", "src": "ws", "recv": 16708.0810207, "lt": 16708.063056862, "tt": 2.1785}
+{"stage": "asr_partial", "t": 16676.926741296, "pid": 9960, "text": "What are some effective ways to make", "src": "ws", "recv": 16708.283447, "lt": 16708.265415373, "tt": 2.3808}
+{"stage": "asr_partial", "t": 16677.204690059, "pid": 9960, "text": "What are some effective ways to manage", "src": "ws", "recv": 16708.5613438, "lt": 16708.543364136, "tt": 2.6588}
+{"stage": "asr_partial", "t": 16677.404963134, "pid": 9960, "text": "What are some effective ways to manage stress", "src": "ws", "recv": 16708.7616262, "lt": 16708.743637211, "tt": 2.8591}
+{"stage": "vad_end", "t": 16677.490024837, "pid": 9960, "src": "ws", "recv": 16708.8500611, "lt": 16708.828698914, "tt": 2.9441}
+{"stage": "vad_end", "t": 16677.490093485, "pid": 9960, "src": "ws", "recv": 16708.8500829, "lt": 16708.828767562, "tt": 2.9442}
+{"stage": "llm_request", "t": 16677.497948791, "pid": 9960, "speculative": true, "messages": 50, "chars": 13611, "est_tokens": 3403, "src": "ws", "recv": 16708.854887, "lt": 16708.836622868, "tt": 2.952}
+{"stage": "asr_partial", "t": 16677.684957444, "pid": 9960, "text": "What are some effective ways to manage stress?", "src": "ws", "recv": 16709.0418959, "lt": 16709.023631521, "tt": 3.1391}
+{"stage": "asr_final", "t": 16677.85564414, "pid": 9960, "text": "What are some effective ways to manage stress?", "src": "ws", "recv": 16709.2139696, "lt": 16709.194318217, "tt": 3.3097}
+{"stage": "user_stopped", "t": 16677.863980459, "pid": 9960, "src": "ws", "recv": 16709.2240603, "lt": 16709.202654536, "tt": 3.3181}
+{"stage": "user_stopped", "t": 16677.864080865, "pid": 9960, "src": "ws", "recv": 16709.2240827, "lt": 16709.202754942, "tt": 3.3182}
+{"stage": "llm_first_token", "t": 16678.046337505, "pid": 9960, "src": "ws", "recv": 16709.4084958, "lt": 16709.385011582, "tt": 3.5004}
+{"stage": "llm_usage", "t": 16678.046458948, "pid": 9960, "prompt_tokens": 2446, "completion_tokens": 48, "src": "ws", "recv": 16709.4085198, "lt": 16709.385133025, "tt": 3.5006}
+{"stage": "tts_request", "t": 16678.071890029, "pid": 9960, "src": "ws", "recv": 16709.4334503, "lt": 16709.410564106, "tt": 3.526}
+{"stage": "tts_first_audio", "t": 16678.282300566, "pid": 9960, "src": "ws", "recv": 16709.6411574, "lt": 16709.620974643, "tt": 3.7364}
+{"stage": "audio_out", "t": 16678.28944266, "pid": 9960, "src": "ws", "recv": 16709.6515684, "lt": 16709.628116737, "tt": 3.7435}
+{"stage": "audio_out", "t": 16678.289528066, "pid": 9960, "src": "ws", "recv": 16709.6515897, "lt": 16709.628202143, "tt": 3.7436}
+{"stage": "bot_stopped", "t": 16687.020884849, "pid": 9960, "src": "ws", "recv": 16718.3802996, "lt": 16718.359558926, "tt": 12.475}
+{"stage": "bot_stopped", "t": 16687.021195326, "pid": 9960, "src": "ws", "recv": 16718.3803194, "lt": 16718.359869403, "tt": 12.4753}
+{"stage": "llm_request", "t": 16687.029121299, "pid": 9960, "messages": 51, "chars": 13748, "est_tokens": 3437, "src": "ws", "recv": 16718.385399, "lt": 16718.367795376, "tt": 12.4832}

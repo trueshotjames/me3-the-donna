@@ -1,0 +1,99 @@
+{
+  "trial": "r04_v15_interruption_v15_interruption_3",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_3",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 12.48,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.584
+    },
+    {
+      "name": "overlap",
+      "t": 4.8919375,
+      "len": 2.8690625
+    }
+  ],
+  "live_bot_starts": [
+    3.392,
+    8.384
+  ],
+  "live_bot_ends": [
+    5.28,
+    11.264
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "What's the latest in smart home devices?",
+    "current_turn_text": "Hold on, what time is the meeting scheduled today?",
+    "overlap_text": "Hold on, what time is the meeting scheduled today?",
+    "overlap_duration": 2.87,
+    "overlap_window": [
+      6.2509999999999994,
+      9.12
+    ],
+    "source_id": "3"
+  },
+  "mono": [
+    17203.7509524,
+    17216.2538428
+  ],
+  "bot_segments": [
+    [
+      3.362,
+      5.31
+    ],
+    [
+      8.354,
+      11.294
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.584
+  ],
+  "overlap_played": true,
+  "t_stop": 0.31599999999999984,
+  "t_resp": 1.0599999999999996,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.994,
+    7.294
+  ],
+  "tor": 1,
+  "first_start": 8.354,
+  "spoke_s": 2.9400000000000013,
+  "latency": 0.5929999999999991,
+  "actual": "stopped after 0.32 s, back 1.06 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 54,
+  "final": {
+    "t_stop": 0.31599999999999984,
+    "t_resp": 1.0599999999999996,
+    "label": "Uncertain",
+    "voice_delta": {
+      "wpm": 17.129320293992578,
+      "pitch_mean": -52.1335287945104,
+      "pitch_sd": -33.716373200374925,
+      "intensity_mean": -3.4761551881877324,
+      "intensity_sd": 0.891246554018891,
+      "utmosv2": null
+    },
+    "transcript": "The newest smart home devices. I'm sorry. I don't have that information right now",
+    "judge_label": "Uncertain",
+    "ok": false,
+    "verdict": "✗ Uncertain"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

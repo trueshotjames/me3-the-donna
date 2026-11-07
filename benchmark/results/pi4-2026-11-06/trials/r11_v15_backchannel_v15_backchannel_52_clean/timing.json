@@ -1,0 +1,64 @@
+{
+  "trial": "r11_v15_backchannel_v15_backchannel_52_clean",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_52",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 17.44,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.68
+    }
+  ],
+  "live_bot_starts": [
+    0.0,
+    4.064
+  ],
+  "live_bot_ends": [
+    0.224,
+    17.088
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Offer an exhaustive overview of tornadoes.",
+    "current_turn_text": "",
+    "overlap_text": "uh-huh yeah",
+    "overlap_duration": 0.84,
+    "overlap_window": [
+      6.554,
+      7.390000000000001
+    ],
+    "source_id": "52"
+  },
+  "mono": [
+    19190.0827638,
+    19207.5183048
+  ],
+  "bot_segments": [
+    [
+      4.034,
+      17.118
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.68
+  ],
+  "tor": 1,
+  "first_start": 4.034,
+  "spoke_s": 6.646,
+  "actual": "replied after 1.35 s, spoke 6.6 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 29,
+  "final": {
+    "transcript": "Tornadoes are violently rotating columns of air that extend from a thunderstorm to the ground, capable of destroying structures in seconds. They form most often in the United States, especially in the central tornado alley."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

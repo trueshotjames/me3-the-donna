@@ -1,0 +1,53 @@
+{
+  "trial": "r10_false_tt_false_background_007",
+  "group": "false_tt",
+  "clip": "false_background_007",
+  "variant": "main",
+  "expected": "stay silent",
+  "duration": 9.408,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.393
+    }
+  ],
+  "live_bot_starts": [],
+  "live_bot_ends": [],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "kind": "background",
+    "kind_label": "background speech",
+    "level_db": -15,
+    "text": "The doorbell just rang.",
+    "source": "v15_background_29"
+  },
+  "mono": [
+    18716.3390352,
+    18725.7581995
+  ],
+  "bot_segments": [],
+  "play_first": [
+    0.0,
+    1.393
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "actual": "silent",
+  "verdict": "✓ silent",
+  "ok": true,
+  "marks": 16,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ silent",
+    "ok": true,
+    "transcript": ""
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

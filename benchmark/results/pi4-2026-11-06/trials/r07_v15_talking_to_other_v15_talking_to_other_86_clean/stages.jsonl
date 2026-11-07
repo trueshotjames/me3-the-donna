@@ -1,0 +1,27 @@
+{"stage": "vad_start", "t": 17854.175931077, "pid": 9960, "src": "ws", "recv": 17885.5525228, "lt": 17885.514605154, "tt": 0.1741}
+{"stage": "vad_start", "t": 17854.176074742, "pid": 9960, "src": "ws", "recv": 17885.5525439, "lt": 17885.514748819, "tt": 0.1743}
+{"stage": "asr_partial", "t": 17854.603571439, "pid": 9960, "text": "How", "src": "ws", "recv": 17885.9787191, "lt": 17885.942245516, "tt": 0.6018}
+{"stage": "interrupted", "t": 17854.725867832, "pid": 9960, "src": "ws", "recv": 17886.1022539, "lt": 17886.064541909, "tt": 0.7241}
+{"stage": "interrupted", "t": 17854.725958164, "pid": 9960, "src": "ws", "recv": 17886.1022843, "lt": 17886.064632241, "tt": 0.7242}
+{"stage": "asr_partial", "t": 17854.923698797, "pid": 9960, "text": "How long should I", "src": "ws", "recv": 17886.2988513, "lt": 17886.262372874, "tt": 0.9219}
+{"stage": "asr_partial", "t": 17855.133815904, "pid": 9960, "text": "How long should I", "src": "ws", "recv": 17886.5100795, "lt": 17886.472489981, "tt": 1.132}
+{"stage": "asr_partial", "t": 17855.403786353, "pid": 9960, "text": "How long should I steep", "src": "ws", "recv": 17886.7789678, "lt": 17886.74246043, "tt": 1.402}
+{"stage": "asr_partial", "t": 17855.613687667, "pid": 9960, "text": "How long should I steep", "src": "ws", "recv": 17886.9898996, "lt": 17886.952361744, "tt": 1.6119}
+{"stage": "asr_partial", "t": 17855.883656709, "pid": 9960, "text": "How long should I steep green", "src": "ws", "recv": 17887.2587436, "lt": 17887.222330786, "tt": 1.8819}
+{"stage": "asr_partial", "t": 17856.043974551, "pid": 9960, "text": "How long should I steep green tea?", "src": "ws", "recv": 17887.4191301, "lt": 17887.382648628, "tt": 2.0422}
+{"stage": "asr_partial", "t": 17856.093935018, "pid": 9960, "text": "How long should I steep green tea?", "src": "ws", "recv": 17887.4702727, "lt": 17887.432609095, "tt": 2.0921}
+{"stage": "vad_end", "t": 17856.121738206, "pid": 9960, "src": "ws", "recv": 17887.5012065, "lt": 17887.460412283, "tt": 2.1199}
+{"stage": "vad_end", "t": 17856.121790298, "pid": 9960, "src": "ws", "recv": 17887.5012283, "lt": 17887.460464375, "tt": 2.12}
+{"stage": "llm_request", "t": 17856.132132891, "pid": 9960, "speculative": true, "messages": 35, "chars": 11618, "est_tokens": 2904, "src": "ws", "recv": 17887.5080886, "lt": 17887.470806968002, "tt": 2.1303}
+{"stage": "asr_final", "t": 17856.26067615, "pid": 9960, "text": "How long should I steep green tea?", "src": "ws", "recv": 17887.6371345, "lt": 17887.599350227, "tt": 2.2589}
+{"stage": "user_stopped", "t": 17856.268361813, "pid": 9960, "src": "ws", "recv": 17887.6465121, "lt": 17887.60703589, "tt": 2.2666}
+{"stage": "user_stopped", "t": 17856.268438442, "pid": 9960, "src": "ws", "recv": 17887.6465408, "lt": 17887.607112519, "tt": 2.2666}
+{"stage": "llm_first_token", "t": 17856.682089479, "pid": 9960, "src": "ws", "recv": 17888.0574541, "lt": 17888.020763556, "tt": 2.6803}
+{"stage": "llm_usage", "t": 17856.692481738, "pid": 9960, "prompt_tokens": 2636, "completion_tokens": 30, "src": "ws", "recv": 17888.0718593, "lt": 17888.031155815, "tt": 2.6907}
+{"stage": "tts_request", "t": 17856.718146972, "pid": 9960, "src": "ws", "recv": 17888.0974188, "lt": 17888.056821049002, "tt": 2.7163}
+{"stage": "tts_first_audio", "t": 17856.918563663, "pid": 9960, "src": "ws", "recv": 17888.298946, "lt": 17888.25723774, "tt": 2.9168}
+{"stage": "audio_out", "t": 17856.930232573, "pid": 9960, "src": "ws", "recv": 17888.3118699, "lt": 17888.26890665, "tt": 2.9284}
+{"stage": "audio_out", "t": 17856.930341904, "pid": 9960, "src": "ws", "recv": 17888.3118909, "lt": 17888.269015981, "tt": 2.9285}
+{"stage": "bot_stopped", "t": 17859.339031973, "pid": 9960, "src": "ws", "recv": 17890.7172685, "lt": 17890.67770605, "tt": 5.3372}
+{"stage": "bot_stopped", "t": 17859.339211193, "pid": 9960, "src": "ws", "recv": 17890.7172905, "lt": 17890.67788527, "tt": 5.3374}
+{"stage": "llm_request", "t": 17859.35233064, "pid": 9960, "messages": 36, "chars": 11659, "est_tokens": 2915, "src": "ws", "recv": 17890.7294514, "lt": 17890.691004717, "tt": 5.3505}

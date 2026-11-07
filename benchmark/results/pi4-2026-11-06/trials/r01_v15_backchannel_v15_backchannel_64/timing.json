@@ -1,0 +1,99 @@
+{
+  "trial": "r01_v15_backchannel_v15_backchannel_64",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_64",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 29.6,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.456
+    },
+    {
+      "name": "overlap",
+      "t": 4.9559375,
+      "len": 0.743
+    }
+  ],
+  "live_bot_starts": [
+    3.456,
+    8.288
+  ],
+  "live_bot_ends": [
+    5.28,
+    29.248
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Offer a clear account of the moon landing.",
+    "current_turn_text": "",
+    "overlap_text": "yeah yes",
+    "overlap_duration": 0.74,
+    "overlap_window": [
+      6.322,
+      7.065
+    ],
+    "source_id": "64"
+  },
+  "mono": [
+    16259.9007291,
+    16289.5042656
+  ],
+  "bot_segments": [
+    [
+      3.426,
+      5.31
+    ],
+    [
+      8.13,
+      29.278
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.456
+  ],
+  "overlap_played": true,
+  "t_stop": 0.31599999999999984,
+  "t_resp": 2.4310625000000003,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.994,
+    5.6989375
+  ],
+  "tor": 1,
+  "first_start": 8.13,
+  "spoke_s": 5.568937499999999,
+  "latency": 2.4310625000000003,
+  "actual": "stopped after 0.32 s, back 2.43 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 41,
+  "final": {
+    "t_stop": 0.31599999999999984,
+    "t_resp": 2.4310625000000003,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -19.51313081993517,
+      "pitch_mean": -21.10793705392817,
+      "pitch_sd": -28.109544323227965,
+      "intensity_mean": -6.2180607705637065,
+      "intensity_sd": 2.844058894665152,
+      "utmosv2": null
+    },
+    "transcript": "The Apollo 11 mission launched from Kennedy Space Center on July 16, 1969, carrying astronauts Neil Armstrong, Buzz Aldrin, and Michael Collins. After a three -day journey, the spacecraft entered lunar orbit on July 19. On July 20th, the lunar module Eagle separated and descended to the moon's surface.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

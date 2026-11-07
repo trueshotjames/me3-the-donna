@@ -1,0 +1,258 @@
+{
+  "text": "Climate change is the sustained increase in global temperatures, driven primarily by human -generated greenhouse gases like carbon dioxide, methane, and nitrous oxide. Burding fossil fuels for electricity, transportation, and industry releases most of these gases.",
+  "chunks": [
+    {
+      "text": "Climate",
+      "timestamp": [
+        3.38,
+        3.92
+      ]
+    },
+    {
+      "text": "change",
+      "timestamp": [
+        3.92,
+        4.28
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        4.28,
+        4.56
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.56,
+        4.72
+      ]
+    },
+    {
+      "text": "sustained",
+      "timestamp": [
+        4.72,
+        5.14
+      ]
+    },
+    {
+      "text": "increase",
+      "timestamp": [
+        5.14,
+        5.66
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        5.66,
+        5.94
+      ]
+    },
+    {
+      "text": "global",
+      "timestamp": [
+        5.94,
+        6.18
+      ]
+    },
+    {
+      "text": "temperatures,",
+      "timestamp": [
+        6.18,
+        6.82
+      ]
+    },
+    {
+      "text": "driven",
+      "timestamp": [
+        7.36,
+        7.6
+      ]
+    },
+    {
+      "text": "primarily",
+      "timestamp": [
+        7.6,
+        8.1
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        8.1,
+        8.5
+      ]
+    },
+    {
+      "text": "human",
+      "timestamp": [
+        8.5,
+        8.84
+      ]
+    },
+    {
+      "text": "-generated",
+      "timestamp": [
+        8.84,
+        9.44
+      ]
+    },
+    {
+      "text": "greenhouse",
+      "timestamp": [
+        9.44,
+        9.8
+      ]
+    },
+    {
+      "text": "gases",
+      "timestamp": [
+        9.8,
+        10.46
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        10.46,
+        11.1
+      ]
+    },
+    {
+      "text": "carbon",
+      "timestamp": [
+        11.1,
+        11.42
+      ]
+    },
+    {
+      "text": "dioxide,",
+      "timestamp": [
+        11.42,
+        11.74
+      ]
+    },
+    {
+      "text": "methane,",
+      "timestamp": [
+        12.46,
+        12.84
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.44,
+        13.52
+      ]
+    },
+    {
+      "text": "nitrous",
+      "timestamp": [
+        13.52,
+        13.96
+      ]
+    },
+    {
+      "text": "oxide.",
+      "timestamp": [
+        13.96,
+        14.44
+      ]
+    },
+    {
+      "text": "Burding",
+      "timestamp": [
+        14.58,
+        14.78
+      ]
+    },
+    {
+      "text": "fossil",
+      "timestamp": [
+        14.78,
+        15.08
+      ]
+    },
+    {
+      "text": "fuels",
+      "timestamp": [
+        15.08,
+        15.46
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        15.46,
+        15.7
+      ]
+    },
+    {
+      "text": "electricity,",
+      "timestamp": [
+        15.7,
+        16.28
+      ]
+    },
+    {
+      "text": "transportation,",
+      "timestamp": [
+        16.78,
+        17.32
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        18.06,
+        18.22
+      ]
+    },
+    {
+      "text": "industry",
+      "timestamp": [
+        18.22,
+        18.68
+      ]
+    },
+    {
+      "text": "releases",
+      "timestamp": [
+        18.68,
+        19.28
+      ]
+    },
+    {
+      "text": "most",
+      "timestamp": [
+        19.28,
+        19.6
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        19.6,
+        19.82
+      ]
+    },
+    {
+      "text": "these",
+      "timestamp": [
+        19.82,
+        19.96
+      ]
+    },
+    {
+      "text": "gases.",
+      "timestamp": [
+        19.96,
+        20.36
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

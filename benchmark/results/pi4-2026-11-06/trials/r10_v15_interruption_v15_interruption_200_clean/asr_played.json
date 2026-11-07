@@ -1,0 +1,55 @@
+{
+  "text": "I want to learn a new language.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "want",
+      "timestamp": [
+        0.26,
+        0.4
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.4,
+        0.48
+      ]
+    },
+    {
+      "text": "learn",
+      "timestamp": [
+        0.48,
+        0.66
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.66,
+        0.84
+      ]
+    },
+    {
+      "text": "new",
+      "timestamp": [
+        0.84,
+        0.98
+      ]
+    },
+    {
+      "text": "language.",
+      "timestamp": [
+        0.98,
+        1.32
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

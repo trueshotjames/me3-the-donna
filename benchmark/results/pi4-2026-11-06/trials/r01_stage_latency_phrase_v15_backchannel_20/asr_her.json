@@ -1,0 +1,468 @@
+{
+  "text": "Public speaking is the art of delivering ideas allowed to an audience. It involves clear organization, where you structure your talk with a strong opening, logical middle, and numberable conclusion. Knowing your audience helps you choose language, tone, and examples that resonate and keep listeners engaged. Effective speakers use vocal variety, changing pitch, pace, and volume to emphasize key points and maintain interests. Audio Language Matters",
+  "chunks": [
+    {
+      "text": "Public",
+      "timestamp": [
+        2.99,
+        3.59
+      ]
+    },
+    {
+      "text": "speaking",
+      "timestamp": [
+        3.59,
+        3.97
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        3.97,
+        4.31
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.31,
+        4.45
+      ]
+    },
+    {
+      "text": "art",
+      "timestamp": [
+        4.45,
+        4.71
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        4.71,
+        4.87
+      ]
+    },
+    {
+      "text": "delivering",
+      "timestamp": [
+        4.87,
+        5.23
+      ]
+    },
+    {
+      "text": "ideas",
+      "timestamp": [
+        5.23,
+        5.83
+      ]
+    },
+    {
+      "text": "allowed",
+      "timestamp": [
+        5.83,
+        6.21
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        6.21,
+        6.53
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        6.53,
+        6.67
+      ]
+    },
+    {
+      "text": "audience.",
+      "timestamp": [
+        6.67,
+        7.03
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        7.69,
+        7.73
+      ]
+    },
+    {
+      "text": "involves",
+      "timestamp": [
+        7.73,
+        8.03
+      ]
+    },
+    {
+      "text": "clear",
+      "timestamp": [
+        8.03,
+        8.45
+      ]
+    },
+    {
+      "text": "organization,",
+      "timestamp": [
+        8.45,
+        9.13
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        9.65,
+        9.83
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        9.83,
+        9.93
+      ]
+    },
+    {
+      "text": "structure",
+      "timestamp": [
+        9.93,
+        10.29
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        10.29,
+        10.53
+      ]
+    },
+    {
+      "text": "talk",
+      "timestamp": [
+        10.53,
+        10.81
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        10.81,
+        11.05
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.05,
+        11.15
+      ]
+    },
+    {
+      "text": "strong",
+      "timestamp": [
+        11.15,
+        11.51
+      ]
+    },
+    {
+      "text": "opening,",
+      "timestamp": [
+        11.51,
+        11.99
+      ]
+    },
+    {
+      "text": "logical",
+      "timestamp": [
+        12.39,
+        12.79
+      ]
+    },
+    {
+      "text": "middle,",
+      "timestamp": [
+        12.79,
+        13.11
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.43,
+        13.49
+      ]
+    },
+    {
+      "text": "numberable",
+      "timestamp": [
+        13.49,
+        13.95
+      ]
+    },
+    {
+      "text": "conclusion.",
+      "timestamp": [
+        13.95,
+        14.53
+      ]
+    },
+    {
+      "text": "Knowing",
+      "timestamp": [
+        14.91,
+        15.11
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        15.11,
+        15.37
+      ]
+    },
+    {
+      "text": "audience",
+      "timestamp": [
+        15.37,
+        15.83
+      ]
+    },
+    {
+      "text": "helps",
+      "timestamp": [
+        15.83,
+        16.23
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        16.23,
+        16.45
+      ]
+    },
+    {
+      "text": "choose",
+      "timestamp": [
+        16.45,
+        16.87
+      ]
+    },
+    {
+      "text": "language,",
+      "timestamp": [
+        16.87,
+        17.51
+      ]
+    },
+    {
+      "text": "tone,",
+      "timestamp": [
+        18.03,
+        18.29
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        18.57,
+        18.69
+      ]
+    },
+    {
+      "text": "examples",
+      "timestamp": [
+        18.69,
+        19.15
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        19.15,
+        19.47
+      ]
+    },
+    {
+      "text": "resonate",
+      "timestamp": [
+        19.47,
+        19.89
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        19.89,
+        20.25
+      ]
+    },
+    {
+      "text": "keep",
+      "timestamp": [
+        20.25,
+        20.53
+      ]
+    },
+    {
+      "text": "listeners",
+      "timestamp": [
+        20.53,
+        20.93
+      ]
+    },
+    {
+      "text": "engaged.",
+      "timestamp": [
+        20.93,
+        21.51
+      ]
+    },
+    {
+      "text": "Effective",
+      "timestamp": [
+        21.81,
+        22.17
+      ]
+    },
+    {
+      "text": "speakers",
+      "timestamp": [
+        22.17,
+        22.55
+      ]
+    },
+    {
+      "text": "use",
+      "timestamp": [
+        22.55,
+        22.85
+      ]
+    },
+    {
+      "text": "vocal",
+      "timestamp": [
+        22.85,
+        23.19
+      ]
+    },
+    {
+      "text": "variety,",
+      "timestamp": [
+        23.19,
+        23.69
+      ]
+    },
+    {
+      "text": "changing",
+      "timestamp": [
+        24.03,
+        24.33
+      ]
+    },
+    {
+      "text": "pitch,",
+      "timestamp": [
+        24.33,
+        24.71
+      ]
+    },
+    {
+      "text": "pace,",
+      "timestamp": [
+        25.25,
+        25.53
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        25.97,
+        26.09
+      ]
+    },
+    {
+      "text": "volume",
+      "timestamp": [
+        26.09,
+        26.51
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        26.51,
+        27.03
+      ]
+    },
+    {
+      "text": "emphasize",
+      "timestamp": [
+        27.03,
+        27.47
+      ]
+    },
+    {
+      "text": "key",
+      "timestamp": [
+        27.47,
+        27.85
+      ]
+    },
+    {
+      "text": "points",
+      "timestamp": [
+        27.85,
+        28.27
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        28.27,
+        28.61
+      ]
+    },
+    {
+      "text": "maintain",
+      "timestamp": [
+        28.61,
+        29.03
+      ]
+    },
+    {
+      "text": "interests.",
+      "timestamp": [
+        29.03,
+        29.53
+      ]
+    },
+    {
+      "text": "Audio",
+      "timestamp": [
+        29.53,
+        29.93
+      ]
+    },
+    {
+      "text": "Language",
+      "timestamp": [
+        29.93,
+        30.31
+      ]
+    },
+    {
+      "text": "Matters",
+      "timestamp": [
+        30.31,
+        30.93
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

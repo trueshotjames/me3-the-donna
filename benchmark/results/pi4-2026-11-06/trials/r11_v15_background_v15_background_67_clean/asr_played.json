@@ -1,0 +1,55 @@
+{
+  "text": "Remind me to stand up every hour.",
+  "chunks": [
+    {
+      "text": "Remind",
+      "timestamp": [
+        0.0,
+        0.32
+      ]
+    },
+    {
+      "text": "me",
+      "timestamp": [
+        0.32,
+        0.42
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.42,
+        0.52
+      ]
+    },
+    {
+      "text": "stand",
+      "timestamp": [
+        0.52,
+        0.74
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        0.74,
+        0.98
+      ]
+    },
+    {
+      "text": "every",
+      "timestamp": [
+        0.98,
+        1.2
+      ]
+    },
+    {
+      "text": "hour.",
+      "timestamp": [
+        1.2,
+        1.46
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

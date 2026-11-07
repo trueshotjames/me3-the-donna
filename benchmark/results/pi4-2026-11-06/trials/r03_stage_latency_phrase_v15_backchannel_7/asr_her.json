@@ -1,0 +1,237 @@
+{
+  "text": "The stock market is a global network where investors buy and sell shares of publicly traded companies, turning ownership into a tradable asset. Each share represents a small piece of a company's equity.",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        2.93,
+        3.39
+      ]
+    },
+    {
+      "text": "stock",
+      "timestamp": [
+        3.39,
+        3.61
+      ]
+    },
+    {
+      "text": "market",
+      "timestamp": [
+        3.61,
+        3.97
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        3.97,
+        4.25
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.25,
+        4.35
+      ]
+    },
+    {
+      "text": "global",
+      "timestamp": [
+        4.35,
+        4.65
+      ]
+    },
+    {
+      "text": "network",
+      "timestamp": [
+        4.65,
+        5.17
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        5.17,
+        5.65
+      ]
+    },
+    {
+      "text": "investors",
+      "timestamp": [
+        5.65,
+        6.05
+      ]
+    },
+    {
+      "text": "buy",
+      "timestamp": [
+        6.05,
+        6.51
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        6.51,
+        6.77
+      ]
+    },
+    {
+      "text": "sell",
+      "timestamp": [
+        6.77,
+        7.03
+      ]
+    },
+    {
+      "text": "shares",
+      "timestamp": [
+        7.03,
+        7.37
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        7.37,
+        7.59
+      ]
+    },
+    {
+      "text": "publicly",
+      "timestamp": [
+        7.59,
+        7.93
+      ]
+    },
+    {
+      "text": "traded",
+      "timestamp": [
+        7.93,
+        8.35
+      ]
+    },
+    {
+      "text": "companies,",
+      "timestamp": [
+        8.35,
+        8.89
+      ]
+    },
+    {
+      "text": "turning",
+      "timestamp": [
+        9.29,
+        9.69
+      ]
+    },
+    {
+      "text": "ownership",
+      "timestamp": [
+        9.69,
+        10.15
+      ]
+    },
+    {
+      "text": "into",
+      "timestamp": [
+        10.15,
+        10.53
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        10.53,
+        10.69
+      ]
+    },
+    {
+      "text": "tradable",
+      "timestamp": [
+        10.69,
+        11.11
+      ]
+    },
+    {
+      "text": "asset.",
+      "timestamp": [
+        11.11,
+        11.51
+      ]
+    },
+    {
+      "text": "Each",
+      "timestamp": [
+        11.77,
+        11.89
+      ]
+    },
+    {
+      "text": "share",
+      "timestamp": [
+        11.89,
+        12.17
+      ]
+    },
+    {
+      "text": "represents",
+      "timestamp": [
+        12.17,
+        12.61
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        12.61,
+        12.85
+      ]
+    },
+    {
+      "text": "small",
+      "timestamp": [
+        12.85,
+        13.07
+      ]
+    },
+    {
+      "text": "piece",
+      "timestamp": [
+        13.07,
+        13.35
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        13.35,
+        13.53
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        13.53,
+        13.61
+      ]
+    },
+    {
+      "text": "company's",
+      "timestamp": [
+        13.61,
+        14.09
+      ]
+    },
+    {
+      "text": "equity.",
+      "timestamp": [
+        14.09,
+        14.39
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

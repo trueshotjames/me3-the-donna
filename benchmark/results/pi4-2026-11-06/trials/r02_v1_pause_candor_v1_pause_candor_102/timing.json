@@ -1,0 +1,64 @@
+{
+  "trial": "r02_v1_pause_candor_v1_pause_candor_102",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_102",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 11.488,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 7.36
+    }
+  ],
+  "live_bot_starts": [
+    8.512
+  ],
+  "live_bot_ends": [
+    11.136
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "pause": [
+      1.2300000000000182,
+      2.410000000000082
+    ],
+    "source_id": "102",
+    "text": "the movie you spoke about it the movie you spoke of about is your netflix is on netflix"
+  },
+  "mono": [
+    16660.2107558,
+    16671.6782952
+  ],
+  "bot_segments": [
+    [
+      8.482,
+      11.166
+    ]
+  ],
+  "play_first": [
+    0.0,
+    7.36
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 68,
+  "final": {
+    "tor": 0,
+    "words": 1,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "I'm... Yes, it's available on Netflix."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

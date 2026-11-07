@@ -1,0 +1,24 @@
+{"stage": "vad_start", "t": 15991.388954307, "pid": 9960, "src": "ws", "recv": 16022.7366756, "lt": 16022.727628384, "tt": 0.203}
+{"stage": "vad_start", "t": 15991.389064306, "pid": 9960, "src": "ws", "recv": 16022.7366998, "lt": 16022.727738383, "tt": 0.2032}
+{"stage": "interrupted", "t": 15991.890896934, "pid": 9960, "src": "ws", "recv": 16023.2386199, "lt": 16023.229571011, "tt": 0.705}
+{"stage": "interrupted", "t": 15991.89098434, "pid": 9960, "src": "ws", "recv": 16023.2386422, "lt": 16023.229658417, "tt": 0.7051}
+{"stage": "asr_partial", "t": 15992.004354813, "pid": 9960, "text": "Illuminate", "src": "ws", "recv": 16023.3503468, "lt": 16023.34302889, "tt": 0.8184}
+{"stage": "asr_partial", "t": 15992.247604722, "pid": 9960, "text": "Illuminate", "src": "ws", "recv": 16023.5944921, "lt": 16023.586278799, "tt": 1.0617}
+{"stage": "asr_partial", "t": 15992.488387975, "pid": 9960, "text": "Illuminate public", "src": "ws", "recv": 16023.8350177, "lt": 16023.827062052, "tt": 1.3025}
+{"stage": "asr_partial", "t": 15992.727693636, "pid": 9960, "text": "Illuminate Public Speaking", "src": "ws", "recv": 16024.0745806, "lt": 16024.066367713, "tt": 1.5418}
+{"stage": "asr_partial", "t": 15992.96437957, "pid": 9960, "text": "Illuminate public speaking for", "src": "ws", "recv": 16024.3103953, "lt": 16024.303053647, "tt": 1.7785}
+{"stage": "asr_partial", "t": 15993.207722311, "pid": 9960, "text": "Illuminate public speaking thoroughly", "src": "ws", "recv": 16024.5549956, "lt": 16024.546396388001, "tt": 2.0218}
+{"stage": "asr_partial", "t": 15993.250620616, "pid": 9960, "text": "Illuminate public speaking thoroughly.", "src": "ws", "recv": 16024.5975044, "lt": 16024.589294693, "tt": 2.0647}
+{"stage": "vad_end", "t": 15993.369575797, "pid": 9960, "src": "ws", "recv": 16024.7160826, "lt": 16024.708249874, "tt": 2.1837}
+{"stage": "vad_end", "t": 15993.369630445, "pid": 9960, "src": "ws", "recv": 16024.7161046, "lt": 16024.708304522, "tt": 2.1837}
+{"stage": "llm_request", "t": 15993.454364159, "pid": 9960, "speculative": true, "messages": 49, "chars": 14854, "est_tokens": 3714, "src": "ws", "recv": 16024.8011475, "lt": 16024.793038236001, "tt": 2.2685}
+{"stage": "asr_partial", "t": 15993.687290991, "pid": 9960, "text": "Illuminate public speaking thoroughly.", "src": "ws", "recv": 16025.0342287, "lt": 16025.025965068, "tt": 2.5014}
+{"stage": "llm_usage", "t": 15994.142216105, "pid": 9960, "prompt_tokens": 2524, "completion_tokens": 240, "src": "ws", "recv": 16025.4892065, "lt": 16025.480890182, "tt": 2.9563}
+{"stage": "asr_final", "t": 15994.336679986, "pid": 9960, "text": "Illuminate public speaking thoroughly.", "src": "ws", "recv": 16025.6836351, "lt": 16025.675354063, "tt": 3.1508}
+{"stage": "user_stopped", "t": 15994.34350792, "pid": 9960, "src": "ws", "recv": 16025.703112, "lt": 16025.682181997001, "tt": 3.1576}
+{"stage": "user_stopped", "t": 15994.343577401, "pid": 9960, "src": "ws", "recv": 16025.7031335, "lt": 16025.682251478, "tt": 3.1577}
+{"stage": "llm_first_token", "t": 15994.348212566, "pid": 9960, "src": "ws", "recv": 16025.714988, "lt": 16025.686886643, "tt": 3.1623}
+{"stage": "tts_request", "t": 15994.420801356, "pid": 9960, "src": "ws", "recv": 16025.7822733, "lt": 16025.759475433, "tt": 3.2349}
+{"stage": "tts_first_audio", "t": 15994.625537387, "pid": 9960, "src": "ws", "recv": 16025.9712407, "lt": 16025.964211464001, "tt": 3.4396}
+{"stage": "audio_out", "t": 15994.629837242, "pid": 9960, "src": "ws", "recv": 16025.9804445, "lt": 16025.968511319, "tt": 3.4439}
+{"stage": "audio_out", "t": 15994.629920741, "pid": 9960, "src": "ws", "recv": 16025.9804636, "lt": 16025.968594818, "tt": 3.444}

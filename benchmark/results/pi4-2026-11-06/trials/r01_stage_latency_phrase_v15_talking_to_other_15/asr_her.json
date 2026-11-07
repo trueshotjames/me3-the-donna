@@ -1,0 +1,139 @@
+{
+  "text": "Dolfens have unique names. Each one whistles a distinct signature that other dolphins use like a personal call sign.",
+  "chunks": [
+    {
+      "text": "Dolfens",
+      "timestamp": [
+        2.83,
+        3.47
+      ]
+    },
+    {
+      "text": "have",
+      "timestamp": [
+        3.47,
+        3.57
+      ]
+    },
+    {
+      "text": "unique",
+      "timestamp": [
+        3.57,
+        3.85
+      ]
+    },
+    {
+      "text": "names.",
+      "timestamp": [
+        3.85,
+        4.19
+      ]
+    },
+    {
+      "text": "Each",
+      "timestamp": [
+        4.75,
+        4.97
+      ]
+    },
+    {
+      "text": "one",
+      "timestamp": [
+        4.97,
+        5.15
+      ]
+    },
+    {
+      "text": "whistles",
+      "timestamp": [
+        5.15,
+        5.39
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        5.39,
+        5.61
+      ]
+    },
+    {
+      "text": "distinct",
+      "timestamp": [
+        5.61,
+        5.93
+      ]
+    },
+    {
+      "text": "signature",
+      "timestamp": [
+        5.93,
+        6.51
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        6.51,
+        6.95
+      ]
+    },
+    {
+      "text": "other",
+      "timestamp": [
+        6.95,
+        7.15
+      ]
+    },
+    {
+      "text": "dolphins",
+      "timestamp": [
+        7.15,
+        7.51
+      ]
+    },
+    {
+      "text": "use",
+      "timestamp": [
+        7.51,
+        7.87
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        7.87,
+        8.23
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        8.23,
+        8.35
+      ]
+    },
+    {
+      "text": "personal",
+      "timestamp": [
+        8.35,
+        8.69
+      ]
+    },
+    {
+      "text": "call",
+      "timestamp": [
+        8.69,
+        8.99
+      ]
+    },
+    {
+      "text": "sign.",
+      "timestamp": [
+        8.99,
+        9.29
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

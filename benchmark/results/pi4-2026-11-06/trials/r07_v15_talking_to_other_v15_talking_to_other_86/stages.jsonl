@@ -1,0 +1,56 @@
+{"stage": "vad_start", "t": 17833.792100494, "pid": 9960, "src": "ws", "recv": 17865.1682776, "lt": 17865.130774571, "tt": 0.174}
+{"stage": "vad_start", "t": 17833.792197789, "pid": 9960, "src": "ws", "recv": 17865.1683006, "lt": 17865.130871866, "tt": 0.1741}
+{"stage": "asr_partial", "t": 17834.207258512, "pid": 9960, "text": "How", "src": "ws", "recv": 17865.5820022, "lt": 17865.545932589, "tt": 0.5892}
+{"stage": "interrupted", "t": 17834.335314499, "pid": 9960, "src": "ws", "recv": 17865.7121608, "lt": 17865.673988576, "tt": 0.7172}
+{"stage": "interrupted", "t": 17834.335464701, "pid": 9960, "src": "ws", "recv": 17865.7121849, "lt": 17865.674138778, "tt": 0.7174}
+{"stage": "asr_partial", "t": 17834.442938502, "pid": 9960, "text": "How long should", "src": "ws", "recv": 17865.8178674, "lt": 17865.781612579, "tt": 0.8249}
+{"stage": "asr_partial", "t": 17834.689503837, "pid": 9960, "text": "How long should I", "src": "ws", "recv": 17866.064656, "lt": 17866.028177914, "tt": 1.0714}
+{"stage": "asr_partial", "t": 17834.922914522, "pid": 9960, "text": "How long should I stay", "src": "ws", "recv": 17866.2976939, "lt": 17866.261588599, "tt": 1.3048}
+{"stage": "asr_partial", "t": 17835.167159109, "pid": 9960, "text": "How long should I steep", "src": "ws", "recv": 17866.5419264, "lt": 17866.505833186002, "tt": 1.5491}
+{"stage": "asr_partial", "t": 17835.403300556, "pid": 9960, "text": "How long should I steep green", "src": "ws", "recv": 17866.7782127, "lt": 17866.741974633, "tt": 1.7852}
+{"stage": "asr_partial", "t": 17835.647154481, "pid": 9960, "text": "How long should I steep green tea?", "src": "ws", "recv": 17867.0219508, "lt": 17866.985828558, "tt": 2.0291}
+{"stage": "asr_partial", "t": 17835.722731237, "pid": 9960, "text": "How long should I steep green tea?", "src": "ws", "recv": 17867.0975948, "lt": 17867.061405314, "tt": 2.1047}
+{"stage": "vad_end", "t": 17835.737885399, "pid": 9960, "src": "ws", "recv": 17867.1179279, "lt": 17867.076559476, "tt": 2.1198}
+{"stage": "vad_end", "t": 17835.737937639, "pid": 9960, "src": "ws", "recv": 17867.1179513, "lt": 17867.076611716002, "tt": 2.1199}
+{"stage": "llm_request", "t": 17835.748841243, "pid": 9960, "speculative": true, "messages": 32, "chars": 11447, "est_tokens": 2862, "src": "ws", "recv": 17867.1243004, "lt": 17867.08751532, "tt": 2.1308}
+{"stage": "asr_final", "t": 17835.878943482, "pid": 9960, "text": "How long should I steep green tea?", "src": "ws", "recv": 17867.255042, "lt": 17867.217617559, "tt": 2.2609}
+{"stage": "user_stopped", "t": 17835.886685237, "pid": 9960, "src": "ws", "recv": 17867.2644227, "lt": 17867.225359314, "tt": 2.2686}
+{"stage": "user_stopped", "t": 17835.886751959, "pid": 9960, "src": "ws", "recv": 17867.2644451, "lt": 17867.225426036, "tt": 2.2687}
+{"stage": "llm_first_token", "t": 17836.491921502, "pid": 9960, "src": "ws", "recv": 17867.867377, "lt": 17867.830595579002, "tt": 2.8739}
+{"stage": "llm_usage", "t": 17836.509615132, "pid": 9960, "prompt_tokens": 2632, "completion_tokens": 29, "src": "ws", "recv": 17867.8866408, "lt": 17867.848289209, "tt": 2.8915}
+{"stage": "tts_request", "t": 17836.526975618, "pid": 9960, "src": "ws", "recv": 17867.9052533, "lt": 17867.865649695, "tt": 2.9089}
+{"stage": "tts_first_audio", "t": 17836.703440665, "pid": 9960, "src": "ws", "recv": 17868.0779503, "lt": 17868.042114742, "tt": 3.0854}
+{"stage": "audio_out", "t": 17836.707775907, "pid": 9960, "src": "ws", "recv": 17868.0872815, "lt": 17868.046449984, "tt": 3.0897}
+{"stage": "audio_out", "t": 17836.70785811, "pid": 9960, "src": "ws", "recv": 17868.0873032, "lt": 17868.046532187, "tt": 3.0898}
+{"stage": "vad_start", "t": 17838.589267081, "pid": 9960, "src": "ws", "recv": 17869.9638598, "lt": 17869.927941158, "tt": 4.9712}
+{"stage": "vad_start", "t": 17838.589325321, "pid": 9960, "src": "ws", "recv": 17869.9638825, "lt": 17869.927999398, "tt": 4.9713}
+{"stage": "asr_partial", "t": 17838.925308054, "pid": 9960, "text": "Your", "src": "ws", "recv": 17870.3001606, "lt": 17870.263982131, "tt": 5.3072}
+{"stage": "asr_partial", "t": 17839.015823772, "pid": 9960, "text": "Your", "src": "ws", "recv": 17870.3924619, "lt": 17870.354497849, "tt": 5.3978}
+{"stage": "asr_partial", "t": 17839.082425974, "pid": 9960, "text": "Your", "src": "ws", "recv": 17870.4572748, "lt": 17870.421100051, "tt": 5.4644}
+{"stage": "asr_partial", "t": 17839.408082077, "pid": 9960, "text": "Your mark may", "src": "ws", "recv": 17870.7861873, "lt": 17870.746756154, "tt": 5.79}
+{"stage": "interrupted", "t": 17839.410938504, "pid": 9960, "src": "ws", "recv": 17870.7884115, "lt": 17870.749612581, "tt": 5.7929}
+{"stage": "interrupted", "t": 17839.411028466, "pid": 9960, "src": "ws", "recv": 17870.7884322, "lt": 17870.749702543, "tt": 5.793}
+{"stage": "bot_stopped", "t": 17839.43898043, "pid": 9960, "src": "ws", "recv": 17870.8184613, "lt": 17870.777654507, "tt": 5.8209}
+{"stage": "bot_stopped", "t": 17839.439220483, "pid": 9960, "src": "ws", "recv": 17870.8184829, "lt": 17870.77789456, "tt": 5.8212}
+{"stage": "asr_partial", "t": 17839.690168781, "pid": 9960, "text": "Your mark meetings", "src": "ws", "recv": 17871.0655988, "lt": 17871.028842858, "tt": 6.0721}
+{"stage": "asr_partial", "t": 17839.885891069, "pid": 9960, "text": "Your mark meetings bumped", "src": "ws", "recv": 17871.2609058, "lt": 17871.224565146, "tt": 6.2678}
+{"stage": "asr_partial", "t": 17840.166376423, "pid": 9960, "text": "Your mark meetings bumped to three", "src": "ws", "recv": 17871.5412923, "lt": 17871.5050505, "tt": 6.5483}
+{"stage": "asr_partial", "t": 17840.366425582, "pid": 9960, "text": "Your mark meetings bumped to three o'", "src": "ws", "recv": 17871.7416065, "lt": 17871.705099659, "tt": 6.7484}
+{"stage": "asr_partial", "t": 17840.654994687, "pid": 9960, "text": "Your mark meetings bumped to three o'clock.", "src": "ws", "recv": 17872.0303856, "lt": 17871.993668764, "tt": 7.0369}
+{"stage": "vad_end", "t": 17840.677350592, "pid": 9960, "src": "ws", "recv": 17872.0553838, "lt": 17872.016024669, "tt": 7.0593}
+{"stage": "vad_end", "t": 17840.677420443, "pid": 9960, "src": "ws", "recv": 17872.0554086, "lt": 17872.01609452, "tt": 7.0594}
+{"stage": "llm_request", "t": 17840.685521138, "pid": 9960, "speculative": true, "messages": 33, "chars": 11490, "est_tokens": 2872, "src": "ws", "recv": 17872.0604618, "lt": 17872.024195215, "tt": 7.0675}
+{"stage": "asr_partial", "t": 17840.846289882, "pid": 9960, "text": "Your mark meetings bumped to three o'clock.", "src": "ws", "recv": 17872.2211955, "lt": 17872.184963959, "tt": 7.2282}
+{"stage": "asr_partial", "t": 17841.135170483, "pid": 9960, "text": "Your mark meetings bumped to three o'clock.", "src": "ws", "recv": 17872.5103383, "lt": 17872.47384456, "tt": 7.5171}
+{"stage": "asr_final", "t": 17841.177780134, "pid": 9960, "text": "Your mark meetings bumped to three o'clock.", "src": "ws", "recv": 17872.5551415, "lt": 17872.516454211, "tt": 7.5597}
+{"stage": "user_stopped", "t": 17841.191921938, "pid": 9960, "src": "ws", "recv": 17872.5697824, "lt": 17872.530596015, "tt": 7.5739}
+{"stage": "user_stopped", "t": 17841.19198953, "pid": 9960, "src": "ws", "recv": 17872.5698085, "lt": 17872.530663607, "tt": 7.5739}
+{"stage": "llm_first_token", "t": 17841.217991537, "pid": 9960, "src": "ws", "recv": 17872.5954478, "lt": 17872.556665614, "tt": 7.5999}
+{"stage": "llm_usage", "t": 17841.258531437, "pid": 9960, "prompt_tokens": 2613, "completion_tokens": 219, "src": "ws", "recv": 17872.6385332, "lt": 17872.597205514, "tt": 7.6405}
+{"stage": "tts_request", "t": 17841.28790455, "pid": 9960, "src": "ws", "recv": 17872.6682469, "lt": 17872.626578627, "tt": 7.6698}
+{"stage": "tts_first_audio", "t": 17841.506521309, "pid": 9960, "src": "ws", "recv": 17872.8810601, "lt": 17872.845195386, "tt": 7.8885}
+{"stage": "audio_out", "t": 17841.510789534, "pid": 9960, "src": "ws", "recv": 17872.8902546, "lt": 17872.849463611, "tt": 7.8927}
+{"stage": "audio_out", "t": 17841.510873959, "pid": 9960, "src": "ws", "recv": 17872.8902738, "lt": 17872.849548036, "tt": 7.8928}
+{"stage": "bot_stopped", "t": 17846.438702263, "pid": 9960, "src": "ws", "recv": 17877.8140892, "lt": 17877.77737634, "tt": 12.8206}
+{"stage": "bot_stopped", "t": 17846.438787021, "pid": 9960, "src": "ws", "recv": 17877.8141155, "lt": 17877.777461098, "tt": 12.8207}
+{"stage": "llm_request", "t": 17846.445577973, "pid": 9960, "messages": 34, "chars": 11584, "est_tokens": 2896, "src": "ws", "recv": 17877.8206333, "lt": 17877.78425205, "tt": 12.8275}

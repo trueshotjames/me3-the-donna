@@ -141,8 +141,8 @@ Donna out, use Telegram > Settings > Devices on your phone. Untested on a real P
 
 ### What works on the Pi, and what is untested
 
-The voice pipeline last ran on a Pi 4 on Oct 27 (local `pi-logs/`, not in the repo); everything after that was built and tested on the
-Windows laptop. The code paths below are written to run on the Pi, but **only the first group has run there**.
+The voice pipeline ran on a Pi 4 on Oct 27 (v5) and again in the Nov 6 benchmark run (tools off, see
+"Benchmark results"); the features below were built and tested on the Windows laptop. The code paths below are written to run on the Pi, but **only the first group has run there**.
 
 | feature | on the Pi |
 |---|---|
@@ -198,9 +198,80 @@ scripted stub backend so the UI works without keys).
 
 The voice print part of the voice gate is off (`VOICE_GATE_SPEAKER=0`); the loudness gate still runs.
 
+## Benchmark results (Raspberry Pi 4, Nov 6 2026)
+
+Full fdbench run on the Pi 4 (4 GB): 12 rounds, 150 trials, 0 failed, run `2026-11-06_16-38-00`.
+**Results page:** [results.html](https://htmlpreview.github.io/?https://github.com/trueshotjames/me3-the-donna/blob/main/benchmark/results/pi4-2026-11-06/results.html)
+· **logs and raw data:** [`benchmark/results/pi4-2026-11-06/`](benchmark/results/pi4-2026-11-06/) (what each file is: its `README.md`).
+Run in `BENCHMARK_MODE=1` (no tools, Hermes or memory), before v10 and v11 were merged.
+
+### Evaluation table (deck template, section 5)
+
+30 latency turns (10 phrases × 3 runs), one clock (the Pi's monotonic clock), every stage timestamped.
+
+| Metric | Definition | Target | Median | Mean | p90 | p95 | n | Result |
+|---|---|---|---|---|---|---|---|---|
+| E2E latency | end of speech (VAD end) → audio out | < 4.00 s | 1.02 s | 1.08 s | 1.57 s | 1.59 s | 29 | met |
+| ASR final | end of speech → transcript | < 0.80 s | 0.49 s | 0.53 s | 1.17 s | 1.22 s | 30 | mean met, p95 over |
+| LLM TTFT | transcript → first token | < 1.50 s | 0.28 s | 0.30 s | 0.62 s | 0.73 s | 30 | met* |
+| TTS TTFB | text → first audio chunk | < 0.60 s | 0.21 s | 0.20 s | 0.24 s | 0.27 s | 29 | met |
+| Barge-in | user speech → her playback stopped | < 0.80 s | 0.27 s | 0.26 s | ≤ 0.32 s | 0.32 s | 18 | met |
+| WER | ASR word error rate on the test phrases | < 15 % | — | 0.0 % | — | — | 30 | met |
+
+\* All 30 replies came from the early LLM call that starts before the final transcript, so TTFT reads short; E2E is
+the fair end-to-end figure. p90 is computed from `stage_latency.json` (fdbench reports p95); barge-in has no per-turn
+list there, so its p90 is bounded by the p95. One E2E and one TTS turn had no audio-out mark (n = 29).
+
+What the table says:
+
+- **Every deck target is met on the Pi 4.** The only miss is the ASR tail: 9 of 30 turns took over 0.8 s for the
+  final transcript (p95 1.22 s; Deepgram Flux over Wi-Fi), which is also what pushes the E2E tail to 1.6 s.
+- **The project's own target (median and p90 under 1 s) is not met yet:** E2E median is 1.02 s and p90 1.57 s;
+  13 of 29 turns were under 1 s. Measured from the true end of speech to her audio as heard, it is 1.19 s median,
+  1.80 s p90 (adds the 0.14 s VAD endpointing).
+- **Barge-in is fast:** she stops 0.27 s (median) after you start talking.
+- **The Pi is not the bottleneck:** CPU 11.9 % median (19.5 % p95), busiest core 62 % p95, peak 51.6 °C, never
+  throttled, at least 2.87 GB RAM free, no swap; the assistant process peaked at 210 MB.
+
+### Full-Duplex-Bench metrics (same run)
+
+| Test (Lin et al.) | Metric | Result | Better |
+|---|---|---|---|
+| Pause handling, synthetic (v1) | TOR | 8 % (1/12) | lower |
+| Pause handling, Candor (v1) | TOR | 0 % (0/12) | lower |
+| Turn-taking (v1) | TOR | 75 % (9/12) | higher |
+| | latency | 1.22 s median, 1.72 s p95 | lower |
+| Interruption (v1) | TOR | 100 % (12/12) | higher |
+| | GPT-4o relevance (0-5) | 3.42 | higher |
+| | latency | 1.33 s median, 2.38 s p95 | lower |
+| User interruption (v1.5) | Respond / Resume / Uncertain / Unknown | 75 / 8 / 8 / 8 % | Respond |
+| | t_stop / t_resp | 0.27 s / 1.16 s median | lower |
+| Backchannel (v1.5) | Respond / Resume | 0 / 100 % | Resume |
+| Talking to someone else (v1.5) | Respond / Resume / Unknown | 25 / 50 / 25 % | Resume |
+| Background speech (v1.5) | Respond / Resume / Unknown | 0 / 33 / 67 % | Resume |
+| No wake word, false starts (own) | wrongly replied | 25 % (6/24: side talk 2/6, TV 1/6, background 2/6, noise 1/6) | lower |
+
+Voice change after an interruption (v1.5 Table 3, 7 Respond clips, paired t-test): only pitch SD rose significantly
+(+14.4 Hz, p = 0.003). WPM (−3.9), pitch mean (−4.9 Hz), intensity mean (−2.4 dB, p = 0.09) and intensity SD were not
+significant; UTMOSv2 was not scored (not installed).
+
+Weak spots: 3 of 12 finished turns got no reply (turn-taking TOR 75 %), and she replies to 25 % of false starts.
+On background speech she mostly stops and stays silent (Unknown 67 %) instead of carrying on.
+
+## Prompts
+
+- **Donna's LLM prompts:** [`assistant/prompts.py`](assistant/prompts.py) (system prompt, persona, delegation, home,
+  memory and tool rules, `turn_note`). Smaller task prompts sit next to their code: end-of-turn check
+  (`assistant/eot_check.py`), tool comment (`assistant/tool_comment.py`), mid-sentence `<wait/>` check
+  (`assistant/services/timed_llm.py`), memory note (`assistant/memory.py`), tone hint (`assistant/emotion.py`).
+- **Benchmark judge prompts:** `prompts/` in the fdbench repo (`trueshotjames/ai231-me3-full-duplex-benchmarking`):
+  `v1_interruption_rating.txt` and `v15_behaviour.txt`, copied verbatim from Full-Duplex-Bench.
+- **Test phrases played to her:** each trial's text is in the run's `run.log`; the scenario clips and scripts are in
+  `benchmark/scenario_tests/` and `benchmark/audio/prompts/`.
+
 ## Tests and benchmarks
 
-`python -m pytest tests` (no network, no keys). The benchmark method and numbers: `benchmark/README.md`.
+`python -m pytest tests` (no network, no keys). The benchmark method: `benchmark/README.md`; results: above.
 
 ## Secrets
 

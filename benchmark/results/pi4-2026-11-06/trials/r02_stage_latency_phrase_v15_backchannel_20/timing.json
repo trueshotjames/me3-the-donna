@@ -1,0 +1,84 @@
+{
+  "trial": "r02_stage_latency_phrase_v15_backchannel_20",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_20",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 13.408,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.328
+    }
+  ],
+  "live_bot_starts": [
+    3.776
+  ],
+  "live_bot_ends": [
+    13.056
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Illuminate public speaking thoroughly.",
+    "source": "v15_backchannel_20"
+  },
+  "mono": [
+    15965.1675855,
+    15978.5582492
+  ],
+  "bot_segments": [
+    [
+      3.746,
+      13.086
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.328
+  ],
+  "tor": 1,
+  "first_start": 3.746,
+  "spoke_s": 6.581999999999999,
+  "user_end": 2.078,
+  "latency": 1.6680000000000001,
+  "actual": "replied 1.67 s after speech end",
+  "verdict": "✓ 1.67 s",
+  "ok": true,
+  "marks": 24,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.668,
+      "e2e": 1.4658,
+      "e2e_source": "marks",
+      "asr_final": 1.1064,
+      "llm_ttft": 0.01,
+      "tts_ttfb": 0.2212,
+      "endpointing": 0.1052,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Illuminate public speaking thoroughly.",
+      "wer": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2574,
+      "context_source": "usage",
+      "context_messages": 44
+    },
+    "transcript": "Public speaking is the art of delivering a spoken message to an audience with the goal of informing, persuading, or entertaining. It begins with understanding your purpose."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

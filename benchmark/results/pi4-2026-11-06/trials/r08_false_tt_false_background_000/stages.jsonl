@@ -1,0 +1,15 @@
+{"stage": "vad_start", "t": 18337.84896819, "pid": 9960, "src": "ws", "recv": 18369.2334843, "lt": 18369.187642267, "tt": 0.2949}
+{"stage": "vad_start", "t": 18337.849065022, "pid": 9960, "src": "ws", "recv": 18369.2335059, "lt": 18369.187739099, "tt": 0.295}
+{"stage": "interrupted", "t": 18338.292309901, "pid": 9960, "src": "ws", "recv": 18369.677198, "lt": 18369.630983978, "tt": 0.7382}
+{"stage": "interrupted", "t": 18338.292599509, "pid": 9960, "src": "ws", "recv": 18369.6772213, "lt": 18369.631273586, "tt": 0.7385}
+{"stage": "asr_partial", "t": 18338.405807778, "pid": 9960, "text": "Your coffee is", "src": "ws", "recv": 18369.7884119, "lt": 18369.744481855, "tt": 0.8517}
+{"stage": "asr_partial", "t": 18338.612702133, "pid": 9960, "text": "Your coffee's getting", "src": "ws", "recv": 18369.9963718, "lt": 18369.95137621, "tt": 1.0586}
+{"stage": "asr_partial", "t": 18338.886139804, "pid": 9960, "text": "Your coffee's getting", "src": "ws", "recv": 18370.2695483, "lt": 18370.224813881, "tt": 1.332}
+{"stage": "asr_partial", "t": 18339.090567987, "pid": 9960, "text": "Your coffee's getting cold.", "src": "ws", "recv": 18370.4763285, "lt": 18370.429242064, "tt": 1.5365}
+{"stage": "vad_end", "t": 18339.249919604, "pid": 9960, "src": "ws", "recv": 18370.6327912, "lt": 18370.588593681, "tt": 1.6958}
+{"stage": "vad_end", "t": 18339.2499709, "pid": 9960, "src": "ws", "recv": 18370.632813, "lt": 18370.588644977, "tt": 1.6959}
+{"stage": "llm_request", "t": 18339.369718513, "pid": 9960, "speculative": true, "messages": 33, "chars": 12775, "est_tokens": 3194, "src": "ws", "recv": 18370.752372, "lt": 18370.70839259, "tt": 1.8156}
+{"stage": "asr_final", "t": 18340.01471259, "pid": 9960, "text": "Your coffee's getting cold.", "src": "ws", "recv": 18371.3992266, "lt": 18371.353386667, "tt": 2.4606}
+{"stage": "user_stopped", "t": 18340.023740736, "pid": 9960, "src": "ws", "recv": 18371.4098978, "lt": 18371.362414813, "tt": 2.4696}
+{"stage": "user_stopped", "t": 18340.023802995, "pid": 9960, "src": "ws", "recv": 18371.4099301, "lt": 18371.362477072, "tt": 2.4697}
+{"stage": "llm_first_token", "t": 18340.026553349, "pid": 9960, "src": "ws", "recv": 18371.4132614, "lt": 18371.365227426, "tt": 2.4724}

@@ -1,0 +1,98 @@
+{
+  "trial": "r12_v15_backchannel_v15_backchannel_80",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_80",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 47.552,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.552
+    },
+    {
+      "name": "overlap",
+      "t": 5.5,
+      "len": 0.79
+    }
+  ],
+  "live_bot_starts": [
+    4.0,
+    6.592
+  ],
+  "live_bot_ends": [
+    5.76
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Illuminate vaccination history comprehensively.",
+    "current_turn_text": "",
+    "overlap_text": "I see",
+    "overlap_duration": 0.79,
+    "overlap_window": [
+      6.415,
+      7.205
+    ],
+    "source_id": "80"
+  },
+  "mono": [
+    19326.5274294,
+    19374.0798938
+  ],
+  "bot_segments": [
+    [
+      3.97,
+      5.79
+    ],
+    [
+      6.562,
+      47.552
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.552
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2839999999999998,
+  "t_resp": 0.27200000000000024,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.506,
+    6.29
+  ],
+  "tor": 1,
+  "first_start": 6.562,
+  "spoke_s": 7.727999999999999,
+  "latency": 0.27200000000000024,
+  "actual": "stopped after 0.28 s, back 0.27 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 31,
+  "final": {
+    "t_stop": 0.2839999999999998,
+    "t_resp": 0.27200000000000024,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -3.7923478847126546,
+      "pitch_mean": -23.732625884497907,
+      "pitch_sd": 4.780593995201762,
+      "intensity_mean": -4.218012601431923,
+      "intensity_sd": 2.836270036127953,
+      "utmosv2": null
+    },
+    "transcript": "Vaccination began in the late 18th century when Edward Jenner used cowpox to protect against smallpox, creating the first modern vaccine. The 19th century work of Louis Pasteur led to vaccines for radies and later for anthrax, establishing the principle of using weakened or killed microbes to induce immunity. In the early 1900s, the diphtheria toxoid and the polio inactivated vaccine dramatically ",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

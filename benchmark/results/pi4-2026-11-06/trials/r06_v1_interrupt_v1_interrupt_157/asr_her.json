@@ -1,0 +1,202 @@
+{
+  "text": "group billion. Start with brisk walking or gentle body weight moves like squats, lunges and push -ups. Doing a few minutes each and gradually increasing time and intensity.",
+  "chunks": [
+    {
+      "text": "group",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "billion.",
+      "timestamp": [
+        0.26,
+        0.72
+      ]
+    },
+    {
+      "text": "Start",
+      "timestamp": [
+        6.15,
+        6.65
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        6.65,
+        6.87
+      ]
+    },
+    {
+      "text": "brisk",
+      "timestamp": [
+        6.87,
+        7.21
+      ]
+    },
+    {
+      "text": "walking",
+      "timestamp": [
+        7.21,
+        7.57
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        7.57,
+        7.91
+      ]
+    },
+    {
+      "text": "gentle",
+      "timestamp": [
+        7.91,
+        8.23
+      ]
+    },
+    {
+      "text": "body",
+      "timestamp": [
+        8.23,
+        8.59
+      ]
+    },
+    {
+      "text": "weight",
+      "timestamp": [
+        8.59,
+        8.83
+      ]
+    },
+    {
+      "text": "moves",
+      "timestamp": [
+        8.83,
+        9.11
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        9.11,
+        9.39
+      ]
+    },
+    {
+      "text": "squats,",
+      "timestamp": [
+        9.39,
+        9.75
+      ]
+    },
+    {
+      "text": "lunges",
+      "timestamp": [
+        10.23,
+        10.65
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        10.65,
+        10.87
+      ]
+    },
+    {
+      "text": "push",
+      "timestamp": [
+        10.87,
+        11.13
+      ]
+    },
+    {
+      "text": "-ups.",
+      "timestamp": [
+        11.13,
+        11.37
+      ]
+    },
+    {
+      "text": "Doing",
+      "timestamp": [
+        11.85,
+        11.97
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.97,
+        12.15
+      ]
+    },
+    {
+      "text": "few",
+      "timestamp": [
+        12.15,
+        12.31
+      ]
+    },
+    {
+      "text": "minutes",
+      "timestamp": [
+        12.31,
+        12.55
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        12.55,
+        12.97
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        12.97,
+        13.31
+      ]
+    },
+    {
+      "text": "gradually",
+      "timestamp": [
+        13.31,
+        13.79
+      ]
+    },
+    {
+      "text": "increasing",
+      "timestamp": [
+        13.79,
+        14.33
+      ]
+    },
+    {
+      "text": "time",
+      "timestamp": [
+        14.33,
+        14.77
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        14.77,
+        15.05
+      ]
+    },
+    {
+      "text": "intensity.",
+      "timestamp": [
+        15.05,
+        15.51
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

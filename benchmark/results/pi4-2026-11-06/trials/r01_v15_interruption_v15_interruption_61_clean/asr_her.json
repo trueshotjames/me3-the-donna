@@ -1,0 +1,118 @@
+{
+  "text": "You can organize virtual cleanup events. Donate to conservation nonprofits. Share educational posts on social media.",
+  "chunks": [
+    {
+      "text": "You",
+      "timestamp": [
+        4.3,
+        4.76
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        4.76,
+        4.9
+      ]
+    },
+    {
+      "text": "organize",
+      "timestamp": [
+        4.9,
+        5.36
+      ]
+    },
+    {
+      "text": "virtual",
+      "timestamp": [
+        5.36,
+        5.82
+      ]
+    },
+    {
+      "text": "cleanup",
+      "timestamp": [
+        5.82,
+        6.24
+      ]
+    },
+    {
+      "text": "events.",
+      "timestamp": [
+        6.24,
+        6.64
+      ]
+    },
+    {
+      "text": "Donate",
+      "timestamp": [
+        7.16,
+        7.56
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        7.56,
+        7.7
+      ]
+    },
+    {
+      "text": "conservation",
+      "timestamp": [
+        7.7,
+        8.22
+      ]
+    },
+    {
+      "text": "nonprofits.",
+      "timestamp": [
+        8.22,
+        8.78
+      ]
+    },
+    {
+      "text": "Share",
+      "timestamp": [
+        9.6,
+        10.0
+      ]
+    },
+    {
+      "text": "educational",
+      "timestamp": [
+        10.0,
+        10.62
+      ]
+    },
+    {
+      "text": "posts",
+      "timestamp": [
+        10.62,
+        11.02
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        11.02,
+        11.3
+      ]
+    },
+    {
+      "text": "social",
+      "timestamp": [
+        11.3,
+        11.52
+      ]
+    },
+    {
+      "text": "media.",
+      "timestamp": [
+        11.52,
+        11.96
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

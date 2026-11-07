@@ -1,0 +1,90 @@
+{
+  "text": "Could you let me know what you'd like me to help with?",
+  "chunks": [
+    {
+      "text": "Could",
+      "timestamp": [
+        6.29,
+        6.73
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        6.73,
+        6.87
+      ]
+    },
+    {
+      "text": "let",
+      "timestamp": [
+        6.87,
+        7.01
+      ]
+    },
+    {
+      "text": "me",
+      "timestamp": [
+        7.01,
+        7.13
+      ]
+    },
+    {
+      "text": "know",
+      "timestamp": [
+        7.13,
+        7.27
+      ]
+    },
+    {
+      "text": "what",
+      "timestamp": [
+        7.27,
+        7.41
+      ]
+    },
+    {
+      "text": "you'd",
+      "timestamp": [
+        7.41,
+        7.57
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        7.57,
+        7.65
+      ]
+    },
+    {
+      "text": "me",
+      "timestamp": [
+        7.65,
+        7.83
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        7.83,
+        7.93
+      ]
+    },
+    {
+      "text": "help",
+      "timestamp": [
+        7.93,
+        8.07
+      ]
+    },
+    {
+      "text": "with?",
+      "timestamp": [
+        8.07,
+        8.31
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

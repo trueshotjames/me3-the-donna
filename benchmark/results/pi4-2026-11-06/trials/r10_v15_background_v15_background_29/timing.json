@@ -1,0 +1,99 @@
+{
+  "trial": "r10_v15_background_v15_background_29",
+  "group": "v15_background",
+  "clip": "v15_background_29",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 7.392,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.592
+    },
+    {
+      "name": "overlap",
+      "t": 4.028,
+      "len": 1.393
+    }
+  ],
+  "live_bot_starts": [
+    2.528,
+    5.472
+  ],
+  "live_bot_ends": [
+    4.8,
+    6.176
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "When is the next full moon?",
+    "current_turn_text": "",
+    "overlap_text": "The doorbell just rang.",
+    "overlap_duration": 1.39,
+    "overlap_window": [
+      5.3,
+      6.693
+    ],
+    "source_id": "29"
+  },
+  "mono": [
+    18861.4236688,
+    18868.8310922
+  ],
+  "bot_segments": [
+    [
+      2.498,
+      4.83
+    ],
+    [
+      5.442,
+      6.206
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.592
+  ],
+  "overlap_played": true,
+  "t_stop": 0.7000000000000002,
+  "t_resp": 0.036000000000000476,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.13,
+    5.406
+  ],
+  "tor": 0,
+  "first_start": 5.442,
+  "spoke_s": 0.7640000000000002,
+  "latency": 0.021000000000000796,
+  "actual": "stopped after 0.70 s, back 0.04 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 27,
+  "final": {
+    "t_stop": 0.7000000000000002,
+    "t_resp": 0.036000000000000476,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -91.61051945229299,
+      "pitch_mean": -87.09703578385242,
+      "pitch_sd": -26.073882312227354,
+      "intensity_mean": 0.17406472744147194,
+      "intensity_sd": -3.5235600619642593,
+      "utmosv2": null
+    },
+    "transcript": "I'm sorry, I can't check the lunar calendar right now.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

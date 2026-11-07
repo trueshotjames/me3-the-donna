@@ -1,0 +1,29 @@
+{"stage": "vad_start", "t": 15649.279198841, "pid": 9960, "src": "ws", "recv": 15680.6197385, "lt": 15680.617872918001, "tt": 0.2051}
+{"stage": "vad_start", "t": 15649.279255062, "pid": 9960, "src": "ws", "recv": 15680.6197619, "lt": 15680.617929139, "tt": 0.2052}
+{"stage": "asr_partial", "t": 15649.408710478, "pid": 9960, "text": "This", "src": "ws", "recv": 15680.7495052, "lt": 15680.747384555, "tt": 0.3346}
+{"stage": "asr_partial", "t": 15649.891065743, "pid": 9960, "text": "Discuss", "src": "ws", "recv": 15681.2352674, "lt": 15681.22973982, "tt": 0.817}
+{"stage": "interrupted", "t": 15649.894024855, "pid": 9960, "src": "ws", "recv": 15681.2373229, "lt": 15681.232698932, "tt": 0.82}
+{"stage": "interrupted", "t": 15649.894115317, "pid": 9960, "src": "ws", "recv": 15681.2373406, "lt": 15681.232789394, "tt": 0.82}
+{"stage": "bot_stopped", "t": 15649.931063809, "pid": 9960, "src": "ws", "recv": 15681.2727783, "lt": 15681.269737886, "tt": 0.857}
+{"stage": "bot_stopped", "t": 15649.931155993, "pid": 9960, "src": "ws", "recv": 15681.2727948, "lt": 15681.26983007, "tt": 0.8571}
+{"stage": "llm_request", "t": 15649.94198862, "pid": 9960, "messages": 13, "chars": 10187, "est_tokens": 2547, "src": "ws", "recv": 15681.2828449, "lt": 15681.280662697, "tt": 0.8679}
+{"stage": "asr_partial", "t": 15650.123886653, "pid": 9960, "text": "Discuss climate", "src": "ws", "recv": 15681.4646678, "lt": 15681.46256073, "tt": 1.0498}
+{"stage": "asr_partial", "t": 15650.376588135, "pid": 9960, "text": "Discuss climate", "src": "ws", "recv": 15681.7186034, "lt": 15681.715262212, "tt": 1.3025}
+{"stage": "asr_partial", "t": 15650.607542753, "pid": 9960, "text": "Discuss climate change in", "src": "ws", "recv": 15681.9483235, "lt": 15681.94621683, "tt": 1.5335}
+{"stage": "asr_partial", "t": 15650.849171722, "pid": 9960, "text": "Discuss climate change", "src": "ws", "recv": 15682.1898657, "lt": 15682.187845799, "tt": 1.7751}
+{"stage": "asr_partial", "t": 15651.044061615, "pid": 9960, "text": "Discuss climate change exhaust", "src": "ws", "recv": 15682.3847969, "lt": 15682.382735692001, "tt": 1.97}
+{"stage": "asr_partial", "t": 15651.334018511, "pid": 9960, "text": "Discuss climate change exhaustively", "src": "ws", "recv": 15682.6753294, "lt": 15682.672692588, "tt": 2.2599}
+{"stage": "vad_end", "t": 15651.361273622, "pid": 9960, "src": "ws", "recv": 15682.7049725, "lt": 15682.699947699, "tt": 2.2872}
+{"stage": "vad_end", "t": 15651.361345307, "pid": 9960, "src": "ws", "recv": 15682.7049907, "lt": 15682.700019384, "tt": 2.2873}
+{"stage": "llm_request", "t": 15651.368819437, "pid": 9960, "speculative": true, "messages": 14, "chars": 10222, "est_tokens": 2556, "src": "ws", "recv": 15682.7100511, "lt": 15682.707493514, "tt": 2.2947}
+{"stage": "asr_partial", "t": 15651.524446829, "pid": 9960, "text": "Discuss climate change exhaustively.", "src": "ws", "recv": 15682.8651718, "lt": 15682.863120906, "tt": 2.4504}
+{"stage": "asr_partial", "t": 15651.810068204, "pid": 9960, "text": "Discuss climate change exhaustively.", "src": "ws", "recv": 15683.1508531, "lt": 15683.148742281, "tt": 2.736}
+{"stage": "llm_usage", "t": 15652.141233041, "pid": 9960, "prompt_tokens": 2554, "completion_tokens": 308, "src": "ws", "recv": 15683.4822919, "lt": 15683.479907118, "tt": 3.0672}
+{"stage": "asr_final", "t": 15652.614489601, "pid": 9960, "text": "Discuss climate change exhaustively.", "src": "ws", "recv": 15683.956274, "lt": 15683.953163678, "tt": 3.5404}
+{"stage": "user_stopped", "t": 15652.621387128, "pid": 9960, "src": "ws", "recv": 15683.9777059, "lt": 15683.960061205, "tt": 3.5473}
+{"stage": "user_stopped", "t": 15652.621456849, "pid": 9960, "src": "ws", "recv": 15683.9777282, "lt": 15683.960130926, "tt": 3.5474}
+{"stage": "llm_first_token", "t": 15652.626364733, "pid": 9960, "src": "ws", "recv": 15683.9911302, "lt": 15683.96503881, "tt": 3.5523}
+{"stage": "tts_request", "t": 15652.709461124, "pid": 9960, "src": "ws", "recv": 15684.0675639, "lt": 15684.048135201001, "tt": 3.6354}
+{"stage": "tts_first_audio", "t": 15652.938660523, "pid": 9960, "src": "ws", "recv": 15684.279111, "lt": 15684.2773346, "tt": 3.8646}
+{"stage": "audio_out", "t": 15652.942977229, "pid": 9960, "src": "ws", "recv": 15684.2883425, "lt": 15684.281651306, "tt": 3.8689}
+{"stage": "audio_out", "t": 15652.943106894, "pid": 9960, "src": "ws", "recv": 15684.2883679, "lt": 15684.281780971, "tt": 3.869}

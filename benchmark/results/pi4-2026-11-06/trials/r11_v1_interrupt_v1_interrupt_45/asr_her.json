@@ -1,0 +1,188 @@
+{
+  "text": "If you love immersive sci -fi with deep role, I think we make a solid team. You set the goals and I help you get there.",
+  "chunks": [
+    {
+      "text": "If",
+      "timestamp": [
+        3.31,
+        3.81
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        3.81,
+        3.91
+      ]
+    },
+    {
+      "text": "love",
+      "timestamp": [
+        3.91,
+        4.11
+      ]
+    },
+    {
+      "text": "immersive",
+      "timestamp": [
+        4.11,
+        4.51
+      ]
+    },
+    {
+      "text": "sci",
+      "timestamp": [
+        4.51,
+        4.81
+      ]
+    },
+    {
+      "text": "-fi",
+      "timestamp": [
+        4.81,
+        5.05
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        5.05,
+        5.25
+      ]
+    },
+    {
+      "text": "deep",
+      "timestamp": [
+        5.25,
+        5.47
+      ]
+    },
+    {
+      "text": "role,",
+      "timestamp": [
+        5.47,
+        5.77
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        11.0,
+        11.14
+      ]
+    },
+    {
+      "text": "think",
+      "timestamp": [
+        11.14,
+        11.32
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        11.32,
+        11.46
+      ]
+    },
+    {
+      "text": "make",
+      "timestamp": [
+        11.46,
+        11.66
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.66,
+        11.8
+      ]
+    },
+    {
+      "text": "solid",
+      "timestamp": [
+        11.8,
+        12.08
+      ]
+    },
+    {
+      "text": "team.",
+      "timestamp": [
+        12.08,
+        12.46
+      ]
+    },
+    {
+      "text": "You",
+      "timestamp": [
+        12.96,
+        13.04
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        13.04,
+        13.18
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        13.18,
+        13.36
+      ]
+    },
+    {
+      "text": "goals",
+      "timestamp": [
+        13.36,
+        13.64
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.64,
+        13.96
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        13.96,
+        14.06
+      ]
+    },
+    {
+      "text": "help",
+      "timestamp": [
+        14.06,
+        14.24
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        14.24,
+        14.42
+      ]
+    },
+    {
+      "text": "get",
+      "timestamp": [
+        14.42,
+        14.6
+      ]
+    },
+    {
+      "text": "there.",
+      "timestamp": [
+        14.6,
+        14.88
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

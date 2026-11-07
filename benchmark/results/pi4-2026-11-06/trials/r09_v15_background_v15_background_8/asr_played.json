@@ -1,0 +1,97 @@
+{
+  "text": "What's my current heart rate? I think we ran out of paper towels.",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "my",
+      "timestamp": [
+        0.26,
+        0.4
+      ]
+    },
+    {
+      "text": "current",
+      "timestamp": [
+        0.4,
+        0.64
+      ]
+    },
+    {
+      "text": "heart",
+      "timestamp": [
+        0.64,
+        0.84
+      ]
+    },
+    {
+      "text": "rate?",
+      "timestamp": [
+        0.84,
+        1.08
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        3.79,
+        4.11
+      ]
+    },
+    {
+      "text": "think",
+      "timestamp": [
+        4.11,
+        4.27
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        4.27,
+        4.43
+      ]
+    },
+    {
+      "text": "ran",
+      "timestamp": [
+        4.43,
+        4.59
+      ]
+    },
+    {
+      "text": "out",
+      "timestamp": [
+        4.59,
+        4.77
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        4.77,
+        4.87
+      ]
+    },
+    {
+      "text": "paper",
+      "timestamp": [
+        4.87,
+        5.09
+      ]
+    },
+    {
+      "text": "towels.",
+      "timestamp": [
+        5.09,
+        5.45
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,89 @@
+{
+  "trial": "r02_stage_latency_phrase_v15_backchannel_96",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_96",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 32.256,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.232
+    }
+  ],
+  "live_bot_starts": [
+    0.0,
+    3.2
+  ],
+  "live_bot_ends": [
+    0.288
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Explain the gig economy in depth.",
+    "source": "v15_backchannel_96"
+  },
+  "mono": [
+    15900.8437915,
+    15933.0876379
+  ],
+  "bot_segments": [
+    [
+      0.0,
+      0.318
+    ],
+    [
+      3.17,
+      32.256
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.232
+  ],
+  "tor": 1,
+  "first_start": 3.17,
+  "spoke_s": 7.061999999999999,
+  "user_end": 1.982,
+  "latency": 1.188,
+  "actual": "replied 1.19 s after speech end",
+  "verdict": "✓ 1.19 s",
+  "ok": true,
+  "marks": 28,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.188,
+      "e2e": 1.0683,
+      "e2e_source": "marks",
+      "asr_final": 0.5292,
+      "llm_ttft": 0.052,
+      "tts_ttfb": 0.2165,
+      "endpointing": 0.1401,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Explain the gig economy in-depth.",
+      "wer": {
+        "ref_words": 6,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2628,
+      "context_source": "usage",
+      "context_messages": 37
+    },
+    "transcript": "the gig economy is a labor market built around short term. Flexible jobs that people take on instead of traditional full -time positions. It relies on digital platforms that connect workers with customers, letting anyone offer services like ride sharing, food delivery, freelance design, tutoring, or home repairs. Because gigs are usually paid per task or per hour, workers can choose when and how m"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

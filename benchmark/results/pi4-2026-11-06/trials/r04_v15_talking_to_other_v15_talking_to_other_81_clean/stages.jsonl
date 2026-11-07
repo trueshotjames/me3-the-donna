@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 17059.978960127, "pid": 9960, "src": "ws", "recv": 17091.3429293, "lt": 17091.317634204, "tt": 0.2168}
+{"stage": "vad_start", "t": 17059.979051903, "pid": 9960, "src": "ws", "recv": 17091.3429505, "lt": 17091.31772598, "tt": 0.2169}
+{"stage": "interrupted", "t": 17060.409623728, "pid": 9960, "src": "ws", "recv": 17091.7736388, "lt": 17091.748297805, "tt": 0.6475}
+{"stage": "interrupted", "t": 17060.409712709, "pid": 9960, "src": "ws", "recv": 17091.7736721, "lt": 17091.748386786, "tt": 0.6476}
+{"stage": "asr_partial", "t": 17060.523422046, "pid": 9960, "text": "Find me an", "src": "ws", "recv": 17091.8861729, "lt": 17091.862096123, "tt": 0.7613}
+{"stage": "asr_partial", "t": 17060.726661621, "pid": 9960, "text": "Find me a nearby", "src": "ws", "recv": 17092.0894172, "lt": 17092.065335698, "tt": 0.9645}
+{"stage": "asr_partial", "t": 17060.923888679, "pid": 9960, "text": "Find me a nearby coffee", "src": "ws", "recv": 17092.2866268, "lt": 17092.262562756, "tt": 1.1618}
+{"stage": "asr_partial", "t": 17061.206994557, "pid": 9960, "text": "Find me a nearby coffee shop", "src": "ws", "recv": 17092.5697713, "lt": 17092.545668634, "tt": 1.4449}
+{"stage": "asr_partial", "t": 17061.407211003, "pid": 9960, "text": "Find me a nearby coffee shop that", "src": "ws", "recv": 17092.7701786, "lt": 17092.74588508, "tt": 1.6451}
+{"stage": "asr_partial", "t": 17061.686272283, "pid": 9960, "text": "Find me a nearby coffee shop that's open", "src": "ws", "recv": 17093.0490115, "lt": 17093.02494636, "tt": 1.9242}
+{"stage": "asr_partial", "t": 17061.884081871, "pid": 9960, "text": "Find me a nearby coffee shop that's open now.", "src": "ws", "recv": 17093.2467556, "lt": 17093.222755948, "tt": 2.122}
+{"stage": "vad_end", "t": 17061.989805643, "pid": 9960, "src": "ws", "recv": 17093.3570196, "lt": 17093.32847972, "tt": 2.2277}
+{"stage": "vad_end", "t": 17061.989859957, "pid": 9960, "src": "ws", "recv": 17093.3570422, "lt": 17093.328534034, "tt": 2.2277}
+{"stage": "llm_request", "t": 17062.000064365, "pid": 9960, "speculative": true, "messages": 26, "chars": 11460, "est_tokens": 2865, "src": "ws", "recv": 17093.3637698, "lt": 17093.338738442, "tt": 2.2379}
+{"stage": "asr_partial", "t": 17062.04134262, "pid": 9960, "text": "Find me a nearby coffee shop that's open now.", "src": "ws", "recv": 17093.4062764, "lt": 17093.380016697, "tt": 2.2792}
+{"stage": "asr_partial", "t": 17062.163440074, "pid": 9960, "text": "Find me a nearby coffee shop that's open now.", "src": "ws", "recv": 17093.5262423, "lt": 17093.502114151, "tt": 2.4013}
+{"stage": "llm_usage", "t": 17062.541482305, "pid": 9960, "prompt_tokens": 2438, "completion_tokens": 46, "src": "ws", "recv": 17093.9057061, "lt": 17093.880156382, "tt": 2.7794}
+{"stage": "asr_final", "t": 17062.649623306, "pid": 9960, "text": "Find me a nearby coffee shop that's open now.", "src": "ws", "recv": 17094.0137251, "lt": 17093.988297383, "tt": 2.8875}
+{"stage": "user_stopped", "t": 17062.66255192, "pid": 9960, "src": "ws", "recv": 17094.0302127, "lt": 17094.001225997, "tt": 2.9004}
+{"stage": "user_stopped", "t": 17062.662619994, "pid": 9960, "src": "ws", "recv": 17094.0302356, "lt": 17094.001294071, "tt": 2.9005}
+{"stage": "llm_first_token", "t": 17062.666074857, "pid": 9960, "src": "ws", "recv": 17094.0346547, "lt": 17094.004748934, "tt": 2.904}
+{"stage": "tts_request", "t": 17062.690171237, "pid": 9960, "src": "ws", "recv": 17094.0584315, "lt": 17094.028845314002, "tt": 2.9281}
+{"stage": "tts_first_audio", "t": 17062.740354861, "pid": 9960, "src": "ws", "recv": 17094.1048769, "lt": 17094.079028938, "tt": 2.9782}
+{"stage": "audio_out", "t": 17062.748962271, "pid": 9960, "src": "ws", "recv": 17094.1175138, "lt": 17094.087636348002, "tt": 2.9868}
+{"stage": "audio_out", "t": 17062.749052103, "pid": 9960, "src": "ws", "recv": 17094.1175335, "lt": 17094.08772618, "tt": 2.9869}
+{"stage": "bot_stopped", "t": 17065.277233348, "pid": 9960, "src": "ws", "recv": 17096.6417796, "lt": 17096.615907425, "tt": 5.5151}
+{"stage": "bot_stopped", "t": 17065.277358051, "pid": 9960, "src": "ws", "recv": 17096.6418006, "lt": 17096.616032128, "tt": 5.5152}
+{"stage": "llm_request", "t": 17065.286827264, "pid": 9960, "messages": 27, "chars": 11502, "est_tokens": 2876, "src": "ws", "recv": 17096.6500574, "lt": 17096.625501341, "tt": 5.5247}

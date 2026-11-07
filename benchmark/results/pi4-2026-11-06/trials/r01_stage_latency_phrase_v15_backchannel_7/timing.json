@@ -1,0 +1,84 @@
+{
+  "trial": "r01_stage_latency_phrase_v15_backchannel_7",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_7",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 13.824,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.52
+    }
+  ],
+  "live_bot_starts": [
+    4.064
+  ],
+  "live_bot_ends": [
+    13.472
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Give a detailed introduction to the stock market.",
+    "source": "v15_backchannel_7"
+  },
+  "mono": [
+    15594.8680429,
+    15608.6703216
+  ],
+  "bot_segments": [
+    [
+      4.034,
+      13.502
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.52
+  ],
+  "tor": 1,
+  "first_start": 4.034,
+  "spoke_s": 6.486,
+  "user_end": 2.27,
+  "latency": 1.7639999999999998,
+  "actual": "replied 1.76 s after speech end",
+  "verdict": "✓ 1.76 s",
+  "ok": true,
+  "marks": 25,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.764,
+      "e2e": 1.5675,
+      "e2e_source": "marks",
+      "asr_final": 0.5419,
+      "llm_ttft": 0.7876,
+      "tts_ttfb": 0.1924,
+      "endpointing": 0.1408,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Give a detailed introduction to the stock market.",
+      "wer": {
+        "ref_words": 8,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2333,
+      "context_source": "usage",
+      "context_messages": 6
+    },
+    "transcript": "The stock market is a collection of exchanges where investors buy and sell shares of publicly traded companies. It provides companies with capital to grow by issuing stock."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

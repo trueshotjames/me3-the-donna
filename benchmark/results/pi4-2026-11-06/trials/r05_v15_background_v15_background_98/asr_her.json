@@ -1,0 +1,55 @@
+{
+  "text": "I'm unable to play music right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        2.03,
+        2.57
+      ]
+    },
+    {
+      "text": "unable",
+      "timestamp": [
+        2.57,
+        2.81
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        2.81,
+        3.01
+      ]
+    },
+    {
+      "text": "play",
+      "timestamp": [
+        3.01,
+        3.17
+      ]
+    },
+    {
+      "text": "music",
+      "timestamp": [
+        3.17,
+        3.45
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        3.45,
+        3.67
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        3.67,
+        3.95
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,62 @@
+{
+  "trial": "r06_v15_talking_to_other_v15_talking_to_other_24_clean",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_24",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 8.96,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.584
+    }
+  ],
+  "live_bot_starts": [
+    3.328
+  ],
+  "live_bot_ends": [
+    7.744
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "How far is it from Beijing to Shanghai?",
+    "current_turn_text": "Dr. Chen, I'll bring the lab results tomorrow.",
+    "overlap_text": "Dr. Chen, I'll bring the lab results tomorrow.",
+    "overlap_duration": 2.46,
+    "overlap_window": [
+      6.554,
+      9.015
+    ],
+    "source_id": "24"
+  },
+  "mono": [
+    17767.9235376,
+    17776.8620396
+  ],
+  "bot_segments": [
+    [
+      3.298,
+      7.774
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.584
+  ],
+  "tor": 1,
+  "first_start": 3.298,
+  "spoke_s": 4.476,
+  "actual": "replied after 0.71 s, spoke 4.5 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 28,
+  "final": {
+    "transcript": "The distance between Beijing and Shanghai is about 550 kilometers."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

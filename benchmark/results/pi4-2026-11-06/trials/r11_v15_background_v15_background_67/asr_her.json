@@ -1,0 +1,76 @@
+{
+  "text": "attempt to create reminder. Reminder set for now. Stand up.",
+  "chunks": [
+    {
+      "text": "attempt",
+      "timestamp": [
+        2.32,
+        2.98
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        2.98,
+        3.3
+      ]
+    },
+    {
+      "text": "create",
+      "timestamp": [
+        3.3,
+        3.68
+      ]
+    },
+    {
+      "text": "reminder.",
+      "timestamp": [
+        3.68,
+        4.32
+      ]
+    },
+    {
+      "text": "Reminder",
+      "timestamp": [
+        4.52,
+        4.78
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        4.78,
+        6.2
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        6.2,
+        6.42
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        6.42,
+        6.72
+      ]
+    },
+    {
+      "text": "Stand",
+      "timestamp": [
+        7.24,
+        7.48
+      ]
+    },
+    {
+      "text": "up.",
+      "timestamp": [
+        7.48,
+        7.8
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

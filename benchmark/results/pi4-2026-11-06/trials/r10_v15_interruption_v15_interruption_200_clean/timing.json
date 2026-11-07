@@ -1,0 +1,64 @@
+{
+  "trial": "r10_v15_interruption_v15_interruption_200_clean",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_200",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 10.208,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.944
+    }
+  ],
+  "live_bot_starts": [
+    3.264,
+    7.552
+  ],
+  "live_bot_ends": [
+    7.104,
+    9.856
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "I want to learn a new language",
+    "current_turn_text": "Can we talk about something else? Like, tips for better sleep?",
+    "overlap_text": "Can we talk about something else? Like, tips for better sleep?",
+    "overlap_duration": 3.32,
+    "overlap_window": [
+      6.5489999999999995,
+      9.866
+    ],
+    "source_id": "200"
+  },
+  "mono": [
+    18936.1987035,
+    18946.3978123
+  ],
+  "bot_segments": [
+    [
+      3.234,
+      9.886
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.944
+  ],
+  "tor": 1,
+  "first_start": 3.234,
+  "spoke_s": 6.651999999999999,
+  "actual": "replied after 1.29 s, spoke 6.7 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 23,
+  "final": {
+    "transcript": "Pick a language you're excited about. Set a daily 15 -minute practice slot. Use apps or flashcards for vocabulary."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

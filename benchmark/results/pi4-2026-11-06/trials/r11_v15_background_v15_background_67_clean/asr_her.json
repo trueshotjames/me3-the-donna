@@ -1,0 +1,62 @@
+{
+  "text": "I'm sorry, I can't set reminders right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        2.29,
+        2.79
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        2.79,
+        3.13
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        3.53,
+        3.65
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.65,
+        3.95
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        3.95,
+        4.05
+      ]
+    },
+    {
+      "text": "reminders",
+      "timestamp": [
+        4.05,
+        4.47
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.47,
+        4.83
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        4.83,
+        5.09
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

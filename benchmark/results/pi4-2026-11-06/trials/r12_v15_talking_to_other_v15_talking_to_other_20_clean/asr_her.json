@@ -1,0 +1,55 @@
+{
+  "text": "I can't send that message right now.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        2.83,
+        3.29
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.29,
+        3.61
+      ]
+    },
+    {
+      "text": "send",
+      "timestamp": [
+        3.61,
+        3.73
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        3.73,
+        3.91
+      ]
+    },
+    {
+      "text": "message",
+      "timestamp": [
+        3.91,
+        4.17
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.17,
+        4.41
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        4.41,
+        4.67
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

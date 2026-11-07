@@ -1,0 +1,29 @@
+{"stage": "vad_start", "t": 17976.253865953, "pid": 9960, "src": "ws", "recv": 18007.6325087, "lt": 18007.59254003, "tt": 0.2041}
+{"stage": "vad_start", "t": 17976.253960119, "pid": 9960, "src": "ws", "recv": 18007.6325298, "lt": 18007.592634196, "tt": 0.2042}
+{"stage": "asr_partial", "t": 17976.765156641, "pid": 9960, "text": "Hold", "src": "ws", "recv": 18008.1419797, "lt": 18008.103830718, "tt": 0.7154}
+{"stage": "interrupted", "t": 17976.895664599, "pid": 9960, "src": "ws", "recv": 18008.2740415, "lt": 18008.234338676, "tt": 0.8459}
+{"stage": "interrupted", "t": 17976.895755264, "pid": 9960, "src": "ws", "recv": 18008.2740633, "lt": 18008.234429341, "tt": 0.846}
+{"stage": "asr_partial", "t": 17977.053373808, "pid": 9960, "text": "Hold on.", "src": "ws", "recv": 18008.4302343, "lt": 18008.392047885, "tt": 1.0036}
+{"stage": "asr_partial", "t": 17977.12369715, "pid": 9960, "text": "Hold on.", "src": "ws", "recv": 18008.5008821, "lt": 18008.462371227, "tt": 1.0739}
+{"stage": "asr_partial", "t": 17977.375133704, "pid": 9960, "text": "Hold on. Do you", "src": "ws", "recv": 18008.7524557, "lt": 18008.713807781, "tt": 1.3253}
+{"stage": "asr_partial", "t": 17977.604727383, "pid": 9960, "text": "Hold on. Do you also", "src": "ws", "recv": 18008.9817076, "lt": 18008.94340146, "tt": 1.5549}
+{"stage": "asr_partial", "t": 17977.853352028, "pid": 9960, "text": "Hold on. Do you also have", "src": "ws", "recv": 18009.2302175, "lt": 18009.192026105, "tt": 1.8035}
+{"stage": "asr_partial", "t": 17978.083769253, "pid": 9960, "text": "Hold on. Do you also have tips", "src": "ws", "recv": 18009.4609913, "lt": 18009.42244333, "tt": 2.034}
+{"stage": "asr_partial", "t": 17978.335826762, "pid": 9960, "text": "Hold on. Do you also have tips for", "src": "ws", "recv": 18009.7134209, "lt": 18009.674500839, "tt": 2.286}
+{"stage": "asr_partial", "t": 17978.563419281, "pid": 9960, "text": "Hold on. Do you also have tips for staying", "src": "ws", "recv": 18009.9404222, "lt": 18009.902093358, "tt": 2.5136}
+{"stage": "asr_partial", "t": 17978.812995118, "pid": 9960, "text": "Hold on. Do you also have tips for staying hydrated", "src": "ws", "recv": 18010.1899461, "lt": 18010.151669195002, "tt": 2.7632}
+{"stage": "asr_partial", "t": 17978.886158164, "pid": 9960, "text": "Hold on. Do you also have tips for staying hydrated", "src": "ws", "recv": 18010.2632215, "lt": 18010.224832241, "tt": 2.8364}
+{"stage": "llm_request", "t": 17978.97736167, "pid": 9960, "speculative": true, "messages": 50, "chars": 12677, "est_tokens": 3169, "src": "ws", "recv": 18010.3540633, "lt": 18010.316035747, "tt": 2.9276}
+{"stage": "asr_partial", "t": 17979.048180246, "pid": 9960, "text": "Hold on. Do you also have tips for staying hydrated", "src": "ws", "recv": 18010.4251342, "lt": 18010.386854323002, "tt": 2.9984}
+{"stage": "llm_cancel", "t": 17979.294083369, "pid": 9960, "src": "ws", "recv": 18010.6703153, "lt": 18010.632757446, "tt": 3.2443}
+{"stage": "asr_partial", "t": 17979.523906583, "pid": 9960, "text": "Hold on. Do you also have tips for staying hydrated while working", "src": "ws", "recv": 18010.9009512, "lt": 18010.86258066, "tt": 3.4741}
+{"stage": "asr_partial", "t": 17979.77316722, "pid": 9960, "text": "Hold on. Do you also have tips for staying hydrated while working out", "src": "ws", "recv": 18011.1500809, "lt": 18011.111841297, "tt": 3.7234}
+{"stage": "llm_request", "t": 17979.851150558, "pid": 9960, "speculative": true, "messages": 50, "chars": 12695, "est_tokens": 3174, "src": "ws", "recv": 18011.2279144, "lt": 18011.189824635, "tt": 3.8013}
+{"stage": "llm_cancel", "t": 17980.00371811, "pid": 9960, "src": "ws", "recv": 18011.3799078, "lt": 18011.342392187, "tt": 3.9539}
+{"stage": "vad_end", "t": 17980.023691582, "pid": 9960, "src": "ws", "recv": 18011.4010094, "lt": 18011.362365659, "tt": 3.9739}
+{"stage": "vad_end", "t": 17980.023745433, "pid": 9960, "src": "ws", "recv": 18011.4010308, "lt": 18011.362419510002, "tt": 3.9739}
+{"stage": "llm_request", "t": 17980.062095767, "pid": 9960, "speculative": true, "messages": 50, "chars": 12696, "est_tokens": 3174, "src": "ws", "recv": 18011.442418, "lt": 18011.400769844, "tt": 4.0123}
+{"stage": "asr_final", "t": 17980.113647344, "pid": 9960, "text": "Hold on. Do you also have tips for staying hydrated while working out?", "src": "ws", "recv": 18011.4937967, "lt": 18011.452321421, "tt": 4.0638}
+{"stage": "user_stopped", "t": 17980.122785025, "pid": 9960, "src": "ws", "recv": 18011.5040341, "lt": 18011.461459102, "tt": 4.073}
+{"stage": "user_stopped", "t": 17980.122849358, "pid": 9960, "src": "ws", "recv": 18011.504056, "lt": 18011.461523435, "tt": 4.073}
+{"stage": "llm_first_token", "t": 17980.130307153, "pid": 9960, "src": "ws", "recv": 18011.5119446, "lt": 18011.46898123, "tt": 4.0805}

@@ -1,0 +1,132 @@
+{
+  "text": "Start with the basic chords G, C, D, and E -M. Practice each shape until it feels comfortable.",
+  "chunks": [
+    {
+      "text": "Start",
+      "timestamp": [
+        3.15,
+        3.65
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        3.65,
+        3.85
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.85,
+        3.99
+      ]
+    },
+    {
+      "text": "basic",
+      "timestamp": [
+        3.99,
+        4.29
+      ]
+    },
+    {
+      "text": "chords",
+      "timestamp": [
+        4.29,
+        4.71
+      ]
+    },
+    {
+      "text": "G,",
+      "timestamp": [
+        4.71,
+        5.57
+      ]
+    },
+    {
+      "text": "C,",
+      "timestamp": [
+        5.93,
+        6.31
+      ]
+    },
+    {
+      "text": "D,",
+      "timestamp": [
+        6.67,
+        7.01
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        7.47,
+        7.53
+      ]
+    },
+    {
+      "text": "E",
+      "timestamp": [
+        7.53,
+        7.81
+      ]
+    },
+    {
+      "text": "-M.",
+      "timestamp": [
+        7.81,
+        8.07
+      ]
+    },
+    {
+      "text": "Practice",
+      "timestamp": [
+        8.47,
+        8.73
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        8.73,
+        9.07
+      ]
+    },
+    {
+      "text": "shape",
+      "timestamp": [
+        9.07,
+        9.41
+      ]
+    },
+    {
+      "text": "until",
+      "timestamp": [
+        9.41,
+        9.73
+      ]
+    },
+    {
+      "text": "it",
+      "timestamp": [
+        9.73,
+        9.87
+      ]
+    },
+    {
+      "text": "feels",
+      "timestamp": [
+        9.87,
+        10.07
+      ]
+    },
+    {
+      "text": "comfortable.",
+      "timestamp": [
+        10.07,
+        10.59
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 16915.308316508, "pid": 9960, "src": "ws", "recv": 16946.6689003, "lt": 16946.646990585, "tt": 0.1541}
+{"stage": "vad_start", "t": 16915.308407543, "pid": 9960, "src": "ws", "recv": 16946.6689301, "lt": 16946.64708162, "tt": 0.1542}
+{"stage": "asr_partial", "t": 16915.447312795, "pid": 9960, "text": "Thanks", "src": "ws", "recv": 16946.8079835, "lt": 16946.785986872, "tt": 0.2931}
+{"stage": "asr_partial", "t": 16915.92962731, "pid": 9960, "text": "Explain the", "src": "ws", "recv": 16947.296327, "lt": 16947.268301387, "tt": 0.7754}
+{"stage": "interrupted", "t": 16915.934186159, "pid": 9960, "src": "ws", "recv": 16947.299959, "lt": 16947.272860236, "tt": 0.78}
+{"stage": "interrupted", "t": 16915.934311935, "pid": 9960, "src": "ws", "recv": 16947.299975, "lt": 16947.272986012, "tt": 0.7801}
+{"stage": "bot_stopped", "t": 16915.967289627, "pid": 9960, "src": "ws", "recv": 16947.336418, "lt": 16947.305963704, "tt": 0.8131}
+{"stage": "bot_stopped", "t": 16915.967394514, "pid": 9960, "src": "ws", "recv": 16947.3364391, "lt": 16947.306068591, "tt": 0.8132}
+{"stage": "llm_request", "t": 16915.984187931, "pid": 9960, "messages": 30, "chars": 11051, "est_tokens": 2763, "src": "ws", "recv": 16947.3473198, "lt": 16947.322862008, "tt": 0.83}
+{"stage": "asr_partial", "t": 16916.168404217, "pid": 9960, "text": "Explain the gig", "src": "ws", "recv": 16947.5301318, "lt": 16947.507078294002, "tt": 1.0142}
+{"stage": "asr_partial", "t": 16916.407077645, "pid": 9960, "text": "Explain the giga", "src": "ws", "recv": 16947.7679011, "lt": 16947.745751722, "tt": 1.2529}
+{"stage": "asr_partial", "t": 16916.648272393, "pid": 9960, "text": "Explain the gig economy", "src": "ws", "recv": 16948.010076, "lt": 16947.98694647, "tt": 1.4941}
+{"stage": "asr_partial", "t": 16916.885446636, "pid": 9960, "text": "Explain the gig economy and", "src": "ws", "recv": 16948.2458981, "lt": 16948.224120713, "tt": 1.7312}
+{"stage": "asr_partial", "t": 16917.128684783, "pid": 9960, "text": "Explain the gig economy in-depth", "src": "ws", "recv": 16948.4904953, "lt": 16948.46735886, "tt": 1.9745}
+{"stage": "vad_end", "t": 16917.256285475, "pid": 9960, "src": "ws", "recv": 16948.6172359, "lt": 16948.594959552, "tt": 2.1021}
+{"stage": "vad_end", "t": 16917.256340919, "pid": 9960, "src": "ws", "recv": 16948.6172577, "lt": 16948.595014996, "tt": 2.1021}
+{"stage": "asr_partial", "t": 16917.368215126, "pid": 9960, "text": "Explain the gig economy in-depth", "src": "ws", "recv": 16948.7290675, "lt": 16948.706889203, "tt": 2.214}
+{"stage": "llm_request", "t": 16917.371235773, "pid": 9960, "speculative": true, "messages": 31, "chars": 11083, "est_tokens": 2771, "src": "ws", "recv": 16948.7319854, "lt": 16948.70990985, "tt": 2.217}
+{"stage": "asr_partial", "t": 16917.608630846, "pid": 9960, "text": "Explain the gig economy in-depth.", "src": "ws", "recv": 16948.9705012, "lt": 16948.947304923, "tt": 2.4544}
+{"stage": "asr_final", "t": 16917.852092232, "pid": 9960, "text": "Explain the gig economy in-depth.", "src": "ws", "recv": 16949.2137928, "lt": 16949.190766309, "tt": 2.6979}
+{"stage": "user_stopped", "t": 16917.85992528, "pid": 9960, "src": "ws", "recv": 16949.2236489, "lt": 16949.198599357, "tt": 2.7057}
+{"stage": "user_stopped", "t": 16917.859993113, "pid": 9960, "src": "ws", "recv": 16949.2236716, "lt": 16949.19866719, "tt": 2.7058}
+{"stage": "llm_first_token", "t": 16917.910114012, "pid": 9960, "src": "ws", "recv": 16949.2724759, "lt": 16949.248788089, "tt": 2.7559}
+{"stage": "tts_request", "t": 16917.945043513, "pid": 9960, "src": "ws", "recv": 16949.313688, "lt": 16949.28371759, "tt": 2.7908}
+{"stage": "llm_usage", "t": 16918.052729995, "pid": 9960, "prompt_tokens": 2535, "completion_tokens": 265, "src": "ws", "recv": 16949.4267127, "lt": 16949.391404072, "tt": 2.8985}
+{"stage": "tts_first_audio", "t": 16918.135545757, "pid": 9960, "src": "ws", "recv": 16949.5001055, "lt": 16949.474219834, "tt": 2.9813}
+{"stage": "audio_out", "t": 16918.145184264, "pid": 9960, "src": "ws", "recv": 16949.5141602, "lt": 16949.483858341002, "tt": 2.991}
+{"stage": "audio_out", "t": 16918.14526917, "pid": 9960, "src": "ws", "recv": 16949.5141857, "lt": 16949.483943247, "tt": 2.9911}

@@ -1,0 +1,62 @@
+{
+  "trial": "r06_v15_interruption_v15_interruption_55_clean",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_55",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 8.672,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.744
+    }
+  ],
+  "live_bot_starts": [
+    3.52
+  ],
+  "live_bot_ends": [
+    7.456
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "I want to watch something exciting tonight",
+    "current_turn_text": "Can we talk about something else?",
+    "overlap_text": "Can we talk about something else?",
+    "overlap_duration": 2.12,
+    "overlap_window": [
+      6.5920000000000005,
+      8.715
+    ],
+    "source_id": "55"
+  },
+  "mono": [
+    17629.5934798,
+    17638.237772
+  ],
+  "bot_segments": [
+    [
+      3.49,
+      7.486
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.744
+  ],
+  "tor": 1,
+  "first_start": 3.49,
+  "spoke_s": 3.9959999999999996,
+  "actual": "replied after 0.75 s, spoke 4.0 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 28,
+  "final": {
+    "transcript": "Try the Thriller Night Run. It's fast -paced and full of twists."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

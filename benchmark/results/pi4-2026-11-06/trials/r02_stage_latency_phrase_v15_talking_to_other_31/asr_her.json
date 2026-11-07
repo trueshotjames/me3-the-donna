@@ -1,0 +1,97 @@
+{
+  "text": "over it. I'm sorry, but I can't get live sports scores right now.",
+  "chunks": [
+    {
+      "text": "over",
+      "timestamp": [
+        0.0,
+        0.22
+      ]
+    },
+    {
+      "text": "it.",
+      "timestamp": [
+        0.22,
+        0.36
+      ]
+    },
+    {
+      "text": "I'm",
+      "timestamp": [
+        3.11,
+        3.35
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        3.35,
+        3.67
+      ]
+    },
+    {
+      "text": "but",
+      "timestamp": [
+        4.01,
+        4.13
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        4.13,
+        4.27
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        4.27,
+        4.57
+      ]
+    },
+    {
+      "text": "get",
+      "timestamp": [
+        4.57,
+        4.65
+      ]
+    },
+    {
+      "text": "live",
+      "timestamp": [
+        4.65,
+        4.87
+      ]
+    },
+    {
+      "text": "sports",
+      "timestamp": [
+        4.87,
+        5.17
+      ]
+    },
+    {
+      "text": "scores",
+      "timestamp": [
+        5.17,
+        5.51
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        5.51,
+        5.79
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        5.79,
+        6.09
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

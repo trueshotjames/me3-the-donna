@@ -1,0 +1,93 @@
+{
+  "trial": "r12_v15_talking_to_other_v15_talking_to_other_20",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_20",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 15.2,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.328
+    },
+    {
+      "name": "overlap",
+      "t": 5.148,
+      "len": 2.0429375
+    }
+  ],
+  "live_bot_starts": [
+    3.648
+  ],
+  "live_bot_ends": [
+    5.504
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Send a message to Alex saying I'll be late.",
+    "current_turn_text": "Mateo, pick up the kids at three, yeah?",
+    "overlap_text": "Mateo, pick up the kids at three, yeah?",
+    "overlap_duration": 2.04,
+    "overlap_window": [
+      6.09,
+      8.133
+    ],
+    "source_id": "20"
+  },
+  "mono": [
+    19465.5361847,
+    19480.7335427
+  ],
+  "bot_segments": [
+    [
+      3.618,
+      5.534
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.328
+  ],
+  "overlap_played": true,
+  "t_stop": 0.34799999999999986,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.186,
+    7.166
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "latency": null,
+  "actual": "stopped after 0.35 s, did not come back",
+  "overlap_class": "stopped",
+  "label_provisional": "Unknown",
+  "verdict": "✗ stopped, silent",
+  "ok": false,
+  "marks": 47,
+  "final": {
+    "t_stop": 0.34799999999999986,
+    "t_resp": null,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": null,
+      "pitch_mean": 21.674062195873574,
+      "pitch_sd": 57.377827595551985,
+      "intensity_mean": -2.5592236580574053,
+      "intensity_sd": -2.0013708628578835,
+      "utmosv2": null
+    },
+    "transcript": "I'm sorry, I can't send messages.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:54+08:00"
+}

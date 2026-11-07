@@ -1,0 +1,55 @@
+{
+  "text": "I can't schedule that meeting right now.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        3.34,
+        3.78
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.78,
+        4.06
+      ]
+    },
+    {
+      "text": "schedule",
+      "timestamp": [
+        4.06,
+        4.4
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        4.4,
+        4.62
+      ]
+    },
+    {
+      "text": "meeting",
+      "timestamp": [
+        4.62,
+        4.88
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.88,
+        5.14
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        5.14,
+        5.4
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

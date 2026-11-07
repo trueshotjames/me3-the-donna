@@ -1,0 +1,93 @@
+{
+  "trial": "r09_v15_talking_to_other_v15_talking_to_other_98",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_98",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 15.008,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.328
+    },
+    {
+      "name": "overlap",
+      "t": 4.668,
+      "len": 2.3219375
+    }
+  ],
+  "live_bot_starts": [
+    3.168
+  ],
+  "live_bot_ends": [
+    4.96
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Give me a fun fact about dolphins.",
+    "current_turn_text": "Roomie, fridge is empty again—groceries?",
+    "overlap_text": "Roomie, fridge is empty again—groceries?",
+    "overlap_duration": 2.32,
+    "overlap_window": [
+      6.183,
+      8.504999999999999
+    ],
+    "source_id": "98"
+  },
+  "mono": [
+    18508.2690572,
+    18523.2622734
+  ],
+  "bot_segments": [
+    [
+      3.138,
+      4.99
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.328
+  ],
+  "overlap_played": true,
+  "t_stop": 0.31599999999999984,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.674,
+    6.974
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "latency": null,
+  "actual": "stopped after 0.32 s, did not come back",
+  "overlap_class": "stopped",
+  "label_provisional": "Unknown",
+  "verdict": "✗ stopped, silent",
+  "ok": false,
+  "marks": 50,
+  "final": {
+    "t_stop": 0.31599999999999984,
+    "t_resp": null,
+    "label": "Unknown",
+    "voice_delta": {
+      "wpm": null,
+      "pitch_mean": -81.25304390393202,
+      "pitch_sd": -58.87042534747453,
+      "intensity_mean": -3.4454594451156915,
+      "intensity_sd": -1.1907442162416846,
+      "utmosv2": null
+    },
+    "transcript": "Dolphins can recognize themselves as",
+    "judge_label": "Unknown",
+    "ok": false,
+    "verdict": "✗ Unknown"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

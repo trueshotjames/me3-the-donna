@@ -1,0 +1,62 @@
+{
+  "trial": "r01_v15_talking_to_other_v15_talking_to_other_34_clean",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_34",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 5.408,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.176
+    }
+  ],
+  "live_bot_starts": [
+    2.304
+  ],
+  "live_bot_ends": [
+    4.192
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Mute the TV.",
+    "current_turn_text": "Rita, pass the soy sauce, please.",
+    "overlap_text": "Rita, pass the soy sauce, please.",
+    "overlap_duration": 1.76,
+    "overlap_window": [
+      5.022,
+      6.787
+    ],
+    "source_id": "34"
+  },
+  "mono": [
+    16248.4435087,
+    16253.8213707
+  ],
+  "bot_segments": [
+    [
+      2.274,
+      4.222
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.176
+  ],
+  "tor": 1,
+  "first_start": 2.274,
+  "spoke_s": 1.9480000000000004,
+  "actual": "replied after 1.10 s, spoke 1.9 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 22,
+  "final": {
+    "transcript": "I can't mute the TV right now."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

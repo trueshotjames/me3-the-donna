@@ -1,0 +1,64 @@
+{
+  "trial": "r11_false_tt_false_side_talk_001",
+  "group": "false_tt",
+  "clip": "false_side_talk_001",
+  "variant": "main",
+  "expected": "stay silent",
+  "duration": 8.032,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.276
+    }
+  ],
+  "live_bot_starts": [
+    0.096,
+    4.032
+  ],
+  "live_bot_ends": [
+    0.256,
+    6.816
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "kind": "side_talk",
+    "kind_label": "side talk",
+    "level_db": -8,
+    "text": "Roomie, fridge is empty again—groceries?",
+    "source": "v15_talking_to_other_66"
+  },
+  "mono": [
+    19284.5856729,
+    19292.6057935
+  ],
+  "bot_segments": [
+    [
+      4.002,
+      6.846
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.276
+  ],
+  "tor": 1,
+  "first_start": 4.002,
+  "spoke_s": 2.8440000000000003,
+  "actual": "spoke 2.8 s after +1.7 s",
+  "verdict": "✗ took turn",
+  "ok": false,
+  "marks": 30,
+  "final": {
+    "tor": 1,
+    "words": 9,
+    "verdict": "✗ took turn",
+    "ok": false,
+    "transcript": "and I'm sorry I can't order groceries right now."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

@@ -1,0 +1,93 @@
+{
+  "trial": "r04_v15_background_v15_background_12",
+  "group": "v15_background",
+  "clip": "v15_background_12",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 13.792,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.816
+    },
+    {
+      "name": "overlap",
+      "t": 4.092,
+      "len": 1.672
+    }
+  ],
+  "live_bot_starts": [
+    2.592
+  ],
+  "live_bot_ends": [
+    4.512
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Check the status of my flight.",
+    "current_turn_text": "",
+    "overlap_text": "Mom, have you fed the cat yet?",
+    "overlap_duration": 1.67,
+    "overlap_window": [
+      5.625,
+      7.297
+    ],
+    "source_id": "12"
+  },
+  "mono": [
+    17132.3121542,
+    17146.1098226
+  ],
+  "bot_segments": [
+    [
+      2.562,
+      4.542
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.816
+  ],
+  "overlap_played": true,
+  "t_stop": 0.4119999999999999,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.13,
+    5.598
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "latency": null,
+  "actual": "stopped after 0.41 s, did not come back",
+  "overlap_class": "stopped",
+  "label_provisional": "Unknown",
+  "verdict": "✗ stopped, silent",
+  "ok": false,
+  "marks": 42,
+  "final": {
+    "t_stop": 0.4119999999999999,
+    "t_resp": null,
+    "label": "Unknown",
+    "voice_delta": {
+      "wpm": null,
+      "pitch_mean": -55.37260122113108,
+      "pitch_sd": -31.697623624016263,
+      "intensity_mean": -2.454315987810041,
+      "intensity_sd": -3.467709044371972,
+      "utmosv2": null
+    },
+    "transcript": "I'm sorry, I can't check that right now.",
+    "judge_label": "Unknown",
+    "ok": false,
+    "verdict": "✗ Unknown"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

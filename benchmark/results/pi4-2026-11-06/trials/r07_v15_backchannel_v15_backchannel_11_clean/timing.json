@@ -1,0 +1,62 @@
+{
+  "trial": "r07_v15_backchannel_v15_backchannel_11_clean",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_11",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 14.24,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.136
+    }
+  ],
+  "live_bot_starts": [
+    3.072
+  ],
+  "live_bot_ends": [
+    13.888
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Summarize black holes comprehensively.",
+    "current_turn_text": "",
+    "overlap_text": "mm-hmm yeah",
+    "overlap_duration": 0.97,
+    "overlap_window": [
+      5.997,
+      6.9719999999999995
+    ],
+    "source_id": "11"
+  },
+  "mono": [
+    18122.8318842,
+    18137.054173
+  ],
+  "bot_segments": [
+    [
+      3.042,
+      13.918
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.136
+  ],
+  "tor": 1,
+  "first_start": 3.042,
+  "spoke_s": 7.093999999999999,
+  "actual": "replied after 0.91 s, spoke 7.1 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 27,
+  "final": {
+    "transcript": "black holes are extremely dense objects where gravity pulls everything inwards so strongly that even light cannot escape they form when a massive star runs out of fuel and collapses under its own weight"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

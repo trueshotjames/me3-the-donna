@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "ok": true,
+      "text": "Python 3.13.17",
+      "fix": "Python 3.10 or newer is needed"
+    },
+    {
+      "ok": true,
+      "text": "packages: core ok",
+      "fix": "pip install -r requirements.txt"
+    },
+    {
+      "ok": true,
+      "text": "scoring extras: ASR (faster-whisper), pitch/intensity (praat-parselmouth) · not installed: UTMOSv2 quality",
+      "fix": "pip install -r requirements-score.txt (laptop) to score transcripts and voice change"
+    },
+    {
+      "ok": true,
+      "text": "Windows 11 (AMD64) · 15.3 GB RAM · 95.6 GB free",
+      "fix": ""
+    },
+    {
+      "ok": false,
+      "text": "network: ethernet+wifi",
+      "fix": "use Ethernet if you can; Wi-Fi jitter widens latencies"
+    },
+    {
+      "ok": true,
+      "text": "datasets: 430 clips in 10 groups",
+      "fix": "python tools/fetch_datasets.py --force gets the full set"
+    },
+    {
+      "ok": true,
+      "text": "dataset checksums ok (sampled)",
+      "fix": "rebuild the datasets"
+    },
+    {
+      "ok": true,
+      "text": "rig: direct feed on ws://127.0.0.1:8791 (no audio devices used)",
+      "fix": ""
+    },
+    {
+      "ok": true,
+      "text": "assistant runs on another machine (Pi); fdbench will listen on all interfaces",
+      "fix": ""
+    },
+    {
+      "ok": true,
+      "text": "Pi CPU, memory, temperature and throttling: sent by the launcher during the run (checked when she connects; see the run log)",
+      "fix": ""
+    },
+    {
+      "ok": true,
+      "text": "judge: openrouter/openai/gpt-4o · reachable (OK)",
+      "fix": "check the API key / URL in .env"
+    }
+  ],
+  "info": {
+    "os": "Windows 11",
+    "machine": "AMD64",
+    "pi_model": null,
+    "ram_gb": 15.3,
+    "python": "3.13.17",
+    "network": "ethernet+wifi",
+    "pi_temp_c": null,
+    "pi_throttled": null,
+    "disk_free_gb": 95.6,
+    "hostname": "LAPTOP-0FRPK8NV",
+    "optional": {
+      "ASR (faster-whisper)": true,
+      "pitch/intensity (praat-parselmouth)": true,
+      "UTMOSv2 quality": false
+    },
+    "fdbench": "0.1.0"
+  },
+  "devices": {}
+}

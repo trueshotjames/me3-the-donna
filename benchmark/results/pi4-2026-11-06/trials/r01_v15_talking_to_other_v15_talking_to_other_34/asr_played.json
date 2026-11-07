@@ -1,0 +1,76 @@
+{
+  "text": "Mute the TV. Read up past the soy sauce, please.",
+  "chunks": [
+    {
+      "text": "Mute",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.26,
+        0.38
+      ]
+    },
+    {
+      "text": "TV.",
+      "timestamp": [
+        0.38,
+        0.68
+      ]
+    },
+    {
+      "text": "Read",
+      "timestamp": [
+        3.41,
+        3.81
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        3.81,
+        3.99
+      ]
+    },
+    {
+      "text": "past",
+      "timestamp": [
+        3.99,
+        4.19
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.19,
+        4.35
+      ]
+    },
+    {
+      "text": "soy",
+      "timestamp": [
+        4.35,
+        4.55
+      ]
+    },
+    {
+      "text": "sauce,",
+      "timestamp": [
+        4.55,
+        4.77
+      ]
+    },
+    {
+      "text": "please.",
+      "timestamp": [
+        4.87,
+        5.07
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

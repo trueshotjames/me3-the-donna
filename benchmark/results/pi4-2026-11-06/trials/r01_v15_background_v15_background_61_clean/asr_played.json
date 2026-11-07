@@ -1,0 +1,55 @@
+{
+  "text": "What's the score of the Mariners game?",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.28
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.28,
+        0.44
+      ]
+    },
+    {
+      "text": "score",
+      "timestamp": [
+        0.44,
+        0.76
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        0.76,
+        0.96
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.96,
+        1.08
+      ]
+    },
+    {
+      "text": "Mariners",
+      "timestamp": [
+        1.08,
+        1.48
+      ]
+    },
+    {
+      "text": "game?",
+      "timestamp": [
+        1.48,
+        1.66
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

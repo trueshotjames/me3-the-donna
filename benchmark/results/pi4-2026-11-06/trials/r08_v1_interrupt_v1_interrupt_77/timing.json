@@ -1,0 +1,86 @@
+{
+  "trial": "r08_v1_interrupt_v1_interrupt_77",
+  "group": "v1_interrupt",
+  "clip": "v1_interrupt_77",
+  "variant": "main",
+  "expected": "stop, then answer the new request",
+  "duration": 23.648,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.256
+    },
+    {
+      "name": "overlap",
+      "t": 5.628,
+      "len": 3.68
+    }
+  ],
+  "live_bot_starts": [
+    4.128,
+    10.592,
+    14.592
+  ],
+  "live_bot_ends": [
+    6.016,
+    14.24,
+    23.296
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "What are some benefits of eating fruits and vegetables?",
+    "interrupt_text": "By the way, how about we discuss exercise routines instead?",
+    "source_id": "77"
+  },
+  "mono": [
+    18239.6435664,
+    18263.2946088
+  ],
+  "bot_segments": [
+    [
+      4.098,
+      6.046
+    ],
+    [
+      10.498,
+      23.326
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.256
+  ],
+  "overlap_played": true,
+  "t_stop": 0.25200000000000067,
+  "t_resp": 1.1899999999999995,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.794,
+    9.308
+  ],
+  "tor": 1,
+  "first_start": 10.498,
+  "spoke_s": 6.8100000000000005,
+  "latency": 1.1899999999999995,
+  "actual": "stopped after 0.25 s, back 1.19 s after",
+  "verdict": "✓ yielded, 1.19 s",
+  "ok": true,
+  "marks": 65,
+  "final": {
+    "tor": 1,
+    "words": 14,
+    "latency": 1.1899999999999995,
+    "t_stop": 0.25200000000000067,
+    "verdict": "✓ yielded, 1.19 s",
+    "ok": true,
+    "rating": 5,
+    "transcript": "fruits and vegetables provide essential exercise routines improve cardiovascular health build strength boost flexibility and Support mental well -being a balanced plan mixes aerobic activities like walking or cycling with strength training and stretching"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

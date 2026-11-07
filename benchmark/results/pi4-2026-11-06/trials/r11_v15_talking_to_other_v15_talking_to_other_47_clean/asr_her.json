@@ -1,0 +1,55 @@
+{
+  "text": "I can't set an alarm right now.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        3.54,
+        3.98
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.98,
+        4.26
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        4.26,
+        4.38
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        4.38,
+        4.5
+      ]
+    },
+    {
+      "text": "alarm",
+      "timestamp": [
+        4.5,
+        4.74
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.74,
+        4.96
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        4.96,
+        5.2
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,7 @@
+{
+  "task": "behaviour",
+  "label": "Uncertain",
+  "tag": "C_UNCERTAIN_HANDLING",
+  "raw": "{ \"behaviour\": [\"C_UNCERTAIN_HANDLING\"] }",
+  "judge": "openrouter/openai/gpt-4o"
+}

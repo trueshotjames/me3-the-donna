@@ -1,0 +1,74 @@
+{"stage": "vad_start", "t": 18314.264705175, "pid": 9960, "src": "ws", "recv": 18345.6487865, "lt": 18345.603379252, "tt": 0.5184}
+{"stage": "vad_start", "t": 18314.264805766, "pid": 9960, "src": "ws", "recv": 18345.6488105, "lt": 18345.603479843, "tt": 0.5185}
+{"stage": "asr_partial", "t": 18314.645255746, "pid": 9960, "text": "I", "src": "ws", "recv": 18346.0277359, "lt": 18345.983929823, "tt": 0.899}
+{"stage": "interrupted", "t": 18314.7726738, "pid": 9960, "src": "ws", "recv": 18346.1567472, "lt": 18346.111347877, "tt": 1.0264}
+{"stage": "interrupted", "t": 18314.772828316, "pid": 9960, "src": "ws", "recv": 18346.1567707, "lt": 18346.111502393, "tt": 1.0266}
+{"stage": "asr_partial", "t": 18314.882765052, "pid": 9960, "text": "I need a good", "src": "ws", "recv": 18346.2651149, "lt": 18346.221439129, "tt": 1.1365}
+{"stage": "asr_partial", "t": 18315.090669524, "pid": 9960, "text": "I need a good book", "src": "ws", "recv": 18346.4763022, "lt": 18346.429343601, "tt": 1.3444}
+{"stage": "asr_partial", "t": 18315.366421129, "pid": 9960, "text": "I need a good book to", "src": "ws", "recv": 18346.7487172, "lt": 18346.705095206, "tt": 1.6201}
+{"stage": "asr_partial", "t": 18315.571025532, "pid": 9960, "text": "I need a good book to read.", "src": "ws", "recv": 18346.9561167, "lt": 18346.909699609, "tt": 1.8248}
+{"stage": "asr_partial", "t": 18315.643054482, "pid": 9960, "text": "I need a good book to read.", "src": "ws", "recv": 18347.0253397, "lt": 18346.981728559, "tt": 1.8968}
+{"stage": "vad_end", "t": 18315.701886746, "pid": 9960, "src": "ws", "recv": 18347.0885046, "lt": 18347.040560823, "tt": 1.9556}
+{"stage": "vad_end", "t": 18315.701940782, "pid": 9960, "src": "ws", "recv": 18347.0885289, "lt": 18347.040614859, "tt": 1.9557}
+{"stage": "llm_request", "t": 18315.712477799, "pid": 9960, "speculative": true, "messages": 30, "chars": 12531, "est_tokens": 3133, "src": "ws", "recv": 18347.0947686, "lt": 18347.051151876, "tt": 1.9662}
+{"stage": "vad_start", "t": 18315.989740977, "pid": 9960, "src": "ws", "recv": 18347.3722634, "lt": 18347.328415054, "tt": 2.2435}
+{"stage": "vad_start", "t": 18315.989798032, "pid": 9960, "src": "ws", "recv": 18347.3722862, "lt": 18347.328472109, "tt": 2.2435}
+{"stage": "llm_cancel", "t": 18315.992690422, "pid": 9960, "src": "ws", "recv": 18347.3738241, "lt": 18347.331364499, "tt": 2.2464}
+{"stage": "asr_partial", "t": 18316.806456998, "pid": 9960, "text": "I need a good book to read. Any ideas", "src": "ws", "recv": 18348.1888552, "lt": 18348.145131075, "tt": 3.0602}
+{"stage": "asr_partial", "t": 18317.018309773, "pid": 9960, "text": "I need a good book to read. Any ideas if you", "src": "ws", "recv": 18348.4023337, "lt": 18348.35698385, "tt": 3.272}
+{"stage": "asr_partial", "t": 18317.286259864, "pid": 9960, "text": "I need a good book to read. Any ideas? If you like", "src": "ws", "recv": 18348.668607, "lt": 18348.624933941, "tt": 3.54}
+{"stage": "asr_partial", "t": 18317.493119331, "pid": 9960, "text": "I need a good book to read. Any ideas if you like mystery", "src": "ws", "recv": 18348.8763911, "lt": 18348.831793408, "tt": 3.7468}
+{"stage": "asr_partial", "t": 18317.765469034, "pid": 9960, "text": "I need a good book to read. Any ideas if you like mysteries?", "src": "ws", "recv": 18349.1477005, "lt": 18349.104143111, "tt": 4.0192}
+{"stage": "asr_partial", "t": 18317.974229367, "pid": 9960, "text": "I need a good book to read. Any ideas if you like mysteries, you should", "src": "ws", "recv": 18349.3578792, "lt": 18349.312903444, "tt": 4.228}
+{"stage": "asr_partial", "t": 18318.249338017, "pid": 9960, "text": "I need a good book to read. Any ideas if you like mysteries, you should try the", "src": "ws", "recv": 18349.6316306, "lt": 18349.588012094002, "tt": 4.5031}
+{"stage": "asr_partial", "t": 18318.45379494, "pid": 9960, "text": "I need a good book to read. Any ideas if you like mysteries, you should try the night", "src": "ws", "recv": 18349.8380427, "lt": 18349.792469017, "tt": 4.7075}
+{"stage": "asr_partial", "t": 18318.726618507, "pid": 9960, "text": "I need a good book to read. Any ideas if you like mysteries, you should try the night circ", "src": "ws", "recv": 18350.1089627, "lt": 18350.065292584, "tt": 4.9803}
+{"stage": "asr_partial", "t": 18318.886061605, "pid": 9960, "text": "I need a good book to read. Any ideas if you like mysteries, you should try the night circus.", "src": "ws", "recv": 18350.2683195, "lt": 18350.224735682, "tt": 5.1398}
+{"stage": "asr_partial", "t": 18318.937255223, "pid": 9960, "text": "I need a good book to read. Any ideas if you like mysteries, you should try the night circus.", "src": "ws", "recv": 18350.3195001, "lt": 18350.2759293, "tt": 5.191}
+{"stage": "llm_request", "t": 18319.009639077, "pid": 9960, "speculative": true, "messages": 30, "chars": 12597, "est_tokens": 3149, "src": "ws", "recv": 18350.3918813, "lt": 18350.348313154, "tt": 5.2634}
+{"stage": "asr_final", "t": 18319.042680311, "pid": 9960, "text": "I need a good book to read. Any ideas if you like mysteries, you should try the night circus.", "src": "ws", "recv": 18350.4273711, "lt": 18350.381354388, "tt": 5.2964}
+{"stage": "user_stopped", "t": 18319.054455479, "pid": 9960, "src": "ws", "recv": 18350.443215, "lt": 18350.393129556, "tt": 5.3082}
+{"stage": "user_stopped", "t": 18319.054565237, "pid": 9960, "src": "ws", "recv": 18350.4432376, "lt": 18350.393239314, "tt": 5.3083}
+{"stage": "vad_end", "t": 18319.085145762, "pid": 9960, "src": "ws", "recv": 18350.4716393, "lt": 18350.423819839, "tt": 5.3389}
+{"stage": "vad_end", "t": 18319.085215983, "pid": 9960, "src": "ws", "recv": 18350.4716591, "lt": 18350.42389006, "tt": 5.3389}
+{"stage": "vad_start", "t": 18319.5517977, "pid": 9960, "src": "ws", "recv": 18350.9351027, "lt": 18350.890471777002, "tt": 5.8055}
+{"stage": "vad_start", "t": 18319.551885403, "pid": 9960, "src": "ws", "recv": 18350.9351255, "lt": 18350.89055948, "tt": 5.8056}
+{"stage": "llm_first_token", "t": 18319.732816101, "pid": 9960, "src": "ws", "recv": 18351.1175196, "lt": 18351.071490178, "tt": 5.9865}
+{"stage": "llm_usage", "t": 18319.743826075, "pid": 9960, "prompt_tokens": 2420, "completion_tokens": 45, "src": "ws", "recv": 18351.1290154, "lt": 18351.082500152, "tt": 5.9976}
+{"stage": "tts_request", "t": 18319.764707814, "pid": 9960, "src": "ws", "recv": 18351.1503174, "lt": 18351.103381891, "tt": 6.0184}
+{"stage": "tts_first_audio", "t": 18319.965732631, "pid": 9960, "src": "ws", "recv": 18351.3495084, "lt": 18351.304406708, "tt": 6.2195}
+{"stage": "audio_out", "t": 18319.973028392, "pid": 9960, "src": "ws", "recv": 18351.3587817, "lt": 18351.311702469, "tt": 6.2268}
+{"stage": "audio_out", "t": 18319.97310978, "pid": 9960, "src": "ws", "recv": 18351.3588043, "lt": 18351.311783857, "tt": 6.2268}
+{"stage": "asr_partial", "t": 18319.982632772, "pid": 9960, "text": "So", "src": "ws", "recv": 18351.3689199, "lt": 18351.321306849, "tt": 6.2364}
+{"stage": "asr_partial", "t": 18320.20554189, "pid": 9960, "text": "So", "src": "ws", "recv": 18351.5904181, "lt": 18351.544215967002, "tt": 6.4593}
+{"stage": "vad_end", "t": 18320.342892134, "pid": 9960, "src": "ws", "recv": 18351.7260908, "lt": 18351.681566211, "tt": 6.5966}
+{"stage": "vad_end", "t": 18320.342949911, "pid": 9960, "src": "ws", "recv": 18351.7261142, "lt": 18351.681623988, "tt": 6.5967}
+{"stage": "asr_partial", "t": 18320.44805754, "pid": 9960, "text": "So", "src": "ws", "recv": 18351.831319, "lt": 18351.786731617, "tt": 6.7018}
+{"stage": "asr_partial", "t": 18320.68363987, "pid": 9960, "text": "So", "src": "ws", "recv": 18352.0665846, "lt": 18352.022313947, "tt": 6.9374}
+{"stage": "vad_start", "t": 18320.854522954, "pid": 9960, "src": "ws", "recv": 18352.2377855, "lt": 18352.193197031, "tt": 7.1082}
+{"stage": "vad_start", "t": 18320.85459012, "pid": 9960, "src": "ws", "recv": 18352.2378104, "lt": 18352.193264197, "tt": 7.1083}
+{"stage": "asr_partial", "t": 18321.165771393, "pid": 9960, "text": "So it's", "src": "ws", "recv": 18352.551374, "lt": 18352.50444547, "tt": 7.4195}
+{"stage": "interrupted", "t": 18321.16874193, "pid": 9960, "src": "ws", "recv": 18352.5536651, "lt": 18352.507416007, "tt": 7.4225}
+{"stage": "interrupted", "t": 18321.168830021, "pid": 9960, "src": "ws", "recv": 18352.5536878, "lt": 18352.507504098, "tt": 7.4226}
+{"stage": "bot_stopped", "t": 18321.196898688, "pid": 9960, "src": "ws", "recv": 18352.5877496, "lt": 18352.535572765, "tt": 7.4506}
+{"stage": "bot_stopped", "t": 18321.197004502, "pid": 9960, "src": "ws", "recv": 18352.5877688, "lt": 18352.535678579, "tt": 7.4507}
+{"stage": "asr_partial", "t": 18321.403812488, "pid": 9960, "text": "So it's really", "src": "ws", "recv": 18352.7861968, "lt": 18352.742486565, "tt": 7.6575}
+{"stage": "asr_partial", "t": 18321.643748375, "pid": 9960, "text": "So it's really a cap", "src": "ws", "recv": 18353.0262687, "lt": 18352.982422452, "tt": 7.8975}
+{"stage": "asr_partial", "t": 18321.885565478, "pid": 9960, "text": "So it's really captive", "src": "ws", "recv": 18353.2684212, "lt": 18353.224239555002, "tt": 8.1393}
+{"stage": "vad_end", "t": 18322.00577553, "pid": 9960, "src": "ws", "recv": 18353.3889085, "lt": 18353.344449607, "tt": 8.2595}
+{"stage": "vad_end", "t": 18322.005833325, "pid": 9960, "src": "ws", "recv": 18353.388929, "lt": 18353.344507402002, "tt": 8.2596}
+{"stage": "asr_partial", "t": 18322.094670528, "pid": 9960, "text": "So it's really captivating", "src": "ws", "recv": 18353.4779192, "lt": 18353.433344605, "tt": 8.3484}
+{"stage": "llm_request", "t": 18322.09830952, "pid": 9960, "speculative": true, "messages": 31, "chars": 12623, "est_tokens": 3156, "src": "ws", "recv": 18353.4818096, "lt": 18353.436983597, "tt": 8.352}
+{"stage": "asr_partial", "t": 18322.143144255, "pid": 9960, "text": "So it's really captivating.", "src": "ws", "recv": 18353.5280502, "lt": 18353.481818332, "tt": 8.3969}
+{"stage": "asr_final", "t": 18322.302858553, "pid": 9960, "text": "So it's really captivating.", "src": "ws", "recv": 18353.6867894, "lt": 18353.64153263, "tt": 8.5566}
+{"stage": "user_stopped", "t": 18322.310984618, "pid": 9960, "src": "ws", "recv": 18353.6964374, "lt": 18353.649658695, "tt": 8.5647}
+{"stage": "user_stopped", "t": 18322.311152764, "pid": 9960, "src": "ws", "recv": 18353.6964607, "lt": 18353.649826841, "tt": 8.5649}
+{"stage": "llm_first_token", "t": 18322.669776536, "pid": 9960, "src": "ws", "recv": 18354.0585613, "lt": 18354.008450613, "tt": 8.9235}
+{"stage": "llm_usage", "t": 18322.679115252, "pid": 9960, "prompt_tokens": 2429, "completion_tokens": 70, "src": "ws", "recv": 18354.0660298, "lt": 18354.017789329002, "tt": 8.9328}
+{"stage": "tts_request", "t": 18322.705332628, "pid": 9960, "src": "ws", "recv": 18354.0921745, "lt": 18354.044006705, "tt": 8.9591}
+{"stage": "tts_first_audio", "t": 18322.887339461, "pid": 9960, "src": "ws", "recv": 18354.2695286, "lt": 18354.226013538, "tt": 9.1411}
+{"stage": "audio_out", "t": 18322.891899978, "pid": 9960, "src": "ws", "recv": 18354.2790204, "lt": 18354.230574055, "tt": 9.1456}
+{"stage": "audio_out", "t": 18322.891983033, "pid": 9960, "src": "ws", "recv": 18354.2790432, "lt": 18354.23065711, "tt": 9.1457}
+{"stage": "bot_stopped", "t": 18330.940379637, "pid": 9960, "src": "ws", "recv": 18362.3233107, "lt": 18362.279053714, "tt": 17.1941}
+{"stage": "bot_stopped", "t": 18330.940458302, "pid": 9960, "src": "ws", "recv": 18362.3233316, "lt": 18362.279132379, "tt": 17.1942}
+{"stage": "llm_request", "t": 18330.94686313, "pid": 9960, "messages": 32, "chars": 12748, "est_tokens": 3187, "src": "ws", "recv": 18362.3285741, "lt": 18362.285537207, "tt": 17.2006}

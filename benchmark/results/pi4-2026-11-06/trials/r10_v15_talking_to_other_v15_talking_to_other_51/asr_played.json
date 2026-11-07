@@ -1,0 +1,90 @@
+{
+  "text": "What's the exchange rate for Japanese yen? Emma Sushi tonight, your call.",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.24
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.24,
+        0.34
+      ]
+    },
+    {
+      "text": "exchange",
+      "timestamp": [
+        0.34,
+        0.62
+      ]
+    },
+    {
+      "text": "rate",
+      "timestamp": [
+        0.62,
+        0.94
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        0.94,
+        1.08
+      ]
+    },
+    {
+      "text": "Japanese",
+      "timestamp": [
+        1.08,
+        1.52
+      ]
+    },
+    {
+      "text": "yen?",
+      "timestamp": [
+        1.52,
+        1.96
+      ]
+    },
+    {
+      "text": "Emma",
+      "timestamp": [
+        4.55,
+        5.03
+      ]
+    },
+    {
+      "text": "Sushi",
+      "timestamp": [
+        5.03,
+        5.41
+      ]
+    },
+    {
+      "text": "tonight,",
+      "timestamp": [
+        5.41,
+        5.71
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        6.03,
+        6.15
+      ]
+    },
+    {
+      "text": "call.",
+      "timestamp": [
+        6.15,
+        6.39
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

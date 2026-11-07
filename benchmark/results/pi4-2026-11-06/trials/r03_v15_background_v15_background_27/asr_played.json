@@ -1,0 +1,62 @@
+{
+  "text": "Define the word ephemeral. Your coffee's getting cold.",
+  "chunks": [
+    {
+      "text": "Define",
+      "timestamp": [
+        0.0,
+        0.4
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.4,
+        0.5
+      ]
+    },
+    {
+      "text": "word",
+      "timestamp": [
+        0.5,
+        0.68
+      ]
+    },
+    {
+      "text": "ephemeral.",
+      "timestamp": [
+        0.68,
+        1.4
+      ]
+    },
+    {
+      "text": "Your",
+      "timestamp": [
+        4.0,
+        4.42
+      ]
+    },
+    {
+      "text": "coffee's",
+      "timestamp": [
+        4.42,
+        4.84
+      ]
+    },
+    {
+      "text": "getting",
+      "timestamp": [
+        4.84,
+        5.04
+      ]
+    },
+    {
+      "text": "cold.",
+      "timestamp": [
+        5.04,
+        5.42
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

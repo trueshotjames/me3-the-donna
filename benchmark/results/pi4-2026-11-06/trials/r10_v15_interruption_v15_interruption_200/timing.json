@@ -1,0 +1,101 @@
+{
+  "trial": "r10_v15_interruption_v15_interruption_200",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_200",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 20.96,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.944
+    },
+    {
+      "name": "overlap",
+      "t": 4.668,
+      "len": 3.3170625
+    }
+  ],
+  "live_bot_starts": [
+    3.168,
+    9.248,
+    11.488
+  ],
+  "live_bot_ends": [
+    5.248,
+    11.136,
+    20.608
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "I want to learn a new language",
+    "current_turn_text": "Can we talk about something else? Like, tips for better sleep?",
+    "overlap_text": "Can we talk about something else? Like, tips for better sleep?",
+    "overlap_duration": 3.32,
+    "overlap_window": [
+      6.5489999999999995,
+      9.866
+    ],
+    "source_id": "200"
+  },
+  "mono": [
+    18908.9426601,
+    18929.8862985
+  ],
+  "bot_segments": [
+    [
+      3.138,
+      5.278
+    ],
+    [
+      9.218,
+      20.638
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.944
+  ],
+  "overlap_played": true,
+  "t_stop": 0.18799999999999972,
+  "t_resp": 1.2329375000000002,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.09,
+    7.9850625
+  ],
+  "tor": 1,
+  "first_start": 9.218,
+  "spoke_s": 6.7670625,
+  "latency": 1.2329375000000002,
+  "actual": "stopped after 0.19 s, back 1.23 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 62,
+  "final": {
+    "t_stop": 0.18799999999999972,
+    "t_resp": 1.2329375000000002,
+    "label": "Respond",
+    "voice_delta": {
+      "wpm": -51.909112715061354,
+      "pitch_mean": -36.62676461647854,
+      "pitch_sd": 24.994842884868632,
+      "intensity_mean": -1.2476867638517533,
+      "intensity_sd": -0.8918503504961741,
+      "utmosv2": null
+    },
+    "transcript": "Pick a language that excites you, set a date, try a consistent bedtime routine, keep the room cool and dark, and avoid screens at least an hour before sleep. Also limit caffeine late in the day and wind down with a calming activity like reading.",
+    "judge_label": "Respond",
+    "ok": true,
+    "verdict": "✓ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

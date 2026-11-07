@@ -1,0 +1,99 @@
+{
+  "trial": "r03_v15_backchannel_v15_backchannel_96",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_96",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 19.392,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.232
+    },
+    {
+      "name": "overlap",
+      "t": 4.8919375,
+      "len": 1.0679375
+    }
+  ],
+  "live_bot_starts": [
+    3.392,
+    6.112
+  ],
+  "live_bot_ends": [
+    5.376,
+    19.04
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Explain the gig economy in depth.",
+    "current_turn_text": "",
+    "overlap_text": "exactly",
+    "overlap_duration": 1.07,
+    "overlap_window": [
+      5.997,
+      7.0649999999999995
+    ],
+    "source_id": "96"
+  },
+  "mono": [
+    16920.8345766,
+    16940.222267
+  ],
+  "bot_segments": [
+    [
+      3.362,
+      5.406
+    ],
+    [
+      6.082,
+      19.07
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.232
+  ],
+  "overlap_played": true,
+  "t_stop": 0.508,
+  "t_resp": 0.32399999999999984,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.898,
+    5.758
+  ],
+  "tor": 1,
+  "first_start": 6.082,
+  "spoke_s": 7.877875,
+  "latency": 0.1221249999999996,
+  "actual": "stopped after 0.51 s, back 0.32 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 27,
+  "final": {
+    "t_stop": 0.508,
+    "t_resp": 0.32399999999999984,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -69.16627852817885,
+      "pitch_mean": -18.74784383724986,
+      "pitch_sd": -7.854017794541598,
+      "intensity_mean": -4.170043049529319,
+      "intensity_sd": 1.435858685107629,
+      "utmosv2": null
+    },
+    "transcript": "The gig economy is a labor market where short -term flexible jobs called gigs replace traditional full -time employment. Companies like rideshare, delivery, and freelance platforms connect workers directly with customers through apps.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

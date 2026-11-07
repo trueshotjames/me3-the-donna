@@ -1,0 +1,73 @@
+{"stage": "vad_start", "t": 17948.60021433, "pid": 9960, "src": "ws", "recv": 17979.9766079, "lt": 17979.938888407, "tt": 0.3262}
+{"stage": "vad_start", "t": 17948.600272718, "pid": 9960, "src": "ws", "recv": 17979.976635, "lt": 17979.938946795, "tt": 0.3263}
+{"stage": "interrupted", "t": 17949.088336622, "pid": 9960, "src": "ws", "recv": 17980.4662106, "lt": 17980.427010699, "tt": 0.8144}
+{"stage": "interrupted", "t": 17949.088427214, "pid": 9960, "src": "ws", "recv": 17980.4662368, "lt": 17980.427101291, "tt": 0.8145}
+{"stage": "asr_partial", "t": 17949.242389118, "pid": 9960, "text": "How long does", "src": "ws", "recv": 17980.618913, "lt": 17980.581063195, "tt": 0.9684}
+{"stage": "asr_partial", "t": 17949.442767145, "pid": 9960, "text": "How long does it take", "src": "ws", "recv": 17980.8193968, "lt": 17980.781441222, "tt": 1.1688}
+{"stage": "asr_partial", "t": 17949.694356548, "pid": 9960, "text": "How long does it typically", "src": "ws", "recv": 17981.0729641, "lt": 17981.033030625, "tt": 1.4204}
+{"stage": "asr_partial", "t": 17949.922667484, "pid": 9960, "text": "How long does it typically take", "src": "ws", "recv": 17981.2992198, "lt": 17981.261341561, "tt": 1.6487}
+{"stage": "asr_partial", "t": 17950.17290896, "pid": 9960, "text": "How long does it typically take to be", "src": "ws", "recv": 17981.551803, "lt": 17981.511583037, "tt": 1.8989}
+{"stage": "asr_partial", "t": 17950.44336885, "pid": 9960, "text": "How long does it typically take to become", "src": "ws", "recv": 17981.8211608, "lt": 17981.782042927, "tt": 2.1694}
+{"stage": "vad_end", "t": 17950.58695144, "pid": 9960, "src": "ws", "recv": 17981.963919, "lt": 17981.925625517, "tt": 2.313}
+{"stage": "vad_end", "t": 17950.587004254, "pid": 9960, "src": "ws", "recv": 17981.9639402, "lt": 17981.925678331, "tt": 2.313}
+{"stage": "asr_partial", "t": 17950.658514821, "pid": 9960, "text": "How long does it typically take to become", "src": "ws", "recv": 17982.0372421, "lt": 17981.997188898, "tt": 2.3845}
+{"stage": "llm_request", "t": 17950.663398501, "pid": 9960, "speculative": true, "messages": 47, "chars": 12308, "est_tokens": 3077, "src": "ws", "recv": 17982.0450164, "lt": 17982.002072578, "tt": 2.3894}
+{"stage": "vad_start", "t": 17950.708669322, "pid": 9960, "src": "ws", "recv": 17982.0874143, "lt": 17982.047343399, "tt": 2.4347}
+{"stage": "vad_start", "t": 17950.709044021, "pid": 9960, "src": "ws", "recv": 17982.0874387, "lt": 17982.047718098, "tt": 2.4351}
+{"stage": "llm_cancel", "t": 17950.713608464, "pid": 9960, "src": "ws", "recv": 17982.0895007, "lt": 17982.052282541, "tt": 2.4396}
+{"stage": "asr_partial", "t": 17950.922460662, "pid": 9960, "text": "How long does it typically take to become", "src": "ws", "recv": 17982.2991708, "lt": 17982.261134739, "tt": 2.6485}
+{"stage": "asr_partial", "t": 17951.126100926, "pid": 9960, "text": "How long does it typically take to become flu", "src": "ws", "recv": 17982.505021, "lt": 17982.464775003, "tt": 2.8521}
+{"stage": "asr_partial", "t": 17951.362660388, "pid": 9960, "text": "How long does it typically take to become fluent", "src": "ws", "recv": 17982.7392618, "lt": 17982.701334465, "tt": 3.0887}
+{"stage": "asr_partial", "t": 17951.612737718, "pid": 9960, "text": "How long does it typically take to become fluent", "src": "ws", "recv": 17982.9916187, "lt": 17982.951411795, "tt": 3.3388}
+{"stage": "asr_partial", "t": 17951.882042437, "pid": 9960, "text": "How long does it typically take to become fluent in", "src": "ws", "recv": 17983.258552, "lt": 17983.220716514, "tt": 3.6081}
+{"stage": "asr_partial", "t": 17952.092364617, "pid": 9960, "text": "How long does it typically take to become fluent in a new", "src": "ws", "recv": 17983.4700185, "lt": 17983.431038694, "tt": 3.8184}
+{"stage": "asr_partial", "t": 17952.326460128, "pid": 9960, "text": "How long does it typically take to become fluent in a new language?", "src": "ws", "recv": 17983.7031898, "lt": 17983.665134205, "tt": 4.0525}
+{"stage": "asr_partial", "t": 17952.412487847, "pid": 9960, "text": "How long does it typically take to become fluent in a new language?", "src": "ws", "recv": 17983.7903192, "lt": 17983.751161924, "tt": 4.1385}
+{"stage": "vad_end", "t": 17952.472145285, "pid": 9960, "src": "ws", "recv": 17983.8549684, "lt": 17983.810819362, "tt": 4.1982}
+{"stage": "vad_end", "t": 17952.472201562, "pid": 9960, "src": "ws", "recv": 17983.8549909, "lt": 17983.810875639, "tt": 4.1982}
+{"stage": "llm_request", "t": 17952.483744991, "pid": 9960, "speculative": true, "messages": 47, "chars": 12378, "est_tokens": 3094, "src": "ws", "recv": 17983.860508, "lt": 17983.822419068, "tt": 4.2098}
+{"stage": "asr_final", "t": 17952.545333701, "pid": 9960, "text": "How long does it typically take to become fluent in a new language?", "src": "ws", "recv": 17983.925329, "lt": 17983.884007778, "tt": 4.2714}
+{"stage": "user_stopped", "t": 17952.557826878, "pid": 9960, "src": "ws", "recv": 17983.9373876, "lt": 17983.896500955, "tt": 4.2839}
+{"stage": "user_stopped", "t": 17952.558412056, "pid": 9960, "src": "ws", "recv": 17983.9374132, "lt": 17983.897086133, "tt": 4.2844}
+{"stage": "llm_first_token", "t": 17953.219574014, "pid": 9960, "src": "ws", "recv": 17984.5981604, "lt": 17984.558248091, "tt": 4.9456}
+{"stage": "llm_usage", "t": 17953.235409093, "pid": 9960, "prompt_tokens": 2481, "completion_tokens": 52, "src": "ws", "recv": 17984.6156709, "lt": 17984.57408317, "tt": 4.9614}
+{"stage": "tts_request", "t": 17953.260095858, "pid": 9960, "src": "ws", "recv": 17984.640024, "lt": 17984.598769935, "tt": 4.9861}
+{"stage": "tts_first_audio", "t": 17953.486279487, "pid": 9960, "src": "ws", "recv": 17984.8635234, "lt": 17984.824953564, "tt": 5.2123}
+{"stage": "audio_out", "t": 17953.492619759, "pid": 9960, "src": "ws", "recv": 17984.8741734, "lt": 17984.831293836, "tt": 5.2187}
+{"stage": "audio_out", "t": 17953.492705332, "pid": 9960, "src": "ws", "recv": 17984.8742006, "lt": 17984.831379409, "tt": 5.2187}
+{"stage": "vad_start", "t": 17955.832265578, "pid": 9960, "src": "ws", "recv": 17987.2086996, "lt": 17987.170939655, "tt": 7.5583}
+{"stage": "vad_start", "t": 17955.832324429, "pid": 9960, "src": "ws", "recv": 17987.2087366, "lt": 17987.170998506, "tt": 7.5584}
+{"stage": "asr_partial", "t": 17956.328757358, "pid": 9960, "text": "By the way,", "src": "ws", "recv": 17987.7084574, "lt": 17987.667431435, "tt": 8.0548}
+{"stage": "interrupted", "t": 17956.331513138, "pid": 9960, "src": "ws", "recv": 17987.7105396, "lt": 17987.670187215, "tt": 8.0575}
+{"stage": "interrupted", "t": 17956.33159773, "pid": 9960, "src": "ws", "recv": 17987.7105625, "lt": 17987.670271807, "tt": 8.0576}
+{"stage": "bot_stopped", "t": 17956.361307765, "pid": 9960, "src": "ws", "recv": 17987.7433818, "lt": 17987.699981842, "tt": 8.0873}
+{"stage": "bot_stopped", "t": 17956.361855147, "pid": 9960, "src": "ws", "recv": 17987.7434008, "lt": 17987.700529224, "tt": 8.0879}
+{"stage": "vad_end", "t": 17956.369797436, "pid": 9960, "src": "ws", "recv": 17987.7481907, "lt": 17987.708471513, "tt": 8.0958}
+{"stage": "vad_end", "t": 17956.369860806, "pid": 9960, "src": "ws", "recv": 17987.7482109, "lt": 17987.708534883, "tt": 8.0959}
+{"stage": "llm_request", "t": 17956.486770934, "pid": 9960, "speculative": true, "messages": 48, "chars": 12389, "est_tokens": 3097, "src": "ws", "recv": 17987.8631796, "lt": 17987.825445011, "tt": 8.2128}
+{"stage": "asr_partial", "t": 17956.525603225, "pid": 9960, "text": "By the way,", "src": "ws", "recv": 17987.9021813, "lt": 17987.864277302, "tt": 8.2516}
+{"stage": "vad_start", "t": 17956.568490132, "pid": 9960, "src": "ws", "recv": 17987.9447779, "lt": 17987.907164209, "tt": 8.2945}
+{"stage": "vad_start", "t": 17956.568547206, "pid": 9960, "src": "ws", "recv": 17987.9448024, "lt": 17987.907221283, "tt": 8.2946}
+{"stage": "llm_cancel", "t": 17956.806922312, "pid": 9960, "src": "ws", "recv": 17988.1826441, "lt": 17988.145596389, "tt": 8.533}
+{"stage": "asr_partial", "t": 17957.00343348, "pid": 9960, "text": "By the way, what's the", "src": "ws", "recv": 17988.3802752, "lt": 17988.342107557, "tt": 8.7295}
+{"stage": "asr_partial", "t": 17957.287051964, "pid": 9960, "text": "By the way, what's the score", "src": "ws", "recv": 17988.663954, "lt": 17988.625726041, "tt": 9.0131}
+{"stage": "asr_partial", "t": 17957.486767814, "pid": 9960, "text": "By the way, what's the score in this", "src": "ws", "recv": 17988.8624128, "lt": 17988.825441891, "tt": 9.2128}
+{"stage": "asr_partial", "t": 17957.766329459, "pid": 9960, "text": "By the way, what's the score in this", "src": "ws", "recv": 17989.1429945, "lt": 17989.105003536, "tt": 9.4924}
+{"stage": "asr_partial", "t": 17957.965765109, "pid": 9960, "text": "By the way, what's the score in the soccer game", "src": "ws", "recv": 17989.3423529, "lt": 17989.304439186, "tt": 9.6918}
+{"stage": "asr_partial", "t": 17958.246632479, "pid": 9960, "text": "By the way, what's the score in the soccer game right now", "src": "ws", "recv": 17989.6233791, "lt": 17989.585306556, "tt": 9.9727}
+{"stage": "asr_partial", "t": 17958.333798998, "pid": 9960, "text": "By the way, what's the score in the soccer game right now?", "src": "ws", "recv": 17989.7105747, "lt": 17989.672473075, "tt": 10.0598}
+{"stage": "asr_final", "t": 17958.413667998, "pid": 9960, "text": "By the way, what's the score in the soccer game right now?", "src": "ws", "recv": 17989.7910901, "lt": 17989.752342075, "tt": 10.1397}
+{"stage": "llm_request", "t": 17958.417164399, "pid": 9960, "speculative": true, "messages": 48, "chars": 12436, "est_tokens": 3109, "src": "ws", "recv": 17989.7956925, "lt": 17989.755838476, "tt": 10.1432}
+{"stage": "user_stopped", "t": 17958.422127299, "pid": 9960, "src": "ws", "recv": 17989.8065619, "lt": 17989.760801376, "tt": 10.1482}
+{"stage": "user_stopped", "t": 17958.422191317, "pid": 9960, "src": "ws", "recv": 17989.806586, "lt": 17989.760865394, "tt": 10.1482}
+{"stage": "vad_end", "t": 17958.454377988, "pid": 9960, "src": "ws", "recv": 17989.8331349, "lt": 17989.793052065, "tt": 10.1804}
+{"stage": "vad_end", "t": 17958.454440265, "pid": 9960, "src": "ws", "recv": 17989.8331582, "lt": 17989.793114342, "tt": 10.1805}
+{"stage": "llm_first_token", "t": 17959.086565994, "pid": 9960, "src": "ws", "recv": 17990.4647533, "lt": 17990.425240071, "tt": 10.8126}
+{"stage": "llm_usage", "t": 17959.112414689, "pid": 9960, "prompt_tokens": 2517, "completion_tokens": 86, "src": "ws", "recv": 17990.493235, "lt": 17990.451088766, "tt": 10.8384}
+{"stage": "tts_request", "t": 17959.138780284, "pid": 9960, "src": "ws", "recv": 17990.5221137, "lt": 17990.477454361, "tt": 10.8648}
+{"stage": "tts_first_audio", "t": 17959.30612504, "pid": 9960, "src": "ws", "recv": 17990.6833815, "lt": 17990.644799117, "tt": 11.0322}
+{"stage": "audio_out", "t": 17959.311295197, "pid": 9960, "src": "ws", "recv": 17990.6929032, "lt": 17990.649969274, "tt": 11.0373}
+{"stage": "audio_out", "t": 17959.311385974, "pid": 9960, "src": "ws", "recv": 17990.6929249, "lt": 17990.650060051, "tt": 11.0374}
+{"stage": "bot_stopped", "t": 17969.12594267, "pid": 9960, "src": "ws", "recv": 18000.5030695, "lt": 18000.464616747002, "tt": 20.852}
+{"stage": "bot_stopped", "t": 17969.126026095, "pid": 9960, "src": "ws", "recv": 18000.5030968, "lt": 18000.464700172, "tt": 20.8521}
+{"stage": "llm_request", "t": 17969.132286906, "pid": 9960, "messages": 49, "chars": 12626, "est_tokens": 3156, "src": "ws", "recv": 18000.5086352, "lt": 18000.470960983, "tt": 20.8583}

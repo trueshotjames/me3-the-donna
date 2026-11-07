@@ -1,0 +1,55 @@
+{
+  "text": "What are basic steps for grooming? Adult.",
+  "chunks": [
+    {
+      "text": "What",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        0.26,
+        0.34
+      ]
+    },
+    {
+      "text": "basic",
+      "timestamp": [
+        0.34,
+        0.56
+      ]
+    },
+    {
+      "text": "steps",
+      "timestamp": [
+        0.56,
+        0.9
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        0.9,
+        1.1
+      ]
+    },
+    {
+      "text": "grooming?",
+      "timestamp": [
+        1.1,
+        1.42
+      ]
+    },
+    {
+      "text": "Adult.",
+      "timestamp": [
+        1.88,
+        2.26
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

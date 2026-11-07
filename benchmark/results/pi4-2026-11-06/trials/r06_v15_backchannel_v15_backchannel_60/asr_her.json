@@ -1,0 +1,496 @@
+{
+  "text": "Astronomy is the science of the universe. Astronomy is the scientific study of everything beyond Earth, from planets and moons to distant galaxies, and the fagric a spacetime itself. It began with ancient sky watchers charting the motions of the sun, moon, and stars, and has grown into a high -tech field using telescopes that capture light across the electromagnetic spectrum. Stars form from collapsing clouds of gas and dust,",
+  "chunks": [
+    {
+      "text": "Astronomy",
+      "timestamp": [
+        2.16,
+        3.08
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        3.08,
+        3.2
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.2,
+        3.34
+      ]
+    },
+    {
+      "text": "science",
+      "timestamp": [
+        3.34,
+        3.64
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        3.64,
+        3.88
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.88,
+        4.0
+      ]
+    },
+    {
+      "text": "universe.",
+      "timestamp": [
+        4.0,
+        4.28
+      ]
+    },
+    {
+      "text": "Astronomy",
+      "timestamp": [
+        6.1,
+        6.7
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        6.7,
+        6.86
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        6.86,
+        7.0
+      ]
+    },
+    {
+      "text": "scientific",
+      "timestamp": [
+        7.0,
+        7.38
+      ]
+    },
+    {
+      "text": "study",
+      "timestamp": [
+        7.38,
+        7.78
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        7.78,
+        7.98
+      ]
+    },
+    {
+      "text": "everything",
+      "timestamp": [
+        7.98,
+        8.4
+      ]
+    },
+    {
+      "text": "beyond",
+      "timestamp": [
+        8.4,
+        8.78
+      ]
+    },
+    {
+      "text": "Earth,",
+      "timestamp": [
+        8.78,
+        9.26
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        9.62,
+        9.84
+      ]
+    },
+    {
+      "text": "planets",
+      "timestamp": [
+        9.84,
+        10.24
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        10.24,
+        10.46
+      ]
+    },
+    {
+      "text": "moons",
+      "timestamp": [
+        10.46,
+        10.76
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        10.76,
+        11.06
+      ]
+    },
+    {
+      "text": "distant",
+      "timestamp": [
+        11.06,
+        11.36
+      ]
+    },
+    {
+      "text": "galaxies,",
+      "timestamp": [
+        11.36,
+        11.96
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        12.36,
+        12.66
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        12.66,
+        12.78
+      ]
+    },
+    {
+      "text": "fagric",
+      "timestamp": [
+        12.78,
+        13.24
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        13.24,
+        13.4
+      ]
+    },
+    {
+      "text": "spacetime",
+      "timestamp": [
+        13.4,
+        14.02
+      ]
+    },
+    {
+      "text": "itself.",
+      "timestamp": [
+        14.02,
+        14.46
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        14.72,
+        14.8
+      ]
+    },
+    {
+      "text": "began",
+      "timestamp": [
+        14.8,
+        15.12
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        15.12,
+        15.38
+      ]
+    },
+    {
+      "text": "ancient",
+      "timestamp": [
+        15.38,
+        15.72
+      ]
+    },
+    {
+      "text": "sky",
+      "timestamp": [
+        15.72,
+        16.1
+      ]
+    },
+    {
+      "text": "watchers",
+      "timestamp": [
+        16.1,
+        16.64
+      ]
+    },
+    {
+      "text": "charting",
+      "timestamp": [
+        16.64,
+        17.06
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        17.06,
+        17.16
+      ]
+    },
+    {
+      "text": "motions",
+      "timestamp": [
+        17.16,
+        17.46
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        17.46,
+        17.74
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        17.74,
+        17.84
+      ]
+    },
+    {
+      "text": "sun,",
+      "timestamp": [
+        17.84,
+        18.16
+      ]
+    },
+    {
+      "text": "moon,",
+      "timestamp": [
+        18.46,
+        18.7
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        18.9,
+        19.0
+      ]
+    },
+    {
+      "text": "stars,",
+      "timestamp": [
+        19.0,
+        19.4
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        19.88,
+        20.1
+      ]
+    },
+    {
+      "text": "has",
+      "timestamp": [
+        20.1,
+        20.26
+      ]
+    },
+    {
+      "text": "grown",
+      "timestamp": [
+        20.26,
+        20.52
+      ]
+    },
+    {
+      "text": "into",
+      "timestamp": [
+        20.52,
+        20.76
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        20.76,
+        20.9
+      ]
+    },
+    {
+      "text": "high",
+      "timestamp": [
+        20.9,
+        21.14
+      ]
+    },
+    {
+      "text": "-tech",
+      "timestamp": [
+        21.14,
+        21.32
+      ]
+    },
+    {
+      "text": "field",
+      "timestamp": [
+        21.32,
+        21.74
+      ]
+    },
+    {
+      "text": "using",
+      "timestamp": [
+        21.74,
+        22.02
+      ]
+    },
+    {
+      "text": "telescopes",
+      "timestamp": [
+        22.02,
+        22.54
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        22.54,
+        22.88
+      ]
+    },
+    {
+      "text": "capture",
+      "timestamp": [
+        22.88,
+        23.22
+      ]
+    },
+    {
+      "text": "light",
+      "timestamp": [
+        23.22,
+        23.52
+      ]
+    },
+    {
+      "text": "across",
+      "timestamp": [
+        23.52,
+        23.84
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        23.84,
+        24.1
+      ]
+    },
+    {
+      "text": "electromagnetic",
+      "timestamp": [
+        24.1,
+        24.58
+      ]
+    },
+    {
+      "text": "spectrum.",
+      "timestamp": [
+        24.58,
+        25.36
+      ]
+    },
+    {
+      "text": "Stars",
+      "timestamp": [
+        25.8,
+        25.94
+      ]
+    },
+    {
+      "text": "form",
+      "timestamp": [
+        25.94,
+        26.4
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        26.4,
+        26.62
+      ]
+    },
+    {
+      "text": "collapsing",
+      "timestamp": [
+        26.62,
+        27.1
+      ]
+    },
+    {
+      "text": "clouds",
+      "timestamp": [
+        27.1,
+        27.52
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        27.52,
+        27.74
+      ]
+    },
+    {
+      "text": "gas",
+      "timestamp": [
+        27.74,
+        27.98
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        27.98,
+        28.26
+      ]
+    },
+    {
+      "text": "dust,",
+      "timestamp": [
+        28.26,
+        28.56
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

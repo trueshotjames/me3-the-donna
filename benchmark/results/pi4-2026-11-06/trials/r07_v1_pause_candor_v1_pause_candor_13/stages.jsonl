@@ -1,0 +1,69 @@
+{"stage": "vad_start", "t": 17883.677810602, "pid": 9960, "src": "ws", "recv": 17915.0546068, "lt": 17915.016484679, "tt": 0.6199}
+{"stage": "vad_start", "t": 17883.677939507, "pid": 9960, "src": "ws", "recv": 17915.0546315, "lt": 17915.016613584, "tt": 0.62}
+{"stage": "interrupted", "t": 17884.292733673, "pid": 9960, "src": "ws", "recv": 17915.6699273, "lt": 17915.63140775, "tt": 1.2348}
+{"stage": "interrupted", "t": 17884.29282469, "pid": 9960, "src": "ws", "recv": 17915.6699765, "lt": 17915.631498767, "tt": 1.2349}
+{"stage": "asr_partial", "t": 17884.44418709, "pid": 9960, "text": "Regular", "src": "ws", "recv": 17915.8196908, "lt": 17915.782861167, "tt": 1.3863}
+{"stage": "asr_partial", "t": 17884.683402555, "pid": 9960, "text": "Regular", "src": "ws", "recv": 17916.0590039, "lt": 17916.022076632, "tt": 1.6255}
+{"stage": "asr_partial", "t": 17884.893346739, "pid": 9960, "text": "Regular house.", "src": "ws", "recv": 17916.2699616, "lt": 17916.232020816, "tt": 1.8354}
+{"stage": "llm_request", "t": 17885.089872961, "pid": 9960, "speculative": true, "messages": 38, "chars": 11718, "est_tokens": 2930, "src": "ws", "recv": 17916.4656549, "lt": 17916.428547038002, "tt": 2.032}
+{"stage": "asr_partial", "t": 17885.165982692, "pid": 9960, "text": "Regular house.", "src": "ws", "recv": 17916.5422628, "lt": 17916.504656769, "tt": 2.1081}
+{"stage": "asr_partial", "t": 17885.373404611, "pid": 9960, "text": "Regular house.", "src": "ws", "recv": 17916.750024, "lt": 17916.712078688, "tt": 2.3155}
+{"stage": "llm_usage", "t": 17885.593745776, "pid": 9960, "prompt_tokens": 2522, "completion_tokens": 67, "src": "ws", "recv": 17916.9705435, "lt": 17916.932419853, "tt": 2.5358}
+{"stage": "asr_partial", "t": 17885.644223403, "pid": 9960, "text": "Regular house.", "src": "ws", "recv": 17917.0198313, "lt": 17916.98289748, "tt": 2.5863}
+{"stage": "asr_partial", "t": 17885.853092526, "pid": 9960, "text": "Regular house.", "src": "ws", "recv": 17917.2298559, "lt": 17917.191766603, "tt": 2.7952}
+{"stage": "vad_end", "t": 17885.916789376, "pid": 9960, "src": "ws", "recv": 17917.2927104, "lt": 17917.255463453, "tt": 2.8589}
+{"stage": "vad_end", "t": 17885.916844208, "pid": 9960, "src": "ws", "recv": 17917.2927407, "lt": 17917.255518285, "tt": 2.8589}
+{"stage": "asr_partial", "t": 17886.123562766, "pid": 9960, "text": "Regular house.", "src": "ws", "recv": 17917.4992771, "lt": 17917.462236843, "tt": 3.0657}
+{"stage": "asr_partial", "t": 17886.333016104, "pid": 9960, "text": "Regular house.", "src": "ws", "recv": 17917.7097907, "lt": 17917.671690181, "tt": 3.2751}
+{"stage": "asr_partial", "t": 17886.603747378, "pid": 9960, "text": "Regular house.", "src": "ws", "recv": 17917.9793922, "lt": 17917.942421455, "tt": 3.5458}
+{"stage": "vad_start", "t": 17886.748702043, "pid": 9960, "src": "ws", "recv": 17918.1239618, "lt": 17918.087376120002, "tt": 3.6908}
+{"stage": "vad_start", "t": 17886.748761746, "pid": 9960, "src": "ws", "recv": 17918.1239886, "lt": 17918.087435823, "tt": 3.6909}
+{"stage": "llm_cancel", "t": 17886.813516045, "pid": 9960, "src": "ws", "recv": 17918.1892196, "lt": 17918.152190122, "tt": 3.7556}
+{"stage": "asr_partial", "t": 17887.083400274, "pid": 9960, "text": "Regular house. Um, if you", "src": "ws", "recv": 17918.4590615, "lt": 17918.422074351, "tt": 4.0255}
+{"stage": "asr_partial", "t": 17887.290191794, "pid": 9960, "text": "Regular house. Um, if you wanna", "src": "ws", "recv": 17918.6751019, "lt": 17918.628865871, "tt": 4.2323}
+{"stage": "asr_partial", "t": 17887.563952641, "pid": 9960, "text": "Regular house. Um, if you wanna not", "src": "ws", "recv": 17918.9395273, "lt": 17918.902626718, "tt": 4.506}
+{"stage": "asr_partial", "t": 17887.77772224, "pid": 9960, "text": "Regular house. Um, if you wanna not be in", "src": "ws", "recv": 17919.1553781, "lt": 17919.116396317, "tt": 4.7198}
+{"stage": "asr_partial", "t": 17888.044522785, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like", "src": "ws", "recv": 17919.4201102, "lt": 17919.383196862, "tt": 4.9866}
+{"stage": "vad_end", "t": 17888.123864291, "pid": 9960, "src": "ws", "recv": 17919.4998617, "lt": 17919.462538368, "tt": 5.066}
+{"stage": "vad_end", "t": 17888.123916772, "pid": 9960, "src": "ws", "recv": 17919.4998848, "lt": 17919.462590849, "tt": 5.066}
+{"stage": "asr_partial", "t": 17888.253778848, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a", "src": "ws", "recv": 17919.6305345, "lt": 17919.592452925, "tt": 5.1959}
+{"stage": "vad_start", "t": 17888.345061037, "pid": 9960, "src": "ws", "recv": 17919.7203247, "lt": 17919.683735114, "tt": 5.2872}
+{"stage": "vad_start", "t": 17888.345117481, "pid": 9960, "src": "ws", "recv": 17919.720349, "lt": 17919.683791558, "tt": 5.2872}
+{"stage": "asr_partial", "t": 17888.523729687, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a", "src": "ws", "recv": 17919.8993478, "lt": 17919.862403764, "tt": 5.4658}
+{"stage": "asr_partial", "t": 17888.733417763, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a", "src": "ws", "recv": 17920.110215, "lt": 17920.07209184, "tt": 5.6755}
+{"stage": "asr_partial", "t": 17889.005418299, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty", "src": "ws", "recv": 17920.3820167, "lt": 17920.344092376, "tt": 5.9475}
+{"stage": "asr_partial", "t": 17889.213474728, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty", "src": "ws", "recv": 17920.5902092, "lt": 17920.552148805, "tt": 6.1556}
+{"stage": "asr_partial", "t": 17889.483621658, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty neighborhood,", "src": "ws", "recv": 17920.8592574, "lt": 17920.822295735, "tt": 6.4257}
+{"stage": "vad_end", "t": 17889.657186557, "pid": 9960, "src": "ws", "recv": 17921.0330624, "lt": 17920.995860634, "tt": 6.5993}
+{"stage": "vad_end", "t": 17889.657238926, "pid": 9960, "src": "ws", "recv": 17921.0330844, "lt": 17920.995913003, "tt": 6.5993}
+{"stage": "asr_partial", "t": 17889.700037279, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty neighborhood,", "src": "ws", "recv": 17921.0781194, "lt": 17921.038711356, "tt": 6.6421}
+{"stage": "llm_request", "t": 17889.705289269, "pid": 9960, "speculative": true, "messages": 38, "chars": 11774, "est_tokens": 2944, "src": "ws", "recv": 17921.0822433, "lt": 17921.043963346, "tt": 6.6474}
+{"stage": "asr_partial", "t": 17889.964148414, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty neighborhood,", "src": "ws", "recv": 17921.3397954, "lt": 17921.302822491, "tt": 6.9062}
+{"stage": "asr_partial", "t": 17890.173625029, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty neighborhood,", "src": "ws", "recv": 17921.5577719, "lt": 17921.512299106, "tt": 7.1157}
+{"stage": "llm_usage", "t": 17890.234664838, "pid": 9960, "prompt_tokens": 2537, "completion_tokens": 87, "src": "ws", "recv": 17921.6118302, "lt": 17921.573338915, "tt": 7.1768}
+{"stage": "vad_start", "t": 17890.649205903, "pid": 9960, "src": "ws", "recv": 17922.025234, "lt": 17921.98787998, "tt": 7.5913}
+{"stage": "vad_start", "t": 17890.649262958, "pid": 9960, "src": "ws", "recv": 17922.0252539, "lt": 17921.987937035, "tt": 7.5914}
+{"stage": "llm_cancel", "t": 17890.652219587, "pid": 9960, "src": "ws", "recv": 17922.0268193, "lt": 17921.990893664, "tt": 7.5943}
+{"stage": "vad_end", "t": 17891.387760351, "pid": 9960, "src": "ws", "recv": 17922.7636955, "lt": 17922.726434428, "tt": 8.3299}
+{"stage": "vad_end", "t": 17891.387814369, "pid": 9960, "src": "ws", "recv": 17922.7637184, "lt": 17922.726488446002, "tt": 8.3299}
+{"stage": "asr_partial", "t": 17891.409509652, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty neighborhood Quarter mill", "src": "ws", "recv": 17922.7864709, "lt": 17922.748183729, "tt": 8.3516}
+{"stage": "llm_request", "t": 17891.413542695, "pid": 9960, "speculative": true, "messages": 38, "chars": 11787, "est_tokens": 2947, "src": "ws", "recv": 17922.7916934, "lt": 17922.752216772, "tt": 8.3556}
+{"stage": "asr_partial", "t": 17891.476969622, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty neighborhood Quarter milk", "src": "ws", "recv": 17922.8545791, "lt": 17922.815643699, "tt": 8.4191}
+{"stage": "llm_cancel", "t": 17891.477049973, "pid": 9960, "src": "ws", "recv": 17922.8546028, "lt": 17922.81572405, "tt": 8.4191}
+{"stage": "llm_request", "t": 17891.485364572, "pid": 9960, "speculative": true, "messages": 38, "chars": 11787, "est_tokens": 2947, "src": "ws", "recv": 17922.866412, "lt": 17922.824038649, "tt": 8.4275}
+{"stage": "asr_partial", "t": 17891.613485207, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty neighborhood Quarter milk?", "src": "ws", "recv": 17922.9903253, "lt": 17922.952159284, "tt": 8.5556}
+{"stage": "asr_partial", "t": 17891.648056793, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty neighborhood Quarter mill?", "src": "ws", "recv": 17923.0241378, "lt": 17922.98673087, "tt": 8.5902}
+{"stage": "llm_cancel", "t": 17891.648137847, "pid": 9960, "src": "ws", "recv": 17923.024162, "lt": 17922.986811924, "tt": 8.5902}
+{"stage": "llm_request", "t": 17891.653961163, "pid": 9960, "speculative": true, "messages": 38, "chars": 11788, "est_tokens": 2947, "src": "ws", "recv": 17923.0326825, "lt": 17922.99263524, "tt": 8.5961}
+{"stage": "asr_final", "t": 17891.714073576, "pid": 9960, "text": "Regular house. Um, if you wanna not be in, like, a shitty neighborhood Quarter mill?", "src": "ws", "recv": 17923.0929895, "lt": 17923.052747653, "tt": 8.6562}
+{"stage": "user_stopped", "t": 17891.727068543, "pid": 9960, "src": "ws", "recv": 17923.1066572, "lt": 17923.06574262, "tt": 8.6692}
+{"stage": "user_stopped", "t": 17891.727140876, "pid": 9960, "src": "ws", "recv": 17923.1066802, "lt": 17923.065814953, "tt": 8.6692}
+{"stage": "llm_first_token", "t": 17892.358479649, "pid": 9960, "src": "ws", "recv": 17923.7482759, "lt": 17923.697153726, "tt": 9.3006}
+{"stage": "llm_usage", "t": 17892.376623144, "pid": 9960, "prompt_tokens": 2539, "completion_tokens": 81, "src": "ws", "recv": 17923.759205, "lt": 17923.715297221, "tt": 9.3187}
+{"stage": "tts_request", "t": 17892.413119316, "pid": 9960, "src": "ws", "recv": 17923.7961899, "lt": 17923.751793393, "tt": 9.3552}
+{"stage": "tts_first_audio", "t": 17892.604677305, "pid": 9960, "src": "ws", "recv": 17923.9811295, "lt": 17923.943351382, "tt": 9.5468}
+{"stage": "audio_out", "t": 17892.610504417, "pid": 9960, "src": "ws", "recv": 17923.9906773, "lt": 17923.949178494, "tt": 9.5526}
+{"stage": "audio_out", "t": 17892.61059199, "pid": 9960, "src": "ws", "recv": 17923.9906979, "lt": 17923.949266067, "tt": 9.5527}
+{"stage": "bot_stopped", "t": 17898.098352516, "pid": 9960, "src": "ws", "recv": 17929.4754824, "lt": 17929.437026593, "tt": 15.0404}
+{"stage": "bot_stopped", "t": 17898.098481718, "pid": 9960, "src": "ws", "recv": 17929.4755012, "lt": 17929.437155795, "tt": 15.0406}
+{"stage": "llm_request", "t": 17898.105631092, "pid": 9960, "messages": 39, "chars": 11897, "est_tokens": 2974, "src": "ws", "recv": 17929.4824251, "lt": 17929.444305169, "tt": 15.0477}

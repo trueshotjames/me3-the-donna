@@ -1,0 +1,48 @@
+{
+  "text": "I can't play podcasts right now.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        3.25,
+        3.71
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.71,
+        4.01
+      ]
+    },
+    {
+      "text": "play",
+      "timestamp": [
+        4.01,
+        4.19
+      ]
+    },
+    {
+      "text": "podcasts",
+      "timestamp": [
+        4.19,
+        4.67
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.67,
+        5.07
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        5.07,
+        5.37
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

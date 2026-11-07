@@ -1,0 +1,97 @@
+{
+  "text": "Duolingo, Babble, Memorize, and Busu are popular language learning apps that work well.",
+  "chunks": [
+    {
+      "text": "Duolingo,",
+      "timestamp": [
+        5.49,
+        6.33
+      ]
+    },
+    {
+      "text": "Babble,",
+      "timestamp": [
+        6.75,
+        7.13
+      ]
+    },
+    {
+      "text": "Memorize,",
+      "timestamp": [
+        7.35,
+        7.77
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        7.93,
+        7.99
+      ]
+    },
+    {
+      "text": "Busu",
+      "timestamp": [
+        7.99,
+        8.43
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        8.43,
+        8.61
+      ]
+    },
+    {
+      "text": "popular",
+      "timestamp": [
+        8.61,
+        9.01
+      ]
+    },
+    {
+      "text": "language",
+      "timestamp": [
+        9.01,
+        9.47
+      ]
+    },
+    {
+      "text": "learning",
+      "timestamp": [
+        9.47,
+        9.75
+      ]
+    },
+    {
+      "text": "apps",
+      "timestamp": [
+        9.75,
+        10.15
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        10.15,
+        10.39
+      ]
+    },
+    {
+      "text": "work",
+      "timestamp": [
+        10.39,
+        10.55
+      ]
+    },
+    {
+      "text": "well.",
+      "timestamp": [
+        10.55,
+        10.87
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

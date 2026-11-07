@@ -1,0 +1,349 @@
+{
+  "text": "The Apollo 11 mission launched from Kennedy Space Center on July 16, 1969, carrying astronauts Neil Armstrong, Buzz Aldrin, and Michael Collins. After a three -day journey, the spacecraft entered lunar orbit on July 19. On July 20th, the lunar module Eagle separated and descended to the moon's surface.",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        3.06,
+        3.56
+      ]
+    },
+    {
+      "text": "Apollo",
+      "timestamp": [
+        3.56,
+        3.86
+      ]
+    },
+    {
+      "text": "11",
+      "timestamp": [
+        3.86,
+        4.3
+      ]
+    },
+    {
+      "text": "mission",
+      "timestamp": [
+        4.3,
+        4.68
+      ]
+    },
+    {
+      "text": "launched",
+      "timestamp": [
+        4.68,
+        5.18
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        7.29,
+        10.07
+      ]
+    },
+    {
+      "text": "Kennedy",
+      "timestamp": [
+        10.07,
+        10.39
+      ]
+    },
+    {
+      "text": "Space",
+      "timestamp": [
+        10.39,
+        10.71
+      ]
+    },
+    {
+      "text": "Center",
+      "timestamp": [
+        10.71,
+        11.19
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        11.19,
+        11.45
+      ]
+    },
+    {
+      "text": "July",
+      "timestamp": [
+        11.45,
+        11.67
+      ]
+    },
+    {
+      "text": "16,",
+      "timestamp": [
+        11.67,
+        12.27
+      ]
+    },
+    {
+      "text": "1969,",
+      "timestamp": [
+        12.73,
+        13.85
+      ]
+    },
+    {
+      "text": "carrying",
+      "timestamp": [
+        14.51,
+        14.75
+      ]
+    },
+    {
+      "text": "astronauts",
+      "timestamp": [
+        14.75,
+        15.37
+      ]
+    },
+    {
+      "text": "Neil",
+      "timestamp": [
+        15.37,
+        15.71
+      ]
+    },
+    {
+      "text": "Armstrong,",
+      "timestamp": [
+        15.71,
+        16.19
+      ]
+    },
+    {
+      "text": "Buzz",
+      "timestamp": [
+        16.83,
+        17.01
+      ]
+    },
+    {
+      "text": "Aldrin,",
+      "timestamp": [
+        17.01,
+        17.43
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        17.89,
+        17.99
+      ]
+    },
+    {
+      "text": "Michael",
+      "timestamp": [
+        17.99,
+        18.23
+      ]
+    },
+    {
+      "text": "Collins.",
+      "timestamp": [
+        18.23,
+        18.71
+      ]
+    },
+    {
+      "text": "After",
+      "timestamp": [
+        18.97,
+        19.23
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        19.23,
+        19.43
+      ]
+    },
+    {
+      "text": "three",
+      "timestamp": [
+        19.43,
+        19.57
+      ]
+    },
+    {
+      "text": "-day",
+      "timestamp": [
+        19.57,
+        19.75
+      ]
+    },
+    {
+      "text": "journey,",
+      "timestamp": [
+        19.75,
+        20.17
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        20.65,
+        20.69
+      ]
+    },
+    {
+      "text": "spacecraft",
+      "timestamp": [
+        20.69,
+        21.09
+      ]
+    },
+    {
+      "text": "entered",
+      "timestamp": [
+        21.09,
+        21.63
+      ]
+    },
+    {
+      "text": "lunar",
+      "timestamp": [
+        21.63,
+        21.91
+      ]
+    },
+    {
+      "text": "orbit",
+      "timestamp": [
+        21.91,
+        22.41
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        22.41,
+        22.73
+      ]
+    },
+    {
+      "text": "July",
+      "timestamp": [
+        22.73,
+        23.03
+      ]
+    },
+    {
+      "text": "19.",
+      "timestamp": [
+        23.03,
+        23.61
+      ]
+    },
+    {
+      "text": "On",
+      "timestamp": [
+        23.61,
+        24.07
+      ]
+    },
+    {
+      "text": "July",
+      "timestamp": [
+        24.07,
+        24.27
+      ]
+    },
+    {
+      "text": "20th,",
+      "timestamp": [
+        24.27,
+        25.09
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        25.17,
+        25.33
+      ]
+    },
+    {
+      "text": "lunar",
+      "timestamp": [
+        25.33,
+        25.53
+      ]
+    },
+    {
+      "text": "module",
+      "timestamp": [
+        25.53,
+        26.01
+      ]
+    },
+    {
+      "text": "Eagle",
+      "timestamp": [
+        26.01,
+        26.39
+      ]
+    },
+    {
+      "text": "separated",
+      "timestamp": [
+        26.39,
+        27.25
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        27.25,
+        27.63
+      ]
+    },
+    {
+      "text": "descended",
+      "timestamp": [
+        27.63,
+        28.01
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        28.01,
+        28.25
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        28.25,
+        28.35
+      ]
+    },
+    {
+      "text": "moon's",
+      "timestamp": [
+        28.35,
+        28.69
+      ]
+    },
+    {
+      "text": "surface.",
+      "timestamp": [
+        28.69,
+        28.93
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

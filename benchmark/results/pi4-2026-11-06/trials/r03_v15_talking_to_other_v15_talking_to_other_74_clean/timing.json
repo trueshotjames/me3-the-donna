@@ -1,0 +1,62 @@
+{
+  "trial": "r03_v15_talking_to_other_v15_talking_to_other_74_clean",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_74",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 7.552,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.552
+    }
+  ],
+  "live_bot_starts": [
+    4.0
+  ],
+  "live_bot_ends": [
+    6.336
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Translate 'I love sushi' to Japanese.",
+    "current_turn_text": "Hey Jamie, you fed the dog already, yeah?",
+    "overlap_text": "Hey Jamie, you fed the dog already, yeah?",
+    "overlap_duration": 2.32,
+    "overlap_window": [
+      6.322,
+      8.644
+    ],
+    "source_id": "74"
+  },
+  "mono": [
+    16837.2101735,
+    16844.7333558
+  ],
+  "bot_segments": [
+    [
+      3.97,
+      6.366
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.552
+  ],
+  "tor": 1,
+  "first_start": 3.97,
+  "spoke_s": 2.3959999999999995,
+  "actual": "replied after 1.42 s, spoke 2.4 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 31,
+  "final": {
+    "transcript": "Chosi -ga -de -hao -ki -de -yu."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

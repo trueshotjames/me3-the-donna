@@ -1,0 +1,64 @@
+{
+  "trial": "r03_v1_pause_synth_v1_pause_synth_45",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_45",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 16.672,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 8.864
+    }
+  ],
+  "live_bot_starts": [
+    10.144
+  ],
+  "live_bot_ends": [
+    16.32
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      6.119999999999999,
+      6.99
+    ],
+    "source_id": "45",
+    "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or [UM] then maybe I should talk to my manager about."
+  },
+  "mono": [
+    16996.5587807,
+    17013.2143661
+  ],
+  "bot_segments": [
+    [
+      10.114,
+      16.35
+    ]
+  ],
+  "play_first": [
+    0.0,
+    8.864
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 62,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "Take a few minutes to list your top tasks. Prioritize the most urgent and block dedicated time for each."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

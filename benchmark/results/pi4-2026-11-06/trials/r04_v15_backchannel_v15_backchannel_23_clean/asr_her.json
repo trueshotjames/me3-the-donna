@@ -1,0 +1,167 @@
+{
+  "text": "Data privacy means protecting personal information, restricting access to it, and giving people control over how their data is collected, stored, and shared.",
+  "chunks": [
+    {
+      "text": "Data",
+      "timestamp": [
+        2.45,
+        2.97
+      ]
+    },
+    {
+      "text": "privacy",
+      "timestamp": [
+        2.97,
+        3.37
+      ]
+    },
+    {
+      "text": "means",
+      "timestamp": [
+        3.37,
+        3.75
+      ]
+    },
+    {
+      "text": "protecting",
+      "timestamp": [
+        3.75,
+        4.19
+      ]
+    },
+    {
+      "text": "personal",
+      "timestamp": [
+        4.19,
+        4.69
+      ]
+    },
+    {
+      "text": "information,",
+      "timestamp": [
+        4.69,
+        5.35
+      ]
+    },
+    {
+      "text": "restricting",
+      "timestamp": [
+        5.83,
+        6.35
+      ]
+    },
+    {
+      "text": "access",
+      "timestamp": [
+        6.35,
+        6.71
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        6.71,
+        7.03
+      ]
+    },
+    {
+      "text": "it,",
+      "timestamp": [
+        7.03,
+        7.23
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        7.53,
+        7.61
+      ]
+    },
+    {
+      "text": "giving",
+      "timestamp": [
+        7.61,
+        7.81
+      ]
+    },
+    {
+      "text": "people",
+      "timestamp": [
+        7.81,
+        8.15
+      ]
+    },
+    {
+      "text": "control",
+      "timestamp": [
+        8.15,
+        8.57
+      ]
+    },
+    {
+      "text": "over",
+      "timestamp": [
+        8.57,
+        8.87
+      ]
+    },
+    {
+      "text": "how",
+      "timestamp": [
+        8.87,
+        9.11
+      ]
+    },
+    {
+      "text": "their",
+      "timestamp": [
+        9.11,
+        9.29
+      ]
+    },
+    {
+      "text": "data",
+      "timestamp": [
+        9.29,
+        9.57
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        9.57,
+        9.79
+      ]
+    },
+    {
+      "text": "collected,",
+      "timestamp": [
+        9.79,
+        10.19
+      ]
+    },
+    {
+      "text": "stored,",
+      "timestamp": [
+        10.61,
+        10.99
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        11.47,
+        11.53
+      ]
+    },
+    {
+      "text": "shared.",
+      "timestamp": [
+        11.53,
+        11.85
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

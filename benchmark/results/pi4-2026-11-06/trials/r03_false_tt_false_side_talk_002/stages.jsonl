@@ -1,0 +1,20 @@
+{"stage": "vad_start", "t": 16752.783480528, "pid": 9960, "src": "ws", "recv": 16784.142476, "lt": 16784.122154605, "tt": 0.1893}
+{"stage": "vad_start", "t": 16752.783573749, "pid": 9960, "src": "ws", "recv": 16784.1424975, "lt": 16784.122247826, "tt": 0.1894}
+{"stage": "vad_end", "t": 16753.006768281, "pid": 9960, "src": "ws", "recv": 16784.3653037, "lt": 16784.345442358, "tt": 0.4126}
+{"stage": "vad_end", "t": 16753.006834095, "pid": 9960, "src": "ws", "recv": 16784.3653327, "lt": 16784.345508172, "tt": 0.4126}
+{"stage": "vad_start", "t": 16753.13362088, "pid": 9960, "src": "ws", "recv": 16784.4913106, "lt": 16784.472294957, "tt": 0.5394}
+{"stage": "vad_start", "t": 16753.133677398, "pid": 9960, "src": "ws", "recv": 16784.4913344, "lt": 16784.472351475, "tt": 0.5395}
+{"stage": "interrupted", "t": 16753.209983477, "pid": 9960, "src": "ws", "recv": 16784.5690756, "lt": 16784.548657554, "tt": 0.6158}
+{"stage": "interrupted", "t": 16753.210071513, "pid": 9960, "src": "ws", "recv": 16784.5690939, "lt": 16784.54874559, "tt": 0.6159}
+{"stage": "asr_partial", "t": 16753.328111465, "pid": 9960, "text": "kinda just", "src": "ws", "recv": 16784.6859247, "lt": 16784.666785542002, "tt": 0.7339}
+{"stage": "asr_partial", "t": 16753.526878717, "pid": 9960, "text": "Caleb, you're", "src": "ws", "recv": 16784.8850194, "lt": 16784.865552794, "tt": 0.9327}
+{"stage": "asr_partial", "t": 16753.809786207, "pid": 9960, "text": "Caleb, you're so upset", "src": "ws", "recv": 16785.168199, "lt": 16785.148460284, "tt": 1.2156}
+{"stage": "asr_partial", "t": 16754.007071293, "pid": 9960, "text": "Caleb, you're talking to the radio", "src": "ws", "recv": 16785.3649883, "lt": 16785.34574537, "tt": 1.4129}
+{"stage": "vad_end", "t": 16754.224164403, "pid": 9960, "src": "ws", "recv": 16785.5815483, "lt": 16785.56283848, "tt": 1.63}
+{"stage": "vad_end", "t": 16754.224234717, "pid": 9960, "src": "ws", "recv": 16785.5815688, "lt": 16785.562908794, "tt": 1.63}
+{"stage": "asr_partial", "t": 16754.290776366, "pid": 9960, "text": "Caleb, you're talking to the radio.", "src": "ws", "recv": 16785.6493834, "lt": 16785.629450443, "tt": 1.6966}
+{"stage": "llm_request", "t": 16754.294251618, "pid": 9960, "speculative": true, "messages": 54, "chars": 14043, "est_tokens": 3511, "src": "ws", "recv": 16785.6533984, "lt": 16785.632925695, "tt": 1.7}
+{"stage": "asr_final", "t": 16755.131516494, "pid": 9960, "text": "Caleb, you're talking to the radio.", "src": "ws", "recv": 16786.4916306, "lt": 16786.470190571, "tt": 2.5373}
+{"stage": "user_stopped", "t": 16755.139955053, "pid": 9960, "src": "ws", "recv": 16786.5023415, "lt": 16786.47862913, "tt": 2.5457}
+{"stage": "user_stopped", "t": 16755.140055533, "pid": 9960, "src": "ws", "recv": 16786.5023709, "lt": 16786.47872961, "tt": 2.5458}
+{"stage": "llm_first_token", "t": 16755.14315379, "pid": 9960, "src": "ws", "recv": 16786.5059748, "lt": 16786.481827867, "tt": 2.5489}

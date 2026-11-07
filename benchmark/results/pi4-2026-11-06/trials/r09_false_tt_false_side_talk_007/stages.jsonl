@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 18392.724632594, "pid": 9960, "src": "ws", "recv": 18424.1080415, "lt": 18424.063306671, "tt": 0.1304}
+{"stage": "vad_start", "t": 18392.724704853, "pid": 9960, "src": "ws", "recv": 18424.1080612, "lt": 18424.06337893, "tt": 0.1305}
+{"stage": "asr_partial", "t": 18393.248588057, "pid": 9960, "text": "Ralph,", "src": "ws", "recv": 18424.6353143, "lt": 18424.587262134, "tt": 0.6544}
+{"stage": "interrupted", "t": 18393.251423263, "pid": 9960, "src": "ws", "recv": 18424.6376574, "lt": 18424.59009734, "tt": 0.6572}
+{"stage": "interrupted", "t": 18393.251508965, "pid": 9960, "src": "ws", "recv": 18424.6376761, "lt": 18424.590183042, "tt": 0.6573}
+{"stage": "bot_stopped", "t": 18393.283212087, "pid": 9960, "src": "ws", "recv": 18424.6735103, "lt": 18424.621886164, "tt": 0.689}
+{"stage": "bot_stopped", "t": 18393.283452232, "pid": 9960, "src": "ws", "recv": 18424.6735412, "lt": 18424.622126309, "tt": 0.6893}
+{"stage": "llm_request", "t": 18393.298119882, "pid": 9960, "messages": 40, "chars": 13237, "est_tokens": 3309, "src": "ws", "recv": 18424.6834954, "lt": 18424.636793959, "tt": 0.7039}
+{"stage": "asr_partial", "t": 18393.52678428, "pid": 9960, "text": "Ralph, pizza's", "src": "ws", "recv": 18424.9101611, "lt": 18424.865458357, "tt": 0.9326}
+{"stage": "asr_partial", "t": 18393.726253525, "pid": 9960, "text": "Ralph, pizzas here.", "src": "ws", "recv": 18425.109878, "lt": 18425.064927602, "tt": 1.1321}
+{"stage": "asr_partial", "t": 18393.882816437, "pid": 9960, "text": "Ralph, pizza's here.", "src": "ws", "recv": 18425.2662667, "lt": 18425.221490514, "tt": 1.2886}
+{"stage": "llm_request", "t": 18393.930812485, "pid": 9960, "speculative": true, "messages": 41, "chars": 13257, "est_tokens": 3314, "src": "ws", "recv": 18425.3147291, "lt": 18425.269486562, "tt": 1.3366}
+{"stage": "asr_final", "t": 18393.969968106, "pid": 9960, "text": "Ralph, pizza's here.", "src": "ws", "recv": 18425.3563415, "lt": 18425.308642183, "tt": 1.3758}
+{"stage": "user_stopped", "t": 18393.980605584, "pid": 9960, "src": "ws", "recv": 18425.3672994, "lt": 18425.319279661002, "tt": 1.3864}
+{"stage": "user_stopped", "t": 18393.980720045, "pid": 9960, "src": "ws", "recv": 18425.3673223, "lt": 18425.319394122, "tt": 1.3865}
+{"stage": "llm_first_token", "t": 18393.987295815, "pid": 9960, "src": "ws", "recv": 18425.373763, "lt": 18425.325969892, "tt": 1.3931}
+{"stage": "interrupted", "t": 18394.412844102, "pid": 9960, "src": "ws", "recv": 18425.7977413, "lt": 18425.751518179, "tt": 1.8186}
+{"stage": "interrupted", "t": 18394.412931064, "pid": 9960, "src": "ws", "recv": 18425.7977719, "lt": 18425.751605141, "tt": 1.8187}
+{"stage": "asr_partial", "t": 18394.646474586, "pid": 9960, "text": "bad place.", "src": "ws", "recv": 18426.0299478, "lt": 18425.985148663, "tt": 2.0523}
+{"stage": "asr_partial", "t": 18394.723024332, "pid": 9960, "text": "rab plates.", "src": "ws", "recv": 18426.1066388, "lt": 18426.061698409, "tt": 2.1288}
+{"stage": "vad_end", "t": 18394.738990836, "pid": 9960, "src": "ws", "recv": 18426.126778, "lt": 18426.077664913, "tt": 2.1448}
+{"stage": "vad_end", "t": 18394.739058057, "pid": 9960, "src": "ws", "recv": 18426.1268024, "lt": 18426.077732134, "tt": 2.1449}
+{"stage": "llm_request", "t": 18394.749331781, "pid": 9960, "speculative": true, "messages": 42, "chars": 13268, "est_tokens": 3317, "src": "ws", "recv": 18426.1334527, "lt": 18426.088005858, "tt": 2.1551}
+{"stage": "llm_usage", "t": 18395.390301743, "pid": 9960, "prompt_tokens": 2476, "completion_tokens": 41, "src": "ws", "recv": 18426.7749404, "lt": 18426.72897582, "tt": 2.7961}
+{"stage": "asr_final", "t": 18395.453086957, "pid": 9960, "text": "rab plates.", "src": "ws", "recv": 18426.8375285, "lt": 18426.791761034, "tt": 2.8589}
+{"stage": "user_stopped", "t": 18395.460068981, "pid": 9960, "src": "ws", "recv": 18426.8466705, "lt": 18426.798743058, "tt": 2.8659}
+{"stage": "user_stopped", "t": 18395.46013698, "pid": 9960, "src": "ws", "recv": 18426.8467047, "lt": 18426.798811057, "tt": 2.8659}
+{"stage": "llm_first_token", "t": 18395.462690356, "pid": 9960, "src": "ws", "recv": 18426.8498562, "lt": 18426.801364433, "tt": 2.8685}

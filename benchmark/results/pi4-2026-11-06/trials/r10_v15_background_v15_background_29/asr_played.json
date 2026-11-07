@@ -1,0 +1,76 @@
+{
+  "text": "When is the next full moon? The doorbell just rang.",
+  "chunks": [
+    {
+      "text": "When",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        0.18,
+        0.28
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.28,
+        0.42
+      ]
+    },
+    {
+      "text": "next",
+      "timestamp": [
+        0.42,
+        0.6
+      ]
+    },
+    {
+      "text": "full",
+      "timestamp": [
+        0.6,
+        0.86
+      ]
+    },
+    {
+      "text": "moon?",
+      "timestamp": [
+        0.86,
+        1.12
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        3.98,
+        4.2
+      ]
+    },
+    {
+      "text": "doorbell",
+      "timestamp": [
+        4.2,
+        4.54
+      ]
+    },
+    {
+      "text": "just",
+      "timestamp": [
+        4.54,
+        4.82
+      ]
+    },
+    {
+      "text": "rang.",
+      "timestamp": [
+        4.82,
+        5.14
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,62 @@
+{
+  "trial": "r04_v15_background_v15_background_12_clean",
+  "group": "v15_background",
+  "clip": "v15_background_12",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 5.76,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.816
+    }
+  ],
+  "live_bot_starts": [
+    2.56
+  ],
+  "live_bot_ends": [
+    4.544
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Check the status of my flight.",
+    "current_turn_text": "",
+    "overlap_text": "Mom, have you fed the cat yet?",
+    "overlap_duration": 1.67,
+    "overlap_window": [
+      5.625,
+      7.297
+    ],
+    "source_id": "12"
+  },
+  "mono": [
+    17152.3620137,
+    17158.1104617
+  ],
+  "bot_segments": [
+    [
+      2.53,
+      4.574
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.816
+  ],
+  "tor": 1,
+  "first_start": 2.53,
+  "spoke_s": 2.044,
+  "actual": "replied after 0.71 s, spoke 2.0 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 27,
+  "final": {
+    "transcript": "I'm sorry, I can't check that right now."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

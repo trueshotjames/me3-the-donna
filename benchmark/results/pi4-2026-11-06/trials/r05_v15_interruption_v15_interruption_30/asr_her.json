@@ -1,0 +1,111 @@
+{
+  "text": "Check the soil moisture to make I'm sorry. I can't check the weather right now",
+  "chunks": [
+    {
+      "text": "Check",
+      "timestamp": [
+        3.86,
+        4.38
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.38,
+        4.56
+      ]
+    },
+    {
+      "text": "soil",
+      "timestamp": [
+        4.56,
+        4.8
+      ]
+    },
+    {
+      "text": "moisture",
+      "timestamp": [
+        4.8,
+        5.32
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        5.32,
+        6.12
+      ]
+    },
+    {
+      "text": "make",
+      "timestamp": [
+        6.12,
+        6.3
+      ]
+    },
+    {
+      "text": "I'm",
+      "timestamp": [
+        9.43,
+        10.19
+      ]
+    },
+    {
+      "text": "sorry.",
+      "timestamp": [
+        10.19,
+        10.51
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        10.81,
+        11.09
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        11.09,
+        11.39
+      ]
+    },
+    {
+      "text": "check",
+      "timestamp": [
+        11.39,
+        11.55
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        11.55,
+        11.71
+      ]
+    },
+    {
+      "text": "weather",
+      "timestamp": [
+        11.71,
+        11.89
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        11.89,
+        12.17
+      ]
+    },
+    {
+      "text": "now",
+      "timestamp": [
+        12.17,
+        12.43
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,48 @@
+{
+  "text": "Check the status of my flight.",
+  "chunks": [
+    {
+      "text": "Check",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.18,
+        0.34
+      ]
+    },
+    {
+      "text": "status",
+      "timestamp": [
+        0.34,
+        0.66
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        0.66,
+        0.88
+      ]
+    },
+    {
+      "text": "my",
+      "timestamp": [
+        0.88,
+        1.0
+      ]
+    },
+    {
+      "text": "flight.",
+      "timestamp": [
+        1.0,
+        1.24
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

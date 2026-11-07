@@ -1,0 +1,62 @@
+{"stage": "vad_start", "t": 16647.377127908, "pid": 9960, "src": "ws", "recv": 16678.7344042, "lt": 16678.715801985, "tt": 0.8626}
+{"stage": "vad_start", "t": 16647.377214611, "pid": 9960, "src": "ws", "recv": 16678.7344226, "lt": 16678.715888688, "tt": 0.8627}
+{"stage": "asr_partial", "t": 16647.764451553, "pid": 9960, "text": "What", "src": "ws", "recv": 16679.1205786, "lt": 16679.10312563, "tt": 1.2499}
+{"stage": "interrupted", "t": 16647.891541418, "pid": 9960, "src": "ws", "recv": 16679.249213, "lt": 16679.230215495, "tt": 1.377}
+{"stage": "interrupted", "t": 16647.891630417, "pid": 9960, "src": "ws", "recv": 16679.2492341, "lt": 16679.230304494, "tt": 1.3771}
+{"stage": "asr_partial", "t": 16648.014239821, "pid": 9960, "text": "What is some of", "src": "ws", "recv": 16679.3736753, "lt": 16679.352913898, "tt": 1.4997}
+{"stage": "asr_partial", "t": 16648.28459262, "pid": 9960, "text": "What are some effective", "src": "ws", "recv": 16679.6406976, "lt": 16679.623266697, "tt": 1.7701}
+{"stage": "asr_partial", "t": 16648.488329646, "pid": 9960, "text": "What is some effective way", "src": "ws", "recv": 16679.8457931, "lt": 16679.827003723, "tt": 1.9738}
+{"stage": "asr_partial", "t": 16648.887045905, "pid": 9960, "text": "What are some effective ways to", "src": "ws", "recv": 16680.2435433, "lt": 16680.225719982, "tt": 2.3725}
+{"stage": "asr_partial", "t": 16649.005986874, "pid": 9960, "text": "What are some effective ways to make", "src": "ws", "recv": 16680.3634069, "lt": 16680.344660951, "tt": 2.4915}
+{"stage": "asr_partial", "t": 16649.244591082, "pid": 9960, "text": "What are some effective ways to manage", "src": "ws", "recv": 16680.60085, "lt": 16680.583265159, "tt": 2.7301}
+{"stage": "asr_partial", "t": 16649.459427132, "pid": 9960, "text": "What are some effective ways to manage stress", "src": "ws", "recv": 16680.8226784, "lt": 16680.798101209, "tt": 2.9449}
+{"stage": "vad_end", "t": 16649.459509242, "pid": 9960, "src": "ws", "recv": 16680.8227006, "lt": 16680.798183319, "tt": 2.945}
+{"stage": "vad_end", "t": 16649.459543057, "pid": 9960, "src": "ws", "recv": 16680.8227135, "lt": 16680.798217134, "tt": 2.945}
+{"stage": "llm_request", "t": 16649.473646523, "pid": 9960, "speculative": true, "messages": 47, "chars": 13321, "est_tokens": 3330, "src": "ws", "recv": 16680.8312553, "lt": 16680.812320600002, "tt": 2.9591}
+{"stage": "asr_partial", "t": 16649.649899978, "pid": 9960, "text": "What are some effective ways to manage stress?", "src": "ws", "recv": 16681.0063851, "lt": 16680.988574055, "tt": 3.1354}
+{"stage": "asr_final", "t": 16649.850559137, "pid": 9960, "text": "What are some effective ways to manage stress?", "src": "ws", "recv": 16681.2080185, "lt": 16681.189233214, "tt": 3.3361}
+{"stage": "user_stopped", "t": 16649.858176928, "pid": 9960, "src": "ws", "recv": 16681.2175179, "lt": 16681.196851005, "tt": 3.3437}
+{"stage": "user_stopped", "t": 16649.858244686, "pid": 9960, "src": "ws", "recv": 16681.2175335, "lt": 16681.196918763, "tt": 3.3437}
+{"stage": "llm_first_token", "t": 16650.104235503, "pid": 9960, "src": "ws", "recv": 16681.4625324, "lt": 16681.44290958, "tt": 3.5897}
+{"stage": "llm_usage", "t": 16650.118792426, "pid": 9960, "prompt_tokens": 2477, "completion_tokens": 44, "src": "ws", "recv": 16681.4778878, "lt": 16681.457466503, "tt": 3.6043}
+{"stage": "tts_request", "t": 16650.142171348, "pid": 9960, "src": "ws", "recv": 16681.5025261, "lt": 16681.480845425, "tt": 3.6277}
+{"stage": "tts_first_audio", "t": 16650.311932627, "pid": 9960, "src": "ws", "recv": 16681.6681129, "lt": 16681.650606704, "tt": 3.7974}
+{"stage": "audio_out", "t": 16650.317514481, "pid": 9960, "src": "ws", "recv": 16681.6802863, "lt": 16681.656188558, "tt": 3.803}
+{"stage": "audio_out", "t": 16650.317650886, "pid": 9960, "src": "ws", "recv": 16681.680301, "lt": 16681.656324963, "tt": 3.8031}
+{"stage": "vad_start", "t": 16652.336554523, "pid": 9960, "src": "ws", "recv": 16683.6927604, "lt": 16683.6752286, "tt": 5.822}
+{"stage": "vad_start", "t": 16652.336613004, "pid": 9960, "src": "ws", "recv": 16683.6927803, "lt": 16683.675287081, "tt": 5.8221}
+{"stage": "asr_partial", "t": 16652.932300748, "pid": 9960, "text": "Oh, before", "src": "ws", "recv": 16684.2947761, "lt": 16684.270974825, "tt": 6.4178}
+{"stage": "interrupted", "t": 16652.936494972, "pid": 9960, "src": "ws", "recv": 16684.2982308, "lt": 16684.275169049, "tt": 6.422}
+{"stage": "interrupted", "t": 16652.936624378, "pid": 9960, "src": "ws", "recv": 16684.2982657, "lt": 16684.275298455, "tt": 6.4221}
+{"stage": "bot_stopped", "t": 16652.97889963, "pid": 9960, "src": "ws", "recv": 16684.3440243, "lt": 16684.317573707, "tt": 6.4644}
+{"stage": "bot_stopped", "t": 16652.97962638, "pid": 9960, "src": "ws", "recv": 16684.3440556, "lt": 16684.318300457002, "tt": 6.4651}
+{"stage": "asr_partial", "t": 16653.20449445, "pid": 9960, "text": "Oh, before I", "src": "ws", "recv": 16684.5609424, "lt": 16684.543168527, "tt": 6.69}
+{"stage": "asr_partial", "t": 16653.40770404, "pid": 9960, "text": "Oh, before I forget,", "src": "ws", "recv": 16684.7649127, "lt": 16684.746378117, "tt": 6.8932}
+{"stage": "asr_partial", "t": 16653.685113582, "pid": 9960, "text": "Oh, before I forget, I", "src": "ws", "recv": 16685.0413982, "lt": 16685.023787659, "tt": 7.1706}
+{"stage": "asr_partial", "t": 16653.887081947, "pid": 9960, "text": "Oh, before I forget, I need", "src": "ws", "recv": 16685.2436693, "lt": 16685.225756024, "tt": 7.3726}
+{"stage": "asr_partial", "t": 16654.16479406, "pid": 9960, "text": "Oh, before I forget, I need to", "src": "ws", "recv": 16685.5213089, "lt": 16685.503468137, "tt": 7.6503}
+{"stage": "asr_partial", "t": 16654.367086143, "pid": 9960, "text": "Oh, before I forget, I need to add", "src": "ws", "recv": 16685.7233984, "lt": 16685.70576022, "tt": 7.8526}
+{"stage": "asr_partial", "t": 16654.644790793, "pid": 9960, "text": "Oh, before I forget, I need to add more", "src": "ws", "recv": 16686.0011285, "lt": 16685.98346487, "tt": 8.1303}
+{"stage": "asr_partial", "t": 16654.847064228, "pid": 9960, "text": "Oh, before I forget, I need to add milk", "src": "ws", "recv": 16686.20369, "lt": 16686.185738305, "tt": 8.3326}
+{"stage": "asr_partial", "t": 16655.124461753, "pid": 9960, "text": "Oh, before I forget, I need to add milk to my", "src": "ws", "recv": 16686.4806985, "lt": 16686.46313583, "tt": 8.61}
+{"stage": "asr_partial", "t": 16655.414964998, "pid": 9960, "text": "Oh, before I forget, I need to add milk to my", "src": "ws", "recv": 16686.7718328, "lt": 16686.753639075, "tt": 8.9005}
+{"stage": "asr_partial", "t": 16655.604886166, "pid": 9960, "text": "Oh, before I forget, I need to add milk to my shopping", "src": "ws", "recv": 16686.9613826, "lt": 16686.943560243, "tt": 9.0904}
+{"stage": "asr_partial", "t": 16655.807131861, "pid": 9960, "text": "Oh, before I forget, I need to add milk to my shopping list.", "src": "ws", "recv": 16687.1635818, "lt": 16687.145805938, "tt": 9.2926}
+{"stage": "vad_end", "t": 16656.048751549, "pid": 9960, "src": "ws", "recv": 16687.4054556, "lt": 16687.387425626, "tt": 9.5342}
+{"stage": "vad_end", "t": 16656.048804845, "pid": 9960, "src": "ws", "recv": 16687.4054749, "lt": 16687.387478922, "tt": 9.5343}
+{"stage": "asr_partial", "t": 16656.089241436, "pid": 9960, "text": "Oh, before I forget, I need to add milk to my shopping list.", "src": "ws", "recv": 16687.4469208, "lt": 16687.427915513, "tt": 9.5747}
+{"stage": "llm_request", "t": 16656.093012999, "pid": 9960, "speculative": true, "messages": 48, "chars": 13382, "est_tokens": 3346, "src": "ws", "recv": 16687.4507701, "lt": 16687.431687076, "tt": 9.5785}
+{"stage": "asr_partial", "t": 16656.28732624, "pid": 9960, "text": "Oh, before I forget, I need to add milk to my shopping list.", "src": "ws", "recv": 16687.6439492, "lt": 16687.626000317, "tt": 9.7728}
+{"stage": "asr_partial", "t": 16656.565636586, "pid": 9960, "text": "Oh, before I forget, I need to add milk to my shopping list.", "src": "ws", "recv": 16687.9232396, "lt": 16687.904310663, "tt": 10.0511}
+{"stage": "llm_usage", "t": 16657.200630827, "pid": 9960, "prompt_tokens": 2434, "completion_tokens": 162, "src": "ws", "recv": 16688.557227, "lt": 16688.539304904, "tt": 10.6861}
+{"stage": "asr_final", "t": 16657.215681096, "pid": 9960, "text": "Oh, before I forget, I need to add milk to my shopping list.", "src": "ws", "recv": 16688.5735277, "lt": 16688.554355173, "tt": 10.7012}
+{"stage": "user_stopped", "t": 16657.223581828, "pid": 9960, "src": "ws", "recv": 16688.5861642, "lt": 16688.562255905, "tt": 10.7091}
+{"stage": "user_stopped", "t": 16657.223651512, "pid": 9960, "src": "ws", "recv": 16688.5861795, "lt": 16688.562325589, "tt": 10.7091}
+{"stage": "llm_first_token", "t": 16657.226931711, "pid": 9960, "src": "ws", "recv": 16688.5923961, "lt": 16688.565605788, "tt": 10.7124}
+{"stage": "tts_request", "t": 16657.254659039, "pid": 9960, "src": "ws", "recv": 16688.6142335, "lt": 16688.593333116, "tt": 10.7402}
+{"stage": "tts_first_audio", "t": 16657.438195401, "pid": 9960, "src": "ws", "recv": 16688.794649, "lt": 16688.776869478, "tt": 10.9237}
+{"stage": "audio_out", "t": 16657.442927655, "pid": 9960, "src": "ws", "recv": 16688.8086313, "lt": 16688.781601732, "tt": 10.9284}
+{"stage": "audio_out", "t": 16657.443011506, "pid": 9960, "src": "ws", "recv": 16688.8086525, "lt": 16688.781685583, "tt": 10.9285}
+{"stage": "bot_stopped", "t": 16667.89554889, "pid": 9960, "src": "ws", "recv": 16699.2524012, "lt": 16699.234222967, "tt": 21.381}
+{"stage": "bot_stopped", "t": 16667.895629741, "pid": 9960, "src": "ws", "recv": 16699.2524201, "lt": 16699.234303818, "tt": 21.3811}
+{"stage": "llm_request", "t": 16667.901863587, "pid": 9960, "messages": 49, "chars": 13566, "est_tokens": 3392, "src": "ws", "recv": 16699.2576835, "lt": 16699.240537664, "tt": 21.3874}

@@ -1,0 +1,76 @@
+{
+  "text": "Nice to meet you. How can I help you today?",
+  "chunks": [
+    {
+      "text": "Nice",
+      "timestamp": [
+        5.42,
+        5.96
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        5.96,
+        6.18
+      ]
+    },
+    {
+      "text": "meet",
+      "timestamp": [
+        6.18,
+        6.34
+      ]
+    },
+    {
+      "text": "you.",
+      "timestamp": [
+        6.34,
+        6.56
+      ]
+    },
+    {
+      "text": "How",
+      "timestamp": [
+        6.78,
+        6.9
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        6.9,
+        7.06
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        7.06,
+        7.16
+      ]
+    },
+    {
+      "text": "help",
+      "timestamp": [
+        7.16,
+        7.34
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        7.34,
+        7.46
+      ]
+    },
+    {
+      "text": "today?",
+      "timestamp": [
+        7.46,
+        7.72
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,70 @@
+{"stage": "vad_start", "t": 18032.158915667, "pid": 9960, "src": "ws", "recv": 18063.5385936, "lt": 18063.497589744, "tt": 0.2369}
+{"stage": "vad_start", "t": 18032.159020147, "pid": 9960, "src": "ws", "recv": 18063.5386177, "lt": 18063.497694224, "tt": 0.237}
+{"stage": "asr_partial", "t": 18032.523609729, "pid": 9960, "text": "As", "src": "ws", "recv": 18063.9013486, "lt": 18063.862283806, "tt": 0.6016}
+{"stage": "vad_end", "t": 18032.794141693, "pid": 9960, "src": "ws", "recv": 18064.1722648, "lt": 18064.13281577, "tt": 0.8721}
+{"stage": "vad_end", "t": 18032.794195026, "pid": 9960, "src": "ws", "recv": 18064.1722849, "lt": 18064.132869103, "tt": 0.8722}
+{"stage": "vad_start", "t": 18033.081728147, "pid": 9960, "src": "ws", "recv": 18064.4591692, "lt": 18064.420402224, "tt": 1.1597}
+{"stage": "vad_start", "t": 18033.081783461, "pid": 9960, "src": "ws", "recv": 18064.4591916, "lt": 18064.420457538, "tt": 1.1598}
+{"stage": "interrupted", "t": 18033.485956103, "pid": 9960, "src": "ws", "recv": 18064.865081, "lt": 18064.82463018, "tt": 1.5639}
+{"stage": "interrupted", "t": 18033.486046398, "pid": 9960, "src": "ws", "recv": 18064.8651202, "lt": 18064.824720475, "tt": 1.564}
+{"stage": "asr_partial", "t": 18033.691878506, "pid": 9960, "text": "Did you hear about", "src": "ws", "recv": 18065.0697188, "lt": 18065.030552583, "tt": 1.7699}
+{"stage": "asr_partial", "t": 18033.923647455, "pid": 9960, "text": "Did you hear about the", "src": "ws", "recv": 18065.301493, "lt": 18065.262321532, "tt": 2.0016}
+{"stage": "vad_end", "t": 18034.106976029, "pid": 9960, "src": "ws", "recv": 18065.487358, "lt": 18065.445650106, "tt": 2.185}
+{"stage": "vad_end", "t": 18034.107105379, "pid": 9960, "src": "ws", "recv": 18065.4873813, "lt": 18065.445779456, "tt": 2.1851}
+{"stage": "asr_partial", "t": 18034.175294599, "pid": 9960, "text": "Did you hear about the", "src": "ws", "recv": 18065.5537355, "lt": 18065.513968676, "tt": 2.2533}
+{"stage": "vad_start", "t": 18034.234458525, "pid": 9960, "src": "ws", "recv": 18065.6119608, "lt": 18065.573132602, "tt": 2.3124}
+{"stage": "vad_start", "t": 18034.234514858, "pid": 9960, "src": "ws", "recv": 18065.6119814, "lt": 18065.573188935, "tt": 2.3125}
+{"stage": "asr_partial", "t": 18034.406433242, "pid": 9960, "text": "Did you hear about the new", "src": "ws", "recv": 18065.7842666, "lt": 18065.745107319, "tt": 2.4844}
+{"stage": "asr_partial", "t": 18034.652603677, "pid": 9960, "text": "Did you hear about the new invite", "src": "ws", "recv": 18066.0303689, "lt": 18065.991277754, "tt": 2.7306}
+{"stage": "asr_partial", "t": 18034.887035427, "pid": 9960, "text": "Did you hear about the new environmental", "src": "ws", "recv": 18066.2649096, "lt": 18066.225709504, "tt": 2.965}
+{"stage": "asr_partial", "t": 18035.134031167, "pid": 9960, "text": "Did you hear about the new environmental policy", "src": "ws", "recv": 18066.5125293, "lt": 18066.472705244, "tt": 3.212}
+{"stage": "llm_request", "t": 18035.408595024, "pid": 9960, "speculative": true, "messages": 56, "chars": 13113, "est_tokens": 3278, "src": "ws", "recv": 18066.7875419, "lt": 18066.747269101, "tt": 3.4866}
+{"stage": "vad_end", "t": 18035.438794794, "pid": 9960, "src": "ws", "recv": 18066.818165, "lt": 18066.777468871, "tt": 3.5168}
+{"stage": "vad_end", "t": 18035.438861164, "pid": 9960, "src": "ws", "recv": 18066.8181862, "lt": 18066.777535241, "tt": 3.5168}
+{"stage": "vad_start", "t": 18035.610043705, "pid": 9960, "src": "ws", "recv": 18066.9878313, "lt": 18066.948717782, "tt": 3.688}
+{"stage": "vad_start", "t": 18035.610100371, "pid": 9960, "src": "ws", "recv": 18066.987852, "lt": 18066.948774448, "tt": 3.6881}
+{"stage": "asr_partial", "t": 18035.644425923, "pid": 9960, "text": "Did you hear about the new environmental policy", "src": "ws", "recv": 18067.0223033, "lt": 18066.9831, "tt": 3.7224}
+{"stage": "llm_cancel", "t": 18035.847594471, "pid": 9960, "src": "ws", "recv": 18067.22453, "lt": 18067.186268548, "tt": 3.9256}
+{"stage": "asr_partial", "t": 18036.092374924, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I", "src": "ws", "recv": 18067.4705735, "lt": 18067.431049001, "tt": 4.1704}
+{"stage": "asr_partial", "t": 18036.327113521, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it", "src": "ws", "recv": 18067.7051266, "lt": 18067.665787598, "tt": 4.4051}
+{"stage": "asr_partial", "t": 18036.572238118, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a", "src": "ws", "recv": 18067.9501452, "lt": 18067.910912195, "tt": 4.6502}
+{"stage": "asr_partial", "t": 18036.843577979, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step", "src": "ws", "recv": 18068.2214514, "lt": 18068.182252056, "tt": 4.9216}
+{"stage": "asr_partial", "t": 18036.898542216, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step.", "src": "ws", "recv": 18068.2768885, "lt": 18068.237216293, "tt": 4.9765}
+{"stage": "asr_partial", "t": 18037.052308698, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step. But", "src": "ws", "recv": 18068.4304895, "lt": 18068.390982775, "tt": 5.1303}
+{"stage": "asr_partial", "t": 18037.287270941, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm", "src": "ws", "recv": 18068.6654709, "lt": 18068.625945018, "tt": 5.3653}
+{"stage": "asr_partial", "t": 18037.532584683, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried", "src": "ws", "recv": 18068.9104535, "lt": 18068.87125876, "tt": 5.6106}
+{"stage": "asr_partial", "t": 18037.806300329, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about", "src": "ws", "recv": 18069.1844043, "lt": 18069.144974406, "tt": 5.8843}
+{"stage": "asr_partial", "t": 18038.012480692, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the", "src": "ws", "recv": 18069.3903425, "lt": 18069.351154769, "tt": 6.0905}
+{"stage": "vad_end", "t": 18038.102810449, "pid": 9960, "src": "ws", "recv": 18069.4810966, "lt": 18069.441484526, "tt": 6.1808}
+{"stage": "vad_end", "t": 18038.102865634, "pid": 9960, "src": "ws", "recv": 18069.4811341, "lt": 18069.441539711, "tt": 6.1808}
+{"stage": "vad_start", "t": 18038.265848556, "pid": 9960, "src": "ws", "recv": 18069.642822, "lt": 18069.604522633, "tt": 6.3438}
+{"stage": "vad_start", "t": 18038.265904555, "pid": 9960, "src": "ws", "recv": 18069.6428457, "lt": 18069.604578632, "tt": 6.3439}
+{"stage": "asr_partial", "t": 18038.286662258, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the", "src": "ws", "recv": 18069.665043, "lt": 18069.625336335, "tt": 6.3646}
+{"stage": "asr_partial", "t": 18038.492550198, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty", "src": "ws", "recv": 18069.870427, "lt": 18069.831224275, "tt": 6.5705}
+{"stage": "asr_partial", "t": 18038.733927379, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty", "src": "ws", "recv": 18070.1119117, "lt": 18070.072601456, "tt": 6.8119}
+{"stage": "asr_partial", "t": 18038.974559587, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty the", "src": "ws", "recv": 18070.3529935, "lt": 18070.313233664, "tt": 7.0525}
+{"stage": "asr_partial", "t": 18039.207401801, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the", "src": "ws", "recv": 18070.5856805, "lt": 18070.546075878, "tt": 7.2854}
+{"stage": "vad_end", "t": 18039.414439893, "pid": 9960, "src": "ws", "recv": 18070.7926813, "lt": 18070.75311397, "tt": 7.4924}
+{"stage": "vad_end", "t": 18039.414494263, "pid": 9960, "src": "ws", "recv": 18070.7927035, "lt": 18070.75316834, "tt": 7.4925}
+{"stage": "asr_partial", "t": 18039.45589817, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the", "src": "ws", "recv": 18070.8343324, "lt": 18070.794572247, "tt": 7.5339}
+{"stage": "vad_start", "t": 18039.671077901, "pid": 9960, "src": "ws", "recv": 18071.0487034, "lt": 18071.009751978, "tt": 7.7491}
+{"stage": "vad_start", "t": 18039.671134845, "pid": 9960, "src": "ws", "recv": 18071.048725, "lt": 18071.009808922, "tt": 7.7491}
+{"stage": "asr_partial", "t": 18039.687578528, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the", "src": "ws", "recv": 18071.0655262, "lt": 18071.026252605, "tt": 7.7656}
+{"stage": "asr_partial", "t": 18039.932403758, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the position", "src": "ws", "recv": 18071.3103236, "lt": 18071.271077835, "tt": 8.0104}
+{"stage": "asr_partial", "t": 18040.16869367, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the potentially", "src": "ws", "recv": 18071.546765, "lt": 18071.507367747, "tt": 8.2467}
+{"stage": "asr_partial", "t": 18040.412780131, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the potential economic", "src": "ws", "recv": 18071.7907675, "lt": 18071.751454208, "tt": 8.4908}
+{"stage": "asr_partial", "t": 18040.647304694, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the potential economic", "src": "ws", "recv": 18072.025338, "lt": 18071.985978771, "tt": 8.7253}
+{"stage": "vad_end", "t": 18040.764337654, "pid": 9960, "src": "ws", "recv": 18072.1418762, "lt": 18072.103011731, "tt": 8.8423}
+{"stage": "vad_end", "t": 18040.764409339, "pid": 9960, "src": "ws", "recv": 18072.1418935, "lt": 18072.103083416, "tt": 8.8424}
+{"stage": "asr_partial", "t": 18040.89778115, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the potential economic impact.", "src": "ws", "recv": 18072.2764725, "lt": 18072.236455227, "tt": 8.9758}
+{"stage": "llm_request", "t": 18040.900930999, "pid": 9960, "speculative": true, "messages": 56, "chars": 13212, "est_tokens": 3303, "src": "ws", "recv": 18072.2794023, "lt": 18072.239605076, "tt": 8.9789}
+{"stage": "asr_partial", "t": 18040.967381038, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the potential economic impact.", "src": "ws", "recv": 18072.3454587, "lt": 18072.306055115, "tt": 9.0454}
+{"stage": "asr_final", "t": 18041.100329354, "pid": 9960, "text": "Did you hear about the new environmental policy? Yes. I think it's a good step, but I'm worried about the pretty... the potential economic impact.", "src": "ws", "recv": 18072.4795123, "lt": 18072.439003431, "tt": 9.1783}
+{"stage": "user_stopped", "t": 18041.108370901, "pid": 9960, "src": "ws", "recv": 18072.4903707, "lt": 18072.447044978002, "tt": 9.1864}
+{"stage": "user_stopped", "t": 18041.108439401, "pid": 9960, "src": "ws", "recv": 18072.4903928, "lt": 18072.447113478, "tt": 9.1864}
+{"stage": "llm_first_token", "t": 18041.543797022, "pid": 9960, "src": "ws", "recv": 18072.9226425, "lt": 18072.882471099, "tt": 9.6218}
+{"stage": "llm_usage", "t": 18041.565851154, "pid": 9960, "prompt_tokens": 2531, "completion_tokens": 46, "src": "ws", "recv": 18072.948022, "lt": 18072.904525231, "tt": 9.6438}
+{"stage": "tts_request", "t": 18041.589430969, "pid": 9960, "src": "ws", "recv": 18072.970758, "lt": 18072.928105046, "tt": 9.6674}
+{"stage": "tts_first_audio", "t": 18041.835341297, "pid": 9960, "src": "ws", "recv": 18073.2132793, "lt": 18073.174015374, "tt": 9.9133}
+{"stage": "audio_out", "t": 18041.839836611, "pid": 9960, "src": "ws", "recv": 18073.222777, "lt": 18073.178510688, "tt": 9.9178}
+{"stage": "audio_out", "t": 18041.839923444, "pid": 9960, "src": "ws", "recv": 18073.2227989, "lt": 18073.178597521, "tt": 9.9179}

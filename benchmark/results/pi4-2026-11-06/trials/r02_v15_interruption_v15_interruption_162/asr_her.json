@@ -1,0 +1,265 @@
+{
+  "text": "Try deep breathing. Regular exercise. Try deep breathing, regular exercise and setting clear boundaries. Keep a short daily journal and take brief breaks to stretch your walk. I can't add milk to a shopping list right now.",
+  "chunks": [
+    {
+      "text": "Try",
+      "timestamp": [
+        3.57,
+        4.13
+      ]
+    },
+    {
+      "text": "deep",
+      "timestamp": [
+        4.13,
+        4.37
+      ]
+    },
+    {
+      "text": "breathing.",
+      "timestamp": [
+        4.37,
+        4.81
+      ]
+    },
+    {
+      "text": "Regular",
+      "timestamp": [
+        5.41,
+        5.69
+      ]
+    },
+    {
+      "text": "exercise.",
+      "timestamp": [
+        5.69,
+        6.05
+      ]
+    },
+    {
+      "text": "Try",
+      "timestamp": [
+        10.86,
+        11.24
+      ]
+    },
+    {
+      "text": "deep",
+      "timestamp": [
+        11.24,
+        11.5
+      ]
+    },
+    {
+      "text": "breathing,",
+      "timestamp": [
+        11.5,
+        11.94
+      ]
+    },
+    {
+      "text": "regular",
+      "timestamp": [
+        12.32,
+        12.68
+      ]
+    },
+    {
+      "text": "exercise",
+      "timestamp": [
+        12.68,
+        13.26
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.26,
+        13.74
+      ]
+    },
+    {
+      "text": "setting",
+      "timestamp": [
+        13.74,
+        14.0
+      ]
+    },
+    {
+      "text": "clear",
+      "timestamp": [
+        14.0,
+        14.32
+      ]
+    },
+    {
+      "text": "boundaries.",
+      "timestamp": [
+        14.32,
+        14.8
+      ]
+    },
+    {
+      "text": "Keep",
+      "timestamp": [
+        15.36,
+        15.68
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        15.68,
+        15.84
+      ]
+    },
+    {
+      "text": "short",
+      "timestamp": [
+        15.84,
+        16.06
+      ]
+    },
+    {
+      "text": "daily",
+      "timestamp": [
+        16.06,
+        16.34
+      ]
+    },
+    {
+      "text": "journal",
+      "timestamp": [
+        16.34,
+        16.72
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        16.72,
+        17.3
+      ]
+    },
+    {
+      "text": "take",
+      "timestamp": [
+        17.3,
+        17.5
+      ]
+    },
+    {
+      "text": "brief",
+      "timestamp": [
+        17.5,
+        17.78
+      ]
+    },
+    {
+      "text": "breaks",
+      "timestamp": [
+        17.78,
+        18.14
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        18.14,
+        18.34
+      ]
+    },
+    {
+      "text": "stretch",
+      "timestamp": [
+        18.34,
+        18.56
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        18.56,
+        18.76
+      ]
+    },
+    {
+      "text": "walk.",
+      "timestamp": [
+        18.76,
+        19.02
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        19.24,
+        19.32
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        19.32,
+        19.62
+      ]
+    },
+    {
+      "text": "add",
+      "timestamp": [
+        19.62,
+        19.76
+      ]
+    },
+    {
+      "text": "milk",
+      "timestamp": [
+        19.76,
+        19.96
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        19.96,
+        20.16
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        20.16,
+        20.26
+      ]
+    },
+    {
+      "text": "shopping",
+      "timestamp": [
+        20.26,
+        20.52
+      ]
+    },
+    {
+      "text": "list",
+      "timestamp": [
+        20.52,
+        20.78
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        20.78,
+        20.98
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        20.98,
+        21.24
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

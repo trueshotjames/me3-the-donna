@@ -1,0 +1,63 @@
+{
+  "trial": "r07_v1_turntaking_v1_turntaking_112",
+  "group": "v1_turntaking",
+  "clip": "v1_turntaking_112",
+  "variant": "main",
+  "expected": "reply within 8 s",
+  "duration": 9.184,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 4.52
+    }
+  ],
+  "live_bot_starts": [
+    5.792
+  ],
+  "live_bot_ends": [
+    7.968
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "turn_end": 4.220000000000027,
+    "last_words": "",
+    "source_id": "112"
+  },
+  "mono": [
+    17964.2878683,
+    17973.4704693
+  ],
+  "bot_segments": [
+    [
+      5.762,
+      7.998
+    ]
+  ],
+  "play_first": [
+    0.0,
+    4.52
+  ],
+  "tor": 1,
+  "first_start": 5.762,
+  "spoke_s": 2.2360000000000007,
+  "latency": 1.5419999999999723,
+  "turn_end": 4.220000000000027,
+  "actual": "replied after 1.54 s, spoke 2.2 s",
+  "verdict": "✓ 1.54 s",
+  "ok": true,
+  "marks": 36,
+  "final": {
+    "tor": 1,
+    "words": 10,
+    "latency": 1.5419999999999723,
+    "verdict": "✓ 1.54 s",
+    "ok": true,
+    "transcript": "Nice to meet you. How can I help you today?"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

@@ -1,0 +1,125 @@
+{
+  "text": "Dolphins have unique names. Each one uses a distinct signature whistle that functions like a personal name.",
+  "chunks": [
+    {
+      "text": "Dolphins",
+      "timestamp": [
+        2.77,
+        3.55
+      ]
+    },
+    {
+      "text": "have",
+      "timestamp": [
+        3.55,
+        3.69
+      ]
+    },
+    {
+      "text": "unique",
+      "timestamp": [
+        3.69,
+        4.03
+      ]
+    },
+    {
+      "text": "names.",
+      "timestamp": [
+        4.03,
+        4.55
+      ]
+    },
+    {
+      "text": "Each",
+      "timestamp": [
+        4.99,
+        5.19
+      ]
+    },
+    {
+      "text": "one",
+      "timestamp": [
+        5.19,
+        5.43
+      ]
+    },
+    {
+      "text": "uses",
+      "timestamp": [
+        5.43,
+        5.71
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        5.71,
+        5.93
+      ]
+    },
+    {
+      "text": "distinct",
+      "timestamp": [
+        5.93,
+        6.39
+      ]
+    },
+    {
+      "text": "signature",
+      "timestamp": [
+        6.39,
+        6.91
+      ]
+    },
+    {
+      "text": "whistle",
+      "timestamp": [
+        6.91,
+        7.39
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        7.39,
+        7.93
+      ]
+    },
+    {
+      "text": "functions",
+      "timestamp": [
+        7.93,
+        8.27
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        8.27,
+        8.67
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        8.67,
+        8.79
+      ]
+    },
+    {
+      "text": "personal",
+      "timestamp": [
+        8.79,
+        9.15
+      ]
+    },
+    {
+      "text": "name.",
+      "timestamp": [
+        9.15,
+        9.51
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

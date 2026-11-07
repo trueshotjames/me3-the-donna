@@ -1,0 +1,104 @@
+{
+  "text": "What's the score of the Mariners game? Can someone help me open this jar?",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.3
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.3,
+        0.44
+      ]
+    },
+    {
+      "text": "score",
+      "timestamp": [
+        0.44,
+        0.76
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        0.76,
+        0.96
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.96,
+        1.1
+      ]
+    },
+    {
+      "text": "Mariners",
+      "timestamp": [
+        1.1,
+        1.48
+      ]
+    },
+    {
+      "text": "game?",
+      "timestamp": [
+        1.48,
+        1.68
+      ]
+    },
+    {
+      "text": "Can",
+      "timestamp": [
+        4.22,
+        4.56
+      ]
+    },
+    {
+      "text": "someone",
+      "timestamp": [
+        4.56,
+        4.82
+      ]
+    },
+    {
+      "text": "help",
+      "timestamp": [
+        4.82,
+        5.02
+      ]
+    },
+    {
+      "text": "me",
+      "timestamp": [
+        5.02,
+        5.14
+      ]
+    },
+    {
+      "text": "open",
+      "timestamp": [
+        5.14,
+        5.34
+      ]
+    },
+    {
+      "text": "this",
+      "timestamp": [
+        5.34,
+        5.56
+      ]
+    },
+    {
+      "text": "jar?",
+      "timestamp": [
+        5.56,
+        5.78
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,41 @@
+{
+  "text": "Street Art Tour in Berlin.",
+  "chunks": [
+    {
+      "text": "Street",
+      "timestamp": [
+        0.0,
+        0.24
+      ]
+    },
+    {
+      "text": "Art",
+      "timestamp": [
+        0.24,
+        0.52
+      ]
+    },
+    {
+      "text": "Tour",
+      "timestamp": [
+        0.52,
+        0.72
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        0.72,
+        2.08
+      ]
+    },
+    {
+      "text": "Berlin.",
+      "timestamp": [
+        2.08,
+        2.34
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

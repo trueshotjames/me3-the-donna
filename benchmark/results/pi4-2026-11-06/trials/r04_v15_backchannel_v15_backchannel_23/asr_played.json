@@ -1,0 +1,48 @@
+{
+  "text": "Summarize data privacy clearly. Sure, yeah.",
+  "chunks": [
+    {
+      "text": "Summarize",
+      "timestamp": [
+        0.0,
+        0.48
+      ]
+    },
+    {
+      "text": "data",
+      "timestamp": [
+        0.48,
+        0.62
+      ]
+    },
+    {
+      "text": "privacy",
+      "timestamp": [
+        0.62,
+        1.02
+      ]
+    },
+    {
+      "text": "clearly.",
+      "timestamp": [
+        1.02,
+        1.44
+      ]
+    },
+    {
+      "text": "Sure,",
+      "timestamp": [
+        4.57,
+        5.09
+      ]
+    },
+    {
+      "text": "yeah.",
+      "timestamp": [
+        5.17,
+        5.37
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,44 @@
+{"stage": "vad_start", "t": 17316.456813233, "pid": 9960, "src": "ws", "recv": 17347.8249164, "lt": 17347.79548731, "tt": 0.2145}
+{"stage": "vad_start", "t": 17316.456910417, "pid": 9960, "src": "ws", "recv": 17347.824938, "lt": 17347.795584494, "tt": 0.2146}
+{"stage": "asr_partial", "t": 17316.843623841, "pid": 9960, "text": "What", "src": "ws", "recv": 17348.2103699, "lt": 17348.182297918, "tt": 0.6013}
+{"stage": "interrupted", "t": 17316.966561755, "pid": 9960, "src": "ws", "recv": 17348.3345596, "lt": 17348.305235832002, "tt": 0.7242}
+{"stage": "interrupted", "t": 17316.966656773, "pid": 9960, "src": "ws", "recv": 17348.3345781, "lt": 17348.30533085, "tt": 0.7243}
+{"stage": "asr_partial", "t": 17317.166774548, "pid": 9960, "text": "What movies are", "src": "ws", "recv": 17348.5334892, "lt": 17348.505448625, "tt": 0.9244}
+{"stage": "asr_partial", "t": 17317.447174404, "pid": 9960, "text": "What movies are playing", "src": "ws", "recv": 17348.8139686, "lt": 17348.785848481, "tt": 1.2048}
+{"stage": "asr_partial", "t": 17317.683733479, "pid": 9960, "text": "What movies are playing the", "src": "ws", "recv": 17349.0504709, "lt": 17349.022407556, "tt": 1.4414}
+{"stage": "asr_partial", "t": 17317.927071673, "pid": 9960, "text": "What movies are playing nearby", "src": "ws", "recv": 17349.2937483, "lt": 17349.26574575, "tt": 1.6847}
+{"stage": "asr_partial", "t": 17318.163594285, "pid": 9960, "text": "What movies are playing nearby to", "src": "ws", "recv": 17349.530696, "lt": 17349.502268362, "tt": 1.9213}
+{"stage": "vad_end", "t": 17318.340870385, "pid": 9960, "src": "ws", "recv": 17349.7078899, "lt": 17349.679544462, "tt": 2.0985}
+{"stage": "vad_end", "t": 17318.340920273, "pid": 9960, "src": "ws", "recv": 17349.7079115, "lt": 17349.67959435, "tt": 2.0986}
+{"stage": "asr_partial", "t": 17318.409478558, "pid": 9960, "text": "What movies are playing nearby tonight?", "src": "ws", "recv": 17349.7777571, "lt": 17349.748152635, "tt": 2.1672}
+{"stage": "llm_request", "t": 17318.413627468, "pid": 9960, "speculative": true, "messages": 42, "chars": 11647, "est_tokens": 2912, "src": "ws", "recv": 17349.782431, "lt": 17349.752301545, "tt": 2.1713}
+{"stage": "asr_final", "t": 17318.539992895, "pid": 9960, "text": "What movies are playing nearby tonight?", "src": "ws", "recv": 17349.9080404, "lt": 17349.878666972, "tt": 2.2977}
+{"stage": "user_stopped", "t": 17318.547771815, "pid": 9960, "src": "ws", "recv": 17349.9174859, "lt": 17349.886445892, "tt": 2.3054}
+{"stage": "user_stopped", "t": 17318.547840333, "pid": 9960, "src": "ws", "recv": 17349.9175039, "lt": 17349.886514410002, "tt": 2.3055}
+{"stage": "llm_first_token", "t": 17318.871526255, "pid": 9960, "src": "ws", "recv": 17350.2386042, "lt": 17350.210200332, "tt": 2.6292}
+{"stage": "llm_usage", "t": 17318.890757161, "pid": 9960, "prompt_tokens": 2475, "completion_tokens": 54, "src": "ws", "recv": 17350.261069, "lt": 17350.229431238, "tt": 2.6484}
+{"stage": "tts_request", "t": 17318.912493128, "pid": 9960, "src": "ws", "recv": 17350.2840996, "lt": 17350.251167205, "tt": 2.6702}
+{"stage": "tts_first_audio", "t": 17319.141541261, "pid": 9960, "src": "ws", "recv": 17350.5101707, "lt": 17350.480215338, "tt": 2.8992}
+{"stage": "audio_out", "t": 17319.148777614, "pid": 9960, "src": "ws", "recv": 17350.5212014, "lt": 17350.487451691, "tt": 2.9064}
+{"stage": "audio_out", "t": 17319.148861409, "pid": 9960, "src": "ws", "recv": 17350.5212291, "lt": 17350.487535486, "tt": 2.9065}
+{"stage": "vad_start", "t": 17320.901000261, "pid": 9960, "src": "ws", "recv": 17352.2678534, "lt": 17352.239674338, "tt": 4.6587}
+{"stage": "vad_start", "t": 17320.901058131, "pid": 9960, "src": "ws", "recv": 17352.267873, "lt": 17352.239732208, "tt": 4.6587}
+{"stage": "asr_partial", "t": 17321.093569002, "pid": 9960, "text": "D", "src": "ws", "recv": 17352.4617995, "lt": 17352.432243079, "tt": 4.8512}
+{"stage": "asr_partial", "t": 17321.369032716, "pid": 9960, "text": "Dana,", "src": "ws", "recv": 17352.7393726, "lt": 17352.707706793, "tt": 5.1267}
+{"stage": "interrupted", "t": 17321.371970198, "pid": 9960, "src": "ws", "recv": 17352.7416962, "lt": 17352.710644275, "tt": 5.1296}
+{"stage": "interrupted", "t": 17321.372086456, "pid": 9960, "src": "ws", "recv": 17352.7417144, "lt": 17352.710760533, "tt": 5.1298}
+{"stage": "bot_stopped", "t": 17321.400213935, "pid": 9960, "src": "ws", "recv": 17352.7723598, "lt": 17352.738888012, "tt": 5.1579}
+{"stage": "bot_stopped", "t": 17321.400788539, "pid": 9960, "src": "ws", "recv": 17352.7723898, "lt": 17352.739462616, "tt": 5.1585}
+{"stage": "asr_partial", "t": 17321.578447689, "pid": 9960, "text": "Dana, these", "src": "ws", "recv": 17352.953818, "lt": 17352.917121766, "tt": 5.3361}
+{"stage": "asr_partial", "t": 17321.846406925, "pid": 9960, "text": "Dana, these shoes", "src": "ws", "recv": 17353.2133349, "lt": 17353.185081002, "tt": 5.6041}
+{"stage": "asr_partial", "t": 17322.043585552, "pid": 9960, "text": "Dana, these shoes are", "src": "ws", "recv": 17353.411377, "lt": 17353.382259629, "tt": 5.8013}
+{"stage": "asr_partial", "t": 17322.326417859, "pid": 9960, "text": "Dana, these shoes are", "src": "ws", "recv": 17353.6931451, "lt": 17353.665091936, "tt": 6.0841}
+{"stage": "asr_partial", "t": 17322.533635823, "pid": 9960, "text": "Dana, these shoes are killing me", "src": "ws", "recv": 17353.9019406, "lt": 17353.8723099, "tt": 6.2913}
+{"stage": "asr_partial", "t": 17322.603623682, "pid": 9960, "text": "Dana, these shoes are killing me.", "src": "ws", "recv": 17353.9704868, "lt": 17353.942297759, "tt": 6.3613}
+{"stage": "vad_end", "t": 17322.625668719, "pid": 9960, "src": "ws", "recv": 17353.9975039, "lt": 17353.964342796, "tt": 6.3833}
+{"stage": "vad_end", "t": 17322.625722237, "pid": 9960, "src": "ws", "recv": 17353.9975205, "lt": 17353.964396314, "tt": 6.3834}
+{"stage": "llm_request", "t": 17322.63675182, "pid": 9960, "speculative": true, "messages": 43, "chars": 11680, "est_tokens": 2920, "src": "ws", "recv": 17354.004163, "lt": 17353.975425897, "tt": 6.3944}
+{"stage": "asr_final", "t": 17323.370612464, "pid": 9960, "text": "Dana, these shoes are killing me.", "src": "ws", "recv": 17354.7383302, "lt": 17354.709286541, "tt": 7.1283}
+{"stage": "user_stopped", "t": 17323.377417174, "pid": 9960, "src": "ws", "recv": 17354.7460822, "lt": 17354.716091251, "tt": 7.1351}
+{"stage": "user_stopped", "t": 17323.377487747, "pid": 9960, "src": "ws", "recv": 17354.7460979, "lt": 17354.716161824, "tt": 7.1352}
+{"stage": "llm_first_token", "t": 17323.382297316, "pid": 9960, "src": "ws", "recv": 17354.7526068, "lt": 17354.720971393, "tt": 7.14}

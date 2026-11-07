@@ -1,0 +1,69 @@
+{
+  "text": "I'm sorry, I can't look that up right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        2.77,
+        3.31
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        3.31,
+        3.79
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        4.09,
+        4.21
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        4.21,
+        4.51
+      ]
+    },
+    {
+      "text": "look",
+      "timestamp": [
+        4.51,
+        4.59
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        4.59,
+        4.79
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        4.79,
+        5.01
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        5.01,
+        5.17
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        5.17,
+        5.45
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

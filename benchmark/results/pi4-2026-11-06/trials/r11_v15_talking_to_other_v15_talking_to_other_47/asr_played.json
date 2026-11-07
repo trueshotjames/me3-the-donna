@@ -1,0 +1,111 @@
+{
+  "text": "set an alarm for 6 .30 a .m. on weekdays. Derek, traffic was insanity today.",
+  "chunks": [
+    {
+      "text": "set",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        0.18,
+        0.32
+      ]
+    },
+    {
+      "text": "alarm",
+      "timestamp": [
+        0.32,
+        0.7
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        0.7,
+        0.92
+      ]
+    },
+    {
+      "text": "6",
+      "timestamp": [
+        0.92,
+        1.14
+      ]
+    },
+    {
+      "text": ".30",
+      "timestamp": [
+        1.14,
+        1.44
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        1.44,
+        1.7
+      ]
+    },
+    {
+      "text": ".m.",
+      "timestamp": [
+        1.7,
+        1.96
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        2.06,
+        2.1
+      ]
+    },
+    {
+      "text": "weekdays.",
+      "timestamp": [
+        2.1,
+        2.66
+      ]
+    },
+    {
+      "text": "Derek,",
+      "timestamp": [
+        5.2,
+        5.72
+      ]
+    },
+    {
+      "text": "traffic",
+      "timestamp": [
+        5.84,
+        6.08
+      ]
+    },
+    {
+      "text": "was",
+      "timestamp": [
+        6.08,
+        6.34
+      ]
+    },
+    {
+      "text": "insanity",
+      "timestamp": [
+        6.34,
+        6.8
+      ]
+    },
+    {
+      "text": "today.",
+      "timestamp": [
+        6.8,
+        7.16
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

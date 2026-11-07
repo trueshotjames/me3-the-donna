@@ -1,0 +1,153 @@
+{
+  "text": "What are some effective ways to manage stretch? Oh before I forget I need to add milk to my shopping list",
+  "chunks": [
+    {
+      "text": "What",
+      "timestamp": [
+        0.4,
+        0.92
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        0.92,
+        1.04
+      ]
+    },
+    {
+      "text": "some",
+      "timestamp": [
+        1.04,
+        1.14
+      ]
+    },
+    {
+      "text": "effective",
+      "timestamp": [
+        1.14,
+        1.54
+      ]
+    },
+    {
+      "text": "ways",
+      "timestamp": [
+        1.54,
+        1.88
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        1.88,
+        2.1
+      ]
+    },
+    {
+      "text": "manage",
+      "timestamp": [
+        2.1,
+        2.34
+      ]
+    },
+    {
+      "text": "stretch?",
+      "timestamp": [
+        2.34,
+        2.72
+      ]
+    },
+    {
+      "text": "Oh",
+      "timestamp": [
+        5.37,
+        5.85
+      ]
+    },
+    {
+      "text": "before",
+      "timestamp": [
+        5.85,
+        6.15
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        6.15,
+        6.37
+      ]
+    },
+    {
+      "text": "forget",
+      "timestamp": [
+        6.37,
+        6.69
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        6.69,
+        6.99
+      ]
+    },
+    {
+      "text": "need",
+      "timestamp": [
+        6.99,
+        7.21
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        7.21,
+        7.43
+      ]
+    },
+    {
+      "text": "add",
+      "timestamp": [
+        7.43,
+        7.67
+      ]
+    },
+    {
+      "text": "milk",
+      "timestamp": [
+        7.67,
+        7.99
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        7.99,
+        8.27
+      ]
+    },
+    {
+      "text": "my",
+      "timestamp": [
+        8.27,
+        8.43
+      ]
+    },
+    {
+      "text": "shopping",
+      "timestamp": [
+        8.43,
+        8.73
+      ]
+    },
+    {
+      "text": "list",
+      "timestamp": [
+        8.73,
+        9.15
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

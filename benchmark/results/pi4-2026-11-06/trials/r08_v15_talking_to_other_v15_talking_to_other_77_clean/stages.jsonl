@@ -1,0 +1,24 @@
+{"stage": "vad_start", "t": 18297.715356788, "pid": 9960, "src": "ws", "recv": 18329.0970677, "lt": 18329.054030865, "tt": 0.1614}
+{"stage": "vad_start", "t": 18297.715414009, "pid": 9960, "src": "ws", "recv": 18329.097093, "lt": 18329.054088086, "tt": 0.1614}
+{"stage": "interrupted", "t": 18298.245585115, "pid": 9960, "src": "ws", "recv": 18329.6289479, "lt": 18329.584259192, "tt": 0.6916}
+{"stage": "interrupted", "t": 18298.245676022, "pid": 9960, "src": "ws", "recv": 18329.6289705, "lt": 18329.584350099, "tt": 0.6917}
+{"stage": "asr_partial", "t": 18298.363493806, "pid": 9960, "text": "How far is", "src": "ws", "recv": 18329.7454884, "lt": 18329.702167883, "tt": 0.8095}
+{"stage": "asr_partial", "t": 18298.603384897, "pid": 9960, "text": "How far is it from", "src": "ws", "recv": 18329.9856451, "lt": 18329.942058974, "tt": 1.0494}
+{"stage": "asr_partial", "t": 18298.845093539, "pid": 9960, "text": "How far is it from Bay", "src": "ws", "recv": 18330.2269818, "lt": 18330.183767616, "tt": 1.2911}
+{"stage": "asr_partial", "t": 18299.092623349, "pid": 9960, "text": "How far is it from Beijing to", "src": "ws", "recv": 18330.4754942, "lt": 18330.431297426, "tt": 1.5387}
+{"stage": "asr_partial", "t": 18299.323122835, "pid": 9960, "text": "How far is it from Beijing to Shanghai", "src": "ws", "recv": 18330.7052543, "lt": 18330.661796912, "tt": 1.7692}
+{"stage": "llm_request", "t": 18299.37100318, "pid": 9960, "speculative": true, "messages": 28, "chars": 12400, "est_tokens": 3100, "src": "ws", "recv": 18330.7530231, "lt": 18330.709677257, "tt": 1.817}
+{"stage": "asr_final", "t": 18299.413612573, "pid": 9960, "text": "How far is it from Beijing to Shanghai", "src": "ws", "recv": 18330.8004463, "lt": 18330.75228665, "tt": 1.8596}
+{"stage": "user_stopped", "t": 18299.425958789, "pid": 9960, "src": "ws", "recv": 18330.8105706, "lt": 18330.764632866, "tt": 1.872}
+{"stage": "user_stopped", "t": 18299.426029121, "pid": 9960, "src": "ws", "recv": 18330.8105928, "lt": 18330.764703198, "tt": 1.8721}
+{"stage": "vad_end", "t": 18299.606013406, "pid": 9960, "src": "ws", "recv": 18330.9871053, "lt": 18330.944687483, "tt": 2.052}
+{"stage": "vad_end", "t": 18299.606066868, "pid": 9960, "src": "ws", "recv": 18330.9871257, "lt": 18330.944740945, "tt": 2.0521}
+{"stage": "llm_first_token", "t": 18299.941384987, "pid": 9960, "src": "ws", "recv": 18331.3238539, "lt": 18331.280059064, "tt": 2.3874}
+{"stage": "llm_usage", "t": 18299.959012766, "pid": 9960, "prompt_tokens": 2423, "completion_tokens": 49, "src": "ws", "recv": 18331.3461093, "lt": 18331.297686843, "tt": 2.405}
+{"stage": "tts_request", "t": 18299.980264982, "pid": 9960, "src": "ws", "recv": 18331.3664363, "lt": 18331.318939059, "tt": 2.4263}
+{"stage": "tts_first_audio", "t": 18300.207438509, "pid": 9960, "src": "ws", "recv": 18331.5900767, "lt": 18331.546112586002, "tt": 2.6535}
+{"stage": "audio_out", "t": 18300.213705875, "pid": 9960, "src": "ws", "recv": 18331.6017039, "lt": 18331.552379952, "tt": 2.6597}
+{"stage": "audio_out", "t": 18300.214232702, "pid": 9960, "src": "ws", "recv": 18331.601722, "lt": 18331.552906779, "tt": 2.6603}
+{"stage": "bot_stopped", "t": 18306.302617402, "pid": 9960, "src": "ws", "recv": 18337.6852105, "lt": 18337.641291479, "tt": 8.7486}
+{"stage": "bot_stopped", "t": 18306.302701142, "pid": 9960, "src": "ws", "recv": 18337.6852327, "lt": 18337.641375219002, "tt": 8.7487}
+{"stage": "llm_request", "t": 18306.309074506, "pid": 9960, "messages": 29, "chars": 12504, "est_tokens": 3126, "src": "ws", "recv": 18337.6904221, "lt": 18337.647748583, "tt": 8.7551}

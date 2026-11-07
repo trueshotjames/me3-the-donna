@@ -1,0 +1,153 @@
+{
+  "text": "Practice deep breathing, exercise regularly, set clear boundaries, keep a short duly journal, and take brief breaks to stretch your walk.",
+  "chunks": [
+    {
+      "text": "Practice",
+      "timestamp": [
+        3.47,
+        4.05
+      ]
+    },
+    {
+      "text": "deep",
+      "timestamp": [
+        4.05,
+        4.35
+      ]
+    },
+    {
+      "text": "breathing,",
+      "timestamp": [
+        4.35,
+        4.71
+      ]
+    },
+    {
+      "text": "exercise",
+      "timestamp": [
+        5.33,
+        5.73
+      ]
+    },
+    {
+      "text": "regularly,",
+      "timestamp": [
+        5.73,
+        6.39
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        7.13,
+        7.23
+      ]
+    },
+    {
+      "text": "clear",
+      "timestamp": [
+        7.23,
+        7.51
+      ]
+    },
+    {
+      "text": "boundaries,",
+      "timestamp": [
+        7.51,
+        7.95
+      ]
+    },
+    {
+      "text": "keep",
+      "timestamp": [
+        8.71,
+        8.91
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        8.91,
+        9.09
+      ]
+    },
+    {
+      "text": "short",
+      "timestamp": [
+        9.09,
+        9.27
+      ]
+    },
+    {
+      "text": "duly",
+      "timestamp": [
+        9.27,
+        9.59
+      ]
+    },
+    {
+      "text": "journal,",
+      "timestamp": [
+        9.59,
+        9.89
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        10.43,
+        10.63
+      ]
+    },
+    {
+      "text": "take",
+      "timestamp": [
+        10.63,
+        10.81
+      ]
+    },
+    {
+      "text": "brief",
+      "timestamp": [
+        10.81,
+        11.03
+      ]
+    },
+    {
+      "text": "breaks",
+      "timestamp": [
+        11.03,
+        11.39
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        11.39,
+        11.61
+      ]
+    },
+    {
+      "text": "stretch",
+      "timestamp": [
+        11.61,
+        11.85
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        11.85,
+        12.07
+      ]
+    },
+    {
+      "text": "walk.",
+      "timestamp": [
+        12.07,
+        12.31
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}
