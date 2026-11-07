@@ -1,0 +1,95 @@
+{
+  "trial": "r06_v15_background_v15_background_17",
+  "group": "v15_background",
+  "clip": "v15_background_17",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 6.88,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.816
+    },
+    {
+      "name": "overlap",
+      "t": 4.188,
+      "len": 1.3469375
+    }
+  ],
+  "live_bot_starts": [
+    2.688,
+    5.472
+  ],
+  "live_bot_ends": [
+    4.736,
+    5.664
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "What's the UV index today?",
+    "current_turn_text": "",
+    "overlap_text": "I'm going to take a nap.",
+    "overlap_duration": 1.35,
+    "overlap_window": [
+      5.625,
+      6.9719999999999995
+    ],
+    "source_id": "17"
+  },
+  "mono": [
+    17681.5960548,
+    17688.4780041
+  ],
+  "bot_segments": [
+    [
+      2.658,
+      4.766
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.816
+  ],
+  "overlap_played": true,
+  "t_stop": 0.476,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.29,
+    5.342
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "latency": null,
+  "actual": "stopped after 0.48 s, did not come back",
+  "overlap_class": "stopped",
+  "label_provisional": "Unknown",
+  "verdict": "✗ stopped, silent",
+  "ok": false,
+  "marks": 29,
+  "final": {
+    "t_stop": 0.476,
+    "t_resp": null,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": null,
+      "pitch_mean": -51.91315726388237,
+      "pitch_sd": -37.613408800938025,
+      "intensity_mean": -5.6483363142703915,
+      "intensity_sd": 0.8397214998860605,
+      "utmosv2": null
+    },
+    "transcript": "I'm unable to get the UV index right now.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

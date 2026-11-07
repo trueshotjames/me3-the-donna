@@ -1,0 +1,104 @@
+{
+  "text": "Which part are you referring to? Sure, what would you like to chat about?",
+  "chunks": [
+    {
+      "text": "Which",
+      "timestamp": [
+        2.67,
+        3.23
+      ]
+    },
+    {
+      "text": "part",
+      "timestamp": [
+        3.23,
+        3.49
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        3.49,
+        3.63
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        3.63,
+        3.77
+      ]
+    },
+    {
+      "text": "referring",
+      "timestamp": [
+        3.77,
+        4.05
+      ]
+    },
+    {
+      "text": "to?",
+      "timestamp": [
+        4.05,
+        4.43
+      ]
+    },
+    {
+      "text": "Sure,",
+      "timestamp": [
+        7.31,
+        7.63
+      ]
+    },
+    {
+      "text": "what",
+      "timestamp": [
+        7.93,
+        8.13
+      ]
+    },
+    {
+      "text": "would",
+      "timestamp": [
+        8.13,
+        8.25
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        8.25,
+        8.35
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        8.35,
+        8.51
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        8.51,
+        8.65
+      ]
+    },
+    {
+      "text": "chat",
+      "timestamp": [
+        8.65,
+        8.85
+      ]
+    },
+    {
+      "text": "about?",
+      "timestamp": [
+        8.85,
+        9.11
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

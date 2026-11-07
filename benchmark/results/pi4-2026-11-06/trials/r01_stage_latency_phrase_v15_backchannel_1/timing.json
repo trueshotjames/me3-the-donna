@@ -1,0 +1,90 @@
+{
+  "trial": "r01_stage_latency_phrase_v15_backchannel_1",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_1",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 21.152,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.712
+    }
+  ],
+  "live_bot_starts": [
+    0.032,
+    4.288
+  ],
+  "live_bot_ends": [
+    0.288,
+    20.8
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Present a thorough explanation of global warming.",
+    "source": "v15_backchannel_1"
+  },
+  "mono": [
+    15706.4512038,
+    15727.582736
+  ],
+  "bot_segments": [
+    [
+      0.002,
+      0.318
+    ],
+    [
+      4.258,
+      20.83
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.712
+  ],
+  "tor": 1,
+  "first_start": 4.258,
+  "spoke_s": 6.454,
+  "user_end": 2.462,
+  "latency": 1.7959999999999998,
+  "actual": "replied 1.80 s after speech end",
+  "verdict": "✓ 1.80 s",
+  "ok": true,
+  "marks": 29,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.796,
+      "e2e": 1.6004,
+      "e2e_source": "marks",
+      "asr_final": 1.1655,
+      "llm_ttft": 0.0115,
+      "tts_ttfb": 0.2972,
+      "endpointing": 0.1435,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Present a thorough explanation of global warming.",
+      "wer": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2606,
+      "context_source": "usage",
+      "context_messages": 16
+    },
+    "transcript": "global warming is the steady rise in Earth's average temperature caused primarily by the buildup of greenhouse gases in the atmosphere. When we burn coal, oil and gas for energy, we release carbon dioxide while agriculture and waste produce methane and nitrous oxide."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

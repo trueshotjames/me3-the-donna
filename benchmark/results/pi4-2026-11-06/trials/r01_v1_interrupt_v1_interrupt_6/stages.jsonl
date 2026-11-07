@@ -1,0 +1,60 @@
+{"stage": "vad_start", "t": 16370.742515827, "pid": 9960, "src": "ws", "recv": 16402.0953874, "lt": 16402.081189903998, "tt": 0.3885}
+{"stage": "vad_start", "t": 16370.742603067, "pid": 9960, "src": "ws", "recv": 16402.0954058, "lt": 16402.081277144, "tt": 0.3886}
+{"stage": "asr_partial", "t": 16371.168634571, "pid": 9960, "text": "Which", "src": "ws", "recv": 16402.5203343, "lt": 16402.507308648, "tt": 0.8146}
+{"stage": "interrupted", "t": 16371.29171614, "pid": 9960, "src": "ws", "recv": 16402.6451333, "lt": 16402.630390217, "tt": 0.9377}
+{"stage": "interrupted", "t": 16371.291807473, "pid": 9960, "src": "ws", "recv": 16402.645157, "lt": 16402.63048155, "tt": 0.9378}
+{"stage": "asr_partial", "t": 16371.445721419, "pid": 9960, "text": "Which places", "src": "ws", "recv": 16402.7974552, "lt": 16402.784395496, "tt": 1.0917}
+{"stage": "asr_partial", "t": 16371.644671327, "pid": 9960, "text": "Which places do", "src": "ws", "recv": 16402.9964229, "lt": 16402.983345403998, "tt": 1.2907}
+{"stage": "asr_partial", "t": 16371.925596813, "pid": 9960, "text": "Which places do you recommend", "src": "ws", "recv": 16403.2773283, "lt": 16403.264270890002, "tt": 1.5716}
+{"stage": "asr_partial", "t": 16371.966036627, "pid": 9960, "text": "Which places do you reckon", "src": "ws", "recv": 16403.3178911, "lt": 16403.304710704, "tt": 1.612}
+{"stage": "asr_partial", "t": 16372.128156861, "pid": 9960, "text": "Which places do you recommend", "src": "ws", "recv": 16403.4799477, "lt": 16403.466830938, "tt": 1.7741}
+{"stage": "asr_partial", "t": 16372.405262912, "pid": 9960, "text": "Which places do you recommend this", "src": "ws", "recv": 16403.7569842, "lt": 16403.743936988998, "tt": 2.0512}
+{"stage": "asr_partial", "t": 16372.605929317, "pid": 9960, "text": "Which places do you recommend visiting", "src": "ws", "recv": 16403.9576952, "lt": 16403.944603394, "tt": 2.2519}
+{"stage": "asr_partial", "t": 16372.885725113, "pid": 9960, "text": "Which places do you recommend visiting in your", "src": "ws", "recv": 16404.2374566, "lt": 16404.22439919, "tt": 2.5317}
+{"stage": "vad_end", "t": 16373.043618029, "pid": 9960, "src": "ws", "recv": 16404.3959031, "lt": 16404.382292106, "tt": 2.6896}
+{"stage": "vad_end", "t": 16373.043669602, "pid": 9960, "src": "ws", "recv": 16404.3959243, "lt": 16404.382343679, "tt": 2.6897}
+{"stage": "asr_partial", "t": 16373.08976405, "pid": 9960, "text": "Which places do you recommend visiting in Europe?", "src": "ws", "recv": 16404.4426991, "lt": 16404.428438127, "tt": 2.7357}
+{"stage": "llm_request", "t": 16373.09357667, "pid": 9960, "speculative": true, "messages": 19, "chars": 10264, "est_tokens": 2566, "src": "ws", "recv": 16404.4468465, "lt": 16404.432250747, "tt": 2.7396}
+{"stage": "asr_final", "t": 16373.180370873, "pid": 9960, "text": "Which places do you recommend visiting in Europe?", "src": "ws", "recv": 16404.5334973, "lt": 16404.51904495, "tt": 2.8264}
+{"stage": "user_stopped", "t": 16373.18812424, "pid": 9960, "src": "ws", "recv": 16404.5430397, "lt": 16404.526798316998, "tt": 2.8341}
+{"stage": "user_stopped", "t": 16373.188195147, "pid": 9960, "src": "ws", "recv": 16404.5430576, "lt": 16404.526869224, "tt": 2.8342}
+{"stage": "llm_first_token", "t": 16373.891718401, "pid": 9960, "src": "ws", "recv": 16405.2479639, "lt": 16405.230392478, "tt": 3.5377}
+{"stage": "llm_usage", "t": 16373.930075445, "pid": 9960, "prompt_tokens": 2435, "completion_tokens": 77, "src": "ws", "recv": 16405.2850831, "lt": 16405.268749522, "tt": 3.5761}
+{"stage": "tts_request", "t": 16373.954336923, "pid": 9960, "src": "ws", "recv": 16405.3089874, "lt": 16405.293011, "tt": 3.6003}
+{"stage": "tts_first_audio", "t": 16374.133943959, "pid": 9960, "src": "ws", "recv": 16405.4859664, "lt": 16405.472618036, "tt": 3.7799}
+{"stage": "audio_out", "t": 16374.138726585, "pid": 9960, "src": "ws", "recv": 16405.4953541, "lt": 16405.477400662, "tt": 3.7847}
+{"stage": "audio_out", "t": 16374.138811546, "pid": 9960, "src": "ws", "recv": 16405.4953727, "lt": 16405.477485623, "tt": 3.7848}
+{"stage": "vad_start", "t": 16376.241277003, "pid": 9960, "src": "ws", "recv": 16407.5935115, "lt": 16407.57995108, "tt": 5.8873}
+{"stage": "vad_start", "t": 16376.24133802, "pid": 9960, "src": "ws", "recv": 16407.5935311, "lt": 16407.580012097, "tt": 5.8873}
+{"stage": "asr_partial", "t": 16376.767693671, "pid": 9960, "text": "Before I take", "src": "ws", "recv": 16408.1228461, "lt": 16408.106367747998, "tt": 6.4137}
+{"stage": "interrupted", "t": 16376.770596228, "pid": 9960, "src": "ws", "recv": 16408.1250022, "lt": 16408.109270305, "tt": 6.4166}
+{"stage": "interrupted", "t": 16376.770682894, "pid": 9960, "src": "ws", "recv": 16408.1250233, "lt": 16408.109356971, "tt": 6.4167}
+{"stage": "bot_stopped", "t": 16376.796500333, "pid": 9960, "src": "ws", "recv": 16408.1542031, "lt": 16408.13517441, "tt": 6.4425}
+{"stage": "bot_stopped", "t": 16376.796846014, "pid": 9960, "src": "ws", "recv": 16408.1542352, "lt": 16408.135520091, "tt": 6.4428}
+{"stage": "asr_partial", "t": 16377.014051122, "pid": 9960, "text": "Before I forget,", "src": "ws", "recv": 16408.3658685, "lt": 16408.352725199, "tt": 6.66}
+{"stage": "asr_partial", "t": 16377.245163668, "pid": 9960, "text": "Before I forget,", "src": "ws", "recv": 16408.5969508, "lt": 16408.583837744998, "tt": 6.8911}
+{"stage": "asr_partial", "t": 16377.495424126, "pid": 9960, "text": "Before I forget, do any", "src": "ws", "recv": 16408.8485148, "lt": 16408.834098203, "tt": 7.1414}
+{"stage": "asr_partial", "t": 16377.725393539, "pid": 9960, "text": "Before I forget, do I need a", "src": "ws", "recv": 16409.0772086, "lt": 16409.064067616, "tt": 7.3714}
+{"stage": "asr_partial", "t": 16377.974291606, "pid": 9960, "text": "Before I forget, do I need a Visa", "src": "ws", "recv": 16409.3261903, "lt": 16409.312965683, "tt": 7.6203}
+{"stage": "asr_partial", "t": 16378.205305135, "pid": 9960, "text": "Before I forget, do I need a visa to", "src": "ws", "recv": 16409.5571246, "lt": 16409.543979212, "tt": 7.8513}
+{"stage": "asr_partial", "t": 16378.454199072, "pid": 9960, "text": "Before I forget, do I need a visa to travel", "src": "ws", "recv": 16409.8061272, "lt": 16409.792873149003, "tt": 8.1002}
+{"stage": "asr_partial", "t": 16378.685341952, "pid": 9960, "text": "Before I forget, do I need a visa to travel to", "src": "ws", "recv": 16410.0373211, "lt": 16410.024016028998, "tt": 8.3313}
+{"stage": "asr_partial", "t": 16378.936057941, "pid": 9960, "text": "Before I forget, do I need a visa to travel to your", "src": "ws", "recv": 16410.2883053, "lt": 16410.274732018, "tt": 8.582}
+{"stage": "asr_partial", "t": 16379.164947311, "pid": 9960, "text": "Before I forget, do I need a visa to travel to Europe", "src": "ws", "recv": 16410.5168728, "lt": 16410.503621388, "tt": 8.8109}
+{"stage": "vad_end", "t": 16379.248482573, "pid": 9960, "src": "ws", "recv": 16410.6049865, "lt": 16410.58715665, "tt": 8.8945}
+{"stage": "vad_end", "t": 16379.248538036, "pid": 9960, "src": "ws", "recv": 16410.6050084, "lt": 16410.587212113, "tt": 8.8945}
+{"stage": "llm_request", "t": 16379.258988314, "pid": 9960, "speculative": true, "messages": 20, "chars": 10317, "est_tokens": 2579, "src": "ws", "recv": 16410.6116674, "lt": 16410.597662391003, "tt": 8.905}
+{"stage": "asr_partial", "t": 16379.445968407, "pid": 9960, "text": "Before I forget, do I need a visa to travel to Europe?", "src": "ws", "recv": 16410.797835, "lt": 16410.784642484003, "tt": 9.092}
+{"stage": "asr_partial", "t": 16379.645576824, "pid": 9960, "text": "Before I forget, do I need a visa to travel to Europe?", "src": "ws", "recv": 16410.9974658, "lt": 16410.984250900998, "tt": 9.2916}
+{"stage": "llm_usage", "t": 16379.864122193, "pid": 9960, "prompt_tokens": 2477, "completion_tokens": 51, "src": "ws", "recv": 16411.2165194, "lt": 16411.20279627, "tt": 9.5101}
+{"stage": "asr_final", "t": 16379.909877905, "pid": 9960, "text": "Before I forget, do I need a visa to travel to Europe?", "src": "ws", "recv": 16411.2623303, "lt": 16411.248551982, "tt": 9.5559}
+{"stage": "user_stopped", "t": 16379.917830176, "pid": 9960, "src": "ws", "recv": 16411.2752096, "lt": 16411.256504253, "tt": 9.5638}
+{"stage": "user_stopped", "t": 16379.917896324, "pid": 9960, "src": "ws", "recv": 16411.2752262, "lt": 16411.256570400998, "tt": 9.5639}
+{"stage": "llm_first_token", "t": 16379.921419391, "pid": 9960, "src": "ws", "recv": 16411.2793877, "lt": 16411.260093468, "tt": 9.5674}
+{"stage": "tts_request", "t": 16379.942492853, "pid": 9960, "src": "ws", "recv": 16411.2964581, "lt": 16411.28116693, "tt": 9.5885}
+{"stage": "tts_first_audio", "t": 16380.118276177, "pid": 9960, "src": "ws", "recv": 16411.4698907, "lt": 16411.456950254, "tt": 9.7643}
+{"stage": "audio_out", "t": 16380.122629012, "pid": 9960, "src": "ws", "recv": 16411.4794543, "lt": 16411.461303089, "tt": 9.7686}
+{"stage": "audio_out", "t": 16380.1227129, "pid": 9960, "src": "ws", "recv": 16411.4794756, "lt": 16411.461386977, "tt": 9.7687}
+{"stage": "bot_stopped", "t": 16387.611622414, "pid": 9960, "src": "ws", "recv": 16418.9640951, "lt": 16418.950296491, "tt": 17.2576}
+{"stage": "bot_stopped", "t": 16387.611705599, "pid": 9960, "src": "ws", "recv": 16418.9641186, "lt": 16418.950379676, "tt": 17.2577}
+{"stage": "llm_request", "t": 16387.617990132, "pid": 9960, "messages": 21, "chars": 10458, "est_tokens": 2614, "src": "ws", "recv": 16418.9692889, "lt": 16418.956664209, "tt": 17.264}

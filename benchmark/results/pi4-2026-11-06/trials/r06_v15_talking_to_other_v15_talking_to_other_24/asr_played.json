@@ -1,0 +1,118 @@
+{
+  "text": "How far is it from Beijing to Shanghai? Dr. Chen, I'll bring the lab results tomorrow.",
+  "chunks": [
+    {
+      "text": "How",
+      "timestamp": [
+        0.0,
+        0.2
+      ]
+    },
+    {
+      "text": "far",
+      "timestamp": [
+        0.2,
+        0.52
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        0.52,
+        0.68
+      ]
+    },
+    {
+      "text": "it",
+      "timestamp": [
+        0.68,
+        0.76
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        0.76,
+        0.94
+      ]
+    },
+    {
+      "text": "Beijing",
+      "timestamp": [
+        0.94,
+        1.3
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        1.3,
+        1.6
+      ]
+    },
+    {
+      "text": "Shanghai?",
+      "timestamp": [
+        1.6,
+        1.98
+      ]
+    },
+    {
+      "text": "Dr.",
+      "timestamp": [
+        4.78,
+        5.18
+      ]
+    },
+    {
+      "text": "Chen,",
+      "timestamp": [
+        5.36,
+        5.46
+      ]
+    },
+    {
+      "text": "I'll",
+      "timestamp": [
+        5.58,
+        5.64
+      ]
+    },
+    {
+      "text": "bring",
+      "timestamp": [
+        5.64,
+        5.78
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.78,
+        5.94
+      ]
+    },
+    {
+      "text": "lab",
+      "timestamp": [
+        5.94,
+        6.16
+      ]
+    },
+    {
+      "text": "results",
+      "timestamp": [
+        6.16,
+        6.44
+      ]
+    },
+    {
+      "text": "tomorrow.",
+      "timestamp": [
+        6.44,
+        6.9
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

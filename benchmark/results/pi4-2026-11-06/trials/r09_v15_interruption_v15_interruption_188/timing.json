@@ -1,0 +1,103 @@
+{
+  "trial": "r09_v15_interruption_v15_interruption_188",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_188",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 20.64,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.424
+    },
+    {
+      "name": "overlap",
+      "t": 4.9239375,
+      "len": 3.317
+    }
+  ],
+  "live_bot_starts": [
+    3.424,
+    9.376,
+    11.2,
+    13.152
+  ],
+  "live_bot_ends": [
+    5.888,
+    10.784,
+    12.736,
+    20.288
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "I want to learn to play the guitar",
+    "current_turn_text": "Hold on, do you have any tips for sleeping better?",
+    "overlap_text": "Hold on, do you have any tips for sleeping better?",
+    "overlap_duration": 3.32,
+    "overlap_window": [
+      6.677,
+      9.994
+    ],
+    "source_id": "188"
+  },
+  "mono": [
+    18651.6419599,
+    18672.2869655
+  ],
+  "bot_segments": [
+    [
+      3.394,
+      5.918
+    ],
+    [
+      9.346,
+      20.318
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.424
+  ],
+  "overlap_played": true,
+  "t_stop": 0.21999999999999975,
+  "t_resp": 1.105062499999999,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.698,
+    8.240937500000001
+  ],
+  "tor": 1,
+  "first_start": 9.346,
+  "spoke_s": 6.894937500000001,
+  "latency": 1.105062499999999,
+  "actual": "stopped after 0.22 s, back 1.11 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 60,
+  "final": {
+    "t_stop": 0.21999999999999975,
+    "t_resp": 1.105062499999999,
+    "label": "Respond",
+    "voice_delta": {
+      "wpm": -17.85883019937637,
+      "pitch_mean": -9.426155645561067,
+      "pitch_sd": 6.2909239645672415,
+      "intensity_mean": 0.9216572249673973,
+      "intensity_sd": -0.20397317172585794,
+      "utmosv2": null
+    },
+    "transcript": "Start with basic chords like G, C, try a consistent bedtime. Dindalights an hour before, avoid screens, and keep the room cool and quiet. Start with basic chords like G, C, and D.",
+    "judge_label": "Respond",
+    "ok": true,
+    "verdict": "✓ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

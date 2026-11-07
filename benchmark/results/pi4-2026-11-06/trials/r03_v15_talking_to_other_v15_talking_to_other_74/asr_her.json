@@ -1,0 +1,90 @@
+{
+  "text": "I love sushi in Japanese. I love sushi translates to Shoushigadahau Kidesu.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        2.9,
+        3.36
+      ]
+    },
+    {
+      "text": "love",
+      "timestamp": [
+        3.36,
+        3.62
+      ]
+    },
+    {
+      "text": "sushi",
+      "timestamp": [
+        3.62,
+        3.94
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        3.94,
+        4.34
+      ]
+    },
+    {
+      "text": "Japanese.",
+      "timestamp": [
+        4.34,
+        4.74
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        8.16,
+        8.34
+      ]
+    },
+    {
+      "text": "love",
+      "timestamp": [
+        8.34,
+        8.64
+      ]
+    },
+    {
+      "text": "sushi",
+      "timestamp": [
+        8.64,
+        9.0
+      ]
+    },
+    {
+      "text": "translates",
+      "timestamp": [
+        9.0,
+        9.5
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        9.5,
+        9.82
+      ]
+    },
+    {
+      "text": "Shoushigadahau",
+      "timestamp": [
+        9.82,
+        11.04
+      ]
+    },
+    {
+      "text": "Kidesu.",
+      "timestamp": [
+        11.04,
+        11.74
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

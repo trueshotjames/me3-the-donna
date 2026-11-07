@@ -1,0 +1,321 @@
+{
+  "text": "Pick a language that excites you, set a date, try a consistent bedtime routine, keep the room cool and dark, and avoid screens at least an hour before sleep. Also limit caffeine late in the day and wind down with a calming activity like reading.",
+  "chunks": [
+    {
+      "text": "Pick",
+      "timestamp": [
+        2.77,
+        3.27
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        3.27,
+        3.39
+      ]
+    },
+    {
+      "text": "language",
+      "timestamp": [
+        3.39,
+        3.65
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        3.65,
+        3.95
+      ]
+    },
+    {
+      "text": "excites",
+      "timestamp": [
+        3.95,
+        4.39
+      ]
+    },
+    {
+      "text": "you,",
+      "timestamp": [
+        4.39,
+        4.59
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        4.93,
+        5.05
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        5.05,
+        5.19
+      ]
+    },
+    {
+      "text": "date,",
+      "timestamp": [
+        5.19,
+        5.33
+      ]
+    },
+    {
+      "text": "try",
+      "timestamp": [
+        9.11,
+        9.35
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        9.35,
+        9.51
+      ]
+    },
+    {
+      "text": "consistent",
+      "timestamp": [
+        9.51,
+        9.95
+      ]
+    },
+    {
+      "text": "bedtime",
+      "timestamp": [
+        9.95,
+        10.31
+      ]
+    },
+    {
+      "text": "routine,",
+      "timestamp": [
+        10.31,
+        10.89
+      ]
+    },
+    {
+      "text": "keep",
+      "timestamp": [
+        11.47,
+        11.61
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        11.61,
+        11.83
+      ]
+    },
+    {
+      "text": "room",
+      "timestamp": [
+        11.83,
+        12.01
+      ]
+    },
+    {
+      "text": "cool",
+      "timestamp": [
+        12.01,
+        12.41
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        12.41,
+        12.63
+      ]
+    },
+    {
+      "text": "dark,",
+      "timestamp": [
+        12.63,
+        12.95
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.37,
+        13.53
+      ]
+    },
+    {
+      "text": "avoid",
+      "timestamp": [
+        13.53,
+        13.79
+      ]
+    },
+    {
+      "text": "screens",
+      "timestamp": [
+        13.79,
+        14.25
+      ]
+    },
+    {
+      "text": "at",
+      "timestamp": [
+        14.25,
+        14.51
+      ]
+    },
+    {
+      "text": "least",
+      "timestamp": [
+        14.51,
+        14.69
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        14.69,
+        14.93
+      ]
+    },
+    {
+      "text": "hour",
+      "timestamp": [
+        14.93,
+        15.21
+      ]
+    },
+    {
+      "text": "before",
+      "timestamp": [
+        15.21,
+        15.53
+      ]
+    },
+    {
+      "text": "sleep.",
+      "timestamp": [
+        15.53,
+        15.97
+      ]
+    },
+    {
+      "text": "Also",
+      "timestamp": [
+        16.17,
+        16.39
+      ]
+    },
+    {
+      "text": "limit",
+      "timestamp": [
+        16.39,
+        16.69
+      ]
+    },
+    {
+      "text": "caffeine",
+      "timestamp": [
+        16.69,
+        17.13
+      ]
+    },
+    {
+      "text": "late",
+      "timestamp": [
+        17.13,
+        17.41
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        17.41,
+        17.57
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        17.57,
+        17.65
+      ]
+    },
+    {
+      "text": "day",
+      "timestamp": [
+        17.65,
+        17.91
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        17.91,
+        18.21
+      ]
+    },
+    {
+      "text": "wind",
+      "timestamp": [
+        18.21,
+        18.43
+      ]
+    },
+    {
+      "text": "down",
+      "timestamp": [
+        18.43,
+        18.75
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        18.75,
+        18.91
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        18.91,
+        19.05
+      ]
+    },
+    {
+      "text": "calming",
+      "timestamp": [
+        19.05,
+        19.27
+      ]
+    },
+    {
+      "text": "activity",
+      "timestamp": [
+        19.27,
+        19.79
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        19.79,
+        20.07
+      ]
+    },
+    {
+      "text": "reading.",
+      "timestamp": [
+        20.07,
+        20.35
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

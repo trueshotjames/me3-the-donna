@@ -1,0 +1,37 @@
+{"stage": "vad_start", "t": 16282.482020272, "pid": 9960, "src": "ws", "recv": 16313.8323445, "lt": 16313.820694349, "tt": 0.2562}
+{"stage": "vad_start", "t": 16282.482076438, "pid": 9960, "src": "ws", "recv": 16313.8323668, "lt": 16313.820750515, "tt": 0.2563}
+{"stage": "asr_partial", "t": 16283.049382531, "pid": 9960, "text": "No. I", "src": "ws", "recv": 16314.4034704, "lt": 16314.388056608, "tt": 0.8236}
+{"stage": "interrupted", "t": 16283.052300495, "pid": 9960, "src": "ws", "recv": 16314.4058339, "lt": 16314.390974572, "tt": 0.8265}
+{"stage": "interrupted", "t": 16283.05238855, "pid": 9960, "src": "ws", "recv": 16314.405854, "lt": 16314.391062627, "tt": 0.8266}
+{"stage": "bot_stopped", "t": 16283.105250137, "pid": 9960, "src": "ws", "recv": 16314.45837, "lt": 16314.443924214, "tt": 0.8794}
+{"stage": "bot_stopped", "t": 16283.105332728, "pid": 9960, "src": "ws", "recv": 16314.4583894, "lt": 16314.444006805, "tt": 0.8795}
+{"stage": "llm_request", "t": 16283.122647236, "pid": 9960, "messages": 15, "chars": 10055, "est_tokens": 2514, "src": "ws", "recv": 16314.4753525, "lt": 16314.461321313, "tt": 0.8968}
+{"stage": "asr_partial", "t": 16283.28737505, "pid": 9960, "text": "No. I I", "src": "ws", "recv": 16314.6381504, "lt": 16314.626049127, "tt": 1.0616}
+{"stage": "asr_partial", "t": 16283.52510311, "pid": 9960, "text": "No. I I live", "src": "ws", "recv": 16314.8760994, "lt": 16314.863777187, "tt": 1.2993}
+{"stage": "asr_partial", "t": 16283.767516796, "pid": 9960, "text": "No. I I live in", "src": "ws", "recv": 16315.1180143, "lt": 16315.106190873, "tt": 1.5417}
+{"stage": "asr_partial", "t": 16284.004768325, "pid": 9960, "text": "No. I I live in South", "src": "ws", "recv": 16315.355249, "lt": 16315.343442402, "tt": 1.7789}
+{"stage": "asr_partial", "t": 16284.247274232, "pid": 9960, "text": "No. I I live in South Elm", "src": "ws", "recv": 16315.5978806, "lt": 16315.585948309, "tt": 2.0214}
+{"stage": "asr_partial", "t": 16284.646986584, "pid": 9960, "text": "No. I I live in South Albemarle", "src": "ws", "recv": 16315.9975298, "lt": 16315.985660661001, "tt": 2.4212}
+{"stage": "asr_partial", "t": 16284.854182892, "pid": 9960, "text": "No. I I live in South Alabama. My", "src": "ws", "recv": 16316.2058136, "lt": 16316.192856969, "tt": 2.6284}
+{"stage": "asr_partial", "t": 16285.087045845, "pid": 9960, "text": "No. I I live in South Alabama. My college", "src": "ws", "recv": 16316.4376544, "lt": 16316.425719922001, "tt": 2.8612}
+{"stage": "asr_partial", "t": 16285.28563787, "pid": 9960, "text": "No. I I live in South Alabama. My college is in", "src": "ws", "recv": 16316.6361828, "lt": 16316.624311947, "tt": 3.0598}
+{"stage": "asr_partial", "t": 16285.444958991, "pid": 9960, "text": "No. I I live in South Alabama. My college is in San", "src": "ws", "recv": 16316.7955005, "lt": 16316.783633068, "tt": 3.2191}
+{"stage": "asr_partial", "t": 16285.687437307, "pid": 9960, "text": "No. I I live in South Alabama. My college is in Central", "src": "ws", "recv": 16317.0380166, "lt": 16317.026111384, "tt": 3.4616}
+{"stage": "asr_partial", "t": 16285.926871308, "pid": 9960, "text": "No. I I live in South Alabama. My college is in Central Alabama.", "src": "ws", "recv": 16317.2781823, "lt": 16317.265545385, "tt": 3.701}
+{"stage": "asr_partial", "t": 16286.172055664, "pid": 9960, "text": "No. I I live in South Alabama. My college is in Central Alabama.", "src": "ws", "recv": 16317.5234199, "lt": 16317.510729741, "tt": 3.9462}
+{"stage": "llm_request", "t": 16286.371613473, "pid": 9960, "speculative": true, "messages": 16, "chars": 10119, "est_tokens": 2530, "src": "ws", "recv": 16317.7236379, "lt": 16317.71028755, "tt": 4.1458}
+{"stage": "asr_partial", "t": 16286.424868944, "pid": 9960, "text": "No. I I live in South Alabama. My college is in Central Alabama.", "src": "ws", "recv": 16317.7786819, "lt": 16317.763543021, "tt": 4.199}
+{"stage": "asr_final", "t": 16286.572268288, "pid": 9960, "text": "No. I I live in South Alabama. My college is in Central Alabama.", "src": "ws", "recv": 16317.9233835, "lt": 16317.910942365, "tt": 4.3464}
+{"stage": "user_stopped", "t": 16286.579360903, "pid": 9960, "src": "ws", "recv": 16317.9348593, "lt": 16317.91803498, "tt": 4.3535}
+{"stage": "user_stopped", "t": 16286.579459995, "pid": 9960, "src": "ws", "recv": 16317.9348792, "lt": 16317.918134072, "tt": 4.3536}
+{"stage": "vad_end", "t": 16286.674816482, "pid": 9960, "src": "ws", "recv": 16318.0245997, "lt": 16318.013490559, "tt": 4.449}
+{"stage": "vad_end", "t": 16286.674870592, "pid": 9960, "src": "ws", "recv": 16318.0246262, "lt": 16318.013544669, "tt": 4.449}
+{"stage": "llm_first_token", "t": 16286.980456146, "pid": 9960, "src": "ws", "recv": 16318.3311866, "lt": 16318.319130223, "tt": 4.7546}
+{"stage": "llm_usage", "t": 16287.012308826, "pid": 9960, "prompt_tokens": 2564, "completion_tokens": 59, "src": "ws", "recv": 16318.366094, "lt": 16318.350982903, "tt": 4.7865}
+{"stage": "tts_request", "t": 16287.038377744, "pid": 9960, "src": "ws", "recv": 16318.3926006, "lt": 16318.377051821, "tt": 4.8126}
+{"stage": "tts_first_audio", "t": 16287.214584898, "pid": 9960, "src": "ws", "recv": 16318.5653159, "lt": 16318.553258975, "tt": 4.9888}
+{"stage": "audio_out", "t": 16287.219981516, "pid": 9960, "src": "ws", "recv": 16318.5783571, "lt": 16318.558655593, "tt": 4.9942}
+{"stage": "audio_out", "t": 16287.220603342, "pid": 9960, "src": "ws", "recv": 16318.5783755, "lt": 16318.559277419, "tt": 4.9948}
+{"stage": "bot_stopped", "t": 16291.868907267, "pid": 9960, "src": "ws", "recv": 16323.2198433, "lt": 16323.207581344, "tt": 9.6431}
+{"stage": "bot_stopped", "t": 16291.868987507, "pid": 9960, "src": "ws", "recv": 16323.2198691, "lt": 16323.207661584, "tt": 9.6432}
+{"stage": "llm_request", "t": 16291.875066876, "pid": 9960, "messages": 17, "chars": 10190, "est_tokens": 2548, "src": "ws", "recv": 16323.2250255, "lt": 16323.213740953, "tt": 9.6492}

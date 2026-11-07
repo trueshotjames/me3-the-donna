@@ -1,0 +1,27 @@
+{"stage": "vad_start", "t": 18718.835671919, "pid": 9960, "src": "ws", "recv": 18750.2243137, "lt": 18750.174345996, "tt": 0.1937}
+{"stage": "vad_start", "t": 18718.8357734, "pid": 9960, "src": "ws", "recv": 18750.224337, "lt": 18750.174447477, "tt": 0.1938}
+{"stage": "interrupted", "t": 18719.288442016, "pid": 9960, "src": "ws", "recv": 18750.677389, "lt": 18750.627116093, "tt": 0.6465}
+{"stage": "interrupted", "t": 18719.288533052, "pid": 9960, "src": "ws", "recv": 18750.6774104, "lt": 18750.627207129, "tt": 0.6466}
+{"stage": "asr_partial", "t": 18719.406678222, "pid": 9960, "text": "What's the", "src": "ws", "recv": 18750.7944835, "lt": 18750.745352299, "tt": 0.7647}
+{"stage": "asr_partial", "t": 18719.603424433, "pid": 9960, "text": "What's the exchange", "src": "ws", "recv": 18750.9907058, "lt": 18750.94209851, "tt": 0.9615}
+{"stage": "asr_partial", "t": 18719.846845209, "pid": 9960, "text": "What's the exchange rate for", "src": "ws", "recv": 18751.2342814, "lt": 18751.185519286, "tt": 1.2049}
+{"stage": "asr_partial", "t": 18720.083477489, "pid": 9960, "text": "What's the exchange rate for Jack", "src": "ws", "recv": 18751.4708087, "lt": 18751.422151566, "tt": 1.4415}
+{"stage": "asr_partial", "t": 18720.326835598, "pid": 9960, "text": "What's the exchange rate for Japanese", "src": "ws", "recv": 18751.7142485, "lt": 18751.665509675, "tt": 1.6849}
+{"stage": "asr_partial", "t": 18720.562871198, "pid": 9960, "text": "What's the exchange rate for Japanese", "src": "ws", "recv": 18751.9501161, "lt": 18751.901545275, "tt": 1.9209}
+{"stage": "asr_partial", "t": 18720.763423984, "pid": 9960, "text": "What's the exchange rate for Japanese yen?", "src": "ws", "recv": 18752.1506626, "lt": 18752.102098061, "tt": 2.1215}
+{"stage": "asr_partial", "t": 18720.806363861, "pid": 9960, "text": "What's the exchange rate for Japanese yen?", "src": "ws", "recv": 18752.1938528, "lt": 18752.145037938, "tt": 2.1644}
+{"stage": "vad_end", "t": 18720.976857674, "pid": 9960, "src": "ws", "recv": 18752.3643353, "lt": 18752.315531751, "tt": 2.3349}
+{"stage": "vad_end", "t": 18720.976910895, "pid": 9960, "src": "ws", "recv": 18752.3643588, "lt": 18752.315584972, "tt": 2.3349}
+{"stage": "llm_request", "t": 18721.014160582, "pid": 9960, "speculative": true, "messages": 20, "chars": 10193, "est_tokens": 2548, "src": "ws", "recv": 18752.4021782, "lt": 18752.352834659, "tt": 2.3722}
+{"stage": "asr_final", "t": 18721.069046129, "pid": 9960, "text": "What's the exchange rate for Japanese yen?", "src": "ws", "recv": 18752.4598004, "lt": 18752.407720206, "tt": 2.4271}
+{"stage": "user_stopped", "t": 18721.080410806, "pid": 9960, "src": "ws", "recv": 18752.4703122, "lt": 18752.419084883, "tt": 2.4384}
+{"stage": "user_stopped", "t": 18721.080467768, "pid": 9960, "src": "ws", "recv": 18752.470341, "lt": 18752.419141845, "tt": 2.4385}
+{"stage": "llm_first_token", "t": 18721.589092621, "pid": 9960, "src": "ws", "recv": 18752.9844868, "lt": 18752.927766698, "tt": 2.9471}
+{"stage": "llm_usage", "t": 18721.601880136, "pid": 9960, "prompt_tokens": 2532, "completion_tokens": 36, "src": "ws", "recv": 18752.9924623, "lt": 18752.940554213, "tt": 2.9599}
+{"stage": "tts_request", "t": 18721.626306215, "pid": 9960, "src": "ws", "recv": 18753.0177521, "lt": 18752.964980292, "tt": 2.9843}
+{"stage": "tts_first_audio", "t": 18721.665263478, "pid": 9960, "src": "ws", "recv": 18753.054166, "lt": 18753.003937555, "tt": 3.0233}
+{"stage": "audio_out", "t": 18721.672448211, "pid": 9960, "src": "ws", "recv": 18753.0654127, "lt": 18753.011122288, "tt": 3.0305}
+{"stage": "audio_out", "t": 18721.672533765, "pid": 9960, "src": "ws", "recv": 18753.0654329, "lt": 18753.011207842, "tt": 3.0306}
+{"stage": "bot_stopped", "t": 18724.560298573, "pid": 9960, "src": "ws", "recv": 18755.9478284, "lt": 18755.89897265, "tt": 5.9183}
+{"stage": "bot_stopped", "t": 18724.560382776, "pid": 9960, "src": "ws", "recv": 18755.947852, "lt": 18755.899056853, "tt": 5.9184}
+{"stage": "llm_request", "t": 18724.56664122, "pid": 9960, "messages": 21, "chars": 10245, "est_tokens": 2561, "src": "ws", "recv": 18755.9532771, "lt": 18755.905315297, "tt": 5.9247}

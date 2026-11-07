@@ -1,0 +1,62 @@
+{
+  "text": "I want to learn to play the guitar.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.0,
+        0.28
+      ]
+    },
+    {
+      "text": "want",
+      "timestamp": [
+        0.28,
+        0.5
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.5,
+        0.64
+      ]
+    },
+    {
+      "text": "learn",
+      "timestamp": [
+        0.64,
+        0.82
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.82,
+        1.02
+      ]
+    },
+    {
+      "text": "play",
+      "timestamp": [
+        1.02,
+        1.3
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        1.3,
+        1.46
+      ]
+    },
+    {
+      "text": "guitar.",
+      "timestamp": [
+        1.46,
+        1.82
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

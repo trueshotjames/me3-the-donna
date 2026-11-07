@@ -1,0 +1,104 @@
+{
+  "text": "I want to start learning a new language. Either way, do we need milk?",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.0,
+        0.28
+      ]
+    },
+    {
+      "text": "want",
+      "timestamp": [
+        0.28,
+        0.46
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.46,
+        0.58
+      ]
+    },
+    {
+      "text": "start",
+      "timestamp": [
+        0.58,
+        0.76
+      ]
+    },
+    {
+      "text": "learning",
+      "timestamp": [
+        0.76,
+        1.24
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        1.24,
+        1.4
+      ]
+    },
+    {
+      "text": "new",
+      "timestamp": [
+        1.4,
+        1.6
+      ]
+    },
+    {
+      "text": "language.",
+      "timestamp": [
+        1.6,
+        2.2
+      ]
+    },
+    {
+      "text": "Either",
+      "timestamp": [
+        7.25,
+        7.61
+      ]
+    },
+    {
+      "text": "way,",
+      "timestamp": [
+        7.61,
+        7.85
+      ]
+    },
+    {
+      "text": "do",
+      "timestamp": [
+        7.89,
+        7.97
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        7.97,
+        8.07
+      ]
+    },
+    {
+      "text": "need",
+      "timestamp": [
+        8.07,
+        8.23
+      ]
+    },
+    {
+      "text": "milk?",
+      "timestamp": [
+        8.23,
+        8.41
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

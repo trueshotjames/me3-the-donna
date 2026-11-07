@@ -1,0 +1,153 @@
+{
+  "text": "Do you want tips on finding a house in a better neighborhood, or are you asking about a specific price range?",
+  "chunks": [
+    {
+      "text": "Do",
+      "timestamp": [
+        9.36,
+        9.82
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        9.82,
+        9.94
+      ]
+    },
+    {
+      "text": "want",
+      "timestamp": [
+        9.94,
+        10.12
+      ]
+    },
+    {
+      "text": "tips",
+      "timestamp": [
+        10.12,
+        10.34
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        10.34,
+        10.58
+      ]
+    },
+    {
+      "text": "finding",
+      "timestamp": [
+        10.58,
+        10.86
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        10.86,
+        11.04
+      ]
+    },
+    {
+      "text": "house",
+      "timestamp": [
+        11.04,
+        11.3
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        11.3,
+        11.46
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.46,
+        11.58
+      ]
+    },
+    {
+      "text": "better",
+      "timestamp": [
+        11.58,
+        11.72
+      ]
+    },
+    {
+      "text": "neighborhood,",
+      "timestamp": [
+        11.72,
+        12.22
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        12.54,
+        12.78
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        12.78,
+        12.96
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        12.96,
+        13.12
+      ]
+    },
+    {
+      "text": "asking",
+      "timestamp": [
+        13.12,
+        13.48
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        13.48,
+        13.72
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        13.72,
+        13.86
+      ]
+    },
+    {
+      "text": "specific",
+      "timestamp": [
+        13.86,
+        14.22
+      ]
+    },
+    {
+      "text": "price",
+      "timestamp": [
+        14.22,
+        14.56
+      ]
+    },
+    {
+      "text": "range?",
+      "timestamp": [
+        14.56,
+        14.92
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

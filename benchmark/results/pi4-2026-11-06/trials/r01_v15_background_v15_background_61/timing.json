@@ -1,0 +1,93 @@
+{
+  "trial": "r01_v15_background_v15_background_61",
+  "group": "v15_background",
+  "clip": "v15_background_61",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 14.208,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.168
+    },
+    {
+      "name": "overlap",
+      "t": 4.38,
+      "len": 1.811
+    }
+  ],
+  "live_bot_starts": [
+    2.88
+  ],
+  "live_bot_ends": [
+    5.024
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 3
+  },
+  "clip_meta": {
+    "context_text": "What's the score of the Mariners game?",
+    "current_turn_text": "",
+    "overlap_text": "Can someone help me open this jar?",
+    "overlap_duration": 1.81,
+    "overlap_window": [
+      6.043,
+      7.854
+    ],
+    "source_id": "61"
+  },
+  "mono": [
+    16330.5057675,
+    16344.7029534
+  ],
+  "bot_segments": [
+    [
+      2.85,
+      5.054
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.168
+  ],
+  "overlap_played": true,
+  "t_stop": 0.6040000000000001,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.45,
+    6.11
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "latency": null,
+  "actual": "stopped after 0.60 s, did not come back",
+  "overlap_class": "stopped",
+  "label_provisional": "Unknown",
+  "verdict": "✗ stopped, silent",
+  "ok": false,
+  "marks": 54,
+  "final": {
+    "t_stop": 0.6040000000000001,
+    "t_resp": null,
+    "label": "Unknown",
+    "voice_delta": {
+      "wpm": null,
+      "pitch_mean": -61.298406817928,
+      "pitch_sd": -16.328140051474982,
+      "intensity_mean": -3.8858458746441684,
+      "intensity_sd": -2.6754221652847114,
+      "utmosv2": null
+    },
+    "transcript": "I'm not able to get wide scores right now.",
+    "judge_label": "Unknown",
+    "ok": false,
+    "verdict": "✗ Unknown"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

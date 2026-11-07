@@ -1,0 +1,93 @@
+{
+  "trial": "r05_v15_background_v15_background_98",
+  "group": "v15_background",
+  "clip": "v15_background_98",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 13.44,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.784
+    },
+    {
+      "name": "overlap",
+      "t": 3.9,
+      "len": 1.532
+    }
+  ],
+  "live_bot_starts": [
+    2.4
+  ],
+  "live_bot_ends": [
+    4.192
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Play a lullaby playlist.",
+    "current_turn_text": "",
+    "overlap_text": "I misplaced my passport.",
+    "overlap_duration": 1.53,
+    "overlap_window": [
+      5.532,
+      7.064
+    ],
+    "source_id": "98"
+  },
+  "mono": [
+    17560.95842,
+    17574.3979329
+  ],
+  "bot_segments": [
+    [
+      2.37,
+      4.222
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.784
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2520000000000002,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    3.97,
+    5.406
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "latency": null,
+  "actual": "stopped after 0.25 s, did not come back",
+  "overlap_class": "stopped",
+  "label_provisional": "Unknown",
+  "verdict": "✗ stopped, silent",
+  "ok": false,
+  "marks": 40,
+  "final": {
+    "t_stop": 0.2520000000000002,
+    "t_resp": null,
+    "label": "Unknown",
+    "voice_delta": {
+      "wpm": null,
+      "pitch_mean": null,
+      "pitch_sd": null,
+      "intensity_mean": null,
+      "intensity_sd": null,
+      "utmosv2": null
+    },
+    "transcript": "I'm unable to play music right now.",
+    "judge_label": "Unknown",
+    "ok": false,
+    "verdict": "✗ Unknown"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

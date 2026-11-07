@@ -1,0 +1,83 @@
+{
+  "text": "I'm sorry, I can't look up the lunar calendar right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        1.9,
+        2.36
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        2.36,
+        2.74
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        3.0,
+        3.08
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.08,
+        3.38
+      ]
+    },
+    {
+      "text": "look",
+      "timestamp": [
+        3.38,
+        3.48
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        3.48,
+        3.66
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.66,
+        3.82
+      ]
+    },
+    {
+      "text": "lunar",
+      "timestamp": [
+        3.82,
+        4.0
+      ]
+    },
+    {
+      "text": "calendar",
+      "timestamp": [
+        4.0,
+        4.56
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.56,
+        4.84
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        4.84,
+        5.22
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

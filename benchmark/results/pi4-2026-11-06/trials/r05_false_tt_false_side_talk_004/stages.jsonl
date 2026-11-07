@@ -1,0 +1,19 @@
+{"stage": "vad_start", "t": 17277.991761098, "pid": 9960, "src": "ws", "recv": 17309.3595531, "lt": 17309.330435175, "tt": 0.2139}
+{"stage": "vad_start", "t": 17277.991849282, "pid": 9960, "src": "ws", "recv": 17309.3595766, "lt": 17309.330523359, "tt": 0.214}
+{"stage": "asr_partial", "t": 17278.404683004, "pid": 9960, "text": "My", "src": "ws", "recv": 17309.7709431, "lt": 17309.743357081, "tt": 0.6269}
+{"stage": "interrupted", "t": 17278.526877537, "pid": 9960, "src": "ws", "recv": 17309.8944871, "lt": 17309.865551614, "tt": 0.7491}
+{"stage": "interrupted", "t": 17278.526966203, "pid": 9960, "src": "ws", "recv": 17309.8945143, "lt": 17309.86564028, "tt": 0.7491}
+{"stage": "asr_partial", "t": 17278.645225953, "pid": 9960, "text": "Mateo", "src": "ws", "recv": 17310.0112457, "lt": 17309.98390003, "tt": 0.8674}
+{"stage": "asr_partial", "t": 17278.853351718, "pid": 9960, "text": "Matteo,", "src": "ws", "recv": 17310.2206299, "lt": 17310.192025795, "tt": 1.0755}
+{"stage": "asr_partial", "t": 17279.126948287, "pid": 9960, "text": "Matteo, pick up", "src": "ws", "recv": 17310.4930895, "lt": 17310.465622364, "tt": 1.3491}
+{"stage": "asr_partial", "t": 17279.333547442, "pid": 9960, "text": "Matteo, pick up the kids", "src": "ws", "recv": 17310.700979, "lt": 17310.672221519, "tt": 1.5557}
+{"stage": "asr_partial", "t": 17279.607088271, "pid": 9960, "text": "Matteo, pick up the kids at three", "src": "ws", "recv": 17310.9731684, "lt": 17310.945762348, "tt": 1.8293}
+{"stage": "asr_partial", "t": 17279.813527558, "pid": 9960, "text": "Matteo, pick up the kids at three. Yeah", "src": "ws", "recv": 17311.1810163, "lt": 17311.152201635, "tt": 2.0357}
+{"stage": "vad_end", "t": 17279.906964676, "pid": 9960, "src": "ws", "recv": 17311.2777596, "lt": 17311.245638753, "tt": 2.1291}
+{"stage": "vad_end", "t": 17279.907017564, "pid": 9960, "src": "ws", "recv": 17311.2777816, "lt": 17311.245691641, "tt": 2.1292}
+{"stage": "llm_request", "t": 17279.919741256, "pid": 9960, "speculative": true, "messages": 37, "chars": 11424, "est_tokens": 2856, "src": "ws", "recv": 17311.2868774, "lt": 17311.258415333, "tt": 2.1419}
+{"stage": "asr_partial", "t": 17279.948550689, "pid": 9960, "text": "Matteo, pick up the kids at three. Yeah?", "src": "ws", "recv": 17311.3195999, "lt": 17311.287224766, "tt": 2.1707}
+{"stage": "asr_final", "t": 17280.054034692, "pid": 9960, "text": "Matteo, pick up the kids at three. Yeah?", "src": "ws", "recv": 17311.4214874, "lt": 17311.392708769, "tt": 2.2762}
+{"stage": "user_stopped", "t": 17280.06198824, "pid": 9960, "src": "ws", "recv": 17311.4324144, "lt": 17311.400662317, "tt": 2.2842}
+{"stage": "user_stopped", "t": 17280.062057017, "pid": 9960, "src": "ws", "recv": 17311.4324314, "lt": 17311.400731094, "tt": 2.2842}
+{"stage": "llm_first_token", "t": 17280.065363772, "pid": 9960, "src": "ws", "recv": 17311.4361152, "lt": 17311.404037849, "tt": 2.2875}

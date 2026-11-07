@@ -1,0 +1,300 @@
+{
+  "text": "Start with a warm shower or face wash to clean the skin. Tune any facial hair or shape your beard if you have one. Use a gentle cleanser on your body, then rinse thoroughly. Apply a moisturizer to keep your skin hydrated.",
+  "chunks": [
+    {
+      "text": "Start",
+      "timestamp": [
+        3.38,
+        3.86
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        3.86,
+        4.12
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.12,
+        4.24
+      ]
+    },
+    {
+      "text": "warm",
+      "timestamp": [
+        4.24,
+        4.52
+      ]
+    },
+    {
+      "text": "shower",
+      "timestamp": [
+        4.52,
+        4.94
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        4.94,
+        5.22
+      ]
+    },
+    {
+      "text": "face",
+      "timestamp": [
+        5.22,
+        5.48
+      ]
+    },
+    {
+      "text": "wash",
+      "timestamp": [
+        5.48,
+        5.8
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        5.8,
+        6.06
+      ]
+    },
+    {
+      "text": "clean",
+      "timestamp": [
+        6.06,
+        6.32
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        6.32,
+        6.5
+      ]
+    },
+    {
+      "text": "skin.",
+      "timestamp": [
+        6.5,
+        6.82
+      ]
+    },
+    {
+      "text": "Tune",
+      "timestamp": [
+        7.04,
+        7.16
+      ]
+    },
+    {
+      "text": "any",
+      "timestamp": [
+        7.16,
+        7.42
+      ]
+    },
+    {
+      "text": "facial",
+      "timestamp": [
+        7.42,
+        7.74
+      ]
+    },
+    {
+      "text": "hair",
+      "timestamp": [
+        7.74,
+        8.06
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        8.06,
+        8.28
+      ]
+    },
+    {
+      "text": "shape",
+      "timestamp": [
+        8.28,
+        8.54
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        8.54,
+        8.7
+      ]
+    },
+    {
+      "text": "beard",
+      "timestamp": [
+        8.7,
+        8.9
+      ]
+    },
+    {
+      "text": "if",
+      "timestamp": [
+        8.9,
+        9.08
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        9.08,
+        9.22
+      ]
+    },
+    {
+      "text": "have",
+      "timestamp": [
+        9.22,
+        9.44
+      ]
+    },
+    {
+      "text": "one.",
+      "timestamp": [
+        9.44,
+        9.66
+      ]
+    },
+    {
+      "text": "Use",
+      "timestamp": [
+        9.82,
+        9.94
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        9.94,
+        10.08
+      ]
+    },
+    {
+      "text": "gentle",
+      "timestamp": [
+        10.08,
+        10.34
+      ]
+    },
+    {
+      "text": "cleanser",
+      "timestamp": [
+        10.34,
+        10.88
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        10.88,
+        11.02
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        11.02,
+        11.12
+      ]
+    },
+    {
+      "text": "body,",
+      "timestamp": [
+        11.12,
+        11.48
+      ]
+    },
+    {
+      "text": "then",
+      "timestamp": [
+        11.78,
+        11.96
+      ]
+    },
+    {
+      "text": "rinse",
+      "timestamp": [
+        11.96,
+        12.2
+      ]
+    },
+    {
+      "text": "thoroughly.",
+      "timestamp": [
+        12.2,
+        12.58
+      ]
+    },
+    {
+      "text": "Apply",
+      "timestamp": [
+        12.76,
+        12.98
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        12.98,
+        13.2
+      ]
+    },
+    {
+      "text": "moisturizer",
+      "timestamp": [
+        13.2,
+        13.68
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        13.68,
+        14.1
+      ]
+    },
+    {
+      "text": "keep",
+      "timestamp": [
+        14.1,
+        14.32
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        14.32,
+        14.48
+      ]
+    },
+    {
+      "text": "skin",
+      "timestamp": [
+        14.48,
+        14.76
+      ]
+    },
+    {
+      "text": "hydrated.",
+      "timestamp": [
+        14.76,
+        15.34
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

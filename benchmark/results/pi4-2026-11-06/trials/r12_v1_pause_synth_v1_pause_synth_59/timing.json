@@ -1,0 +1,70 @@
+{
+  "trial": "r12_v1_pause_synth_v1_pause_synth_59",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_59",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 15.936,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 6.965375
+    }
+  ],
+  "live_bot_starts": [
+    0.0,
+    8.512
+  ],
+  "live_bot_ends": [
+    0.384,
+    15.584
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      3.7800000000000002,
+      5.16
+    ],
+    "source_id": "59",
+    "text": "I'm redecorating my living room. I think I'll paint the walls first and then [UH] [UH] the curtain should probably match for."
+  },
+  "mono": [
+    19443.4106777,
+    19459.3585986
+  ],
+  "bot_segments": [
+    [
+      0.0,
+      0.414
+    ],
+    [
+      8.482,
+      15.614
+    ]
+  ],
+  "play_first": [
+    0.0,
+    6.965375
+  ],
+  "tor": 0,
+  "first_start": 0.0,
+  "spoke_s": 0.414,
+  "cut_in_during_pause": false,
+  "actual": "spoke 0.4 s at 0.0 s",
+  "verdict": "✓ TOR 0?",
+  "ok": true,
+  "marks": 60,
+  "final": {
+    "tor": 0,
+    "words": 1,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "backstreet. Start with the wall color you love. Then pick a curtain fabric that echoes that hue or its accent tones for a cohesive look."
+  },
+  "scored_at": "2026-11-06T19:14:54+08:00"
+}

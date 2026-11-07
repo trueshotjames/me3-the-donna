@@ -1,0 +1,328 @@
+{
+  "text": "I can't set reminders right now, but changing your car's oil every 5 to 7 ,000 miles is a good rule of thumb. I'm unable to create reminders at the moment. I can't set a reminder right now. I'm not able to set reminders right now.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.0,
+        1.1
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        6.76,
+        7.04
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        7.04,
+        7.16
+      ]
+    },
+    {
+      "text": "reminders",
+      "timestamp": [
+        7.16,
+        7.46
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        7.46,
+        7.86
+      ]
+    },
+    {
+      "text": "now,",
+      "timestamp": [
+        7.86,
+        8.18
+      ]
+    },
+    {
+      "text": "but",
+      "timestamp": [
+        8.46,
+        8.7
+      ]
+    },
+    {
+      "text": "changing",
+      "timestamp": [
+        8.7,
+        9.04
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        9.04,
+        9.26
+      ]
+    },
+    {
+      "text": "car's",
+      "timestamp": [
+        9.26,
+        9.62
+      ]
+    },
+    {
+      "text": "oil",
+      "timestamp": [
+        9.62,
+        9.82
+      ]
+    },
+    {
+      "text": "every",
+      "timestamp": [
+        9.82,
+        10.14
+      ]
+    },
+    {
+      "text": "5",
+      "timestamp": [
+        10.14,
+        10.48
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        10.48,
+        10.62
+      ]
+    },
+    {
+      "text": "7",
+      "timestamp": [
+        10.62,
+        10.88
+      ]
+    },
+    {
+      "text": ",000",
+      "timestamp": [
+        10.88,
+        11.26
+      ]
+    },
+    {
+      "text": "miles",
+      "timestamp": [
+        11.26,
+        11.58
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        11.58,
+        11.9
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.9,
+        12.02
+      ]
+    },
+    {
+      "text": "good",
+      "timestamp": [
+        12.02,
+        12.18
+      ]
+    },
+    {
+      "text": "rule",
+      "timestamp": [
+        12.18,
+        12.44
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        12.44,
+        12.56
+      ]
+    },
+    {
+      "text": "thumb.",
+      "timestamp": [
+        12.56,
+        12.84
+      ]
+    },
+    {
+      "text": "I'm",
+      "timestamp": [
+        12.98,
+        13.14
+      ]
+    },
+    {
+      "text": "unable",
+      "timestamp": [
+        13.14,
+        13.46
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        13.46,
+        13.7
+      ]
+    },
+    {
+      "text": "create",
+      "timestamp": [
+        13.7,
+        14.0
+      ]
+    },
+    {
+      "text": "reminders",
+      "timestamp": [
+        14.0,
+        14.5
+      ]
+    },
+    {
+      "text": "at",
+      "timestamp": [
+        14.5,
+        14.76
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        14.76,
+        14.88
+      ]
+    },
+    {
+      "text": "moment.",
+      "timestamp": [
+        14.88,
+        15.18
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        15.52,
+        15.6
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        15.6,
+        15.94
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        15.94,
+        16.06
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        16.06,
+        16.16
+      ]
+    },
+    {
+      "text": "reminder",
+      "timestamp": [
+        16.16,
+        16.48
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        16.48,
+        16.76
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        16.76,
+        17.02
+      ]
+    },
+    {
+      "text": "I'm",
+      "timestamp": [
+        17.14,
+        17.3
+      ]
+    },
+    {
+      "text": "not",
+      "timestamp": [
+        17.3,
+        17.44
+      ]
+    },
+    {
+      "text": "able",
+      "timestamp": [
+        17.44,
+        17.72
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        17.72,
+        17.88
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        17.88,
+        18.04
+      ]
+    },
+    {
+      "text": "reminders",
+      "timestamp": [
+        18.04,
+        18.44
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        18.44,
+        18.78
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        18.78,
+        19.1
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,55 @@
+{
+  "text": "I want to watch something exciting tonight.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.0,
+        0.34
+      ]
+    },
+    {
+      "text": "want",
+      "timestamp": [
+        0.34,
+        0.5
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.5,
+        0.68
+      ]
+    },
+    {
+      "text": "watch",
+      "timestamp": [
+        0.68,
+        0.86
+      ]
+    },
+    {
+      "text": "something",
+      "timestamp": [
+        0.86,
+        1.16
+      ]
+    },
+    {
+      "text": "exciting",
+      "timestamp": [
+        1.16,
+        1.64
+      ]
+    },
+    {
+      "text": "tonight.",
+      "timestamp": [
+        1.64,
+        2.1
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

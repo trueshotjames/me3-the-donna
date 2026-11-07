@@ -1,0 +1,90 @@
+{
+  "text": "I can't set an alarm right now. Sounds like a crazy commute.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        3.6,
+        4.04
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        4.04,
+        4.3
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        4.3,
+        4.44
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        4.44,
+        4.56
+      ]
+    },
+    {
+      "text": "alarm",
+      "timestamp": [
+        4.56,
+        4.82
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.82,
+        5.02
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        5.02,
+        5.28
+      ]
+    },
+    {
+      "text": "Sounds",
+      "timestamp": [
+        8.6,
+        9.14
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        9.14,
+        9.42
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        9.42,
+        9.52
+      ]
+    },
+    {
+      "text": "crazy",
+      "timestamp": [
+        9.52,
+        9.96
+      ]
+    },
+    {
+      "text": "commute.",
+      "timestamp": [
+        9.96,
+        10.36
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

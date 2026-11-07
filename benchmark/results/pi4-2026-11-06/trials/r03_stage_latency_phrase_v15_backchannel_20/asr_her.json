@@ -1,0 +1,265 @@
+{
+  "text": "Public speaking is the skill of crafting and delivering a spoken message to an audience with a clear purpose. Whether to inform, persuade, or entertain, it starts with defining your objective and knowing who you're speaking to.",
+  "chunks": [
+    {
+      "text": "Public",
+      "timestamp": [
+        3.18,
+        3.7
+      ]
+    },
+    {
+      "text": "speaking",
+      "timestamp": [
+        3.7,
+        4.02
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        4.02,
+        4.36
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.36,
+        4.5
+      ]
+    },
+    {
+      "text": "skill",
+      "timestamp": [
+        4.5,
+        4.74
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        4.74,
+        4.96
+      ]
+    },
+    {
+      "text": "crafting",
+      "timestamp": [
+        4.96,
+        5.4
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        5.4,
+        5.68
+      ]
+    },
+    {
+      "text": "delivering",
+      "timestamp": [
+        5.68,
+        6.08
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        6.08,
+        6.36
+      ]
+    },
+    {
+      "text": "spoken",
+      "timestamp": [
+        6.36,
+        6.64
+      ]
+    },
+    {
+      "text": "message",
+      "timestamp": [
+        6.64,
+        7.02
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        7.02,
+        7.32
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        7.32,
+        7.48
+      ]
+    },
+    {
+      "text": "audience",
+      "timestamp": [
+        7.48,
+        7.78
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        7.78,
+        8.04
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        8.04,
+        8.18
+      ]
+    },
+    {
+      "text": "clear",
+      "timestamp": [
+        8.18,
+        8.36
+      ]
+    },
+    {
+      "text": "purpose.",
+      "timestamp": [
+        8.36,
+        8.8
+      ]
+    },
+    {
+      "text": "Whether",
+      "timestamp": [
+        9.32,
+        9.52
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        9.52,
+        9.72
+      ]
+    },
+    {
+      "text": "inform,",
+      "timestamp": [
+        9.72,
+        10.06
+      ]
+    },
+    {
+      "text": "persuade,",
+      "timestamp": [
+        10.72,
+        11.02
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        11.36,
+        11.4
+      ]
+    },
+    {
+      "text": "entertain,",
+      "timestamp": [
+        11.4,
+        11.86
+      ]
+    },
+    {
+      "text": "it",
+      "timestamp": [
+        12.4,
+        12.5
+      ]
+    },
+    {
+      "text": "starts",
+      "timestamp": [
+        12.5,
+        12.76
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        12.76,
+        13.0
+      ]
+    },
+    {
+      "text": "defining",
+      "timestamp": [
+        13.0,
+        13.38
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        13.38,
+        13.62
+      ]
+    },
+    {
+      "text": "objective",
+      "timestamp": [
+        13.62,
+        14.02
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        14.02,
+        14.4
+      ]
+    },
+    {
+      "text": "knowing",
+      "timestamp": [
+        14.4,
+        14.68
+      ]
+    },
+    {
+      "text": "who",
+      "timestamp": [
+        14.68,
+        14.92
+      ]
+    },
+    {
+      "text": "you're",
+      "timestamp": [
+        14.92,
+        15.1
+      ]
+    },
+    {
+      "text": "speaking",
+      "timestamp": [
+        15.1,
+        15.38
+      ]
+    },
+    {
+      "text": "to.",
+      "timestamp": [
+        15.38,
+        15.7
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

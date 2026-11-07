@@ -1,0 +1,153 @@
+{
+  "text": "If you enjoy mysteries, the Night Circus is a great choice. Its atmospheric plot and magical twists keep you turning pages.",
+  "chunks": [
+    {
+      "text": "If",
+      "timestamp": [
+        5.9,
+        6.38
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        6.38,
+        7.08
+      ]
+    },
+    {
+      "text": "enjoy",
+      "timestamp": [
+        7.08,
+        7.32
+      ]
+    },
+    {
+      "text": "mysteries,",
+      "timestamp": [
+        8.73,
+        10.47
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        11.09,
+        11.19
+      ]
+    },
+    {
+      "text": "Night",
+      "timestamp": [
+        11.19,
+        11.39
+      ]
+    },
+    {
+      "text": "Circus",
+      "timestamp": [
+        11.39,
+        11.81
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        11.81,
+        12.03
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        12.03,
+        12.13
+      ]
+    },
+    {
+      "text": "great",
+      "timestamp": [
+        12.13,
+        12.37
+      ]
+    },
+    {
+      "text": "choice.",
+      "timestamp": [
+        12.37,
+        12.79
+      ]
+    },
+    {
+      "text": "Its",
+      "timestamp": [
+        13.33,
+        13.43
+      ]
+    },
+    {
+      "text": "atmospheric",
+      "timestamp": [
+        13.43,
+        13.99
+      ]
+    },
+    {
+      "text": "plot",
+      "timestamp": [
+        13.99,
+        14.47
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        14.47,
+        14.81
+      ]
+    },
+    {
+      "text": "magical",
+      "timestamp": [
+        14.81,
+        15.23
+      ]
+    },
+    {
+      "text": "twists",
+      "timestamp": [
+        15.23,
+        15.71
+      ]
+    },
+    {
+      "text": "keep",
+      "timestamp": [
+        15.71,
+        16.07
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        16.07,
+        16.29
+      ]
+    },
+    {
+      "text": "turning",
+      "timestamp": [
+        16.29,
+        16.53
+      ]
+    },
+    {
+      "text": "pages.",
+      "timestamp": [
+        16.53,
+        17.01
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

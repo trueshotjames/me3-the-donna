@@ -1,0 +1,293 @@
+{
+  "text": "The stock market is a network of exchanges where shares of publicly listed companies are bought and sold, allowing investors to own a piece of a business and companies to raise capital for growth. Prices are set by supply and demand.",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        3.09,
+        3.57
+      ]
+    },
+    {
+      "text": "stock",
+      "timestamp": [
+        3.57,
+        3.87
+      ]
+    },
+    {
+      "text": "market",
+      "timestamp": [
+        3.87,
+        4.25
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        4.25,
+        4.47
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.47,
+        4.57
+      ]
+    },
+    {
+      "text": "network",
+      "timestamp": [
+        4.57,
+        4.85
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        4.85,
+        5.07
+      ]
+    },
+    {
+      "text": "exchanges",
+      "timestamp": [
+        5.07,
+        5.57
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        5.57,
+        5.97
+      ]
+    },
+    {
+      "text": "shares",
+      "timestamp": [
+        5.97,
+        6.33
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        6.33,
+        6.65
+      ]
+    },
+    {
+      "text": "publicly",
+      "timestamp": [
+        6.65,
+        7.05
+      ]
+    },
+    {
+      "text": "listed",
+      "timestamp": [
+        7.05,
+        7.49
+      ]
+    },
+    {
+      "text": "companies",
+      "timestamp": [
+        7.49,
+        8.03
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        8.03,
+        8.33
+      ]
+    },
+    {
+      "text": "bought",
+      "timestamp": [
+        8.33,
+        8.65
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        8.65,
+        8.85
+      ]
+    },
+    {
+      "text": "sold,",
+      "timestamp": [
+        8.85,
+        9.29
+      ]
+    },
+    {
+      "text": "allowing",
+      "timestamp": [
+        9.69,
+        10.11
+      ]
+    },
+    {
+      "text": "investors",
+      "timestamp": [
+        10.11,
+        10.65
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        10.65,
+        10.97
+      ]
+    },
+    {
+      "text": "own",
+      "timestamp": [
+        10.97,
+        11.25
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.25,
+        11.35
+      ]
+    },
+    {
+      "text": "piece",
+      "timestamp": [
+        11.35,
+        11.59
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        11.59,
+        11.75
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.75,
+        11.85
+      ]
+    },
+    {
+      "text": "business",
+      "timestamp": [
+        11.85,
+        12.17
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        12.17,
+        12.51
+      ]
+    },
+    {
+      "text": "companies",
+      "timestamp": [
+        12.51,
+        12.97
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        12.97,
+        13.27
+      ]
+    },
+    {
+      "text": "raise",
+      "timestamp": [
+        13.27,
+        13.51
+      ]
+    },
+    {
+      "text": "capital",
+      "timestamp": [
+        13.51,
+        13.97
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        13.97,
+        14.19
+      ]
+    },
+    {
+      "text": "growth.",
+      "timestamp": [
+        14.19,
+        14.55
+      ]
+    },
+    {
+      "text": "Prices",
+      "timestamp": [
+        14.77,
+        15.03
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        15.03,
+        15.25
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        15.25,
+        15.49
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        15.49,
+        15.69
+      ]
+    },
+    {
+      "text": "supply",
+      "timestamp": [
+        15.69,
+        16.03
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        16.03,
+        16.29
+      ]
+    },
+    {
+      "text": "demand.",
+      "timestamp": [
+        16.29,
+        16.65
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

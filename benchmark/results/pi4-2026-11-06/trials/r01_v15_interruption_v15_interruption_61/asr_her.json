@@ -1,0 +1,237 @@
+{
+  "text": "You can start by reducing waste, supporting renewable energy, volunteering for local cleanup groups, and advocating for greener policies. For field documentaries, check out the biggest little farm, chasing ice, and our planet.",
+  "chunks": [
+    {
+      "text": "You",
+      "timestamp": [
+        0.0,
+        1.2
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        5.74,
+        5.9
+      ]
+    },
+    {
+      "text": "start",
+      "timestamp": [
+        5.9,
+        6.16
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        6.16,
+        6.38
+      ]
+    },
+    {
+      "text": "reducing",
+      "timestamp": [
+        6.38,
+        6.72
+      ]
+    },
+    {
+      "text": "waste,",
+      "timestamp": [
+        6.72,
+        7.18
+      ]
+    },
+    {
+      "text": "supporting",
+      "timestamp": [
+        7.56,
+        7.96
+      ]
+    },
+    {
+      "text": "renewable",
+      "timestamp": [
+        7.96,
+        8.38
+      ]
+    },
+    {
+      "text": "energy,",
+      "timestamp": [
+        8.38,
+        8.9
+      ]
+    },
+    {
+      "text": "volunteering",
+      "timestamp": [
+        9.44,
+        9.86
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        9.86,
+        10.22
+      ]
+    },
+    {
+      "text": "local",
+      "timestamp": [
+        10.22,
+        10.48
+      ]
+    },
+    {
+      "text": "cleanup",
+      "timestamp": [
+        10.48,
+        10.84
+      ]
+    },
+    {
+      "text": "groups,",
+      "timestamp": [
+        10.84,
+        11.26
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        11.68,
+        11.92
+      ]
+    },
+    {
+      "text": "advocating",
+      "timestamp": [
+        11.92,
+        12.38
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        12.38,
+        12.64
+      ]
+    },
+    {
+      "text": "greener",
+      "timestamp": [
+        12.64,
+        12.96
+      ]
+    },
+    {
+      "text": "policies.",
+      "timestamp": [
+        12.96,
+        13.42
+      ]
+    },
+    {
+      "text": "For",
+      "timestamp": [
+        13.92,
+        13.98
+      ]
+    },
+    {
+      "text": "field",
+      "timestamp": [
+        13.98,
+        14.24
+      ]
+    },
+    {
+      "text": "documentaries,",
+      "timestamp": [
+        14.24,
+        14.94
+      ]
+    },
+    {
+      "text": "check",
+      "timestamp": [
+        15.34,
+        15.6
+      ]
+    },
+    {
+      "text": "out",
+      "timestamp": [
+        15.6,
+        15.78
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        15.78,
+        15.92
+      ]
+    },
+    {
+      "text": "biggest",
+      "timestamp": [
+        15.92,
+        16.18
+      ]
+    },
+    {
+      "text": "little",
+      "timestamp": [
+        16.18,
+        16.52
+      ]
+    },
+    {
+      "text": "farm,",
+      "timestamp": [
+        16.52,
+        16.96
+      ]
+    },
+    {
+      "text": "chasing",
+      "timestamp": [
+        17.4,
+        17.62
+      ]
+    },
+    {
+      "text": "ice,",
+      "timestamp": [
+        17.62,
+        18.02
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        18.5,
+        18.68
+      ]
+    },
+    {
+      "text": "our",
+      "timestamp": [
+        18.68,
+        18.8
+      ]
+    },
+    {
+      "text": "planet.",
+      "timestamp": [
+        18.8,
+        19.16
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

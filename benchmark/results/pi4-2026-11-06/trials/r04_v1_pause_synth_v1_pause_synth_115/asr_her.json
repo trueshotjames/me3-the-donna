@@ -1,0 +1,62 @@
+{
+  "text": "AI is indeed advancing at a remarkable pace.",
+  "chunks": [
+    {
+      "text": "AI",
+      "timestamp": [
+        8.24,
+        8.76
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        8.76,
+        9.0
+      ]
+    },
+    {
+      "text": "indeed",
+      "timestamp": [
+        9.0,
+        9.26
+      ]
+    },
+    {
+      "text": "advancing",
+      "timestamp": [
+        9.26,
+        9.76
+      ]
+    },
+    {
+      "text": "at",
+      "timestamp": [
+        9.76,
+        9.94
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        9.94,
+        10.02
+      ]
+    },
+    {
+      "text": "remarkable",
+      "timestamp": [
+        10.02,
+        10.4
+      ]
+    },
+    {
+      "text": "pace.",
+      "timestamp": [
+        10.4,
+        10.88
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

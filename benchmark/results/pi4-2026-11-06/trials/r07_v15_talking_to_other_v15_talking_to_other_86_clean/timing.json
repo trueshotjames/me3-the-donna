@@ -1,0 +1,62 @@
+{
+  "trial": "r07_v15_talking_to_other_v15_talking_to_other_86_clean",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_86",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 6.592,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.264
+    }
+  ],
+  "live_bot_starts": [
+    3.136
+  ],
+  "live_bot_ends": [
+    5.376
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "How long should I steep green tea?",
+    "current_turn_text": "Yo Mark, meeting's bumped to three o'clock.",
+    "overlap_text": "Yo Mark, meeting's bumped to three o'clock.",
+    "overlap_duration": 2.09,
+    "overlap_window": [
+      6.183,
+      8.273
+    ],
+    "source_id": "86"
+  },
+  "mono": [
+    17885.3372816,
+    17891.9021802
+  ],
+  "bot_segments": [
+    [
+      3.106,
+      5.406
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.264
+  ],
+  "tor": 1,
+  "first_start": 3.106,
+  "spoke_s": 2.3,
+  "actual": "replied after 0.84 s, spoke 2.3 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 27,
+  "final": {
+    "transcript": "Steep green tea for two to three minutes."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

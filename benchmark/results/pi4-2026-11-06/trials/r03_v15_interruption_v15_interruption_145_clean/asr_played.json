@@ -1,0 +1,55 @@
+{
+  "text": "I've been trying to eat healthier lately.",
+  "chunks": [
+    {
+      "text": "I've",
+      "timestamp": [
+        0.0,
+        0.34
+      ]
+    },
+    {
+      "text": "been",
+      "timestamp": [
+        0.34,
+        0.44
+      ]
+    },
+    {
+      "text": "trying",
+      "timestamp": [
+        0.44,
+        0.64
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.64,
+        0.8
+      ]
+    },
+    {
+      "text": "eat",
+      "timestamp": [
+        0.8,
+        0.94
+      ]
+    },
+    {
+      "text": "healthier",
+      "timestamp": [
+        0.94,
+        1.38
+      ]
+    },
+    {
+      "text": "lately.",
+      "timestamp": [
+        1.38,
+        2.16
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

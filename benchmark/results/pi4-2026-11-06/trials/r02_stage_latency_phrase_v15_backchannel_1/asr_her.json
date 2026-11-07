@@ -1,0 +1,398 @@
+{
+  "text": "Due to global warming is the steady increase in Earth's average temperature. It happens because human activities release large amounts of greenhouse gases, mainly carbon dioxide from burning fossil fuels, methane from agriculture and waste, and nitrous oxide from fertilizers. These gases form a heat -trapping blanket that prevents infrared radiation from escaping into space. Peace.",
+  "chunks": [
+    {
+      "text": "Due",
+      "timestamp": [
+        0.0,
+        0.22
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        3.61,
+        4.71
+      ]
+    },
+    {
+      "text": "global",
+      "timestamp": [
+        4.71,
+        4.71
+      ]
+    },
+    {
+      "text": "warming",
+      "timestamp": [
+        4.71,
+        5.17
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        5.17,
+        5.45
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.45,
+        5.63
+      ]
+    },
+    {
+      "text": "steady",
+      "timestamp": [
+        5.63,
+        5.95
+      ]
+    },
+    {
+      "text": "increase",
+      "timestamp": [
+        5.95,
+        6.41
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        6.41,
+        6.71
+      ]
+    },
+    {
+      "text": "Earth's",
+      "timestamp": [
+        6.71,
+        7.11
+      ]
+    },
+    {
+      "text": "average",
+      "timestamp": [
+        7.11,
+        7.49
+      ]
+    },
+    {
+      "text": "temperature.",
+      "timestamp": [
+        7.49,
+        8.11
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        8.31,
+        8.37
+      ]
+    },
+    {
+      "text": "happens",
+      "timestamp": [
+        8.37,
+        8.73
+      ]
+    },
+    {
+      "text": "because",
+      "timestamp": [
+        8.73,
+        9.05
+      ]
+    },
+    {
+      "text": "human",
+      "timestamp": [
+        9.05,
+        9.35
+      ]
+    },
+    {
+      "text": "activities",
+      "timestamp": [
+        9.35,
+        9.81
+      ]
+    },
+    {
+      "text": "release",
+      "timestamp": [
+        9.81,
+        10.23
+      ]
+    },
+    {
+      "text": "large",
+      "timestamp": [
+        10.23,
+        10.59
+      ]
+    },
+    {
+      "text": "amounts",
+      "timestamp": [
+        10.59,
+        10.91
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        10.91,
+        11.09
+      ]
+    },
+    {
+      "text": "greenhouse",
+      "timestamp": [
+        11.09,
+        11.37
+      ]
+    },
+    {
+      "text": "gases,",
+      "timestamp": [
+        11.37,
+        12.01
+      ]
+    },
+    {
+      "text": "mainly",
+      "timestamp": [
+        12.55,
+        12.83
+      ]
+    },
+    {
+      "text": "carbon",
+      "timestamp": [
+        12.83,
+        13.19
+      ]
+    },
+    {
+      "text": "dioxide",
+      "timestamp": [
+        13.19,
+        13.55
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        13.55,
+        14.01
+      ]
+    },
+    {
+      "text": "burning",
+      "timestamp": [
+        14.01,
+        14.31
+      ]
+    },
+    {
+      "text": "fossil",
+      "timestamp": [
+        14.31,
+        14.69
+      ]
+    },
+    {
+      "text": "fuels,",
+      "timestamp": [
+        14.69,
+        15.13
+      ]
+    },
+    {
+      "text": "methane",
+      "timestamp": [
+        15.57,
+        15.97
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        15.97,
+        16.25
+      ]
+    },
+    {
+      "text": "agriculture",
+      "timestamp": [
+        16.25,
+        16.75
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        16.75,
+        17.07
+      ]
+    },
+    {
+      "text": "waste,",
+      "timestamp": [
+        17.07,
+        17.39
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        17.97,
+        18.07
+      ]
+    },
+    {
+      "text": "nitrous",
+      "timestamp": [
+        18.07,
+        18.47
+      ]
+    },
+    {
+      "text": "oxide",
+      "timestamp": [
+        18.47,
+        18.91
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        18.91,
+        19.15
+      ]
+    },
+    {
+      "text": "fertilizers.",
+      "timestamp": [
+        19.15,
+        19.79
+      ]
+    },
+    {
+      "text": "These",
+      "timestamp": [
+        20.13,
+        20.27
+      ]
+    },
+    {
+      "text": "gases",
+      "timestamp": [
+        20.27,
+        20.61
+      ]
+    },
+    {
+      "text": "form",
+      "timestamp": [
+        20.61,
+        20.95
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        20.95,
+        21.09
+      ]
+    },
+    {
+      "text": "heat",
+      "timestamp": [
+        21.09,
+        21.31
+      ]
+    },
+    {
+      "text": "-trapping",
+      "timestamp": [
+        21.31,
+        21.69
+      ]
+    },
+    {
+      "text": "blanket",
+      "timestamp": [
+        21.69,
+        22.09
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        22.09,
+        22.39
+      ]
+    },
+    {
+      "text": "prevents",
+      "timestamp": [
+        22.39,
+        22.75
+      ]
+    },
+    {
+      "text": "infrared",
+      "timestamp": [
+        22.75,
+        23.23
+      ]
+    },
+    {
+      "text": "radiation",
+      "timestamp": [
+        23.23,
+        23.87
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        23.87,
+        24.13
+      ]
+    },
+    {
+      "text": "escaping",
+      "timestamp": [
+        24.13,
+        24.59
+      ]
+    },
+    {
+      "text": "into",
+      "timestamp": [
+        24.59,
+        24.85
+      ]
+    },
+    {
+      "text": "space.",
+      "timestamp": [
+        24.85,
+        25.23
+      ]
+    },
+    {
+      "text": "Peace.",
+      "timestamp": [
+        25.23,
+        25.35
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

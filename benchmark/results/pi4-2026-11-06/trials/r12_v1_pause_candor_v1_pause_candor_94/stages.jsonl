@@ -1,0 +1,76 @@
+{"stage": "vad_start", "t": 19599.207712648, "pid": 9960, "src": "ws", "recv": 19630.6083197, "lt": 19630.546386725, "tt": 0.1177}
+{"stage": "vad_start", "t": 19599.20780961, "pid": 9960, "src": "ws", "recv": 19630.6083538, "lt": 19630.546483687, "tt": 0.1178}
+{"stage": "interrupted", "t": 19599.888575467, "pid": 9960, "src": "ws", "recv": 19631.2888404, "lt": 19631.227249544, "tt": 0.7986}
+{"stage": "interrupted", "t": 19599.888666948, "pid": 9960, "src": "ws", "recv": 19631.2888632, "lt": 19631.227341025, "tt": 0.7987}
+{"stage": "asr_partial", "t": 19600.086039766, "pid": 9960, "text": "Look you up,", "src": "ws", "recv": 19631.4852136, "lt": 19631.424713843, "tt": 0.996}
+{"stage": "asr_partial", "t": 19600.166540798, "pid": 9960, "text": "Look you up, man.", "src": "ws", "recv": 19631.5655925, "lt": 19631.505214875, "tt": 1.0765}
+{"stage": "vad_end", "t": 19600.263143295, "pid": 9960, "src": "ws", "recv": 19631.6619218, "lt": 19631.601817372, "tt": 1.1731}
+{"stage": "vad_end", "t": 19600.263211424, "pid": 9960, "src": "ws", "recv": 19631.6619439, "lt": 19631.601885501, "tt": 1.1732}
+{"stage": "llm_request", "t": 19600.289652939, "pid": 9960, "speculative": true, "messages": 27, "chars": 13054, "est_tokens": 3264, "src": "ws", "recv": 19631.6918217, "lt": 19631.628327016, "tt": 1.1997}
+{"stage": "asr_partial", "t": 19600.366009592, "pid": 9960, "text": "Look you up, man.", "src": "ws", "recv": 19631.7653026, "lt": 19631.704683669, "tt": 1.276}
+{"stage": "vad_start", "t": 19600.41756873, "pid": 9960, "src": "ws", "recv": 19631.8163224, "lt": 19631.756242807, "tt": 1.3276}
+{"stage": "vad_start", "t": 19600.417626044, "pid": 9960, "src": "ws", "recv": 19631.8163464, "lt": 19631.756300121, "tt": 1.3276}
+{"stage": "asr_partial", "t": 19600.566398709, "pid": 9960, "text": "Look you up, man.", "src": "ws", "recv": 19631.9655335, "lt": 19631.905072786, "tt": 1.4764}
+{"stage": "llm_cancel", "t": 19600.843698102, "pid": 9960, "src": "ws", "recv": 19632.2419262, "lt": 19632.182372179, "tt": 1.7537}
+{"stage": "vad_end", "t": 19600.961240788, "pid": 9960, "src": "ws", "recv": 19632.3606553, "lt": 19632.299914865, "tt": 1.8712}
+{"stage": "vad_end", "t": 19600.961292288, "pid": 9960, "src": "ws", "recv": 19632.3606825, "lt": 19632.299966365, "tt": 1.8713}
+{"stage": "asr_partial", "t": 19601.048713611, "pid": 9960, "text": "Look out, man.", "src": "ws", "recv": 19632.4486414, "lt": 19632.387387688, "tt": 1.9587}
+{"stage": "llm_request", "t": 19601.052234553, "pid": 9960, "speculative": true, "messages": 27, "chars": 13204, "est_tokens": 3301, "src": "ws", "recv": 19632.4548191, "lt": 19632.39090863, "tt": 1.9622}
+{"stage": "asr_partial", "t": 19601.329774425, "pid": 9960, "text": "Looky up, man.", "src": "ws", "recv": 19632.7293551, "lt": 19632.668448502, "tt": 2.2398}
+{"stage": "llm_cancel", "t": 19601.329853035, "pid": 9960, "src": "ws", "recv": 19632.7293756, "lt": 19632.668527112, "tt": 2.2399}
+{"stage": "llm_request", "t": 19601.33553873, "pid": 9960, "speculative": true, "messages": 27, "chars": 13204, "est_tokens": 3301, "src": "ws", "recv": 19632.7376169, "lt": 19632.674212807, "tt": 2.2455}
+{"stage": "asr_partial", "t": 19601.563733494, "pid": 9960, "text": "Looky up, man.", "src": "ws", "recv": 19632.9639343, "lt": 19632.902407571, "tt": 2.4737}
+{"stage": "asr_partial", "t": 19601.806510094, "pid": 9960, "text": "Looky up, man.", "src": "ws", "recv": 19633.2055881, "lt": 19633.145184171, "tt": 2.7165}
+{"stage": "asr_partial", "t": 19602.006376253, "pid": 9960, "text": "Looky up, man.", "src": "ws", "recv": 19633.4056424, "lt": 19633.34505033, "tt": 2.9164}
+{"stage": "llm_usage", "t": 19602.0946854, "pid": 9960, "prompt_tokens": 2582, "completion_tokens": 49, "src": "ws", "recv": 19633.4949382, "lt": 19633.433359477, "tt": 3.0047}
+{"stage": "asr_partial", "t": 19602.286415226, "pid": 9960, "text": "Looky up, man.", "src": "ws", "recv": 19633.6856081, "lt": 19633.625089303, "tt": 3.1964}
+{"stage": "vad_start", "t": 19602.465391253, "pid": 9960, "src": "ws", "recv": 19633.8648223, "lt": 19633.80406533, "tt": 3.3754}
+{"stage": "vad_start", "t": 19602.465446159, "pid": 9960, "src": "ws", "recv": 19633.864844, "lt": 19633.804120236, "tt": 3.3754}
+{"stage": "llm_cancel", "t": 19602.468334182, "pid": 9960, "src": "ws", "recv": 19633.8664507, "lt": 19633.807008259, "tt": 3.3783}
+{"stage": "asr_partial", "t": 19602.486153665, "pid": 9960, "text": "Looky up, man.", "src": "ws", "recv": 19633.8852435, "lt": 19633.824827742, "tt": 3.3962}
+{"stage": "asr_partial", "t": 19602.766729391, "pid": 9960, "text": "Looky up, man. Um,", "src": "ws", "recv": 19634.1659327, "lt": 19634.105403468002, "tt": 3.6767}
+{"stage": "asr_partial", "t": 19602.965630691, "pid": 9960, "text": "Looky up, man. Um, but there", "src": "ws", "recv": 19634.365139, "lt": 19634.304304768, "tt": 3.8756}
+{"stage": "asr_partial", "t": 19603.246467007, "pid": 9960, "text": "Looky up, man. Um, but there was a", "src": "ws", "recv": 19634.6456751, "lt": 19634.585141084, "tt": 4.1565}
+{"stage": "asr_partial", "t": 19603.443378607, "pid": 9960, "text": "Looky up, man. Um, but there was a same", "src": "ws", "recv": 19634.8426572, "lt": 19634.782052684, "tt": 4.3534}
+{"stage": "asr_partial", "t": 19603.729000831, "pid": 9960, "text": "Looky up, man. Um, but there was a site out", "src": "ws", "recv": 19635.1283631, "lt": 19635.067674908, "tt": 4.639}
+{"stage": "asr_partial", "t": 19603.926601646, "pid": 9960, "text": "Looky up, man. Um, but there was a site average", "src": "ws", "recv": 19635.3258091, "lt": 19635.265275723, "tt": 4.8366}
+{"stage": "asr_partial", "t": 19604.20629227, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertisement", "src": "ws", "recv": 19635.6057365, "lt": 19635.544966347, "tt": 5.1163}
+{"stage": "asr_partial", "t": 19604.408201555, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on", "src": "ws", "recv": 19635.8115883, "lt": 19635.746875632, "tt": 5.3182}
+{"stage": "asr_partial", "t": 19604.685004471, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the", "src": "ws", "recv": 19636.0841082, "lt": 19636.023678548, "tt": 5.595}
+{"stage": "asr_partial", "t": 19604.88643989, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the,", "src": "ws", "recv": 19636.2857016, "lt": 19636.225113967, "tt": 5.7964}
+{"stage": "asr_partial", "t": 19605.166565806, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh,", "src": "ws", "recv": 19636.565757, "lt": 19636.505239883, "tt": 6.0766}
+{"stage": "asr_partial", "t": 19605.366060636, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from", "src": "ws", "recv": 19636.7652363, "lt": 19636.704734713, "tt": 6.2761}
+{"stage": "asr_partial", "t": 19605.643350972, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home", "src": "ws", "recv": 19637.0427519, "lt": 19636.982025049, "tt": 6.5534}
+{"stage": "asr_partial", "t": 19605.883888262, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home", "src": "ws", "recv": 19637.2849024, "lt": 19637.222562339, "tt": 6.7939}
+{"stage": "vad_end", "t": 19605.953669119, "pid": 9960, "src": "ws", "recv": 19637.3533124, "lt": 19637.292343196, "tt": 6.8637}
+{"stage": "vad_end", "t": 19605.953723211, "pid": 9960, "src": "ws", "recv": 19637.3533382, "lt": 19637.292397288, "tt": 6.8637}
+{"stage": "vad_start", "t": 19606.085180405, "pid": 9960, "src": "ws", "recv": 19637.4843251, "lt": 19637.423854482, "tt": 6.9952}
+{"stage": "vad_start", "t": 19606.085239386, "pid": 9960, "src": "ws", "recv": 19637.4843475, "lt": 19637.423913463, "tt": 6.9952}
+{"stage": "asr_partial", "t": 19606.123346398, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home", "src": "ws", "recv": 19637.5226221, "lt": 19637.462020475, "tt": 7.0333}
+{"stage": "asr_partial", "t": 19606.32667074, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home threat", "src": "ws", "recv": 19637.7257824, "lt": 19637.665344817, "tt": 7.2367}
+{"stage": "asr_partial", "t": 19606.606867747, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home thread.", "src": "ws", "recv": 19638.0062882, "lt": 19637.945541824, "tt": 7.5169}
+{"stage": "vad_end", "t": 19606.628688925, "pid": 9960, "src": "ws", "recv": 19638.0352782, "lt": 19637.967363002, "tt": 7.5387}
+{"stage": "vad_end", "t": 19606.62874448, "pid": 9960, "src": "ws", "recv": 19638.0353021, "lt": 19637.967418557, "tt": 7.5387}
+{"stage": "llm_request", "t": 19606.64118971, "pid": 9960, "speculative": true, "messages": 27, "chars": 13275, "est_tokens": 3319, "src": "ws", "recv": 19638.0404645, "lt": 19637.979863787, "tt": 7.5512}
+{"stage": "asr_partial", "t": 19606.807106161, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home thread.", "src": "ws", "recv": 19638.2062008, "lt": 19638.145780238, "tt": 7.7171}
+{"stage": "asr_partial", "t": 19607.08819725, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home thread.", "src": "ws", "recv": 19638.4874547, "lt": 19638.426871327, "tt": 7.9982}
+{"stage": "vad_start", "t": 19607.179066071, "pid": 9960, "src": "ws", "recv": 19638.5788072, "lt": 19638.517740148, "tt": 8.0891}
+{"stage": "vad_start", "t": 19607.179134126, "pid": 9960, "src": "ws", "recv": 19638.5788328, "lt": 19638.517808203, "tt": 8.0891}
+{"stage": "llm_cancel", "t": 19607.182183036, "pid": 9960, "src": "ws", "recv": 19638.5803819, "lt": 19638.520857113, "tt": 8.0922}
+{"stage": "asr_partial", "t": 19607.287324547, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home thread.", "src": "ws", "recv": 19638.6862598, "lt": 19638.625998624, "tt": 8.1973}
+{"stage": "vad_end", "t": 19607.428298411, "pid": 9960, "src": "ws", "recv": 19638.8278808, "lt": 19638.766972488, "tt": 8.3383}
+{"stage": "vad_end", "t": 19607.428353002, "pid": 9960, "src": "ws", "recv": 19638.8279038, "lt": 19638.767027079, "tt": 8.3384}
+{"stage": "asr_partial", "t": 19607.568801243, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home thread that", "src": "ws", "recv": 19638.9682211, "lt": 19638.90747532, "tt": 8.4788}
+{"stage": "asr_final", "t": 19609.27592982, "pid": 9960, "text": "Looky up, man. Um, but there was a site advertised on the, uh, work from home thread that", "src": "ws", "recv": 19640.6777287, "lt": 19640.614603897, "tt": 10.1859}
+{"stage": "llm_request", "t": 19609.282146897, "pid": 9960, "messages": 27, "chars": 13279, "est_tokens": 3320, "src": "ws", "recv": 19640.684349, "lt": 19640.620820974, "tt": 10.1921}
+{"stage": "user_stopped", "t": 19609.282248285, "pid": 9960, "src": "ws", "recv": 19640.6843743, "lt": 19640.620922362, "tt": 10.1923}
+{"stage": "user_stopped", "t": 19609.28228884, "pid": 9960, "src": "ws", "recv": 19640.6843896, "lt": 19640.620962917, "tt": 10.1923}
+{"stage": "llm_first_token", "t": 19609.905887246, "pid": 9960, "src": "ws", "recv": 19641.3133999, "lt": 19641.244561323, "tt": 10.8159}
+{"stage": "llm_usage", "t": 19609.926126387, "pid": 9960, "prompt_tokens": 2601, "completion_tokens": 43, "src": "ws", "recv": 19641.3294454, "lt": 19641.264800464, "tt": 10.8361}
+{"stage": "tts_request", "t": 19609.94903159, "pid": 9960, "src": "ws", "recv": 19641.3517428, "lt": 19641.287705667, "tt": 10.859}
+{"stage": "tts_first_audio", "t": 19610.162385391, "pid": 9960, "src": "ws", "recv": 19641.5622539, "lt": 19641.501059468, "tt": 11.0724}
+{"stage": "audio_out", "t": 19610.168316583, "pid": 9960, "src": "ws", "recv": 19641.5726645, "lt": 19641.50699066, "tt": 11.0783}
+{"stage": "audio_out", "t": 19610.168406286, "pid": 9960, "src": "ws", "recv": 19641.5726876, "lt": 19641.507080363, "tt": 11.0784}
+{"stage": "bot_stopped", "t": 19612.775199815, "pid": 9960, "src": "ws", "recv": 19644.1747431, "lt": 19644.113873892, "tt": 13.6852}
+{"stage": "bot_stopped", "t": 19612.775279944, "pid": 9960, "src": "ws", "recv": 19644.1747754, "lt": 19644.113954021, "tt": 13.6853}
+{"stage": "llm_request", "t": 19612.781006583, "pid": 9960, "messages": 14, "chars": 10302, "est_tokens": 2576, "src": "ws", "recv": 19644.1796072, "lt": 19644.119680660002, "tt": 13.691}

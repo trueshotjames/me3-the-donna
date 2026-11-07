@@ -1,0 +1,76 @@
+{
+  "text": "It's 10 .23 in the morning on Saturday in Tokyo.",
+  "chunks": [
+    {
+      "text": "It's",
+      "timestamp": [
+        1.71,
+        2.29
+      ]
+    },
+    {
+      "text": "10",
+      "timestamp": [
+        2.29,
+        2.45
+      ]
+    },
+    {
+      "text": ".23",
+      "timestamp": [
+        2.45,
+        2.81
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        2.81,
+        3.07
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.07,
+        3.15
+      ]
+    },
+    {
+      "text": "morning",
+      "timestamp": [
+        3.15,
+        3.45
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        3.45,
+        3.69
+      ]
+    },
+    {
+      "text": "Saturday",
+      "timestamp": [
+        3.69,
+        4.09
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        4.09,
+        4.35
+      ]
+    },
+    {
+      "text": "Tokyo.",
+      "timestamp": [
+        4.35,
+        4.59
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

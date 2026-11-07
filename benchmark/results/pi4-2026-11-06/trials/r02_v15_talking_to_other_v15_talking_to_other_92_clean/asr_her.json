@@ -1,0 +1,20 @@
+{
+  "text": "12 .9",
+  "chunks": [
+    {
+      "text": "12",
+      "timestamp": [
+        3.09,
+        3.63
+      ]
+    },
+    {
+      "text": ".9",
+      "timestamp": [
+        3.63,
+        4.17
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

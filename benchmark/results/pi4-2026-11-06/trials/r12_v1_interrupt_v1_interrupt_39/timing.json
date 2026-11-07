@@ -1,0 +1,84 @@
+{
+  "trial": "r12_v1_interrupt_v1_interrupt_39",
+  "group": "v1_interrupt",
+  "clip": "v1_interrupt_39",
+  "variant": "main",
+  "expected": "stop, then answer the new request",
+  "duration": 21.696,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.08
+    },
+    {
+      "name": "overlap",
+      "t": 4.508,
+      "len": 2.656
+    }
+  ],
+  "live_bot_starts": [
+    3.008,
+    8.0
+  ],
+  "live_bot_ends": [
+    5.12,
+    21.344
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Is morning the best time to exercise?",
+    "interrupt_text": "Actually, could we switch to diet tips instead?",
+    "source_id": "39"
+  },
+  "mono": [
+    19551.2339099,
+    19572.9267085
+  ],
+  "bot_segments": [
+    [
+      2.978,
+      5.15
+    ],
+    [
+      7.97,
+      21.374
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.08
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2840000000000007,
+  "t_resp": 1.2519999999999998,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.866,
+    6.718
+  ],
+  "tor": 1,
+  "first_start": 7.97,
+  "spoke_s": 7.194,
+  "latency": 0.806,
+  "actual": "stopped after 0.28 s, back 1.25 s after",
+  "verdict": "✓ yielded, 0.81 s",
+  "ok": true,
+  "marks": 56,
+  "final": {
+    "tor": 1,
+    "words": 19,
+    "latency": 1.2519999999999998,
+    "t_stop": 0.2840000000000007,
+    "verdict": "✓ yielded, 1.25 s",
+    "ok": true,
+    "rating": 5,
+    "transcript": "Morning can be great for exercise because morning workouts can boost metabolism. But the best time is when you can stay consistent. For diet, focus on balanced meals with protein, fiber and healthy fats. Stay hydrated and limit processed sugars."
+  },
+  "scored_at": "2026-11-06T19:14:54+08:00"
+}

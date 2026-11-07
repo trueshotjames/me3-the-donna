@@ -1,0 +1,24 @@
+{"stage": "vad_start", "t": 18647.635338672, "pid": 9960, "src": "ws", "recv": 18679.0228579, "lt": 18678.974012749, "tt": 0.2574}
+{"stage": "vad_start", "t": 18647.635433264, "pid": 9960, "src": "ws", "recv": 18679.0228811, "lt": 18678.974107341, "tt": 0.2575}
+{"stage": "asr_partial", "t": 18647.930151585, "pid": 9960, "text": "I", "src": "ws", "recv": 18679.3178836, "lt": 18679.268825662, "tt": 0.5522}
+{"stage": "interrupted", "t": 18648.127842022, "pid": 9960, "src": "ws", "recv": 18679.5154277, "lt": 18679.466516099, "tt": 0.7499}
+{"stage": "interrupted", "t": 18648.127930188, "pid": 9960, "src": "ws", "recv": 18679.515452, "lt": 18679.466604265, "tt": 0.75}
+{"stage": "asr_partial", "t": 18648.403393634, "pid": 9960, "text": "I wanna learn", "src": "ws", "recv": 18679.789763, "lt": 18679.742067711, "tt": 1.0254}
+{"stage": "asr_partial", "t": 18648.605698884, "pid": 9960, "text": "I wanna learn to", "src": "ws", "recv": 18679.9920136, "lt": 18679.944372961, "tt": 1.2277}
+{"stage": "asr_partial", "t": 18648.883649752, "pid": 9960, "text": "I wanna learn to play", "src": "ws", "recv": 18680.2700637, "lt": 18680.222323829, "tt": 1.5057}
+{"stage": "asr_partial", "t": 18649.086504107, "pid": 9960, "text": "I wanna learn to play the", "src": "ws", "recv": 18680.4730693, "lt": 18680.425178184, "tt": 1.7085}
+{"stage": "asr_partial", "t": 18649.363739295, "pid": 9960, "text": "I wanna learn to play the guitar", "src": "ws", "recv": 18680.7501363, "lt": 18680.702413372, "tt": 1.9858}
+{"stage": "asr_partial", "t": 18649.565893286, "pid": 9960, "text": "I wanna learn to play the guitar.", "src": "ws", "recv": 18680.9523108, "lt": 18680.904567363, "tt": 2.1879}
+{"stage": "vad_end", "t": 18649.649617169, "pid": 9960, "src": "ws", "recv": 18681.0403026, "lt": 18680.988291246, "tt": 2.2716}
+{"stage": "vad_end", "t": 18649.649670132, "pid": 9960, "src": "ws", "recv": 18681.0403272, "lt": 18680.988344209, "tt": 2.2717}
+{"stage": "llm_request", "t": 18649.659985137, "pid": 9960, "speculative": true, "messages": 22, "chars": 10152, "est_tokens": 2538, "src": "ws", "recv": 18681.0467623, "lt": 18680.998659214, "tt": 2.282}
+{"stage": "asr_partial", "t": 18649.843625988, "pid": 9960, "text": "I wanna learn to play the guitar.", "src": "ws", "recv": 18681.2300416, "lt": 18681.182300065, "tt": 2.4657}
+{"stage": "asr_final", "t": 18650.090712023, "pid": 9960, "text": "I wanna learn to play the guitar.", "src": "ws", "recv": 18681.47896, "lt": 18681.4293861, "tt": 2.7127}
+{"stage": "user_stopped", "t": 18650.099779909, "pid": 9960, "src": "ws", "recv": 18681.4886097, "lt": 18681.438453986, "tt": 2.7218}
+{"stage": "user_stopped", "t": 18650.099841723, "pid": 9960, "src": "ws", "recv": 18681.488634, "lt": 18681.4385158, "tt": 2.7219}
+{"stage": "llm_first_token", "t": 18650.342452221, "pid": 9960, "src": "ws", "recv": 18681.7303814, "lt": 18681.681126298, "tt": 2.9645}
+{"stage": "llm_usage", "t": 18650.41724405, "pid": 9960, "prompt_tokens": 2472, "completion_tokens": 121, "src": "ws", "recv": 18681.8082931, "lt": 18681.755918127, "tt": 3.0393}
+{"stage": "tts_request", "t": 18650.444368894, "pid": 9960, "src": "ws", "recv": 18681.8354, "lt": 18681.783042971, "tt": 3.0664}
+{"stage": "tts_first_audio", "t": 18650.644154404, "pid": 9960, "src": "ws", "recv": 18682.0316911, "lt": 18681.982828481, "tt": 3.2662}
+{"stage": "audio_out", "t": 18650.650428091, "pid": 9960, "src": "ws", "recv": 18682.0418645, "lt": 18681.989102168, "tt": 3.2725}
+{"stage": "audio_out", "t": 18650.650514683, "pid": 9960, "src": "ws", "recv": 18682.0418876, "lt": 18681.98918876, "tt": 3.2725}

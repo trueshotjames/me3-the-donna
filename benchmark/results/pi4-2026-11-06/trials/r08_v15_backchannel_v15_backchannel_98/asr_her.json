@@ -1,0 +1,426 @@
+{
+  "text": "Startups are newly founded companies aiming to solve problems with innovative products or services. They typically begin with a small team of founders who invest time, expertise, and often personal savings. Early funding often comes from friends, family, or angel investors before seeking venture capital. Venture capital firms provide larger sums in exchange for equity. 7 23 23 24 25",
+  "chunks": [
+    {
+      "text": "Startups",
+      "timestamp": [
+        3.95,
+        4.63
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        4.63,
+        4.77
+      ]
+    },
+    {
+      "text": "newly",
+      "timestamp": [
+        4.77,
+        5.03
+      ]
+    },
+    {
+      "text": "founded",
+      "timestamp": [
+        5.03,
+        5.41
+      ]
+    },
+    {
+      "text": "companies",
+      "timestamp": [
+        5.41,
+        5.97
+      ]
+    },
+    {
+      "text": "aiming",
+      "timestamp": [
+        5.97,
+        6.35
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        6.35,
+        6.55
+      ]
+    },
+    {
+      "text": "solve",
+      "timestamp": [
+        6.55,
+        6.79
+      ]
+    },
+    {
+      "text": "problems",
+      "timestamp": [
+        6.79,
+        7.27
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        7.27,
+        7.53
+      ]
+    },
+    {
+      "text": "innovative",
+      "timestamp": [
+        7.53,
+        7.83
+      ]
+    },
+    {
+      "text": "products",
+      "timestamp": [
+        7.83,
+        8.39
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        8.39,
+        8.61
+      ]
+    },
+    {
+      "text": "services.",
+      "timestamp": [
+        8.61,
+        9.07
+      ]
+    },
+    {
+      "text": "They",
+      "timestamp": [
+        9.53,
+        9.61
+      ]
+    },
+    {
+      "text": "typically",
+      "timestamp": [
+        9.61,
+        9.91
+      ]
+    },
+    {
+      "text": "begin",
+      "timestamp": [
+        9.91,
+        10.31
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        10.31,
+        10.53
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        10.53,
+        10.65
+      ]
+    },
+    {
+      "text": "small",
+      "timestamp": [
+        10.65,
+        10.93
+      ]
+    },
+    {
+      "text": "team",
+      "timestamp": [
+        10.93,
+        11.21
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        11.21,
+        11.33
+      ]
+    },
+    {
+      "text": "founders",
+      "timestamp": [
+        11.33,
+        11.67
+      ]
+    },
+    {
+      "text": "who",
+      "timestamp": [
+        11.67,
+        12.05
+      ]
+    },
+    {
+      "text": "invest",
+      "timestamp": [
+        12.05,
+        12.35
+      ]
+    },
+    {
+      "text": "time,",
+      "timestamp": [
+        12.35,
+        12.81
+      ]
+    },
+    {
+      "text": "expertise,",
+      "timestamp": [
+        13.21,
+        13.59
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        14.33,
+        14.43
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        14.43,
+        14.71
+      ]
+    },
+    {
+      "text": "personal",
+      "timestamp": [
+        14.71,
+        15.19
+      ]
+    },
+    {
+      "text": "savings.",
+      "timestamp": [
+        15.19,
+        15.57
+      ]
+    },
+    {
+      "text": "Early",
+      "timestamp": [
+        16.01,
+        16.17
+      ]
+    },
+    {
+      "text": "funding",
+      "timestamp": [
+        16.17,
+        16.55
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        16.55,
+        16.97
+      ]
+    },
+    {
+      "text": "comes",
+      "timestamp": [
+        16.97,
+        17.27
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        17.27,
+        17.49
+      ]
+    },
+    {
+      "text": "friends,",
+      "timestamp": [
+        17.49,
+        17.95
+      ]
+    },
+    {
+      "text": "family,",
+      "timestamp": [
+        18.31,
+        18.63
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        19.11,
+        19.17
+      ]
+    },
+    {
+      "text": "angel",
+      "timestamp": [
+        19.17,
+        19.49
+      ]
+    },
+    {
+      "text": "investors",
+      "timestamp": [
+        19.49,
+        19.97
+      ]
+    },
+    {
+      "text": "before",
+      "timestamp": [
+        19.97,
+        20.35
+      ]
+    },
+    {
+      "text": "seeking",
+      "timestamp": [
+        20.35,
+        20.77
+      ]
+    },
+    {
+      "text": "venture",
+      "timestamp": [
+        20.77,
+        21.09
+      ]
+    },
+    {
+      "text": "capital.",
+      "timestamp": [
+        21.09,
+        21.55
+      ]
+    },
+    {
+      "text": "Venture",
+      "timestamp": [
+        21.79,
+        22.03
+      ]
+    },
+    {
+      "text": "capital",
+      "timestamp": [
+        22.03,
+        22.33
+      ]
+    },
+    {
+      "text": "firms",
+      "timestamp": [
+        22.33,
+        22.75
+      ]
+    },
+    {
+      "text": "provide",
+      "timestamp": [
+        22.75,
+        23.09
+      ]
+    },
+    {
+      "text": "larger",
+      "timestamp": [
+        23.09,
+        23.53
+      ]
+    },
+    {
+      "text": "sums",
+      "timestamp": [
+        23.53,
+        23.85
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        23.85,
+        24.03
+      ]
+    },
+    {
+      "text": "exchange",
+      "timestamp": [
+        24.03,
+        24.35
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        24.35,
+        24.69
+      ]
+    },
+    {
+      "text": "equity.",
+      "timestamp": [
+        24.69,
+        25.01
+      ]
+    },
+    {
+      "text": "7",
+      "timestamp": [
+        25.01,
+        25.03
+      ]
+    },
+    {
+      "text": "23",
+      "timestamp": [
+        25.03,
+        25.11
+      ]
+    },
+    {
+      "text": "23",
+      "timestamp": [
+        25.11,
+        25.37
+      ]
+    },
+    {
+      "text": "24",
+      "timestamp": [
+        25.37,
+        25.55
+      ]
+    },
+    {
+      "text": "25",
+      "timestamp": [
+        25.55,
+        25.57
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

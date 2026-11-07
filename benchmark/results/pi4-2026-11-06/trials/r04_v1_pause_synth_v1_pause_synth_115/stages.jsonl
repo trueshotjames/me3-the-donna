@@ -1,0 +1,63 @@
+{"stage": "vad_start", "t": 17021.003142876, "pid": 9960, "src": "ws", "recv": 17052.3664032, "lt": 17052.341816953, "tt": 0.3131}
+{"stage": "vad_start", "t": 17021.003231616, "pid": 9960, "src": "ws", "recv": 17052.3664246, "lt": 17052.341905693, "tt": 0.3132}
+{"stage": "interrupted", "t": 17021.409707185, "pid": 9960, "src": "ws", "recv": 17052.773252, "lt": 17052.748381262, "tt": 0.7196}
+{"stage": "interrupted", "t": 17021.409794517, "pid": 9960, "src": "ws", "recv": 17052.7732683, "lt": 17052.748468594, "tt": 0.7197}
+{"stage": "asr_partial", "t": 17021.523372355, "pid": 9960, "text": "Technology", "src": "ws", "recv": 17052.8855584, "lt": 17052.862046432, "tt": 0.8333}
+{"stage": "asr_partial", "t": 17021.646896493, "pid": 9960, "text": "Technology", "src": "ws", "recv": 17053.0093304, "lt": 17052.98557057, "tt": 0.9568}
+{"stage": "asr_partial", "t": 17021.8464935, "pid": 9960, "text": "Technology is two", "src": "ws", "recv": 17053.2086392, "lt": 17053.185167577, "tt": 1.1564}
+{"stage": "asr_partial", "t": 17022.123502951, "pid": 9960, "text": "Technology is changing so", "src": "ws", "recv": 17053.4856226, "lt": 17053.462177028, "tt": 1.4334}
+{"stage": "asr_partial", "t": 17022.326623673, "pid": 9960, "text": "Technology is changing so fast", "src": "ws", "recv": 17053.6886563, "lt": 17053.66529775, "tt": 1.6366}
+{"stage": "asr_partial", "t": 17022.603962324, "pid": 9960, "text": "Technology is changing so fast it's", "src": "ws", "recv": 17053.966239, "lt": 17053.942636401, "tt": 1.9139}
+{"stage": "asr_partial", "t": 17022.806611347, "pid": 9960, "text": "Technology is changing so fast it's on", "src": "ws", "recv": 17054.1686892, "lt": 17054.145285424, "tt": 2.1165}
+{"stage": "asr_partial", "t": 17023.087697025, "pid": 9960, "text": "Technology is changing so fast it's unreal.", "src": "ws", "recv": 17054.4503323, "lt": 17054.426371102, "tt": 2.3976}
+{"stage": "llm_request", "t": 17023.133093561, "pid": 9960, "speculative": true, "messages": 22, "chars": 11153, "est_tokens": 2788, "src": "ws", "recv": 17054.4941847, "lt": 17054.471767638, "tt": 2.443}
+{"stage": "vad_end", "t": 17023.170662362, "pid": 9960, "src": "ws", "recv": 17054.535505, "lt": 17054.509336439, "tt": 2.4806}
+{"stage": "vad_end", "t": 17023.170724528, "pid": 9960, "src": "ws", "recv": 17054.5355255, "lt": 17054.509398605, "tt": 2.4807}
+{"stage": "vad_start", "t": 17023.305409061, "pid": 9960, "src": "ws", "recv": 17054.6675765, "lt": 17054.644083138, "tt": 2.6153}
+{"stage": "vad_start", "t": 17023.305464505, "pid": 9960, "src": "ws", "recv": 17054.6676032, "lt": 17054.644138582, "tt": 2.6154}
+{"stage": "asr_partial", "t": 17023.323705515, "pid": 9960, "text": "Technology is changing so fast it's unreal.", "src": "ws", "recv": 17054.6858482, "lt": 17054.662379592, "tt": 2.6336}
+{"stage": "llm_cancel", "t": 17023.564604794, "pid": 9960, "src": "ws", "recv": 17054.925823, "lt": 17054.903278871, "tt": 2.8745}
+{"stage": "asr_partial", "t": 17023.76710832, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially", "src": "ws", "recv": 17055.1292809, "lt": 17055.105782397, "tt": 3.077}
+{"stage": "asr_partial", "t": 17024.044042939, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in", "src": "ws", "recv": 17055.4061896, "lt": 17055.382717016, "tt": 3.354}
+{"stage": "asr_partial", "t": 17024.246952534, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the air", "src": "ws", "recv": 17055.6091383, "lt": 17055.585626611, "tt": 3.5569}
+{"stage": "asr_partial", "t": 17024.524475312, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of our", "src": "ws", "recv": 17055.8866278, "lt": 17055.863149389, "tt": 3.8344}
+{"stage": "asr_partial", "t": 17024.726930264, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial", "src": "ws", "recv": 17056.0891832, "lt": 17056.065604341, "tt": 4.0369}
+{"stage": "asr_partial", "t": 17025.004493265, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial", "src": "ws", "recv": 17056.3665978, "lt": 17056.343167342002, "tt": 4.3144}
+{"stage": "asr_partial", "t": 17025.206863625, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence", "src": "ws", "recv": 17056.5690822, "lt": 17056.545537702, "tt": 4.5168}
+{"stage": "asr_partial", "t": 17025.484693159, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which", "src": "ws", "recv": 17056.8469276, "lt": 17056.823367236, "tt": 4.7946}
+{"stage": "asr_partial", "t": 17025.687240222, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is", "src": "ws", "recv": 17057.0495517, "lt": 17057.025914299, "tt": 4.9972}
+{"stage": "vad_end", "t": 17025.926500189, "pid": 9960, "src": "ws", "recv": 17057.2890547, "lt": 17057.265174266002, "tt": 5.2364}
+{"stage": "vad_end", "t": 17025.926554281, "pid": 9960, "src": "ws", "recv": 17057.2890811, "lt": 17057.265228358, "tt": 5.2365}
+{"stage": "asr_partial", "t": 17025.967820924, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is", "src": "ws", "recv": 17057.3308336, "lt": 17057.306495001, "tt": 5.2778}
+{"stage": "vad_start", "t": 17026.058762105, "pid": 9960, "src": "ws", "recv": 17057.4224634, "lt": 17057.397436182, "tt": 5.3687}
+{"stage": "vad_start", "t": 17026.058859826, "pid": 9960, "src": "ws", "recv": 17057.4224831, "lt": 17057.397533903, "tt": 5.3688}
+{"stage": "asr_partial", "t": 17026.167370821, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is", "src": "ws", "recv": 17057.5299184, "lt": 17057.506044898, "tt": 5.4773}
+{"stage": "asr_partial", "t": 17026.44766875, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty", "src": "ws", "recv": 17057.8101107, "lt": 17057.786342827, "tt": 5.7576}
+{"stage": "asr_partial", "t": 17026.647230665, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty", "src": "ws", "recv": 17058.0094149, "lt": 17057.985904742, "tt": 5.9572}
+{"stage": "vad_end", "t": 17026.666378959, "pid": 9960, "src": "ws", "recv": 17058.0339353, "lt": 17058.005053036, "tt": 5.9763}
+{"stage": "vad_end", "t": 17026.666431903, "pid": 9960, "src": "ws", "recv": 17058.0339548, "lt": 17058.00510598, "tt": 5.9764}
+{"stage": "llm_request", "t": 17026.677937757, "pid": 9960, "speculative": true, "messages": 22, "chars": 11220, "est_tokens": 2805, "src": "ws", "recv": 17058.0410176, "lt": 17058.016611834, "tt": 5.9879}
+{"stage": "asr_partial", "t": 17026.924486335, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty", "src": "ws", "recv": 17058.286748, "lt": 17058.263160412, "tt": 6.2344}
+{"stage": "llm_cancel", "t": 17027.078571549, "pid": 9960, "src": "ws", "recv": 17058.4406567, "lt": 17058.417245626, "tt": 6.3885}
+{"stage": "asr_partial", "t": 17027.127252562, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty", "src": "ws", "recv": 17058.48957, "lt": 17058.465926639, "tt": 6.4372}
+{"stage": "asr_partial", "t": 17027.408210001, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty", "src": "ws", "recv": 17058.7705794, "lt": 17058.746884078, "tt": 6.7181}
+{"stage": "vad_start", "t": 17027.527470841, "pid": 9960, "src": "ws", "recv": 17058.8894793, "lt": 17058.866144918, "tt": 6.8374}
+{"stage": "vad_start", "t": 17027.527528933, "pid": 9960, "src": "ws", "recv": 17058.8895028, "lt": 17058.86620301, "tt": 6.8375}
+{"stage": "asr_partial", "t": 17027.604497476, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty", "src": "ws", "recv": 17058.9671785, "lt": 17058.943171553, "tt": 6.9144}
+{"stage": "asr_partial", "t": 17027.887781496, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty... if", "src": "ws", "recv": 17059.2501202, "lt": 17059.226455573, "tt": 7.1977}
+{"stage": "asr_partial", "t": 17028.087282431, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty evolving", "src": "ws", "recv": 17059.4496124, "lt": 17059.425956508, "tt": 7.3972}
+{"stage": "asr_partial", "t": 17028.367676747, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty evolving every", "src": "ws", "recv": 17059.7299942, "lt": 17059.706350824, "tt": 7.6776}
+{"stage": "asr_partial", "t": 17028.407344133, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty evolving every day.", "src": "ws", "recv": 17059.7696566, "lt": 17059.74601821, "tt": 7.7173}
+{"stage": "vad_end", "t": 17028.426525705, "pid": 9960, "src": "ws", "recv": 17059.7943154, "lt": 17059.765199782, "tt": 7.7365}
+{"stage": "vad_end", "t": 17028.426580334, "pid": 9960, "src": "ws", "recv": 17059.7943372, "lt": 17059.765254411, "tt": 7.7365}
+{"stage": "llm_request", "t": 17028.438159391, "pid": 9960, "speculative": true, "messages": 22, "chars": 11240, "est_tokens": 2810, "src": "ws", "recv": 17059.8007301, "lt": 17059.776833468, "tt": 7.7481}
+{"stage": "asr_partial", "t": 17028.493650947, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty evolving every day.", "src": "ws", "recv": 17059.8580724, "lt": 17059.832325024, "tt": 7.8036}
+{"stage": "asr_final", "t": 17028.659173571, "pid": 9960, "text": "Technology is changing so fast it's unreal, especially in the area of artificial intelligence, which is pretty evolving every day.", "src": "ws", "recv": 17060.0227092, "lt": 17059.997847648, "tt": 7.9691}
+{"stage": "user_stopped", "t": 17028.666923565, "pid": 9960, "src": "ws", "recv": 17060.0321495, "lt": 17060.005597642, "tt": 7.9769}
+{"stage": "user_stopped", "t": 17028.666993601, "pid": 9960, "src": "ws", "recv": 17060.0321672, "lt": 17060.005667678, "tt": 7.9769}
+{"stage": "llm_first_token", "t": 17028.947104755, "pid": 9960, "src": "ws", "recv": 17060.3101843, "lt": 17060.285778832, "tt": 8.257}
+{"stage": "llm_usage", "t": 17028.983069281, "pid": 9960, "prompt_tokens": 2527, "completion_tokens": 47, "src": "ws", "recv": 17060.3468753, "lt": 17060.321743358, "tt": 8.293}
+{"stage": "tts_request", "t": 17028.998261162, "pid": 9960, "src": "ws", "recv": 17060.3644905, "lt": 17060.336935239, "tt": 8.3082}
+{"stage": "tts_first_audio", "t": 17029.22746522, "pid": 9960, "src": "ws", "recv": 17060.5907782, "lt": 17060.566139297, "tt": 8.5374}
+{"stage": "audio_out", "t": 17029.233788344, "pid": 9960, "src": "ws", "recv": 17060.6012118, "lt": 17060.572462421, "tt": 8.5437}
+{"stage": "audio_out", "t": 17029.233874269, "pid": 9960, "src": "ws", "recv": 17060.6012284, "lt": 17060.572548346, "tt": 8.5438}

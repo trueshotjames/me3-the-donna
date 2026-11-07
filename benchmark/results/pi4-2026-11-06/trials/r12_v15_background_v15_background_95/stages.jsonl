@@ -1,0 +1,44 @@
+{"stage": "vad_start", "t": 19467.971550473, "pid": 9960, "src": "ws", "recv": 19499.3684916, "lt": 19499.31022455, "tt": 0.1457}
+{"stage": "vad_start", "t": 19467.971606769, "pid": 9960, "src": "ws", "recv": 19499.3685124, "lt": 19499.310280846, "tt": 0.1457}
+{"stage": "asr_partial", "t": 19468.366333393, "pid": 9960, "text": "So", "src": "ws", "recv": 19499.7634699, "lt": 19499.705007470002, "tt": 0.5405}
+{"stage": "interrupted", "t": 19468.487041284, "pid": 9960, "src": "ws", "recv": 19499.8856221, "lt": 19499.825715361, "tt": 0.6612}
+{"stage": "interrupted", "t": 19468.487121505, "pid": 9960, "src": "ws", "recv": 19499.8856413, "lt": 19499.825795582, "tt": 0.6612}
+{"stage": "asr_partial", "t": 19468.602657639, "pid": 9960, "text": "Set a ten minute", "src": "ws", "recv": 19499.9999744, "lt": 19499.941331716, "tt": 0.7768}
+{"stage": "asr_partial", "t": 19468.842807324, "pid": 9960, "text": "Set a ten minute time", "src": "ws", "recv": 19500.2400277, "lt": 19500.181481401, "tt": 1.0169}
+{"stage": "asr_partial", "t": 19469.044511606, "pid": 9960, "text": "Set a ten minute timer", "src": "ws", "recv": 19500.4421038, "lt": 19500.383185683, "tt": 1.2186}
+{"stage": "asr_partial", "t": 19469.32221226, "pid": 9960, "text": "Set a ten minute timer for", "src": "ws", "recv": 19500.7194553, "lt": 19500.660886337, "tt": 1.4963}
+{"stage": "asr_partial", "t": 19469.526113387, "pid": 9960, "text": "Set a ten minute timer for", "src": "ws", "recv": 19500.9235692, "lt": 19500.864787464, "tt": 1.7002}
+{"stage": "asr_partial", "t": 19469.682776746, "pid": 9960, "text": "Set a ten minute timer for pasta", "src": "ws", "recv": 19501.0799745, "lt": 19501.021450823002, "tt": 1.8569}
+{"stage": "vad_end", "t": 19469.766175517, "pid": 9960, "src": "ws", "recv": 19501.1637819, "lt": 19501.104849594, "tt": 1.9403}
+{"stage": "vad_end", "t": 19469.766230424, "pid": 9960, "src": "ws", "recv": 19501.1638146, "lt": 19501.104904501, "tt": 1.9404}
+{"stage": "asr_partial", "t": 19469.80740276, "pid": 9960, "text": "Set a ten minute timer for pasta.", "src": "ws", "recv": 19501.205711, "lt": 19501.146076837, "tt": 1.9815}
+{"stage": "llm_request", "t": 19469.811295013, "pid": 9960, "speculative": true, "messages": 38, "chars": 15786, "est_tokens": 3946, "src": "ws", "recv": 19501.2099246, "lt": 19501.149969090002, "tt": 1.9854}
+{"stage": "asr_partial", "t": 19470.043511212, "pid": 9960, "text": "Set a ten minute timer for pasta.", "src": "ws", "recv": 19501.4409453, "lt": 19501.382185289, "tt": 2.2176}
+{"stage": "asr_final", "t": 19470.168985068, "pid": 9960, "text": "Set a ten minute timer for pasta.", "src": "ws", "recv": 19501.5676071, "lt": 19501.507659145, "tt": 2.3431}
+{"stage": "user_stopped", "t": 19470.177069589, "pid": 9960, "src": "ws", "recv": 19501.5780303, "lt": 19501.515743666, "tt": 2.3512}
+{"stage": "user_stopped", "t": 19470.177139551, "pid": 9960, "src": "ws", "recv": 19501.5780465, "lt": 19501.515813628, "tt": 2.3513}
+{"stage": "llm_first_token", "t": 19470.657624177, "pid": 9960, "src": "ws", "recv": 19502.0566041, "lt": 19501.996298254002, "tt": 2.8317}
+{"stage": "llm_usage", "t": 19470.682529195, "pid": 9960, "prompt_tokens": 3129, "completion_tokens": 30, "src": "ws", "recv": 19502.0825276, "lt": 19502.021203272, "tt": 2.8566}
+{"stage": "tts_request", "t": 19470.705682084, "pid": 9960, "src": "ws", "recv": 19502.1057199, "lt": 19502.044356161, "tt": 2.8798}
+{"stage": "tts_first_audio", "t": 19470.867957344, "pid": 9960, "src": "ws", "recv": 19502.2651032, "lt": 19502.206631421, "tt": 3.0421}
+{"stage": "audio_out", "t": 19470.872816215, "pid": 9960, "src": "ws", "recv": 19502.2745446, "lt": 19502.211490292, "tt": 3.0469}
+{"stage": "audio_out", "t": 19470.872902307, "pid": 9960, "src": "ws", "recv": 19502.2745613, "lt": 19502.211576384, "tt": 3.047}
+{"stage": "bot_stopped", "t": 19472.319991917, "pid": 9960, "src": "ws", "recv": 19503.7193315, "lt": 19503.658665994, "tt": 4.4941}
+{"stage": "bot_stopped", "t": 19472.320442467, "pid": 9960, "src": "ws", "recv": 19503.7193567, "lt": 19503.659116544, "tt": 4.4946}
+{"stage": "llm_request", "t": 19472.327845495, "pid": 9960, "messages": 39, "chars": 15816, "est_tokens": 3954, "src": "ws", "recv": 19503.7245884, "lt": 19503.666519572, "tt": 4.502}
+{"stage": "vad_start", "t": 19472.739124432, "pid": 9960, "src": "ws", "recv": 19504.1362183, "lt": 19504.077798509, "tt": 4.9132}
+{"stage": "vad_start", "t": 19472.739182857, "pid": 9960, "src": "ws", "recv": 19504.1362389, "lt": 19504.077856934, "tt": 4.9133}
+{"stage": "interrupted", "t": 19473.048795578, "pid": 9960, "src": "ws", "recv": 19504.4465298, "lt": 19504.387469655, "tt": 5.2229}
+{"stage": "interrupted", "t": 19473.048883596, "pid": 9960, "src": "ws", "recv": 19504.4465513, "lt": 19504.387557673, "tt": 5.223}
+{"stage": "asr_partial", "t": 19473.246679198, "pid": 9960, "text": "Turn the oven", "src": "ws", "recv": 19504.6463068, "lt": 19504.585353275, "tt": 5.4208}
+{"stage": "asr_partial", "t": 19473.522574111, "pid": 9960, "text": "Turn the oven off", "src": "ws", "recv": 19504.9198322, "lt": 19504.861248188, "tt": 5.6967}
+{"stage": "asr_partial", "t": 19473.726614495, "pid": 9960, "text": "Turn the oven off when", "src": "ws", "recv": 19505.1262615, "lt": 19505.065288572, "tt": 5.9007}
+{"stage": "asr_partial", "t": 19474.003646099, "pid": 9960, "text": "Turn the oven off when the time", "src": "ws", "recv": 19505.4016412, "lt": 19505.342320176, "tt": 6.1778}
+{"stage": "asr_partial", "t": 19474.202863148, "pid": 9960, "text": "Turn the oven off when the timer be", "src": "ws", "recv": 19505.6002761, "lt": 19505.541537225, "tt": 6.377}
+{"stage": "vad_end", "t": 19474.565596293, "pid": 9960, "src": "ws", "recv": 19505.9640376, "lt": 19505.90427037, "tt": 6.7397}
+{"stage": "vad_end", "t": 19474.565658922, "pid": 9960, "src": "ws", "recv": 19505.9640617, "lt": 19505.904332999, "tt": 6.7398}
+{"stage": "asr_final", "t": 19476.074498704, "pid": 9960, "text": "Turn the oven off when the timer be", "src": "ws", "recv": 19507.4734753, "lt": 19507.413172781, "tt": 8.2486}
+{"stage": "llm_request", "t": 19476.079381761, "pid": 9960, "messages": 40, "chars": 15851, "est_tokens": 3963, "src": "ws", "recv": 19507.4796137, "lt": 19507.418055838, "tt": 8.2535}
+{"stage": "user_stopped", "t": 19476.079454797, "pid": 9960, "src": "ws", "recv": 19507.4796356, "lt": 19507.418128874, "tt": 8.2536}
+{"stage": "user_stopped", "t": 19476.079488926, "pid": 9960, "src": "ws", "recv": 19507.4796495, "lt": 19507.418163003, "tt": 8.2536}
+{"stage": "llm_first_token", "t": 19476.094658849, "pid": 9960, "src": "ws", "recv": 19507.497476, "lt": 19507.433332926, "tt": 8.2688}

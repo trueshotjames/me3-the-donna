@@ -1,0 +1,61 @@
+{"stage": "vad_start", "t": 18856.497764144, "pid": 9960, "src": "ws", "recv": 18887.8881476, "lt": 18887.836438221, "tt": 0.1916}
+{"stage": "vad_start", "t": 18856.49785868, "pid": 9960, "src": "ws", "recv": 18887.8881671, "lt": 18887.836532757, "tt": 0.1917}
+{"stage": "interrupted", "t": 18857.011566154, "pid": 9960, "src": "ws", "recv": 18888.401995, "lt": 18888.350240231, "tt": 0.7054}
+{"stage": "interrupted", "t": 18857.01165595, "pid": 9960, "src": "ws", "recv": 18888.4020163, "lt": 18888.350330027, "tt": 0.7055}
+{"stage": "asr_partial", "t": 18857.126782029, "pid": 9960, "text": "Yeah. His", "src": "ws", "recv": 18888.5170929, "lt": 18888.465456106, "tt": 0.8206}
+{"stage": "asr_partial", "t": 18857.3641476, "pid": 9960, "text": "Yeah. His family", "src": "ws", "recv": 18888.753072, "lt": 18888.702821677, "tt": 1.058}
+{"stage": "asr_partial", "t": 18857.607692261, "pid": 9960, "text": "Yeah. His family is", "src": "ws", "recv": 18888.9991004, "lt": 18888.946366338, "tt": 1.3015}
+{"stage": "asr_partial", "t": 18857.845317663, "pid": 9960, "text": "Yeah. His family is still", "src": "ws", "recv": 18889.2347615, "lt": 18889.18399174, "tt": 1.5391}
+{"stage": "asr_partial", "t": 18858.091560796, "pid": 9960, "text": "Yeah. His family is still there.", "src": "ws", "recv": 18889.4835191, "lt": 18889.430234873, "tt": 1.7854}
+{"stage": "asr_partial", "t": 18858.323704788, "pid": 9960, "text": "Yeah. His family is still there, and", "src": "ws", "recv": 18889.712848, "lt": 18889.662378865, "tt": 2.0175}
+{"stage": "asr_partial", "t": 18858.606768215, "pid": 9960, "text": "Yeah. His family is still there, and, you", "src": "ws", "recv": 18889.9975013, "lt": 18889.945442292, "tt": 2.3006}
+{"stage": "vad_end", "t": 18858.798960998, "pid": 9960, "src": "ws", "recv": 18890.1886349, "lt": 18890.137635075, "tt": 2.4928}
+{"stage": "vad_end", "t": 18858.799012016, "pid": 9960, "src": "ws", "recv": 18890.1886563, "lt": 18890.137686093, "tt": 2.4928}
+{"stage": "asr_partial", "t": 18858.814621773, "pid": 9960, "text": "Yeah. His family is still there and, you know,", "src": "ws", "recv": 18890.205013, "lt": 18890.15329585, "tt": 2.5084}
+{"stage": "llm_request", "t": 18858.818847825, "pid": 9960, "speculative": true, "messages": 32, "chars": 11877, "est_tokens": 2969, "src": "ws", "recv": 18890.2095958, "lt": 18890.157521902, "tt": 2.5127}
+{"stage": "asr_partial", "t": 18859.047789439, "pid": 9960, "text": "Yeah. His family is still there and, you know,", "src": "ws", "recv": 18890.4391923, "lt": 18890.386463516, "tt": 2.7416}
+{"stage": "vad_start", "t": 18859.180182277, "pid": 9960, "src": "ws", "recv": 18890.5694318, "lt": 18890.518856354, "tt": 2.874}
+{"stage": "vad_start", "t": 18859.180240776, "pid": 9960, "src": "ws", "recv": 18890.5694499, "lt": 18890.518914853, "tt": 2.8741}
+{"stage": "llm_cancel", "t": 18859.18312773, "pid": 9960, "src": "ws", "recv": 18890.5710983, "lt": 18890.521801807, "tt": 2.8769}
+{"stage": "asr_partial", "t": 18859.283478191, "pid": 9960, "text": "Yeah. His family is still there and, you know,", "src": "ws", "recv": 18890.6725243, "lt": 18890.622152268, "tt": 2.9773}
+{"stage": "asr_partial", "t": 18859.527639565, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they", "src": "ws", "recv": 18890.9189902, "lt": 18890.866313642, "tt": 3.2215}
+{"stage": "asr_partial", "t": 18859.763379669, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they", "src": "ws", "recv": 18891.1527753, "lt": 18891.102053746, "tt": 3.4572}
+{"stage": "asr_partial", "t": 18860.006909493, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they they", "src": "ws", "recv": 18891.3970096, "lt": 18891.34558357, "tt": 3.7007}
+{"stage": "asr_partial", "t": 18860.244144193, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they they are", "src": "ws", "recv": 18891.6335577, "lt": 18891.58281827, "tt": 3.938}
+{"stage": "asr_partial", "t": 18860.487001764, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're", "src": "ws", "recv": 18891.8780955, "lt": 18891.825675841, "tt": 4.1808}
+{"stage": "asr_partial", "t": 18860.723387156, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're", "src": "ws", "recv": 18892.1124735, "lt": 18892.062061233, "tt": 4.4172}
+{"stage": "asr_partial", "t": 18860.966406429, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're... I", "src": "ws", "recv": 18892.356649, "lt": 18892.305080506, "tt": 4.6602}
+{"stage": "asr_partial", "t": 18861.206639432, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're", "src": "ws", "recv": 18892.5957667, "lt": 18892.545313509, "tt": 4.9005}
+{"stage": "asr_partial", "t": 18861.447819092, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in another", "src": "ws", "recv": 18892.8394521, "lt": 18892.786493169002, "tt": 5.1416}
+{"stage": "asr_partial", "t": 18861.691111899, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better", "src": "ws", "recv": 18893.0832368, "lt": 18893.029785976, "tt": 5.3849}
+{"stage": "asr_partial", "t": 18861.929830342, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better position.", "src": "ws", "recv": 18893.3206999, "lt": 18893.268504419, "tt": 5.6237}
+{"stage": "asr_partial", "t": 18862.167633497, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better place. I remember", "src": "ws", "recv": 18893.5568673, "lt": 18893.506307574, "tt": 5.8615}
+{"stage": "asr_partial", "t": 18862.410526102, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where", "src": "ws", "recv": 18893.8019143, "lt": 18893.749200179, "tt": 6.1043}
+{"stage": "asr_partial", "t": 18862.64708751, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are", "src": "ws", "recv": 18894.0364741, "lt": 18893.985761587, "tt": 6.3409}
+{"stage": "asr_partial", "t": 18862.888276632, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San", "src": "ws", "recv": 18894.279628, "lt": 18894.226950709, "tt": 6.5821}
+{"stage": "asr_partial", "t": 18863.126595466, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco", "src": "ws", "recv": 18894.5156274, "lt": 18894.465269543, "tt": 6.8204}
+{"stage": "asr_partial", "t": 18863.406743378, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco.", "src": "ws", "recv": 18894.7957948, "lt": 18894.745417455, "tt": 7.1006}
+{"stage": "asr_partial", "t": 18863.605901034, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We've", "src": "ws", "recv": 18894.9951978, "lt": 18894.944575111, "tt": 7.2997}
+{"stage": "asr_partial", "t": 18863.847745723, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We broke up", "src": "ws", "recv": 18895.2391387, "lt": 18895.1864198, "tt": 7.5416}
+{"stage": "asr_partial", "t": 18864.209545088, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We broke up in", "src": "ws", "recv": 18895.5985329, "lt": 18895.548219165, "tt": 7.9034}
+{"stage": "asr_partial", "t": 18864.330136111, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We broke up in two thousand", "src": "ws", "recv": 18895.7235596, "lt": 18895.668810188, "tt": 8.024}
+{"stage": "asr_partial", "t": 18864.565877746, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We broke up in two thousand", "src": "ws", "recv": 18895.9555048, "lt": 18895.904551823, "tt": 8.2597}
+{"stage": "asr_partial", "t": 18864.812638164, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We broke up in two thousand six.", "src": "ws", "recv": 18896.204837, "lt": 18896.151312241, "tt": 8.5065}
+{"stage": "vad_end", "t": 18864.819357285, "pid": 9960, "src": "ws", "recv": 18896.2177244, "lt": 18896.158031362, "tt": 8.5132}
+{"stage": "vad_end", "t": 18864.819419229, "pid": 9960, "src": "ws", "recv": 18896.2177492, "lt": 18896.158093306, "tt": 8.5132}
+{"stage": "llm_request", "t": 18864.834785432, "pid": 9960, "speculative": true, "messages": 33, "chars": 12055, "est_tokens": 3014, "src": "ws", "recv": 18896.2255121, "lt": 18896.173459509002, "tt": 8.5286}
+{"stage": "asr_partial", "t": 18864.901208792, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We broke up in two thousand six.", "src": "ws", "recv": 18896.2928518, "lt": 18896.239882869, "tt": 8.595}
+{"stage": "asr_partial", "t": 18865.207046417, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We broke up in two thousand six.", "src": "ws", "recv": 18896.5963984, "lt": 18896.545720494, "tt": 8.9009}
+{"stage": "asr_partial", "t": 18865.326815688, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We broke up in two thousand six.", "src": "ws", "recv": 18896.7159366, "lt": 18896.665489765, "tt": 9.0206}
+{"stage": "llm_usage", "t": 18865.588413074, "pid": 9960, "prompt_tokens": 2732, "completion_tokens": 39, "src": "ws", "recv": 18896.9780382, "lt": 18896.927087151, "tt": 9.2822}
+{"stage": "asr_final", "t": 18866.015135718, "pid": 9960, "text": "Yeah. His family is still there, and, you know, they... they're they're in a better... I can't remember where they are in San Francisco. We broke up in two thousand six.", "src": "ws", "recv": 18897.405494, "lt": 18897.353809795, "tt": 9.709}
+{"stage": "user_stopped", "t": 18866.022200427, "pid": 9960, "src": "ws", "recv": 18897.4166761, "lt": 18897.360874504, "tt": 9.716}
+{"stage": "user_stopped", "t": 18866.022268519, "pid": 9960, "src": "ws", "recv": 18897.4166976, "lt": 18897.360942596, "tt": 9.7161}
+{"stage": "llm_first_token", "t": 18866.025239065, "pid": 9960, "src": "ws", "recv": 18897.4199591, "lt": 18897.363913142, "tt": 9.7191}
+{"stage": "tts_request", "t": 18866.050749022, "pid": 9960, "src": "ws", "recv": 18897.4445667, "lt": 18897.389423099, "tt": 9.7446}
+{"stage": "tts_first_audio", "t": 18866.2864911, "pid": 9960, "src": "ws", "recv": 18897.6770918, "lt": 18897.625165177, "tt": 9.9803}
+{"stage": "audio_out", "t": 18866.293610346, "pid": 9960, "src": "ws", "recv": 18897.6883687, "lt": 18897.632284423, "tt": 9.9874}
+{"stage": "audio_out", "t": 18866.293777678, "pid": 9960, "src": "ws", "recv": 18897.6883867, "lt": 18897.632451755002, "tt": 9.9876}
+{"stage": "bot_stopped", "t": 18870.142912407, "pid": 9960, "src": "ws", "recv": 18901.5326305, "lt": 18901.481586484, "tt": 13.8367}
+{"stage": "bot_stopped", "t": 18870.14299661, "pid": 9960, "src": "ws", "recv": 18901.5326515, "lt": 18901.481670687, "tt": 13.8368}
+{"stage": "llm_request", "t": 18870.149146588, "pid": 9960, "messages": 34, "chars": 12141, "est_tokens": 3035, "src": "ws", "recv": 18901.5377282, "lt": 18901.487820665, "tt": 13.843}

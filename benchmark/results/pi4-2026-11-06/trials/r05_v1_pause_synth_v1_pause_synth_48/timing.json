@@ -1,0 +1,76 @@
+{
+  "trial": "r05_v1_pause_synth_v1_pause_synth_48",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_48",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 15.36,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 8.181375
+    }
+  ],
+  "live_bot_starts": [
+    0.192,
+    3.136,
+    9.888
+  ],
+  "live_bot_ends": [
+    0.352,
+    3.808,
+    15.008
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 3
+  },
+  "clip_meta": {
+    "pause": [
+      5.4799999999999995,
+      7.140000000000001
+    ],
+    "source_id": "48",
+    "text": "We should decide what to make for dinner tonight [UM] How about we start with a salad then maybe maybe some kind of pasta dish."
+  },
+  "mono": [
+    17521.6967533,
+    17537.0551392
+  ],
+  "bot_segments": [
+    [
+      0.002,
+      0.382
+    ],
+    [
+      3.106,
+      3.838
+    ],
+    [
+      9.762,
+      15.038
+    ]
+  ],
+  "play_first": [
+    0.0,
+    8.181375
+  ],
+  "tor": 1,
+  "first_start": 0.002,
+  "spoke_s": 3.8360000000000003,
+  "cut_in_during_pause": false,
+  "actual": "spoke 3.8 s at 0.0 s",
+  "verdict": "✗ TOR 1",
+  "ok": false,
+  "marks": 89,
+  "final": {
+    "tor": 1,
+    "words": 8,
+    "verdict": "✗ TOR 1",
+    "ok": false,
+    "transcript": "to make it. How about a quick crisp salad to start, followed by a hearty pasta, sounds like a solid dinner plan."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

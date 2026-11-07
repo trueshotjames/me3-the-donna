@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 17736.768533341, "pid": 9960, "src": "ws", "recv": 17768.1428523, "lt": 17768.107207418, "tt": 0.1743}
+{"stage": "vad_start", "t": 17736.768622599, "pid": 9960, "src": "ws", "recv": 17768.1428727, "lt": 17768.107296676, "tt": 0.1744}
+{"stage": "asr_partial", "t": 17737.24861193, "pid": 9960, "text": "How", "src": "ws", "recv": 17768.6217198, "lt": 17768.587286007, "tt": 0.6544}
+{"stage": "interrupted", "t": 17737.380468998, "pid": 9960, "src": "ws", "recv": 17768.7556139, "lt": 17768.719143075, "tt": 0.7863}
+{"stage": "interrupted", "t": 17737.380556442, "pid": 9960, "src": "ws", "recv": 17768.7556421, "lt": 17768.719230519, "tt": 0.7863}
+{"stage": "asr_partial", "t": 17737.564527468, "pid": 9960, "text": "How far is it", "src": "ws", "recv": 17768.9385533, "lt": 17768.903201545, "tt": 0.9703}
+{"stage": "asr_partial", "t": 17737.8078701, "pid": 9960, "text": "How far is it from", "src": "ws", "recv": 17769.1816169, "lt": 17769.146544177, "tt": 1.2137}
+{"stage": "asr_partial", "t": 17738.011745969, "pid": 9960, "text": "How far is it from Bay", "src": "ws", "recv": 17769.387924, "lt": 17769.350420046, "tt": 1.4175}
+{"stage": "asr_partial", "t": 17738.283952796, "pid": 9960, "text": "How far is it from Beijing", "src": "ws", "recv": 17769.6572083, "lt": 17769.622626873, "tt": 1.6897}
+{"stage": "asr_partial", "t": 17738.491684264, "pid": 9960, "text": "How far is it from Beijing to", "src": "ws", "recv": 17769.8678292, "lt": 17769.830358341, "tt": 1.8975}
+{"stage": "asr_partial", "t": 17738.764140736, "pid": 9960, "text": "How far is it from Beijing to Shanghai", "src": "ws", "recv": 17770.1373826, "lt": 17770.102814813, "tt": 2.1699}
+{"stage": "llm_request", "t": 17738.894697598, "pid": 9960, "speculative": true, "messages": 22, "chars": 10067, "est_tokens": 2517, "src": "ws", "recv": 17770.2688728, "lt": 17770.233371675, "tt": 2.3005}
+{"stage": "llm_cancel", "t": 17738.931823169, "pid": 9960, "src": "ws", "recv": 17770.3072609, "lt": 17770.270497246, "tt": 2.3376}
+{"stage": "asr_final", "t": 17738.984472435, "pid": 9960, "text": "How far is it from Beijing to Shanghai?", "src": "ws", "recv": 17770.3586245, "lt": 17770.323146512, "tt": 2.3903}
+{"stage": "llm_request", "t": 17738.988040816, "pid": 9960, "speculative": true, "messages": 22, "chars": 10068, "est_tokens": 2517, "src": "ws", "recv": 17770.3629154, "lt": 17770.326714893, "tt": 2.3938}
+{"stage": "user_stopped", "t": 17738.992776034, "pid": 9960, "src": "ws", "recv": 17770.3721571, "lt": 17770.331450111, "tt": 2.3986}
+{"stage": "user_stopped", "t": 17738.992841441, "pid": 9960, "src": "ws", "recv": 17770.3721776, "lt": 17770.331515518, "tt": 2.3986}
+{"stage": "vad_end", "t": 17739.04793575, "pid": 9960, "src": "ws", "recv": 17770.4222282, "lt": 17770.386609827, "tt": 2.4537}
+{"stage": "vad_end", "t": 17739.047993323, "pid": 9960, "src": "ws", "recv": 17770.4222516, "lt": 17770.386667400002, "tt": 2.4538}
+{"stage": "llm_first_token", "t": 17739.589146536, "pid": 9960, "src": "ws", "recv": 17770.9637574, "lt": 17770.927820613, "tt": 2.9949}
+{"stage": "llm_usage", "t": 17739.619748115, "pid": 9960, "prompt_tokens": 2503, "completion_tokens": 35, "src": "ws", "recv": 17770.994263, "lt": 17770.958422192, "tt": 3.0255}
+{"stage": "tts_request", "t": 17739.634556688, "pid": 9960, "src": "ws", "recv": 17771.0103357, "lt": 17770.973230765, "tt": 3.0403}
+{"stage": "tts_first_audio", "t": 17739.838761831, "pid": 9960, "src": "ws", "recv": 17771.2128302, "lt": 17771.177435908, "tt": 3.2445}
+{"stage": "audio_out", "t": 17739.844540647, "pid": 9960, "src": "ws", "recv": 17771.2229698, "lt": 17771.183214724, "tt": 3.2503}
+{"stage": "audio_out", "t": 17739.844627664, "pid": 9960, "src": "ws", "recv": 17771.222999, "lt": 17771.183301741, "tt": 3.2504}
+{"stage": "bot_stopped", "t": 17744.214994033, "pid": 9960, "src": "ws", "recv": 17775.5921378, "lt": 17775.55366811, "tt": 7.6208}
+{"stage": "bot_stopped", "t": 17744.215399528, "pid": 9960, "src": "ws", "recv": 17775.5921605, "lt": 17775.554073605, "tt": 7.6212}
+{"stage": "llm_request", "t": 17744.22536544, "pid": 9960, "messages": 23, "chars": 10153, "est_tokens": 2538, "src": "ws", "recv": 17775.5988931, "lt": 17775.564039517, "tt": 7.6311}

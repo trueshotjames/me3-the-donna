@@ -1,0 +1,66 @@
+{
+  "trial": "r02_v1_pause_synth_v1_pause_synth_42",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_42",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 17.216,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 10.464
+    }
+  ],
+  "live_bot_starts": [
+    12.064,
+    13.824
+  ],
+  "live_bot_ends": [
+    13.376,
+    16.864
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      6.9399999999999995,
+      7.94
+    ],
+    "source_id": "42",
+    "text": "The main point of the game is to collect as many points as possible. You earn points by capturing territories and [UH] each territory is different value."
+  },
+  "mono": [
+    16602.627332,
+    16619.8382757
+  ],
+  "bot_segments": [
+    [
+      12.034,
+      16.894
+    ]
+  ],
+  "play_first": [
+    0.0,
+    10.464
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 78,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "Sounds like a fun strategy. Focus on the high -value territories to maximize your score."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

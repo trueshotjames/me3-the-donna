@@ -1,0 +1,83 @@
+{
+  "text": "How often should I exercise? Can we talk about yoga specifically?",
+  "chunks": [
+    {
+      "text": "How",
+      "timestamp": [
+        0.14,
+        0.64
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        0.64,
+        1.0
+      ]
+    },
+    {
+      "text": "should",
+      "timestamp": [
+        1.0,
+        1.28
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        1.28,
+        1.4
+      ]
+    },
+    {
+      "text": "exercise?",
+      "timestamp": [
+        1.4,
+        1.72
+      ]
+    },
+    {
+      "text": "Can",
+      "timestamp": [
+        4.94,
+        5.1
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        5.1,
+        5.22
+      ]
+    },
+    {
+      "text": "talk",
+      "timestamp": [
+        5.22,
+        5.4
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        5.4,
+        5.58
+      ]
+    },
+    {
+      "text": "yoga",
+      "timestamp": [
+        5.58,
+        5.82
+      ]
+    },
+    {
+      "text": "specifically?",
+      "timestamp": [
+        5.82,
+        6.3
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

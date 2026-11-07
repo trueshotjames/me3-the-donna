@@ -1,0 +1,99 @@
+{
+  "trial": "r06_v15_backchannel_v15_backchannel_60",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_60",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 29.088,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.848
+    },
+    {
+      "name": "overlap",
+      "t": 4.028,
+      "len": 1.022
+    }
+  ],
+  "live_bot_starts": [
+    2.528,
+    6.24
+  ],
+  "live_bot_ends": [
+    4.352,
+    28.736
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Explain astronomy in depth.",
+    "current_turn_text": "",
+    "overlap_text": "yes sure",
+    "overlap_duration": 1.02,
+    "overlap_window": [
+      5.579,
+      6.601
+    ],
+    "source_id": "60"
+  },
+  "mono": [
+    17783.0025538,
+    17812.0949163
+  ],
+  "bot_segments": [
+    [
+      2.498,
+      4.382
+    ],
+    [
+      6.21,
+      28.766
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.848
+  ],
+  "overlap_played": true,
+  "t_stop": 0.34799999999999986,
+  "t_resp": 1.1600000000000001,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.034,
+    5.05
+  ],
+  "tor": 1,
+  "first_start": 6.21,
+  "spoke_s": 6.840000000000001,
+  "latency": 1.1600000000000001,
+  "actual": "stopped after 0.35 s, back 1.16 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 44,
+  "final": {
+    "t_stop": 0.34799999999999986,
+    "t_resp": 1.1600000000000001,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -29.81400897192492,
+      "pitch_mean": -24.65115668476767,
+      "pitch_sd": -17.252716900248096,
+      "intensity_mean": -3.1906144476049967,
+      "intensity_sd": 0.9617731979556439,
+      "utmosv2": null
+    },
+    "transcript": "Astronomy is the science of the universe. Astronomy is the scientific study of everything beyond Earth, from planets and moons to distant galaxies, and the fagric a spacetime itself. It began with ancient sky watchers charting the motions of the sun, moon, and stars, and has grown into a high -tech field using telescopes that capture light across the electromagnetic spectrum. Stars form from colla",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

@@ -1,0 +1,76 @@
+{
+  "text": "set an alarm for 6 .30 a .m. on weekdays.",
+  "chunks": [
+    {
+      "text": "set",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        0.18,
+        0.32
+      ]
+    },
+    {
+      "text": "alarm",
+      "timestamp": [
+        0.32,
+        0.7
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        0.7,
+        0.92
+      ]
+    },
+    {
+      "text": "6",
+      "timestamp": [
+        0.92,
+        1.14
+      ]
+    },
+    {
+      "text": ".30",
+      "timestamp": [
+        1.14,
+        1.44
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        1.44,
+        1.7
+      ]
+    },
+    {
+      "text": ".m.",
+      "timestamp": [
+        1.7,
+        1.98
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        2.02,
+        2.08
+      ]
+    },
+    {
+      "text": "weekdays.",
+      "timestamp": [
+        2.08,
+        2.58
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

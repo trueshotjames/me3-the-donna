@@ -1,0 +1,64 @@
+{
+  "trial": "r01_v15_backchannel_v15_backchannel_64_clean",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_64",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 11.488,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.456
+    }
+  ],
+  "live_bot_starts": [
+    0.032,
+    4.032
+  ],
+  "live_bot_ends": [
+    0.224,
+    11.136
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Offer a clear account of the moon landing.",
+    "current_turn_text": "",
+    "overlap_text": "yeah yes",
+    "overlap_duration": 0.74,
+    "overlap_window": [
+      6.322,
+      7.065
+    ],
+    "source_id": "64"
+  },
+  "mono": [
+    16295.9589265,
+    16307.4226359
+  ],
+  "bot_segments": [
+    [
+      4.002,
+      11.166
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.456
+  ],
+  "tor": 1,
+  "first_start": 4.002,
+  "spoke_s": 6.454,
+  "actual": "replied after 1.55 s, spoke 6.5 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 30,
+  "final": {
+    "transcript": "The Apollo 11 mission lifted off on July 16, 1969, from Kennedy Space Center on a Saturn V rocket."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

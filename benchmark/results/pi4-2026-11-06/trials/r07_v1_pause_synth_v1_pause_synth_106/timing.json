@@ -1,0 +1,64 @@
+{
+  "trial": "r07_v1_pause_synth_v1_pause_synth_106",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_106",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 13.376,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 8.5866875
+    }
+  ],
+  "live_bot_starts": [
+    10.08
+  ],
+  "live_bot_ends": [
+    13.024
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      5.54,
+      7.6000000000000005
+    ],
+    "source_id": "106",
+    "text": "And [UH] did you hear about the new environmental policy? Yes, I think is a good step, but I'm worried about the pretty the potential economic impact."
+  },
+  "mono": [
+    18063.2323942,
+    18076.6062445
+  ],
+  "bot_segments": [
+    [
+      10.05,
+      13.054
+    ]
+  ],
+  "play_first": [
+    0.0,
+    8.5866875
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 70,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "It's encouraging that the policy target environmental protection."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

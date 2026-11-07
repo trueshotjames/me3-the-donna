@@ -1,0 +1,25 @@
+{"stage": "vad_start", "t": 17663.490655203, "pid": 9960, "src": "ws", "recv": 17694.8643101, "lt": 17694.82932928, "tt": 0.1768}
+{"stage": "vad_start", "t": 17663.490749294, "pid": 9960, "src": "ws", "recv": 17694.8643343, "lt": 17694.829423371, "tt": 0.1769}
+{"stage": "interrupted", "t": 17663.885200622, "pid": 9960, "src": "ws", "recv": 17695.2587054, "lt": 17695.223874699, "tt": 0.5713}
+{"stage": "interrupted", "t": 17663.885286824, "pid": 9960, "src": "ws", "recv": 17695.2587339, "lt": 17695.223960901, "tt": 0.5714}
+{"stage": "asr_partial", "t": 17664.005841848, "pid": 9960, "text": "What's the", "src": "ws", "recv": 17695.3779882, "lt": 17695.344515925, "tt": 0.6919}
+{"stage": "asr_partial", "t": 17664.126115709, "pid": 9960, "text": "What's the UV", "src": "ws", "recv": 17695.4990855, "lt": 17695.464789786, "tt": 0.8122}
+{"stage": "asr_partial", "t": 17664.362962126, "pid": 9960, "text": "What's the UV in", "src": "ws", "recv": 17695.7351114, "lt": 17695.701636203, "tt": 1.0491}
+{"stage": "asr_partial", "t": 17664.568230846, "pid": 9960, "text": "What's the UV index", "src": "ws", "recv": 17695.9433258, "lt": 17695.906904923, "tt": 1.2543}
+{"stage": "asr_partial", "t": 17664.8428174, "pid": 9960, "text": "What's the UV index today?", "src": "ws", "recv": 17696.2150359, "lt": 17696.181491477, "tt": 1.5289}
+{"stage": "asr_partial", "t": 17664.966406293, "pid": 9960, "text": "What's the UV index today?", "src": "ws", "recv": 17696.3385754, "lt": 17696.30508037, "tt": 1.6525}
+{"stage": "vad_end", "t": 17664.992717, "pid": 9960, "src": "ws", "recv": 17696.3691413, "lt": 17696.331391077, "tt": 1.6788}
+{"stage": "vad_end", "t": 17664.992771851, "pid": 9960, "src": "ws", "recv": 17696.3691647, "lt": 17696.331445928, "tt": 1.6789}
+{"stage": "llm_request", "t": 17665.00378375, "pid": 9960, "speculative": true, "messages": 16, "chars": 9664, "est_tokens": 2416, "src": "ws", "recv": 17696.3776336, "lt": 17696.342457827, "tt": 1.6899}
+{"stage": "asr_final", "t": 17665.073884685, "pid": 9960, "text": "What's the UV index today?", "src": "ws", "recv": 17696.4494451, "lt": 17696.412558762, "tt": 1.76}
+{"stage": "user_stopped", "t": 17665.08435848, "pid": 9960, "src": "ws", "recv": 17696.4600725, "lt": 17696.423032557, "tt": 1.7705}
+{"stage": "user_stopped", "t": 17665.084427034, "pid": 9960, "src": "ws", "recv": 17696.4600937, "lt": 17696.423101111, "tt": 1.7705}
+{"stage": "llm_first_token", "t": 17665.696277819, "pid": 9960, "src": "ws", "recv": 17697.0689738, "lt": 17697.034951896, "tt": 2.3824}
+{"stage": "llm_usage", "t": 17665.711080577, "pid": 9960, "prompt_tokens": 2473, "completion_tokens": 33, "src": "ws", "recv": 17697.0854897, "lt": 17697.049754654, "tt": 2.3972}
+{"stage": "tts_request", "t": 17665.731552543, "pid": 9960, "src": "ws", "recv": 17697.1085828, "lt": 17697.07022662, "tt": 2.4177}
+{"stage": "tts_first_audio", "t": 17665.920286507, "pid": 9960, "src": "ws", "recv": 17697.2935431, "lt": 17697.258960584, "tt": 2.6064}
+{"stage": "audio_out", "t": 17665.926471634, "pid": 9960, "src": "ws", "recv": 17697.303966, "lt": 17697.265145711, "tt": 2.6126}
+{"stage": "audio_out", "t": 17665.926552614, "pid": 9960, "src": "ws", "recv": 17697.3039845, "lt": 17697.265226691, "tt": 2.6127}
+{"stage": "bot_stopped", "t": 17668.454104635, "pid": 9960, "src": "ws", "recv": 17699.8266182, "lt": 17699.792778712, "tt": 5.1402}
+{"stage": "bot_stopped", "t": 17668.454185616, "pid": 9960, "src": "ws", "recv": 17699.8266416, "lt": 17699.792859693, "tt": 5.1403}
+{"stage": "llm_request", "t": 17668.460374575, "pid": 9960, "messages": 17, "chars": 9708, "est_tokens": 2427, "src": "ws", "recv": 17699.8319369, "lt": 17699.799048652, "tt": 5.1465}

@@ -1,0 +1,76 @@
+{
+  "text": "The distance between Beijing and Shanghai is about 550 kilometers.",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        2.93,
+        3.37
+      ]
+    },
+    {
+      "text": "distance",
+      "timestamp": [
+        3.37,
+        3.67
+      ]
+    },
+    {
+      "text": "between",
+      "timestamp": [
+        3.67,
+        4.11
+      ]
+    },
+    {
+      "text": "Beijing",
+      "timestamp": [
+        4.11,
+        4.49
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        4.49,
+        4.75
+      ]
+    },
+    {
+      "text": "Shanghai",
+      "timestamp": [
+        4.75,
+        5.13
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        5.13,
+        5.55
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        5.55,
+        5.75
+      ]
+    },
+    {
+      "text": "550",
+      "timestamp": [
+        5.75,
+        6.41
+      ]
+    },
+    {
+      "text": "kilometers.",
+      "timestamp": [
+        6.41,
+        7.35
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

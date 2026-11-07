@@ -1,0 +1,63 @@
+{"stage": "vad_start", "t": 18664.946703513, "pid": 9960, "src": "ws", "recv": 18696.3330913, "lt": 18696.28537759, "tt": 0.2245}
+{"stage": "vad_start", "t": 18664.946760494, "pid": 9960, "src": "ws", "recv": 18696.3331157, "lt": 18696.285434571, "tt": 0.2246}
+{"stage": "asr_partial", "t": 18665.494060058, "pid": 9960, "text": "So I was saying", "src": "ws", "recv": 18696.8838177, "lt": 18696.832734135, "tt": 0.7719}
+{"stage": "interrupted", "t": 18665.496922423, "pid": 9960, "src": "ws", "recv": 18696.8859469, "lt": 18696.8355965, "tt": 0.7748}
+{"stage": "interrupted", "t": 18665.497008626, "pid": 9960, "src": "ws", "recv": 18696.8859675, "lt": 18696.835682703, "tt": 0.7748}
+{"stage": "bot_stopped", "t": 18665.528364116, "pid": 9960, "src": "ws", "recv": 18696.9154412, "lt": 18696.867038193, "tt": 0.8062}
+{"stage": "bot_stopped", "t": 18665.528449819, "pid": 9960, "src": "ws", "recv": 18696.9154643, "lt": 18696.867123896, "tt": 0.8063}
+{"stage": "llm_request", "t": 18665.536878117, "pid": 9960, "messages": 23, "chars": 10287, "est_tokens": 2572, "src": "ws", "recv": 18696.9229802, "lt": 18696.875552194, "tt": 0.8147}
+{"stage": "asr_partial", "t": 18665.723660404, "pid": 9960, "text": "So I was thinking,", "src": "ws", "recv": 18697.1102683, "lt": 18697.062334481, "tt": 1.0015}
+{"stage": "asr_partial", "t": 18665.977371689, "pid": 9960, "text": "So I was thinking we could", "src": "ws", "recv": 18697.3645286, "lt": 18697.316045766, "tt": 1.2552}
+{"stage": "asr_partial", "t": 18666.203725394, "pid": 9960, "text": "So I was thinking we could go some", "src": "ws", "recv": 18697.5904423, "lt": 18697.542399471, "tt": 1.4816}
+{"stage": "asr_partial", "t": 18666.451602711, "pid": 9960, "text": "So I was thinking we could go somewhere", "src": "ws", "recv": 18697.8383903, "lt": 18697.790276788, "tt": 1.7294}
+{"stage": "asr_partial", "t": 18666.68328463, "pid": 9960, "text": "So I was thinking we could go somewhere nice", "src": "ws", "recv": 18698.0699014, "lt": 18698.021958707, "tt": 1.9611}
+{"stage": "asr_partial", "t": 18666.931617016, "pid": 9960, "text": "So I was thinking we could go somewhere nice this week", "src": "ws", "recv": 18698.3183044, "lt": 18698.270291093, "tt": 2.2094}
+{"stage": "asr_partial", "t": 18667.164231462, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend", "src": "ws", "recv": 18698.5508309, "lt": 18698.502905539, "tt": 2.4421}
+{"stage": "asr_partial", "t": 18667.413982613, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe", "src": "ws", "recv": 18698.8009633, "lt": 18698.75265669, "tt": 2.6918}
+{"stage": "asr_partial", "t": 18667.644133821, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe", "src": "ws", "recv": 18699.0307103, "lt": 18698.982807898, "tt": 2.922}
+{"stage": "asr_partial", "t": 18667.891923266, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe add a", "src": "ws", "recv": 18699.2785762, "lt": 18699.230597343, "tt": 3.1698}
+{"stage": "asr_partial", "t": 18668.123696051, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe at a town", "src": "ws", "recv": 18699.5104749, "lt": 18699.462370128, "tt": 3.4015}
+{"stage": "vad_end", "t": 18668.37059541, "pid": 9960, "src": "ws", "recv": 18699.7579305, "lt": 18699.709269487, "tt": 3.6484}
+{"stage": "vad_end", "t": 18668.370659817, "pid": 9960, "src": "ws", "recv": 18699.7579547, "lt": 18699.709333894, "tt": 3.6485}
+{"stage": "asr_partial", "t": 18668.382785639, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town.", "src": "ws", "recv": 18699.7709017, "lt": 18699.721459716002, "tt": 3.6606}
+{"stage": "llm_request", "t": 18668.387140749, "pid": 9960, "speculative": true, "messages": 24, "chars": 10364, "est_tokens": 2591, "src": "ws", "recv": 18699.7750099, "lt": 18699.725814826, "tt": 3.665}
+{"stage": "vad_start", "t": 18668.622396264, "pid": 9960, "src": "ws", "recv": 18700.0092939, "lt": 18699.961070341, "tt": 3.9002}
+{"stage": "vad_start", "t": 18668.6224538, "pid": 9960, "src": "ws", "recv": 18700.0093196, "lt": 18699.961127877, "tt": 3.9003}
+{"stage": "llm_cancel", "t": 18668.625338516, "pid": 9960, "src": "ws", "recv": 18700.0110332, "lt": 18699.964012593002, "tt": 3.9032}
+{"stage": "asr_partial", "t": 18669.531917144, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe some", "src": "ws", "recv": 18700.9203981, "lt": 18700.870591221, "tt": 4.8097}
+{"stage": "asr_partial", "t": 18669.727592812, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like", "src": "ws", "recv": 18701.1146764, "lt": 18701.066266889, "tt": 5.0054}
+{"stage": "asr_partial", "t": 18670.003305569, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the", "src": "ws", "recv": 18701.390149, "lt": 18701.341979646, "tt": 5.2811}
+{"stage": "asr_partial", "t": 18670.206435375, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the mountains", "src": "ws", "recv": 18701.593176, "lt": 18701.545109452, "tt": 5.4843}
+{"stage": "asr_partial", "t": 18670.565951762, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the mountains or", "src": "ws", "recv": 18701.9526458, "lt": 18701.904625839, "tt": 5.8438}
+{"stage": "asr_partial", "t": 18670.723627404, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the mountains or", "src": "ws", "recv": 18702.1108166, "lt": 18702.062301481, "tt": 6.0015}
+{"stage": "vad_end", "t": 18670.741783526, "pid": 9960, "src": "ws", "recv": 18702.1280001, "lt": 18702.080457603, "tt": 6.0196}
+{"stage": "vad_end", "t": 18670.741851247, "pid": 9960, "src": "ws", "recv": 18702.1280226, "lt": 18702.080525324, "tt": 6.0197}
+{"stage": "asr_partial", "t": 18670.963496783, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the mountains or", "src": "ws", "recv": 18702.3502182, "lt": 18702.30217086, "tt": 6.2413}
+{"stage": "vad_start", "t": 18670.991571615, "pid": 9960, "src": "ws", "recv": 18702.3791845, "lt": 18702.330245692, "tt": 6.2694}
+{"stage": "vad_start", "t": 18670.991636225, "pid": 9960, "src": "ws", "recv": 18702.3792081, "lt": 18702.330310302, "tt": 6.2695}
+{"stage": "asr_partial", "t": 18671.446279808, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the mountains or maybe", "src": "ws", "recv": 18702.8332856, "lt": 18702.784953885, "tt": 6.7241}
+{"stage": "vad_end", "t": 18671.565955832, "pid": 9960, "src": "ws", "recv": 18702.9529925, "lt": 18702.904629909, "tt": 6.8438}
+{"stage": "vad_end", "t": 18671.566006665, "pid": 9960, "src": "ws", "recv": 18702.9530163, "lt": 18702.904680742, "tt": 6.8438}
+{"stage": "asr_partial", "t": 18671.651881648, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the mountains or maybe", "src": "ws", "recv": 18703.0391866, "lt": 18702.990555725, "tt": 6.9297}
+{"stage": "llm_request", "t": 18671.655186064, "pid": 9960, "speculative": true, "messages": 24, "chars": 10414, "est_tokens": 2604, "src": "ws", "recv": 18703.0426276, "lt": 18702.993860141, "tt": 6.933}
+{"stage": "asr_partial", "t": 18671.923804693, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the mountains or maybe", "src": "ws", "recv": 18703.3106162, "lt": 18703.26247877, "tt": 7.2016}
+{"stage": "llm_cancel", "t": 18672.12475672, "pid": 9960, "src": "ws", "recv": 18703.5106222, "lt": 18703.463430797, "tt": 7.4026}
+{"stage": "asr_partial", "t": 18672.163335998, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the mountains or maybe", "src": "ws", "recv": 18703.5501481, "lt": 18703.502010075, "tt": 7.4412}
+{"stage": "asr_final", "t": 18673.091348921, "pid": 9960, "text": "So I was thinking we could go somewhere nice this weekend, maybe out of town. Yeah. Maybe somewhere like the mountains or maybe", "src": "ws", "recv": 18704.4797383, "lt": 18704.430022998, "tt": 8.3692}
+{"stage": "llm_request", "t": 18673.096519821, "pid": 9960, "messages": 24, "chars": 10414, "est_tokens": 2604, "src": "ws", "recv": 18704.4862327, "lt": 18704.435193898, "tt": 8.3743}
+{"stage": "user_stopped", "t": 18673.096593394, "pid": 9960, "src": "ws", "recv": 18704.486253, "lt": 18704.435267471, "tt": 8.3744}
+{"stage": "user_stopped", "t": 18673.096628079, "pid": 9960, "src": "ws", "recv": 18704.486266, "lt": 18704.435302156002, "tt": 8.3745}
+{"stage": "vad_start", "t": 18673.389969566, "pid": 9960, "src": "ws", "recv": 18704.7779278, "lt": 18704.728643643, "tt": 8.6678}
+{"stage": "vad_start", "t": 18673.390025806, "pid": 9960, "src": "ws", "recv": 18704.7779608, "lt": 18704.728699883, "tt": 8.6679}
+{"stage": "llm_first_token", "t": 18673.569122817, "pid": 9960, "src": "ws", "recv": 18704.9559555, "lt": 18704.907796894, "tt": 8.847}
+{"stage": "llm_usage", "t": 18673.59043017, "pid": 9960, "prompt_tokens": 2525, "completion_tokens": 51, "src": "ws", "recv": 18704.9814049, "lt": 18704.929104247, "tt": 8.8683}
+{"stage": "tts_request", "t": 18673.616474815, "pid": 9960, "src": "ws", "recv": 18705.0072464, "lt": 18704.955148892, "tt": 8.8943}
+{"stage": "tts_first_audio", "t": 18673.794975164, "pid": 9960, "src": "ws", "recv": 18705.1813021, "lt": 18705.133649241, "tt": 9.0728}
+{"stage": "audio_out", "t": 18673.798930926, "pid": 9960, "src": "ws", "recv": 18705.1891776, "lt": 18705.137605003, "tt": 9.0768}
+{"stage": "audio_out", "t": 18673.799011129, "pid": 9960, "src": "ws", "recv": 18705.1891987, "lt": 18705.137685206, "tt": 9.0768}
+{"stage": "asr_partial", "t": 18673.818423684, "pid": 9960, "text": "So", "src": "ws", "recv": 18705.2092364, "lt": 18705.157097761, "tt": 9.0963}
+{"stage": "vad_end", "t": 18674.097361887, "pid": 9960, "src": "ws", "recv": 18705.4843441, "lt": 18705.436035964, "tt": 9.3752}
+{"stage": "vad_end", "t": 18674.097417071, "pid": 9960, "src": "ws", "recv": 18705.4843723, "lt": 18705.436091148, "tt": 9.3752}
+{"stage": "bot_stopped", "t": 18678.338661768, "pid": 9960, "src": "ws", "recv": 18709.7257099, "lt": 18709.677335845, "tt": 13.6165}
+{"stage": "bot_stopped", "t": 18678.338748415, "pid": 9960, "src": "ws", "recv": 18709.7257329, "lt": 18709.677422492, "tt": 13.6166}
+{"stage": "llm_request", "t": 18678.344776937, "pid": 9960, "messages": 14, "chars": 9934, "est_tokens": 2484, "src": "ws", "recv": 18709.7310172, "lt": 18709.683451014, "tt": 13.6226}

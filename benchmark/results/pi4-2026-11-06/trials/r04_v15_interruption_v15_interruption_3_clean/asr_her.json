@@ -1,0 +1,216 @@
+{
+  "text": "The newest smart home devices focus on integrated AI assistance, energy saving sensors, and tighter security. Voice -controlled hubs now manage lighting, thermostats, cameras, and appliances through a single app.",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        2.99,
+        3.45
+      ]
+    },
+    {
+      "text": "newest",
+      "timestamp": [
+        3.45,
+        3.67
+      ]
+    },
+    {
+      "text": "smart",
+      "timestamp": [
+        3.67,
+        4.01
+      ]
+    },
+    {
+      "text": "home",
+      "timestamp": [
+        4.01,
+        4.21
+      ]
+    },
+    {
+      "text": "devices",
+      "timestamp": [
+        4.21,
+        4.65
+      ]
+    },
+    {
+      "text": "focus",
+      "timestamp": [
+        4.65,
+        5.01
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        5.01,
+        5.31
+      ]
+    },
+    {
+      "text": "integrated",
+      "timestamp": [
+        5.31,
+        5.81
+      ]
+    },
+    {
+      "text": "AI",
+      "timestamp": [
+        5.81,
+        6.25
+      ]
+    },
+    {
+      "text": "assistance,",
+      "timestamp": [
+        6.25,
+        6.79
+      ]
+    },
+    {
+      "text": "energy",
+      "timestamp": [
+        7.39,
+        7.71
+      ]
+    },
+    {
+      "text": "saving",
+      "timestamp": [
+        7.71,
+        8.09
+      ]
+    },
+    {
+      "text": "sensors,",
+      "timestamp": [
+        8.09,
+        8.59
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        9.13,
+        9.25
+      ]
+    },
+    {
+      "text": "tighter",
+      "timestamp": [
+        9.25,
+        9.53
+      ]
+    },
+    {
+      "text": "security.",
+      "timestamp": [
+        9.53,
+        10.19
+      ]
+    },
+    {
+      "text": "Voice",
+      "timestamp": [
+        10.49,
+        10.61
+      ]
+    },
+    {
+      "text": "-controlled",
+      "timestamp": [
+        10.61,
+        10.95
+      ]
+    },
+    {
+      "text": "hubs",
+      "timestamp": [
+        10.95,
+        11.39
+      ]
+    },
+    {
+      "text": "now",
+      "timestamp": [
+        11.39,
+        11.63
+      ]
+    },
+    {
+      "text": "manage",
+      "timestamp": [
+        11.63,
+        12.03
+      ]
+    },
+    {
+      "text": "lighting,",
+      "timestamp": [
+        12.03,
+        12.41
+      ]
+    },
+    {
+      "text": "thermostats,",
+      "timestamp": [
+        12.99,
+        13.59
+      ]
+    },
+    {
+      "text": "cameras,",
+      "timestamp": [
+        13.95,
+        14.39
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        14.93,
+        15.07
+      ]
+    },
+    {
+      "text": "appliances",
+      "timestamp": [
+        15.07,
+        15.65
+      ]
+    },
+    {
+      "text": "through",
+      "timestamp": [
+        15.65,
+        16.29
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        16.29,
+        16.41
+      ]
+    },
+    {
+      "text": "single",
+      "timestamp": [
+        16.41,
+        16.67
+      ]
+    },
+    {
+      "text": "app.",
+      "timestamp": [
+        16.67,
+        17.07
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

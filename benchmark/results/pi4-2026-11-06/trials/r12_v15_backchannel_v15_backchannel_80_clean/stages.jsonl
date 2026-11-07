@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 19349.609132086, "pid": 9960, "src": "ws", "recv": 19381.0046895, "lt": 19380.947806163, "tt": 0.1193}
+{"stage": "vad_start", "t": 19349.609197771, "pid": 9960, "src": "ws", "recv": 19381.0047129, "lt": 19380.947871848, "tt": 0.1193}
+{"stage": "asr_partial", "t": 19350.325392113, "pid": 9960, "text": "Illuminate", "src": "ws", "recv": 19381.7240834, "lt": 19381.664066190002, "tt": 0.8355}
+{"stage": "interrupted", "t": 19350.328256322, "pid": 9960, "src": "ws", "recv": 19381.7262328, "lt": 19381.666930399, "tt": 0.8384}
+{"stage": "interrupted", "t": 19350.328345025, "pid": 9960, "src": "ws", "recv": 19381.7262511, "lt": 19381.667019102, "tt": 0.8385}
+{"stage": "bot_stopped", "t": 19350.357678535, "pid": 9960, "src": "ws", "recv": 19381.7613998, "lt": 19381.696352612, "tt": 0.8678}
+{"stage": "bot_stopped", "t": 19350.35778596, "pid": 9960, "src": "ws", "recv": 19381.7614207, "lt": 19381.696460037, "tt": 0.8679}
+{"stage": "llm_request", "t": 19350.373168013, "pid": 9960, "messages": 28, "chars": 12891, "est_tokens": 3223, "src": "ws", "recv": 19381.7707965, "lt": 19381.71184209, "tt": 0.8833}
+{"stage": "asr_partial", "t": 19350.570320158, "pid": 9960, "text": "Illuminate vaccination", "src": "ws", "recv": 19381.9658509, "lt": 19381.908994235, "tt": 1.0805}
+{"stage": "asr_partial", "t": 19350.80359261, "pid": 9960, "text": "Illuminate vaccination has", "src": "ws", "recv": 19382.199175, "lt": 19382.142266687, "tt": 1.3137}
+{"stage": "asr_partial", "t": 19351.050654761, "pid": 9960, "text": "Illuminate vaccination history", "src": "ws", "recv": 19382.4462869, "lt": 19382.389328838, "tt": 1.5608}
+{"stage": "asr_partial", "t": 19351.283829788, "pid": 9960, "text": "Illuminate vaccination history", "src": "ws", "recv": 19382.6793344, "lt": 19382.622503865, "tt": 1.794}
+{"stage": "asr_partial", "t": 19351.530400963, "pid": 9960, "text": "Illuminate vaccination history comprehensive", "src": "ws", "recv": 19382.9259467, "lt": 19382.869075040002, "tt": 2.0405}
+{"stage": "asr_partial", "t": 19351.763675711, "pid": 9960, "text": "Illuminate vaccination history comprehensively", "src": "ws", "recv": 19383.1592065, "lt": 19383.102349788, "tt": 2.2738}
+{"stage": "vad_end", "t": 19351.879862228, "pid": 9960, "src": "ws", "recv": 19383.2757132, "lt": 19383.218536305, "tt": 2.39}
+{"stage": "vad_end", "t": 19351.879917246, "pid": 9960, "src": "ws", "recv": 19383.2757328, "lt": 19383.218591323, "tt": 2.39}
+{"stage": "asr_partial", "t": 19352.013481721, "pid": 9960, "text": "Illuminate vaccination history comprehensively.", "src": "ws", "recv": 19383.4094421, "lt": 19383.352155798, "tt": 2.5236}
+{"stage": "llm_request", "t": 19352.01655715, "pid": 9960, "speculative": true, "messages": 29, "chars": 12938, "est_tokens": 3234, "src": "ws", "recv": 19383.4123948, "lt": 19383.355231227, "tt": 2.5267}
+{"stage": "asr_partial", "t": 19352.243930851, "pid": 9960, "text": "Illuminate vaccination history comprehensively.", "src": "ws", "recv": 19383.6394919, "lt": 19383.582604928, "tt": 2.7541}
+{"stage": "llm_usage", "t": 19352.84561108, "pid": 9960, "prompt_tokens": 2752, "completion_tokens": 267, "src": "ws", "recv": 19384.241542, "lt": 19384.184285157, "tt": 3.3557}
+{"stage": "asr_final", "t": 19352.971368714, "pid": 9960, "text": "Illuminate vaccination history comprehensively.", "src": "ws", "recv": 19384.3677958, "lt": 19384.310042791, "tt": 3.4815}
+{"stage": "user_stopped", "t": 19352.978268397, "pid": 9960, "src": "ws", "recv": 19384.388685, "lt": 19384.316942474, "tt": 3.4884}
+{"stage": "user_stopped", "t": 19352.978337989, "pid": 9960, "src": "ws", "recv": 19384.3887071, "lt": 19384.317012066, "tt": 3.4885}
+{"stage": "llm_first_token", "t": 19352.983095418, "pid": 9960, "src": "ws", "recv": 19384.401845, "lt": 19384.321769495, "tt": 3.4932}
+{"stage": "tts_request", "t": 19353.064878073, "pid": 9960, "src": "ws", "recv": 19384.4777086, "lt": 19384.40355215, "tt": 3.575}
+{"stage": "tts_first_audio", "t": 19353.275588291, "pid": 9960, "src": "ws", "recv": 19384.6721335, "lt": 19384.614262368, "tt": 3.7857}
+{"stage": "audio_out", "t": 19353.282222125, "pid": 9960, "src": "ws", "recv": 19384.6839656, "lt": 19384.620896202, "tt": 3.7924}
+{"stage": "audio_out", "t": 19353.282307513, "pid": 9960, "src": "ws", "recv": 19384.6839915, "lt": 19384.62098159, "tt": 3.7924}

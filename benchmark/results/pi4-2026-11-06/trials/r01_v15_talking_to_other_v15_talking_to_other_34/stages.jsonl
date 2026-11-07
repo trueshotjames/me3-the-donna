@@ -1,0 +1,38 @@
+{"stage": "vad_start", "t": 16197.720581565, "pid": 9960, "src": "ws", "recv": 16229.0707797, "lt": 16229.059255642, "tt": 0.1985}
+{"stage": "vad_start", "t": 16197.720671083, "pid": 9960, "src": "ws", "recv": 16229.0708015, "lt": 16229.05934516, "tt": 0.1986}
+{"stage": "interrupted", "t": 16198.169540794, "pid": 9960, "src": "ws", "recv": 16229.5203149, "lt": 16229.508214871, "tt": 0.6475}
+{"stage": "interrupted", "t": 16198.169633756, "pid": 9960, "src": "ws", "recv": 16229.5203525, "lt": 16229.508307833, "tt": 0.6475}
+{"stage": "asr_partial", "t": 16198.29027582, "pid": 9960, "text": "Mute the", "src": "ws", "recv": 16229.640935, "lt": 16229.628949897, "tt": 0.7682}
+{"stage": "asr_partial", "t": 16198.525312767, "pid": 9960, "text": "Mute the TV", "src": "ws", "recv": 16229.8747838, "lt": 16229.863986844, "tt": 1.0032}
+{"stage": "asr_partial", "t": 16198.564810983, "pid": 9960, "text": "Mute the TV.", "src": "ws", "recv": 16229.9142931, "lt": 16229.90348506, "tt": 1.0427}
+{"stage": "vad_end", "t": 16198.580632361, "pid": 9960, "src": "ws", "recv": 16229.9345084, "lt": 16229.919306438, "tt": 1.0585}
+{"stage": "vad_end", "t": 16198.580686916, "pid": 9960, "src": "ws", "recv": 16229.9345414, "lt": 16229.919360993, "tt": 1.0586}
+{"stage": "llm_request", "t": 16198.591372839, "pid": 9960, "speculative": true, "messages": 73, "chars": 17422, "est_tokens": 4356, "src": "ws", "recv": 16229.9410612, "lt": 16229.930046916, "tt": 1.0693}
+{"stage": "asr_final", "t": 16198.697195328, "pid": 9960, "text": "Mute the TV.", "src": "ws", "recv": 16230.0476771, "lt": 16230.035869405001, "tt": 1.1751}
+{"stage": "user_stopped", "t": 16198.705145063, "pid": 9960, "src": "ws", "recv": 16230.0585613, "lt": 16230.04381914, "tt": 1.1831}
+{"stage": "user_stopped", "t": 16198.705213951, "pid": 9960, "src": "ws", "recv": 16230.0585821, "lt": 16230.043888028, "tt": 1.1831}
+{"stage": "llm_first_token", "t": 16199.304652264, "pid": 9960, "src": "ws", "recv": 16230.6545298, "lt": 16230.643326341, "tt": 1.7826}
+{"stage": "llm_usage", "t": 16199.321365983, "pid": 9960, "prompt_tokens": 2531, "completion_tokens": 44, "src": "ws", "recv": 16230.6757855, "lt": 16230.66004006, "tt": 1.7993}
+{"stage": "tts_request", "t": 16199.34375791, "pid": 9960, "src": "ws", "recv": 16230.6970824, "lt": 16230.682431987, "tt": 1.8217}
+{"stage": "tts_first_audio", "t": 16199.563331234, "pid": 9960, "src": "ws", "recv": 16230.913401, "lt": 16230.902005311, "tt": 2.0412}
+{"stage": "audio_out", "t": 16199.569568582, "pid": 9960, "src": "ws", "recv": 16230.9249858, "lt": 16230.908242659, "tt": 2.0475}
+{"stage": "audio_out", "t": 16199.5696526, "pid": 9960, "src": "ws", "recv": 16230.9250061, "lt": 16230.908326677, "tt": 2.0476}
+{"stage": "vad_start", "t": 16201.335455886, "pid": 9960, "src": "ws", "recv": 16232.6845065, "lt": 16232.674129963, "tt": 3.8134}
+{"stage": "vad_start", "t": 16201.33551107, "pid": 9960, "src": "ws", "recv": 16232.6845286, "lt": 16232.674185147, "tt": 3.8134}
+{"stage": "asr_partial", "t": 16202.007081418, "pid": 9960, "text": "Read a passage", "src": "ws", "recv": 16233.360454, "lt": 16233.345755495, "tt": 4.485}
+{"stage": "interrupted", "t": 16202.010517394, "pid": 9960, "src": "ws", "recv": 16233.362918, "lt": 16233.349191471, "tt": 4.4884}
+{"stage": "interrupted", "t": 16202.010607022, "pid": 9960, "src": "ws", "recv": 16233.3629342, "lt": 16233.349281099001, "tt": 4.4885}
+{"stage": "bot_stopped", "t": 16202.041087719, "pid": 9960, "src": "ws", "recv": 16233.3915463, "lt": 16233.379761796, "tt": 4.519}
+{"stage": "bot_stopped", "t": 16202.041167033, "pid": 9960, "src": "ws", "recv": 16233.3915701, "lt": 16233.37984111, "tt": 4.5191}
+{"stage": "asr_partial", "t": 16202.244387281, "pid": 9960, "text": "Read a pass the", "src": "ws", "recv": 16233.5936262, "lt": 16233.583061358, "tt": 4.7223}
+{"stage": "asr_partial", "t": 16202.485658373, "pid": 9960, "text": "Read a Pasta Soy", "src": "ws", "recv": 16233.8348326, "lt": 16233.82433245, "tt": 4.9636}
+{"stage": "asr_partial", "t": 16202.573159143, "pid": 9960, "text": "Reader, pass the soy sauce.", "src": "ws", "recv": 16233.9230956, "lt": 16233.91183322, "tt": 5.0511}
+{"stage": "asr_partial", "t": 16202.728071487, "pid": 9960, "text": "Reader, pass the soy sauce, please.", "src": "ws", "recv": 16234.0772812, "lt": 16234.066745564, "tt": 5.206}
+{"stage": "asr_partial", "t": 16202.888343432, "pid": 9960, "text": "Reader, pass the soy sauce, please.", "src": "ws", "recv": 16234.238371, "lt": 16234.227017509, "tt": 5.3663}
+{"stage": "llm_request", "t": 16202.975767944, "pid": 9960, "speculative": true, "messages": 74, "chars": 17457, "est_tokens": 4364, "src": "ws", "recv": 16234.3257976, "lt": 16234.314442021001, "tt": 5.4537}
+{"stage": "asr_final", "t": 16203.02095096, "pid": 9960, "text": "Reader, pass the soy sauce, please.", "src": "ws", "recv": 16234.3709138, "lt": 16234.359625037001, "tt": 5.4989}
+{"stage": "user_stopped", "t": 16203.028169704, "pid": 9960, "src": "ws", "recv": 16234.3810923, "lt": 16234.366843781001, "tt": 5.5061}
+{"stage": "user_stopped", "t": 16203.028271832, "pid": 9960, "src": "ws", "recv": 16234.3811145, "lt": 16234.366945909, "tt": 5.5062}
+{"stage": "llm_first_token", "t": 16203.034771845, "pid": 9960, "src": "ws", "recv": 16234.3871443, "lt": 16234.373445922, "tt": 5.5127}
+{"stage": "vad_end", "t": 16203.06650273, "pid": 9960, "src": "ws", "recv": 16234.4150006, "lt": 16234.405176807, "tt": 5.5444}
+{"stage": "vad_end", "t": 16203.06655697, "pid": 9960, "src": "ws", "recv": 16234.4150245, "lt": 16234.405231047, "tt": 5.5445}

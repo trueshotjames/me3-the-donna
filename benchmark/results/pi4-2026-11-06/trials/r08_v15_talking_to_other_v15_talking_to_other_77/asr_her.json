@@ -1,0 +1,97 @@
+{
+  "text": "The distance between Beijing and... I'm not able to help with medical issues.",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        2.26,
+        2.72
+      ]
+    },
+    {
+      "text": "distance",
+      "timestamp": [
+        2.72,
+        3.06
+      ]
+    },
+    {
+      "text": "between",
+      "timestamp": [
+        3.06,
+        3.58
+      ]
+    },
+    {
+      "text": "Beijing",
+      "timestamp": [
+        3.58,
+        4.0
+      ]
+    },
+    {
+      "text": "and...",
+      "timestamp": [
+        4.0,
+        4.34
+      ]
+    },
+    {
+      "text": "I'm",
+      "timestamp": [
+        6.72,
+        7.2
+      ]
+    },
+    {
+      "text": "not",
+      "timestamp": [
+        7.2,
+        7.32
+      ]
+    },
+    {
+      "text": "able",
+      "timestamp": [
+        7.32,
+        7.56
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        7.56,
+        7.74
+      ]
+    },
+    {
+      "text": "help",
+      "timestamp": [
+        7.74,
+        7.92
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        7.92,
+        8.12
+      ]
+    },
+    {
+      "text": "medical",
+      "timestamp": [
+        8.12,
+        8.44
+      ]
+    },
+    {
+      "text": "issues.",
+      "timestamp": [
+        8.44,
+        8.9
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

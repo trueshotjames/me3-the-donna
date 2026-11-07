@@ -1,0 +1,188 @@
+{
+  "text": "Space telescopes are observatories placed outside Earth's atmosphere to capture clear views of the universe. They avoid atmospheric distortion, letting them see faint objects invisible, infrared,",
+  "chunks": [
+    {
+      "text": "Space",
+      "timestamp": [
+        3.25,
+        3.75
+      ]
+    },
+    {
+      "text": "telescopes",
+      "timestamp": [
+        3.75,
+        4.39
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        4.39,
+        4.77
+      ]
+    },
+    {
+      "text": "observatories",
+      "timestamp": [
+        4.77,
+        5.49
+      ]
+    },
+    {
+      "text": "placed",
+      "timestamp": [
+        5.49,
+        5.79
+      ]
+    },
+    {
+      "text": "outside",
+      "timestamp": [
+        5.79,
+        6.27
+      ]
+    },
+    {
+      "text": "Earth's",
+      "timestamp": [
+        6.27,
+        6.81
+      ]
+    },
+    {
+      "text": "atmosphere",
+      "timestamp": [
+        6.81,
+        7.23
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        7.23,
+        7.59
+      ]
+    },
+    {
+      "text": "capture",
+      "timestamp": [
+        7.59,
+        7.91
+      ]
+    },
+    {
+      "text": "clear",
+      "timestamp": [
+        7.91,
+        8.23
+      ]
+    },
+    {
+      "text": "views",
+      "timestamp": [
+        8.23,
+        8.55
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        8.55,
+        8.75
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        8.75,
+        8.89
+      ]
+    },
+    {
+      "text": "universe.",
+      "timestamp": [
+        8.89,
+        9.27
+      ]
+    },
+    {
+      "text": "They",
+      "timestamp": [
+        9.65,
+        9.75
+      ]
+    },
+    {
+      "text": "avoid",
+      "timestamp": [
+        9.75,
+        10.03
+      ]
+    },
+    {
+      "text": "atmospheric",
+      "timestamp": [
+        10.03,
+        10.65
+      ]
+    },
+    {
+      "text": "distortion,",
+      "timestamp": [
+        10.65,
+        11.39
+      ]
+    },
+    {
+      "text": "letting",
+      "timestamp": [
+        11.79,
+        12.11
+      ]
+    },
+    {
+      "text": "them",
+      "timestamp": [
+        12.11,
+        12.33
+      ]
+    },
+    {
+      "text": "see",
+      "timestamp": [
+        12.33,
+        12.57
+      ]
+    },
+    {
+      "text": "faint",
+      "timestamp": [
+        12.57,
+        12.91
+      ]
+    },
+    {
+      "text": "objects",
+      "timestamp": [
+        12.91,
+        13.33
+      ]
+    },
+    {
+      "text": "invisible,",
+      "timestamp": [
+        13.33,
+        14.01
+      ]
+    },
+    {
+      "text": "infrared,",
+      "timestamp": [
+        14.61,
+        15.01
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

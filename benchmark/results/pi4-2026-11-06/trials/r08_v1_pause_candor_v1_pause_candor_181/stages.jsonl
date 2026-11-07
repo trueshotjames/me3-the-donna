@@ -1,0 +1,58 @@
+{"stage": "vad_start", "t": 18238.552975826, "pid": 9960, "src": "ws", "recv": 18269.9350824, "lt": 18269.891649903002, "tt": 0.1992}
+{"stage": "vad_start", "t": 18238.55306477, "pid": 9960, "src": "ws", "recv": 18269.935106, "lt": 18269.891738847, "tt": 0.1993}
+{"stage": "asr_partial", "t": 18239.004779209, "pid": 9960, "text": "David", "src": "ws", "recv": 18270.3860656, "lt": 18270.343453286, "tt": 0.651}
+{"stage": "interrupted", "t": 18239.131545159, "pid": 9960, "src": "ws", "recv": 18270.5139233, "lt": 18270.470219236002, "tt": 0.7777}
+{"stage": "interrupted", "t": 18239.131674972, "pid": 9960, "src": "ws", "recv": 18270.5139456, "lt": 18270.470349049, "tt": 0.7779}
+{"stage": "asr_partial", "t": 18239.257113347, "pid": 9960, "text": "Yeah. They said the", "src": "ws", "recv": 18270.6380305, "lt": 18270.595787424, "tt": 0.9033}
+{"stage": "asr_partial", "t": 18239.525161677, "pid": 9960, "text": "Yeah. They said the law", "src": "ws", "recv": 18270.9060285, "lt": 18270.863835754, "tt": 1.1714}
+{"stage": "asr_partial", "t": 18239.726301715, "pid": 9960, "text": "Yeah. They said the law have the", "src": "ws", "recv": 18271.1083296, "lt": 18271.064975792, "tt": 1.3725}
+{"stage": "asr_partial", "t": 18240.002629294, "pid": 9960, "text": "Yeah. They said the law have the largest", "src": "ws", "recv": 18271.3836085, "lt": 18271.341303371, "tt": 1.6488}
+{"stage": "asr_partial", "t": 18240.207113198, "pid": 9960, "text": "Yeah. They said the law have... the largest the", "src": "ws", "recv": 18271.590533, "lt": 18271.545787275, "tt": 1.8533}
+{"stage": "asr_partial", "t": 18240.486464868, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest", "src": "ws", "recv": 18271.867559, "lt": 18271.825138945, "tt": 2.1327}
+{"stage": "asr_partial", "t": 18240.68610474, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size", "src": "ws", "recv": 18272.0682578, "lt": 18272.024778817, "tt": 2.3323}
+{"stage": "asr_partial", "t": 18240.966170364, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they gave", "src": "ws", "recv": 18272.3472774, "lt": 18272.304844441, "tt": 2.6124}
+{"stage": "asr_partial", "t": 18241.166176065, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is", "src": "ws", "recv": 18272.5482629, "lt": 18272.504850142, "tt": 2.8124}
+{"stage": "asr_partial", "t": 18241.447099234, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is", "src": "ws", "recv": 18272.8282066, "lt": 18272.785773311, "tt": 3.0933}
+{"stage": "asr_partial", "t": 18241.648470676, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is a recall", "src": "ws", "recv": 18273.0329381, "lt": 18272.987144753, "tt": 3.2947}
+{"stage": "asr_partial", "t": 18241.926569603, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the", "src": "ws", "recv": 18273.307664, "lt": 18273.26524368, "tt": 3.5728}
+{"stage": "asr_partial", "t": 18242.126512842, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest", "src": "ws", "recv": 18273.5087732, "lt": 18273.465186919, "tt": 3.7727}
+{"stage": "asr_partial", "t": 18242.408511331, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest", "src": "ws", "recv": 18273.7896944, "lt": 18273.747185408, "tt": 4.0547}
+{"stage": "asr_partial", "t": 18242.610153122, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest record", "src": "ws", "recv": 18273.9937047, "lt": 18273.948827199, "tt": 4.2564}
+{"stage": "asr_partial", "t": 18242.88744754, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest recorded", "src": "ws", "recv": 18274.2685913, "lt": 18274.226121617, "tt": 4.5336}
+{"stage": "asr_partial", "t": 18243.092204144, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest recorded is a", "src": "ws", "recv": 18274.4760663, "lt": 18274.430878221, "tt": 4.7384}
+{"stage": "asr_partial", "t": 18243.368902922, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest recorded is a hundred and", "src": "ws", "recv": 18274.7499117, "lt": 18274.707576999, "tt": 5.0151}
+{"stage": "asr_partial", "t": 18243.571986658, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest recorded is a hundred and seventy", "src": "ws", "recv": 18274.9566829, "lt": 18274.910660735, "tt": 5.2182}
+{"stage": "asr_partial", "t": 18243.849140449, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest recorded is a hundred and seventy five", "src": "ws", "recv": 18275.2302609, "lt": 18275.187814526, "tt": 5.4953}
+{"stage": "asr_partial", "t": 18244.052765993, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest recorded is a hundred and seventy five pound", "src": "ws", "recv": 18275.4368157, "lt": 18275.39144007, "tt": 5.699}
+{"stage": "asr_partial", "t": 18244.326898136, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest recorded is a hundred and seventy five pounds.", "src": "ws", "recv": 18275.7081493, "lt": 18275.665572213, "tt": 5.9731}
+{"stage": "vad_end", "t": 18244.344060143, "pid": 9960, "src": "ws", "recv": 18275.7314029, "lt": 18275.68273422, "tt": 5.9903}
+{"stage": "vad_end", "t": 18244.344122291, "pid": 9960, "src": "ws", "recv": 18275.7314257, "lt": 18275.682796368, "tt": 5.9903}
+{"stage": "llm_request", "t": 18244.357008407, "pid": 9960, "speculative": true, "messages": 17, "chars": 12058, "est_tokens": 3014, "src": "ws", "recv": 18275.7382088, "lt": 18275.695682484, "tt": 6.0032}
+{"stage": "llm_usage", "t": 18244.980581825, "pid": 9960, "prompt_tokens": 2731, "completion_tokens": 33, "src": "ws", "recv": 18276.3644374, "lt": 18276.319255902, "tt": 6.6268}
+{"stage": "asr_final", "t": 18245.028844165, "pid": 9960, "text": "Yeah. They said the law have... the largest... the smallest size they get is record... the smallest recorded is a hundred and seventy five pounds.", "src": "ws", "recv": 18276.4107695, "lt": 18276.367518242, "tt": 6.675}
+{"stage": "user_stopped", "t": 18245.035787097, "pid": 9960, "src": "ws", "recv": 18276.4201091, "lt": 18276.374461174, "tt": 6.682}
+{"stage": "user_stopped", "t": 18245.035855892, "pid": 9960, "src": "ws", "recv": 18276.4201299, "lt": 18276.374529969, "tt": 6.6821}
+{"stage": "llm_first_token", "t": 18245.0384861, "pid": 9960, "src": "ws", "recv": 18276.4234675, "lt": 18276.377160177, "tt": 6.6847}
+{"stage": "vad_start", "t": 18245.619505458, "pid": 9960, "src": "ws", "recv": 18277.000381, "lt": 18276.958179535, "tt": 7.2657}
+{"stage": "vad_start", "t": 18245.619563198, "pid": 9960, "src": "ws", "recv": 18277.0004022, "lt": 18276.958237275, "tt": 7.2658}
+{"stage": "interrupted", "t": 18246.012224617, "pid": 9960, "src": "ws", "recv": 18277.3944856, "lt": 18277.350898694, "tt": 7.6584}
+{"stage": "interrupted", "t": 18246.012312486, "pid": 9960, "src": "ws", "recv": 18277.3945069, "lt": 18277.350986563, "tt": 7.6585}
+{"stage": "asr_partial", "t": 18246.123493854, "pid": 9960, "text": "That's the small", "src": "ws", "recv": 18277.5047601, "lt": 18277.462167931, "tt": 7.7697}
+{"stage": "asr_partial", "t": 18246.328650953, "pid": 9960, "text": "That's the smallest", "src": "ws", "recv": 18277.7097269, "lt": 18277.66732503, "tt": 7.9749}
+{"stage": "asr_partial", "t": 18246.404855999, "pid": 9960, "text": "That's the smallest.", "src": "ws", "recv": 18277.7858618, "lt": 18277.743530076, "tt": 8.0511}
+{"stage": "llm_request", "t": 18246.460461952, "pid": 9960, "speculative": true, "messages": 18, "chars": 12078, "est_tokens": 3020, "src": "ws", "recv": 18277.8413082, "lt": 18277.799136029, "tt": 8.1067}
+{"stage": "asr_partial", "t": 18246.56702471, "pid": 9960, "text": "That's the smallest.", "src": "ws", "recv": 18277.9481319, "lt": 18277.905698787, "tt": 8.2132}
+{"stage": "vad_end", "t": 18246.584042683, "pid": 9960, "src": "ws", "recv": 18277.9662103, "lt": 18277.92271676, "tt": 8.2302}
+{"stage": "vad_end", "t": 18246.584149163, "pid": 9960, "src": "ws", "recv": 18277.9662282, "lt": 18277.922823240002, "tt": 8.2303}
+{"stage": "llm_usage", "t": 18247.117904631, "pid": 9960, "prompt_tokens": 2562, "completion_tokens": 27, "src": "ws", "recv": 18278.5001879, "lt": 18278.456578708, "tt": 8.7641}
+{"stage": "asr_final", "t": 18247.257868249, "pid": 9960, "text": "That's the smallest.", "src": "ws", "recv": 18278.6398518, "lt": 18278.596542326, "tt": 8.9041}
+{"stage": "user_stopped", "t": 18247.264704942, "pid": 9960, "src": "ws", "recv": 18278.6491505, "lt": 18278.603379019, "tt": 8.9109}
+{"stage": "user_stopped", "t": 18247.264774441, "pid": 9960, "src": "ws", "recv": 18278.6491753, "lt": 18278.603448518, "tt": 8.911}
+{"stage": "llm_first_token", "t": 18247.267333335, "pid": 9960, "src": "ws", "recv": 18278.6525881, "lt": 18278.606007412, "tt": 8.9135}
+{"stage": "tts_request", "t": 18247.289825127, "pid": 9960, "src": "ws", "recv": 18278.6768354, "lt": 18278.628499204002, "tt": 8.936}
+{"stage": "tts_first_audio", "t": 18247.50225445, "pid": 9960, "src": "ws", "recv": 18278.8833091, "lt": 18278.840928527, "tt": 9.1485}
+{"stage": "audio_out", "t": 18247.507146833, "pid": 9960, "src": "ws", "recv": 18278.8954804, "lt": 18278.84582091, "tt": 9.1533}
+{"stage": "audio_out", "t": 18247.507232777, "pid": 9960, "src": "ws", "recv": 18278.8954974, "lt": 18278.845906854, "tt": 9.1534}
+{"stage": "bot_stopped", "t": 18247.914234757, "pid": 9960, "src": "ws", "recv": 18279.2956901, "lt": 18279.252908834, "tt": 9.5604}
+{"stage": "bot_stopped", "t": 18247.914319163, "pid": 9960, "src": "ws", "recv": 18279.2957098, "lt": 18279.25299324, "tt": 9.5605}
+{"stage": "llm_request", "t": 18247.920826582, "pid": 9960, "messages": 19, "chars": 12085, "est_tokens": 3021, "src": "ws", "recv": 18279.3022051, "lt": 18279.259500659, "tt": 9.567}

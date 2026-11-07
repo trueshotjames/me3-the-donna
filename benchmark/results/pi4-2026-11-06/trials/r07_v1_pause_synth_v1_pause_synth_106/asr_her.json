@@ -1,0 +1,62 @@
+{
+  "text": "It's encouraging that the policy target environmental protection.",
+  "chunks": [
+    {
+      "text": "It's",
+      "timestamp": [
+        9.71,
+        10.13
+      ]
+    },
+    {
+      "text": "encouraging",
+      "timestamp": [
+        10.13,
+        10.55
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        10.55,
+        10.79
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        10.79,
+        10.87
+      ]
+    },
+    {
+      "text": "policy",
+      "timestamp": [
+        10.87,
+        11.21
+      ]
+    },
+    {
+      "text": "target",
+      "timestamp": [
+        11.21,
+        11.51
+      ]
+    },
+    {
+      "text": "environmental",
+      "timestamp": [
+        11.51,
+        12.03
+      ]
+    },
+    {
+      "text": "protection.",
+      "timestamp": [
+        12.03,
+        12.71
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

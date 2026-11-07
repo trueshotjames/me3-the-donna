@@ -1,0 +1,69 @@
+{
+  "text": "I'm unable to get the current time right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        2.08,
+        2.54
+      ]
+    },
+    {
+      "text": "unable",
+      "timestamp": [
+        2.54,
+        2.72
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        2.72,
+        2.94
+      ]
+    },
+    {
+      "text": "get",
+      "timestamp": [
+        2.94,
+        3.04
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.04,
+        3.18
+      ]
+    },
+    {
+      "text": "current",
+      "timestamp": [
+        3.18,
+        3.42
+      ]
+    },
+    {
+      "text": "time",
+      "timestamp": [
+        3.42,
+        3.72
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        3.72,
+        3.92
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        3.92,
+        4.2
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

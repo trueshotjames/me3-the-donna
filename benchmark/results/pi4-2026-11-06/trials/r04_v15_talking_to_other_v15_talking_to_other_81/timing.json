@@ -1,0 +1,93 @@
+{
+  "trial": "r04_v15_talking_to_other_v15_talking_to_other_81",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_81",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 15.104,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.36
+    },
+    {
+      "name": "overlap",
+      "t": 4.8919375,
+      "len": 2.183
+    }
+  ],
+  "live_bot_starts": [
+    3.392
+  ],
+  "live_bot_ends": [
+    5.152
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Find me a nearby coffee shop that's open now.",
+    "current_turn_text": "Chris, your laptop's still on the table, man.",
+    "overlap_text": "Chris, your laptop's still on the table, man.",
+    "overlap_duration": 2.18,
+    "overlap_window": [
+      6.276,
+      8.459
+    ],
+    "source_id": "81"
+  },
+  "mono": [
+    17069.7285744,
+    17084.8303246
+  ],
+  "bot_segments": [
+    [
+      3.362,
+      5.182
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.36
+  ],
+  "overlap_played": true,
+  "t_stop": 0.25200000000000067,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.93,
+    6.91
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "latency": null,
+  "actual": "stopped after 0.25 s, did not come back",
+  "overlap_class": "stopped",
+  "label_provisional": "Unknown",
+  "verdict": "✗ stopped, silent",
+  "ok": false,
+  "marks": 43,
+  "final": {
+    "t_stop": 0.25200000000000067,
+    "t_resp": null,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": null,
+      "pitch_mean": null,
+      "pitch_sd": null,
+      "intensity_mean": null,
+      "intensity_sd": null,
+      "utmosv2": null
+    },
+    "transcript": "I'm sorry, I can't look that up.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

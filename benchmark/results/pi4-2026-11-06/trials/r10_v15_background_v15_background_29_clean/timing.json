@@ -1,0 +1,62 @@
+{
+  "trial": "r10_v15_background_v15_background_29_clean",
+  "group": "v15_background",
+  "clip": "v15_background_29",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 6.592,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.592
+    }
+  ],
+  "live_bot_starts": [
+    2.24
+  ],
+  "live_bot_ends": [
+    5.376
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "When is the next full moon?",
+    "current_turn_text": "",
+    "overlap_text": "The doorbell just rang.",
+    "overlap_duration": 1.39,
+    "overlap_window": [
+      5.3,
+      6.693
+    ],
+    "source_id": "29"
+  },
+  "mono": [
+    18874.9566129,
+    18881.5335028
+  ],
+  "bot_segments": [
+    [
+      2.21,
+      5.406
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.592
+  ],
+  "tor": 1,
+  "first_start": 2.21,
+  "spoke_s": 3.1959999999999997,
+  "actual": "replied after 0.62 s, spoke 3.2 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 24,
+  "final": {
+    "transcript": "I'm sorry, I can't look up the lunar calendar right now."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

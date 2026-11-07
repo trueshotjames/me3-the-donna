@@ -1,0 +1,29 @@
+{"stage": "vad_start", "t": 15675.361961688, "pid": 9960, "src": "ws", "recv": 15706.7052332, "lt": 15706.700635765, "tt": 0.24}
+{"stage": "vad_start", "t": 15675.362074223, "pid": 9960, "src": "ws", "recv": 15706.7052534, "lt": 15706.7007483, "tt": 0.2401}
+{"stage": "asr_partial", "t": 15675.81465407, "pid": 9960, "text": "Present a", "src": "ws", "recv": 15707.1600761, "lt": 15707.153328147, "tt": 0.6927}
+{"stage": "interrupted", "t": 15675.817892197, "pid": 9960, "src": "ws", "recv": 15707.1641175, "lt": 15707.156566274, "tt": 0.6959}
+{"stage": "interrupted", "t": 15675.81798214, "pid": 9960, "src": "ws", "recv": 15707.1641392, "lt": 15707.156656217001, "tt": 0.696}
+{"stage": "bot_stopped", "t": 15675.879935826, "pid": 9960, "src": "ws", "recv": 15707.2249609, "lt": 15707.218609903, "tt": 0.7579}
+{"stage": "bot_stopped", "t": 15675.880064788, "pid": 9960, "src": "ws", "recv": 15707.2249849, "lt": 15707.218738865, "tt": 0.7581}
+{"stage": "llm_request", "t": 15675.896987636, "pid": 9960, "messages": 15, "chars": 10543, "est_tokens": 2636, "src": "ws", "recv": 15707.2393546, "lt": 15707.235661713, "tt": 0.775}
+{"stage": "asr_partial", "t": 15676.043501879, "pid": 9960, "text": "Present a thorough", "src": "ws", "recv": 15707.384688, "lt": 15707.382175956, "tt": 0.9215}
+{"stage": "asr_partial", "t": 15676.288617025, "pid": 9960, "text": "Present a thorough ex", "src": "ws", "recv": 15707.629926, "lt": 15707.627291102, "tt": 1.1666}
+{"stage": "asr_partial", "t": 15676.523577315, "pid": 9960, "text": "Present a thorough explanation", "src": "ws", "recv": 15707.8648302, "lt": 15707.862251392, "tt": 1.4016}
+{"stage": "asr_partial", "t": 15676.768849459, "pid": 9960, "text": "Present a thorough explanation", "src": "ws", "recv": 15708.1099846, "lt": 15708.107523536, "tt": 1.6469}
+{"stage": "asr_partial", "t": 15676.96384209, "pid": 9960, "text": "Present a thorough explanation of good", "src": "ws", "recv": 15708.3051081, "lt": 15708.302516167, "tt": 1.8418}
+{"stage": "asr_partial", "t": 15677.250236249, "pid": 9960, "text": "Present a thorough explanation of global", "src": "ws", "recv": 15708.5914167, "lt": 15708.588910326, "tt": 2.1282}
+{"stage": "asr_partial", "t": 15677.444274447, "pid": 9960, "text": "Present a thorough explanation of global warm", "src": "ws", "recv": 15708.7858684, "lt": 15708.782948524, "tt": 2.3223}
+{"stage": "vad_end", "t": 15677.727466423, "pid": 9960, "src": "ws", "recv": 15709.0693602, "lt": 15709.066140500001, "tt": 2.6055}
+{"stage": "vad_end", "t": 15677.727529163, "pid": 9960, "src": "ws", "recv": 15709.0693792, "lt": 15709.06620324, "tt": 2.6055}
+{"stage": "asr_partial", "t": 15677.739648644, "pid": 9960, "text": "Present a thorough explanation of global warming.", "src": "ws", "recv": 15709.0823149, "lt": 15709.078322721, "tt": 2.6177}
+{"stage": "llm_request", "t": 15677.74388824, "pid": 9960, "speculative": true, "messages": 16, "chars": 10592, "est_tokens": 2648, "src": "ws", "recv": 15709.0872378, "lt": 15709.082562317, "tt": 2.6219}
+{"stage": "asr_partial", "t": 15677.964296782, "pid": 9960, "text": "Present a thorough explanation of global warming.", "src": "ws", "recv": 15709.3054133, "lt": 15709.302970859, "tt": 2.8423}
+{"stage": "llm_usage", "t": 15678.539612199, "pid": 9960, "prompt_tokens": 2606, "completion_tokens": 251, "src": "ws", "recv": 15709.8811905, "lt": 15709.878286276, "tt": 3.4176}
+{"stage": "asr_final", "t": 15678.893047778, "pid": 9960, "text": "Present a thorough explanation of global warming.", "src": "ws", "recv": 15710.2352219, "lt": 15710.231721855, "tt": 3.7711}
+{"stage": "user_stopped", "t": 15678.899884028, "pid": 9960, "src": "ws", "recv": 15710.2574934, "lt": 15710.238558105, "tt": 3.7779}
+{"stage": "user_stopped", "t": 15678.899951119, "pid": 9960, "src": "ws", "recv": 15710.2575155, "lt": 15710.238625196, "tt": 3.778}
+{"stage": "llm_first_token", "t": 15678.904535285, "pid": 9960, "src": "ws", "recv": 15710.278836, "lt": 15710.243209362001, "tt": 3.7825}
+{"stage": "tts_request", "t": 15679.023006149, "pid": 9960, "src": "ws", "recv": 15710.37648, "lt": 15710.361680226, "tt": 3.901}
+{"stage": "tts_first_audio", "t": 15679.320176121, "pid": 9960, "src": "ws", "recv": 15710.6624679, "lt": 15710.658850198, "tt": 4.1982}
+{"stage": "audio_out", "t": 15679.327968322, "pid": 9960, "src": "ws", "recv": 15710.6764955, "lt": 15710.666642399001, "tt": 4.206}
+{"stage": "audio_out", "t": 15679.328109172, "pid": 9960, "src": "ws", "recv": 15710.6765201, "lt": 15710.666783249, "tt": 4.2061}

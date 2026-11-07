@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 17598.659785192, "pid": 9960, "src": "ws", "recv": 17630.0325388, "lt": 17629.998459269, "tt": 0.4019}
+{"stage": "vad_start", "t": 17598.659881172, "pid": 9960, "src": "ws", "recv": 17630.0325673, "lt": 17629.998555249, "tt": 0.402}
+{"stage": "interrupted", "t": 17599.085580864, "pid": 9960, "src": "ws", "recv": 17630.4581441, "lt": 17630.424254941, "tt": 0.8277}
+{"stage": "interrupted", "t": 17599.085672603, "pid": 9960, "src": "ws", "recv": 17630.458168, "lt": 17630.42434668, "tt": 0.8278}
+{"stage": "asr_partial", "t": 17599.206423458, "pid": 9960, "text": "I want to", "src": "ws", "recv": 17630.577585, "lt": 17630.545097535, "tt": 0.9486}
+{"stage": "asr_partial", "t": 17599.402829714, "pid": 9960, "text": "I want to watch", "src": "ws", "recv": 17630.7742934, "lt": 17630.741503791, "tt": 1.145}
+{"stage": "asr_partial", "t": 17599.687728932, "pid": 9960, "text": "I want to watch something", "src": "ws", "recv": 17631.0594514, "lt": 17631.026403009, "tt": 1.4299}
+{"stage": "asr_partial", "t": 17599.886506751, "pid": 9960, "text": "I want to watch something it", "src": "ws", "recv": 17631.2577378, "lt": 17631.225180828, "tt": 1.6287}
+{"stage": "asr_partial", "t": 17600.166641641, "pid": 9960, "text": "I want to watch something exciting", "src": "ws", "recv": 17631.5377726, "lt": 17631.505315718, "tt": 1.9088}
+{"stage": "asr_partial", "t": 17600.363007861, "pid": 9960, "text": "I want to watch something exciting to", "src": "ws", "recv": 17631.7342073, "lt": 17631.701681938, "tt": 2.1052}
+{"stage": "asr_partial", "t": 17600.646728243, "pid": 9960, "text": "I want to watch something exciting tonight.", "src": "ws", "recv": 17632.0179211, "lt": 17631.98540232, "tt": 2.3889}
+{"stage": "asr_partial", "t": 17600.846408698, "pid": 9960, "text": "I want to watch something exciting tonight.", "src": "ws", "recv": 17632.217586, "lt": 17632.185082775, "tt": 2.5886}
+{"stage": "vad_end", "t": 17600.865269165, "pid": 9960, "src": "ws", "recv": 17632.2413337, "lt": 17632.203943242, "tt": 2.6074}
+{"stage": "vad_end", "t": 17600.865324683, "pid": 9960, "src": "ws", "recv": 17632.2413545, "lt": 17632.20399876, "tt": 2.6075}
+{"stage": "llm_request", "t": 17600.876080233, "pid": 9960, "speculative": true, "messages": 34, "chars": 11255, "est_tokens": 2814, "src": "ws", "recv": 17632.2473854, "lt": 17632.21475431, "tt": 2.6182}
+{"stage": "asr_partial", "t": 17601.126661216, "pid": 9960, "text": "I want to watch something exciting tonight.", "src": "ws", "recv": 17632.4979029, "lt": 17632.465335293, "tt": 2.8688}
+{"stage": "asr_final", "t": 17601.212810486, "pid": 9960, "text": "I want to watch something exciting tonight.", "src": "ws", "recv": 17632.5865497, "lt": 17632.551484563, "tt": 2.955}
+{"stage": "user_stopped", "t": 17601.222611826, "pid": 9960, "src": "ws", "recv": 17632.5975906, "lt": 17632.561285903, "tt": 2.9648}
+{"stage": "user_stopped", "t": 17601.222752399, "pid": 9960, "src": "ws", "recv": 17632.5976243, "lt": 17632.561426476, "tt": 2.9649}
+{"stage": "llm_first_token", "t": 17601.405991135, "pid": 9960, "src": "ws", "recv": 17632.7848825, "lt": 17632.744665212, "tt": 3.1482}
+{"stage": "llm_usage", "t": 17601.428233652, "pid": 9960, "prompt_tokens": 2412, "completion_tokens": 35, "src": "ws", "recv": 17632.8040614, "lt": 17632.766907729, "tt": 3.1704}
+{"stage": "tts_request", "t": 17601.454539062, "pid": 9960, "src": "ws", "recv": 17632.8292685, "lt": 17632.793213139, "tt": 3.1967}
+{"stage": "tts_first_audio", "t": 17601.63903069, "pid": 9960, "src": "ws", "recv": 17633.0100542, "lt": 17632.977704767, "tt": 3.3812}
+{"stage": "audio_out", "t": 17601.643781353, "pid": 9960, "src": "ws", "recv": 17633.0205556, "lt": 17632.98245543, "tt": 3.3859}
+{"stage": "audio_out", "t": 17601.643866629, "pid": 9960, "src": "ws", "recv": 17633.0205821, "lt": 17632.982540706, "tt": 3.386}
+{"stage": "bot_stopped", "t": 17605.614452607, "pid": 9960, "src": "ws", "recv": 17636.9860151, "lt": 17636.953126684, "tt": 7.3566}
+{"stage": "bot_stopped", "t": 17605.61453518, "pid": 9960, "src": "ws", "recv": 17636.9860386, "lt": 17636.953209257, "tt": 7.3567}
+{"stage": "llm_request", "t": 17605.620769991, "pid": 9960, "messages": 35, "chars": 11320, "est_tokens": 2830, "src": "ws", "recv": 17636.9914916, "lt": 17636.959444068, "tt": 7.3629}

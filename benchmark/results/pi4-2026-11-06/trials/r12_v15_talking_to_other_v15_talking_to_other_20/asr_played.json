@@ -1,0 +1,125 @@
+{
+  "text": "Send a message to Alex saying I'll be late. Mateo, pick up the kids at three, yeah?",
+  "chunks": [
+    {
+      "text": "Send",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.18,
+        0.3
+      ]
+    },
+    {
+      "text": "message",
+      "timestamp": [
+        0.3,
+        0.56
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.56,
+        0.76
+      ]
+    },
+    {
+      "text": "Alex",
+      "timestamp": [
+        0.76,
+        1.04
+      ]
+    },
+    {
+      "text": "saying",
+      "timestamp": [
+        1.04,
+        1.32
+      ]
+    },
+    {
+      "text": "I'll",
+      "timestamp": [
+        1.32,
+        1.56
+      ]
+    },
+    {
+      "text": "be",
+      "timestamp": [
+        1.56,
+        1.68
+      ]
+    },
+    {
+      "text": "late.",
+      "timestamp": [
+        1.68,
+        1.98
+      ]
+    },
+    {
+      "text": "Mateo,",
+      "timestamp": [
+        5.26,
+        5.62
+      ]
+    },
+    {
+      "text": "pick",
+      "timestamp": [
+        5.66,
+        5.76
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        5.76,
+        5.9
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.9,
+        6.04
+      ]
+    },
+    {
+      "text": "kids",
+      "timestamp": [
+        6.04,
+        6.22
+      ]
+    },
+    {
+      "text": "at",
+      "timestamp": [
+        6.22,
+        6.36
+      ]
+    },
+    {
+      "text": "three,",
+      "timestamp": [
+        6.36,
+        6.58
+      ]
+    },
+    {
+      "text": "yeah?",
+      "timestamp": [
+        6.76,
+        6.88
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

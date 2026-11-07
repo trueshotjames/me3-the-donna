@@ -1,0 +1,41 @@
+{
+  "text": "Calculate 15 % of 86.",
+  "chunks": [
+    {
+      "text": "Calculate",
+      "timestamp": [
+        0.0,
+        0.44
+      ]
+    },
+    {
+      "text": "15",
+      "timestamp": [
+        0.44,
+        0.76
+      ]
+    },
+    {
+      "text": "%",
+      "timestamp": [
+        0.76,
+        1.02
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        1.02,
+        1.16
+      ]
+    },
+    {
+      "text": "86.",
+      "timestamp": [
+        1.16,
+        1.52
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

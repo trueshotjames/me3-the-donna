@@ -1,0 +1,48 @@
+{
+  "text": "I'm sorry, I can't send messages.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        3.25,
+        3.81
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        3.81,
+        4.19
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        4.41,
+        4.51
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        4.51,
+        4.85
+      ]
+    },
+    {
+      "text": "send",
+      "timestamp": [
+        4.85,
+        5.05
+      ]
+    },
+    {
+      "text": "messages.",
+      "timestamp": [
+        5.05,
+        5.41
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

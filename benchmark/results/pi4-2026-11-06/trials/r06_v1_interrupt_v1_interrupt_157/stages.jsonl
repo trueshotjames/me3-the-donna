@@ -1,0 +1,53 @@
+{"stage": "vad_start", "t": 17811.805400183, "pid": 9960, "src": "ws", "recv": 17843.1795892, "lt": 17843.14407426, "tt": 0.6514}
+{"stage": "vad_start", "t": 17811.805457424, "pid": 9960, "src": "ws", "recv": 17843.1796143, "lt": 17843.144131501, "tt": 0.6514}
+{"stage": "asr_partial", "t": 17812.048544154, "pid": 9960, "text": "Which", "src": "ws", "recv": 17843.4223397, "lt": 17843.387218231, "tt": 0.8945}
+{"stage": "asr_partial", "t": 17812.527657573, "pid": 9960, "text": "Which exercise", "src": "ws", "recv": 17843.9051834, "lt": 17843.86633165, "tt": 1.3736}
+{"stage": "interrupted", "t": 17812.530508333, "pid": 9960, "src": "ws", "recv": 17843.9074582, "lt": 17843.86918241, "tt": 1.3765}
+{"stage": "interrupted", "t": 17812.530595629, "pid": 9960, "src": "ws", "recv": 17843.9074841, "lt": 17843.869269706, "tt": 1.3766}
+{"stage": "bot_stopped", "t": 17812.56163598, "pid": 9960, "src": "ws", "recv": 17843.943289, "lt": 17843.900310057, "tt": 1.4076}
+{"stage": "bot_stopped", "t": 17812.561878107, "pid": 9960, "src": "ws", "recv": 17843.9433125, "lt": 17843.900552184, "tt": 1.4078}
+{"stage": "llm_request", "t": 17812.577100934, "pid": 9960, "messages": 28, "chars": 10858, "est_tokens": 2714, "src": "ws", "recv": 17843.9535804, "lt": 17843.915775011, "tt": 1.4231}
+{"stage": "asr_partial", "t": 17812.806510947, "pid": 9960, "text": "Which exercise should I", "src": "ws", "recv": 17844.1809324, "lt": 17844.145185024, "tt": 1.6525}
+{"stage": "asr_partial", "t": 17813.006268998, "pid": 9960, "text": "Which exercise should I", "src": "ws", "recv": 17844.3807365, "lt": 17844.344943075, "tt": 1.8522}
+{"stage": "asr_partial", "t": 17813.286247359, "pid": 9960, "text": "Which exercise should I start", "src": "ws", "recv": 17844.6607535, "lt": 17844.624921436, "tt": 2.1322}
+{"stage": "asr_partial", "t": 17813.48627824, "pid": 9960, "text": "Which exercise should I start with as", "src": "ws", "recv": 17844.8607383, "lt": 17844.824952317, "tt": 2.3322}
+{"stage": "asr_partial", "t": 17813.766702854, "pid": 9960, "text": "Which exercise should I start with as a", "src": "ws", "recv": 17845.1412084, "lt": 17845.105376931002, "tt": 2.6127}
+{"stage": "asr_partial", "t": 17814.005894799, "pid": 9960, "text": "Which exercise should I start with as a beginner", "src": "ws", "recv": 17845.3836614, "lt": 17845.344568876, "tt": 2.8519}
+{"stage": "asr_partial", "t": 17814.08728726, "pid": 9960, "text": "Which exercise should I start with as a beginner?", "src": "ws", "recv": 17845.4636005, "lt": 17845.425961337, "tt": 2.9333}
+{"stage": "llm_request", "t": 17814.179220571, "pid": 9960, "speculative": true, "messages": 29, "chars": 10907, "est_tokens": 2727, "src": "ws", "recv": 17845.5544647, "lt": 17845.517894648, "tt": 3.0252}
+{"stage": "asr_final", "t": 17814.248263279, "pid": 9960, "text": "Which exercise should I start with as a beginner?", "src": "ws", "recv": 17845.6231028, "lt": 17845.586937356, "tt": 3.0942}
+{"stage": "user_stopped", "t": 17814.254062466, "pid": 9960, "src": "ws", "recv": 17845.6304173, "lt": 17845.592736543, "tt": 3.1}
+{"stage": "user_stopped", "t": 17814.254129798, "pid": 9960, "src": "ws", "recv": 17845.6304383, "lt": 17845.592803875, "tt": 3.1001}
+{"stage": "interrupted", "t": 17814.731667904, "pid": 9960, "src": "ws", "recv": 17846.1074266, "lt": 17846.070341981, "tt": 3.5776}
+{"stage": "interrupted", "t": 17814.731754014, "pid": 9960, "src": "ws", "recv": 17846.1074502, "lt": 17846.070428091, "tt": 3.5777}
+{"stage": "asr_partial", "t": 17814.923065356, "pid": 9960, "text": "forget can you", "src": "ws", "recv": 17846.298715, "lt": 17846.261739433, "tt": 3.769}
+{"stage": "asr_partial", "t": 17815.206082364, "pid": 9960, "text": "forget can you set an", "src": "ws", "recv": 17846.5806412, "lt": 17846.544756441, "tt": 4.052}
+{"stage": "asr_partial", "t": 17815.405842563, "pid": 9960, "text": "forget can you set an alarm", "src": "ws", "recv": 17846.7804614, "lt": 17846.74451664, "tt": 4.2518}
+{"stage": "asr_partial", "t": 17815.685229412, "pid": 9960, "text": "forget can you set an alarm for", "src": "ws", "recv": 17847.0597862, "lt": 17847.023903489, "tt": 4.5312}
+{"stage": "asr_partial", "t": 17815.885091444, "pid": 9960, "text": "forget can you set an alarm for in", "src": "ws", "recv": 17847.2595531, "lt": 17847.223765521, "tt": 4.7311}
+{"stage": "vad_end", "t": 17816.154230088, "pid": 9960, "src": "ws", "recv": 17847.5291108, "lt": 17847.492904165, "tt": 5.0002}
+{"stage": "vad_end", "t": 17816.154282717, "pid": 9960, "src": "ws", "recv": 17847.5291357, "lt": 17847.492956794, "tt": 5.0002}
+{"stage": "asr_partial", "t": 17816.174688054, "pid": 9960, "text": "forget can you set an alarm for indoor", "src": "ws", "recv": 17847.550164, "lt": 17847.513362131, "tt": 5.0207}
+{"stage": "llm_request", "t": 17816.178437284, "pid": 9960, "speculative": true, "messages": 30, "chars": 11253, "est_tokens": 2813, "src": "ws", "recv": 17847.5543869, "lt": 17847.517111361, "tt": 5.0244}
+{"stage": "asr_partial", "t": 17816.246840334, "pid": 9960, "text": "forget can you set an alarm for in-depth", "src": "ws", "recv": 17847.6223858, "lt": 17847.585514411, "tt": 5.0928}
+{"stage": "llm_cancel", "t": 17816.246921185, "pid": 9960, "src": "ws", "recv": 17847.6224097, "lt": 17847.585595262, "tt": 5.0929}
+{"stage": "llm_request", "t": 17816.255689353, "pid": 9960, "speculative": true, "messages": 30, "chars": 11255, "est_tokens": 2814, "src": "ws", "recv": 17847.6405638, "lt": 17847.594363430002, "tt": 5.1017}
+{"stage": "asr_partial", "t": 17816.363084007, "pid": 9960, "text": "forget can you set an alarm for in-depth?", "src": "ws", "recv": 17847.7377452, "lt": 17847.701758084, "tt": 5.209}
+{"stage": "asr_partial", "t": 17816.450603687, "pid": 9960, "text": "forget can you set an alarm for in down?", "src": "ws", "recv": 17847.8255773, "lt": 17847.789277764, "tt": 5.2966}
+{"stage": "llm_cancel", "t": 17816.450687816, "pid": 9960, "src": "ws", "recv": 17847.8256025, "lt": 17847.789361893, "tt": 5.2967}
+{"stage": "llm_request", "t": 17816.456494799, "pid": 9960, "speculative": true, "messages": 30, "chars": 11255, "est_tokens": 2814, "src": "ws", "recv": 17847.8340625, "lt": 17847.795168876, "tt": 5.3025}
+{"stage": "asr_partial", "t": 17816.52590978, "pid": 9960, "text": "forget can you set an alarm for in doubt?", "src": "ws", "recv": 17847.9127518, "lt": 17847.864583857, "tt": 5.3719}
+{"stage": "llm_cancel", "t": 17816.525986705, "pid": 9960, "src": "ws", "recv": 17847.9127758, "lt": 17847.864660782, "tt": 5.372}
+{"stage": "llm_request", "t": 17816.546822999, "pid": 9960, "speculative": true, "messages": 30, "chars": 11256, "est_tokens": 2814, "src": "ws", "recv": 17847.926629, "lt": 17847.885497076, "tt": 5.3928}
+{"stage": "asr_final", "t": 17816.605560078, "pid": 9960, "text": "forget can you set an alarm for in doubt?", "src": "ws", "recv": 17847.9842354, "lt": 17847.944234155, "tt": 5.4515}
+{"stage": "user_stopped", "t": 17816.622673437, "pid": 9960, "src": "ws", "recv": 17848.0118271, "lt": 17847.961347514, "tt": 5.4686}
+{"stage": "user_stopped", "t": 17816.622741492, "pid": 9960, "src": "ws", "recv": 17848.0118501, "lt": 17847.961415569, "tt": 5.4687}
+{"stage": "llm_first_token", "t": 17817.066203025, "pid": 9960, "src": "ws", "recv": 17848.4415798, "lt": 17848.404877102, "tt": 5.9122}
+{"stage": "llm_usage", "t": 17817.092593676, "pid": 9960, "prompt_tokens": 2593, "completion_tokens": 58, "src": "ws", "recv": 17848.4695197, "lt": 17848.431267753, "tt": 5.9386}
+{"stage": "tts_request", "t": 17817.112120246, "pid": 9960, "src": "ws", "recv": 17848.4899226, "lt": 17848.450794323002, "tt": 5.9581}
+{"stage": "tts_first_audio", "t": 17817.30263645, "pid": 9960, "src": "ws", "recv": 17848.6771751, "lt": 17848.641310527, "tt": 6.1486}
+{"stage": "audio_out", "t": 17817.307823681, "pid": 9960, "src": "ws", "recv": 17848.6894318, "lt": 17848.646497758, "tt": 6.1538}
+{"stage": "audio_out", "t": 17817.307921273, "pid": 9960, "src": "ws", "recv": 17848.6894553, "lt": 17848.64659535, "tt": 6.1539}
+{"stage": "bot_stopped", "t": 17826.796713706, "pid": 9960, "src": "ws", "recv": 17858.1716407, "lt": 17858.135387783, "tt": 15.6427}
+{"stage": "bot_stopped", "t": 17826.796794149, "pid": 9960, "src": "ws", "recv": 17858.1716663, "lt": 17858.135468226, "tt": 15.6428}
+{"stage": "llm_request", "t": 17826.802940017, "pid": 9960, "messages": 31, "chars": 11413, "est_tokens": 2853, "src": "ws", "recv": 17858.1774681, "lt": 17858.141614094002, "tt": 15.6489}

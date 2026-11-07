@@ -1,0 +1,132 @@
+{
+  "text": "Dolphins have unique signature whistles that act like names, allowing each individual to identify and call each other.",
+  "chunks": [
+    {
+      "text": "Dolphins",
+      "timestamp": [
+        2.38,
+        3.26
+      ]
+    },
+    {
+      "text": "have",
+      "timestamp": [
+        3.26,
+        3.44
+      ]
+    },
+    {
+      "text": "unique",
+      "timestamp": [
+        3.44,
+        3.8
+      ]
+    },
+    {
+      "text": "signature",
+      "timestamp": [
+        3.8,
+        4.26
+      ]
+    },
+    {
+      "text": "whistles",
+      "timestamp": [
+        4.26,
+        4.74
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        4.74,
+        5.06
+      ]
+    },
+    {
+      "text": "act",
+      "timestamp": [
+        5.06,
+        5.36
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        5.36,
+        5.58
+      ]
+    },
+    {
+      "text": "names,",
+      "timestamp": [
+        5.58,
+        6.08
+      ]
+    },
+    {
+      "text": "allowing",
+      "timestamp": [
+        6.32,
+        6.76
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        6.76,
+        7.08
+      ]
+    },
+    {
+      "text": "individual",
+      "timestamp": [
+        7.08,
+        7.58
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        7.58,
+        7.92
+      ]
+    },
+    {
+      "text": "identify",
+      "timestamp": [
+        7.92,
+        8.38
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        8.38,
+        8.8
+      ]
+    },
+    {
+      "text": "call",
+      "timestamp": [
+        8.8,
+        9.06
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        9.06,
+        9.3
+      ]
+    },
+    {
+      "text": "other.",
+      "timestamp": [
+        9.3,
+        9.52
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

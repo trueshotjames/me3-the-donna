@@ -1,0 +1,741 @@
+{
+  "text": "Vaccination began in the late 18th century when Edward Jenner used cowpox to protect against smallpox, creating the first modern vaccine. The 19th century work of Louis Pasteur led to vaccines for radies and later for anthrax, establishing the principle of using weakened or killed microbes to induce immunity. In the early 1900s, the diphtheria toxoid and the polio inactivated vaccine dramatically reduced deaths from these diseases. The mid -20th century saw the development of the measles, mumps, and rubella MMR combined vaccine, and the widespread rollout of the polio -oral vaccine, which nearly eradicated polio worldwide. The World Health Organization launched the expi -",
+  "chunks": [
+    {
+      "text": "Vaccination",
+      "timestamp": [
+        3.6,
+        4.4
+      ]
+    },
+    {
+      "text": "began",
+      "timestamp": [
+        4.4,
+        4.96
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        4.96,
+        5.32
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.32,
+        5.42
+      ]
+    },
+    {
+      "text": "late",
+      "timestamp": [
+        5.42,
+        5.64
+      ]
+    },
+    {
+      "text": "18th",
+      "timestamp": [
+        5.64,
+        6.92
+      ]
+    },
+    {
+      "text": "century",
+      "timestamp": [
+        6.92,
+        7.3
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        7.3,
+        7.76
+      ]
+    },
+    {
+      "text": "Edward",
+      "timestamp": [
+        7.76,
+        8.02
+      ]
+    },
+    {
+      "text": "Jenner",
+      "timestamp": [
+        8.02,
+        8.42
+      ]
+    },
+    {
+      "text": "used",
+      "timestamp": [
+        8.42,
+        8.64
+      ]
+    },
+    {
+      "text": "cowpox",
+      "timestamp": [
+        8.64,
+        9.2
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        9.2,
+        9.4
+      ]
+    },
+    {
+      "text": "protect",
+      "timestamp": [
+        9.4,
+        9.72
+      ]
+    },
+    {
+      "text": "against",
+      "timestamp": [
+        9.72,
+        10.06
+      ]
+    },
+    {
+      "text": "smallpox,",
+      "timestamp": [
+        10.06,
+        10.88
+      ]
+    },
+    {
+      "text": "creating",
+      "timestamp": [
+        11.3,
+        11.64
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        11.64,
+        11.92
+      ]
+    },
+    {
+      "text": "first",
+      "timestamp": [
+        11.92,
+        12.18
+      ]
+    },
+    {
+      "text": "modern",
+      "timestamp": [
+        12.18,
+        12.7
+      ]
+    },
+    {
+      "text": "vaccine.",
+      "timestamp": [
+        12.7,
+        13.22
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        13.54,
+        13.6
+      ]
+    },
+    {
+      "text": "19th",
+      "timestamp": [
+        13.6,
+        14.34
+      ]
+    },
+    {
+      "text": "century",
+      "timestamp": [
+        14.34,
+        14.34
+      ]
+    },
+    {
+      "text": "work",
+      "timestamp": [
+        14.34,
+        14.64
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        14.64,
+        14.86
+      ]
+    },
+    {
+      "text": "Louis",
+      "timestamp": [
+        14.86,
+        15.06
+      ]
+    },
+    {
+      "text": "Pasteur",
+      "timestamp": [
+        15.06,
+        15.68
+      ]
+    },
+    {
+      "text": "led",
+      "timestamp": [
+        15.68,
+        15.94
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        15.94,
+        16.1
+      ]
+    },
+    {
+      "text": "vaccines",
+      "timestamp": [
+        16.1,
+        16.56
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        16.56,
+        16.88
+      ]
+    },
+    {
+      "text": "radies",
+      "timestamp": [
+        16.88,
+        17.42
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        17.42,
+        17.84
+      ]
+    },
+    {
+      "text": "later",
+      "timestamp": [
+        17.84,
+        18.08
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        18.08,
+        18.32
+      ]
+    },
+    {
+      "text": "anthrax,",
+      "timestamp": [
+        18.32,
+        19.06
+      ]
+    },
+    {
+      "text": "establishing",
+      "timestamp": [
+        19.3,
+        19.72
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        19.72,
+        20.08
+      ]
+    },
+    {
+      "text": "principle",
+      "timestamp": [
+        20.08,
+        20.46
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        20.46,
+        20.7
+      ]
+    },
+    {
+      "text": "using",
+      "timestamp": [
+        20.7,
+        20.94
+      ]
+    },
+    {
+      "text": "weakened",
+      "timestamp": [
+        20.94,
+        21.38
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        21.38,
+        21.72
+      ]
+    },
+    {
+      "text": "killed",
+      "timestamp": [
+        21.72,
+        22.04
+      ]
+    },
+    {
+      "text": "microbes",
+      "timestamp": [
+        22.04,
+        22.62
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        22.62,
+        23.06
+      ]
+    },
+    {
+      "text": "induce",
+      "timestamp": [
+        23.06,
+        23.42
+      ]
+    },
+    {
+      "text": "immunity.",
+      "timestamp": [
+        23.42,
+        24.0
+      ]
+    },
+    {
+      "text": "In",
+      "timestamp": [
+        24.22,
+        24.3
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        24.3,
+        24.42
+      ]
+    },
+    {
+      "text": "early",
+      "timestamp": [
+        24.42,
+        24.7
+      ]
+    },
+    {
+      "text": "1900s,",
+      "timestamp": [
+        24.7,
+        25.96
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        26.24,
+        26.36
+      ]
+    },
+    {
+      "text": "diphtheria",
+      "timestamp": [
+        26.36,
+        27.0
+      ]
+    },
+    {
+      "text": "toxoid",
+      "timestamp": [
+        27.0,
+        27.84
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        27.84,
+        28.12
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        28.12,
+        28.26
+      ]
+    },
+    {
+      "text": "polio",
+      "timestamp": [
+        28.26,
+        28.78
+      ]
+    },
+    {
+      "text": "inactivated",
+      "timestamp": [
+        28.78,
+        29.74
+      ]
+    },
+    {
+      "text": "vaccine",
+      "timestamp": [
+        29.74,
+        30.26
+      ]
+    },
+    {
+      "text": "dramatically",
+      "timestamp": [
+        30.26,
+        30.96
+      ]
+    },
+    {
+      "text": "reduced",
+      "timestamp": [
+        30.96,
+        31.66
+      ]
+    },
+    {
+      "text": "deaths",
+      "timestamp": [
+        31.66,
+        32.14
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        32.14,
+        32.44
+      ]
+    },
+    {
+      "text": "these",
+      "timestamp": [
+        32.44,
+        32.68
+      ]
+    },
+    {
+      "text": "diseases.",
+      "timestamp": [
+        32.68,
+        33.3
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        33.3,
+        33.6
+      ]
+    },
+    {
+      "text": "mid",
+      "timestamp": [
+        33.6,
+        33.82
+      ]
+    },
+    {
+      "text": "-20th",
+      "timestamp": [
+        33.82,
+        34.28
+      ]
+    },
+    {
+      "text": "century",
+      "timestamp": [
+        34.28,
+        34.64
+      ]
+    },
+    {
+      "text": "saw",
+      "timestamp": [
+        34.64,
+        34.92
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        34.92,
+        35.06
+      ]
+    },
+    {
+      "text": "development",
+      "timestamp": [
+        35.06,
+        35.46
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        35.46,
+        35.72
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        35.72,
+        35.82
+      ]
+    },
+    {
+      "text": "measles,",
+      "timestamp": [
+        35.82,
+        36.28
+      ]
+    },
+    {
+      "text": "mumps,",
+      "timestamp": [
+        36.48,
+        36.72
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        36.9,
+        36.9
+      ]
+    },
+    {
+      "text": "rubella",
+      "timestamp": [
+        36.9,
+        37.36
+      ]
+    },
+    {
+      "text": "MMR",
+      "timestamp": [
+        37.36,
+        37.8
+      ]
+    },
+    {
+      "text": "combined",
+      "timestamp": [
+        37.8,
+        38.28
+      ]
+    },
+    {
+      "text": "vaccine,",
+      "timestamp": [
+        38.28,
+        38.86
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        39.44,
+        39.54
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        39.54,
+        39.66
+      ]
+    },
+    {
+      "text": "widespread",
+      "timestamp": [
+        39.66,
+        40.04
+      ]
+    },
+    {
+      "text": "rollout",
+      "timestamp": [
+        40.04,
+        40.74
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        40.74,
+        40.9
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        40.9,
+        41.02
+      ]
+    },
+    {
+      "text": "polio",
+      "timestamp": [
+        41.02,
+        41.5
+      ]
+    },
+    {
+      "text": "-oral",
+      "timestamp": [
+        41.5,
+        41.74
+      ]
+    },
+    {
+      "text": "vaccine,",
+      "timestamp": [
+        41.74,
+        42.3
+      ]
+    },
+    {
+      "text": "which",
+      "timestamp": [
+        42.72,
+        42.84
+      ]
+    },
+    {
+      "text": "nearly",
+      "timestamp": [
+        42.84,
+        43.18
+      ]
+    },
+    {
+      "text": "eradicated",
+      "timestamp": [
+        43.18,
+        43.86
+      ]
+    },
+    {
+      "text": "polio",
+      "timestamp": [
+        43.86,
+        44.46
+      ]
+    },
+    {
+      "text": "worldwide.",
+      "timestamp": [
+        44.46,
+        45.06
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        45.28,
+        45.32
+      ]
+    },
+    {
+      "text": "World",
+      "timestamp": [
+        45.32,
+        45.54
+      ]
+    },
+    {
+      "text": "Health",
+      "timestamp": [
+        45.54,
+        45.76
+      ]
+    },
+    {
+      "text": "Organization",
+      "timestamp": [
+        45.76,
+        46.36
+      ]
+    },
+    {
+      "text": "launched",
+      "timestamp": [
+        46.36,
+        46.86
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        46.86,
+        47.14
+      ]
+    },
+    {
+      "text": "expi",
+      "timestamp": [
+        47.14,
+        47.52
+      ]
+    },
+    {
+      "text": "-",
+      "timestamp": [
+        47.52,
+        47.52
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

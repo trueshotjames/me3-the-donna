@@ -1,0 +1,1099 @@
+{
+  "about": "Stage latency per turn (course template, section 5). Times in seconds on the assistant machine's monotonic clock; e2e = audio_out - vad_end; e2e_heard = reply audio start - true end of speech (fdbench's audio clock); endpointing = vad_end - true end of speech.",
+  "phrases": 10,
+  "runs": 3,
+  "turns": [
+    {
+      "trial": "r01_stage_latency_phrase_v15_backchannel_1",
+      "run": 1,
+      "clip": "phrase_v15_backchannel_1",
+      "ref": "Present a thorough explanation of global warming.",
+      "e2e": 1.6004,
+      "e2e_source": "marks",
+      "e2e_heard": 1.796,
+      "endpointing": 0.1435,
+      "asr_final": 1.1655,
+      "llm_ttft": 0.0115,
+      "tts_ttfb": 0.2972,
+      "transcript": "Present a thorough explanation of global warming.",
+      "context_tokens": 2606,
+      "context_messages": 16,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r01_stage_latency_phrase_v15_backchannel_20",
+      "run": 1,
+      "clip": "phrase_v15_backchannel_20",
+      "ref": "Illuminate public speaking thoroughly.",
+      "e2e": 1.1401,
+      "e2e_source": "marks",
+      "e2e_heard": 1.284,
+      "endpointing": 0.1081,
+      "asr_final": 0.8456,
+      "llm_ttft": 0.0117,
+      "tts_ttfb": 0.2022,
+      "transcript": "Illuminate public speaking thoroughly.",
+      "context_tokens": 2446,
+      "context_messages": 12,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r01_stage_latency_phrase_v15_backchannel_6",
+      "run": 1,
+      "clip": "phrase_v15_backchannel_6",
+      "ref": "Discuss climate change exhaustively.",
+      "e2e": 1.5816,
+      "e2e_source": "marks",
+      "e2e_heard": 1.796,
+      "endpointing": 0.1453,
+      "asr_final": 1.2531,
+      "llm_ttft": 0.0119,
+      "tts_ttfb": 0.2292,
+      "transcript": "Discuss climate change exhaustively.",
+      "context_tokens": 2554,
+      "context_messages": 14,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r01_stage_latency_phrase_v15_backchannel_7",
+      "run": 1,
+      "clip": "phrase_v15_backchannel_7",
+      "ref": "Give a detailed introduction to the stock market.",
+      "e2e": 1.5675,
+      "e2e_source": "marks",
+      "e2e_heard": 1.764,
+      "endpointing": 0.1408,
+      "asr_final": 0.5419,
+      "llm_ttft": 0.7876,
+      "tts_ttfb": 0.1924,
+      "transcript": "Give a detailed introduction to the stock market.",
+      "context_tokens": 2333,
+      "context_messages": 6,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 8,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r01_stage_latency_phrase_v15_backchannel_96",
+      "run": 1,
+      "clip": "phrase_v15_backchannel_96",
+      "ref": "Explain the gig economy in depth.",
+      "e2e": 0.9017,
+      "e2e_source": "marks",
+      "e2e_heard": 1.092,
+      "endpointing": 0.1391,
+      "asr_final": 0.5062,
+      "llm_ttft": 0.1087,
+      "tts_ttfb": 0.2245,
+      "transcript": "Explain the gig economy in-depth.",
+      "context_tokens": 2587,
+      "context_messages": 20,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 6,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r01_stage_latency_phrase_v15_background_3",
+      "run": 1,
+      "clip": "phrase_v15_background_3",
+      "ref": "What's the time in Tokyo?",
+      "e2e": 0.5642,
+      "e2e_source": "marks",
+      "e2e_heard": 0.708,
+      "endpointing": 0.1402,
+      "asr_final": 0.0,
+      "llm_ttft": 0.4289,
+      "tts_ttfb": 0.2343,
+      "transcript": "What's the time in Tokyo",
+      "context_tokens": 2439,
+      "context_messages": 10,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r01_stage_latency_phrase_v15_background_8",
+      "run": 1,
+      "clip": "phrase_v15_background_8",
+      "ref": "What's my current heart rate?",
+      "e2e": 1.0124,
+      "e2e_source": "marks",
+      "e2e_heard": 1.188,
+      "endpointing": 0.144,
+      "asr_final": 0.1549,
+      "llm_ttft": 0.5689,
+      "tts_ttfb": 0.2364,
+      "transcript": "What's my current heart rate?",
+      "context_tokens": 2304,
+      "context_messages": 4,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r01_stage_latency_phrase_v15_talking_to_other_15",
+      "run": 1,
+      "clip": "phrase_v15_talking_to_other_15",
+      "ref": "Give me a fun fact about dolphins.",
+      "e2e": 1.1442,
+      "e2e_source": "marks",
+      "e2e_heard": 1.316,
+      "endpointing": 0.1408,
+      "asr_final": 0.5036,
+      "llm_ttft": 0.349,
+      "tts_ttfb": 0.2269,
+      "transcript": "Give me a fun fact about dolphins!",
+      "context_tokens": 2400,
+      "context_messages": 8,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r01_stage_latency_phrase_v15_talking_to_other_31",
+      "run": 1,
+      "clip": "phrase_v15_talking_to_other_31",
+      "ref": "What's the score of the Mariners game?",
+      "e2e": 0.8092,
+      "e2e_source": "marks",
+      "e2e_heard": 1.028,
+      "endpointing": 0.1418,
+      "asr_final": 0.0728,
+      "llm_ttft": 0.523,
+      "tts_ttfb": 0.1848,
+      "transcript": "What's the score of the Mariners game",
+      "context_tokens": 2601,
+      "context_messages": 18,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r01_stage_latency_phrase_v15_talking_to_other_91",
+      "run": 1,
+      "clip": "phrase_v15_talking_to_other_91",
+      "ref": "Translate 'good morning' into Spanish.",
+      "e2e": 1.4334,
+      "e2e_source": "marks",
+      "e2e_heard": 2.756,
+      "endpointing": 0.1449,
+      "asr_final": 0.1564,
+      "llm_ttft": 1.0553,
+      "tts_ttfb": 0.1876,
+      "transcript": "Translate good morning into Spanish.",
+      "context_tokens": 2285,
+      "context_messages": 2,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_backchannel_1",
+      "run": 2,
+      "clip": "phrase_v15_backchannel_1",
+      "ref": "Present a thorough explanation of global warming.",
+      "e2e": 1.5917,
+      "e2e_source": "marks",
+      "e2e_heard": 1.988,
+      "endpointing": 0.1409,
+      "asr_final": 1.2681,
+      "llm_ttft": 0.02,
+      "tts_ttfb": 0.1968,
+      "transcript": "Present a thorough explanation of global warming.",
+      "context_tokens": 2635,
+      "context_messages": 27,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_backchannel_20",
+      "run": 2,
+      "clip": "phrase_v15_backchannel_20",
+      "ref": "Illuminate public speaking thoroughly.",
+      "e2e": 1.4658,
+      "e2e_source": "marks",
+      "e2e_heard": 1.668,
+      "endpointing": 0.1052,
+      "asr_final": 1.1064,
+      "llm_ttft": 0.01,
+      "tts_ttfb": 0.2212,
+      "transcript": "Illuminate public speaking thoroughly.",
+      "context_tokens": 2574,
+      "context_messages": 44,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_backchannel_6",
+      "run": 2,
+      "clip": "phrase_v15_backchannel_6",
+      "ref": "Discuss climate change exhaustively.",
+      "e2e": 1.3839,
+      "e2e_source": "marks",
+      "e2e_heard": 1.572,
+      "endpointing": 0.144,
+      "asr_final": 1.0975,
+      "llm_ttft": 0.0109,
+      "tts_ttfb": 0.2104,
+      "transcript": "Discuss climate change exhaustively.",
+      "context_tokens": 2600,
+      "context_messages": 24,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_backchannel_7",
+      "run": 2,
+      "clip": "phrase_v15_backchannel_7",
+      "ref": "Give a detailed introduction to the stock market.",
+      "e2e": 0.8168,
+      "e2e_source": "marks",
+      "e2e_heard": 1.188,
+      "endpointing": 0.1367,
+      "asr_final": 0.4346,
+      "llm_ttft": 0.1116,
+      "tts_ttfb": 0.1956,
+      "transcript": "Give a detailed introduction to the stock market.",
+      "context_tokens": 2620,
+      "context_messages": 35,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 8,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_backchannel_96",
+      "run": 2,
+      "clip": "phrase_v15_backchannel_96",
+      "ref": "Explain the gig economy in depth.",
+      "e2e": 1.0683,
+      "e2e_source": "marks",
+      "e2e_heard": 1.188,
+      "endpointing": 0.1401,
+      "asr_final": 0.5292,
+      "llm_ttft": 0.052,
+      "tts_ttfb": 0.2165,
+      "transcript": "Explain the gig economy in-depth.",
+      "context_tokens": 2628,
+      "context_messages": 37,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 6,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_background_3",
+      "run": 2,
+      "clip": "phrase_v15_background_3",
+      "ref": "What's the time in Tokyo?",
+      "e2e": 0.914,
+      "e2e_source": "marks",
+      "e2e_heard": 1.06,
+      "endpointing": 0.1403,
+      "asr_final": 0.0,
+      "llm_ttft": 0.6566,
+      "tts_ttfb": 0.2332,
+      "transcript": "What's the time in Tokyo",
+      "context_tokens": 2695,
+      "context_messages": 30,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_background_8",
+      "run": 2,
+      "clip": "phrase_v15_background_8",
+      "ref": "What's my current heart rate?",
+      "e2e": 0.8253,
+      "e2e_source": "marks",
+      "e2e_heard": 0.996,
+      "endpointing": 0.14,
+      "asr_final": 0.1363,
+      "llm_ttft": 0.4313,
+      "tts_ttfb": 0.2152,
+      "transcript": "What's my current heart rate?",
+      "context_tokens": 2649,
+      "context_messages": 33,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_talking_to_other_15",
+      "run": 2,
+      "clip": "phrase_v15_talking_to_other_15",
+      "ref": "Give me a fun fact about dolphins.",
+      "e2e": 0.9414,
+      "e2e_source": "marks",
+      "e2e_heard": 1.124,
+      "endpointing": 0.1381,
+      "asr_final": 0.4717,
+      "llm_ttft": 0.2581,
+      "tts_ttfb": 0.1662,
+      "transcript": "Give me a fun fact about dolphins.",
+      "context_tokens": 2685,
+      "context_messages": 22,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_talking_to_other_31",
+      "run": 2,
+      "clip": "phrase_v15_talking_to_other_31",
+      "ref": "What's the score of the Mariners game?",
+      "e2e": 1.2394,
+      "e2e_source": "marks",
+      "e2e_heard": 1.412,
+      "endpointing": 0.1415,
+      "asr_final": 0.3632,
+      "llm_ttft": 0.6108,
+      "tts_ttfb": 0.2092,
+      "transcript": "What's the score of the Mariners game?",
+      "context_tokens": 2555,
+      "context_messages": 40,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r02_stage_latency_phrase_v15_talking_to_other_91",
+      "run": 2,
+      "clip": "phrase_v15_talking_to_other_91",
+      "ref": "Translate 'good morning' into Spanish.",
+      "e2e": 0.6713,
+      "e2e_source": "marks",
+      "e2e_heard": 0.868,
+      "endpointing": 0.1385,
+      "asr_final": 0.1684,
+      "llm_ttft": 0.4137,
+      "tts_ttfb": 0.0376,
+      "transcript": "Translate good morning into Spanish.",
+      "context_tokens": 2604,
+      "context_messages": 42,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_backchannel_1",
+      "run": 3,
+      "clip": "phrase_v15_backchannel_1",
+      "ref": "Present a thorough explanation of global warming.",
+      "e2e": 1.5052,
+      "e2e_source": "marks",
+      "e2e_heard": 1.668,
+      "endpointing": 0.138,
+      "asr_final": 1.1693,
+      "llm_ttft": 0.0117,
+      "tts_ttfb": 0.2585,
+      "transcript": "Present a thorough explanation of global warming.",
+      "context_tokens": 2647,
+      "context_messages": 46,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_backchannel_20",
+      "run": 3,
+      "clip": "phrase_v15_backchannel_20",
+      "ref": "Illuminate public speaking thoroughly.",
+      "e2e": 1.2602,
+      "e2e_source": "marks",
+      "e2e_heard": 1.444,
+      "endpointing": 0.1057,
+      "asr_final": 0.967,
+      "llm_ttft": 0.0115,
+      "tts_ttfb": 0.2047,
+      "transcript": "Illuminate public speaking thoroughly.",
+      "context_tokens": 2524,
+      "context_messages": 49,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_backchannel_6",
+      "run": 3,
+      "clip": "phrase_v15_backchannel_6",
+      "ref": "Discuss climate change exhaustively.",
+      "e2e": null,
+      "e2e_source": null,
+      "e2e_heard": null,
+      "endpointing": 0.1421,
+      "asr_final": 1.1272,
+      "llm_ttft": 0.0119,
+      "tts_ttfb": null,
+      "transcript": "Discuss climate change exhaustively.",
+      "context_tokens": 2634,
+      "context_messages": 48,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_backchannel_7",
+      "run": 3,
+      "clip": "phrase_v15_backchannel_7",
+      "ref": "Give a detailed introduction to the stock market.",
+      "e2e": 0.8081,
+      "e2e_source": "marks",
+      "e2e_heard": 1.028,
+      "endpointing": 0.1359,
+      "asr_final": 0.5041,
+      "llm_ttft": 0.0334,
+      "tts_ttfb": 0.1994,
+      "transcript": "Give a detailed introduction to the stock market.",
+      "context_tokens": 2509,
+      "context_messages": 64,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 8,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_backchannel_96",
+      "run": 3,
+      "clip": "phrase_v15_backchannel_96",
+      "ref": "Explain the gig economy in depth.",
+      "e2e": 1.0153,
+      "e2e_source": "marks",
+      "e2e_heard": 1.188,
+      "endpointing": 0.1336,
+      "asr_final": 0.5499,
+      "llm_ttft": 0.1375,
+      "tts_ttfb": 0.2698,
+      "transcript": "Explain the gig economy in-depth",
+      "context_tokens": 2492,
+      "context_messages": 58,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 6,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_background_3",
+      "run": 3,
+      "clip": "phrase_v15_background_3",
+      "ref": "What's the time in Tokyo?",
+      "e2e": 0.7181,
+      "e2e_source": "marks",
+      "e2e_heard": 0.868,
+      "endpointing": 0.137,
+      "asr_final": 0.0,
+      "llm_ttft": 0.5512,
+      "tts_ttfb": 0.2312,
+      "transcript": "What's the time in Tokyo",
+      "context_tokens": 2545,
+      "context_messages": 51,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_background_8",
+      "run": 3,
+      "clip": "phrase_v15_background_8",
+      "ref": "What's my current heart rate?",
+      "e2e": 0.581,
+      "e2e_source": "marks",
+      "e2e_heard": 0.804,
+      "endpointing": 0.1343,
+      "asr_final": 0.0752,
+      "llm_ttft": 0.4027,
+      "tts_ttfb": 0.0525,
+      "transcript": "What's my current heart rate?",
+      "context_tokens": 2551,
+      "context_messages": 56,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_talking_to_other_15",
+      "run": 3,
+      "clip": "phrase_v15_talking_to_other_15",
+      "ref": "Give me a fun fact about dolphins.",
+      "e2e": 0.8753,
+      "e2e_source": "marks",
+      "e2e_heard": 1.06,
+      "endpointing": 0.1342,
+      "asr_final": 0.3645,
+      "llm_ttft": 0.3059,
+      "tts_ttfb": 0.1605,
+      "transcript": "Give me a fun fact about dolphins!",
+      "context_tokens": 2572,
+      "context_messages": 54,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_talking_to_other_31",
+      "run": 3,
+      "clip": "phrase_v15_talking_to_other_31",
+      "ref": "What's the score of the Mariners game?",
+      "e2e": 1.1058,
+      "e2e_source": "marks",
+      "e2e_heard": 1.284,
+      "endpointing": 0.1332,
+      "asr_final": 0.3133,
+      "llm_ttft": 0.5871,
+      "tts_ttfb": 0.1689,
+      "transcript": "What's the score of the Mariners game?",
+      "context_tokens": 2589,
+      "context_messages": 60,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 7,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    },
+    {
+      "trial": "r03_stage_latency_phrase_v15_talking_to_other_91",
+      "run": 3,
+      "clip": "phrase_v15_talking_to_other_91",
+      "ref": "Translate 'good morning' into Spanish.",
+      "e2e": 0.8567,
+      "e2e_source": "marks",
+      "e2e_heard": 1.06,
+      "endpointing": 0.1358,
+      "asr_final": 0.0839,
+      "llm_ttft": 0.5581,
+      "tts_ttfb": 0.037,
+      "transcript": "Translate good morning into Spanish.",
+      "context_tokens": 2513,
+      "context_messages": 62,
+      "context_early": true,
+      "wer": 0.0,
+      "wer_detail": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ]
+    }
+  ],
+  "per_run": {
+    "1": {
+      "e2e": {
+        "n": 10,
+        "median": 1.14215,
+        "p95": 1.59194,
+        "mean": 1.1754700000000002,
+        "min": 0.5642,
+        "max": 1.6004,
+        "ci95_median": [
+          0.85545,
+          1.5675
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      },
+      "asr_final": {
+        "n": 10,
+        "median": 0.5049,
+        "p95": 1.2136799999999999,
+        "mean": 0.5199999999999999,
+        "min": 0.0,
+        "max": 1.2531,
+        "ci95_median": [
+          0.11385,
+          0.8537
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      },
+      "llm_ttft": {
+        "n": 10,
+        "median": 0.38895,
+        "p95": 0.9348349999999996,
+        "mean": 0.38565,
+        "min": 0.0115,
+        "max": 1.0553,
+        "ci95_median": [
+          0.0119,
+          0.569883749999999
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      },
+      "tts_ttfb": {
+        "n": 10,
+        "median": 0.2257,
+        "p95": 0.26983999999999997,
+        "mean": 0.22154999999999997,
+        "min": 0.1848,
+        "max": 0.2972,
+        "ci95_median": [
+          0.1924,
+          0.2343
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      }
+    },
+    "2": {
+      "e2e": {
+        "n": 10,
+        "median": 1.00485,
+        "p95": 1.5350449999999998,
+        "mean": 1.09179,
+        "min": 0.6713,
+        "max": 1.5917,
+        "ci95_median": [
+          0.8253,
+          1.3839
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      },
+      "asr_final": {
+        "n": 10,
+        "median": 0.45315,
+        "p95": 1.1953349999999998,
+        "mean": 0.55754,
+        "min": 0.0,
+        "max": 1.2681,
+        "ci95_median": [
+          0.1684,
+          1.0975
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      },
+      "llm_ttft": {
+        "n": 10,
+        "median": 0.18485000000000001,
+        "p95": 0.6359899999999999,
+        "mean": 0.2575,
+        "min": 0.01,
+        "max": 0.6566,
+        "ci95_median": [
+          0.02,
+          0.52105
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      },
+      "tts_ttfb": {
+        "n": 10,
+        "median": 0.2098,
+        "p95": 0.22779999999999997,
+        "mean": 0.19019000000000003,
+        "min": 0.0376,
+        "max": 0.2332,
+        "ci95_median": [
+          0.18769999999999998,
+          0.21821625
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      }
+    },
+    "3": {
+      "e2e": {
+        "n": 9,
+        "median": 0.8753,
+        "p95": 1.4072,
+        "mean": 0.9695222222222222,
+        "min": 0.581,
+        "max": 1.5052,
+        "ci95_median": [
+          0.7181,
+          1.2602
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      },
+      "asr_final": {
+        "n": 10,
+        "median": 0.4343,
+        "p95": 1.150355,
+        "mean": 0.51544,
+        "min": 0.0,
+        "max": 1.1693,
+        "ci95_median": [
+          0.0839,
+          0.967
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      },
+      "llm_ttft": {
+        "n": 10,
+        "median": 0.2217,
+        "p95": 0.57405,
+        "mean": 0.2611,
+        "min": 0.0115,
+        "max": 0.5871,
+        "ci95_median": [
+          0.0119,
+          0.5512
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      },
+      "tts_ttfb": {
+        "n": 9,
+        "median": 0.1994,
+        "p95": 0.26528,
+        "mean": 0.1758333333333333,
+        "min": 0.037,
+        "max": 0.2698,
+        "ci95_median": [
+          0.0525,
+          0.2585
+        ],
+        "p95_note": "with fewer than 20 trials p95 is close to the slowest trial"
+      }
+    }
+  }
+}

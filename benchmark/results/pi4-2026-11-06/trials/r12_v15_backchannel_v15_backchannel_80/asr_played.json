@@ -1,0 +1,48 @@
+{
+  "text": "Illuminate vaccination history comprehensively. I see.",
+  "chunks": [
+    {
+      "text": "Illuminate",
+      "timestamp": [
+        0.0,
+        0.48
+      ]
+    },
+    {
+      "text": "vaccination",
+      "timestamp": [
+        0.48,
+        0.78
+      ]
+    },
+    {
+      "text": "history",
+      "timestamp": [
+        0.78,
+        1.36
+      ]
+    },
+    {
+      "text": "comprehensively.",
+      "timestamp": [
+        1.36,
+        2.26
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        5.25,
+        5.75
+      ]
+    },
+    {
+      "text": "see.",
+      "timestamp": [
+        5.75,
+        6.03
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

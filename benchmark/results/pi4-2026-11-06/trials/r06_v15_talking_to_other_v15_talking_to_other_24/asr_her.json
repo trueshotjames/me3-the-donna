@@ -1,0 +1,34 @@
+{
+  "text": "It's about 550 kilometers.",
+  "chunks": [
+    {
+      "text": "It's",
+      "timestamp": [
+        3.06,
+        3.6
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        3.6,
+        3.76
+      ]
+    },
+    {
+      "text": "550",
+      "timestamp": [
+        3.76,
+        4.58
+      ]
+    },
+    {
+      "text": "kilometers.",
+      "timestamp": [
+        4.58,
+        4.98
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

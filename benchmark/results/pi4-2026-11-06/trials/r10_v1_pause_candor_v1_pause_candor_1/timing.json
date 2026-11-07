@@ -1,0 +1,66 @@
+{
+  "trial": "r10_v1_pause_candor_v1_pause_candor_1",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_1",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 46.72,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 27.04
+    }
+  ],
+  "live_bot_starts": [
+    0.032,
+    28.384
+  ],
+  "live_bot_ends": [
+    0.192,
+    46.368
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      1.8400000000000318,
+      2.5200000000000955
+    ],
+    "source_id": "1",
+    "text": "never like I know like a lot of people like my age they watch like the makeup vlogs or like I don't know a lot of my friends would watch like the mommy bloggers but I always thought that was kind of weird because I was like I don't want to like I'm gonna like know how people are raising their kids or whatever like that Like that's not really interesting to me And I also feel like it's weird because your kids are being filmed all the time and it's like what are they like they're gonna grow up and be like oh my gosh my whole life was on the internet like everyone could see what I was doing"
+  },
+  "mono": [
+    18808.3000754,
+    18855.0072179
+  ],
+  "bot_segments": [
+    [
+      28.354,
+      46.398
+    ]
+  ],
+  "play_first": [
+    0.0,
+    27.04
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 159,
+  "final": {
+    "tor": 0,
+    "words": 1,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "It sounds like you're feeling uneasy about the constant sharing of personal lives online, especially when it involves kids. Your concerns about privacy and how that contact might affect them later are completely understandable. I hear you being skeptical about how much of our lives, especially kids, get broadcast, is totally valid."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

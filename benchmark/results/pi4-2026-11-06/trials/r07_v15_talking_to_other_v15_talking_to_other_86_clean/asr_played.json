@@ -1,0 +1,55 @@
+{
+  "text": "How long should I steep green tea?",
+  "chunks": [
+    {
+      "text": "How",
+      "timestamp": [
+        0.0,
+        0.16
+      ]
+    },
+    {
+      "text": "long",
+      "timestamp": [
+        0.16,
+        0.4
+      ]
+    },
+    {
+      "text": "should",
+      "timestamp": [
+        0.4,
+        0.66
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        0.66,
+        0.8
+      ]
+    },
+    {
+      "text": "steep",
+      "timestamp": [
+        0.8,
+        1.14
+      ]
+    },
+    {
+      "text": "green",
+      "timestamp": [
+        1.14,
+        1.52
+      ]
+    },
+    {
+      "text": "tea?",
+      "timestamp": [
+        1.52,
+        1.84
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

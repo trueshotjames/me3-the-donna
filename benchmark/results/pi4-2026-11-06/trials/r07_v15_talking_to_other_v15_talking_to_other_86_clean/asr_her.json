@@ -1,0 +1,62 @@
+{
+  "text": "Steep green tea for two to three minutes.",
+  "chunks": [
+    {
+      "text": "Steep",
+      "timestamp": [
+        2.8,
+        3.38
+      ]
+    },
+    {
+      "text": "green",
+      "timestamp": [
+        3.38,
+        3.62
+      ]
+    },
+    {
+      "text": "tea",
+      "timestamp": [
+        3.62,
+        3.94
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        3.94,
+        4.22
+      ]
+    },
+    {
+      "text": "two",
+      "timestamp": [
+        4.22,
+        4.46
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        4.46,
+        4.56
+      ]
+    },
+    {
+      "text": "three",
+      "timestamp": [
+        4.56,
+        4.78
+      ]
+    },
+    {
+      "text": "minutes.",
+      "timestamp": [
+        4.78,
+        5.08
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

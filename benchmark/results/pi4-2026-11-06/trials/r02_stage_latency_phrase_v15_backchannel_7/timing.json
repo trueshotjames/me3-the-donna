@@ -1,0 +1,84 @@
+{
+  "trial": "r02_stage_latency_phrase_v15_backchannel_7",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_7",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 17.312,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.52
+    }
+  ],
+  "live_bot_starts": [
+    3.488
+  ],
+  "live_bot_ends": [
+    16.96
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Give a detailed introduction to the stock market.",
+    "source": "v15_backchannel_7"
+  },
+  "mono": [
+    15877.2837017,
+    15894.5901565
+  ],
+  "bot_segments": [
+    [
+      3.458,
+      16.99
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.52
+  ],
+  "tor": 1,
+  "first_start": 3.458,
+  "spoke_s": 7.061999999999999,
+  "user_end": 2.27,
+  "latency": 1.1880000000000002,
+  "actual": "replied 1.19 s after speech end",
+  "verdict": "✓ 1.19 s",
+  "ok": true,
+  "marks": 26,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.188,
+      "e2e": 0.8168,
+      "e2e_source": "marks",
+      "asr_final": 0.4346,
+      "llm_ttft": 0.1116,
+      "tts_ttfb": 0.1956,
+      "endpointing": 0.1367,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Give a detailed introduction to the stock market.",
+      "wer": {
+        "ref_words": 8,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2620,
+      "context_source": "usage",
+      "context_messages": 35
+    },
+    "transcript": "The stock market is a network of exchanges where shares of publicly listed companies are bought and sold, allowing investors to own a piece of a business and companies to raise capital for growth. Prices are set by supply and demand."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

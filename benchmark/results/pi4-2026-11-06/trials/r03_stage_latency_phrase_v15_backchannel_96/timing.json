@@ -1,0 +1,82 @@
+{
+  "trial": "r03_stage_latency_phrase_v15_backchannel_96",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_96",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 32.256,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.232
+    }
+  ],
+  "live_bot_starts": [
+    3.2
+  ],
+  "live_bot_ends": [],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Explain the gig economy in depth.",
+    "source": "v15_backchannel_96"
+  },
+  "mono": [
+    16083.7811319,
+    16116.0310014
+  ],
+  "bot_segments": [
+    [
+      3.17,
+      32.256
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.232
+  ],
+  "tor": 1,
+  "first_start": 3.17,
+  "spoke_s": 7.061999999999999,
+  "user_end": 1.982,
+  "latency": 1.188,
+  "actual": "replied 1.19 s after speech end",
+  "verdict": "✓ 1.19 s",
+  "ok": true,
+  "marks": 24,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.188,
+      "e2e": 1.0153,
+      "e2e_source": "marks",
+      "asr_final": 0.5499,
+      "llm_ttft": 0.1375,
+      "tts_ttfb": 0.2698,
+      "endpointing": 0.1336,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Explain the gig economy in-depth",
+      "wer": {
+        "ref_words": 6,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2492,
+      "context_source": "usage",
+      "context_messages": 58
+    },
+    "transcript": "The gig economy is a labor market where short -term, flexible jobs replace traditional permanent employment. It relies on digital platforms that connect workers with tasks like ride -sharing, food delivery, freelance design, or tutoring. Workers are usually classified as independent contractors, meaning they set their own hours, but often lack benefits such as health insurance, paid leave, or reti"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

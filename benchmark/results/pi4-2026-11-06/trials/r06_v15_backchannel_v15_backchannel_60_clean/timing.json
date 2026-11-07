@@ -1,0 +1,66 @@
+{
+  "trial": "r06_v15_backchannel_v15_backchannel_60_clean",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_60",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 17.728,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.848
+    }
+  ],
+  "live_bot_starts": [
+    0.0,
+    2.592,
+    5.856
+  ],
+  "live_bot_ends": [
+    0.224,
+    5.44,
+    17.376
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Explain astronomy in depth.",
+    "current_turn_text": "",
+    "overlap_text": "yes sure",
+    "overlap_duration": 1.02,
+    "overlap_window": [
+      5.579,
+      6.601
+    ],
+    "source_id": "60"
+  },
+  "mono": [
+    17818.5286586,
+    17836.254739
+  ],
+  "bot_segments": [
+    [
+      2.562,
+      17.406
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.848
+  ],
+  "tor": 1,
+  "first_start": 2.562,
+  "spoke_s": 7.286000000000001,
+  "actual": "replied after 0.71 s, spoke 7.3 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 25,
+  "final": {
+    "transcript": "astronomy explores the universe beyond Earth, from nearby planets to the farthest galaxies. It studies how light, gravity, and matter interact across billions of years. Stars form from collapsing clouds of gas and dust."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

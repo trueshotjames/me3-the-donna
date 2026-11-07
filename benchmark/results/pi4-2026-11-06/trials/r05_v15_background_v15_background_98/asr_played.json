@@ -1,0 +1,34 @@
+{
+  "text": "Play a lullaby playlist.",
+  "chunks": [
+    {
+      "text": "Play",
+      "timestamp": [
+        0.0,
+        0.2
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.2,
+        0.36
+      ]
+    },
+    {
+      "text": "lullaby",
+      "timestamp": [
+        0.36,
+        0.82
+      ]
+    },
+    {
+      "text": "playlist.",
+      "timestamp": [
+        0.82,
+        1.3
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

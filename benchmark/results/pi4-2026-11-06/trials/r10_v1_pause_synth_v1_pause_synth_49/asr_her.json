@@ -1,0 +1,111 @@
+{
+  "text": "Do you have a specific mountain area or distance in mind for the weekend trip?",
+  "chunks": [
+    {
+      "text": "Do",
+      "timestamp": [
+        0.0,
+        0.76
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        9.27,
+        9.75
+      ]
+    },
+    {
+      "text": "have",
+      "timestamp": [
+        9.75,
+        9.93
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        9.93,
+        10.07
+      ]
+    },
+    {
+      "text": "specific",
+      "timestamp": [
+        10.07,
+        10.45
+      ]
+    },
+    {
+      "text": "mountain",
+      "timestamp": [
+        10.45,
+        10.89
+      ]
+    },
+    {
+      "text": "area",
+      "timestamp": [
+        10.89,
+        11.31
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        11.31,
+        11.63
+      ]
+    },
+    {
+      "text": "distance",
+      "timestamp": [
+        11.63,
+        12.01
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        12.01,
+        12.31
+      ]
+    },
+    {
+      "text": "mind",
+      "timestamp": [
+        12.31,
+        12.55
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        12.55,
+        12.81
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        12.81,
+        12.93
+      ]
+    },
+    {
+      "text": "weekend",
+      "timestamp": [
+        12.93,
+        13.23
+      ]
+    },
+    {
+      "text": "trip?",
+      "timestamp": [
+        13.23,
+        13.53
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

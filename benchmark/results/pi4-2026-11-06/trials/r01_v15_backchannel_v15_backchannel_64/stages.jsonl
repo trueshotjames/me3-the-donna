@@ -1,0 +1,41 @@
+{"stage": "vad_start", "t": 16228.759772556, "pid": 9960, "src": "ws", "recv": 16260.1105774, "lt": 16260.098446633001, "tt": 0.1658}
+{"stage": "vad_start", "t": 16228.759861092, "pid": 9960, "src": "ws", "recv": 16260.110603, "lt": 16260.098535169, "tt": 0.1658}
+{"stage": "interrupted", "t": 16229.367312119, "pid": 9960, "src": "ws", "recv": 16260.7183223, "lt": 16260.705986196, "tt": 0.7733}
+{"stage": "interrupted", "t": 16229.367402192, "pid": 9960, "src": "ws", "recv": 16260.7183471, "lt": 16260.706076269, "tt": 0.7734}
+{"stage": "asr_partial", "t": 16229.603766751, "pid": 9960, "text": "Offer a", "src": "ws", "recv": 16260.9534604, "lt": 16260.942440828001, "tt": 1.0097}
+{"stage": "asr_partial", "t": 16229.845830962, "pid": 9960, "text": "Offer a clear", "src": "ws", "recv": 16261.1969995, "lt": 16261.184505039, "tt": 1.2518}
+{"stage": "asr_partial", "t": 16230.083701391, "pid": 9960, "text": "Offer a clear account", "src": "ws", "recv": 16261.4334328, "lt": 16261.422375468, "tt": 1.4897}
+{"stage": "asr_partial", "t": 16230.327698337, "pid": 9960, "text": "Offer a clear account of the", "src": "ws", "recv": 16261.680192, "lt": 16261.666372414, "tt": 1.7337}
+{"stage": "asr_partial", "t": 16230.563280906, "pid": 9960, "text": "Offer a clear account of the moon", "src": "ws", "recv": 16261.9129895, "lt": 16261.901954983, "tt": 1.9693}
+{"stage": "asr_partial", "t": 16230.809464529, "pid": 9960, "text": "Offer a clear account of the moonlight.", "src": "ws", "recv": 16262.1602652, "lt": 16262.148138606, "tt": 2.2154}
+{"stage": "asr_partial", "t": 16230.847873332, "pid": 9960, "text": "Offer a clear account of the moon landing.", "src": "ws", "recv": 16262.1981542, "lt": 16262.186547409001, "tt": 2.2539}
+{"stage": "llm_request", "t": 16230.891634217, "pid": 9960, "speculative": true, "messages": 77, "chars": 17541, "est_tokens": 4385, "src": "ws", "recv": 16262.2418135, "lt": 16262.230308294, "tt": 2.2976}
+{"stage": "vad_end", "t": 16230.937224616, "pid": 9960, "src": "ws", "recv": 16262.2874205, "lt": 16262.275898693, "tt": 2.3432}
+{"stage": "vad_end", "t": 16230.937281227, "pid": 9960, "src": "ws", "recv": 16262.2874433, "lt": 16262.275955304, "tt": 2.3433}
+{"stage": "llm_usage", "t": 16231.546218476, "pid": 9960, "prompt_tokens": 2505, "completion_tokens": 323, "src": "ws", "recv": 16262.8962441, "lt": 16262.884892553, "tt": 2.9522}
+{"stage": "asr_final", "t": 16231.650491038, "pid": 9960, "text": "Offer a clear account of the moon landing.", "src": "ws", "recv": 16263.0018983, "lt": 16262.989165115001, "tt": 3.0565}
+{"stage": "user_stopped", "t": 16231.659418743, "pid": 9960, "src": "ws", "recv": 16263.0258643, "lt": 16262.99809282, "tt": 3.0654}
+{"stage": "user_stopped", "t": 16231.659486705, "pid": 9960, "src": "ws", "recv": 16263.0258902, "lt": 16262.998160782001, "tt": 3.0655}
+{"stage": "llm_first_token", "t": 16231.664509791, "pid": 9960, "src": "ws", "recv": 16263.0390915, "lt": 16263.003183868, "tt": 3.0705}
+{"stage": "tts_request", "t": 16231.748626047, "pid": 9960, "src": "ws", "recv": 16263.1116976, "lt": 16263.087300124, "tt": 3.1546}
+{"stage": "tts_first_audio", "t": 16231.967730505, "pid": 9960, "src": "ws", "recv": 16263.3174892, "lt": 16263.306404582001, "tt": 3.3737}
+{"stage": "audio_out", "t": 16231.973100605, "pid": 9960, "src": "ws", "recv": 16263.3277648, "lt": 16263.311774682, "tt": 3.3791}
+{"stage": "audio_out", "t": 16231.973185438, "pid": 9960, "src": "ws", "recv": 16263.3277865, "lt": 16263.311859515, "tt": 3.3792}
+{"stage": "vad_start", "t": 16233.748536246, "pid": 9960, "src": "ws", "recv": 16265.099362, "lt": 16265.087210323, "tt": 5.1545}
+{"stage": "vad_start", "t": 16233.748602783, "pid": 9960, "src": "ws", "recv": 16265.0993863, "lt": 16265.08727686, "tt": 5.1546}
+{"stage": "interrupted", "t": 16234.436158467, "pid": 9960, "src": "ws", "recv": 16265.7869262, "lt": 16265.774832544, "tt": 5.8421}
+{"stage": "interrupted", "t": 16234.436246077, "pid": 9960, "src": "ws", "recv": 16265.7869504, "lt": 16265.774920154001, "tt": 5.8422}
+{"stage": "vad_end", "t": 16234.463055208, "pid": 9960, "src": "ws", "recv": 16265.8173078, "lt": 16265.801729285, "tt": 5.869}
+{"stage": "vad_end", "t": 16234.463117578, "pid": 9960, "src": "ws", "recv": 16265.8173381, "lt": 16265.801791655, "tt": 5.8691}
+{"stage": "bot_stopped", "t": 16234.49030789, "pid": 9960, "src": "ws", "recv": 16265.8431697, "lt": 16265.828981967, "tt": 5.8963}
+{"stage": "bot_stopped", "t": 16234.49041187, "pid": 9960, "src": "ws", "recv": 16265.8431984, "lt": 16265.829085947, "tt": 5.8964}
+{"stage": "asr_final", "t": 16234.652134037, "pid": 9960, "text": "Yeah. Yes.", "src": "ws", "recv": 16266.0040496, "lt": 16265.990808114, "tt": 6.0581}
+{"stage": "llm_request", "t": 16234.657474823, "pid": 9960, "messages": 78, "chars": 17551, "est_tokens": 4388, "src": "ws", "recv": 16266.0112431, "lt": 16265.9961489, "tt": 6.0635}
+{"stage": "user_stopped", "t": 16234.657546878, "pid": 9960, "src": "ws", "recv": 16266.011284, "lt": 16265.996220955, "tt": 6.0635}
+{"stage": "user_stopped", "t": 16234.657581507, "pid": 9960, "src": "ws", "recv": 16266.0113086, "lt": 16265.996255584, "tt": 6.0636}
+{"stage": "llm_first_token", "t": 16235.934791048, "pid": 9960, "src": "ws", "recv": 16267.2850161, "lt": 16267.273465125, "tt": 7.3408}
+{"stage": "tts_request", "t": 16236.265852714, "pid": 9960, "src": "ws", "recv": 16267.6402606, "lt": 16267.604526791, "tt": 7.6718}
+{"stage": "llm_usage", "t": 16236.574119144, "pid": 9960, "prompt_tokens": 2470, "completion_tokens": 279, "src": "ws", "recv": 16267.9488775, "lt": 16267.912793221, "tt": 7.9801}
+{"stage": "tts_first_audio", "t": 16236.661834503, "pid": 9960, "src": "ws", "recv": 16268.029152, "lt": 16268.00050858, "tt": 8.0678}
+{"stage": "audio_out", "t": 16236.694938446, "pid": 9960, "src": "ws", "recv": 16268.0665058, "lt": 16268.033612523, "tt": 8.1009}
+{"stage": "audio_out", "t": 16236.695025593, "pid": 9960, "src": "ws", "recv": 16268.0665309, "lt": 16268.03369967, "tt": 8.101}

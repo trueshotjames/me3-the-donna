@@ -1,0 +1,69 @@
+{
+  "text": "Find me a nearby coffee shop that's open now.",
+  "chunks": [
+    {
+      "text": "Find",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "me",
+      "timestamp": [
+        0.18,
+        0.36
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.36,
+        0.4
+      ]
+    },
+    {
+      "text": "nearby",
+      "timestamp": [
+        0.4,
+        0.58
+      ]
+    },
+    {
+      "text": "coffee",
+      "timestamp": [
+        0.58,
+        1.0
+      ]
+    },
+    {
+      "text": "shop",
+      "timestamp": [
+        1.0,
+        1.28
+      ]
+    },
+    {
+      "text": "that's",
+      "timestamp": [
+        1.28,
+        1.52
+      ]
+    },
+    {
+      "text": "open",
+      "timestamp": [
+        1.52,
+        1.66
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        1.66,
+        1.92
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

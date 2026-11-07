@@ -1,0 +1,64 @@
+{
+  "trial": "r03_v1_pause_candor_v1_pause_candor_117",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_117",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 17.44,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 13.44
+    }
+  ],
+  "live_bot_starts": [
+    0.256
+  ],
+  "live_bot_ends": [
+    0.512
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      8.6099999999999,
+      9.599999999999909
+    ],
+    "source_id": "117",
+    "text": "Yeah I never like I said I'm sort of an indoor person and go out much But one of the things I had started doing right before all this happened was there's this bar near me and I started going up okay so"
+  },
+  "mono": [
+    16972.9305049,
+    16990.3662399
+  ],
+  "bot_segments": [
+    [
+      0.226,
+      0.542
+    ]
+  ],
+  "play_first": [
+    0.0,
+    13.44
+  ],
+  "tor": 0,
+  "first_start": 0.226,
+  "spoke_s": 0.31600000000000006,
+  "cut_in_during_pause": false,
+  "actual": "spoke 0.3 s at 0.2 s",
+  "verdict": "✓ TOR 0?",
+  "ok": true,
+  "marks": 84,
+  "final": {
+    "tor": 0,
+    "words": 1,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "Schedule."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

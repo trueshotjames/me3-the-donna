@@ -1,0 +1,84 @@
+{
+  "trial": "r02_stage_latency_phrase_v15_backchannel_6",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_6",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 21.056,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.392
+    }
+  ],
+  "live_bot_starts": [
+    3.744
+  ],
+  "live_bot_ends": [
+    20.704
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Discuss climate change exhaustively.",
+    "source": "v15_backchannel_6"
+  },
+  "mono": [
+    15792.9189407,
+    15813.950421
+  ],
+  "bot_segments": [
+    [
+      3.714,
+      20.734
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.392
+  ],
+  "tor": 1,
+  "first_start": 3.714,
+  "spoke_s": 6.677999999999999,
+  "user_end": 2.142,
+  "latency": 1.572,
+  "actual": "replied 1.57 s after speech end",
+  "verdict": "✓ 1.57 s",
+  "ok": true,
+  "marks": 26,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.572,
+      "e2e": 1.3839,
+      "e2e_source": "marks",
+      "asr_final": 1.0975,
+      "llm_ttft": 0.0109,
+      "tts_ttfb": 0.2104,
+      "endpointing": 0.144,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Discuss climate change exhaustively.",
+      "wer": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2600,
+      "context_source": "usage",
+      "context_messages": 24
+    },
+    "transcript": "Climate change is the sustained increase in global temperatures, driven primarily by human -generated greenhouse gases like carbon dioxide, methane, and nitrous oxide. Burding fossil fuels for electricity, transportation, and industry releases most of these gases."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

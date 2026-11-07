@@ -1,0 +1,69 @@
+{
+  "text": "I can't retrieve the UV index at the moment.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        2.45,
+        2.91
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        2.91,
+        3.21
+      ]
+    },
+    {
+      "text": "retrieve",
+      "timestamp": [
+        3.21,
+        3.55
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.55,
+        3.77
+      ]
+    },
+    {
+      "text": "UV",
+      "timestamp": [
+        3.77,
+        3.99
+      ]
+    },
+    {
+      "text": "index",
+      "timestamp": [
+        3.99,
+        4.39
+      ]
+    },
+    {
+      "text": "at",
+      "timestamp": [
+        4.39,
+        4.63
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.63,
+        4.73
+      ]
+    },
+    {
+      "text": "moment.",
+      "timestamp": [
+        4.73,
+        5.03
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

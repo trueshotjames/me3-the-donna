@@ -1,0 +1,51 @@
+{
+  "trial": "r08_false_tt_false_noise_006",
+  "group": "false_tt",
+  "clip": "false_noise_006",
+  "variant": "main",
+  "expected": "stay silent",
+  "duration": 11.072,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.059125
+    }
+  ],
+  "live_bot_starts": [],
+  "live_bot_ends": [],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 0
+  },
+  "clip_meta": {
+    "kind": "noise",
+    "kind_label": "noise: fan / hiss",
+    "level_db": -6
+  },
+  "mono": [
+    18222.4691885,
+    18233.534198
+  ],
+  "bot_segments": [],
+  "play_first": [
+    0.0,
+    3.059125
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "actual": "silent",
+  "verdict": "✓ silent",
+  "ok": true,
+  "marks": 0,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ silent",
+    "ok": true,
+    "transcript": ""
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

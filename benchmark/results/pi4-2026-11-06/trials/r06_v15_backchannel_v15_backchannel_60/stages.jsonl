@@ -1,0 +1,44 @@
+{"stage": "vad_start", "t": 17751.873403072, "pid": 9960, "src": "ws", "recv": 17783.2484546, "lt": 17783.212077149, "tt": 0.1756}
+{"stage": "vad_start", "t": 17751.873497478, "pid": 9960, "src": "ws", "recv": 17783.2484787, "lt": 17783.212171555002, "tt": 0.1757}
+{"stage": "interrupted", "t": 17752.336553782, "pid": 9960, "src": "ws", "recv": 17783.7132646, "lt": 17783.675227859, "tt": 0.6387}
+{"stage": "interrupted", "t": 17752.336683836, "pid": 9960, "src": "ws", "recv": 17783.7132883, "lt": 17783.675357913, "tt": 0.6389}
+{"stage": "asr_partial", "t": 17752.445422305, "pid": 9960, "text": "Explain a", "src": "ws", "recv": 17783.8188761, "lt": 17783.784096382, "tt": 0.7476}
+{"stage": "asr_partial", "t": 17752.684373123, "pid": 9960, "text": "Explain a strong", "src": "ws", "recv": 17784.0578836, "lt": 17784.0230472, "tt": 0.9865}
+{"stage": "asr_partial", "t": 17752.899370408, "pid": 9960, "text": "Explain astronomy", "src": "ws", "recv": 17784.2746133, "lt": 17784.238044485, "tt": 1.2015}
+{"stage": "asr_partial", "t": 17753.17632275, "pid": 9960, "text": "Explain astronomy and", "src": "ws", "recv": 17784.5518455, "lt": 17784.514996827, "tt": 1.4785}
+{"stage": "asr_partial", "t": 17753.218838291, "pid": 9960, "text": "Explain astronomy in-depth", "src": "ws", "recv": 17784.5928791, "lt": 17784.557512368, "tt": 1.521}
+{"stage": "asr_partial", "t": 17753.286920733, "pid": 9960, "text": "Explain astronomy in-depth.", "src": "ws", "recv": 17784.6606644, "lt": 17784.62559481, "tt": 1.5891}
+{"stage": "llm_request", "t": 17753.378423271, "pid": 9960, "speculative": true, "messages": 24, "chars": 10180, "est_tokens": 2545, "src": "ws", "recv": 17784.753415, "lt": 17784.717097348, "tt": 1.6806}
+{"stage": "vad_end", "t": 17753.417598687, "pid": 9960, "src": "ws", "recv": 17784.7915481, "lt": 17784.756272764, "tt": 1.7198}
+{"stage": "vad_end", "t": 17753.417654056, "pid": 9960, "src": "ws", "recv": 17784.7915725, "lt": 17784.756328133, "tt": 1.7198}
+{"stage": "asr_partial", "t": 17753.64493141, "pid": 9960, "text": "Explain astronomy in-depth.", "src": "ws", "recv": 17785.0183799, "lt": 17784.983605487, "tt": 1.9471}
+{"stage": "asr_final", "t": 17753.70312642, "pid": 9960, "text": "Explain astronomy in-depth.", "src": "ws", "recv": 17785.0780314, "lt": 17785.041800497, "tt": 2.0053}
+{"stage": "user_stopped", "t": 17753.710974711, "pid": 9960, "src": "ws", "recv": 17785.0874893, "lt": 17785.049648788, "tt": 2.0131}
+{"stage": "user_stopped", "t": 17753.711048117, "pid": 9960, "src": "ws", "recv": 17785.0875099, "lt": 17785.049722194, "tt": 2.0132}
+{"stage": "llm_first_token", "t": 17753.859605939, "pid": 9960, "src": "ws", "recv": 17785.2342605, "lt": 17785.198280016, "tt": 2.1618}
+{"stage": "tts_request", "t": 17753.908339236, "pid": 9960, "src": "ws", "recv": 17785.2943662, "lt": 17785.247013313, "tt": 2.2105}
+{"stage": "llm_usage", "t": 17754.02674551, "pid": 9960, "prompt_tokens": 2508, "completion_tokens": 279, "src": "ws", "recv": 17785.4142808, "lt": 17785.365419587, "tt": 2.3289}
+{"stage": "tts_first_audio", "t": 17754.152595506, "pid": 9960, "src": "ws", "recv": 17785.5272793, "lt": 17785.491269583, "tt": 2.4548}
+{"stage": "audio_out", "t": 17754.1592272, "pid": 9960, "src": "ws", "recv": 17785.5380569, "lt": 17785.497901277, "tt": 2.4614}
+{"stage": "audio_out", "t": 17754.159309884, "pid": 9960, "src": "ws", "recv": 17785.5380784, "lt": 17785.497983961, "tt": 2.4615}
+{"stage": "vad_start", "t": 17755.906445102, "pid": 9960, "src": "ws", "recv": 17787.2807341, "lt": 17787.245119179, "tt": 4.2086}
+{"stage": "vad_start", "t": 17755.906511434, "pid": 9960, "src": "ws", "recv": 17787.2807585, "lt": 17787.245185511, "tt": 4.2087}
+{"stage": "asr_partial", "t": 17756.085312673, "pid": 9960, "text": "Here", "src": "ws", "recv": 17787.4614436, "lt": 17787.42398675, "tt": 4.3875}
+{"stage": "interrupted", "t": 17756.834471963, "pid": 9960, "src": "ws", "recv": 17788.20981, "lt": 17788.17314604, "tt": 5.1366}
+{"stage": "interrupted", "t": 17756.834562888, "pid": 9960, "src": "ws", "recv": 17788.2098347, "lt": 17788.173236965, "tt": 5.1367}
+{"stage": "llm_request", "t": 17756.861097999, "pid": 9960, "speculative": true, "messages": 25, "chars": 10190, "est_tokens": 2548, "src": "ws", "recv": 17788.2382561, "lt": 17788.199772076, "tt": 5.1633}
+{"stage": "vad_end", "t": 17756.892568197, "pid": 9960, "src": "ws", "recv": 17788.2739045, "lt": 17788.231242274, "tt": 5.1947}
+{"stage": "vad_end", "t": 17756.892637011, "pid": 9960, "src": "ws", "recv": 17788.2739305, "lt": 17788.231311088, "tt": 5.1948}
+{"stage": "bot_stopped", "t": 17756.919265529, "pid": 9960, "src": "ws", "recv": 17788.3000115, "lt": 17788.257939606, "tt": 5.2214}
+{"stage": "bot_stopped", "t": 17756.919370065, "pid": 9960, "src": "ws", "recv": 17788.3000712, "lt": 17788.258044142, "tt": 5.2215}
+{"stage": "asr_partial", "t": 17757.088686256, "pid": 9960, "text": "Yes. Sure.", "src": "ws", "recv": 17788.4622222, "lt": 17788.427360333, "tt": 5.3909}
+{"stage": "asr_partial", "t": 17757.284234896, "pid": 9960, "text": "Yes. Sure.", "src": "ws", "recv": 17788.6577846, "lt": 17788.622908973, "tt": 5.5864}
+{"stage": "asr_final", "t": 17757.325919577, "pid": 9960, "text": "Yes. Sure.", "src": "ws", "recv": 17788.7018562, "lt": 17788.664593654, "tt": 5.6281}
+{"stage": "user_stopped", "t": 17757.341138238, "pid": 9960, "src": "ws", "recv": 17788.7205395, "lt": 17788.679812315, "tt": 5.6433}
+{"stage": "user_stopped", "t": 17757.341213923, "pid": 9960, "src": "ws", "recv": 17788.7205634, "lt": 17788.679888, "tt": 5.6434}
+{"stage": "llm_first_token", "t": 17757.345012375, "pid": 9960, "src": "ws", "recv": 17788.7306811, "lt": 17788.683686452, "tt": 5.6472}
+{"stage": "tts_request", "t": 17757.503842605, "pid": 9960, "src": "ws", "recv": 17788.9011309, "lt": 17788.842516682, "tt": 5.806}
+{"stage": "llm_usage", "t": 17757.520945409, "pid": 9960, "prompt_tokens": 2483, "completion_tokens": 285, "src": "ws", "recv": 17788.9130739, "lt": 17788.859619486, "tt": 5.8231}
+{"stage": "tts_first_audio", "t": 17757.783089918, "pid": 9960, "src": "ws", "recv": 17789.1567011, "lt": 17789.121763995, "tt": 6.0853}
+{"stage": "audio_out", "t": 17757.78807967, "pid": 9960, "src": "ws", "recv": 17789.1684291, "lt": 17789.126753747, "tt": 6.0902}
+{"stage": "audio_out", "t": 17757.788562831, "pid": 9960, "src": "ws", "recv": 17789.1684479, "lt": 17789.127236908, "tt": 6.0907}

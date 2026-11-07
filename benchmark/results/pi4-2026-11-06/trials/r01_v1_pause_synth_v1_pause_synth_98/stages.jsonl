@@ -1,0 +1,65 @@
+{"stage": "vad_start", "t": 16394.90252781, "pid": 9960, "src": "ws", "recv": 16426.2561906, "lt": 16426.241201887, "tt": 0.5485}
+{"stage": "vad_start", "t": 16394.90262105, "pid": 9960, "src": "ws", "recv": 16426.2562113, "lt": 16426.241295127, "tt": 0.5485}
+{"stage": "asr_partial", "t": 16395.253416583, "pid": 9960, "text": "I", "src": "ws", "recv": 16426.6054703, "lt": 16426.59209066, "tt": 0.8993}
+{"stage": "interrupted", "t": 16395.368196171, "pid": 9960, "src": "ws", "recv": 16426.7216791, "lt": 16426.706870248, "tt": 1.0141}
+{"stage": "interrupted", "t": 16395.368296948, "pid": 9960, "src": "ws", "recv": 16426.7217015, "lt": 16426.706971025, "tt": 1.0142}
+{"stage": "asr_partial", "t": 16395.485952851, "pid": 9960, "text": "I was thinking", "src": "ws", "recv": 16426.8380546, "lt": 16426.824626928, "tt": 1.1319}
+{"stage": "asr_partial", "t": 16395.648977233, "pid": 9960, "text": "I was thinking, may", "src": "ws", "recv": 16427.0010266, "lt": 16426.98765131, "tt": 1.2949}
+{"stage": "asr_partial", "t": 16395.928234241, "pid": 9960, "text": "I was thinking maybe", "src": "ws", "recv": 16427.2808521, "lt": 16427.266908318, "tt": 1.5742}
+{"stage": "asr_partial", "t": 16396.128983296, "pid": 9960, "text": "I was thinking maybe something", "src": "ws", "recv": 16427.4811178, "lt": 16427.467657373, "tt": 1.7749}
+{"stage": "asr_partial", "t": 16396.405824909, "pid": 9960, "text": "I was thinking maybe something I", "src": "ws", "recv": 16427.7579405, "lt": 16427.744498986, "tt": 2.0517}
+{"stage": "asr_partial", "t": 16396.609078987, "pid": 9960, "text": "I was thinking maybe something action", "src": "ws", "recv": 16427.9612226, "lt": 16427.947753064, "tt": 2.255}
+{"stage": "asr_partial", "t": 16396.887405803, "pid": 9960, "text": "I was thinking maybe something action packed", "src": "ws", "recv": 16428.2396263, "lt": 16428.22607988, "tt": 2.5333}
+{"stage": "vad_end", "t": 16397.010504024, "pid": 9960, "src": "ws", "recv": 16428.3622482, "lt": 16428.349178101, "tt": 2.6564}
+{"stage": "vad_end", "t": 16397.010572967, "pid": 9960, "src": "ws", "recv": 16428.3622695, "lt": 16428.349247044, "tt": 2.6565}
+{"stage": "asr_partial", "t": 16397.128413998, "pid": 9960, "text": "I was thinking maybe something action packed", "src": "ws", "recv": 16428.4811096, "lt": 16428.467088075, "tt": 2.7743}
+{"stage": "llm_request", "t": 16397.131598122, "pid": 9960, "speculative": true, "messages": 22, "chars": 10502, "est_tokens": 2626, "src": "ws", "recv": 16428.4848046, "lt": 16428.470272199, "tt": 2.7775}
+{"stage": "vad_start", "t": 16397.235370207, "pid": 9960, "src": "ws", "recv": 16428.5878545, "lt": 16428.574044284, "tt": 2.8813}
+{"stage": "vad_start", "t": 16397.23542517, "pid": 9960, "src": "ws", "recv": 16428.5878784, "lt": 16428.574099247002, "tt": 2.8813}
+{"stage": "llm_cancel", "t": 16397.238355409, "pid": 9960, "src": "ws", "recv": 16428.5895698, "lt": 16428.577029486, "tt": 2.8843}
+{"stage": "asr_partial", "t": 16397.365962867, "pid": 9960, "text": "I was thinking maybe something action packed I", "src": "ws", "recv": 16428.7181375, "lt": 16428.704636944, "tt": 3.0119}
+{"stage": "asr_partial", "t": 16397.566381019, "pid": 9960, "text": "I was thinking maybe something action packed. I heard", "src": "ws", "recv": 16428.9186725, "lt": 16428.905055096002, "tt": 3.2123}
+{"stage": "asr_partial", "t": 16397.846230519, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the", "src": "ws", "recv": 16429.1985551, "lt": 16429.184904596, "tt": 3.4922}
+{"stage": "asr_partial", "t": 16398.046812836, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new", "src": "ws", "recv": 16429.3990582, "lt": 16429.385486913, "tt": 3.6927}
+{"stage": "asr_partial", "t": 16398.326922426, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new super", "src": "ws", "recv": 16429.6796923, "lt": 16429.665596503, "tt": 3.9728}
+{"stage": "asr_partial", "t": 16398.526034984, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero", "src": "ws", "recv": 16429.8782346, "lt": 16429.864709061, "tt": 4.172}
+{"stage": "asr_partial", "t": 16398.807712128, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie", "src": "ws", "recv": 16430.1599842, "lt": 16430.146386205, "tt": 4.4536}
+{"stage": "asr_partial", "t": 16399.006640837, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is", "src": "ws", "recv": 16430.3592105, "lt": 16430.345314914, "tt": 4.6526}
+{"stage": "asr_partial", "t": 16399.292336706, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is", "src": "ws", "recv": 16430.6453201, "lt": 16430.631010783, "tt": 4.9383}
+{"stage": "asr_partial", "t": 16399.489447494, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really", "src": "ws", "recv": 16430.8416122, "lt": 16430.828121571, "tt": 5.1354}
+{"stage": "vad_end", "t": 16399.635545692, "pid": 9960, "src": "ws", "recv": 16430.9881963, "lt": 16430.974219769, "tt": 5.2815}
+{"stage": "vad_end", "t": 16399.635598284, "pid": 9960, "src": "ws", "recv": 16430.9882244, "lt": 16430.974272361, "tt": 5.2815}
+{"stage": "asr_partial", "t": 16399.769631417, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really", "src": "ws", "recv": 16431.1223028, "lt": 16431.108305494, "tt": 5.4156}
+{"stage": "llm_request", "t": 16399.772722802, "pid": 9960, "speculative": true, "messages": 22, "chars": 10550, "est_tokens": 2638, "src": "ws", "recv": 16431.1251884, "lt": 16431.111396879, "tt": 5.4186}
+{"stage": "vad_start", "t": 16399.826276471, "pid": 9960, "src": "ws", "recv": 16431.1787476, "lt": 16431.164950548, "tt": 5.4722}
+{"stage": "vad_start", "t": 16399.826335082, "pid": 9960, "src": "ws", "recv": 16431.1787698, "lt": 16431.165009159, "tt": 5.4723}
+{"stage": "llm_cancel", "t": 16399.829211303, "pid": 9960, "src": "ws", "recv": 16431.1803635, "lt": 16431.16788538, "tt": 5.4751}
+{"stage": "asr_partial", "t": 16400.008265551, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really my", "src": "ws", "recv": 16431.3623833, "lt": 16431.346939628, "tt": 5.6542}
+{"stage": "asr_partial", "t": 16400.248590588, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really like", "src": "ws", "recv": 16431.6007728, "lt": 16431.587264665, "tt": 5.8945}
+{"stage": "vad_end", "t": 16400.367870563, "pid": 9960, "src": "ws", "recv": 16431.7205161, "lt": 16431.70654464, "tt": 6.0138}
+{"stage": "vad_end", "t": 16400.367922562, "pid": 9960, "src": "ws", "recv": 16431.7205447, "lt": 16431.706596639, "tt": 6.0138}
+{"stage": "asr_partial", "t": 16400.452590842, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really like", "src": "ws", "recv": 16431.8051995, "lt": 16431.791264919, "tt": 6.0985}
+{"stage": "vad_start", "t": 16400.72053024, "pid": 9960, "src": "ws", "recv": 16432.0724556, "lt": 16432.059204317, "tt": 6.3665}
+{"stage": "vad_start", "t": 16400.720586129, "pid": 9960, "src": "ws", "recv": 16432.0724891, "lt": 16432.059260206, "tt": 6.3665}
+{"stage": "asr_partial", "t": 16400.73046924, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really like", "src": "ws", "recv": 16432.0827182, "lt": 16432.069143317, "tt": 6.3764}
+{"stage": "asr_partial", "t": 16400.927377198, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really like", "src": "ws", "recv": 16432.2796665, "lt": 16432.266051275, "tt": 6.5733}
+{"stage": "asr_partial", "t": 16401.208974899, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really like", "src": "ws", "recv": 16432.5612482, "lt": 16432.547648976, "tt": 6.8549}
+{"stage": "asr_partial", "t": 16401.409893027, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really like", "src": "ws", "recv": 16432.7621831, "lt": 16432.748567104, "tt": 7.0558}
+{"stage": "asr_partial", "t": 16401.688378565, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really like, um", "src": "ws", "recv": 16433.0406881, "lt": 16433.027052642, "tt": 7.3343}
+{"stage": "asr_partial", "t": 16401.888998197, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really like, um, well", "src": "ws", "recv": 16433.2413819, "lt": 16433.227672274, "tt": 7.5349}
+{"stage": "asr_partial", "t": 16402.169886593, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really, like, um, well,", "src": "ws", "recv": 16433.5222139, "lt": 16433.50856067, "tt": 7.8158}
+{"stage": "asr_partial", "t": 16402.369324592, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really, like, um, well, quicks", "src": "ws", "recv": 16433.7215879, "lt": 16433.707998669, "tt": 8.0152}
+{"stage": "asr_partial", "t": 16402.649265963, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really, like, um, well, quicksays groundbreaking", "src": "ws", "recv": 16434.001524, "lt": 16433.98794004, "tt": 8.2952}
+{"stage": "vad_end", "t": 16402.769044173, "pid": 9960, "src": "ws", "recv": 16434.1215255, "lt": 16434.10771825, "tt": 8.415}
+{"stage": "vad_end", "t": 16402.76913006, "pid": 9960, "src": "ws", "recv": 16434.121547, "lt": 16434.107804137002, "tt": 8.4151}
+{"stage": "asr_partial", "t": 16402.855068565, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really, like, um, well, quick says groundbreaking.", "src": "ws", "recv": 16434.207981, "lt": 16434.193742642, "tt": 8.501}
+{"stage": "llm_request", "t": 16402.858335707, "pid": 9960, "speculative": true, "messages": 22, "chars": 10594, "est_tokens": 2648, "src": "ws", "recv": 16434.2112167, "lt": 16434.197009784, "tt": 8.5043}
+{"stage": "llm_usage", "t": 16403.517051878, "pid": 9960, "prompt_tokens": 2494, "completion_tokens": 93, "src": "ws", "recv": 16434.8696564, "lt": 16434.855725955, "tt": 9.163}
+{"stage": "asr_final", "t": 16403.735027098, "pid": 9960, "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really, like, um, well, quick says groundbreaking.", "src": "ws", "recv": 16435.0883561, "lt": 16435.073701175, "tt": 9.381}
+{"stage": "user_stopped", "t": 16403.741900453, "pid": 9960, "src": "ws", "recv": 16435.101246, "lt": 16435.08057453, "tt": 9.3878}
+{"stage": "user_stopped", "t": 16403.741971359, "pid": 9960, "src": "ws", "recv": 16435.1012802, "lt": 16435.080645436, "tt": 9.3879}
+{"stage": "llm_first_token", "t": 16403.745292038, "pid": 9960, "src": "ws", "recv": 16435.1066573, "lt": 16435.083966115, "tt": 9.3912}
+{"stage": "tts_request", "t": 16403.779817141, "pid": 9960, "src": "ws", "recv": 16435.1377665, "lt": 16435.118491218, "tt": 9.4257}
+{"stage": "tts_first_audio", "t": 16404.028593625, "pid": 9960, "src": "ws", "recv": 16435.3805508, "lt": 16435.367267702, "tt": 9.6745}
+{"stage": "audio_out", "t": 16404.032823644, "pid": 9960, "src": "ws", "recv": 16435.3896021, "lt": 16435.371497721, "tt": 9.6787}
+{"stage": "audio_out", "t": 16404.032910531, "pid": 9960, "src": "ws", "recv": 16435.3896203, "lt": 16435.371584608, "tt": 9.6788}

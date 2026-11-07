@@ -1,0 +1,70 @@
+{
+  "trial": "r08_v1_pause_synth_v1_pause_synth_111",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_111",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 17.632,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 8.117375
+    }
+  ],
+  "live_bot_starts": [
+    6.976,
+    9.472
+  ],
+  "live_bot_ends": [
+    7.232,
+    17.28
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "pause": [
+      5.14,
+      7.180000000000001
+    ],
+    "source_id": "111",
+    "text": "I need a good book to read any ideas if you like mysteries you should try the night circus. So [UH] it's really captivating."
+  },
+  "mono": [
+    18345.0593118,
+    18362.6867748
+  ],
+  "bot_segments": [
+    [
+      6.946,
+      7.262
+    ],
+    [
+      9.442,
+      17.31
+    ]
+  ],
+  "play_first": [
+    0.0,
+    8.117375
+  ],
+  "tor": 0,
+  "first_start": 6.946,
+  "spoke_s": 0.31599999999999984,
+  "cut_in_during_pause": true,
+  "actual": "spoke 0.3 s at 6.9 s (in the pause)",
+  "verdict": "✓ TOR 0?",
+  "ok": true,
+  "marks": 74,
+  "final": {
+    "tor": 0,
+    "words": 3,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "If you enjoy mysteries, the Night Circus is a great choice. Its atmospheric plot and magical twists keep you turning pages."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

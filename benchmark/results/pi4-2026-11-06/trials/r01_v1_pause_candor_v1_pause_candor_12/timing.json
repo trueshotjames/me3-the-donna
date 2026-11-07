@@ -1,0 +1,64 @@
+{
+  "trial": "r01_v1_pause_candor_v1_pause_candor_12",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_12",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 15.616,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 10.08
+    }
+  ],
+  "live_bot_starts": [
+    11.264
+  ],
+  "live_bot_ends": [
+    15.264
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "pause": [
+      5.819999999999993,
+      6.509999999999991
+    ],
+    "source_id": "12",
+    "text": "yeah Oregon is a funny state actually in a lot of ways I really miss it a lot I lived there for six years and it's I really love it there but it's also a really funny state"
+  },
+  "mono": [
+    16363.2790322,
+    16378.8789032
+  ],
+  "bot_segments": [
+    [
+      11.234,
+      15.294
+    ]
+  ],
+  "play_first": [
+    0.0,
+    10.08
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 66,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "Sounds like you have a lot of fond memories and a unique perspective on that state."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

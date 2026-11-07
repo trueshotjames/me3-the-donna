@@ -1,0 +1,62 @@
+{
+  "trial": "r01_v15_interruption_v15_interruption_61_clean",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_61",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 12.576,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.544
+    }
+  ],
+  "live_bot_starts": [
+    4.704
+  ],
+  "live_bot_ends": [
+    12.224
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "How can I participate in environmental conservation from home?",
+    "current_turn_text": "Actually, what are some good environmental documentaries?",
+    "overlap_text": "Actually, what are some good environmental documentaries?",
+    "overlap_duration": 2.63,
+    "overlap_window": [
+      7.189,
+      9.824
+    ],
+    "source_id": "61"
+  },
+  "mono": [
+    16194.8271645,
+    16207.3899451
+  ],
+  "bot_segments": [
+    [
+      4.674,
+      12.254
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.544
+  ],
+  "tor": 1,
+  "first_start": 4.674,
+  "spoke_s": 6.87,
+  "actual": "replied after 1.13 s, spoke 6.9 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 41,
+  "final": {
+    "transcript": "You can organize virtual cleanup events. Donate to conservation nonprofits. Share educational posts on social media."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

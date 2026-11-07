@@ -1,0 +1,125 @@
+{
+  "text": "I can help with many online tasks like filling out surveys, looking up information, or drafting messages.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.98,
+        2.26
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        6.8,
+        6.96
+      ]
+    },
+    {
+      "text": "help",
+      "timestamp": [
+        6.96,
+        7.16
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        7.16,
+        7.38
+      ]
+    },
+    {
+      "text": "many",
+      "timestamp": [
+        7.38,
+        7.62
+      ]
+    },
+    {
+      "text": "online",
+      "timestamp": [
+        7.62,
+        7.96
+      ]
+    },
+    {
+      "text": "tasks",
+      "timestamp": [
+        7.96,
+        8.62
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        8.62,
+        9.0
+      ]
+    },
+    {
+      "text": "filling",
+      "timestamp": [
+        9.0,
+        9.28
+      ]
+    },
+    {
+      "text": "out",
+      "timestamp": [
+        9.28,
+        9.5
+      ]
+    },
+    {
+      "text": "surveys,",
+      "timestamp": [
+        9.5,
+        9.96
+      ]
+    },
+    {
+      "text": "looking",
+      "timestamp": [
+        10.4,
+        10.56
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        10.56,
+        10.82
+      ]
+    },
+    {
+      "text": "information,",
+      "timestamp": [
+        10.82,
+        11.28
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        11.6,
+        11.7
+      ]
+    },
+    {
+      "text": "drafting",
+      "timestamp": [
+        11.7,
+        12.06
+      ]
+    },
+    {
+      "text": "messages.",
+      "timestamp": [
+        12.06,
+        12.56
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

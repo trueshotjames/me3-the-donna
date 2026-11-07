@@ -1,0 +1,64 @@
+{
+  "trial": "r04_v1_pause_candor_v1_pause_candor_108",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_108",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 22.112,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 15.68
+    }
+  ],
+  "live_bot_starts": [
+    18.688
+  ],
+  "live_bot_ends": [
+    21.76
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      11.920000000000073,
+      12.900000000000091
+    ],
+    "source_id": "108",
+    "text": "sometimes you try to make sense of it and you just you just sometimes I just can't believe what but we're going through at that you know at the moment with one thing and then another thing comes you know comes about and I don't know I mean we're just"
+  },
+  "mono": [
+    17103.9777346,
+    17126.0781697
+  ],
+  "bot_segments": [
+    [
+      18.658,
+      21.79
+    ]
+  ],
+  "play_first": [
+    0.0,
+    15.68
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 104,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "It sounds like you're feeling overwhelmed by everything that's happening."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

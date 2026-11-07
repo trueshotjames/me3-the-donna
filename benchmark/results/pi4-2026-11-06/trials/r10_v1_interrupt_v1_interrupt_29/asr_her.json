@@ -1,0 +1,258 @@
+{
+  "text": "Where would you like to go and what dates are you if you enjoy atmospheric mysteries? Try the shadow of the wind by Carlos Ruiz Zephon. It leaves a haunting story set in post -war Barcelona",
+  "chunks": [
+    {
+      "text": "Where",
+      "timestamp": [
+        3.5,
+        4.02
+      ]
+    },
+    {
+      "text": "would",
+      "timestamp": [
+        4.02,
+        4.2
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        4.2,
+        4.3
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        4.3,
+        4.46
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        4.46,
+        4.62
+      ]
+    },
+    {
+      "text": "go",
+      "timestamp": [
+        4.62,
+        4.84
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        4.84,
+        5.12
+      ]
+    },
+    {
+      "text": "what",
+      "timestamp": [
+        5.12,
+        5.3
+      ]
+    },
+    {
+      "text": "dates",
+      "timestamp": [
+        5.3,
+        5.66
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        5.66,
+        5.8
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        5.8,
+        5.94
+      ]
+    },
+    {
+      "text": "if",
+      "timestamp": [
+        9.62,
+        10.24
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        10.24,
+        10.44
+      ]
+    },
+    {
+      "text": "enjoy",
+      "timestamp": [
+        10.44,
+        10.72
+      ]
+    },
+    {
+      "text": "atmospheric",
+      "timestamp": [
+        10.72,
+        11.28
+      ]
+    },
+    {
+      "text": "mysteries?",
+      "timestamp": [
+        11.28,
+        11.78
+      ]
+    },
+    {
+      "text": "Try",
+      "timestamp": [
+        12.24,
+        12.48
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        12.48,
+        12.64
+      ]
+    },
+    {
+      "text": "shadow",
+      "timestamp": [
+        12.64,
+        12.92
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        12.92,
+        13.12
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        13.12,
+        13.22
+      ]
+    },
+    {
+      "text": "wind",
+      "timestamp": [
+        13.22,
+        13.46
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        13.46,
+        13.74
+      ]
+    },
+    {
+      "text": "Carlos",
+      "timestamp": [
+        13.74,
+        14.04
+      ]
+    },
+    {
+      "text": "Ruiz",
+      "timestamp": [
+        14.04,
+        14.6
+      ]
+    },
+    {
+      "text": "Zephon.",
+      "timestamp": [
+        14.6,
+        15.06
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        15.3,
+        15.58
+      ]
+    },
+    {
+      "text": "leaves",
+      "timestamp": [
+        15.58,
+        15.78
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        15.78,
+        15.96
+      ]
+    },
+    {
+      "text": "haunting",
+      "timestamp": [
+        15.96,
+        16.28
+      ]
+    },
+    {
+      "text": "story",
+      "timestamp": [
+        16.28,
+        16.78
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        16.78,
+        17.06
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        17.06,
+        17.2
+      ]
+    },
+    {
+      "text": "post",
+      "timestamp": [
+        17.2,
+        17.44
+      ]
+    },
+    {
+      "text": "-war",
+      "timestamp": [
+        17.44,
+        17.72
+      ]
+    },
+    {
+      "text": "Barcelona",
+      "timestamp": [
+        17.72,
+        18.12
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

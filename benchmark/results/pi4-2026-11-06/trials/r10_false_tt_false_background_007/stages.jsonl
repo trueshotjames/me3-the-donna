@@ -1,0 +1,16 @@
+{"stage": "vad_start", "t": 18685.300687527, "pid": 9960, "src": "ws", "recv": 18716.6890846, "lt": 18716.639361604, "tt": 0.2585}
+{"stage": "vad_start", "t": 18685.300797619, "pid": 9960, "src": "ws", "recv": 18716.6891172, "lt": 18716.639471696, "tt": 0.2587}
+{"stage": "interrupted", "t": 18685.768300402, "pid": 9960, "src": "ws", "recv": 18717.1564915, "lt": 18717.106974479, "tt": 0.7262}
+{"stage": "interrupted", "t": 18685.768392105, "pid": 9960, "src": "ws", "recv": 18717.1565148, "lt": 18717.107066182, "tt": 0.7262}
+{"stage": "asr_partial", "t": 18685.922587355, "pid": 9960, "text": "The doorbell", "src": "ws", "recv": 18717.3096004, "lt": 18717.261261432, "tt": 0.8804}
+{"stage": "asr_partial", "t": 18686.131231074, "pid": 9960, "text": "The doorbell just", "src": "ws", "recv": 18717.5180978, "lt": 18717.469905151, "tt": 1.0891}
+{"stage": "asr_partial", "t": 18686.363520218, "pid": 9960, "text": "The doorbell just rang.", "src": "ws", "recv": 18717.7509156, "lt": 18717.702194295, "tt": 1.3214}
+{"stage": "llm_request", "t": 18686.450775254, "pid": 9960, "speculative": true, "messages": 15, "chars": 9957, "est_tokens": 2489, "src": "ws", "recv": 18717.8378174, "lt": 18717.789449331, "tt": 1.4086}
+{"stage": "vad_end", "t": 18686.509806407, "pid": 9960, "src": "ws", "recv": 18717.8969588, "lt": 18717.848480484, "tt": 1.4677}
+{"stage": "vad_end", "t": 18686.509858647, "pid": 9960, "src": "ws", "recv": 18717.8969822, "lt": 18717.848532724, "tt": 1.4677}
+{"stage": "asr_partial", "t": 18686.611412744, "pid": 9960, "text": "The doorbell just rang.", "src": "ws", "recv": 18717.9981913, "lt": 18717.950086821, "tt": 1.5693}
+{"stage": "asr_partial", "t": 18686.84275921, "pid": 9960, "text": "The doorbell just rang.", "src": "ws", "recv": 18718.2296882, "lt": 18718.181433287, "tt": 1.8006}
+{"stage": "asr_final", "t": 18686.940537191, "pid": 9960, "text": "The doorbell just rang.", "src": "ws", "recv": 18718.3283272, "lt": 18718.279211268, "tt": 1.8984}
+{"stage": "user_stopped", "t": 18686.947463464, "pid": 9960, "src": "ws", "recv": 18718.3374409, "lt": 18718.286137541, "tt": 1.9053}
+{"stage": "user_stopped", "t": 18686.947532593, "pid": 9960, "src": "ws", "recv": 18718.3374622, "lt": 18718.28620667, "tt": 1.9054}
+{"stage": "llm_first_token", "t": 18686.950135034, "pid": 9960, "src": "ws", "recv": 18718.3408343, "lt": 18718.288809111, "tt": 1.908}

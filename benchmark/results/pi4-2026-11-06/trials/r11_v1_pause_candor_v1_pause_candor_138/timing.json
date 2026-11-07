@@ -1,0 +1,55 @@
+{
+  "trial": "r11_v1_pause_candor_v1_pause_candor_138",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_138",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 25.92,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 21.92
+    }
+  ],
+  "live_bot_starts": [],
+  "live_bot_ends": [],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      14.980000000000018,
+      16.059999999999945
+    ],
+    "source_id": "138",
+    "text": "so I'm probably gonna go over to my boyfriend's place tomorrow night and then try to spend over there but I don't know Um He just came back from Kansas city and I don't know if like like we haven't talked like we were fully like text each other but I don't know like"
+  },
+  "mono": [
+    19103.4774115,
+    19129.4070957
+  ],
+  "bot_segments": [],
+  "play_first": [
+    0.0,
+    21.92
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 132,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": ""
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

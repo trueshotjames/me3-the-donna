@@ -1,0 +1,48 @@
+{
+  "text": "Explain astronomy in depth. Yes, sure.",
+  "chunks": [
+    {
+      "text": "Explain",
+      "timestamp": [
+        0.0,
+        0.32
+      ]
+    },
+    {
+      "text": "astronomy",
+      "timestamp": [
+        0.32,
+        0.86
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        0.86,
+        1.08
+      ]
+    },
+    {
+      "text": "depth.",
+      "timestamp": [
+        1.08,
+        1.4
+      ]
+    },
+    {
+      "text": "Yes,",
+      "timestamp": [
+        3.69,
+        4.29
+      ]
+    },
+    {
+      "text": "sure.",
+      "timestamp": [
+        4.47,
+        4.71
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

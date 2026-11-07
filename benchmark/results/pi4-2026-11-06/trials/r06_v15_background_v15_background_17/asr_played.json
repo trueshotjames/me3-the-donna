@@ -1,0 +1,83 @@
+{
+  "text": "What's the UV index today? I'm going to take a nap.",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.24
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.24,
+        0.34
+      ]
+    },
+    {
+      "text": "UV",
+      "timestamp": [
+        0.34,
+        0.56
+      ]
+    },
+    {
+      "text": "index",
+      "timestamp": [
+        0.56,
+        0.96
+      ]
+    },
+    {
+      "text": "today?",
+      "timestamp": [
+        0.96,
+        1.36
+      ]
+    },
+    {
+      "text": "I'm",
+      "timestamp": [
+        4.0,
+        4.38
+      ]
+    },
+    {
+      "text": "going",
+      "timestamp": [
+        4.38,
+        4.48
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        4.48,
+        4.58
+      ]
+    },
+    {
+      "text": "take",
+      "timestamp": [
+        4.58,
+        4.72
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.72,
+        4.84
+      ]
+    },
+    {
+      "text": "nap.",
+      "timestamp": [
+        4.84,
+        5.08
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

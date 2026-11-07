@@ -1,0 +1,67 @@
+{
+  "trial": "r02_v15_backchannel_v15_backchannel_1_clean",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_1",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 32.736,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.712
+    }
+  ],
+  "live_bot_starts": [
+    0.0,
+    4.352
+  ],
+  "live_bot_ends": [
+    0.288
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Present a thorough explanation of global warming.",
+    "current_turn_text": "",
+    "overlap_text": "yes yeah",
+    "overlap_duration": 0.7,
+    "overlap_window": [
+      6.601,
+      7.298
+    ],
+    "source_id": "1"
+  },
+  "mono": [
+    16537.7418396,
+    16570.4627584
+  ],
+  "bot_segments": [
+    [
+      0.0,
+      0.318
+    ],
+    [
+      4.322,
+      32.736
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.712
+  ],
+  "tor": 1,
+  "first_start": 4.322,
+  "spoke_s": 6.39,
+  "actual": "replied after 1.61 s, spoke 6.4 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 29,
+  "final": {
+    "transcript": "event. Global warming is the long -term rise in Earth's average surface temperature, caused mainly by human activities that increase greenhouse gases in the atmosphere. Burning fossil fuels for electricity, transportation, and industry releases carbon dioxide, methane, and nitrous oxide, which trap heat that would otherwise escape into space. Geoforce Station reduces the planet's ability to absorb"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

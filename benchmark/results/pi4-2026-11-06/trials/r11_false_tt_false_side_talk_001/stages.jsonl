@@ -1,0 +1,30 @@
+{"stage": "vad_start", "t": 19253.382633394, "pid": 9960, "src": "ws", "recv": 19284.7765393, "lt": 19284.721307471, "tt": 0.1164}
+{"stage": "vad_start", "t": 19253.382688893, "pid": 9960, "src": "ws", "recv": 19284.7765589, "lt": 19284.72136297, "tt": 0.1165}
+{"stage": "asr_partial", "t": 19254.208569824, "pid": 9960, "text": "Rooming", "src": "ws", "recv": 19285.6062267, "lt": 19285.547243901, "tt": 0.9423}
+{"stage": "interrupted", "t": 19254.211650864, "pid": 9960, "src": "ws", "recv": 19285.6085, "lt": 19285.550324941, "tt": 0.9454}
+{"stage": "interrupted", "t": 19254.211740067, "pid": 9960, "src": "ws", "recv": 19285.6085214, "lt": 19285.550414144, "tt": 0.9455}
+{"stage": "bot_stopped", "t": 19254.235305497, "pid": 9960, "src": "ws", "recv": 19285.6380416, "lt": 19285.573979574, "tt": 0.9691}
+{"stage": "bot_stopped", "t": 19254.235421422, "pid": 9960, "src": "ws", "recv": 19285.6380674, "lt": 19285.574095499, "tt": 0.9692}
+{"stage": "llm_request", "t": 19254.251040697, "pid": 9960, "messages": 19, "chars": 11893, "est_tokens": 2973, "src": "ws", "recv": 19285.647836, "lt": 19285.589714774, "tt": 0.9848}
+{"stage": "asr_partial", "t": 19254.487817727, "pid": 9960, "text": "Roaming fridges", "src": "ws", "recv": 19285.8824929, "lt": 19285.826491804, "tt": 1.2216}
+{"stage": "asr_partial", "t": 19254.682099679, "pid": 9960, "text": "Roaming fridges every", "src": "ws", "recv": 19286.0763121, "lt": 19286.020773756, "tt": 1.4159}
+{"stage": "asr_partial", "t": 19254.845788147, "pid": 9960, "text": "Roaming fridge is empty again", "src": "ws", "recv": 19286.2400155, "lt": 19286.184462224, "tt": 1.5796}
+{"stage": "asr_partial", "t": 19255.051796843, "pid": 9960, "text": "Roaming fridge is empty again growth", "src": "ws", "recv": 19286.4459494, "lt": 19286.39047092, "tt": 1.7856}
+{"stage": "asr_partial", "t": 19255.282644843, "pid": 9960, "text": "Roaming fridge is empty again, grossly", "src": "ws", "recv": 19286.6768391, "lt": 19286.62131892, "tt": 2.0164}
+{"stage": "vad_end", "t": 19255.530504919, "pid": 9960, "src": "ws", "recv": 19286.9253546, "lt": 19286.869178996, "tt": 2.2643}
+{"stage": "vad_end", "t": 19255.530571899, "pid": 9960, "src": "ws", "recv": 19286.925374, "lt": 19286.869245976, "tt": 2.2643}
+{"stage": "asr_partial", "t": 19255.542493437, "pid": 9960, "text": "Roaming fridge is empty again, groceries", "src": "ws", "recv": 19286.938234, "lt": 19286.881167514, "tt": 2.2763}
+{"stage": "llm_request", "t": 19255.546849186, "pid": 9960, "speculative": true, "messages": 20, "chars": 11933, "est_tokens": 2983, "src": "ws", "recv": 19286.94285, "lt": 19286.885523263, "tt": 2.2806}
+{"stage": "asr_partial", "t": 19255.614121995, "pid": 9960, "text": "Roaming fridge is empty again, groceries?", "src": "ws", "recv": 19287.0103172, "lt": 19286.952796072, "tt": 2.3479}
+{"stage": "asr_final", "t": 19255.733643497, "pid": 9960, "text": "Roaming fridge is empty again, groceries?", "src": "ws", "recv": 19287.1294404, "lt": 19287.072317574, "tt": 2.4674}
+{"stage": "user_stopped", "t": 19255.7416068, "pid": 9960, "src": "ws", "recv": 19287.1388521, "lt": 19287.080280877, "tt": 2.4754}
+{"stage": "user_stopped", "t": 19255.741679854, "pid": 9960, "src": "ws", "recv": 19287.1388738, "lt": 19287.080353931, "tt": 2.4755}
+{"stage": "llm_first_token", "t": 19256.892093914, "pid": 9960, "src": "ws", "recv": 19288.287138, "lt": 19288.230767991, "tt": 3.6259}
+{"stage": "llm_usage", "t": 19256.943919723, "pid": 9960, "prompt_tokens": 2914, "completion_tokens": 39, "src": "ws", "recv": 19288.3398179, "lt": 19288.2825938, "tt": 3.6777}
+{"stage": "tts_request", "t": 19256.960638061, "pid": 9960, "src": "ws", "recv": 19288.3574215, "lt": 19288.299312138, "tt": 3.6944}
+{"stage": "tts_first_audio", "t": 19257.145302838, "pid": 9960, "src": "ws", "recv": 19288.5391549, "lt": 19288.483976915, "tt": 3.8791}
+{"stage": "audio_out", "t": 19257.149633976, "pid": 9960, "src": "ws", "recv": 19288.5485823, "lt": 19288.488308053, "tt": 3.8834}
+{"stage": "audio_out", "t": 19257.149722253, "pid": 9960, "src": "ws", "recv": 19288.5485989, "lt": 19288.48839633, "tt": 3.8835}
+{"stage": "bot_stopped", "t": 19259.958594377, "pid": 9960, "src": "ws", "recv": 19291.3531656, "lt": 19291.297268454, "tt": 6.6924}
+{"stage": "bot_stopped", "t": 19259.95867545, "pid": 9960, "src": "ws", "recv": 19291.3531905, "lt": 19291.297349527, "tt": 6.6924}
+{"stage": "llm_request", "t": 19259.964832272, "pid": 9960, "messages": 21, "chars": 11979, "est_tokens": 2995, "src": "ws", "recv": 19291.3583595, "lt": 19291.303506349, "tt": 6.6986}

@@ -1,0 +1,41 @@
+{
+  "text": "real -world usage are key.",
+  "chunks": [
+    {
+      "text": "real",
+      "timestamp": [
+        0.0,
+        0.14
+      ]
+    },
+    {
+      "text": "-world",
+      "timestamp": [
+        0.14,
+        0.4
+      ]
+    },
+    {
+      "text": "usage",
+      "timestamp": [
+        0.4,
+        0.74
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        0.74,
+        1.08
+      ]
+    },
+    {
+      "text": "key.",
+      "timestamp": [
+        1.08,
+        1.36
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,111 @@
+{
+  "text": "Start with a shower, then trim nails. Sure, what would you like to chat about?",
+  "chunks": [
+    {
+      "text": "Start",
+      "timestamp": [
+        3.22,
+        3.96
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        3.96,
+        4.24
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.24,
+        4.34
+      ]
+    },
+    {
+      "text": "shower,",
+      "timestamp": [
+        4.34,
+        4.68
+      ]
+    },
+    {
+      "text": "then",
+      "timestamp": [
+        5.1,
+        5.34
+      ]
+    },
+    {
+      "text": "trim",
+      "timestamp": [
+        5.34,
+        5.78
+      ]
+    },
+    {
+      "text": "nails.",
+      "timestamp": [
+        5.78,
+        6.06
+      ]
+    },
+    {
+      "text": "Sure,",
+      "timestamp": [
+        7.44,
+        8.0
+      ]
+    },
+    {
+      "text": "what",
+      "timestamp": [
+        8.28,
+        8.48
+      ]
+    },
+    {
+      "text": "would",
+      "timestamp": [
+        8.48,
+        8.6
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        8.6,
+        8.72
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        8.72,
+        8.86
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        8.86,
+        9.0
+      ]
+    },
+    {
+      "text": "chat",
+      "timestamp": [
+        9.0,
+        9.22
+      ]
+    },
+    {
+      "text": "about?",
+      "timestamp": [
+        9.22,
+        9.48
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

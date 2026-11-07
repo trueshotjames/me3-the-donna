@@ -1,0 +1,19 @@
+{"stage": "vad_start", "t": 17866.910687129, "pid": 9960, "src": "ws", "recv": 17898.2871934, "lt": 17898.249361206, "tt": 0.2044}
+{"stage": "vad_start", "t": 17866.910775795, "pid": 9960, "src": "ws", "recv": 17898.2872203, "lt": 17898.249449872, "tt": 0.2045}
+{"stage": "asr_partial", "t": 17867.366634878, "pid": 9960, "text": "Christ", "src": "ws", "recv": 17898.7419245, "lt": 17898.705308955, "tt": 0.6604}
+{"stage": "interrupted", "t": 17867.489599855, "pid": 9960, "src": "ws", "recv": 17898.866335, "lt": 17898.828273932, "tt": 0.7834}
+{"stage": "interrupted", "t": 17867.489690484, "pid": 9960, "src": "ws", "recv": 17898.8663662, "lt": 17898.828364561, "tt": 0.7834}
+{"stage": "asr_partial", "t": 17867.643823515, "pid": 9960, "text": "Chris, your laptop", "src": "ws", "recv": 17899.0191085, "lt": 17898.982497592002, "tt": 0.9376}
+{"stage": "asr_partial", "t": 17867.88303322, "pid": 9960, "text": "Chris, your laptop's", "src": "ws", "recv": 17899.2583455, "lt": 17899.221707297, "tt": 1.1768}
+{"stage": "asr_partial", "t": 17868.094033243, "pid": 9960, "text": "Chris, your laptop's still on", "src": "ws", "recv": 17899.4706266, "lt": 17899.43270732, "tt": 1.3878}
+{"stage": "asr_partial", "t": 17868.363697511, "pid": 9960, "text": "Chris, your laptop's still on the", "src": "ws", "recv": 17899.7390071, "lt": 17899.702371588, "tt": 1.6574}
+{"stage": "asr_partial", "t": 17868.573514252, "pid": 9960, "text": "Chris, your laptop's still on the table now", "src": "ws", "recv": 17899.9500218, "lt": 17899.912188329, "tt": 1.8673}
+{"stage": "asr_partial", "t": 17868.766986623, "pid": 9960, "text": "Chris, your laptop's still on the table, man.", "src": "ws", "recv": 17900.1424012, "lt": 17900.1056607, "tt": 2.0607}
+{"stage": "vad_end", "t": 17868.828625832, "pid": 9960, "src": "ws", "recv": 17900.2042329, "lt": 17900.167299909, "tt": 2.1224}
+{"stage": "vad_end", "t": 17868.82868222, "pid": 9960, "src": "ws", "recv": 17900.2042529, "lt": 17900.167356297, "tt": 2.1224}
+{"stage": "asr_partial", "t": 17868.84765302, "pid": 9960, "text": "Chris, your laptop's still on the table, man.", "src": "ws", "recv": 17900.2239619, "lt": 17900.186327097, "tt": 2.1414}
+{"stage": "llm_request", "t": 17868.85144212, "pid": 9960, "speculative": true, "messages": 37, "chars": 11704, "est_tokens": 2926, "src": "ws", "recv": 17900.2283986, "lt": 17900.190116197, "tt": 2.1452}
+{"stage": "asr_final", "t": 17869.507203753, "pid": 9960, "text": "Chris, your laptop's still on the table, man.", "src": "ws", "recv": 17900.8834506, "lt": 17900.84587783, "tt": 2.801}
+{"stage": "user_stopped", "t": 17869.514078908, "pid": 9960, "src": "ws", "recv": 17900.8926192, "lt": 17900.852752985, "tt": 2.8078}
+{"stage": "user_stopped", "t": 17869.514146629, "pid": 9960, "src": "ws", "recv": 17900.8926432, "lt": 17900.852820706, "tt": 2.8079}
+{"stage": "llm_first_token", "t": 17869.516827411, "pid": 9960, "src": "ws", "recv": 17900.8957486, "lt": 17900.855501488, "tt": 2.8106}

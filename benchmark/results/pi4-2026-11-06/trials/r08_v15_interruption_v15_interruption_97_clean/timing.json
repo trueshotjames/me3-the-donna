@@ -1,0 +1,62 @@
+{
+  "trial": "r08_v15_interruption_v15_interruption_97_clean",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_97",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 16.0,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.616
+    }
+  ],
+  "live_bot_starts": [
+    3.584
+  ],
+  "live_bot_ends": [
+    15.648
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "What are basic steps for grooming a dog?",
+    "current_turn_text": "Can we talk about something else?",
+    "overlap_text": "Can we talk about something else?",
+    "overlap_duration": 2.02,
+    "overlap_window": [
+      6.336,
+      8.352
+    ],
+    "source_id": "97"
+  },
+  "mono": [
+    18401.7521646,
+    18417.7270026
+  ],
+  "bot_segments": [
+    [
+      3.554,
+      15.678
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.616
+  ],
+  "tor": 1,
+  "first_start": 3.554,
+  "spoke_s": 7.061999999999999,
+  "actual": "replied after 0.94 s, spoke 7.1 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 40,
+  "final": {
+    "transcript": "Start with a warm shower or face wash to clean the skin. Tune any facial hair or shape your beard if you have one. Use a gentle cleanser on your body, then rinse thoroughly. Apply a moisturizer to keep your skin hydrated."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

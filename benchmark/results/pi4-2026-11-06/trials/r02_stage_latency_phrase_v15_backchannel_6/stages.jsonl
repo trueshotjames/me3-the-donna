@@ -1,0 +1,26 @@
+{"stage": "vad_start", "t": 15761.791715874, "pid": 9960, "src": "ws", "recv": 15793.1357398, "lt": 15793.130389951, "tt": 0.2057}
+{"stage": "vad_start", "t": 15761.79180365, "pid": 9960, "src": "ws", "recv": 15793.1357605, "lt": 15793.130477727, "tt": 0.2058}
+{"stage": "asr_partial", "t": 15762.207691065, "pid": 9960, "text": "This", "src": "ws", "recv": 15793.5505648, "lt": 15793.546365142, "tt": 0.6217}
+{"stage": "interrupted", "t": 15762.327857849, "pid": 9960, "src": "ws", "recv": 15793.6724471, "lt": 15793.666531926001, "tt": 0.7419}
+{"stage": "interrupted", "t": 15762.327982718, "pid": 9960, "src": "ws", "recv": 15793.6724664, "lt": 15793.666656795, "tt": 0.742}
+{"stage": "asr_partial", "t": 15762.443928035, "pid": 9960, "text": "Discussed", "src": "ws", "recv": 15793.7867283, "lt": 15793.782602112, "tt": 0.8579}
+{"stage": "asr_partial", "t": 15762.689803258, "pid": 9960, "text": "Discuss climate", "src": "ws", "recv": 15794.0328972, "lt": 15794.028477335, "tt": 1.1038}
+{"stage": "asr_partial", "t": 15762.890397907, "pid": 9960, "text": "Discuss climate change", "src": "ws", "recv": 15794.2336577, "lt": 15794.229071984, "tt": 1.3044}
+{"stage": "asr_partial", "t": 15763.167193732, "pid": 9960, "text": "Discuss climate change in", "src": "ws", "recv": 15794.5098403, "lt": 15794.505867809, "tt": 1.5812}
+{"stage": "asr_partial", "t": 15763.366922818, "pid": 9960, "text": "Discuss climate change", "src": "ws", "recv": 15794.7097688, "lt": 15794.705596895, "tt": 1.7809}
+{"stage": "asr_partial", "t": 15763.647267766, "pid": 9960, "text": "Discuss climate change exhaust", "src": "ws", "recv": 15794.9900296, "lt": 15794.985941843, "tt": 2.0613}
+{"stage": "asr_partial", "t": 15763.84523078, "pid": 9960, "text": "Discuss climate change exhaustively", "src": "ws", "recv": 15795.1886829, "lt": 15795.183904857, "tt": 2.2593}
+{"stage": "vad_end", "t": 15763.871856565, "pid": 9960, "src": "ws", "recv": 15795.2173415, "lt": 15795.210530642, "tt": 2.2859}
+{"stage": "vad_end", "t": 15763.871929027, "pid": 9960, "src": "ws", "recv": 15795.2173621, "lt": 15795.210603104, "tt": 2.286}
+{"stage": "llm_request", "t": 15763.879369139, "pid": 9960, "speculative": true, "messages": 24, "chars": 11479, "est_tokens": 2870, "src": "ws", "recv": 15795.2226834, "lt": 15795.218043216, "tt": 2.2934}
+{"stage": "asr_partial", "t": 15763.920518338, "pid": 9960, "text": "Discuss climate change exhaustively.", "src": "ws", "recv": 15795.2651147, "lt": 15795.259192415, "tt": 2.3345}
+{"stage": "asr_partial", "t": 15764.127555482, "pid": 9960, "text": "Discuss climate change exhaustively.", "src": "ws", "recv": 15795.4701477, "lt": 15795.466229559, "tt": 2.5416}
+{"stage": "asr_final", "t": 15764.969408741, "pid": 9960, "text": "Discuss climate change exhaustively.", "src": "ws", "recv": 15796.3131269, "lt": 15796.308082818001, "tt": 3.3834}
+{"stage": "user_stopped", "t": 15764.976225417, "pid": 9960, "src": "ws", "recv": 15796.3297044, "lt": 15796.314899494, "tt": 3.3902}
+{"stage": "user_stopped", "t": 15764.976293046, "pid": 9960, "src": "ws", "recv": 15796.3297281, "lt": 15796.314967123, "tt": 3.3903}
+{"stage": "llm_first_token", "t": 15764.98031783, "pid": 9960, "src": "ws", "recv": 15796.3392435, "lt": 15796.318991907001, "tt": 3.3943}
+{"stage": "tts_request", "t": 15765.041236841, "pid": 9960, "src": "ws", "recv": 15796.396065, "lt": 15796.379910918, "tt": 3.4553}
+{"stage": "tts_first_audio", "t": 15765.251596555, "pid": 9960, "src": "ws", "recv": 15796.5937782, "lt": 15796.590270632, "tt": 3.6656}
+{"stage": "audio_out", "t": 15765.255860466, "pid": 9960, "src": "ws", "recv": 15796.6028976, "lt": 15796.594534543001, "tt": 3.6699}
+{"stage": "audio_out", "t": 15765.255943076, "pid": 9960, "src": "ws", "recv": 15796.6029153, "lt": 15796.594617153, "tt": 3.67}
+{"stage": "llm_usage", "t": 15766.79964248, "pid": 9960, "prompt_tokens": 2600, "completion_tokens": 357, "src": "ws", "recv": 15798.1461753, "lt": 15798.138316557, "tt": 5.2137}

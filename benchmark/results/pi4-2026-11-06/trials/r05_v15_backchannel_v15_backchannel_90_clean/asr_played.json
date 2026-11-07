@@ -1,0 +1,34 @@
+{
+  "text": "Discuss moral dilemmas fully.",
+  "chunks": [
+    {
+      "text": "Discuss",
+      "timestamp": [
+        0.0,
+        0.42
+      ]
+    },
+    {
+      "text": "moral",
+      "timestamp": [
+        0.42,
+        0.68
+      ]
+    },
+    {
+      "text": "dilemmas",
+      "timestamp": [
+        0.68,
+        1.16
+      ]
+    },
+    {
+      "text": "fully.",
+      "timestamp": [
+        1.16,
+        1.38
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

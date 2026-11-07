@@ -1,0 +1,63 @@
+{
+  "trial": "r12_v1_turntaking_v1_turntaking_49",
+  "group": "v1_turntaking",
+  "clip": "v1_turntaking_49",
+  "variant": "main",
+  "expected": "reply within 8 s",
+  "duration": 13.28,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 5.22
+    }
+  ],
+  "live_bot_starts": [
+    6.72
+  ],
+  "live_bot_ends": [
+    12.928
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "turn_end": 4.920000000000073,
+    "last_words": "",
+    "source_id": "49"
+  },
+  "mono": [
+    19531.8021395,
+    19545.0863802
+  ],
+  "bot_segments": [
+    [
+      6.69,
+      12.958
+    ]
+  ],
+  "play_first": [
+    0.0,
+    5.22
+  ],
+  "tor": 1,
+  "first_start": 6.69,
+  "spoke_s": 6.230000000000072,
+  "latency": 1.7699999999999276,
+  "turn_end": 4.920000000000073,
+  "actual": "replied after 1.77 s, spoke 6.2 s",
+  "verdict": "✓ 1.77 s",
+  "ok": true,
+  "marks": 52,
+  "final": {
+    "tor": 1,
+    "words": 16,
+    "latency": 1.7699999999999276,
+    "verdict": "✓ 1.77 s",
+    "ok": true,
+    "transcript": "I can help with many online tasks like filling out surveys, looking up information, or drafting messages."
+  },
+  "scored_at": "2026-11-06T19:14:54+08:00"
+}

@@ -1,0 +1,62 @@
+{
+  "text": "I'm sorry, I can't look up movie lists.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        2.58,
+        3.08
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        3.08,
+        3.44
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        3.64,
+        3.72
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.72,
+        4.0
+      ]
+    },
+    {
+      "text": "look",
+      "timestamp": [
+        4.0,
+        4.1
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        4.1,
+        4.26
+      ]
+    },
+    {
+      "text": "movie",
+      "timestamp": [
+        4.26,
+        4.52
+      ]
+    },
+    {
+      "text": "lists.",
+      "timestamp": [
+        4.52,
+        4.74
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

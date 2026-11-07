@@ -1,0 +1,31 @@
+{"stage": "vad_start", "t": 19295.339824605, "pid": 9960, "src": "ws", "recv": 19326.7361054, "lt": 19326.678498682, "tt": 0.1221}
+{"stage": "vad_start", "t": 19295.339917715, "pid": 9960, "src": "ws", "recv": 19326.7361268, "lt": 19326.678591792, "tt": 0.1222}
+{"stage": "interrupted", "t": 19295.853744019, "pid": 9960, "src": "ws", "recv": 19327.2501123, "lt": 19327.192418096, "tt": 0.636}
+{"stage": "interrupted", "t": 19295.853833962, "pid": 9960, "src": "ws", "recv": 19327.2501345, "lt": 19327.192508039, "tt": 0.6361}
+{"stage": "asr_partial", "t": 19295.96323825, "pid": 9960, "text": "Illuminate", "src": "ws", "recv": 19327.3580249, "lt": 19327.301912327, "tt": 0.7455}
+{"stage": "asr_partial", "t": 19296.12671293, "pid": 9960, "text": "Illuminate", "src": "ws", "recv": 19327.5216842, "lt": 19327.465387007, "tt": 0.909}
+{"stage": "asr_partial", "t": 19296.404861119, "pid": 9960, "text": "Illuminate vaccination", "src": "ws", "recv": 19327.8006959, "lt": 19327.743535196, "tt": 1.1871}
+{"stage": "asr_partial", "t": 19296.606724954, "pid": 9960, "text": "Illuminate vaccination", "src": "ws", "recv": 19328.0017819, "lt": 19327.945399031, "tt": 1.389}
+{"stage": "asr_partial", "t": 19296.884089984, "pid": 9960, "text": "Illuminate vaccination history.", "src": "ws", "recv": 19328.2787896, "lt": 19328.222764061, "tt": 1.6663}
+{"stage": "asr_partial", "t": 19297.08671007, "pid": 9960, "text": "Illuminate vaccination history", "src": "ws", "recv": 19328.4817455, "lt": 19328.425384147, "tt": 1.8689}
+{"stage": "asr_partial", "t": 19297.364749962, "pid": 9960, "text": "Illuminate vaccination history comprehensive", "src": "ws", "recv": 19328.7594392, "lt": 19328.703424039, "tt": 2.147}
+{"stage": "asr_partial", "t": 19297.567115273, "pid": 9960, "text": "Illuminate vaccination history comprehensively.", "src": "ws", "recv": 19328.9621815, "lt": 19328.90578935, "tt": 2.3494}
+{"stage": "vad_end", "t": 19297.605678463, "pid": 9960, "src": "ws", "recv": 19329.0057912, "lt": 19328.94435254, "tt": 2.3879}
+{"stage": "vad_end", "t": 19297.605729592, "pid": 9960, "src": "ws", "recv": 19329.0058099, "lt": 19328.944403669, "tt": 2.388}
+{"stage": "llm_request", "t": 19297.616908952, "pid": 9960, "speculative": true, "messages": 26, "chars": 12194, "est_tokens": 3048, "src": "ws", "recv": 19329.0118175, "lt": 19328.955583029, "tt": 2.3991}
+{"stage": "asr_partial", "t": 19297.843799847, "pid": 9960, "text": "Illuminate vaccination history comprehensively.", "src": "ws", "recv": 19329.2387446, "lt": 19329.182473924, "tt": 2.626}
+{"stage": "asr_partial", "t": 19298.047067833, "pid": 9960, "text": "Illuminate vaccination history comprehensively.", "src": "ws", "recv": 19329.4421712, "lt": 19329.38574191, "tt": 2.8293}
+{"stage": "llm_usage", "t": 19298.39153237, "pid": 9960, "prompt_tokens": 2678, "completion_tokens": 342, "src": "ws", "recv": 19329.7866448, "lt": 19329.730206447, "tt": 3.1738}
+{"stage": "asr_final", "t": 19298.731402569, "pid": 9960, "text": "Illuminate vaccination history comprehensively.", "src": "ws", "recv": 19330.1271542, "lt": 19330.070076646, "tt": 3.5136}
+{"stage": "user_stopped", "t": 19298.738285772, "pid": 9960, "src": "ws", "recv": 19330.1509573, "lt": 19330.076959849, "tt": 3.5205}
+{"stage": "user_stopped", "t": 19298.738353679, "pid": 9960, "src": "ws", "recv": 19330.1509811, "lt": 19330.077027756, "tt": 3.5206}
+{"stage": "llm_first_token", "t": 19298.743742842, "pid": 9960, "src": "ws", "recv": 19330.1662701, "lt": 19330.082416919002, "tt": 3.526}
+{"stage": "tts_request", "t": 19298.832783889, "pid": 9960, "src": "ws", "recv": 19330.242009, "lt": 19330.171457966, "tt": 3.615}
+{"stage": "tts_first_audio", "t": 19299.035605991, "pid": 9960, "src": "ws", "recv": 19330.4301127, "lt": 19330.374280068, "tt": 3.8178}
+{"stage": "audio_out", "t": 19299.039963295, "pid": 9960, "src": "ws", "recv": 19330.4397241, "lt": 19330.378637372, "tt": 3.8222}
+{"stage": "audio_out", "t": 19299.040091201, "pid": 9960, "src": "ws", "recv": 19330.4397503, "lt": 19330.378765278, "tt": 3.8223}
+{"stage": "vad_start", "t": 19300.884249277, "pid": 9960, "src": "ws", "recv": 19332.2791776, "lt": 19332.222923354002, "tt": 5.6665}
+{"stage": "vad_start", "t": 19300.884313202, "pid": 9960, "src": "ws", "recv": 19332.2791982, "lt": 19332.222987279, "tt": 5.6666}
+{"stage": "asr_partial", "t": 19301.131426912, "pid": 9960, "text": "I", "src": "ws", "recv": 19332.5268728, "lt": 19332.470100989, "tt": 5.9137}
+{"stage": "vad_end", "t": 19301.608356297, "pid": 9960, "src": "ws", "recv": 19333.0053439, "lt": 19332.947030374, "tt": 6.3906}
+{"stage": "vad_end", "t": 19301.608418426, "pid": 9960, "src": "ws", "recv": 19333.0053637, "lt": 19332.947092503, "tt": 6.3907}

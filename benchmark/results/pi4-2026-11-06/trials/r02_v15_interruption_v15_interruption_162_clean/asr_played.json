@@ -1,0 +1,62 @@
+{
+  "text": "What are some effective ways to manage stretch?",
+  "chunks": [
+    {
+      "text": "What",
+      "timestamp": [
+        0.4,
+        0.9
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        0.9,
+        1.04
+      ]
+    },
+    {
+      "text": "some",
+      "timestamp": [
+        1.04,
+        1.16
+      ]
+    },
+    {
+      "text": "effective",
+      "timestamp": [
+        1.16,
+        1.54
+      ]
+    },
+    {
+      "text": "ways",
+      "timestamp": [
+        1.54,
+        1.88
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        1.88,
+        2.08
+      ]
+    },
+    {
+      "text": "manage",
+      "timestamp": [
+        2.08,
+        2.32
+      ]
+    },
+    {
+      "text": "stretch?",
+      "timestamp": [
+        2.32,
+        2.7
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

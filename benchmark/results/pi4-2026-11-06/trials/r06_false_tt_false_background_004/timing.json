@@ -1,0 +1,53 @@
+{
+  "trial": "r06_false_tt_false_background_004",
+  "group": "false_tt",
+  "clip": "false_background_004",
+  "variant": "main",
+  "expected": "stay silent",
+  "duration": 9.504,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.486
+    }
+  ],
+  "live_bot_starts": [],
+  "live_bot_ends": [],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "kind": "background",
+    "kind_label": "background speech",
+    "level_db": -15,
+    "text": "Did the power go out?",
+    "source": "v15_background_83"
+  },
+  "mono": [
+    17644.3761949,
+    17653.8864629
+  ],
+  "bot_segments": [],
+  "play_first": [
+    0.0,
+    1.486
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "actual": "silent",
+  "verdict": "✓ silent",
+  "ok": true,
+  "marks": 14,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ silent",
+    "ok": true,
+    "transcript": ""
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

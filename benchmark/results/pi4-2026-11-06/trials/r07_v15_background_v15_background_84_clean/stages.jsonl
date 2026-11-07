@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 17920.248652458, "pid": 9960, "src": "ws", "recv": 17951.624526, "lt": 17951.587326535002, "tt": 0.1666}
+{"stage": "vad_start", "t": 17920.248710124, "pid": 9960, "src": "ws", "recv": 17951.6245514, "lt": 17951.587384201, "tt": 0.1667}
+{"stage": "interrupted", "t": 17920.683395789, "pid": 9960, "src": "ws", "recv": 17952.0611042, "lt": 17952.022069866, "tt": 0.6014}
+{"stage": "interrupted", "t": 17920.683485751, "pid": 9960, "src": "ws", "recv": 17952.0611287, "lt": 17952.022159828, "tt": 0.6015}
+{"stage": "asr_partial", "t": 17920.80514143, "pid": 9960, "text": "Schedule an", "src": "ws", "recv": 17952.1811729, "lt": 17952.143815507, "tt": 0.7231}
+{"stage": "asr_partial", "t": 17921.005781694, "pid": 9960, "text": "Schedule a meeting", "src": "ws", "recv": 17952.3817757, "lt": 17952.344455771, "tt": 0.9238}
+{"stage": "asr_partial", "t": 17921.286809876, "pid": 9960, "text": "Schedule a meeting with", "src": "ws", "recv": 17952.6639336, "lt": 17952.625483953, "tt": 1.2048}
+{"stage": "asr_partial", "t": 17921.485025856, "pid": 9960, "text": "Schedule a meeting with John", "src": "ws", "recv": 17952.8612312, "lt": 17952.823699933, "tt": 1.403}
+{"stage": "asr_partial", "t": 17921.765352547, "pid": 9960, "text": "Schedule a meeting with John on", "src": "ws", "recv": 17953.141469, "lt": 17953.104026624, "tt": 1.6833}
+{"stage": "asr_partial", "t": 17921.965166858, "pid": 9960, "text": "Schedule a meeting with John on Friday", "src": "ws", "recv": 17953.3414851, "lt": 17953.303840935, "tt": 1.8832}
+{"stage": "asr_partial", "t": 17922.24571962, "pid": 9960, "text": "Schedule a meeting with John on Friday at", "src": "ws", "recv": 17953.6217937, "lt": 17953.584393697, "tt": 2.1637}
+{"stage": "asr_partial", "t": 17922.445379971, "pid": 9960, "text": "Schedule a meeting with John on Friday at two.", "src": "ws", "recv": 17953.8213725, "lt": 17953.784054048, "tt": 2.3634}
+{"stage": "vad_end", "t": 17922.590205082, "pid": 9960, "src": "ws", "recv": 17953.9670755, "lt": 17953.928879159, "tt": 2.5082}
+{"stage": "vad_end", "t": 17922.590270451, "pid": 9960, "src": "ws", "recv": 17953.9670989, "lt": 17953.928944528, "tt": 2.5083}
+{"stage": "asr_partial", "t": 17922.728696106, "pid": 9960, "text": "Schedule a meeting with John on Friday at two.", "src": "ws", "recv": 17954.1052197, "lt": 17954.067370183002, "tt": 2.6467}
+{"stage": "llm_request", "t": 17922.731737142, "pid": 9960, "speculative": true, "messages": 42, "chars": 12044, "est_tokens": 3011, "src": "ws", "recv": 17954.108757, "lt": 17954.070411219, "tt": 2.6497}
+{"stage": "asr_final", "t": 17923.048509802, "pid": 9960, "text": "Schedule a meeting with John on Friday at two.", "src": "ws", "recv": 17954.4260476, "lt": 17954.387183879, "tt": 2.9665}
+{"stage": "user_stopped", "t": 17923.056726014, "pid": 9960, "src": "ws", "recv": 17954.4359044, "lt": 17954.395400091, "tt": 2.9747}
+{"stage": "user_stopped", "t": 17923.056792069, "pid": 9960, "src": "ws", "recv": 17954.4359232, "lt": 17954.395466146, "tt": 2.9748}
+{"stage": "llm_first_token", "t": 17923.446823386, "pid": 9960, "src": "ws", "recv": 17954.8322691, "lt": 17954.785497463, "tt": 3.3648}
+{"stage": "llm_usage", "t": 17923.459017288, "pid": 9960, "prompt_tokens": 2489, "completion_tokens": 44, "src": "ws", "recv": 17954.8396471, "lt": 17954.797691365, "tt": 3.377}
+{"stage": "tts_request", "t": 17923.482709806, "pid": 9960, "src": "ws", "recv": 17954.8642453, "lt": 17954.821383883, "tt": 3.4007}
+{"stage": "tts_first_audio", "t": 17923.716893057, "pid": 9960, "src": "ws", "recv": 17955.0937312, "lt": 17955.055567134, "tt": 3.6349}
+{"stage": "audio_out", "t": 17923.722944315, "pid": 9960, "src": "ws", "recv": 17955.1070121, "lt": 17955.061618392, "tt": 3.6409}
+{"stage": "audio_out", "t": 17923.723031462, "pid": 9960, "src": "ws", "recv": 17955.107035, "lt": 17955.061705539, "tt": 3.641}
+{"stage": "bot_stopped", "t": 17925.572226718, "pid": 9960, "src": "ws", "recv": 17956.9486883, "lt": 17956.910900795, "tt": 5.4902}
+{"stage": "bot_stopped", "t": 17925.572312476, "pid": 9960, "src": "ws", "recv": 17956.9487147, "lt": 17956.910986553, "tt": 5.4903}
+{"stage": "llm_request", "t": 17925.578453899, "pid": 9960, "messages": 43, "chars": 12084, "est_tokens": 3021, "src": "ws", "recv": 17956.9539934, "lt": 17956.917127976, "tt": 5.4964}

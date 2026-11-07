@@ -1,0 +1,26 @@
+{"stage": "vad_start", "t": 16116.475397888, "pid": 9960, "src": "ws", "recv": 16147.824944, "lt": 16147.814071965, "tt": 0.1696}
+{"stage": "vad_start", "t": 16116.475493924, "pid": 9960, "src": "ws", "recv": 16147.8249681, "lt": 16147.814168001, "tt": 0.1697}
+{"stage": "interrupted", "t": 16117.048172259, "pid": 9960, "src": "ws", "recv": 16148.3976223, "lt": 16148.386846336, "tt": 0.7423}
+{"stage": "interrupted", "t": 16117.048330609, "pid": 9960, "src": "ws", "recv": 16148.3976445, "lt": 16148.387004686, "tt": 0.7425}
+{"stage": "asr_partial", "t": 16117.210255295, "pid": 9960, "text": "Give a detailed", "src": "ws", "recv": 16148.558156, "lt": 16148.548929372, "tt": 0.9044}
+{"stage": "asr_partial", "t": 16117.444516976, "pid": 9960, "text": "Give a detailed", "src": "ws", "recv": 16148.7936522, "lt": 16148.783191053, "tt": 1.1387}
+{"stage": "asr_partial", "t": 16117.690252089, "pid": 9960, "text": "Give a detailed introduction", "src": "ws", "recv": 16149.0382228, "lt": 16149.028926166, "tt": 1.3844}
+{"stage": "asr_partial", "t": 16117.924838989, "pid": 9960, "text": "Give a detailed introduction to", "src": "ws", "recv": 16149.2727689, "lt": 16149.263513066, "tt": 1.619}
+{"stage": "asr_partial", "t": 16118.169847148, "pid": 9960, "text": "Give a detailed introduction to the", "src": "ws", "recv": 16149.5177287, "lt": 16149.508521225, "tt": 1.864}
+{"stage": "asr_partial", "t": 16118.405419739, "pid": 9960, "text": "Give a detailed introduction to the stock", "src": "ws", "recv": 16149.7533844, "lt": 16149.744093816, "tt": 2.0996}
+{"stage": "asr_partial", "t": 16118.650258401, "pid": 9960, "text": "Give a detailed introduction to the stock market", "src": "ws", "recv": 16149.9981874, "lt": 16149.988932478, "tt": 2.3444}
+{"stage": "vad_end", "t": 16118.71168142, "pid": 9960, "src": "ws", "recv": 16150.0600698, "lt": 16150.050355497, "tt": 2.4059}
+{"stage": "vad_end", "t": 16118.711734642, "pid": 9960, "src": "ws", "recv": 16150.0600932, "lt": 16150.050408719, "tt": 2.4059}
+{"stage": "asr_partial", "t": 16118.736126526, "pid": 9960, "text": "Give a detailed introduction to the stock market.", "src": "ws", "recv": 16150.0855217, "lt": 16150.074800603, "tt": 2.4303}
+{"stage": "llm_request", "t": 16118.740326159, "pid": 9960, "speculative": true, "messages": 64, "chars": 16386, "est_tokens": 4096, "src": "ws", "recv": 16150.0908232, "lt": 16150.079000236, "tt": 2.4345}
+{"stage": "asr_partial", "t": 16118.924761252, "pid": 9960, "text": "Give a detailed introduction to the stock market.", "src": "ws", "recv": 16150.272843, "lt": 16150.263435329, "tt": 2.6189}
+{"stage": "asr_partial", "t": 16119.129922033, "pid": 9960, "text": "Give a detailed introduction to the stock market.", "src": "ws", "recv": 16150.4779287, "lt": 16150.46859611, "tt": 2.8241}
+{"stage": "asr_final", "t": 16119.215854731, "pid": 9960, "text": "Give a detailed introduction to the stock market.", "src": "ws", "recv": 16150.5669944, "lt": 16150.554528808, "tt": 2.91}
+{"stage": "user_stopped", "t": 16119.231584685, "pid": 9960, "src": "ws", "recv": 16150.5849069, "lt": 16150.570258762, "tt": 2.9258}
+{"stage": "user_stopped", "t": 16119.231650333, "pid": 9960, "src": "ws", "recv": 16150.5849294, "lt": 16150.57032441, "tt": 2.9258}
+{"stage": "llm_first_token", "t": 16119.249222264, "pid": 9960, "src": "ws", "recv": 16150.6022283, "lt": 16150.587896341, "tt": 2.9434}
+{"stage": "tts_request", "t": 16119.315260559, "pid": 9960, "src": "ws", "recv": 16150.6756178, "lt": 16150.653934636, "tt": 3.0094}
+{"stage": "llm_usage", "t": 16119.386120258, "pid": 9960, "prompt_tokens": 2509, "completion_tokens": 246, "src": "ws", "recv": 16150.7524165, "lt": 16150.724794335, "tt": 3.0803}
+{"stage": "tts_first_audio", "t": 16119.514687448, "pid": 9960, "src": "ws", "recv": 16150.8626615, "lt": 16150.853361525, "tt": 3.2089}
+{"stage": "audio_out", "t": 16119.519829496, "pid": 9960, "src": "ws", "recv": 16150.8724951, "lt": 16150.858503573, "tt": 3.214}
+{"stage": "audio_out", "t": 16119.519935587, "pid": 9960, "src": "ws", "recv": 16150.8725148, "lt": 16150.858609664001, "tt": 3.2141}

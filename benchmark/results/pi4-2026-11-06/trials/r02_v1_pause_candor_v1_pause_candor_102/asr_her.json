@@ -1,0 +1,48 @@
+{
+  "text": "I'm... Yes, it's available on Netflix.",
+  "chunks": [
+    {
+      "text": "I'm...",
+      "timestamp": [
+        6.38,
+        7.36
+      ]
+    },
+    {
+      "text": "Yes,",
+      "timestamp": [
+        8.34,
+        8.78
+      ]
+    },
+    {
+      "text": "it's",
+      "timestamp": [
+        9.26,
+        9.54
+      ]
+    },
+    {
+      "text": "available",
+      "timestamp": [
+        9.54,
+        9.92
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        9.92,
+        10.3
+      ]
+    },
+    {
+      "text": "Netflix.",
+      "timestamp": [
+        10.3,
+        10.7
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

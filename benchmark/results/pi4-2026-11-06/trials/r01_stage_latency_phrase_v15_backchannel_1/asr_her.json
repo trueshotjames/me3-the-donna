@@ -1,0 +1,307 @@
+{
+  "text": "global warming is the steady rise in Earth's average temperature caused primarily by the buildup of greenhouse gases in the atmosphere. When we burn coal, oil and gas for energy, we release carbon dioxide while agriculture and waste produce methane and nitrous oxide.",
+  "chunks": [
+    {
+      "text": "global",
+      "timestamp": [
+        0.0,
+        1.2
+      ]
+    },
+    {
+      "text": "warming",
+      "timestamp": [
+        4.37,
+        4.85
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        4.85,
+        5.13
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.13,
+        5.27
+      ]
+    },
+    {
+      "text": "steady",
+      "timestamp": [
+        5.27,
+        5.57
+      ]
+    },
+    {
+      "text": "rise",
+      "timestamp": [
+        5.57,
+        5.93
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        5.93,
+        6.15
+      ]
+    },
+    {
+      "text": "Earth's",
+      "timestamp": [
+        6.15,
+        6.55
+      ]
+    },
+    {
+      "text": "average",
+      "timestamp": [
+        6.55,
+        6.89
+      ]
+    },
+    {
+      "text": "temperature",
+      "timestamp": [
+        6.89,
+        7.49
+      ]
+    },
+    {
+      "text": "caused",
+      "timestamp": [
+        7.49,
+        7.85
+      ]
+    },
+    {
+      "text": "primarily",
+      "timestamp": [
+        7.85,
+        8.27
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        8.27,
+        8.65
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        8.65,
+        8.77
+      ]
+    },
+    {
+      "text": "buildup",
+      "timestamp": [
+        8.77,
+        9.19
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        9.19,
+        9.33
+      ]
+    },
+    {
+      "text": "greenhouse",
+      "timestamp": [
+        9.33,
+        9.67
+      ]
+    },
+    {
+      "text": "gases",
+      "timestamp": [
+        9.67,
+        10.23
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        10.23,
+        10.49
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        10.49,
+        10.63
+      ]
+    },
+    {
+      "text": "atmosphere.",
+      "timestamp": [
+        10.63,
+        11.09
+      ]
+    },
+    {
+      "text": "When",
+      "timestamp": [
+        11.43,
+        11.45
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        11.45,
+        11.59
+      ]
+    },
+    {
+      "text": "burn",
+      "timestamp": [
+        11.59,
+        11.85
+      ]
+    },
+    {
+      "text": "coal,",
+      "timestamp": [
+        11.85,
+        12.29
+      ]
+    },
+    {
+      "text": "oil",
+      "timestamp": [
+        12.61,
+        12.93
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        12.93,
+        13.37
+      ]
+    },
+    {
+      "text": "gas",
+      "timestamp": [
+        13.37,
+        13.69
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        13.69,
+        13.93
+      ]
+    },
+    {
+      "text": "energy,",
+      "timestamp": [
+        13.93,
+        14.29
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        14.91,
+        15.03
+      ]
+    },
+    {
+      "text": "release",
+      "timestamp": [
+        15.03,
+        15.45
+      ]
+    },
+    {
+      "text": "carbon",
+      "timestamp": [
+        15.45,
+        15.77
+      ]
+    },
+    {
+      "text": "dioxide",
+      "timestamp": [
+        15.77,
+        16.33
+      ]
+    },
+    {
+      "text": "while",
+      "timestamp": [
+        16.33,
+        17.09
+      ]
+    },
+    {
+      "text": "agriculture",
+      "timestamp": [
+        17.09,
+        17.59
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        17.59,
+        17.99
+      ]
+    },
+    {
+      "text": "waste",
+      "timestamp": [
+        17.99,
+        18.31
+      ]
+    },
+    {
+      "text": "produce",
+      "timestamp": [
+        18.31,
+        18.73
+      ]
+    },
+    {
+      "text": "methane",
+      "timestamp": [
+        18.73,
+        19.27
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        19.27,
+        19.61
+      ]
+    },
+    {
+      "text": "nitrous",
+      "timestamp": [
+        19.61,
+        20.09
+      ]
+    },
+    {
+      "text": "oxide.",
+      "timestamp": [
+        20.09,
+        20.61
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

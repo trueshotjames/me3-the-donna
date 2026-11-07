@@ -1,0 +1,195 @@
+{
+  "text": "Moral dilemmas arise when we face two or more competing ethical principles, and any choice will compromise something we value. A classic example is the trolley problem.",
+  "chunks": [
+    {
+      "text": "Moral",
+      "timestamp": [
+        2.77,
+        3.47
+      ]
+    },
+    {
+      "text": "dilemmas",
+      "timestamp": [
+        3.47,
+        3.87
+      ]
+    },
+    {
+      "text": "arise",
+      "timestamp": [
+        3.87,
+        4.25
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        4.25,
+        8.15
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        8.15,
+        8.27
+      ]
+    },
+    {
+      "text": "face",
+      "timestamp": [
+        8.27,
+        8.59
+      ]
+    },
+    {
+      "text": "two",
+      "timestamp": [
+        8.59,
+        8.85
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        8.85,
+        9.05
+      ]
+    },
+    {
+      "text": "more",
+      "timestamp": [
+        9.05,
+        9.25
+      ]
+    },
+    {
+      "text": "competing",
+      "timestamp": [
+        9.25,
+        9.73
+      ]
+    },
+    {
+      "text": "ethical",
+      "timestamp": [
+        9.73,
+        10.15
+      ]
+    },
+    {
+      "text": "principles,",
+      "timestamp": [
+        10.15,
+        10.83
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        11.45,
+        11.71
+      ]
+    },
+    {
+      "text": "any",
+      "timestamp": [
+        11.71,
+        12.05
+      ]
+    },
+    {
+      "text": "choice",
+      "timestamp": [
+        12.05,
+        12.39
+      ]
+    },
+    {
+      "text": "will",
+      "timestamp": [
+        12.39,
+        12.63
+      ]
+    },
+    {
+      "text": "compromise",
+      "timestamp": [
+        12.63,
+        13.09
+      ]
+    },
+    {
+      "text": "something",
+      "timestamp": [
+        13.09,
+        13.57
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        13.57,
+        13.79
+      ]
+    },
+    {
+      "text": "value.",
+      "timestamp": [
+        13.79,
+        14.19
+      ]
+    },
+    {
+      "text": "A",
+      "timestamp": [
+        14.55,
+        14.63
+      ]
+    },
+    {
+      "text": "classic",
+      "timestamp": [
+        14.63,
+        14.97
+      ]
+    },
+    {
+      "text": "example",
+      "timestamp": [
+        14.97,
+        15.51
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        15.51,
+        15.79
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        15.79,
+        15.95
+      ]
+    },
+    {
+      "text": "trolley",
+      "timestamp": [
+        15.95,
+        16.35
+      ]
+    },
+    {
+      "text": "problem.",
+      "timestamp": [
+        16.35,
+        16.71
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

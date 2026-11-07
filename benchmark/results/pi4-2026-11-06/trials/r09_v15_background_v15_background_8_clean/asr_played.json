@@ -1,0 +1,41 @@
+{
+  "text": "What's my current heart rate?",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "my",
+      "timestamp": [
+        0.26,
+        0.4
+      ]
+    },
+    {
+      "text": "current",
+      "timestamp": [
+        0.4,
+        0.62
+      ]
+    },
+    {
+      "text": "heart",
+      "timestamp": [
+        0.62,
+        0.84
+      ]
+    },
+    {
+      "text": "rate?",
+      "timestamp": [
+        0.84,
+        1.06
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

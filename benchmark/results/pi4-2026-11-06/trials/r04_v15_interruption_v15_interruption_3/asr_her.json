@@ -1,0 +1,104 @@
+{
+  "text": "The newest smart home devices. I'm sorry. I don't have that information right now",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        2.99,
+        3.47
+      ]
+    },
+    {
+      "text": "newest",
+      "timestamp": [
+        3.47,
+        3.77
+      ]
+    },
+    {
+      "text": "smart",
+      "timestamp": [
+        3.77,
+        4.17
+      ]
+    },
+    {
+      "text": "home",
+      "timestamp": [
+        4.17,
+        4.43
+      ]
+    },
+    {
+      "text": "devices.",
+      "timestamp": [
+        4.43,
+        5.01
+      ]
+    },
+    {
+      "text": "I'm",
+      "timestamp": [
+        7.83,
+        8.49
+      ]
+    },
+    {
+      "text": "sorry.",
+      "timestamp": [
+        8.49,
+        8.89
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        9.31,
+        9.47
+      ]
+    },
+    {
+      "text": "don't",
+      "timestamp": [
+        9.47,
+        9.67
+      ]
+    },
+    {
+      "text": "have",
+      "timestamp": [
+        9.67,
+        9.83
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        9.83,
+        10.03
+      ]
+    },
+    {
+      "text": "information",
+      "timestamp": [
+        10.03,
+        10.51
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        10.51,
+        10.83
+      ]
+    },
+    {
+      "text": "now",
+      "timestamp": [
+        10.83,
+        11.09
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

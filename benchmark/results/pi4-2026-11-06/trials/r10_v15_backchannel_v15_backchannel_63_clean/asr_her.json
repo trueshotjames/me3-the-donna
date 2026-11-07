@@ -1,0 +1,230 @@
+{
+  "text": "Space telescopes are instruments positioned beyond Earth's atmosphere to observe the cosmos without atmospheric interference. By operating in orbit, they capture light across a wide range of wavelengths, visible, infrared, and solar.",
+  "chunks": [
+    {
+      "text": "Space",
+      "timestamp": [
+        0.0,
+        1.12
+      ]
+    },
+    {
+      "text": "telescopes",
+      "timestamp": [
+        3.23,
+        3.75
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        3.75,
+        4.03
+      ]
+    },
+    {
+      "text": "instruments",
+      "timestamp": [
+        4.03,
+        4.45
+      ]
+    },
+    {
+      "text": "positioned",
+      "timestamp": [
+        4.45,
+        4.95
+      ]
+    },
+    {
+      "text": "beyond",
+      "timestamp": [
+        4.95,
+        5.35
+      ]
+    },
+    {
+      "text": "Earth's",
+      "timestamp": [
+        5.35,
+        5.87
+      ]
+    },
+    {
+      "text": "atmosphere",
+      "timestamp": [
+        5.87,
+        6.41
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        6.41,
+        6.67
+      ]
+    },
+    {
+      "text": "observe",
+      "timestamp": [
+        6.67,
+        7.05
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        7.05,
+        7.21
+      ]
+    },
+    {
+      "text": "cosmos",
+      "timestamp": [
+        7.21,
+        7.61
+      ]
+    },
+    {
+      "text": "without",
+      "timestamp": [
+        7.61,
+        8.05
+      ]
+    },
+    {
+      "text": "atmospheric",
+      "timestamp": [
+        8.05,
+        8.77
+      ]
+    },
+    {
+      "text": "interference.",
+      "timestamp": [
+        8.77,
+        9.49
+      ]
+    },
+    {
+      "text": "By",
+      "timestamp": [
+        9.89,
+        9.97
+      ]
+    },
+    {
+      "text": "operating",
+      "timestamp": [
+        9.97,
+        10.41
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        10.41,
+        10.61
+      ]
+    },
+    {
+      "text": "orbit,",
+      "timestamp": [
+        10.61,
+        10.91
+      ]
+    },
+    {
+      "text": "they",
+      "timestamp": [
+        11.47,
+        11.55
+      ]
+    },
+    {
+      "text": "capture",
+      "timestamp": [
+        11.55,
+        11.93
+      ]
+    },
+    {
+      "text": "light",
+      "timestamp": [
+        11.93,
+        12.27
+      ]
+    },
+    {
+      "text": "across",
+      "timestamp": [
+        12.27,
+        12.57
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        12.57,
+        12.83
+      ]
+    },
+    {
+      "text": "wide",
+      "timestamp": [
+        12.83,
+        13.11
+      ]
+    },
+    {
+      "text": "range",
+      "timestamp": [
+        13.11,
+        13.49
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        13.49,
+        13.65
+      ]
+    },
+    {
+      "text": "wavelengths,",
+      "timestamp": [
+        13.65,
+        14.17
+      ]
+    },
+    {
+      "text": "visible,",
+      "timestamp": [
+        14.71,
+        15.11
+      ]
+    },
+    {
+      "text": "infrared,",
+      "timestamp": [
+        15.71,
+        16.09
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        16.55,
+        16.69
+      ]
+    },
+    {
+      "text": "solar.",
+      "timestamp": [
+        16.69,
+        16.69
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,7 @@
+{
+  "task": "interruption_rating",
+  "response_text": "You'll need a Shannon visa if you're not a citizen of a visa -exempt country. Check your passport's eligibility and apply before you travel.",
+  "rating": 5,
+  "raw": "Analysis: The user's interrupting turn shifts the topic from places to visit in Europe to the necessity of a visa for traveling to Europe. The AI's response directly addresses the user's question about visa requirements, providing relevant information about the Schengen visa and advising the user to check their passport's eligibility and apply if necessary.\n\nI would rate the AI's response as 5.",
+  "judge": "openrouter/openai/gpt-4o"
+}

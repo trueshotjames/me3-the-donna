@@ -1,0 +1,70 @@
+{
+  "trial": "r08_v15_backchannel_v15_backchannel_98_clean",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_98",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 20.896,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.072
+    }
+  ],
+  "live_bot_starts": [
+    0.064,
+    3.456,
+    9.792
+  ],
+  "live_bot_ends": [
+    0.32,
+    9.408,
+    20.544
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Detail startups comprehensively.",
+    "current_turn_text": "",
+    "overlap_text": "mm-hmm yeah",
+    "overlap_duration": 0.97,
+    "overlap_window": [
+      5.997,
+      6.9719999999999995
+    ],
+    "source_id": "98"
+  },
+  "mono": [
+    18175.1660189,
+    18196.0622077
+  ],
+  "bot_segments": [
+    [
+      0.034,
+      0.35
+    ],
+    [
+      3.426,
+      20.574
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.072
+  ],
+  "tor": 1,
+  "first_start": 3.426,
+  "spoke_s": 6.645999999999999,
+  "actual": "replied after 1.35 s, spoke 6.6 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 31,
+  "final": {
+    "transcript": "startups are newly created companies built to address a specific market need with a novel product or service. They usually begin with a small founding team that defines a clear vision and a minimum viable product to test assumptions quickly. Funding starts with personal savings, friends and family,"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

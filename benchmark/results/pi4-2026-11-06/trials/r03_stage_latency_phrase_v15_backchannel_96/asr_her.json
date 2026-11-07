@@ -1,0 +1,545 @@
+{
+  "text": "The gig economy is a labor market where short -term, flexible jobs replace traditional permanent employment. It relies on digital platforms that connect workers with tasks like ride -sharing, food delivery, freelance design, or tutoring. Workers are usually classified as independent contractors, meaning they set their own hours, but often lack benefits such as health insurance, paid leave, or retirement plans. companies benefit from lower overhead costs and the ability to scale labor up or down quick",
+  "chunks": [
+    {
+      "text": "The",
+      "timestamp": [
+        2.8,
+        3.28
+      ]
+    },
+    {
+      "text": "gig",
+      "timestamp": [
+        3.28,
+        3.36
+      ]
+    },
+    {
+      "text": "economy",
+      "timestamp": [
+        3.36,
+        3.74
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        3.74,
+        4.08
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        4.08,
+        4.22
+      ]
+    },
+    {
+      "text": "labor",
+      "timestamp": [
+        4.22,
+        4.4
+      ]
+    },
+    {
+      "text": "market",
+      "timestamp": [
+        4.4,
+        4.78
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        4.78,
+        4.98
+      ]
+    },
+    {
+      "text": "short",
+      "timestamp": [
+        4.98,
+        5.3
+      ]
+    },
+    {
+      "text": "-term,",
+      "timestamp": [
+        5.3,
+        5.58
+      ]
+    },
+    {
+      "text": "flexible",
+      "timestamp": [
+        6.0,
+        6.22
+      ]
+    },
+    {
+      "text": "jobs",
+      "timestamp": [
+        6.22,
+        6.86
+      ]
+    },
+    {
+      "text": "replace",
+      "timestamp": [
+        6.86,
+        7.28
+      ]
+    },
+    {
+      "text": "traditional",
+      "timestamp": [
+        7.28,
+        7.86
+      ]
+    },
+    {
+      "text": "permanent",
+      "timestamp": [
+        7.86,
+        8.24
+      ]
+    },
+    {
+      "text": "employment.",
+      "timestamp": [
+        8.24,
+        9.02
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        9.38,
+        9.44
+      ]
+    },
+    {
+      "text": "relies",
+      "timestamp": [
+        9.44,
+        9.76
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        9.76,
+        9.98
+      ]
+    },
+    {
+      "text": "digital",
+      "timestamp": [
+        9.98,
+        10.26
+      ]
+    },
+    {
+      "text": "platforms",
+      "timestamp": [
+        10.26,
+        10.8
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        10.8,
+        11.16
+      ]
+    },
+    {
+      "text": "connect",
+      "timestamp": [
+        11.16,
+        11.5
+      ]
+    },
+    {
+      "text": "workers",
+      "timestamp": [
+        11.5,
+        11.8
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        11.8,
+        12.1
+      ]
+    },
+    {
+      "text": "tasks",
+      "timestamp": [
+        12.1,
+        12.5
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        12.5,
+        12.76
+      ]
+    },
+    {
+      "text": "ride",
+      "timestamp": [
+        12.76,
+        13.06
+      ]
+    },
+    {
+      "text": "-sharing,",
+      "timestamp": [
+        13.06,
+        13.44
+      ]
+    },
+    {
+      "text": "food",
+      "timestamp": [
+        13.92,
+        14.1
+      ]
+    },
+    {
+      "text": "delivery,",
+      "timestamp": [
+        14.1,
+        14.46
+      ]
+    },
+    {
+      "text": "freelance",
+      "timestamp": [
+        15.04,
+        15.28
+      ]
+    },
+    {
+      "text": "design,",
+      "timestamp": [
+        15.28,
+        15.86
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        16.22,
+        16.34
+      ]
+    },
+    {
+      "text": "tutoring.",
+      "timestamp": [
+        16.34,
+        16.6
+      ]
+    },
+    {
+      "text": "Workers",
+      "timestamp": [
+        16.86,
+        17.02
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        17.02,
+        17.3
+      ]
+    },
+    {
+      "text": "usually",
+      "timestamp": [
+        17.3,
+        17.6
+      ]
+    },
+    {
+      "text": "classified",
+      "timestamp": [
+        17.6,
+        18.26
+      ]
+    },
+    {
+      "text": "as",
+      "timestamp": [
+        18.26,
+        18.58
+      ]
+    },
+    {
+      "text": "independent",
+      "timestamp": [
+        18.58,
+        19.02
+      ]
+    },
+    {
+      "text": "contractors,",
+      "timestamp": [
+        19.02,
+        19.84
+      ]
+    },
+    {
+      "text": "meaning",
+      "timestamp": [
+        20.38,
+        20.66
+      ]
+    },
+    {
+      "text": "they",
+      "timestamp": [
+        20.66,
+        20.9
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        20.9,
+        21.14
+      ]
+    },
+    {
+      "text": "their",
+      "timestamp": [
+        21.14,
+        21.32
+      ]
+    },
+    {
+      "text": "own",
+      "timestamp": [
+        21.32,
+        21.48
+      ]
+    },
+    {
+      "text": "hours,",
+      "timestamp": [
+        21.48,
+        21.92
+      ]
+    },
+    {
+      "text": "but",
+      "timestamp": [
+        22.24,
+        22.4
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        22.4,
+        22.76
+      ]
+    },
+    {
+      "text": "lack",
+      "timestamp": [
+        22.76,
+        22.98
+      ]
+    },
+    {
+      "text": "benefits",
+      "timestamp": [
+        22.98,
+        23.48
+      ]
+    },
+    {
+      "text": "such",
+      "timestamp": [
+        23.48,
+        23.78
+      ]
+    },
+    {
+      "text": "as",
+      "timestamp": [
+        23.78,
+        23.9
+      ]
+    },
+    {
+      "text": "health",
+      "timestamp": [
+        23.9,
+        24.08
+      ]
+    },
+    {
+      "text": "insurance,",
+      "timestamp": [
+        24.08,
+        24.5
+      ]
+    },
+    {
+      "text": "paid",
+      "timestamp": [
+        25.0,
+        25.28
+      ]
+    },
+    {
+      "text": "leave,",
+      "timestamp": [
+        25.28,
+        25.62
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        25.78,
+        25.92
+      ]
+    },
+    {
+      "text": "retirement",
+      "timestamp": [
+        25.92,
+        26.32
+      ]
+    },
+    {
+      "text": "plans.",
+      "timestamp": [
+        26.32,
+        26.86
+      ]
+    },
+    {
+      "text": "companies",
+      "timestamp": [
+        26.86,
+        27.28
+      ]
+    },
+    {
+      "text": "benefit",
+      "timestamp": [
+        27.28,
+        27.78
+      ]
+    },
+    {
+      "text": "from",
+      "timestamp": [
+        27.78,
+        28.14
+      ]
+    },
+    {
+      "text": "lower",
+      "timestamp": [
+        28.14,
+        28.42
+      ]
+    },
+    {
+      "text": "overhead",
+      "timestamp": [
+        28.42,
+        28.84
+      ]
+    },
+    {
+      "text": "costs",
+      "timestamp": [
+        28.84,
+        29.42
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        29.42,
+        29.94
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        29.94,
+        30.06
+      ]
+    },
+    {
+      "text": "ability",
+      "timestamp": [
+        30.06,
+        30.36
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        30.36,
+        30.56
+      ]
+    },
+    {
+      "text": "scale",
+      "timestamp": [
+        30.56,
+        30.88
+      ]
+    },
+    {
+      "text": "labor",
+      "timestamp": [
+        30.88,
+        31.22
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        31.22,
+        31.54
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        31.54,
+        31.62
+      ]
+    },
+    {
+      "text": "down",
+      "timestamp": [
+        31.62,
+        31.9
+      ]
+    },
+    {
+      "text": "quick",
+      "timestamp": [
+        31.9,
+        32.12
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

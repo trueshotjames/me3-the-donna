@@ -1,0 +1,101 @@
+{
+  "trial": "r02_v15_interruption_v15_interruption_162",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_162",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 21.728,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.064
+    },
+    {
+      "name": "overlap",
+      "t": 5.468,
+      "len": 4.1279375
+    }
+  ],
+  "live_bot_starts": [
+    3.968,
+    11.04,
+    15.552
+  ],
+  "live_bot_ends": [
+    5.952,
+    15.104,
+    21.376
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "What are some effective ways to manage stress?",
+    "current_turn_text": "Oh, before I forget, I need to add milk to my shopping list.",
+    "overlap_text": "Oh, before I forget, I need to add milk to my shopping list.",
+    "overlap_duration": 4.13,
+    "overlap_window": [
+      6.784,
+      10.911999999999999
+    ],
+    "source_id": "162"
+  },
+  "mono": [
+    16677.8417049,
+    16699.5509429
+  ],
+  "bot_segments": [
+    [
+      3.938,
+      5.982
+    ],
+    [
+      11.01,
+      21.406
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.064
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2839999999999998,
+  "t_resp": 1.6039999999999992,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.698,
+    9.406
+  ],
+  "tor": 1,
+  "first_start": 11.01,
+  "spoke_s": 6.585937499999998,
+  "latency": 1.4140625,
+  "actual": "stopped after 0.28 s, back 1.60 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 62,
+  "final": {
+    "t_stop": 0.2839999999999998,
+    "t_resp": 1.6039999999999992,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": 64.00335633041209,
+      "pitch_mean": 2.436142339891859,
+      "pitch_sd": 22.038347487935653,
+      "intensity_mean": -1.4598420271563661,
+      "intensity_sd": -0.25617715854829726,
+      "utmosv2": null
+    },
+    "transcript": "Try deep breathing. Regular exercise. Try deep breathing, regular exercise and setting clear boundaries. Keep a short daily journal and take brief breaks to stretch your walk. I can't add milk to a shopping list right now.",
+    "judge_label": "Resume",
+    "ok": false,
+    "verdict": "✗ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

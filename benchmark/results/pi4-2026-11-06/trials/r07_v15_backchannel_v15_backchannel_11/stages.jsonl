@@ -1,0 +1,29 @@
+{"stage": "vad_start", "t": 18051.606550819, "pid": 9960, "src": "ws", "recv": 18082.9844739, "lt": 18082.945224896, "tt": 0.1323}
+{"stage": "vad_start", "t": 18051.606605762, "pid": 9960, "src": "ws", "recv": 18082.9844976, "lt": 18082.945279839, "tt": 0.1323}
+{"stage": "asr_partial", "t": 18052.003337387, "pid": 9960, "text": "Some", "src": "ws", "recv": 18083.3816015, "lt": 18083.342011464, "tt": 0.5291}
+{"stage": "interrupted", "t": 18052.126108646, "pid": 9960, "src": "ws", "recv": 18083.5054694, "lt": 18083.464782723, "tt": 0.6518}
+{"stage": "interrupted", "t": 18052.126198348, "pid": 9960, "src": "ws", "recv": 18083.5054923, "lt": 18083.464872425, "tt": 0.6519}
+{"stage": "asr_partial", "t": 18052.326666597, "pid": 9960, "text": "Summarize black", "src": "ws", "recv": 18083.7047861, "lt": 18083.665340674, "tt": 0.8524}
+{"stage": "asr_partial", "t": 18052.526597093, "pid": 9960, "text": "Summarize black hole", "src": "ws", "recv": 18083.9048524, "lt": 18083.86527117, "tt": 1.0523}
+{"stage": "asr_partial", "t": 18052.806686789, "pid": 9960, "text": "Summarize black holes", "src": "ws", "recv": 18084.1848736, "lt": 18084.145360866, "tt": 1.3324}
+{"stage": "asr_partial", "t": 18053.006760006, "pid": 9960, "text": "Summarize black holes", "src": "ws", "recv": 18084.3849909, "lt": 18084.345434083, "tt": 1.5325}
+{"stage": "asr_partial", "t": 18053.286933738, "pid": 9960, "text": "Summarize black holes comprehensive", "src": "ws", "recv": 18084.6653185, "lt": 18084.625607815, "tt": 1.8127}
+{"stage": "vad_end", "t": 18053.463142643, "pid": 9960, "src": "ws", "recv": 18084.8416954, "lt": 18084.80181672, "tt": 1.9889}
+{"stage": "vad_end", "t": 18053.463195624, "pid": 9960, "src": "ws", "recv": 18084.841718, "lt": 18084.801869701, "tt": 1.9889}
+{"stage": "asr_partial", "t": 18053.500525897, "pid": 9960, "text": "Summarize black holes comprehensively.", "src": "ws", "recv": 18084.8825515, "lt": 18084.839199974, "tt": 2.0263}
+{"stage": "llm_request", "t": 18053.507227387, "pid": 9960, "speculative": true, "messages": 58, "chars": 13394, "est_tokens": 3348, "src": "ws", "recv": 18084.8881689, "lt": 18084.845901464, "tt": 2.033}
+{"stage": "asr_partial", "t": 18053.767045874, "pid": 9960, "text": "Summarize black holes comprehensively.", "src": "ws", "recv": 18085.1452475, "lt": 18085.105719951, "tt": 2.2928}
+{"stage": "asr_partial", "t": 18053.968749941, "pid": 9960, "text": "Summarize black holes comprehensively.", "src": "ws", "recv": 18085.3479404, "lt": 18085.307424018, "tt": 2.4945}
+{"stage": "asr_final", "t": 18054.008668959, "pid": 9960, "text": "Summarize black holes comprehensively.", "src": "ws", "recv": 18085.3891447, "lt": 18085.347343036, "tt": 2.5344}
+{"stage": "user_stopped", "t": 18054.017086224, "pid": 9960, "src": "ws", "recv": 18085.3972428, "lt": 18085.355760301, "tt": 2.5428}
+{"stage": "user_stopped", "t": 18054.01715202, "pid": 9960, "src": "ws", "recv": 18085.3972648, "lt": 18085.355826097, "tt": 2.5429}
+{"stage": "llm_first_token", "t": 18054.078540269, "pid": 9960, "src": "ws", "recv": 18085.4585816, "lt": 18085.417214346002, "tt": 2.6043}
+{"stage": "tts_request", "t": 18054.120290098, "pid": 9960, "src": "ws", "recv": 18085.506708, "lt": 18085.458964175, "tt": 2.646}
+{"stage": "llm_usage", "t": 18054.241791781, "pid": 9960, "prompt_tokens": 2548, "completion_tokens": 256, "src": "ws", "recv": 18085.6333132, "lt": 18085.580465858002, "tt": 2.7675}
+{"stage": "tts_first_audio", "t": 18054.341835009, "pid": 9960, "src": "ws", "recv": 18085.7207916, "lt": 18085.680509086, "tt": 2.8676}
+{"stage": "audio_out", "t": 18054.348253707, "pid": 9960, "src": "ws", "recv": 18085.7380728, "lt": 18085.686927784, "tt": 2.874}
+{"stage": "audio_out", "t": 18054.348339391, "pid": 9960, "src": "ws", "recv": 18085.7380941, "lt": 18085.687013468, "tt": 2.8741}
+{"stage": "vad_start", "t": 18056.190565654, "pid": 9960, "src": "ws", "recv": 18087.5697951, "lt": 18087.529239731, "tt": 4.7163}
+{"stage": "vad_start", "t": 18056.190642283, "pid": 9960, "src": "ws", "recv": 18087.569814, "lt": 18087.52931636, "tt": 4.7164}
+{"stage": "vad_end", "t": 18057.146107244, "pid": 9960, "src": "ws", "recv": 18088.5242042, "lt": 18088.484781321, "tt": 5.6718}
+{"stage": "vad_end", "t": 18057.146164076, "pid": 9960, "src": "ws", "recv": 18088.5242288, "lt": 18088.484838153, "tt": 5.6719}

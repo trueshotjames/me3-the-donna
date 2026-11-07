@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 19489.000271864, "pid": 9960, "src": "ws", "recv": 19520.3988829, "lt": 19520.338945941, "tt": 0.1502}
+{"stage": "vad_start", "t": 19489.000364863, "pid": 9960, "src": "ws", "recv": 19520.3989026, "lt": 19520.33903894, "tt": 0.1503}
+{"stage": "interrupted", "t": 19489.531416188, "pid": 9960, "src": "ws", "recv": 19520.930198, "lt": 19520.870090265, "tt": 0.6814}
+{"stage": "interrupted", "t": 19489.531504984, "pid": 9960, "src": "ws", "recv": 19520.9302253, "lt": 19520.870179061, "tt": 0.6815}
+{"stage": "asr_partial", "t": 19489.643726763, "pid": 9960, "text": "Set a ten", "src": "ws", "recv": 19521.0412697, "lt": 19520.98240084, "tt": 0.7937}
+{"stage": "asr_partial", "t": 19489.883466427, "pid": 9960, "text": "Set a ten minute", "src": "ws", "recv": 19521.2812206, "lt": 19521.222140504, "tt": 1.0334}
+{"stage": "asr_partial", "t": 19490.125548732, "pid": 9960, "text": "Set a ten minute timer", "src": "ws", "recv": 19521.5230979, "lt": 19521.464222809, "tt": 1.2755}
+{"stage": "asr_partial", "t": 19490.409482938, "pid": 9960, "text": "Set a ten minute timer for", "src": "ws", "recv": 19521.8075382, "lt": 19521.748157015, "tt": 1.5594}
+{"stage": "asr_partial", "t": 19490.603031269, "pid": 9960, "text": "Set a ten minute timer for", "src": "ws", "recv": 19522.0005992, "lt": 19521.941705346002, "tt": 1.753}
+{"stage": "vad_end", "t": 19490.789883452, "pid": 9960, "src": "ws", "recv": 19522.1876922, "lt": 19522.128557529, "tt": 1.9398}
+{"stage": "vad_end", "t": 19490.789937303, "pid": 9960, "src": "ws", "recv": 19522.1877201, "lt": 19522.12861138, "tt": 1.9399}
+{"stage": "asr_partial", "t": 19490.848064985, "pid": 9960, "text": "Set a ten minute timer for pasta.", "src": "ws", "recv": 19522.2468561, "lt": 19522.186739062, "tt": 1.998}
+{"stage": "llm_request", "t": 19490.852079199, "pid": 9960, "speculative": true, "messages": 14, "chars": 11942, "est_tokens": 2986, "src": "ws", "recv": 19522.251813, "lt": 19522.190753276, "tt": 2.002}
+{"stage": "asr_partial", "t": 19490.9233234, "pid": 9960, "text": "Set a ten minute timer for pasta.", "src": "ws", "recv": 19522.3208754, "lt": 19522.261997477, "tt": 2.0733}
+{"stage": "asr_partial", "t": 19491.083339236, "pid": 9960, "text": "Set a ten minute timer for pasta.", "src": "ws", "recv": 19522.4809326, "lt": 19522.422013313, "tt": 2.2333}
+{"stage": "asr_partial", "t": 19491.323496043, "pid": 9960, "text": "Set a ten minute timer for pasta.", "src": "ws", "recv": 19522.7212215, "lt": 19522.662170120002, "tt": 2.4734}
+{"stage": "asr_final", "t": 19491.412337473, "pid": 9960, "text": "Set a ten minute timer for pasta.", "src": "ws", "recv": 19522.8110417, "lt": 19522.75101155, "tt": 2.5623}
+{"stage": "user_stopped", "t": 19491.420043498, "pid": 9960, "src": "ws", "recv": 19522.8206685, "lt": 19522.758717575, "tt": 2.57}
+{"stage": "user_stopped", "t": 19491.420113071, "pid": 9960, "src": "ws", "recv": 19522.8206856, "lt": 19522.758787148, "tt": 2.5701}
+{"stage": "llm_first_token", "t": 19491.613214073, "pid": 9960, "src": "ws", "recv": 19523.0159188, "lt": 19522.95188815, "tt": 2.7632}
+{"stage": "llm_usage", "t": 19491.621328538, "pid": 9960, "prompt_tokens": 2448, "completion_tokens": 42, "src": "ws", "recv": 19523.022928, "lt": 19522.960002615, "tt": 2.7713}
+{"stage": "tts_request", "t": 19491.645447193, "pid": 9960, "src": "ws", "recv": 19523.0467308, "lt": 19522.98412127, "tt": 2.7954}
+{"stage": "tts_first_audio", "t": 19491.6842, "pid": 9960, "src": "ws", "recv": 19523.0850934, "lt": 19523.022874077, "tt": 2.8342}
+{"stage": "audio_out", "t": 19491.69286668, "pid": 9960, "src": "ws", "recv": 19523.0963694, "lt": 19523.031540757, "tt": 2.8428}
+{"stage": "audio_out", "t": 19491.692952531, "pid": 9960, "src": "ws", "recv": 19523.0963885, "lt": 19523.031626608, "tt": 2.8429}
+{"stage": "bot_stopped", "t": 19493.139732827, "pid": 9960, "src": "ws", "recv": 19524.537558, "lt": 19524.478406904, "tt": 4.2897}
+{"stage": "bot_stopped", "t": 19493.139812586, "pid": 9960, "src": "ws", "recv": 19524.537579, "lt": 19524.478486663, "tt": 4.2898}
+{"stage": "llm_request", "t": 19493.145914388, "pid": 9960, "messages": 15, "chars": 11972, "est_tokens": 2993, "src": "ws", "recv": 19524.5427233, "lt": 19524.484588465, "tt": 4.2959}

@@ -1,0 +1,84 @@
+{
+  "trial": "r01_stage_latency_phrase_v15_backchannel_20",
+  "group": "stage_latency",
+  "clip": "phrase_v15_backchannel_20",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 31.328,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.328
+    }
+  ],
+  "live_bot_starts": [
+    3.392
+  ],
+  "live_bot_ends": [
+    30.976
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "Illuminate public speaking thoroughly.",
+    "source": "v15_backchannel_20"
+  },
+  "mono": [
+    15642.6046287,
+    15673.919262
+  ],
+  "bot_segments": [
+    [
+      3.362,
+      31.006
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.328
+  ],
+  "tor": 1,
+  "first_start": 3.362,
+  "spoke_s": 6.965999999999999,
+  "user_end": 2.078,
+  "latency": 1.2840000000000003,
+  "actual": "replied 1.28 s after speech end",
+  "verdict": "✓ 1.28 s",
+  "ok": true,
+  "marks": 23,
+  "final": {
+    "stages": {
+      "e2e_heard": 1.284,
+      "e2e": 1.1401,
+      "e2e_source": "marks",
+      "asr_final": 0.8456,
+      "llm_ttft": 0.0117,
+      "tts_ttfb": 0.2022,
+      "endpointing": 0.1081,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "Illuminate public speaking thoroughly.",
+      "wer": {
+        "ref_words": 4,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2446,
+      "context_source": "usage",
+      "context_messages": 12
+    },
+    "transcript": "Public speaking is the art of delivering ideas allowed to an audience. It involves clear organization, where you structure your talk with a strong opening, logical middle, and numberable conclusion. Knowing your audience helps you choose language, tone, and examples that resonate and keep listeners engaged. Effective speakers use vocal variety, changing pitch, pace, and volume to emphasize key poi"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

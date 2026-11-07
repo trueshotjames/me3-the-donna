@@ -1,0 +1,99 @@
+{
+  "trial": "r08_v15_background_v15_background_3",
+  "group": "v15_background",
+  "clip": "v15_background_3",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 7.232,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.752
+    },
+    {
+      "name": "overlap",
+      "t": 3.836,
+      "len": 1.4399375
+    }
+  ],
+  "live_bot_starts": [
+    2.336,
+    5.28
+  ],
+  "live_bot_ends": [
+    4.512,
+    6.016
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "What's the time in Tokyo?",
+    "current_turn_text": "",
+    "overlap_text": "Do we have any milk left?",
+    "overlap_duration": 1.44,
+    "overlap_window": [
+      5.532,
+      6.9719999999999995
+    ],
+    "source_id": "3"
+  },
+  "mono": [
+    18286.6399823,
+    18293.885775
+  ],
+  "bot_segments": [
+    [
+      2.306,
+      4.542
+    ],
+    [
+      5.25,
+      6.046
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.752
+  ],
+  "overlap_played": true,
+  "t_stop": 0.6359999999999997,
+  "t_resp": 0.13199999999999967,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    3.906,
+    5.118
+  ],
+  "tor": 0,
+  "first_start": 5.2759374999999995,
+  "spoke_s": 0.7700625000000008,
+  "latency": 0.0,
+  "actual": "stopped after 0.64 s, back 0.13 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 27,
+  "final": {
+    "t_stop": 0.6359999999999997,
+    "t_resp": 0.13199999999999967,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -108.67293625914317,
+      "pitch_mean": -67.37323308395096,
+      "pitch_sd": -63.98812797492654,
+      "intensity_mean": -3.2866797905000773,
+      "intensity_sd": -0.10509401991300749,
+      "utmosv2": null
+    },
+    "transcript": "It's 10 .23 in the morning on Saturday in Tokyo.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

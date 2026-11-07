@@ -1,0 +1,68 @@
+{
+  "trial": "r02_false_tt_false_background_002",
+  "group": "false_tt",
+  "clip": "false_background_002",
+  "variant": "main",
+  "expected": "stay silent",
+  "duration": 3.968,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.858
+    }
+  ],
+  "live_bot_starts": [
+    0.16,
+    1.728
+  ],
+  "live_bot_ends": [
+    0.736,
+    2.752
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 0
+  },
+  "clip_meta": {
+    "kind": "background",
+    "kind_label": "background speech",
+    "level_db": -15,
+    "text": "Why is the internet so slow?",
+    "source": "v15_background_93"
+  },
+  "mono": [
+    16445.4028333,
+    16449.3412885
+  ],
+  "bot_segments": [
+    [
+      0.13,
+      0.766
+    ],
+    [
+      1.698,
+      2.782
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.858
+  ],
+  "tor": 1,
+  "first_start": 0.13,
+  "spoke_s": 2.652,
+  "actual": "spoke 2.7 s after -1.7 s",
+  "verdict": "✗ took turn",
+  "ok": false,
+  "marks": 7,
+  "final": {
+    "tor": 1,
+    "words": 5,
+    "verdict": "✗ took turn",
+    "ok": false,
+    "transcript": "Street Art Tour in Berlin."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

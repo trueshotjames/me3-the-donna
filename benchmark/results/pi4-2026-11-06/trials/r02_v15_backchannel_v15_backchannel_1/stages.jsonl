@@ -1,0 +1,31 @@
+{"stage": "vad_start", "t": 16452.277594945, "pid": 9960, "src": "ws", "recv": 16483.6320983, "lt": 16483.616269022, "tt": 0.2278}
+{"stage": "vad_start", "t": 16452.277693185, "pid": 9960, "src": "ws", "recv": 16483.6321194, "lt": 16483.616367262, "tt": 0.2278}
+{"stage": "asr_partial", "t": 16452.64695761, "pid": 9960, "text": "This", "src": "ws", "recv": 16484.0001742, "lt": 16483.985631687, "tt": 0.5971}
+{"stage": "interrupted", "t": 16452.767232135, "pid": 9960, "src": "ws", "recv": 16484.1215711, "lt": 16484.105906212, "tt": 0.7174}
+{"stage": "interrupted", "t": 16452.767321467, "pid": 9960, "src": "ws", "recv": 16484.1215917, "lt": 16484.105995544, "tt": 0.7175}
+{"stage": "asr_partial", "t": 16452.884640863, "pid": 9960, "text": "Present a", "src": "ws", "recv": 16484.2377121, "lt": 16484.22331494, "tt": 0.8348}
+{"stage": "asr_partial", "t": 16453.084962492, "pid": 9960, "text": "Present a thorough", "src": "ws", "recv": 16484.4379466, "lt": 16484.423636569, "tt": 1.0351}
+{"stage": "asr_partial", "t": 16453.335954627, "pid": 9960, "text": "Present a thorough", "src": "ws", "recv": 16484.6895386, "lt": 16484.674628704, "tt": 1.2861}
+{"stage": "asr_partial", "t": 16453.564667144, "pid": 9960, "text": "Present a thorough explanation", "src": "ws", "recv": 16484.9176669, "lt": 16484.903341221, "tt": 1.5148}
+{"stage": "asr_partial", "t": 16453.812589282, "pid": 9960, "text": "Present a thorough explanation of", "src": "ws", "recv": 16485.1655785, "lt": 16485.151263359, "tt": 1.7627}
+{"stage": "asr_partial", "t": 16454.04472333, "pid": 9960, "text": "Present a thorough explanation of global", "src": "ws", "recv": 16485.3977347, "lt": 16485.383397407, "tt": 1.9949}
+{"stage": "asr_partial", "t": 16454.295179453, "pid": 9960, "text": "Present a thorough explanation of global war", "src": "ws", "recv": 16485.6487248, "lt": 16485.633853530002, "tt": 2.2453}
+{"stage": "asr_partial", "t": 16454.525505691, "pid": 9960, "text": "Present a thorough explanation of global warming.", "src": "ws", "recv": 16485.8785144, "lt": 16485.864179768, "tt": 2.4757}
+{"stage": "vad_end", "t": 16454.642366149, "pid": 9960, "src": "ws", "recv": 16485.9958502, "lt": 16485.981040226, "tt": 2.5925}
+{"stage": "vad_end", "t": 16454.642420574, "pid": 9960, "src": "ws", "recv": 16485.9958734, "lt": 16485.981094651, "tt": 2.5926}
+{"stage": "asr_partial", "t": 16454.776136498, "pid": 9960, "text": "Present a thorough explanation of global warming.", "src": "ws", "recv": 16486.1296174, "lt": 16486.114810575, "tt": 2.7263}
+{"stage": "llm_request", "t": 16454.779175551, "pid": 9960, "speculative": true, "messages": 30, "chars": 10987, "est_tokens": 2747, "src": "ws", "recv": 16486.1330391, "lt": 16486.117849628, "tt": 2.7293}
+{"stage": "asr_partial", "t": 16455.004641982, "pid": 9960, "text": "Present a thorough explanation of global warming.", "src": "ws", "recv": 16486.3576828, "lt": 16486.343316059, "tt": 2.9548}
+{"stage": "llm_usage", "t": 16455.467253247, "pid": 9960, "prompt_tokens": 2505, "completion_tokens": 238, "src": "ws", "recv": 16486.8222325, "lt": 16486.805927324, "tt": 3.4174}
+{"stage": "asr_final", "t": 16455.862824239, "pid": 9960, "text": "Present a thorough explanation of global warming.", "src": "ws", "recv": 16487.2169126, "lt": 16487.201498316, "tt": 3.813}
+{"stage": "user_stopped", "t": 16455.869771055, "pid": 9960, "src": "ws", "recv": 16487.2360619, "lt": 16487.208445132, "tt": 3.8199}
+{"stage": "user_stopped", "t": 16455.869841999, "pid": 9960, "src": "ws", "recv": 16487.2360795, "lt": 16487.208516076, "tt": 3.82}
+{"stage": "llm_first_token", "t": 16455.874252108, "pid": 9960, "src": "ws", "recv": 16487.2477052, "lt": 16487.212926185, "tt": 3.8244}
+{"stage": "tts_request", "t": 16455.945775176, "pid": 9960, "src": "ws", "recv": 16487.309394, "lt": 16487.284449253, "tt": 3.8959}
+{"stage": "tts_first_audio", "t": 16456.21508348, "pid": 9960, "src": "ws", "recv": 16487.5680105, "lt": 16487.553757557, "tt": 4.1652}
+{"stage": "audio_out", "t": 16456.219795548, "pid": 9960, "src": "ws", "recv": 16487.5772386, "lt": 16487.558469625, "tt": 4.17}
+{"stage": "audio_out", "t": 16456.219879973, "pid": 9960, "src": "ws", "recv": 16487.5772562, "lt": 16487.55855405, "tt": 4.17}
+{"stage": "vad_start", "t": 16457.941422737, "pid": 9960, "src": "ws", "recv": 16489.2947564, "lt": 16489.280096814, "tt": 5.8916}
+{"stage": "vad_start", "t": 16457.941487958, "pid": 9960, "src": "ws", "recv": 16489.2947767, "lt": 16489.280162035, "tt": 5.8916}
+{"stage": "vad_end", "t": 16458.639207902, "pid": 9960, "src": "ws", "recv": 16489.9926244, "lt": 16489.977881979, "tt": 6.5894}
+{"stage": "vad_end", "t": 16458.63925966, "pid": 9960, "src": "ws", "recv": 16489.992644, "lt": 16489.977933737002, "tt": 6.5894}

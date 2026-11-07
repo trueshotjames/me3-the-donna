@@ -1,0 +1,60 @@
+{"stage": "vad_start", "t": 18987.181590868, "pid": 9960, "src": "ws", "recv": 19018.5734384, "lt": 19018.520264945, "tt": 0.1236}
+{"stage": "vad_start", "t": 18987.181677386, "pid": 9960, "src": "ws", "recv": 19018.5734652, "lt": 19018.520351463, "tt": 0.1237}
+{"stage": "asr_partial", "t": 18987.605577562, "pid": 9960, "text": "Seven", "src": "ws", "recv": 19018.9965012, "lt": 19018.944251639, "tt": 0.5476}
+{"stage": "interrupted", "t": 18987.726628949, "pid": 9960, "src": "ws", "recv": 19019.1185881, "lt": 19019.065303026, "tt": 0.6687}
+{"stage": "interrupted", "t": 18987.726718207, "pid": 9960, "src": "ws", "recv": 19019.1186075, "lt": 19019.065392284, "tt": 0.6687}
+{"stage": "asr_partial", "t": 18987.965315553, "pid": 9960, "text": "Set an alarm", "src": "ws", "recv": 19019.3558966, "lt": 19019.30398963, "tt": 0.9073}
+{"stage": "asr_partial", "t": 18988.243334148, "pid": 9960, "text": "Set an alarm for", "src": "ws", "recv": 19019.6344033, "lt": 19019.582008225, "tt": 1.1854}
+{"stage": "asr_partial", "t": 18988.36319438, "pid": 9960, "text": "Set an alarm for", "src": "ws", "recv": 19019.7549391, "lt": 19019.701868457, "tt": 1.3052}
+{"stage": "asr_partial", "t": 18988.602951917, "pid": 9960, "text": "Set an alarm for six thirty", "src": "ws", "recv": 19019.993742, "lt": 19019.941625994, "tt": 1.545}
+{"stage": "asr_partial", "t": 18988.84292723, "pid": 9960, "text": "Set an alarm for six thirty", "src": "ws", "recv": 19020.2345043, "lt": 19020.181601307002, "tt": 1.785}
+{"stage": "asr_partial", "t": 18989.043066056, "pid": 9960, "text": "Set an alarm for six thirty AM", "src": "ws", "recv": 19020.4336886, "lt": 19020.381740133, "tt": 1.9851}
+{"stage": "asr_partial", "t": 18989.323235073, "pid": 9960, "text": "Set an alarm for six thirty AM on", "src": "ws", "recv": 19020.7149403, "lt": 19020.66190915, "tt": 2.2653}
+{"stage": "asr_partial", "t": 18989.56241206, "pid": 9960, "text": "Set an alarm for six thirty AM on week", "src": "ws", "recv": 19020.9532749, "lt": 19020.901086137, "tt": 2.5044}
+{"stage": "asr_partial", "t": 18989.723106396, "pid": 9960, "text": "Set an alarm for six thirty AM on weekday", "src": "ws", "recv": 19021.1137848, "lt": 19021.061780473, "tt": 2.6651}
+{"stage": "asr_partial", "t": 18989.803665192, "pid": 9960, "text": "Set an alarm for six thirty AM on weekdays", "src": "ws", "recv": 19021.1952067, "lt": 19021.142339269, "tt": 2.7457}
+{"stage": "vad_end", "t": 18989.96550998, "pid": 9960, "src": "ws", "recv": 19021.3565174, "lt": 19021.304184057, "tt": 2.9075}
+{"stage": "vad_end", "t": 18989.96556259, "pid": 9960, "src": "ws", "recv": 19021.3565376, "lt": 19021.304236667, "tt": 2.9076}
+{"stage": "asr_partial", "t": 18990.049500074, "pid": 9960, "text": "Set an alarm for six thirty AM on weekdays.", "src": "ws", "recv": 19021.4412923, "lt": 19021.388174151, "tt": 2.9915}
+{"stage": "llm_request", "t": 18990.053258295, "pid": 9960, "speculative": true, "messages": 14, "chars": 9946, "est_tokens": 2486, "src": "ws", "recv": 19021.4452038, "lt": 19021.391932372, "tt": 2.9953}
+{"stage": "asr_partial", "t": 18990.283414206, "pid": 9960, "text": "Set an alarm for six thirty AM on weekdays.", "src": "ws", "recv": 19021.6750497, "lt": 19021.622088283, "tt": 3.2254}
+{"stage": "asr_final", "t": 18990.453824407, "pid": 9960, "text": "Set an alarm for six thirty AM on weekdays.", "src": "ws", "recv": 19021.8460767, "lt": 19021.792498484, "tt": 3.3959}
+{"stage": "user_stopped", "t": 18990.46159768, "pid": 9960, "src": "ws", "recv": 19021.8554544, "lt": 19021.800271757, "tt": 3.4036}
+{"stage": "user_stopped", "t": 18990.461667698, "pid": 9960, "src": "ws", "recv": 19021.8554815, "lt": 19021.800341775, "tt": 3.4037}
+{"stage": "llm_first_token", "t": 18990.67597238, "pid": 9960, "src": "ws", "recv": 19022.0697786, "lt": 19022.014646457, "tt": 3.618}
+{"stage": "llm_usage", "t": 18990.676114378, "pid": 9960, "prompt_tokens": 2546, "completion_tokens": 26, "src": "ws", "recv": 19022.0698013, "lt": 19022.014788455, "tt": 3.6181}
+{"stage": "tts_request", "t": 18990.697389774, "pid": 9960, "src": "ws", "recv": 19022.0927784, "lt": 19022.036063851, "tt": 3.6394}
+{"stage": "tts_first_audio", "t": 18990.93899518, "pid": 9960, "src": "ws", "recv": 19022.3305147, "lt": 19022.277669257, "tt": 3.881}
+{"stage": "audio_out", "t": 18990.944999045, "pid": 9960, "src": "ws", "recv": 19022.3408347, "lt": 19022.283673122, "tt": 3.887}
+{"stage": "audio_out", "t": 18990.945083544, "pid": 9960, "src": "ws", "recv": 19022.340851, "lt": 19022.283757621, "tt": 3.8871}
+{"stage": "bot_stopped", "t": 18992.395572334, "pid": 9960, "src": "ws", "recv": 19023.7907957, "lt": 19023.734246411, "tt": 5.3376}
+{"stage": "bot_stopped", "t": 18992.396243605, "pid": 9960, "src": "ws", "recv": 19023.7908176, "lt": 19023.734917682, "tt": 5.3383}
+{"stage": "llm_request", "t": 18992.41080755, "pid": 9960, "messages": 15, "chars": 9977, "est_tokens": 2494, "src": "ws", "recv": 19023.8034557, "lt": 19023.749481627, "tt": 5.3528}
+{"stage": "vad_start", "t": 18992.681991933, "pid": 9960, "src": "ws", "recv": 19024.0725871, "lt": 19024.02066601, "tt": 5.624}
+{"stage": "vad_start", "t": 18992.68204608, "pid": 9960, "src": "ws", "recv": 19024.0726089, "lt": 19024.020720157, "tt": 5.6241}
+{"stage": "asr_partial", "t": 18992.8471315, "pid": 9960, "text": "D", "src": "ws", "recv": 19024.2378163, "lt": 19024.185805577, "tt": 5.7892}
+{"stage": "interrupted", "t": 18993.089018679, "pid": 9960, "src": "ws", "recv": 19024.481138, "lt": 19024.427692756, "tt": 6.031}
+{"stage": "interrupted", "t": 18993.089104993, "pid": 9960, "src": "ws", "recv": 19024.4811577, "lt": 19024.42777907, "tt": 6.0311}
+{"stage": "asr_partial", "t": 18993.329989496, "pid": 9960, "text": "Derek", "src": "ws", "recv": 19024.7210261, "lt": 19024.668663573, "tt": 6.272}
+{"stage": "asr_partial", "t": 18993.56266012, "pid": 9960, "text": "Derek traffic was", "src": "ws", "recv": 19024.9535248, "lt": 19024.901334197, "tt": 6.5047}
+{"stage": "asr_partial", "t": 18993.807783302, "pid": 9960, "text": "Derik traffic was inside", "src": "ws", "recv": 19025.1986549, "lt": 19025.146457379, "tt": 6.7498}
+{"stage": "asr_partial", "t": 18994.042527756, "pid": 9960, "text": "Derik traffic was insane at", "src": "ws", "recv": 19025.4334191, "lt": 19025.381201833, "tt": 6.9846}
+{"stage": "asr_partial", "t": 18994.287310386, "pid": 9960, "text": "Derik traffic was insanity", "src": "ws", "recv": 19025.6782486, "lt": 19025.625984463, "tt": 7.2293}
+{"stage": "asr_partial", "t": 18994.523073014, "pid": 9960, "text": "Derik traffic was insanity today.", "src": "ws", "recv": 19025.914002, "lt": 19025.861747091, "tt": 7.4651}
+{"stage": "vad_end", "t": 18994.730635614, "pid": 9960, "src": "ws", "recv": 19026.1215869, "lt": 19026.069309691, "tt": 7.6727}
+{"stage": "vad_end", "t": 18994.730719409, "pid": 9960, "src": "ws", "recv": 19026.1216088, "lt": 19026.069393486, "tt": 7.6727}
+{"stage": "asr_partial", "t": 18994.773401532, "pid": 9960, "text": "Derik traffic was insanity today.", "src": "ws", "recv": 19026.1651617, "lt": 19026.112075609, "tt": 7.7154}
+{"stage": "llm_request", "t": 18994.777103754, "pid": 9960, "speculative": true, "messages": 16, "chars": 10010, "est_tokens": 2502, "src": "ws", "recv": 19026.1697952, "lt": 19026.115777831, "tt": 7.7191}
+{"stage": "asr_partial", "t": 18994.963073479, "pid": 9960, "text": "Derik traffic was insanity today?", "src": "ws", "recv": 19026.3538372, "lt": 19026.301747556, "tt": 7.9051}
+{"stage": "asr_final", "t": 18995.043111797, "pid": 9960, "text": "Derik traffic was insanity today?", "src": "ws", "recv": 19026.4355822, "lt": 19026.381785874, "tt": 7.9851}
+{"stage": "user_stopped", "t": 18995.052172094, "pid": 9960, "src": "ws", "recv": 19026.4479102, "lt": 19026.390846171, "tt": 7.9942}
+{"stage": "user_stopped", "t": 18995.052267112, "pid": 9960, "src": "ws", "recv": 19026.4479415, "lt": 19026.390941189, "tt": 7.9943}
+{"stage": "llm_first_token", "t": 18995.467986341, "pid": 9960, "src": "ws", "recv": 19026.8609247, "lt": 19026.806660418, "tt": 8.41}
+{"stage": "llm_usage", "t": 18995.492938754, "pid": 9960, "prompt_tokens": 2509, "completion_tokens": 36, "src": "ws", "recv": 19026.8873597, "lt": 19026.831612831, "tt": 8.435}
+{"stage": "tts_request", "t": 18995.516926845, "pid": 9960, "src": "ws", "recv": 19026.9118822, "lt": 19026.855600922, "tt": 8.459}
+{"stage": "tts_first_audio", "t": 18995.674841188, "pid": 9960, "src": "ws", "recv": 19027.0655155, "lt": 19027.013515265, "tt": 8.6169}
+{"stage": "audio_out", "t": 18995.67921068, "pid": 9960, "src": "ws", "recv": 19027.0750885, "lt": 19027.017884757, "tt": 8.6212}
+{"stage": "audio_out", "t": 18995.679292568, "pid": 9960, "src": "ws", "recv": 19027.0751143, "lt": 19027.017966645, "tt": 8.6213}
+{"stage": "bot_stopped", "t": 18997.528600585, "pid": 9960, "src": "ws", "recv": 19028.9213709, "lt": 19028.867274662, "tt": 10.4706}
+{"stage": "bot_stopped", "t": 18997.528729824, "pid": 9960, "src": "ws", "recv": 19028.9213884, "lt": 19028.867403901, "tt": 10.4708}
+{"stage": "llm_request", "t": 18997.536872816, "pid": 9960, "messages": 17, "chars": 10038, "est_tokens": 2510, "src": "ws", "recv": 19028.9269141, "lt": 19028.875546893, "tt": 10.4789}

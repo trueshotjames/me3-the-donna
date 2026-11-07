@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 18732.147924449, "pid": 9960, "src": "ws", "recv": 18763.536923, "lt": 18763.486598526, "tt": 0.1618}
+{"stage": "vad_start", "t": 18732.148063874, "pid": 9960, "src": "ws", "recv": 18763.5369436, "lt": 18763.486737951, "tt": 0.1619}
+{"stage": "asr_partial", "t": 18732.642679543, "pid": 9960, "text": "This", "src": "ws", "recv": 18764.0299629, "lt": 18763.98135362, "tt": 0.6566}
+{"stage": "interrupted", "t": 18732.765402885, "pid": 9960, "src": "ws", "recv": 18764.1541074, "lt": 18764.104076962, "tt": 0.7793}
+{"stage": "interrupted", "t": 18732.765493847, "pid": 9960, "src": "ws", "recv": 18764.1541312, "lt": 18764.104167924, "tt": 0.7794}
+{"stage": "asr_partial", "t": 18732.922735601, "pid": 9960, "text": "Describe space", "src": "ws", "recv": 18764.3101555, "lt": 18764.261409678, "tt": 0.9366}
+{"stage": "asr_partial", "t": 18733.175753235, "pid": 9960, "text": "Describe space tell", "src": "ws", "recv": 18764.5637379, "lt": 18764.514427312, "tt": 1.1896}
+{"stage": "asr_partial", "t": 18733.403181895, "pid": 9960, "text": "Describe space telescope", "src": "ws", "recv": 18764.7906066, "lt": 18764.741855972, "tt": 1.4171}
+{"stage": "asr_partial", "t": 18733.650657189, "pid": 9960, "text": "Described space telescopes", "src": "ws", "recv": 18765.0380325, "lt": 18764.989331266, "tt": 1.6645}
+{"stage": "asr_partial", "t": 18733.883277691, "pid": 9960, "text": "Described space telescopes complete", "src": "ws", "recv": 18765.2707037, "lt": 18765.221951768, "tt": 1.8972}
+{"stage": "vad_end", "t": 18734.064085009, "pid": 9960, "src": "ws", "recv": 18765.4517854, "lt": 18765.402759086, "tt": 2.078}
+{"stage": "vad_end", "t": 18734.064141046, "pid": 9960, "src": "ws", "recv": 18765.4518094, "lt": 18765.402815123, "tt": 2.078}
+{"stage": "asr_partial", "t": 18734.083376169, "pid": 9960, "text": "Described space telescopes completely.", "src": "ws", "recv": 18765.4718857, "lt": 18765.422050246, "tt": 2.0973}
+{"stage": "llm_request", "t": 18734.08713108, "pid": 9960, "speculative": true, "messages": 22, "chars": 10283, "est_tokens": 2571, "src": "ws", "recv": 18765.476186, "lt": 18765.425805157, "tt": 2.101}
+{"stage": "asr_partial", "t": 18734.136802689, "pid": 9960, "text": "Described space telescopes completely.", "src": "ws", "recv": 18765.5269684, "lt": 18765.475476766, "tt": 2.1507}
+{"stage": "asr_final", "t": 18734.969413312, "pid": 9960, "text": "Described space telescopes completely.", "src": "ws", "recv": 18766.3590851, "lt": 18766.308087389, "tt": 2.9833}
+{"stage": "user_stopped", "t": 18734.978221344, "pid": 9960, "src": "ws", "recv": 18766.3840658, "lt": 18766.316895421, "tt": 2.9921}
+{"stage": "user_stopped", "t": 18734.978292213, "pid": 9960, "src": "ws", "recv": 18766.3840898, "lt": 18766.31696629, "tt": 2.9922}
+{"stage": "llm_first_token", "t": 18734.983317242, "pid": 9960, "src": "ws", "recv": 18766.397659, "lt": 18766.321991319, "tt": 2.9972}
+{"stage": "llm_usage", "t": 18735.040325414, "pid": 9960, "prompt_tokens": 2494, "completion_tokens": 292, "src": "ws", "recv": 18766.4528087, "lt": 18766.378999491, "tt": 3.0542}
+{"stage": "tts_request", "t": 18735.082828476, "pid": 9960, "src": "ws", "recv": 18766.4898093, "lt": 18766.421502553, "tt": 3.0967}
+{"stage": "tts_first_audio", "t": 18735.314601243, "pid": 9960, "src": "ws", "recv": 18766.7022516, "lt": 18766.65327532, "tt": 3.3285}
+{"stage": "audio_out", "t": 18735.31945981, "pid": 9960, "src": "ws", "recv": 18766.7115846, "lt": 18766.658133887002, "tt": 3.3333}
+{"stage": "audio_out", "t": 18735.319542532, "pid": 9960, "src": "ws", "recv": 18766.7116124, "lt": 18766.658216609, "tt": 3.3334}
+{"stage": "vad_start", "t": 18737.172787606, "pid": 9960, "src": "ws", "recv": 18768.5601797, "lt": 18768.511461683, "tt": 5.1867}
+{"stage": "vad_start", "t": 18737.172857235, "pid": 9960, "src": "ws", "recv": 18768.5601996, "lt": 18768.511531312, "tt": 5.1867}
+{"stage": "vad_end", "t": 18737.424127193, "pid": 9960, "src": "ws", "recv": 18768.8117389, "lt": 18768.76280127, "tt": 5.438}
+{"stage": "vad_end", "t": 18737.424182156, "pid": 9960, "src": "ws", "recv": 18768.8117614, "lt": 18768.762856233, "tt": 5.4381}

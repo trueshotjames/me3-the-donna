@@ -1,0 +1,84 @@
+{
+  "trial": "r11_v1_interrupt_v1_interrupt_45",
+  "group": "v1_interrupt",
+  "clip": "v1_interrupt_45",
+  "variant": "main",
+  "expected": "stop, then answer the new request",
+  "duration": 15.808,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.392
+    },
+    {
+      "name": "overlap",
+      "t": 5.212,
+      "len": 2.592
+    }
+  ],
+  "live_bot_starts": [
+    3.712,
+    11.04
+  ],
+  "live_bot_ends": [
+    5.76,
+    15.008
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "I need a new book to dive into",
+    "interrupt_text": "Actually, let's talk about your thoughts on art.",
+    "source_id": "45"
+  },
+  "mono": [
+    18996.2689531,
+    19012.0940504
+  ],
+  "bot_segments": [
+    [
+      3.682,
+      5.79
+    ],
+    [
+      11.01,
+      15.038
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.392
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2839999999999998,
+  "t_resp": 3.2059999999999995,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.506,
+    7.804
+  ],
+  "tor": 1,
+  "first_start": 11.01,
+  "spoke_s": 4.0280000000000005,
+  "latency": 3.2059999999999995,
+  "actual": "stopped after 0.28 s, back 3.21 s after",
+  "verdict": "✓ yielded, 3.21 s",
+  "ok": true,
+  "marks": 61,
+  "final": {
+    "tor": 1,
+    "words": 17,
+    "latency": 3.2059999999999995,
+    "t_stop": 0.2839999999999998,
+    "verdict": "✓ yielded, 3.21 s",
+    "ok": true,
+    "rating": 0,
+    "transcript": "If you love immersive sci -fi with deep role, I think we make a solid team. You set the goals and I help you get there."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

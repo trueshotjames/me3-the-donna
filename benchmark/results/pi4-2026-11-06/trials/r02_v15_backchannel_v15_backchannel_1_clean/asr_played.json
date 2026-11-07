@@ -1,0 +1,55 @@
+{
+  "text": "Present a thorough explanation of global warming.",
+  "chunks": [
+    {
+      "text": "Present",
+      "timestamp": [
+        0.0,
+        0.26
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.26,
+        0.46
+      ]
+    },
+    {
+      "text": "thorough",
+      "timestamp": [
+        0.46,
+        0.66
+      ]
+    },
+    {
+      "text": "explanation",
+      "timestamp": [
+        0.66,
+        1.22
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        1.22,
+        1.5
+      ]
+    },
+    {
+      "text": "global",
+      "timestamp": [
+        1.5,
+        1.78
+      ]
+    },
+    {
+      "text": "warming.",
+      "timestamp": [
+        1.78,
+        2.18
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,30 @@
+{"stage": "vad_start", "t": 18514.837638172, "pid": 9960, "src": "ws", "recv": 18546.224034, "lt": 18546.176312249, "tt": 0.1314}
+{"stage": "vad_start", "t": 18514.837734023, "pid": 9960, "src": "ws", "recv": 18546.2240591, "lt": 18546.1764081, "tt": 0.1315}
+{"stage": "asr_partial", "t": 18515.202387544, "pid": 9960, "text": "Our", "src": "ws", "recv": 18546.587308, "lt": 18546.541061621, "tt": 0.4962}
+{"stage": "interrupted", "t": 18515.324868353, "pid": 9960, "src": "ws", "recv": 18546.7110429, "lt": 18546.66354243, "tt": 0.6186}
+{"stage": "interrupted", "t": 18515.324958167, "pid": 9960, "src": "ws", "recv": 18546.711067, "lt": 18546.663632244, "tt": 0.6187}
+{"stage": "asr_partial", "t": 18515.44511729, "pid": 9960, "text": "outlined", "src": "ws", "recv": 18546.8299814, "lt": 18546.783791367, "tt": 0.7389}
+{"stage": "asr_partial", "t": 18515.64530076, "pid": 9960, "text": "Outline sleep", "src": "ws", "recv": 18547.0302507, "lt": 18546.983974837, "tt": 0.9391}
+{"stage": "asr_partial", "t": 18515.928425888, "pid": 9960, "text": "Outline sleep science", "src": "ws", "recv": 18547.3140251, "lt": 18547.267099965, "tt": 1.2222}
+{"stage": "asr_partial", "t": 18516.124982328, "pid": 9960, "text": "Outline sleep science clear", "src": "ws", "recv": 18547.50991, "lt": 18547.463656405, "tt": 1.4188}
+{"stage": "asr_partial", "t": 18516.408067993, "pid": 9960, "text": "Outline sleep science clearly", "src": "ws", "recv": 18547.79353, "lt": 18547.74674207, "tt": 1.7018}
+{"stage": "vad_end", "t": 18516.434618257, "pid": 9960, "src": "ws", "recv": 18547.8244535, "lt": 18547.773292334, "tt": 1.7284}
+{"stage": "vad_end", "t": 18516.434674701, "pid": 9960, "src": "ws", "recv": 18547.8244773, "lt": 18547.773348778, "tt": 1.7284}
+{"stage": "llm_request", "t": 18516.445555676, "pid": 9960, "speculative": true, "messages": 20, "chars": 10139, "est_tokens": 2535, "src": "ws", "recv": 18547.8306556, "lt": 18547.784229753, "tt": 1.7393}
+{"stage": "asr_partial", "t": 18516.602746743, "pid": 9960, "text": "Outline sleep science clearly.", "src": "ws", "recv": 18547.9877097, "lt": 18547.94142082, "tt": 1.8965}
+{"stage": "asr_final", "t": 18516.880146319, "pid": 9960, "text": "Outline sleep science clearly", "src": "ws", "recv": 18548.2673297, "lt": 18548.218820396, "tt": 2.1739}
+{"stage": "user_stopped", "t": 18516.889807895, "pid": 9960, "src": "ws", "recv": 18548.2781269, "lt": 18548.228481972, "tt": 2.1836}
+{"stage": "user_stopped", "t": 18516.889938728, "pid": 9960, "src": "ws", "recv": 18548.2781493, "lt": 18548.228612805, "tt": 2.1837}
+{"stage": "llm_first_token", "t": 18516.999434261, "pid": 9960, "src": "ws", "recv": 18548.3847856, "lt": 18548.338108338, "tt": 2.2932}
+{"stage": "llm_usage", "t": 18517.02887393, "pid": 9960, "prompt_tokens": 2457, "completion_tokens": 115, "src": "ws", "recv": 18548.4178779, "lt": 18548.367548007, "tt": 2.3226}
+{"stage": "tts_request", "t": 18517.05489755, "pid": 9960, "src": "ws", "recv": 18548.4445977, "lt": 18548.393571627, "tt": 2.3487}
+{"stage": "tts_first_audio", "t": 18517.269687111, "pid": 9960, "src": "ws", "recv": 18548.6546656, "lt": 18548.608361188, "tt": 2.5635}
+{"stage": "audio_out", "t": 18517.274454724, "pid": 9960, "src": "ws", "recv": 18548.6637534, "lt": 18548.613128801, "tt": 2.5682}
+{"stage": "audio_out", "t": 18517.274541223, "pid": 9960, "src": "ws", "recv": 18548.6637766, "lt": 18548.6132153, "tt": 2.5683}
+{"stage": "vad_start", "t": 18519.086885349, "pid": 9960, "src": "ws", "recv": 18550.4741303, "lt": 18550.425559426, "tt": 4.3807}
+{"stage": "vad_start", "t": 18519.086948441, "pid": 9960, "src": "ws", "recv": 18550.4741545, "lt": 18550.425622518, "tt": 4.3807}
+{"stage": "vad_end", "t": 18519.537229994, "pid": 9960, "src": "ws", "recv": 18550.9223472, "lt": 18550.875904071, "tt": 4.831}
+{"stage": "vad_end", "t": 18519.537326382, "pid": 9960, "src": "ws", "recv": 18550.9223677, "lt": 18550.876000459, "tt": 4.8311}
+{"stage": "bot_stopped", "t": 18526.622305281, "pid": 9960, "src": "ws", "recv": 18558.0079149, "lt": 18557.960979358, "tt": 11.9161}
+{"stage": "bot_stopped", "t": 18526.622396428, "pid": 9960, "src": "ws", "recv": 18558.0079391, "lt": 18557.961070505, "tt": 11.9162}
+{"stage": "llm_request", "t": 18526.628819454, "pid": 9960, "messages": 21, "chars": 10297, "est_tokens": 2574, "src": "ws", "recv": 18558.01361, "lt": 18557.967493531, "tt": 11.9226}

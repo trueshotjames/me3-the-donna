@@ -1,0 +1,99 @@
+{
+  "trial": "r11_v15_interruption_v15_interruption_32",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_32",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 13.28,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.544
+    },
+    {
+      "name": "overlap",
+      "t": 6.236,
+      "len": 3.2750625
+    }
+  ],
+  "live_bot_starts": [
+    4.736,
+    10.272
+  ],
+  "live_bot_ends": [
+    6.592,
+    12.064
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 3
+  },
+  "clip_meta": {
+    "context_text": "I heard there's a new phone model coming out soon",
+    "current_turn_text": "Hold that thought, what were the top songs this year?",
+    "overlap_text": "Hold that thought, what were the top songs this year?",
+    "overlap_duration": 3.28,
+    "overlap_window": [
+      7.4239999999999995,
+      10.699
+    ],
+    "source_id": "32"
+  },
+  "mono": [
+    19048.9351453,
+    19062.2059467
+  ],
+  "bot_segments": [
+    [
+      4.706,
+      6.622
+    ],
+    [
+      10.242,
+      12.094
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.544
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2519999999999998,
+  "t_resp": 1.0280000000000005,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    6.37,
+    9.214
+  ],
+  "tor": 1,
+  "first_start": 10.242,
+  "spoke_s": 1.8519999999999985,
+  "latency": 0.7309375000000014,
+  "actual": "stopped after 0.25 s, back 1.03 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 72,
+  "final": {
+    "t_stop": 0.2519999999999998,
+    "t_resp": 1.0280000000000005,
+    "label": "Unknown",
+    "voice_delta": {
+      "wpm": 115.78947368421044,
+      "pitch_mean": 1.2899186885131542,
+      "pitch_sd": 20.52193176440158,
+      "intensity_mean": 0.5952332886643248,
+      "intensity_sd": 2.865788761882036,
+      "utmosv2": null
+    },
+    "transcript": "I don't have information on upcoming photos. I'm not able to look that up right now.",
+    "judge_label": "Unknown",
+    "ok": false,
+    "verdict": "✗ Unknown"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

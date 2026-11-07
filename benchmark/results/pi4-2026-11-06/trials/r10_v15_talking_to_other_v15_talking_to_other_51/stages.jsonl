@@ -1,0 +1,59 @@
+{"stage": "vad_start", "t": 18700.755952744, "pid": 9960, "src": "ws", "recv": 18732.1443605, "lt": 18732.094626821, "tt": 0.1936}
+{"stage": "vad_start", "t": 18700.756104891, "pid": 9960, "src": "ws", "recv": 18732.1443839, "lt": 18732.094778968, "tt": 0.1937}
+{"stage": "asr_partial", "t": 18701.165580084, "pid": 9960, "text": "What", "src": "ws", "recv": 18732.5538737, "lt": 18732.504254161002, "tt": 0.6032}
+{"stage": "interrupted", "t": 18701.288891424, "pid": 9960, "src": "ws", "recv": 18732.6777299, "lt": 18732.627565501, "tt": 0.7265}
+{"stage": "interrupted", "t": 18701.288977868, "pid": 9960, "src": "ws", "recv": 18732.6777522, "lt": 18732.627651945, "tt": 0.7266}
+{"stage": "asr_partial", "t": 18701.443045382, "pid": 9960, "text": "What's the exchange", "src": "ws", "recv": 18732.8299661, "lt": 18732.781719459, "tt": 0.8806}
+{"stage": "asr_partial", "t": 18701.683135529, "pid": 9960, "text": "What's the exchange rate", "src": "ws", "recv": 18733.0701221, "lt": 18733.021809606, "tt": 1.1207}
+{"stage": "asr_partial", "t": 18701.88568119, "pid": 9960, "text": "What's the exchange rate for", "src": "ws", "recv": 18733.2726738, "lt": 18733.224355267, "tt": 1.3233}
+{"stage": "asr_partial", "t": 18702.163741167, "pid": 9960, "text": "What's the exchange rate for Japan", "src": "ws", "recv": 18733.5510918, "lt": 18733.502415244002, "tt": 1.6013}
+{"stage": "asr_partial", "t": 18702.365674592, "pid": 9960, "text": "What's the exchange rate for Japanese", "src": "ws", "recv": 18733.7538862, "lt": 18733.704348669, "tt": 1.8033}
+{"stage": "asr_partial", "t": 18702.64327174, "pid": 9960, "text": "What's the exchange rate for Japanese yen?", "src": "ws", "recv": 18734.0303783, "lt": 18733.981945817, "tt": 2.0809}
+{"stage": "asr_partial", "t": 18702.76615001, "pid": 9960, "text": "What's the exchange rate for Japanese yen?", "src": "ws", "recv": 18734.1544628, "lt": 18734.104824087, "tt": 2.2038}
+{"stage": "llm_request", "t": 18702.852112549, "pid": 9960, "speculative": true, "messages": 16, "chars": 10080, "est_tokens": 2520, "src": "ws", "recv": 18734.2398121, "lt": 18734.190786626, "tt": 2.2897}
+{"stage": "vad_end", "t": 18702.898013866, "pid": 9960, "src": "ws", "recv": 18734.2868232, "lt": 18734.236687943, "tt": 2.3356}
+{"stage": "vad_end", "t": 18702.898086532, "pid": 9960, "src": "ws", "recv": 18734.2868582, "lt": 18734.236760609, "tt": 2.3357}
+{"stage": "asr_final", "t": 18703.009850807, "pid": 9960, "text": "What's the exchange rate for Japanese yen?", "src": "ws", "recv": 18734.3981084, "lt": 18734.348524884, "tt": 2.4475}
+{"stage": "user_stopped", "t": 18703.017706608, "pid": 9960, "src": "ws", "recv": 18734.4083319, "lt": 18734.356380685, "tt": 2.4553}
+{"stage": "user_stopped", "t": 18703.017774515, "pid": 9960, "src": "ws", "recv": 18734.4083497, "lt": 18734.356448592, "tt": 2.4554}
+{"stage": "llm_first_token", "t": 18703.567052229, "pid": 9960, "src": "ws", "recv": 18734.9561993, "lt": 18734.905726306, "tt": 3.0047}
+{"stage": "llm_usage", "t": 18703.591890659, "pid": 9960, "prompt_tokens": 2542, "completion_tokens": 31, "src": "ws", "recv": 18734.9801706, "lt": 18734.930564736, "tt": 3.0295}
+{"stage": "tts_request", "t": 18703.611193655, "pid": 9960, "src": "ws", "recv": 18735.0021904, "lt": 18734.949867732, "tt": 3.0488}
+{"stage": "tts_first_audio", "t": 18703.826742959, "pid": 9960, "src": "ws", "recv": 18735.2152978, "lt": 18735.165417036, "tt": 3.2643}
+{"stage": "audio_out", "t": 18703.833537344, "pid": 9960, "src": "ws", "recv": 18735.2257529, "lt": 18735.172211421, "tt": 3.2711}
+{"stage": "audio_out", "t": 18703.833622269, "pid": 9960, "src": "ws", "recv": 18735.2257707, "lt": 18735.172296346, "tt": 3.2712}
+{"stage": "vad_start", "t": 18705.553034046, "pid": 9960, "src": "ws", "recv": 18736.9397769, "lt": 18736.891708123, "tt": 4.9906}
+{"stage": "vad_start", "t": 18705.55309286, "pid": 9960, "src": "ws", "recv": 18736.9397981, "lt": 18736.891766937, "tt": 4.9907}
+{"stage": "asr_partial", "t": 18706.129192644, "pid": 9960, "text": "Amazon", "src": "ws", "recv": 18737.519573, "lt": 18737.467866721, "tt": 5.5668}
+{"stage": "interrupted", "t": 18706.132199377, "pid": 9960, "src": "ws", "recv": 18737.5217302, "lt": 18737.470873454, "tt": 5.5698}
+{"stage": "interrupted", "t": 18706.132286413, "pid": 9960, "src": "ws", "recv": 18737.521749, "lt": 18737.47096049, "tt": 5.5699}
+{"stage": "bot_stopped", "t": 18706.160168815, "pid": 9960, "src": "ws", "recv": 18737.5479275, "lt": 18737.498842892, "tt": 5.5978}
+{"stage": "bot_stopped", "t": 18706.160251815, "pid": 9960, "src": "ws", "recv": 18737.547949, "lt": 18737.498925892, "tt": 5.5979}
+{"stage": "asr_partial", "t": 18706.362511973, "pid": 9960, "text": "Amazon", "src": "ws", "recv": 18737.7495257, "lt": 18737.70118605, "tt": 5.8001}
+{"stage": "asr_partial", "t": 18706.606494207, "pid": 9960, "text": "Emma Sushi tonight", "src": "ws", "recv": 18737.9955495, "lt": 18737.945168284, "tt": 6.0441}
+{"stage": "asr_partial", "t": 18706.646582335, "pid": 9960, "text": "Emma Sushi tonight?", "src": "ws", "recv": 18738.0361495, "lt": 18737.985256412, "tt": 6.0842}
+{"stage": "llm_request", "t": 18706.686288262, "pid": 9960, "speculative": true, "messages": 17, "chars": 10099, "est_tokens": 2525, "src": "ws", "recv": 18738.0736873, "lt": 18738.024962339, "tt": 6.1239}
+{"stage": "asr_final", "t": 18706.729807803, "pid": 9960, "text": "Emma Sushi tonight?", "src": "ws", "recv": 18738.1187186, "lt": 18738.06848188, "tt": 6.1674}
+{"stage": "user_stopped", "t": 18706.738738836, "pid": 9960, "src": "ws", "recv": 18738.1293552, "lt": 18738.077412913, "tt": 6.1763}
+{"stage": "user_stopped", "t": 18706.738847872, "pid": 9960, "src": "ws", "recv": 18738.1293719, "lt": 18738.077521949, "tt": 6.1764}
+{"stage": "llm_first_token", "t": 18707.271299056, "pid": 9960, "src": "ws", "recv": 18738.6632419, "lt": 18738.609973133, "tt": 6.7089}
+{"stage": "llm_usage", "t": 18707.286668587, "pid": 9960, "prompt_tokens": 2556, "completion_tokens": 32, "src": "ws", "recv": 18738.6771586, "lt": 18738.625342664, "tt": 6.7243}
+{"stage": "tts_request", "t": 18707.309080333, "pid": 9960, "src": "ws", "recv": 18738.6999956, "lt": 18738.64775441, "tt": 6.7467}
+{"stage": "vad_end", "t": 18707.341309678, "pid": 9960, "src": "ws", "recv": 18738.7295151, "lt": 18738.679983755, "tt": 6.7789}
+{"stage": "vad_end", "t": 18707.341377307, "pid": 9960, "src": "ws", "recv": 18738.7295354, "lt": 18738.680051384, "tt": 6.779}
+{"stage": "interrupted", "t": 18707.489320555, "pid": 9960, "src": "ws", "recv": 18738.8792985, "lt": 18738.827994632, "tt": 6.9269}
+{"stage": "interrupted", "t": 18707.489406536, "pid": 9960, "src": "ws", "recv": 18738.8793149, "lt": 18738.828080613, "tt": 6.927}
+{"stage": "asr_partial", "t": 18707.569480717, "pid": 9960, "text": "your call.", "src": "ws", "recv": 18738.95776, "lt": 18738.908154794, "tt": 7.0071}
+{"stage": "llm_request", "t": 18707.573353331, "pid": 9960, "speculative": true, "messages": 18, "chars": 10109, "est_tokens": 2527, "src": "ws", "recv": 18738.9616305, "lt": 18738.912027408, "tt": 7.011}
+{"stage": "asr_final", "t": 18707.623560017, "pid": 9960, "text": "your call.", "src": "ws", "recv": 18739.011534, "lt": 18738.962234094, "tt": 7.0612}
+{"stage": "user_stopped", "t": 18707.630779898, "pid": 9960, "src": "ws", "recv": 18739.0213607, "lt": 18738.969453975, "tt": 7.0684}
+{"stage": "user_stopped", "t": 18707.630882138, "pid": 9960, "src": "ws", "recv": 18739.0213775, "lt": 18738.969556215, "tt": 7.0685}
+{"stage": "llm_first_token", "t": 18708.114573306, "pid": 9960, "src": "ws", "recv": 18739.5071369, "lt": 18739.453247383, "tt": 7.5522}
+{"stage": "llm_usage", "t": 18708.13053385, "pid": 9960, "prompt_tokens": 2517, "completion_tokens": 35, "src": "ws", "recv": 18739.5216506, "lt": 18739.469207927, "tt": 7.5681}
+{"stage": "tts_request", "t": 18708.155195317, "pid": 9960, "src": "ws", "recv": 18739.5469618, "lt": 18739.493869394, "tt": 7.5928}
+{"stage": "tts_first_audio", "t": 18708.37133861, "pid": 9960, "src": "ws", "recv": 18739.7593721, "lt": 18739.710012687, "tt": 7.8089}
+{"stage": "audio_out", "t": 18708.377615591, "pid": 9960, "src": "ws", "recv": 18739.7684504, "lt": 18739.716289668002, "tt": 7.8152}
+{"stage": "audio_out", "t": 18708.377698035, "pid": 9960, "src": "ws", "recv": 18739.7684675, "lt": 18739.716372112, "tt": 7.8153}
+{"stage": "bot_stopped", "t": 18711.265511399, "pid": 9960, "src": "ws", "recv": 18742.6542178, "lt": 18742.604185476, "tt": 10.7031}
+{"stage": "bot_stopped", "t": 18711.265635454, "pid": 9960, "src": "ws", "recv": 18742.6542377, "lt": 18742.604309531, "tt": 10.7032}
+{"stage": "llm_request", "t": 18711.275915622, "pid": 9960, "messages": 19, "chars": 10151, "est_tokens": 2538, "src": "ws", "recv": 18742.6640546, "lt": 18742.614589699002, "tt": 10.7135}

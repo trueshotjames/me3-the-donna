@@ -1,0 +1,55 @@
+{
+  "text": "A strong salary is a good start.",
+  "chunks": [
+    {
+      "text": "A",
+      "timestamp": [
+        11.95,
+        12.43
+      ]
+    },
+    {
+      "text": "strong",
+      "timestamp": [
+        12.43,
+        12.71
+      ]
+    },
+    {
+      "text": "salary",
+      "timestamp": [
+        12.71,
+        13.21
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        13.21,
+        13.49
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        13.49,
+        13.59
+      ]
+    },
+    {
+      "text": "good",
+      "timestamp": [
+        13.59,
+        13.75
+      ]
+    },
+    {
+      "text": "start.",
+      "timestamp": [
+        13.75,
+        14.07
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

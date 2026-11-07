@@ -1,0 +1,62 @@
+{
+  "trial": "r05_v15_background_v15_background_98_clean",
+  "group": "v15_background",
+  "clip": "v15_background_98",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 6.048,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.784
+    }
+  ],
+  "live_bot_starts": [
+    3.072
+  ],
+  "live_bot_ends": [
+    4.832
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Play a lullaby playlist.",
+    "current_turn_text": "",
+    "overlap_text": "I misplaced my passport.",
+    "overlap_duration": 1.53,
+    "overlap_window": [
+      5.532,
+      7.064
+    ],
+    "source_id": "98"
+  },
+  "mono": [
+    17580.6252537,
+    17586.6533942
+  ],
+  "bot_segments": [
+    [
+      3.042,
+      4.862
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.784
+  ],
+  "tor": 1,
+  "first_start": 3.042,
+  "spoke_s": 1.8200000000000003,
+  "actual": "replied after 1.26 s, spoke 1.8 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 27,
+  "final": {
+    "transcript": "I'm unable to play music right now."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

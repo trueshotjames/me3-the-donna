@@ -1,0 +1,99 @@
+{
+  "trial": "r06_v15_interruption_v15_interruption_55",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_55",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 11.136,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.744
+    },
+    {
+      "name": "overlap",
+      "t": 5.052,
+      "len": 2.123
+    }
+  ],
+  "live_bot_starts": [
+    3.552,
+    7.776
+  ],
+  "live_bot_ends": [
+    5.664,
+    9.92
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "I want to watch something exciting tonight",
+    "current_turn_text": "Can we talk about something else?",
+    "overlap_text": "Can we talk about something else?",
+    "overlap_duration": 2.12,
+    "overlap_window": [
+      6.5920000000000005,
+      8.715
+    ],
+    "source_id": "55"
+  },
+  "mono": [
+    17612.2191319,
+    17623.3578564
+  ],
+  "bot_segments": [
+    [
+      3.522,
+      5.694
+    ],
+    [
+      7.746,
+      9.95
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.744
+  ],
+  "overlap_played": true,
+  "t_stop": 0.21999999999999975,
+  "t_resp": 0.8040000000000003,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.474,
+    6.942
+  ],
+  "tor": 1,
+  "first_start": 7.746,
+  "spoke_s": 2.203999999999999,
+  "latency": 0.5710000000000006,
+  "actual": "stopped after 0.22 s, back 0.80 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 52,
+  "final": {
+    "t_stop": 0.21999999999999975,
+    "t_resp": 0.8040000000000003,
+    "label": "Respond",
+    "voice_delta": {
+      "wpm": -27.67792954708851,
+      "pitch_mean": 62.49838790613785,
+      "pitch_sd": 19.03154772464906,
+      "intensity_mean": -0.6416319853025705,
+      "intensity_sd": 0.06576605275034808,
+      "utmosv2": null
+    },
+    "transcript": "Try the thriller night run. It's fast. Sure. What would you like to talk about?",
+    "judge_label": "Respond",
+    "ok": true,
+    "verdict": "✓ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

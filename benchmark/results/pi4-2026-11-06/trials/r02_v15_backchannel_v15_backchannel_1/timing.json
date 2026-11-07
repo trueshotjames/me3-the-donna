@@ -1,0 +1,98 @@
+{
+  "trial": "r02_v15_backchannel_v15_backchannel_1",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_1",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 47.712,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.712
+    },
+    {
+      "name": "overlap",
+      "t": 5.724,
+      "len": 0.697
+    }
+  ],
+  "live_bot_starts": [
+    4.224,
+    6.72
+  ],
+  "live_bot_ends": [
+    5.92
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Present a thorough explanation of global warming.",
+    "current_turn_text": "",
+    "overlap_text": "yes yeah",
+    "overlap_duration": 0.7,
+    "overlap_window": [
+      6.601,
+      7.298
+    ],
+    "source_id": "1"
+  },
+  "mono": [
+    16483.3822715,
+    16531.0715203
+  ],
+  "bot_segments": [
+    [
+      4.194,
+      5.95
+    ],
+    [
+      6.69,
+      47.712
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.712
+  ],
+  "overlap_played": true,
+  "t_stop": 0.22599999999999998,
+  "t_resp": 0.26900000000000013,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.724,
+    6.421
+  ],
+  "tor": 1,
+  "first_start": 6.69,
+  "spoke_s": 7.730999999999999,
+  "latency": 0.26900000000000013,
+  "actual": "stopped after 0.23 s, back 0.27 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 31,
+  "final": {
+    "t_stop": 0.22599999999999998,
+    "t_resp": 0.26900000000000013,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -48.12062937062939,
+      "pitch_mean": -38.19924944935491,
+      "pitch_sd": -22.136226926939727,
+      "intensity_mean": -6.246488340922458,
+      "intensity_sd": 1.4477581510508486,
+      "utmosv2": null
+    },
+    "transcript": "Global warming is the long -term rise in Earth's average surface temperature caused mainly by human activities that increase greenhouse gases in the atmosphere. Burying fossil fuels for electricity, transportation, and industry releases carbon dioxide, methane, and nitrous oxide, which trap heat that would otherwise escape into space. Deforestation reduces the planet's ability to absorb carbon dio",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

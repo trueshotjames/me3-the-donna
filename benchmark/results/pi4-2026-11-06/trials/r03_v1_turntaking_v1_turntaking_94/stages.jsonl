@@ -1,0 +1,37 @@
+{"stage": "vad_start", "t": 16768.591611633, "pid": 9960, "src": "ws", "recv": 16799.9519828, "lt": 16799.93028571, "tt": 0.3174}
+{"stage": "vad_start", "t": 16768.591703854, "pid": 9960, "src": "ws", "recv": 16799.9520081, "lt": 16799.930377931, "tt": 0.3175}
+{"stage": "vad_end", "t": 16768.93867449, "pid": 9960, "src": "ws", "recv": 16800.2970765, "lt": 16800.277348567, "tt": 0.6645}
+{"stage": "vad_end", "t": 16768.938725045, "pid": 9960, "src": "ws", "recv": 16800.2970982, "lt": 16800.277399122002, "tt": 0.6645}
+{"stage": "vad_start", "t": 16769.453634923, "pid": 9960, "src": "ws", "recv": 16800.8116351, "lt": 16800.792309, "tt": 1.1794}
+{"stage": "vad_start", "t": 16769.45368994, "pid": 9960, "src": "ws", "recv": 16800.811656, "lt": 16800.792364017, "tt": 1.1795}
+{"stage": "asr_partial", "t": 16769.764454336, "pid": 9960, "text": "because", "src": "ws", "recv": 16801.122965, "lt": 16801.103128413, "tt": 1.4903}
+{"stage": "interrupted", "t": 16770.010062621, "pid": 9960, "src": "ws", "recv": 16801.3697185, "lt": 16801.348736698, "tt": 1.7359}
+{"stage": "interrupted", "t": 16770.01014849, "pid": 9960, "src": "ws", "recv": 16801.3697402, "lt": 16801.348822567, "tt": 1.7359}
+{"stage": "asr_partial", "t": 16770.245224113, "pid": 9960, "text": "Because now", "src": "ws", "recv": 16801.6053592, "lt": 16801.58389819, "tt": 1.971}
+{"stage": "asr_partial", "t": 16770.485389338, "pid": 9960, "text": "Because they're in", "src": "ws", "recv": 16801.8443312, "lt": 16801.824063415, "tt": 2.2112}
+{"stage": "asr_partial", "t": 16770.724996385, "pid": 9960, "text": "Because they're in the trees", "src": "ws", "recv": 16802.0855137, "lt": 16802.063670462, "tt": 2.4508}
+{"stage": "asr_partial", "t": 16770.964463044, "pid": 9960, "text": "Because they're in the trees", "src": "ws", "recv": 16802.3225781, "lt": 16802.303137121, "tt": 2.6903}
+{"stage": "asr_partial", "t": 16771.205641164, "pid": 9960, "text": "Because they're in the trees they're", "src": "ws", "recv": 16802.5659159, "lt": 16802.544315241, "tt": 2.9314}
+{"stage": "asr_partial", "t": 16771.44545506, "pid": 9960, "text": "Because they're in the trees or birds.", "src": "ws", "recv": 16802.803715, "lt": 16802.784129137, "tt": 3.1713}
+{"stage": "asr_partial", "t": 16771.69126936, "pid": 9960, "text": "Because they're in the trees or birds", "src": "ws", "recv": 16803.0510069, "lt": 16803.029943437, "tt": 3.4171}
+{"stage": "vad_end", "t": 16771.789586473, "pid": 9960, "src": "ws", "recv": 16803.1481394, "lt": 16803.128260550002, "tt": 3.5154}
+{"stage": "vad_end", "t": 16771.789684009, "pid": 9960, "src": "ws", "recv": 16803.1481597, "lt": 16803.128358086, "tt": 3.5155}
+{"stage": "asr_partial", "t": 16771.859517172, "pid": 9960, "text": "Because they're in the trees or birds for us", "src": "ws", "recv": 16803.2202855, "lt": 16803.198191249, "tt": 3.5853}
+{"stage": "llm_request", "t": 16771.864754401, "pid": 9960, "speculative": true, "messages": 55, "chars": 14087, "est_tokens": 3522, "src": "ws", "recv": 16803.2279901, "lt": 16803.203428478, "tt": 3.5906}
+{"stage": "asr_partial", "t": 16771.924479119, "pid": 9960, "text": "Because they're in the trees or birds for us.", "src": "ws", "recv": 16803.2828519, "lt": 16803.263153196, "tt": 3.6503}
+{"stage": "asr_partial", "t": 16772.165132523, "pid": 9960, "text": "Because they're in the trees or birds for us.", "src": "ws", "recv": 16803.5243411, "lt": 16803.5038066, "tt": 3.8909}
+{"stage": "llm_cancel", "t": 16772.291937568, "pid": 9960, "src": "ws", "recv": 16803.6494752, "lt": 16803.630611645, "tt": 4.0177}
+{"stage": "asr_partial", "t": 16772.405097306, "pid": 9960, "text": "Because they're in the trees or birds for us.", "src": "ws", "recv": 16803.7635986, "lt": 16803.743771383, "tt": 4.1309}
+{"stage": "asr_final", "t": 16773.374941885, "pid": 9960, "text": "Because they're in the trees or birds for us.", "src": "ws", "recv": 16804.7351635, "lt": 16804.713615962, "tt": 5.1007}
+{"stage": "llm_request", "t": 16773.380072301, "pid": 9960, "messages": 55, "chars": 14088, "est_tokens": 3522, "src": "ws", "recv": 16804.7421942, "lt": 16804.718746378, "tt": 5.1059}
+{"stage": "user_stopped", "t": 16773.380147355, "pid": 9960, "src": "ws", "recv": 16804.7422136, "lt": 16804.718821432, "tt": 5.1059}
+{"stage": "user_stopped", "t": 16773.380183021, "pid": 9960, "src": "ws", "recv": 16804.7422255, "lt": 16804.718857098, "tt": 5.106}
+{"stage": "llm_first_token", "t": 16773.80745628, "pid": 9960, "src": "ws", "recv": 16805.1696061, "lt": 16805.146130357, "tt": 5.5333}
+{"stage": "llm_usage", "t": 16773.82331504, "pid": 9960, "prompt_tokens": 2529, "completion_tokens": 62, "src": "ws", "recv": 16805.1849281, "lt": 16805.161989117, "tt": 5.5491}
+{"stage": "tts_request", "t": 16773.846234506, "pid": 9960, "src": "ws", "recv": 16805.208126, "lt": 16805.184908583, "tt": 5.572}
+{"stage": "tts_first_audio", "t": 16774.020804959, "pid": 9960, "src": "ws", "recv": 16805.3789222, "lt": 16805.359479036, "tt": 5.7466}
+{"stage": "audio_out", "t": 16774.02561212, "pid": 9960, "src": "ws", "recv": 16805.39112, "lt": 16805.364286197, "tt": 5.7514}
+{"stage": "audio_out", "t": 16774.025698859, "pid": 9960, "src": "ws", "recv": 16805.3911362, "lt": 16805.364372936, "tt": 5.7515}
+{"stage": "bot_stopped", "t": 16779.232799356, "pid": 9960, "src": "ws", "recv": 16810.5901673, "lt": 16810.571473433, "tt": 10.9586}
+{"stage": "bot_stopped", "t": 16779.232883447, "pid": 9960, "src": "ws", "recv": 16810.5912311, "lt": 16810.571557524, "tt": 10.9587}
+{"stage": "llm_request", "t": 16779.238966777, "pid": 9960, "messages": 14, "chars": 9974, "est_tokens": 2494, "src": "ws", "recv": 16810.5976796, "lt": 16810.577640854, "tt": 10.9648}

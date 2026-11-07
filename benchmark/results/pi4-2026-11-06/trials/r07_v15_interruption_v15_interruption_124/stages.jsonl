@@ -1,0 +1,46 @@
+{"stage": "vad_start", "t": 17994.941543051, "pid": 9960, "src": "ws", "recv": 18026.320319, "lt": 18026.280217128002, "tt": 0.4913}
+{"stage": "vad_start", "t": 17994.94168853, "pid": 9960, "src": "ws", "recv": 18026.3203386, "lt": 18026.280362607, "tt": 0.4915}
+{"stage": "interrupted", "t": 17995.370385476, "pid": 9960, "src": "ws", "recv": 18026.7493838, "lt": 18026.709059553, "tt": 0.9202}
+{"stage": "interrupted", "t": 17995.370480771, "pid": 9960, "src": "ws", "recv": 18026.7494054, "lt": 18026.709154848, "tt": 0.9203}
+{"stage": "asr_partial", "t": 17995.484833875, "pid": 9960, "text": "How", "src": "ws", "recv": 18026.8621485, "lt": 18026.823507952, "tt": 1.0346}
+{"stage": "asr_partial", "t": 17995.686950233, "pid": 9960, "text": "How often", "src": "ws", "recv": 18027.0641237, "lt": 18027.02562431, "tt": 1.2367}
+{"stage": "asr_partial", "t": 17995.886101608, "pid": 9960, "text": "How often should", "src": "ws", "recv": 18027.2635057, "lt": 18027.224775685, "tt": 1.4359}
+{"stage": "asr_partial", "t": 17996.166844759, "pid": 9960, "text": "How often should I", "src": "ws", "recv": 18027.544425, "lt": 18027.505518836, "tt": 1.7166}
+{"stage": "asr_partial", "t": 17996.366504369, "pid": 9960, "text": "How often should I extra", "src": "ws", "recv": 18027.7437491, "lt": 18027.705178446, "tt": 1.9163}
+{"stage": "vad_end", "t": 17996.47188953, "pid": 9960, "src": "ws", "recv": 18027.8495004, "lt": 18027.810563607, "tt": 2.0217}
+{"stage": "vad_end", "t": 17996.471944104, "pid": 9960, "src": "ws", "recv": 18027.8495202, "lt": 18027.810618181, "tt": 2.0217}
+{"stage": "asr_partial", "t": 17996.651007509, "pid": 9960, "text": "How often should I exercise", "src": "ws", "recv": 18028.029066, "lt": 18027.989681586, "tt": 2.2008}
+{"stage": "llm_request", "t": 17996.654191376, "pid": 9960, "speculative": true, "messages": 51, "chars": 12723, "est_tokens": 3181, "src": "ws", "recv": 18028.0317852, "lt": 18027.992865453, "tt": 2.204}
+{"stage": "asr_final", "t": 17996.743460943, "pid": 9960, "text": "How often should I exercise", "src": "ws", "recv": 18028.122209, "lt": 18028.08213502, "tt": 2.2933}
+{"stage": "user_stopped", "t": 17996.751202383, "pid": 9960, "src": "ws", "recv": 18028.1318273, "lt": 18028.08987646, "tt": 2.301}
+{"stage": "user_stopped", "t": 17996.751273105, "pid": 9960, "src": "ws", "recv": 18028.1318441, "lt": 18028.089947182, "tt": 2.3011}
+{"stage": "llm_first_token", "t": 17997.24319785, "pid": 9960, "src": "ws", "recv": 18028.6222399, "lt": 18028.581871927, "tt": 2.793}
+{"stage": "llm_usage", "t": 17997.287210781, "pid": 9960, "prompt_tokens": 2503, "completion_tokens": 78, "src": "ws", "recv": 18028.6674875, "lt": 18028.625884858, "tt": 2.837}
+{"stage": "tts_request", "t": 17997.309052859, "pid": 9960, "src": "ws", "recv": 18028.6912869, "lt": 18028.647726936, "tt": 2.8588}
+{"stage": "tts_first_audio", "t": 17997.489043697, "pid": 9960, "src": "ws", "recv": 18028.8661101, "lt": 18028.827717774002, "tt": 3.0388}
+{"stage": "audio_out", "t": 17997.493799915, "pid": 9960, "src": "ws", "recv": 18028.8783913, "lt": 18028.832473992, "tt": 3.0436}
+{"stage": "audio_out", "t": 17997.493883859, "pid": 9960, "src": "ws", "recv": 18028.8784162, "lt": 18028.832557936, "tt": 3.0437}
+{"stage": "vad_start", "t": 17999.577171931, "pid": 9960, "src": "ws", "recv": 18030.9547591, "lt": 18030.915846008, "tt": 5.127}
+{"stage": "vad_start", "t": 17999.57722793, "pid": 9960, "src": "ws", "recv": 18030.9547891, "lt": 18030.915902007, "tt": 5.127}
+{"stage": "asr_partial", "t": 18000.059181782, "pid": 9960, "text": "Can we talk", "src": "ws", "recv": 18031.4480729, "lt": 18031.397855859, "tt": 5.609}
+{"stage": "interrupted", "t": 18000.067445512, "pid": 9960, "src": "ws", "recv": 18031.4516389, "lt": 18031.406119589, "tt": 5.6172}
+{"stage": "interrupted", "t": 18000.06761438, "pid": 9960, "src": "ws", "recv": 18031.4516644, "lt": 18031.406288457, "tt": 5.6174}
+{"stage": "bot_stopped", "t": 18000.1408685, "pid": 9960, "src": "ws", "recv": 18031.5201832, "lt": 18031.479542577, "tt": 5.6907}
+{"stage": "bot_stopped", "t": 18000.140958425, "pid": 9960, "src": "ws", "recv": 18031.5202024, "lt": 18031.479632502, "tt": 5.6908}
+{"stage": "asr_partial", "t": 18000.284571329, "pid": 9960, "text": "Can we talk about", "src": "ws", "recv": 18031.6621153, "lt": 18031.623245406, "tt": 5.8344}
+{"stage": "asr_partial", "t": 18000.523377301, "pid": 9960, "text": "Can we talk about yoga", "src": "ws", "recv": 18031.9007269, "lt": 18031.862051378, "tt": 6.0732}
+{"stage": "asr_partial", "t": 18000.765037219, "pid": 9960, "text": "Can we talk about yoga as", "src": "ws", "recv": 18032.1423294, "lt": 18032.103711296, "tt": 6.3148}
+{"stage": "asr_partial", "t": 18001.00351051, "pid": 9960, "text": "Can we talk about yoga specific", "src": "ws", "recv": 18032.3811405, "lt": 18032.342184587, "tt": 6.5533}
+{"stage": "asr_partial", "t": 18001.166851612, "pid": 9960, "text": "Can we talk about yoga specifically?", "src": "ws", "recv": 18032.5443604, "lt": 18032.505525689, "tt": 6.7166}
+{"stage": "vad_end", "t": 18001.243401931, "pid": 9960, "src": "ws", "recv": 18032.6257951, "lt": 18032.582076008, "tt": 6.7932}
+{"stage": "vad_end", "t": 18001.243464004, "pid": 9960, "src": "ws", "recv": 18032.6258193, "lt": 18032.582138081, "tt": 6.7933}
+{"stage": "llm_request", "t": 18001.256643617, "pid": 9960, "speculative": true, "messages": 52, "chars": 12759, "est_tokens": 3190, "src": "ws", "recv": 18032.6342968, "lt": 18032.595317694, "tt": 6.8064}
+{"stage": "asr_final", "t": 18001.309119534, "pid": 9960, "text": "Can we talk about yoga specifically?", "src": "ws", "recv": 18032.6900823, "lt": 18032.647793611, "tt": 6.8589}
+{"stage": "user_stopped", "t": 18001.319277036, "pid": 9960, "src": "ws", "recv": 18032.7060943, "lt": 18032.657951113, "tt": 6.8691}
+{"stage": "user_stopped", "t": 18001.319377164, "pid": 9960, "src": "ws", "recv": 18032.7061113, "lt": 18032.658051241, "tt": 6.8692}
+{"stage": "llm_first_token", "t": 18001.822423549, "pid": 9960, "src": "ws", "recv": 18033.2021502, "lt": 18033.161097626, "tt": 7.3722}
+{"stage": "llm_usage", "t": 18001.841851435, "pid": 9960, "prompt_tokens": 2480, "completion_tokens": 62, "src": "ws", "recv": 18033.223788, "lt": 18033.180525512, "tt": 7.3916}
+{"stage": "tts_request", "t": 18001.869922657, "pid": 9960, "src": "ws", "recv": 18033.2509827, "lt": 18033.208596734, "tt": 7.4197}
+{"stage": "tts_first_audio", "t": 18002.034111842, "pid": 9960, "src": "ws", "recv": 18033.4115099, "lt": 18033.372785919, "tt": 7.5839}
+{"stage": "audio_out", "t": 18002.03884456, "pid": 9960, "src": "ws", "recv": 18033.4232249, "lt": 18033.377518637, "tt": 7.5886}
+{"stage": "audio_out", "t": 18002.03892754, "pid": 9960, "src": "ws", "recv": 18033.4232427, "lt": 18033.377601617, "tt": 7.5887}

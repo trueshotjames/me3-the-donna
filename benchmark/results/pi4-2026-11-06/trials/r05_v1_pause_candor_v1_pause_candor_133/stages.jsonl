@@ -1,0 +1,79 @@
+{"stage": "vad_start", "t": 17421.926760496, "pid": 9960, "src": "ws", "recv": 17453.2966503, "lt": 17453.265434573, "tt": 0.3087}
+{"stage": "vad_start", "t": 17421.92685505, "pid": 9960, "src": "ws", "recv": 17453.296674, "lt": 17453.265529127, "tt": 0.3088}
+{"stage": "asr_partial", "t": 17422.373310489, "pid": 9960, "text": "two", "src": "ws", "recv": 17453.7433642, "lt": 17453.711984566, "tt": 0.7552}
+{"stage": "asr_partial", "t": 17422.443163129, "pid": 9960, "text": "yes", "src": "ws", "recv": 17453.811552, "lt": 17453.781837206, "tt": 0.8251}
+{"stage": "interrupted", "t": 17422.488753722, "pid": 9960, "src": "ws", "recv": 17453.8584462, "lt": 17453.827427799, "tt": 0.8707}
+{"stage": "interrupted", "t": 17422.488841999, "pid": 9960, "src": "ws", "recv": 17453.8584711, "lt": 17453.827516076, "tt": 0.8708}
+{"stage": "asr_partial", "t": 17422.646179112, "pid": 9960, "text": "Yeah. It's", "src": "ws", "recv": 17454.0145289, "lt": 17453.984853189, "tt": 1.0281}
+{"stage": "asr_partial", "t": 17422.852040633, "pid": 9960, "text": "Yeah. It's", "src": "ws", "recv": 17454.2215493, "lt": 17454.19071471, "tt": 1.234}
+{"stage": "asr_partial", "t": 17423.126911842, "pid": 9960, "text": "Yeah. It's it's", "src": "ws", "recv": 17454.495299, "lt": 17454.465585919, "tt": 1.5088}
+{"stage": "asr_partial", "t": 17423.333395022, "pid": 9960, "text": "Yeah. It's a it's a", "src": "ws", "recv": 17454.7018356, "lt": 17454.672069099, "tt": 1.7153}
+{"stage": "asr_partial", "t": 17423.563686162, "pid": 9960, "text": "Yeah. It's a it's a great", "src": "ws", "recv": 17454.9320834, "lt": 17454.902360239, "tt": 1.9456}
+{"stage": "asr_partial", "t": 17423.812757473, "pid": 9960, "text": "Yeah. It's a it's a great", "src": "ws", "recv": 17455.1823003, "lt": 17455.15143155, "tt": 2.1947}
+{"stage": "asr_partial", "t": 17424.045390399, "pid": 9960, "text": "Yeah. It's a it's a great it's", "src": "ws", "recv": 17455.4161228, "lt": 17455.384064476, "tt": 2.4273}
+{"stage": "asr_partial", "t": 17424.294013012, "pid": 9960, "text": "Yeah. It's a it's a great it's a great", "src": "ws", "recv": 17455.6626797, "lt": 17455.632687089, "tt": 2.6759}
+{"stage": "asr_partial", "t": 17424.523313701, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing", "src": "ws", "recv": 17455.89188, "lt": 17455.861987778, "tt": 2.9052}
+{"stage": "asr_partial", "t": 17424.772456159, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to", "src": "ws", "recv": 17456.1420065, "lt": 17456.111130236, "tt": 3.1544}
+{"stage": "asr_partial", "t": 17425.004672238, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to", "src": "ws", "recv": 17456.3736186, "lt": 17456.343346315, "tt": 3.3866}
+{"stage": "vad_end", "t": 17425.123710759, "pid": 9960, "src": "ws", "recv": 17456.4926435, "lt": 17456.462384836, "tt": 3.5056}
+{"stage": "vad_end", "t": 17425.123763944, "pid": 9960, "src": "ws", "recv": 17456.4926656, "lt": 17456.462438021, "tt": 3.5057}
+{"stage": "asr_partial", "t": 17425.252543787, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to", "src": "ws", "recv": 17456.6220903, "lt": 17456.591217864, "tt": 3.6345}
+{"stage": "asr_partial", "t": 17425.483149182, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to", "src": "ws", "recv": 17456.8518414, "lt": 17456.821823259, "tt": 3.8651}
+{"stage": "asr_partial", "t": 17425.732593803, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to", "src": "ws", "recv": 17457.1020243, "lt": 17457.07126788, "tt": 4.1145}
+{"stage": "vad_start", "t": 17425.760358917, "pid": 9960, "src": "ws", "recv": 17457.1285037, "lt": 17457.099032994, "tt": 4.1423}
+{"stage": "vad_start", "t": 17425.760417342, "pid": 9960, "src": "ws", "recv": 17457.1285297, "lt": 17457.099091419, "tt": 4.1423}
+{"stage": "asr_partial", "t": 17425.963558786, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be", "src": "ws", "recv": 17457.3321351, "lt": 17457.302232863, "tt": 4.3455}
+{"stage": "asr_partial", "t": 17426.214685035, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be in", "src": "ws", "recv": 17457.5837262, "lt": 17457.553359112, "tt": 4.5966}
+{"stage": "asr_partial", "t": 17426.443077402, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested", "src": "ws", "recv": 17457.8118864, "lt": 17457.781751479, "tt": 4.825}
+{"stage": "asr_partial", "t": 17426.692676392, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested", "src": "ws", "recv": 17458.062114, "lt": 17458.031350469, "tt": 5.0746}
+{"stage": "asr_partial", "t": 17426.96717555, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in.", "src": "ws", "recv": 17458.3356807, "lt": 17458.305849627, "tt": 5.3491}
+{"stage": "asr_partial", "t": 17427.173805284, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And", "src": "ws", "recv": 17458.542251, "lt": 17458.512479361, "tt": 5.5557}
+{"stage": "asr_partial", "t": 17427.40327549, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in, and I'm", "src": "ws", "recv": 17458.7718512, "lt": 17458.741949567, "tt": 5.7852}
+{"stage": "asr_partial", "t": 17427.653560823, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... I", "src": "ws", "recv": 17459.0228821, "lt": 17458.9922349, "tt": 6.0355}
+{"stage": "asr_partial", "t": 17427.889438652, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know,", "src": "ws", "recv": 17459.2585789, "lt": 17459.228112729, "tt": 6.2714}
+{"stage": "asr_partial", "t": 17428.13264487, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm", "src": "ws", "recv": 17459.5023068, "lt": 17459.471318947, "tt": 6.5146}
+{"stage": "asr_partial", "t": 17428.366692056, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bundled", "src": "ws", "recv": 17459.7352025, "lt": 17459.705366133, "tt": 6.7486}
+{"stage": "asr_partial", "t": 17428.614044963, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we", "src": "ws", "recv": 17459.9825259, "lt": 17459.95271904, "tt": 6.996}
+{"stage": "asr_partial", "t": 17428.844782782, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have", "src": "ws", "recv": 17460.2142145, "lt": 17460.183456859, "tt": 7.2267}
+{"stage": "asr_partial", "t": 17429.093455525, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a", "src": "ws", "recv": 17460.4635366, "lt": 17460.432129602, "tt": 7.4754}
+{"stage": "vad_end", "t": 17429.315458195, "pid": 9960, "src": "ws", "recv": 17460.6843827, "lt": 17460.654132272, "tt": 7.6974}
+{"stage": "vad_end", "t": 17429.315513991, "pid": 9960, "src": "ws", "recv": 17460.6844016, "lt": 17460.654188068, "tt": 7.6974}
+{"stage": "asr_partial", "t": 17429.329118875, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a", "src": "ws", "recv": 17460.6980114, "lt": 17460.667792952, "tt": 7.711}
+{"stage": "vad_start", "t": 17429.536414712, "pid": 9960, "src": "ws", "recv": 17460.904551, "lt": 17460.875088789002, "tt": 7.9183}
+{"stage": "vad_start", "t": 17429.536472915, "pid": 9960, "src": "ws", "recv": 17460.9045727, "lt": 17460.875146992, "tt": 7.9184}
+{"stage": "asr_partial", "t": 17429.574172385, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a", "src": "ws", "recv": 17460.942946, "lt": 17460.912846462, "tt": 7.9561}
+{"stage": "asr_partial", "t": 17429.807563097, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I", "src": "ws", "recv": 17461.176038, "lt": 17461.146237174, "tt": 8.1895}
+{"stage": "asr_partial", "t": 17430.054339363, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I like", "src": "ws", "recv": 17461.4229111, "lt": 17461.39301344, "tt": 8.4363}
+{"stage": "asr_partial", "t": 17430.28459943, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in", "src": "ws", "recv": 17461.6532536, "lt": 17461.623273507, "tt": 8.6665}
+{"stage": "asr_partial", "t": 17430.534262845, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the", "src": "ws", "recv": 17461.9030399, "lt": 17461.872936922002, "tt": 8.9162}
+{"stage": "asr_partial", "t": 17430.764109491, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago", "src": "ws", "recv": 17462.1328348, "lt": 17462.102783568, "tt": 9.146}
+{"stage": "asr_partial", "t": 17431.01369424, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago", "src": "ws", "recv": 17462.383347, "lt": 17462.352368317, "tt": 9.3956}
+{"stage": "asr_partial", "t": 17431.243967825, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area", "src": "ws", "recv": 17462.6125866, "lt": 17462.582641902, "tt": 9.6259}
+{"stage": "asr_partial", "t": 17431.493256874, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and", "src": "ws", "recv": 17462.8626938, "lt": 17462.831930951, "tt": 9.8752}
+{"stage": "asr_partial", "t": 17431.766791156, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and we", "src": "ws", "recv": 17463.1353721, "lt": 17463.105465233, "tt": 10.1487}
+{"stage": "asr_partial", "t": 17431.974110511, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and we have", "src": "ws", "recv": 17463.3426769, "lt": 17463.312784588, "tt": 10.356}
+{"stage": "asr_partial", "t": 17432.248843685, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and we have", "src": "ws", "recv": 17463.6188397, "lt": 17463.587517762, "tt": 10.6308}
+{"stage": "vad_end", "t": 17432.288525704, "pid": 9960, "src": "ws", "recv": 17463.6651201, "lt": 17463.627199781, "tt": 10.6704}
+{"stage": "vad_end", "t": 17432.28858774, "pid": 9960, "src": "ws", "recv": 17463.6651378, "lt": 17463.627261817, "tt": 10.6705}
+{"stage": "llm_request", "t": 17432.30250338, "pid": 9960, "speculative": true, "messages": 53, "chars": 12811, "est_tokens": 3203, "src": "ws", "recv": 17463.6710747, "lt": 17463.641177457, "tt": 10.6844}
+{"stage": "asr_partial", "t": 17432.487347092, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and we have", "src": "ws", "recv": 17463.8558895, "lt": 17463.826021169, "tt": 10.8693}
+{"stage": "asr_partial", "t": 17432.684598055, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and we have", "src": "ws", "recv": 17464.0531297, "lt": 17464.023272132, "tt": 11.0665}
+{"stage": "llm_cancel", "t": 17432.752339703, "pid": 9960, "src": "ws", "recv": 17464.1196196, "lt": 17464.091013780002, "tt": 11.1343}
+{"stage": "asr_partial", "t": 17432.934642502, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and we have", "src": "ws", "recv": 17464.3035114, "lt": 17464.273316579, "tt": 11.3166}
+{"stage": "asr_partial", "t": 17433.166030092, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and we have", "src": "ws", "recv": 17464.5349413, "lt": 17464.504704169, "tt": 11.5479}
+{"stage": "llm_request", "t": 17433.292243726, "pid": 9960, "speculative": true, "messages": 53, "chars": 12811, "est_tokens": 3203, "src": "ws", "recv": 17464.6612039, "lt": 17464.630917803, "tt": 11.6742}
+{"stage": "asr_partial", "t": 17433.414653094, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and we have", "src": "ws", "recv": 17464.7832368, "lt": 17464.753327171, "tt": 11.7966}
+{"stage": "llm_cancel", "t": 17433.648790723, "pid": 9960, "src": "ws", "recv": 17465.0164498, "lt": 17464.9874648, "tt": 12.0307}
+{"stage": "asr_final", "t": 17434.45474003, "pid": 9960, "text": "Yeah. It's a it's a great it's a great thing to be interested in. And I'm... you know, I'm bummed we have a... I I live in the Chicago area, and we have", "src": "ws", "recv": 17465.8239767, "lt": 17465.793414107, "tt": 12.8367}
+{"stage": "llm_request", "t": 17434.458647962, "pid": 9960, "messages": 53, "chars": 12811, "est_tokens": 3203, "src": "ws", "recv": 17465.8294011, "lt": 17465.797322039, "tt": 12.8406}
+{"stage": "user_stopped", "t": 17434.458718517, "pid": 9960, "src": "ws", "recv": 17465.8294281, "lt": 17465.797392594, "tt": 12.8406}
+{"stage": "user_stopped", "t": 17434.458752887, "pid": 9960, "src": "ws", "recv": 17465.8294404, "lt": 17465.797426964, "tt": 12.8407}
+{"stage": "llm_first_token", "t": 17434.89880424, "pid": 9960, "src": "ws", "recv": 17466.2692067, "lt": 17466.237478317, "tt": 13.2807}
+{"stage": "llm_usage", "t": 17434.929916905, "pid": 9960, "prompt_tokens": 2586, "completion_tokens": 44, "src": "ws", "recv": 17466.3011164, "lt": 17466.268590982, "tt": 13.3118}
+{"stage": "tts_request", "t": 17434.951401616, "pid": 9960, "src": "ws", "recv": 17466.3241384, "lt": 17466.290075693, "tt": 13.3333}
+{"stage": "tts_first_audio", "t": 17435.164110625, "pid": 9960, "src": "ws", "recv": 17466.533824, "lt": 17466.502784702, "tt": 13.546}
+{"stage": "audio_out", "t": 17435.171623549, "pid": 9960, "src": "ws", "recv": 17466.5471, "lt": 17466.510297626, "tt": 13.5535}
+{"stage": "audio_out", "t": 17435.171727048, "pid": 9960, "src": "ws", "recv": 17466.5471323, "lt": 17466.510401125, "tt": 13.5536}
+{"stage": "bot_stopped", "t": 17439.699852038, "pid": 9960, "src": "ws", "recv": 17471.0685727, "lt": 17471.038526115, "tt": 18.0818}
+{"stage": "bot_stopped", "t": 17439.699935592, "pid": 9960, "src": "ws", "recv": 17471.0685937, "lt": 17471.038609669, "tt": 18.0819}
+{"stage": "llm_request", "t": 17439.705626669, "pid": 9960, "messages": 14, "chars": 10240, "est_tokens": 2560, "src": "ws", "recv": 17471.0736628, "lt": 17471.044300746, "tt": 18.0875}

@@ -1,0 +1,29 @@
+{
+  "host": "trueshot-pi",
+  "os": "Linux 6.18.50+rpt-rpi-v8",
+  "machine": "aarch64",
+  "pi_model": "Raspberry Pi 4 Model B Rev 1.5",
+  "ncpu": 4,
+  "caps": {
+    "backend": "procfs",
+    "cpu": true,
+    "cores": true,
+    "memory": true,
+    "processes": true,
+    "temperature": true,
+    "clock": true,
+    "throttle": true
+  },
+  "slow_every": 2.0,
+  "patterns": {
+    "asr_mcp": "mcp_servers.asr",
+    "tts_mcp": "mcp_servers.tts",
+    "tools_mcp": "mcp_servers.tools"
+  },
+  "python": "3.13.5",
+  "ram_mb": 3790,
+  "network": "wifi",
+  "link_network": "ethernet",
+  "source": "remote",
+  "clock_offset": 31.33820168800048
+}

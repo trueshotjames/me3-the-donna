@@ -1,0 +1,41 @@
+{"stage": "vad_start", "t": 16163.802150454, "pid": 9960, "src": "ws", "recv": 16195.1523284, "lt": 16195.140824531, "tt": 0.2963}
+{"stage": "vad_start", "t": 16163.802246731, "pid": 9960, "src": "ws", "recv": 16195.1523516, "lt": 16195.140920808, "tt": 0.2964}
+{"stage": "interrupted", "t": 16164.287090962, "pid": 9960, "src": "ws", "recv": 16195.6372029, "lt": 16195.625765039, "tt": 0.7813}
+{"stage": "interrupted", "t": 16164.287180813, "pid": 9960, "src": "ws", "recv": 16195.6372255, "lt": 16195.62585489, "tt": 0.7814}
+{"stage": "asr_partial", "t": 16164.40495258, "pid": 9960, "text": "How can I", "src": "ws", "recv": 16195.7544227, "lt": 16195.743626657, "tt": 0.8991}
+{"stage": "asr_partial", "t": 16164.60474026, "pid": 9960, "text": "How can I proceed", "src": "ws", "recv": 16195.9534691, "lt": 16195.943414337, "tt": 1.0989}
+{"stage": "asr_partial", "t": 16164.851908095, "pid": 9960, "text": "How can I participate", "src": "ws", "recv": 16196.2037975, "lt": 16196.190582172001, "tt": 1.3461}
+{"stage": "asr_partial", "t": 16165.084291576, "pid": 9960, "text": "How can I participate in", "src": "ws", "recv": 16196.4330093, "lt": 16196.422965653, "tt": 1.5785}
+{"stage": "asr_partial", "t": 16165.331935701, "pid": 9960, "text": "How can I participate in", "src": "ws", "recv": 16196.6834661, "lt": 16196.670609778, "tt": 1.8261}
+{"stage": "asr_partial", "t": 16165.564386199, "pid": 9960, "text": "How can I participate in environmental", "src": "ws", "recv": 16196.9134483, "lt": 16196.903060276, "tt": 2.0586}
+{"stage": "asr_partial", "t": 16165.808108466, "pid": 9960, "text": "How can I participate in environmental", "src": "ws", "recv": 16197.1586232, "lt": 16197.146782543, "tt": 2.3023}
+{"stage": "asr_partial", "t": 16166.045935694, "pid": 9960, "text": "How can I participate in environmental conservation", "src": "ws", "recv": 16197.3947329, "lt": 16197.384609771, "tt": 2.5401}
+{"stage": "llm_request", "t": 16166.091023137, "pid": 9960, "speculative": true, "messages": 68, "chars": 17068, "est_tokens": 4267, "src": "ws", "recv": 16197.4386872, "lt": 16197.429697214, "tt": 2.5852}
+{"stage": "llm_cancel", "t": 16166.169286781, "pid": 9960, "src": "ws", "recv": 16197.5169664, "lt": 16197.507960858, "tt": 2.6635}
+{"stage": "vad_end", "t": 16166.231022055, "pid": 9960, "src": "ws", "recv": 16197.5801107, "lt": 16197.569696132, "tt": 2.7252}
+{"stage": "vad_end", "t": 16166.23107611, "pid": 9960, "src": "ws", "recv": 16197.5801312, "lt": 16197.569750187, "tt": 2.7253}
+{"stage": "llm_request", "t": 16166.303648195, "pid": 9960, "speculative": true, "messages": 68, "chars": 17069, "est_tokens": 4267, "src": "ws", "recv": 16197.6546091, "lt": 16197.642322272, "tt": 2.7978}
+{"stage": "asr_final", "t": 16166.34588858, "pid": 9960, "text": "How can I participate in environmental conservation?", "src": "ws", "recv": 16197.697427, "lt": 16197.684562657, "tt": 2.8401}
+{"stage": "user_stopped", "t": 16166.356676206, "pid": 9960, "src": "ws", "recv": 16197.7101777, "lt": 16197.695350283, "tt": 2.8509}
+{"stage": "user_stopped", "t": 16166.356777779, "pid": 9960, "src": "ws", "recv": 16197.7102012, "lt": 16197.695451856, "tt": 2.851}
+{"stage": "vad_start", "t": 16166.368302729, "pid": 9960, "src": "ws", "recv": 16197.7203623, "lt": 16197.706976806001, "tt": 2.8625}
+{"stage": "vad_start", "t": 16166.368372636, "pid": 9960, "src": "ws", "recv": 16197.7203888, "lt": 16197.707046713, "tt": 2.8626}
+{"stage": "asr_partial", "t": 16166.763991433, "pid": 9960, "text": "from", "src": "ws", "recv": 16198.1128193, "lt": 16198.10266551, "tt": 3.2582}
+{"stage": "llm_first_token", "t": 16166.865312255, "pid": 9960, "src": "ws", "recv": 16198.2205106, "lt": 16198.203986332, "tt": 3.3595}
+{"stage": "llm_usage", "t": 16166.889075332, "pid": 9960, "prompt_tokens": 2570, "completion_tokens": 67, "src": "ws", "recv": 16198.242893, "lt": 16198.227749409, "tt": 3.3833}
+{"stage": "tts_request", "t": 16166.916648047, "pid": 9960, "src": "ws", "recv": 16198.2683506, "lt": 16198.255322124, "tt": 3.4108}
+{"stage": "vad_end", "t": 16166.951613744, "pid": 9960, "src": "ws", "recv": 16198.3008504, "lt": 16198.290287821, "tt": 3.4458}
+{"stage": "vad_end", "t": 16166.951679762, "pid": 9960, "src": "ws", "recv": 16198.3008753, "lt": 16198.290353839, "tt": 3.4459}
+{"stage": "interrupted", "t": 16167.013870568, "pid": 9960, "src": "ws", "recv": 16198.3644748, "lt": 16198.352544645, "tt": 3.5081}
+{"stage": "interrupted", "t": 16167.013971844, "pid": 9960, "src": "ws", "recv": 16198.3644998, "lt": 16198.352645921, "tt": 3.5082}
+{"stage": "asr_partial", "t": 16167.086682798, "pid": 9960, "text": "from home.", "src": "ws", "recv": 16198.4361063, "lt": 16198.425356875001, "tt": 3.5809}
+{"stage": "llm_request", "t": 16167.090114737, "pid": 9960, "speculative": true, "messages": 69, "chars": 17079, "est_tokens": 4270, "src": "ws", "recv": 16198.4406097, "lt": 16198.428788814, "tt": 3.5843}
+{"stage": "llm_usage", "t": 16167.590712274, "pid": 9960, "prompt_tokens": 2577, "completion_tokens": 76, "src": "ws", "recv": 16198.9403399, "lt": 16198.929386351001, "tt": 4.0849}
+{"stage": "asr_final", "t": 16167.74412236, "pid": 9960, "text": "from home.", "src": "ws", "recv": 16199.0930078, "lt": 16199.082796437, "tt": 4.2383}
+{"stage": "user_stopped", "t": 16167.749237852, "pid": 9960, "src": "ws", "recv": 16199.099505, "lt": 16199.087911929, "tt": 4.2434}
+{"stage": "user_stopped", "t": 16167.749308592, "pid": 9960, "src": "ws", "recv": 16199.0995329, "lt": 16199.087982669, "tt": 4.2435}
+{"stage": "llm_first_token", "t": 16167.753979756, "pid": 9960, "src": "ws", "recv": 16199.1094957, "lt": 16199.092653833, "tt": 4.2482}
+{"stage": "tts_request", "t": 16167.782424016, "pid": 9960, "src": "ws", "recv": 16199.1358883, "lt": 16199.121098093001, "tt": 4.2766}
+{"stage": "tts_first_audio", "t": 16167.994653024, "pid": 9960, "src": "ws", "recv": 16199.3432373, "lt": 16199.333327101, "tt": 4.4888}
+{"stage": "audio_out", "t": 16167.999119024, "pid": 9960, "src": "ws", "recv": 16199.3521832, "lt": 16199.337793101, "tt": 4.4933}
+{"stage": "audio_out", "t": 16167.999204541, "pid": 9960, "src": "ws", "recv": 16199.3522012, "lt": 16199.337878618, "tt": 4.4934}

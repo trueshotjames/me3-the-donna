@@ -1,0 +1,86 @@
+{
+  "trial": "r04_v1_interrupt_v1_interrupt_178",
+  "group": "v1_interrupt",
+  "clip": "v1_interrupt_178",
+  "variant": "main",
+  "expected": "stop, then answer the new request",
+  "duration": 22.592,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.2266875
+    },
+    {
+      "name": "overlap",
+      "t": 4.252,
+      "len": 3.5306875
+    }
+  ],
+  "live_bot_starts": [
+    2.752,
+    9.184,
+    10.816
+  ],
+  "live_bot_ends": [
+    3.968,
+    10.368,
+    22.24
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "I love sci-fi!",
+    "interrupt_text": "Actually, let's switch gears. Do you have any advice on gardening?",
+    "source_id": "178"
+  },
+  "mono": [
+    17262.4660176,
+    17285.0552686
+  ],
+  "bot_segments": [
+    [
+      2.722,
+      3.998
+    ],
+    [
+      9.154,
+      22.27
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.2266875
+  ],
+  "overlap_played": true,
+  "t_stop": null,
+  "t_resp": 1.3713125000000002,
+  "bot_speaking_at_onset": false,
+  "spoke_through": false,
+  "overlap": [
+    4.418,
+    7.7826875
+  ],
+  "tor": 1,
+  "first_start": 9.154,
+  "spoke_s": 6.6286875,
+  "latency": 1.3713125000000002,
+  "actual": "was already silent, back 1.37 s after",
+  "verdict": "✓ yielded, 1.37 s",
+  "ok": true,
+  "marks": 69,
+  "final": {
+    "tor": 1,
+    "words": 18,
+    "latency": 1.3713125000000002,
+    "t_stop": null,
+    "verdict": "✓ yielded, 1.37 s",
+    "ok": true,
+    "rating": 5,
+    "transcript": "Soyophy is great. Start with healthy soil, water consistently, but avoid overwatering and choose plants seeded to your climate and some might. Also, mulch to retain moisture and regularly remove weeds to keep plants thriving."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

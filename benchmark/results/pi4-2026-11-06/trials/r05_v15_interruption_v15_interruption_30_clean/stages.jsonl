@@ -1,0 +1,25 @@
+{"stage": "vad_start", "t": 17370.055411433, "pid": 9960, "src": "ws", "recv": 17401.4246783, "lt": 17401.39408551, "tt": 0.4694}
+{"stage": "vad_start", "t": 17370.055509709, "pid": 9960, "src": "ws", "recv": 17401.4247037, "lt": 17401.394183786, "tt": 0.4695}
+{"stage": "asr_partial", "t": 17370.483614246, "pid": 9960, "text": "My", "src": "ws", "recv": 17401.851187, "lt": 17401.822288323, "tt": 0.8976}
+{"stage": "interrupted", "t": 17370.606420626, "pid": 9960, "src": "ws", "recv": 17401.9752345, "lt": 17401.945094703, "tt": 1.0204}
+{"stage": "interrupted", "t": 17370.60651681, "pid": 9960, "src": "ws", "recv": 17401.975256, "lt": 17401.945190887, "tt": 1.0205}
+{"stage": "asr_partial", "t": 17370.806980953, "pid": 9960, "text": "My tomatoes", "src": "ws", "recv": 17402.1739863, "lt": 17402.14565503, "tt": 1.221}
+{"stage": "asr_partial", "t": 17371.00999386, "pid": 9960, "text": "My tomatoes are not", "src": "ws", "recv": 17402.3805754, "lt": 17402.348667937, "tt": 1.424}
+{"stage": "asr_partial", "t": 17371.286700654, "pid": 9960, "text": "My tomatoes are not growing", "src": "ws", "recv": 17402.6544334, "lt": 17402.625374731, "tt": 1.7007}
+{"stage": "asr_partial", "t": 17371.493225351, "pid": 9960, "text": "My tomatoes are not growing well", "src": "ws", "recv": 17402.8619655, "lt": 17402.831899428, "tt": 1.9072}
+{"stage": "asr_partial", "t": 17371.767144402, "pid": 9960, "text": "My tomatoes are not growing well this", "src": "ws", "recv": 17403.134832, "lt": 17403.105818479, "tt": 2.1811}
+{"stage": "asr_partial", "t": 17371.975464354, "pid": 9960, "text": "My tomatoes are not growing well this season,", "src": "ws", "recv": 17403.3431347, "lt": 17403.314138431, "tt": 2.3895}
+{"stage": "vad_end", "t": 17372.196386814, "pid": 9960, "src": "ws", "recv": 17403.5644767, "lt": 17403.535060891, "tt": 2.6104}
+{"stage": "vad_end", "t": 17372.196442368, "pid": 9960, "src": "ws", "recv": 17403.5645038, "lt": 17403.535116445, "tt": 2.6104}
+{"stage": "asr_partial", "t": 17372.252704531, "pid": 9960, "text": "My tomatoes are not growing well this season.", "src": "ws", "recv": 17403.6218005, "lt": 17403.591378608002, "tt": 2.6667}
+{"stage": "llm_request", "t": 17372.256767572, "pid": 9960, "speculative": true, "messages": 49, "chars": 11962, "est_tokens": 2990, "src": "ws", "recv": 17403.6265075, "lt": 17403.595441649, "tt": 2.6708}
+{"stage": "asr_partial", "t": 17372.484205635, "pid": 9960, "text": "My tomatoes are not growing well this season.", "src": "ws", "recv": 17403.8517404, "lt": 17403.822879712, "tt": 2.8982}
+{"stage": "llm_usage", "t": 17372.961797919, "pid": 9960, "prompt_tokens": 2432, "completion_tokens": 145, "src": "ws", "recv": 17404.3305678, "lt": 17404.300471996, "tt": 3.3758}
+{"stage": "asr_final", "t": 17373.370100297, "pid": 9960, "text": "My tomatoes are not growing well this season.", "src": "ws", "recv": 17404.7390569, "lt": 17404.708774374, "tt": 3.7841}
+{"stage": "user_stopped", "t": 17373.37825151, "pid": 9960, "src": "ws", "recv": 17404.7562804, "lt": 17404.716925587, "tt": 3.7922}
+{"stage": "user_stopped", "t": 17373.378353693, "pid": 9960, "src": "ws", "recv": 17404.7563073, "lt": 17404.71702777, "tt": 3.7923}
+{"stage": "llm_first_token", "t": 17373.383092356, "pid": 9960, "src": "ws", "recv": 17404.7636813, "lt": 17404.721766433002, "tt": 3.7971}
+{"stage": "tts_request", "t": 17373.431363489, "pid": 9960, "src": "ws", "recv": 17404.8072719, "lt": 17404.770037566, "tt": 3.8454}
+{"stage": "tts_first_audio", "t": 17373.629536013, "pid": 9960, "src": "ws", "recv": 17404.9981179, "lt": 17404.96821009, "tt": 4.0435}
+{"stage": "audio_out", "t": 17373.637265138, "pid": 9960, "src": "ws", "recv": 17405.0115602, "lt": 17404.975939215, "tt": 4.0513}
+{"stage": "audio_out", "t": 17373.637366155, "pid": 9960, "src": "ws", "recv": 17405.011585, "lt": 17404.976040232, "tt": 4.0514}

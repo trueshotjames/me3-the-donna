@@ -1,0 +1,55 @@
+{
+  "text": "Chosi -ga -de -hao -ki -de -yu.",
+  "chunks": [
+    {
+      "text": "Chosi",
+      "timestamp": [
+        3.63,
+        4.43
+      ]
+    },
+    {
+      "text": "-ga",
+      "timestamp": [
+        4.43,
+        4.91
+      ]
+    },
+    {
+      "text": "-de",
+      "timestamp": [
+        4.91,
+        5.07
+      ]
+    },
+    {
+      "text": "-hao",
+      "timestamp": [
+        5.07,
+        5.43
+      ]
+    },
+    {
+      "text": "-ki",
+      "timestamp": [
+        5.43,
+        5.83
+      ]
+    },
+    {
+      "text": "-de",
+      "timestamp": [
+        5.83,
+        6.01
+      ]
+    },
+    {
+      "text": "-yu.",
+      "timestamp": [
+        6.01,
+        6.25
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

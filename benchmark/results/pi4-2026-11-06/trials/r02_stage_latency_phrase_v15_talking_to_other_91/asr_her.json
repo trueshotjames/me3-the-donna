@@ -1,0 +1,20 @@
+{
+  "text": "Buenos dias.",
+  "chunks": [
+    {
+      "text": "Buenos",
+      "timestamp": [
+        2.42,
+        3.26
+      ]
+    },
+    {
+      "text": "dias.",
+      "timestamp": [
+        3.26,
+        4.36
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

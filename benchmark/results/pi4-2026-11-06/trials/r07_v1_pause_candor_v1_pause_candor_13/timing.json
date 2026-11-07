@@ -1,0 +1,64 @@
+{
+  "trial": "r07_v1_pause_candor_v1_pause_candor_13",
+  "group": "v1_pause_candor",
+  "clip": "v1_pause_candor_13",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 15.488,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 8.32
+    }
+  ],
+  "live_bot_starts": [
+    9.728
+  ],
+  "live_bot_ends": [
+    15.136
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      2.8199999999999363,
+      3.5
+    ],
+    "source_id": "13",
+    "text": "Regular house Um If you want to not be in like a shitty neighborhood quarter mil"
+  },
+  "mono": [
+    17914.3632569,
+    17929.8549533
+  ],
+  "bot_segments": [
+    [
+      9.698,
+      15.166
+    ]
+  ],
+  "play_first": [
+    0.0,
+    8.32
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 69,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "Do you want tips on finding a house in a better neighborhood, or are you asking about a specific price range?"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

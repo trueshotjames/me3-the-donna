@@ -1,0 +1,97 @@
+{
+  "text": "got it. You're in South Alabama and your college is in Central Alabama.",
+  "chunks": [
+    {
+      "text": "got",
+      "timestamp": [
+        0.0,
+        1.32
+      ]
+    },
+    {
+      "text": "it.",
+      "timestamp": [
+        5.26,
+        5.44
+      ]
+    },
+    {
+      "text": "You're",
+      "timestamp": [
+        5.92,
+        6.14
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        6.14,
+        6.24
+      ]
+    },
+    {
+      "text": "South",
+      "timestamp": [
+        6.24,
+        6.44
+      ]
+    },
+    {
+      "text": "Alabama",
+      "timestamp": [
+        6.44,
+        6.82
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        6.82,
+        7.68
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        7.68,
+        7.8
+      ]
+    },
+    {
+      "text": "college",
+      "timestamp": [
+        7.8,
+        8.14
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        8.14,
+        8.48
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        8.48,
+        8.62
+      ]
+    },
+    {
+      "text": "Central",
+      "timestamp": [
+        8.62,
+        8.9
+      ]
+    },
+    {
+      "text": "Alabama.",
+      "timestamp": [
+        8.9,
+        9.34
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,64 @@
+{
+  "trial": "r01_v1_pause_synth_v1_pause_synth_98",
+  "group": "v1_pause_synth",
+  "clip": "v1_pause_synth_98",
+  "variant": "main",
+  "expected": "stay silent through the pause",
+  "duration": 13.568,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 8.2026875
+    }
+  ],
+  "live_bot_starts": [
+    9.728
+  ],
+  "live_bot_ends": [
+    13.216
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "pause": [
+      5.02,
+      6.9
+    ],
+    "source_id": "98",
+    "text": "I was thinking maybe something action packed. I heard that the new superhero movie is really like [UM] well, Crick says groundbreaking."
+  },
+  "mono": [
+    16425.6821315,
+    16439.2300705
+  ],
+  "bot_segments": [
+    [
+      9.698,
+      13.246
+    ]
+  ],
+  "play_first": [
+    0.0,
+    8.2026875
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "cut_in_during_pause": false,
+  "actual": "silent during clip",
+  "verdict": "✓ TOR 0",
+  "ok": true,
+  "marks": 65,
+  "final": {
+    "tor": 0,
+    "words": 0,
+    "verdict": "✓ TOR 0",
+    "ok": true,
+    "transcript": "For high -energy thrills, try the alpine zipline and interlocking."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

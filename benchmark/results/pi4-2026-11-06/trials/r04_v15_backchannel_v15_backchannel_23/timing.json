@@ -1,0 +1,99 @@
+{
+  "trial": "r04_v15_backchannel_v15_backchannel_23",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_23",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 14.752,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.912
+    },
+    {
+      "name": "overlap",
+      "t": 4.7959375,
+      "len": 0.743
+    }
+  ],
+  "live_bot_starts": [
+    3.296,
+    5.696
+  ],
+  "live_bot_ends": [
+    5.024,
+    14.4
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Summarize data privacy clearly.",
+    "current_turn_text": "",
+    "overlap_text": "sure yeah",
+    "overlap_duration": 0.74,
+    "overlap_window": [
+      5.8580000000000005,
+      6.601000000000001
+    ],
+    "source_id": "23"
+  },
+  "mono": [
+    17164.1834001,
+    17178.9103785
+  ],
+  "bot_segments": [
+    [
+      3.266,
+      5.054
+    ],
+    [
+      5.666,
+      14.43
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.912
+  ],
+  "overlap_played": true,
+  "t_stop": 0.22000000000000064,
+  "t_resp": 0.13200000000000056,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.834,
+    5.534
+  ],
+  "tor": 1,
+  "first_start": 5.666,
+  "spoke_s": 7.872937499999999,
+  "latency": 0.12706250000000008,
+  "actual": "stopped after 0.22 s, back 0.13 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 31,
+  "final": {
+    "t_stop": 0.22000000000000064,
+    "t_resp": 0.13200000000000056,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": 0.6211180124223574,
+      "pitch_mean": -30.486318376675996,
+      "pitch_sd": -16.242245034502922,
+      "intensity_mean": -0.14887706589848193,
+      "intensity_sd": 0.6206480840885114,
+      "utmosv2": null
+    },
+    "transcript": "Data privacy means keeping personal information safe, limiting who can see or use it, and giving individuals control over how their data is collected, stored, and shared.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

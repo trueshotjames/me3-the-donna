@@ -1,0 +1,25 @@
+{"stage": "vad_start", "t": 16834.958419916, "pid": 9960, "src": "ws", "recv": 16866.3186582, "lt": 16866.297093993002, "tt": 0.1563}
+{"stage": "vad_start", "t": 16834.958504841, "pid": 9960, "src": "ws", "recv": 16866.3186796, "lt": 16866.297178918, "tt": 0.1564}
+{"stage": "interrupted", "t": 16835.449176342, "pid": 9960, "src": "ws", "recv": 16866.8096173, "lt": 16866.787850419, "tt": 0.6471}
+{"stage": "interrupted", "t": 16835.449265507, "pid": 9960, "src": "ws", "recv": 16866.8096383, "lt": 16866.787939584, "tt": 0.6472}
+{"stage": "asr_partial", "t": 16835.56656377, "pid": 9960, "text": "Define the", "src": "ws", "recv": 16866.9259548, "lt": 16866.905237847, "tt": 0.7645}
+{"stage": "asr_partial", "t": 16835.693348616, "pid": 9960, "text": "Define the word", "src": "ws", "recv": 16867.0536764, "lt": 16867.032022693, "tt": 0.8912}
+{"stage": "asr_partial", "t": 16835.964210846, "pid": 9960, "text": "Define the word as", "src": "ws", "recv": 16867.3233641, "lt": 16867.302884923, "tt": 1.1621}
+{"stage": "asr_partial", "t": 16836.173376179, "pid": 9960, "text": "Define the word effeminate", "src": "ws", "recv": 16867.5337647, "lt": 16867.512050256, "tt": 1.3713}
+{"stage": "asr_partial", "t": 16836.44447598, "pid": 9960, "text": "Define the word ephemeral", "src": "ws", "recv": 16867.8039181, "lt": 16867.783150057, "tt": 1.6424}
+{"stage": "vad_end", "t": 16836.463091484, "pid": 9960, "src": "ws", "recv": 16867.827026, "lt": 16867.801765561002, "tt": 1.661}
+{"stage": "vad_end", "t": 16836.463143335, "pid": 9960, "src": "ws", "recv": 16867.8270441, "lt": 16867.801817412, "tt": 1.661}
+{"stage": "llm_request", "t": 16836.473770125, "pid": 9960, "speculative": true, "messages": 22, "chars": 10251, "est_tokens": 2563, "src": "ws", "recv": 16867.8338155, "lt": 16867.812444202, "tt": 1.6717}
+{"stage": "asr_partial", "t": 16836.653512814, "pid": 9960, "text": "Define the word ephemeral.", "src": "ws", "recv": 16868.0140656, "lt": 16867.992186891, "tt": 1.8514}
+{"stage": "asr_final", "t": 16836.865146893, "pid": 9960, "text": "Define the word ephemeral", "src": "ws", "recv": 16868.2254117, "lt": 16868.20382097, "tt": 2.063}
+{"stage": "user_stopped", "t": 16836.872600946, "pid": 9960, "src": "ws", "recv": 16868.2424605, "lt": 16868.211275023, "tt": 2.0705}
+{"stage": "user_stopped", "t": 16836.872667352, "pid": 9960, "src": "ws", "recv": 16868.2424912, "lt": 16868.211341429, "tt": 2.0706}
+{"stage": "llm_first_token", "t": 16836.910560202, "pid": 9960, "src": "ws", "recv": 16868.2804197, "lt": 16868.249234279, "tt": 2.1085}
+{"stage": "llm_usage", "t": 16836.923915754, "pid": 9960, "prompt_tokens": 2460, "completion_tokens": 38, "src": "ws", "recv": 16868.2883184, "lt": 16868.262589831, "tt": 2.1218}
+{"stage": "tts_request", "t": 16836.94951065, "pid": 9960, "src": "ws", "recv": 16868.3157028, "lt": 16868.288184727, "tt": 2.1474}
+{"stage": "tts_first_audio", "t": 16836.996882787, "pid": 9960, "src": "ws", "recv": 16868.3576129, "lt": 16868.335556864, "tt": 2.1948}
+{"stage": "audio_out", "t": 16837.00390603, "pid": 9960, "src": "ws", "recv": 16868.3706796, "lt": 16868.342580107, "tt": 2.2018}
+{"stage": "audio_out", "t": 16837.003991492, "pid": 9960, "src": "ws", "recv": 16868.3707079, "lt": 16868.342665569002, "tt": 2.2019}
+{"stage": "bot_stopped", "t": 16841.254692283, "pid": 9960, "src": "ws", "recv": 16872.6182314, "lt": 16872.59336636, "tt": 6.4526}
+{"stage": "bot_stopped", "t": 16841.255154518, "pid": 9960, "src": "ws", "recv": 16872.6182527, "lt": 16872.593828595, "tt": 6.453}
+{"stage": "llm_request", "t": 16841.265557793, "pid": 9960, "messages": 23, "chars": 10316, "est_tokens": 2579, "src": "ws", "recv": 16872.6255656, "lt": 16872.604231870002, "tt": 6.4634}

@@ -1,0 +1,132 @@
+{
+  "text": "Drink water before. During yoga improves flexibility, strength and mindfulness. Aim for three to five sessions a week.",
+  "chunks": [
+    {
+      "text": "Drink",
+      "timestamp": [
+        2.96,
+        3.48
+      ]
+    },
+    {
+      "text": "water",
+      "timestamp": [
+        3.48,
+        3.78
+      ]
+    },
+    {
+      "text": "before.",
+      "timestamp": [
+        3.78,
+        4.16
+      ]
+    },
+    {
+      "text": "During",
+      "timestamp": [
+        5.0,
+        5.0
+      ]
+    },
+    {
+      "text": "yoga",
+      "timestamp": [
+        5.0,
+        5.74
+      ]
+    },
+    {
+      "text": "improves",
+      "timestamp": [
+        7.53,
+        8.47
+      ]
+    },
+    {
+      "text": "flexibility,",
+      "timestamp": [
+        8.47,
+        9.35
+      ]
+    },
+    {
+      "text": "strength",
+      "timestamp": [
+        9.69,
+        10.25
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        10.25,
+        10.77
+      ]
+    },
+    {
+      "text": "mindfulness.",
+      "timestamp": [
+        10.77,
+        11.27
+      ]
+    },
+    {
+      "text": "Aim",
+      "timestamp": [
+        11.97,
+        12.41
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        12.41,
+        12.67
+      ]
+    },
+    {
+      "text": "three",
+      "timestamp": [
+        12.67,
+        13.03
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        13.03,
+        13.23
+      ]
+    },
+    {
+      "text": "five",
+      "timestamp": [
+        13.23,
+        13.51
+      ]
+    },
+    {
+      "text": "sessions",
+      "timestamp": [
+        13.51,
+        13.89
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        13.89,
+        14.15
+      ]
+    },
+    {
+      "text": "week.",
+      "timestamp": [
+        14.15,
+        14.35
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,83 @@
+{
+  "text": "Got it. I'm not sure what you'd like me to do.",
+  "chunks": [
+    {
+      "text": "Got",
+      "timestamp": [
+        1.07,
+        1.61
+      ]
+    },
+    {
+      "text": "it.",
+      "timestamp": [
+        1.61,
+        1.85
+      ]
+    },
+    {
+      "text": "I'm",
+      "timestamp": [
+        11.26,
+        11.62
+      ]
+    },
+    {
+      "text": "not",
+      "timestamp": [
+        11.62,
+        11.76
+      ]
+    },
+    {
+      "text": "sure",
+      "timestamp": [
+        11.76,
+        11.98
+      ]
+    },
+    {
+      "text": "what",
+      "timestamp": [
+        11.98,
+        12.16
+      ]
+    },
+    {
+      "text": "you'd",
+      "timestamp": [
+        12.16,
+        12.38
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        12.38,
+        12.5
+      ]
+    },
+    {
+      "text": "me",
+      "timestamp": [
+        12.5,
+        12.68
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        12.68,
+        12.82
+      ]
+    },
+    {
+      "text": "do.",
+      "timestamp": [
+        12.82,
+        13.08
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

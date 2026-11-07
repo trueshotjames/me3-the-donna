@@ -1,0 +1,28 @@
+{"stage": "vad_start", "t": 19582.150950158, "pid": 9960, "src": "ws", "recv": 19613.55096, "lt": 19613.489624235, "tt": 0.2769}
+{"stage": "vad_start", "t": 19582.151037268, "pid": 9960, "src": "ws", "recv": 19613.5509802, "lt": 19613.489711345, "tt": 0.2769}
+{"stage": "interrupted", "t": 19582.605410515, "pid": 9960, "src": "ws", "recv": 19614.0056874, "lt": 19613.944084592, "tt": 0.7313}
+{"stage": "interrupted", "t": 19582.605497106, "pid": 9960, "src": "ws", "recv": 19614.0057103, "lt": 19613.944171183, "tt": 0.7314}
+{"stage": "asr_partial", "t": 19582.723091868, "pid": 9960, "text": "I wanna", "src": "ws", "recv": 19614.122756, "lt": 19614.061765945, "tt": 0.849}
+{"stage": "asr_partial", "t": 19582.887286991, "pid": 9960, "text": "I wanna start", "src": "ws", "recv": 19614.2860984, "lt": 19614.225961068, "tt": 1.0132}
+{"stage": "asr_partial", "t": 19583.122536754, "pid": 9960, "text": "I wanna start", "src": "ws", "recv": 19614.5212854, "lt": 19614.461210831, "tt": 1.2484}
+{"stage": "asr_partial", "t": 19583.366700102, "pid": 9960, "text": "I wanna start learning in", "src": "ws", "recv": 19614.7655994, "lt": 19614.705374179, "tt": 1.4926}
+{"stage": "asr_partial", "t": 19583.602887021, "pid": 9960, "text": "I wanna start learning a new", "src": "ws", "recv": 19615.0017657, "lt": 19614.941561098, "tt": 1.7288}
+{"stage": "asr_partial", "t": 19583.846778112, "pid": 9960, "text": "I wanna start learning a new life", "src": "ws", "recv": 19615.2455659, "lt": 19615.185452189, "tt": 1.9727}
+{"stage": "asr_partial", "t": 19584.083190455, "pid": 9960, "text": "I wanna start learning a new language", "src": "ws", "recv": 19615.4820329, "lt": 19615.421864532, "tt": 2.2091}
+{"stage": "asr_partial", "t": 19584.326996121, "pid": 9960, "text": "I wanna start learning a new language.", "src": "ws", "recv": 19615.7258464, "lt": 19615.665670198, "tt": 2.4529}
+{"stage": "llm_request", "t": 19584.406878809, "pid": 9960, "speculative": true, "messages": 25, "chars": 12887, "est_tokens": 3222, "src": "ws", "recv": 19615.8055058, "lt": 19615.745552886, "tt": 2.5328}
+{"stage": "vad_end", "t": 19584.54869337, "pid": 9960, "src": "ws", "recv": 19615.947903, "lt": 19615.887367447, "tt": 2.6746}
+{"stage": "vad_end", "t": 19584.54874711, "pid": 9960, "src": "ws", "recv": 19615.9479263, "lt": 19615.887421187, "tt": 2.6747}
+{"stage": "asr_partial", "t": 19584.564543506, "pid": 9960, "text": "I wanna start learning a new language.", "src": "ws", "recv": 19615.963909, "lt": 19615.903217583, "tt": 2.6905}
+{"stage": "asr_partial", "t": 19584.80700578, "pid": 9960, "text": "I wanna start learning a new language.", "src": "ws", "recv": 19616.2058486, "lt": 19616.145679857, "tt": 2.9329}
+{"stage": "asr_partial", "t": 19585.043083866, "pid": 9960, "text": "I wanna start learning a new language.", "src": "ws", "recv": 19616.4419712, "lt": 19616.381757943, "tt": 3.169}
+{"stage": "llm_usage", "t": 19585.11121665, "pid": 9960, "prompt_tokens": 2528, "completion_tokens": 59, "src": "ws", "recv": 19616.5129121, "lt": 19616.449890727, "tt": 3.2371}
+{"stage": "asr_partial", "t": 19585.287227621, "pid": 9960, "text": "I wanna start learning a new language.", "src": "ws", "recv": 19616.686367, "lt": 19616.625901698, "tt": 3.4131}
+{"stage": "asr_final", "t": 19586.130150596, "pid": 9960, "text": "I wanna start learning a new language.", "src": "ws", "recv": 19617.5298864, "lt": 19617.468824673, "tt": 4.2561}
+{"stage": "user_stopped", "t": 19586.136925316, "pid": 9960, "src": "ws", "recv": 19617.5411865, "lt": 19617.475599393, "tt": 4.2628}
+{"stage": "user_stopped", "t": 19586.136993611, "pid": 9960, "src": "ws", "recv": 19617.5412041, "lt": 19617.475667688, "tt": 4.2629}
+{"stage": "llm_first_token", "t": 19586.140120946, "pid": 9960, "src": "ws", "recv": 19617.5463415, "lt": 19617.478795023, "tt": 4.266}
+{"stage": "tts_request", "t": 19586.171738903, "pid": 9960, "src": "ws", "recv": 19617.5757672, "lt": 19617.51041298, "tt": 4.2976}
+{"stage": "tts_first_audio", "t": 19586.426120079, "pid": 9960, "src": "ws", "recv": 19617.8260516, "lt": 19617.764794156, "tt": 4.552}
+{"stage": "audio_out", "t": 19586.432900187, "pid": 9960, "src": "ws", "recv": 19617.8392288, "lt": 19617.771574264, "tt": 4.5588}
+{"stage": "audio_out", "t": 19586.432985686, "pid": 9960, "src": "ws", "recv": 19617.8392506, "lt": 19617.771659763, "tt": 4.5589}

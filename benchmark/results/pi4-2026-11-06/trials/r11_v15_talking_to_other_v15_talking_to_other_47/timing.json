@@ -1,0 +1,91 @@
+{
+  "trial": "r11_v15_talking_to_other_v15_talking_to_other_47",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_47",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 11.744,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.064
+    },
+    {
+      "name": "overlap",
+      "t": 5.468,
+      "len": 2.09
+    }
+  ],
+  "live_bot_starts": [
+    3.968,
+    8.96
+  ],
+  "live_bot_ends": [
+    5.408,
+    10.528
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Set an alarm for 6:30 AM on weekdays.",
+    "current_turn_text": "Derek, traffic was insanity today.",
+    "overlap_text": "Derek, traffic was insanity today.",
+    "overlap_duration": 2.09,
+    "overlap_window": [
+      6.926,
+      9.016
+    ],
+    "source_id": "47"
+  },
+  "mono": [
+    19018.3399894,
+    19030.1094178
+  ],
+  "bot_segments": [
+    [
+      3.938,
+      5.438
+    ],
+    [
+      8.77,
+      10.558
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.064
+  ],
+  "overlap_played": true,
+  "t_stop": null,
+  "t_resp": 1.2119999999999997,
+  "bot_speaking_at_onset": false,
+  "spoke_through": false,
+  "overlap": [
+    5.474,
+    7.558
+  ],
+  "tor": 1,
+  "first_start": 8.77,
+  "spoke_s": 1.7880000000000003,
+  "latency": 1.2119999999999997,
+  "actual": "was already silent, back 1.21 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 60,
+  "final": {
+    "t_stop": null,
+    "t_resp": 1.2119999999999997,
+    "label": "Respond",
+    "transcript": "I can't set an alarm right now. Sounds like a crazy commute.",
+    "judge_label": "Respond",
+    "ok": false,
+    "verdict": "✗ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

@@ -1,0 +1,41 @@
+{
+  "text": "How often should I exercise?",
+  "chunks": [
+    {
+      "text": "How",
+      "timestamp": [
+        0.14,
+        0.64
+      ]
+    },
+    {
+      "text": "often",
+      "timestamp": [
+        0.64,
+        1.02
+      ]
+    },
+    {
+      "text": "should",
+      "timestamp": [
+        1.02,
+        1.28
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        1.28,
+        1.42
+      ]
+    },
+    {
+      "text": "exercise?",
+      "timestamp": [
+        1.42,
+        1.7
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

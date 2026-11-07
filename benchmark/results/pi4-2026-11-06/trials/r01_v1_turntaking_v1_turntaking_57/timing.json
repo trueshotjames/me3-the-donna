@@ -1,0 +1,73 @@
+{
+  "trial": "r01_v1_turntaking_v1_turntaking_57",
+  "group": "v1_turntaking",
+  "clip": "v1_turntaking_57",
+  "variant": "main",
+  "expected": "reply within 8 s",
+  "duration": 10.848,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 4.6199375
+    }
+  ],
+  "live_bot_starts": [
+    0.032,
+    5.12,
+    5.984,
+    7.616
+  ],
+  "live_bot_ends": [
+    0.416,
+    5.472,
+    7.2,
+    9.632
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "turn_end": 4.319999999999936,
+    "last_words": "",
+    "source_id": "57"
+  },
+  "mono": [
+    16313.5509467,
+    16324.3824454
+  ],
+  "bot_segments": [
+    [
+      0.002,
+      0.446
+    ],
+    [
+      5.09,
+      9.662
+    ]
+  ],
+  "play_first": [
+    0.0,
+    4.6199375
+  ],
+  "tor": 1,
+  "first_start": 5.09,
+  "spoke_s": 4.572000000000001,
+  "latency": 0.7700000000000635,
+  "turn_end": 4.319999999999936,
+  "actual": "replied after 0.77 s, spoke 4.6 s",
+  "verdict": "✓ 0.77 s",
+  "ok": true,
+  "marks": 37,
+  "final": {
+    "tor": 1,
+    "words": 12,
+    "latency": 0.7700000000000635,
+    "verdict": "✓ 0.77 s",
+    "ok": true,
+    "transcript": "got it. You're in South Alabama and your college is in Central Alabama."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

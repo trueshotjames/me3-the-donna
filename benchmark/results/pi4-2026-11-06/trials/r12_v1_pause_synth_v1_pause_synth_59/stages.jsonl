@@ -1,0 +1,60 @@
+{"stage": "vad_start", "t": 19412.360065264, "pid": 9960, "src": "ws", "recv": 19443.7562972, "lt": 19443.698739341, "tt": 0.2462}
+{"stage": "vad_start", "t": 19412.360124615, "pid": 9960, "src": "ws", "recv": 19443.7563236, "lt": 19443.698798692, "tt": 0.2462}
+{"stage": "asr_partial", "t": 19412.767782145, "pid": 9960, "text": "I'm ready", "src": "ws", "recv": 19444.1676027, "lt": 19444.106456222, "tt": 0.6539}
+{"stage": "interrupted", "t": 19412.770752983, "pid": 9960, "src": "ws", "recv": 19444.1699936, "lt": 19444.10942706, "tt": 0.6568}
+{"stage": "interrupted", "t": 19412.770839093, "pid": 9960, "src": "ws", "recv": 19444.1700228, "lt": 19444.10951317, "tt": 0.6569}
+{"stage": "bot_stopped", "t": 19412.812667795, "pid": 9960, "src": "ws", "recv": 19444.210825, "lt": 19444.151341872, "tt": 0.6988}
+{"stage": "bot_stopped", "t": 19412.812755257, "pid": 9960, "src": "ws", "recv": 19444.2108424, "lt": 19444.151429334, "tt": 0.6989}
+{"stage": "llm_request", "t": 19412.823131105, "pid": 9960, "messages": 30, "chars": 13760, "est_tokens": 3440, "src": "ws", "recv": 19444.2197021, "lt": 19444.161805182, "tt": 0.7092}
+{"stage": "asr_partial", "t": 19413.04275287, "pid": 9960, "text": "I'm redecor", "src": "ws", "recv": 19444.4391226, "lt": 19444.381426947, "tt": 0.9288}
+{"stage": "asr_partial", "t": 19413.247032787, "pid": 9960, "text": "I'm redecorating", "src": "ws", "recv": 19444.645521, "lt": 19444.585706864, "tt": 1.1331}
+{"stage": "asr_partial", "t": 19413.52698679, "pid": 9960, "text": "I'm redecorating my", "src": "ws", "recv": 19444.9234081, "lt": 19444.865660867, "tt": 1.4131}
+{"stage": "asr_partial", "t": 19413.726227318, "pid": 9960, "text": "I'm redecorating my living", "src": "ws", "recv": 19445.124342, "lt": 19445.064901395, "tt": 1.6123}
+{"stage": "asr_partial", "t": 19414.002730544, "pid": 9960, "text": "I'm redecorating my living room.", "src": "ws", "recv": 19445.3991475, "lt": 19445.341404621002, "tt": 1.8888}
+{"stage": "asr_partial", "t": 19414.206549836, "pid": 9960, "text": "I'm redecorating my living room. I think", "src": "ws", "recv": 19445.6051117, "lt": 19445.545223913, "tt": 2.0926}
+{"stage": "asr_partial", "t": 19414.485926715, "pid": 9960, "text": "I'm redecorating my living room. I think I'll", "src": "ws", "recv": 19445.8827136, "lt": 19445.824600792, "tt": 2.372}
+{"stage": "asr_partial", "t": 19414.687768252, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint", "src": "ws", "recv": 19446.0866148, "lt": 19446.026442329, "tt": 2.5739}
+{"stage": "asr_partial", "t": 19414.962397146, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the wall", "src": "ws", "recv": 19446.3588229, "lt": 19446.301071223, "tt": 2.8485}
+{"stage": "asr_partial", "t": 19415.165882608, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls", "src": "ws", "recv": 19446.5624272, "lt": 19446.504556685, "tt": 3.052}
+{"stage": "asr_partial", "t": 19415.448068326, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first.", "src": "ws", "recv": 19446.8450015, "lt": 19446.786742403, "tt": 3.3342}
+{"stage": "asr_partial", "t": 19415.646553992, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and", "src": "ws", "recv": 19447.0440727, "lt": 19446.985228069, "tt": 3.5327}
+{"stage": "asr_partial", "t": 19415.931529753, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then", "src": "ws", "recv": 19447.3311208, "lt": 19447.27020383, "tt": 3.8176}
+{"stage": "asr_partial", "t": 19416.127863405, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then I", "src": "ws", "recv": 19447.5267453, "lt": 19447.466537482, "tt": 4.014}
+{"stage": "asr_partial", "t": 19416.403016997, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then", "src": "ws", "recv": 19447.7995454, "lt": 19447.741691074, "tt": 4.2891}
+{"stage": "vad_end", "t": 19416.490348897, "pid": 9960, "src": "ws", "recv": 19447.8864344, "lt": 19447.829022974, "tt": 4.3764}
+{"stage": "vad_end", "t": 19416.490417878, "pid": 9960, "src": "ws", "recv": 19447.8864582, "lt": 19447.829091955, "tt": 4.3765}
+{"stage": "asr_partial", "t": 19416.606709827, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then", "src": "ws", "recv": 19448.0042033, "lt": 19447.945383904, "tt": 4.4928}
+{"stage": "vad_start", "t": 19416.836094816, "pid": 9960, "src": "ws", "recv": 19448.2322202, "lt": 19448.174768893, "tt": 4.7222}
+{"stage": "vad_start", "t": 19416.836152223, "pid": 9960, "src": "ws", "recv": 19448.2322403, "lt": 19448.1748263, "tt": 4.7222}
+{"stage": "asr_partial", "t": 19416.883192774, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then", "src": "ws", "recv": 19448.2796444, "lt": 19448.221866851, "tt": 4.7693}
+{"stage": "asr_partial", "t": 19417.089921144, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then", "src": "ws", "recv": 19448.4881791, "lt": 19448.428595221, "tt": 4.976}
+{"stage": "asr_partial", "t": 19417.362579652, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then", "src": "ws", "recv": 19448.7590375, "lt": 19448.701253729, "tt": 5.2487}
+{"stage": "asr_partial", "t": 19417.566917734, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then, uh", "src": "ws", "recv": 19448.9645835, "lt": 19448.905591811, "tt": 5.453}
+{"stage": "asr_partial", "t": 19417.842879631, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then, uh, uh", "src": "ws", "recv": 19449.2393747, "lt": 19449.181553708, "tt": 5.729}
+{"stage": "asr_partial", "t": 19418.04718625, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then, uh, uh, the", "src": "ws", "recv": 19449.4458715, "lt": 19449.385860327002, "tt": 5.9333}
+{"stage": "asr_partial", "t": 19418.326704515, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then, uh, uh, the curtain should", "src": "ws", "recv": 19449.72311, "lt": 19449.665378592, "tt": 6.2128}
+{"stage": "asr_partial", "t": 19418.528154165, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then, uh, uh, the curtain should probably match", "src": "ws", "recv": 19449.9263914, "lt": 19449.866828242, "tt": 6.4143}
+{"stage": "vad_end", "t": 19418.791323093, "pid": 9960, "src": "ws", "recv": 19450.1881458, "lt": 19450.12999717, "tt": 6.6774}
+{"stage": "vad_end", "t": 19418.791377963, "pid": 9960, "src": "ws", "recv": 19450.1881662, "lt": 19450.13005204, "tt": 6.6775}
+{"stage": "asr_partial", "t": 19418.812240861, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then, uh, uh, the curtain should probably match.", "src": "ws", "recv": 19450.2099531, "lt": 19450.150914938, "tt": 6.6983}
+{"stage": "llm_request", "t": 19418.816202057, "pid": 9960, "speculative": true, "messages": 31, "chars": 13880, "est_tokens": 3470, "src": "ws", "recv": 19450.214045, "lt": 19450.154876134002, "tt": 6.7023}
+{"stage": "vad_start", "t": 19418.980323011, "pid": 9960, "src": "ws", "recv": 19450.3770456, "lt": 19450.318997088, "tt": 6.8664}
+{"stage": "vad_start", "t": 19418.980379992, "pid": 9960, "src": "ws", "recv": 19450.3770756, "lt": 19450.319054069, "tt": 6.8665}
+{"stage": "llm_cancel", "t": 19418.98323822, "pid": 9960, "src": "ws", "recv": 19450.3787328, "lt": 19450.321912297, "tt": 6.8693}
+{"stage": "llm_request", "t": 19419.012686004, "pid": 9960, "speculative": true, "messages": 31, "chars": 13880, "est_tokens": 3470, "src": "ws", "recv": 19450.4109651, "lt": 19450.351360081, "tt": 6.8988}
+{"stage": "asr_partial", "t": 19419.05847905, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then, uh, uh, the curtain should probably match.", "src": "ws", "recv": 19450.4567733, "lt": 19450.397153127, "tt": 6.9446}
+{"stage": "asr_partial", "t": 19419.246695292, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then, uh, uh, the curtain should probably match.", "src": "ws", "recv": 19450.6432314, "lt": 19450.585369369, "tt": 7.1328}
+{"stage": "vad_end", "t": 19419.304088562, "pid": 9960, "src": "ws", "recv": 19450.7008941, "lt": 19450.642762639, "tt": 7.1902}
+{"stage": "vad_end", "t": 19419.304142061, "pid": 9960, "src": "ws", "recv": 19450.7009117, "lt": 19450.642816138, "tt": 7.1902}
+{"stage": "llm_usage", "t": 19419.980186049, "pid": 9960, "prompt_tokens": 2761, "completion_tokens": 49, "src": "ws", "recv": 19451.3789901, "lt": 19451.318860126, "tt": 7.8663}
+{"stage": "asr_final", "t": 19420.055185141, "pid": 9960, "text": "I'm redecorating my living room. I think I'll paint the walls first and then, uh, uh, the curtain should probably match.", "src": "ws", "recv": 19451.4527965, "lt": 19451.393859218, "tt": 7.9413}
+{"stage": "user_stopped", "t": 19420.062265377, "pid": 9960, "src": "ws", "recv": 19451.4636979, "lt": 19451.400939454, "tt": 7.9484}
+{"stage": "user_stopped", "t": 19420.062355117, "pid": 9960, "src": "ws", "recv": 19451.4637196, "lt": 19451.401029194, "tt": 7.9485}
+{"stage": "llm_first_token", "t": 19420.065478786, "pid": 9960, "src": "ws", "recv": 19451.4683836, "lt": 19451.404152863, "tt": 7.9516}
+{"stage": "tts_request", "t": 19420.09275726, "pid": 9960, "src": "ws", "recv": 19451.4939941, "lt": 19451.431431337, "tt": 7.9789}
+{"stage": "tts_first_audio", "t": 19420.275563229, "pid": 9960, "src": "ws", "recv": 19451.6720607, "lt": 19451.614237306, "tt": 8.1617}
+{"stage": "audio_out", "t": 19420.280206103, "pid": 9960, "src": "ws", "recv": 19451.6808188, "lt": 19451.61888018, "tt": 8.1663}
+{"stage": "audio_out", "t": 19420.280290639, "pid": 9960, "src": "ws", "recv": 19451.6808355, "lt": 19451.618964716, "tt": 8.1664}
+{"stage": "bot_stopped", "t": 19427.611005536, "pid": 9960, "src": "ws", "recv": 19459.0080344, "lt": 19458.949679613, "tt": 15.4971}
+{"stage": "bot_stopped", "t": 19427.611087368, "pid": 9960, "src": "ws", "recv": 19459.0080575, "lt": 19458.949761445, "tt": 15.4972}
+{"stage": "llm_request", "t": 19427.617684332, "pid": 9960, "messages": 32, "chars": 14004, "est_tokens": 3501, "src": "ws", "recv": 19459.0158232, "lt": 19458.956358409, "tt": 15.5038}

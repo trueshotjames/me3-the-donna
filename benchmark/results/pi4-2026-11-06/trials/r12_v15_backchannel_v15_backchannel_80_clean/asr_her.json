@@ -1,0 +1,251 @@
+{
+  "text": "in the world. Vaccinations started with Edward Jenner's smallpox -cowpox work in 1796. Pestor then created rabies and anthrax vaccines, proving leacon germs could protect. The 1920s saw diphtheria toxoid and the first tetanus shots.",
+  "chunks": [
+    {
+      "text": "in",
+      "timestamp": [
+        0.0,
+        0.24
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.24,
+        0.4
+      ]
+    },
+    {
+      "text": "world.",
+      "timestamp": [
+        0.4,
+        0.72
+      ]
+    },
+    {
+      "text": "Vaccinations",
+      "timestamp": [
+        3.89,
+        4.59
+      ]
+    },
+    {
+      "text": "started",
+      "timestamp": [
+        4.59,
+        4.95
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        4.95,
+        5.19
+      ]
+    },
+    {
+      "text": "Edward",
+      "timestamp": [
+        5.19,
+        5.47
+      ]
+    },
+    {
+      "text": "Jenner's",
+      "timestamp": [
+        5.47,
+        5.95
+      ]
+    },
+    {
+      "text": "smallpox",
+      "timestamp": [
+        5.95,
+        6.51
+      ]
+    },
+    {
+      "text": "-cowpox",
+      "timestamp": [
+        6.51,
+        7.05
+      ]
+    },
+    {
+      "text": "work",
+      "timestamp": [
+        7.05,
+        7.37
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        7.37,
+        7.59
+      ]
+    },
+    {
+      "text": "1796.",
+      "timestamp": [
+        7.59,
+        8.67
+      ]
+    },
+    {
+      "text": "Pestor",
+      "timestamp": [
+        9.05,
+        9.43
+      ]
+    },
+    {
+      "text": "then",
+      "timestamp": [
+        9.43,
+        9.67
+      ]
+    },
+    {
+      "text": "created",
+      "timestamp": [
+        9.67,
+        10.03
+      ]
+    },
+    {
+      "text": "rabies",
+      "timestamp": [
+        10.03,
+        10.63
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        10.63,
+        10.73
+      ]
+    },
+    {
+      "text": "anthrax",
+      "timestamp": [
+        10.73,
+        11.25
+      ]
+    },
+    {
+      "text": "vaccines,",
+      "timestamp": [
+        11.25,
+        11.73
+      ]
+    },
+    {
+      "text": "proving",
+      "timestamp": [
+        11.97,
+        12.21
+      ]
+    },
+    {
+      "text": "leacon",
+      "timestamp": [
+        12.21,
+        12.57
+      ]
+    },
+    {
+      "text": "germs",
+      "timestamp": [
+        12.57,
+        12.91
+      ]
+    },
+    {
+      "text": "could",
+      "timestamp": [
+        12.91,
+        13.21
+      ]
+    },
+    {
+      "text": "protect.",
+      "timestamp": [
+        13.21,
+        13.59
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        13.85,
+        13.93
+      ]
+    },
+    {
+      "text": "1920s",
+      "timestamp": [
+        13.93,
+        14.85
+      ]
+    },
+    {
+      "text": "saw",
+      "timestamp": [
+        14.85,
+        15.05
+      ]
+    },
+    {
+      "text": "diphtheria",
+      "timestamp": [
+        15.05,
+        15.73
+      ]
+    },
+    {
+      "text": "toxoid",
+      "timestamp": [
+        15.73,
+        16.47
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        16.47,
+        16.95
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        16.95,
+        17.09
+      ]
+    },
+    {
+      "text": "first",
+      "timestamp": [
+        17.09,
+        17.37
+      ]
+    },
+    {
+      "text": "tetanus",
+      "timestamp": [
+        17.37,
+        17.91
+      ]
+    },
+    {
+      "text": "shots.",
+      "timestamp": [
+        17.91,
+        18.21
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

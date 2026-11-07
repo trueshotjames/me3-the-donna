@@ -1,0 +1,202 @@
+{
+  "text": "Steep green tea for about 2 to 3 minutes. Your meeting is set for 3 p .m. tomorrow, and steep green tea for about 2 to 3 minutes.",
+  "chunks": [
+    {
+      "text": "Steep",
+      "timestamp": [
+        2.96,
+        3.56
+      ]
+    },
+    {
+      "text": "green",
+      "timestamp": [
+        3.56,
+        3.72
+      ]
+    },
+    {
+      "text": "tea",
+      "timestamp": [
+        3.72,
+        4.04
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        4.04,
+        4.28
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        4.28,
+        4.48
+      ]
+    },
+    {
+      "text": "2",
+      "timestamp": [
+        4.48,
+        4.82
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        4.82,
+        4.94
+      ]
+    },
+    {
+      "text": "3",
+      "timestamp": [
+        4.94,
+        5.12
+      ]
+    },
+    {
+      "text": "minutes.",
+      "timestamp": [
+        5.12,
+        5.46
+      ]
+    },
+    {
+      "text": "Your",
+      "timestamp": [
+        7.93,
+        8.13
+      ]
+    },
+    {
+      "text": "meeting",
+      "timestamp": [
+        8.13,
+        8.35
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        8.35,
+        8.57
+      ]
+    },
+    {
+      "text": "set",
+      "timestamp": [
+        8.57,
+        8.77
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        8.77,
+        8.93
+      ]
+    },
+    {
+      "text": "3",
+      "timestamp": [
+        8.93,
+        9.21
+      ]
+    },
+    {
+      "text": "p",
+      "timestamp": [
+        9.21,
+        9.41
+      ]
+    },
+    {
+      "text": ".m.",
+      "timestamp": [
+        9.41,
+        9.57
+      ]
+    },
+    {
+      "text": "tomorrow,",
+      "timestamp": [
+        9.87,
+        9.99
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        10.17,
+        10.37
+      ]
+    },
+    {
+      "text": "steep",
+      "timestamp": [
+        10.37,
+        10.67
+      ]
+    },
+    {
+      "text": "green",
+      "timestamp": [
+        10.67,
+        10.93
+      ]
+    },
+    {
+      "text": "tea",
+      "timestamp": [
+        10.93,
+        11.21
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        11.21,
+        11.47
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        11.47,
+        11.71
+      ]
+    },
+    {
+      "text": "2",
+      "timestamp": [
+        11.71,
+        11.95
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        11.95,
+        12.07
+      ]
+    },
+    {
+      "text": "3",
+      "timestamp": [
+        12.07,
+        12.29
+      ]
+    },
+    {
+      "text": "minutes.",
+      "timestamp": [
+        12.29,
+        12.61
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

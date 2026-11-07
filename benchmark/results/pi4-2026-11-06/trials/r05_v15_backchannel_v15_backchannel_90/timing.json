@@ -1,0 +1,101 @@
+{
+  "trial": "r05_v15_backchannel_v15_backchannel_90",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_90",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 17.312,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.88
+    },
+    {
+      "name": "overlap",
+      "t": 4.668,
+      "len": 0.836
+    }
+  ],
+  "live_bot_starts": [
+    3.168,
+    6.752,
+    11.584
+  ],
+  "live_bot_ends": [
+    4.992,
+    11.168,
+    16.96
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Discuss moral dilemmas fully.",
+    "current_turn_text": "",
+    "overlap_text": "totally",
+    "overlap_duration": 0.84,
+    "overlap_window": [
+      5.8580000000000005,
+      6.694000000000001
+    ],
+    "source_id": "90"
+  },
+  "mono": [
+    17477.6483127,
+    17494.9755262
+  ],
+  "bot_segments": [
+    [
+      3.138,
+      5.022
+    ],
+    [
+      6.722,
+      16.99
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.88
+  ],
+  "overlap_played": true,
+  "t_stop": 0.34799999999999986,
+  "t_resp": 1.218,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.674,
+    5.5040000000000004
+  ],
+  "tor": 1,
+  "first_start": 6.722,
+  "spoke_s": 6.782000000000001,
+  "latency": 1.218,
+  "actual": "stopped after 0.35 s, back 1.22 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 43,
+  "final": {
+    "t_stop": 0.34799999999999986,
+    "t_resp": 1.218,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": 116.60528784351875,
+      "pitch_mean": -4.925229534341952,
+      "pitch_sd": -2.390098602372497,
+      "intensity_mean": -4.695789213896905,
+      "intensity_sd": 1.458870677273648,
+      "utmosv2": null
+    },
+    "transcript": "Moral dilemmas arise when we face two or more competing ethical principles, and any choice will compromise something we value. A classic example is the trolley problem.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

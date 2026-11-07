@@ -1,0 +1,93 @@
+{
+  "trial": "r01_v15_talking_to_other_v15_talking_to_other_34",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_34",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 13.408,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.176
+    },
+    {
+      "name": "overlap",
+      "t": 3.612,
+      "len": 1.765
+    }
+  ],
+  "live_bot_starts": [
+    2.112
+  ],
+  "live_bot_ends": [
+    3.936
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "Mute the TV.",
+    "current_turn_text": "Rita, pass the soy sauce, please.",
+    "overlap_text": "Rita, pass the soy sauce, please.",
+    "overlap_duration": 1.76,
+    "overlap_window": [
+      5.022,
+      6.787
+    ],
+    "source_id": "34"
+  },
+  "mono": [
+    16228.8186234,
+    16242.2376517
+  ],
+  "bot_segments": [
+    [
+      2.082,
+      3.966
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.176
+  ],
+  "overlap_played": true,
+  "t_stop": 0.3160000000000003,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    3.65,
+    5.377
+  ],
+  "tor": 0,
+  "first_start": null,
+  "spoke_s": 0.0,
+  "latency": null,
+  "actual": "stopped after 0.32 s, did not come back",
+  "overlap_class": "stopped",
+  "label_provisional": "Unknown",
+  "verdict": "✗ stopped, silent",
+  "ok": false,
+  "marks": 38,
+  "final": {
+    "t_stop": 0.3160000000000003,
+    "t_resp": null,
+    "label": "Unknown",
+    "voice_delta": {
+      "wpm": null,
+      "pitch_mean": null,
+      "pitch_sd": null,
+      "intensity_mean": -0.5294494781456116,
+      "intensity_sd": -5.587894804522757,
+      "utmosv2": null
+    },
+    "transcript": "I can't mute the TV right now.",
+    "judge_label": "Unknown",
+    "ok": false,
+    "verdict": "✗ Unknown"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

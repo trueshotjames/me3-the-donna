@@ -1,0 +1,132 @@
+{
+  "text": "Aim for at least three moderate workouts or five light sessions each week, mixing cardio, strength, and flexibility.",
+  "chunks": [
+    {
+      "text": "Aim",
+      "timestamp": [
+        2.77,
+        3.29
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        3.29,
+        3.49
+      ]
+    },
+    {
+      "text": "at",
+      "timestamp": [
+        3.49,
+        3.59
+      ]
+    },
+    {
+      "text": "least",
+      "timestamp": [
+        3.59,
+        3.77
+      ]
+    },
+    {
+      "text": "three",
+      "timestamp": [
+        3.77,
+        4.07
+      ]
+    },
+    {
+      "text": "moderate",
+      "timestamp": [
+        4.07,
+        4.47
+      ]
+    },
+    {
+      "text": "workouts",
+      "timestamp": [
+        4.47,
+        4.95
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        4.95,
+        5.33
+      ]
+    },
+    {
+      "text": "five",
+      "timestamp": [
+        5.33,
+        5.63
+      ]
+    },
+    {
+      "text": "light",
+      "timestamp": [
+        5.63,
+        5.83
+      ]
+    },
+    {
+      "text": "sessions",
+      "timestamp": [
+        5.83,
+        6.19
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        6.19,
+        6.49
+      ]
+    },
+    {
+      "text": "week,",
+      "timestamp": [
+        6.49,
+        6.81
+      ]
+    },
+    {
+      "text": "mixing",
+      "timestamp": [
+        7.13,
+        7.33
+      ]
+    },
+    {
+      "text": "cardio,",
+      "timestamp": [
+        7.33,
+        7.77
+      ]
+    },
+    {
+      "text": "strength,",
+      "timestamp": [
+        8.13,
+        8.49
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        8.79,
+        8.87
+      ]
+    },
+    {
+      "text": "flexibility.",
+      "timestamp": [
+        8.87,
+        9.29
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

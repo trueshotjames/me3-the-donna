@@ -1,0 +1,55 @@
+{
+  "text": "Summarize black holes comprehensively. Mm -hmm, yeah.",
+  "chunks": [
+    {
+      "text": "Summarize",
+      "timestamp": [
+        0.0,
+        0.44
+      ]
+    },
+    {
+      "text": "black",
+      "timestamp": [
+        0.44,
+        0.64
+      ]
+    },
+    {
+      "text": "holes",
+      "timestamp": [
+        0.64,
+        0.9
+      ]
+    },
+    {
+      "text": "comprehensively.",
+      "timestamp": [
+        0.9,
+        1.76
+      ]
+    },
+    {
+      "text": "Mm",
+      "timestamp": [
+        4.36,
+        4.74
+      ]
+    },
+    {
+      "text": "-hmm,",
+      "timestamp": [
+        4.74,
+        5.02
+      ]
+    },
+    {
+      "text": "yeah.",
+      "timestamp": [
+        5.2,
+        5.38
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,286 @@
+{
+  "text": "Climate change is the long -term warming of the planet caused mainly by human emissions of greenhouse gases such as carbon dioxide, methane and nitrous oxide. Burding fossil fuels for electricity, transport and industry releases the bulk of these gases.",
+  "chunks": [
+    {
+      "text": "Climate",
+      "timestamp": [
+        0.0,
+        1.1
+      ]
+    },
+    {
+      "text": "change",
+      "timestamp": [
+        4.04,
+        4.52
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        4.52,
+        4.8
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.8,
+        4.96
+      ]
+    },
+    {
+      "text": "long",
+      "timestamp": [
+        4.96,
+        5.24
+      ]
+    },
+    {
+      "text": "-term",
+      "timestamp": [
+        5.24,
+        5.48
+      ]
+    },
+    {
+      "text": "warming",
+      "timestamp": [
+        5.48,
+        5.88
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        5.88,
+        6.08
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        6.08,
+        6.2
+      ]
+    },
+    {
+      "text": "planet",
+      "timestamp": [
+        6.2,
+        6.6
+      ]
+    },
+    {
+      "text": "caused",
+      "timestamp": [
+        6.6,
+        6.92
+      ]
+    },
+    {
+      "text": "mainly",
+      "timestamp": [
+        6.92,
+        7.3
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        7.3,
+        7.54
+      ]
+    },
+    {
+      "text": "human",
+      "timestamp": [
+        7.54,
+        7.88
+      ]
+    },
+    {
+      "text": "emissions",
+      "timestamp": [
+        7.88,
+        8.22
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        8.22,
+        8.48
+      ]
+    },
+    {
+      "text": "greenhouse",
+      "timestamp": [
+        8.48,
+        8.8
+      ]
+    },
+    {
+      "text": "gases",
+      "timestamp": [
+        8.8,
+        9.44
+      ]
+    },
+    {
+      "text": "such",
+      "timestamp": [
+        9.44,
+        10.12
+      ]
+    },
+    {
+      "text": "as",
+      "timestamp": [
+        10.12,
+        10.26
+      ]
+    },
+    {
+      "text": "carbon",
+      "timestamp": [
+        10.26,
+        10.52
+      ]
+    },
+    {
+      "text": "dioxide,",
+      "timestamp": [
+        10.52,
+        11.06
+      ]
+    },
+    {
+      "text": "methane",
+      "timestamp": [
+        11.6,
+        11.98
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        11.98,
+        12.6
+      ]
+    },
+    {
+      "text": "nitrous",
+      "timestamp": [
+        12.6,
+        13.04
+      ]
+    },
+    {
+      "text": "oxide.",
+      "timestamp": [
+        13.04,
+        13.52
+      ]
+    },
+    {
+      "text": "Burding",
+      "timestamp": [
+        13.72,
+        13.88
+      ]
+    },
+    {
+      "text": "fossil",
+      "timestamp": [
+        13.88,
+        14.2
+      ]
+    },
+    {
+      "text": "fuels",
+      "timestamp": [
+        14.2,
+        14.56
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        14.56,
+        14.8
+      ]
+    },
+    {
+      "text": "electricity,",
+      "timestamp": [
+        14.8,
+        15.18
+      ]
+    },
+    {
+      "text": "transport",
+      "timestamp": [
+        15.62,
+        15.98
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        15.98,
+        16.36
+      ]
+    },
+    {
+      "text": "industry",
+      "timestamp": [
+        16.36,
+        16.88
+      ]
+    },
+    {
+      "text": "releases",
+      "timestamp": [
+        16.88,
+        17.72
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        17.72,
+        17.98
+      ]
+    },
+    {
+      "text": "bulk",
+      "timestamp": [
+        17.98,
+        18.24
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        18.24,
+        18.38
+      ]
+    },
+    {
+      "text": "these",
+      "timestamp": [
+        18.38,
+        18.52
+      ]
+    },
+    {
+      "text": "gases.",
+      "timestamp": [
+        18.52,
+        18.94
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

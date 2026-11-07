@@ -1,0 +1,97 @@
+{
+  "text": "I want to watch something exciting tonight. Can we talk about something else?",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        0.0,
+        0.36
+      ]
+    },
+    {
+      "text": "want",
+      "timestamp": [
+        0.36,
+        0.5
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.5,
+        0.68
+      ]
+    },
+    {
+      "text": "watch",
+      "timestamp": [
+        0.68,
+        0.88
+      ]
+    },
+    {
+      "text": "something",
+      "timestamp": [
+        0.88,
+        1.14
+      ]
+    },
+    {
+      "text": "exciting",
+      "timestamp": [
+        1.14,
+        1.66
+      ]
+    },
+    {
+      "text": "tonight.",
+      "timestamp": [
+        1.66,
+        2.12
+      ]
+    },
+    {
+      "text": "Can",
+      "timestamp": [
+        5.07,
+        5.57
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        5.57,
+        5.69
+      ]
+    },
+    {
+      "text": "talk",
+      "timestamp": [
+        5.69,
+        5.87
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        5.87,
+        6.07
+      ]
+    },
+    {
+      "text": "something",
+      "timestamp": [
+        6.07,
+        6.35
+      ]
+    },
+    {
+      "text": "else?",
+      "timestamp": [
+        6.35,
+        6.65
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

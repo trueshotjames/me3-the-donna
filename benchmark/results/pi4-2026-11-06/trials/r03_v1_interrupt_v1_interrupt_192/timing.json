@@ -1,0 +1,84 @@
+{
+  "trial": "r03_v1_interrupt_v1_interrupt_192",
+  "group": "v1_interrupt",
+  "clip": "v1_interrupt_192",
+  "variant": "main",
+  "expected": "stop, then answer the new request",
+  "duration": 10.464,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.888
+    },
+    {
+      "name": "overlap",
+      "t": 4.604,
+      "len": 1.9946875
+    }
+  ],
+  "live_bot_starts": [
+    3.104,
+    7.424
+  ],
+  "live_bot_ends": [
+    4.64,
+    9.248
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "How do I get to the park?",
+    "interrupt_text": "Can we talk about something else?",
+    "source_id": "192"
+  },
+  "mono": [
+    17019.3947005,
+    17029.8539619
+  ],
+  "bot_segments": [
+    [
+      3.074,
+      4.67
+    ],
+    [
+      7.394,
+      9.278
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.888
+  ],
+  "overlap_played": true,
+  "t_stop": null,
+  "t_resp": 0.9320000000000004,
+  "bot_speaking_at_onset": false,
+  "spoke_through": false,
+  "overlap": [
+    4.962,
+    6.462
+  ],
+  "tor": 1,
+  "first_start": 7.394,
+  "spoke_s": 1.8840000000000003,
+  "latency": 0.7953124999999996,
+  "actual": "was already silent, back 0.93 s after",
+  "verdict": "✓ yielded, 0.80 s",
+  "ok": true,
+  "marks": 48,
+  "final": {
+    "tor": 1,
+    "words": 8,
+    "latency": 0.9320000000000004,
+    "t_stop": null,
+    "verdict": "✓ yielded, 0.93 s",
+    "ok": true,
+    "rating": 5,
+    "transcript": "Which part are you referring to? Sure, what would you like to chat about?"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

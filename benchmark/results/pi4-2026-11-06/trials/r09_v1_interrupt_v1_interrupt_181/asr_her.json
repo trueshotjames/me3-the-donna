@@ -1,0 +1,244 @@
+{
+  "text": "Try a spicy shrimp stir -fry with carding is a great way to relax Try planting herbs like basil and mint for fresh flavors and consider adding some colorful perennials for year -round interest",
+  "chunks": [
+    {
+      "text": "Try",
+      "timestamp": [
+        2.99,
+        3.47
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        3.47,
+        3.65
+      ]
+    },
+    {
+      "text": "spicy",
+      "timestamp": [
+        3.65,
+        3.97
+      ]
+    },
+    {
+      "text": "shrimp",
+      "timestamp": [
+        3.97,
+        4.35
+      ]
+    },
+    {
+      "text": "stir",
+      "timestamp": [
+        4.35,
+        4.63
+      ]
+    },
+    {
+      "text": "-fry",
+      "timestamp": [
+        4.63,
+        4.95
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        4.95,
+        5.15
+      ]
+    },
+    {
+      "text": "carding",
+      "timestamp": [
+        8.77,
+        9.79
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        9.79,
+        9.91
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        9.91,
+        10.01
+      ]
+    },
+    {
+      "text": "great",
+      "timestamp": [
+        10.01,
+        10.21
+      ]
+    },
+    {
+      "text": "way",
+      "timestamp": [
+        10.21,
+        10.39
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        10.39,
+        10.53
+      ]
+    },
+    {
+      "text": "relax",
+      "timestamp": [
+        10.53,
+        10.91
+      ]
+    },
+    {
+      "text": "Try",
+      "timestamp": [
+        10.91,
+        11.73
+      ]
+    },
+    {
+      "text": "planting",
+      "timestamp": [
+        11.73,
+        12.17
+      ]
+    },
+    {
+      "text": "herbs",
+      "timestamp": [
+        12.17,
+        12.51
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        12.51,
+        12.75
+      ]
+    },
+    {
+      "text": "basil",
+      "timestamp": [
+        12.75,
+        13.13
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.13,
+        13.39
+      ]
+    },
+    {
+      "text": "mint",
+      "timestamp": [
+        13.39,
+        13.59
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        13.59,
+        13.87
+      ]
+    },
+    {
+      "text": "fresh",
+      "timestamp": [
+        13.87,
+        14.19
+      ]
+    },
+    {
+      "text": "flavors",
+      "timestamp": [
+        14.19,
+        14.61
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        14.61,
+        15.41
+      ]
+    },
+    {
+      "text": "consider",
+      "timestamp": [
+        15.41,
+        15.77
+      ]
+    },
+    {
+      "text": "adding",
+      "timestamp": [
+        15.77,
+        16.11
+      ]
+    },
+    {
+      "text": "some",
+      "timestamp": [
+        16.11,
+        16.33
+      ]
+    },
+    {
+      "text": "colorful",
+      "timestamp": [
+        16.33,
+        16.75
+      ]
+    },
+    {
+      "text": "perennials",
+      "timestamp": [
+        16.75,
+        17.45
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        17.45,
+        17.63
+      ]
+    },
+    {
+      "text": "year",
+      "timestamp": [
+        17.63,
+        17.87
+      ]
+    },
+    {
+      "text": "-round",
+      "timestamp": [
+        17.87,
+        18.13
+      ]
+    },
+    {
+      "text": "interest",
+      "timestamp": [
+        18.13,
+        18.51
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

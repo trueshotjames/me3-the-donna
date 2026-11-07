@@ -1,0 +1,60 @@
+{
+  "trial": "r10_false_tt_false_noise_000",
+  "group": "false_tt",
+  "clip": "false_noise_000",
+  "variant": "main",
+  "expected": "stay silent",
+  "duration": 12.48,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 4.4515
+    }
+  ],
+  "live_bot_starts": [
+    0.0
+  ],
+  "live_bot_ends": [
+    1.568
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 0
+  },
+  "clip_meta": {
+    "kind": "noise",
+    "kind_label": "noise: door slam",
+    "level_db": -6
+  },
+  "mono": [
+    18952.5073326,
+    18964.9898021
+  ],
+  "bot_segments": [
+    [
+      0.0,
+      1.598
+    ]
+  ],
+  "play_first": [
+    0.0,
+    4.4515
+  ],
+  "tor": 1,
+  "first_start": 0.0,
+  "spoke_s": 1.598,
+  "actual": "spoke 1.6 s after -4.5 s",
+  "verdict": "✗ took turn",
+  "ok": false,
+  "marks": 3,
+  "final": {
+    "tor": 1,
+    "words": 5,
+    "verdict": "✗ took turn",
+    "ok": false,
+    "transcript": "real -world usage are key."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

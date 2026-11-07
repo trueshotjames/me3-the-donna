@@ -1,0 +1,48 @@
+{"stage": "vad_start", "t": 16594.963468039, "pid": 9960, "src": "ws", "recv": 16626.3202529, "lt": 16626.302142116, "tt": 0.2256}
+{"stage": "vad_start", "t": 16594.963562093, "pid": 9960, "src": "ws", "recv": 16626.3202744, "lt": 16626.30223617, "tt": 0.2256}
+{"stage": "interrupted", "t": 16595.447567587, "pid": 9960, "src": "ws", "recv": 16626.8042076, "lt": 16626.786241664002, "tt": 0.7097}
+{"stage": "interrupted", "t": 16595.447656808, "pid": 9960, "src": "ws", "recv": 16626.804229, "lt": 16626.786330885, "tt": 0.7097}
+{"stage": "asr_partial", "t": 16595.57055937, "pid": 9960, "text": "Play the latest", "src": "ws", "recv": 16626.9259546, "lt": 16626.909233447, "tt": 0.8326}
+{"stage": "asr_partial", "t": 16595.691397625, "pid": 9960, "text": "Play the latest", "src": "ws", "recv": 16627.0492021, "lt": 16627.030071702, "tt": 0.9535}
+{"stage": "asr_partial", "t": 16595.96510974, "pid": 9960, "text": "Play the latest episode", "src": "ws", "recv": 16627.3204114, "lt": 16627.303783817, "tt": 1.2272}
+{"stage": "asr_partial", "t": 16596.171120636, "pid": 9960, "text": "Play the latest episode of", "src": "ws", "recv": 16627.5287847, "lt": 16627.509794713, "tt": 1.4332}
+{"stage": "asr_partial", "t": 16596.445131248, "pid": 9960, "text": "Play the latest episode of my", "src": "ws", "recv": 16627.8004004, "lt": 16627.783805325, "tt": 1.7072}
+{"stage": "asr_partial", "t": 16596.651019091, "pid": 9960, "text": "Play the latest episode of my favorite", "src": "ws", "recv": 16628.008681, "lt": 16627.989693168, "tt": 1.9131}
+{"stage": "asr_partial", "t": 16596.925367198, "pid": 9960, "text": "Play the latest episode of my favorite part", "src": "ws", "recv": 16628.2806893, "lt": 16628.264041275, "tt": 2.1875}
+{"stage": "asr_partial", "t": 16597.133604714, "pid": 9960, "text": "Play the latest episode of my favorite podcast,", "src": "ws", "recv": 16628.4923327, "lt": 16628.472278791, "tt": 2.3957}
+{"stage": "llm_request", "t": 16597.252285515, "pid": 9960, "speculative": true, "messages": 38, "chars": 12960, "est_tokens": 3240, "src": "ws", "recv": 16628.6080727, "lt": 16628.590959592, "tt": 2.5144}
+{"stage": "vad_end", "t": 16597.296914754, "pid": 9960, "src": "ws", "recv": 16628.6561336, "lt": 16628.635588831, "tt": 2.559}
+{"stage": "vad_end", "t": 16597.297191621, "pid": 9960, "src": "ws", "recv": 16628.6561575, "lt": 16628.635865698, "tt": 2.5593}
+{"stage": "llm_cancel", "t": 16597.405730609, "pid": 9960, "src": "ws", "recv": 16628.7600958, "lt": 16628.744404686, "tt": 2.6678}
+{"stage": "asr_partial", "t": 16597.610090249, "pid": 9960, "text": "Play the latest episode of my favorite podcast,", "src": "ws", "recv": 16628.9665444, "lt": 16628.948764326, "tt": 2.8722}
+{"stage": "llm_request", "t": 16597.613402725, "pid": 9960, "speculative": true, "messages": 38, "chars": 12959, "est_tokens": 3240, "src": "ws", "recv": 16628.9708357, "lt": 16628.952076802, "tt": 2.8755}
+{"stage": "asr_final", "t": 16597.757476125, "pid": 9960, "text": "Play the latest episode of my favorite podcast,", "src": "ws", "recv": 16629.1141282, "lt": 16629.096150202, "tt": 3.0196}
+{"stage": "user_stopped", "t": 16597.764532404, "pid": 9960, "src": "ws", "recv": 16629.1230512, "lt": 16629.103206481, "tt": 3.0266}
+{"stage": "user_stopped", "t": 16597.764644014, "pid": 9960, "src": "ws", "recv": 16629.1230822, "lt": 16629.103318091, "tt": 3.0267}
+{"stage": "llm_first_token", "t": 16598.210970272, "pid": 9960, "src": "ws", "recv": 16629.5662736, "lt": 16629.549644349, "tt": 3.4731}
+{"stage": "llm_usage", "t": 16598.220499612, "pid": 9960, "prompt_tokens": 2729, "completion_tokens": 35, "src": "ws", "recv": 16629.5793106, "lt": 16629.559173689002, "tt": 3.4826}
+{"stage": "tts_request", "t": 16598.244457877, "pid": 9960, "src": "ws", "recv": 16629.6037465, "lt": 16629.583131954, "tt": 3.5065}
+{"stage": "tts_first_audio", "t": 16598.476147572, "pid": 9960, "src": "ws", "recv": 16629.8346588, "lt": 16629.814821649, "tt": 3.7382}
+{"stage": "audio_out", "t": 16598.484919774, "pid": 9960, "src": "ws", "recv": 16629.8458971, "lt": 16629.823593851, "tt": 3.747}
+{"stage": "audio_out", "t": 16598.485005051, "pid": 9960, "src": "ws", "recv": 16629.8459161, "lt": 16629.823679128, "tt": 3.7471}
+{"stage": "vad_start", "t": 16600.334950474, "pid": 9960, "src": "ws", "recv": 16631.6901071, "lt": 16631.673624551, "tt": 5.597}
+{"stage": "vad_start", "t": 16600.335006584, "pid": 9960, "src": "ws", "recv": 16631.690142, "lt": 16631.673680661, "tt": 5.5971}
+{"stage": "asr_partial", "t": 16600.445751026, "pid": 9960, "text": "We", "src": "ws", "recv": 16631.801221, "lt": 16631.784425103, "tt": 5.7078}
+{"stage": "bot_stopped", "t": 16600.651575148, "pid": 9960, "src": "ws", "recv": 16632.0107369, "lt": 16631.990249225, "tt": 5.9137}
+{"stage": "bot_stopped", "t": 16600.652062641, "pid": 9960, "src": "ws", "recv": 16632.0107583, "lt": 16631.990736718, "tt": 5.9141}
+{"stage": "llm_request", "t": 16600.661091099, "pid": 9960, "messages": 39, "chars": 12998, "est_tokens": 3250, "src": "ws", "recv": 16632.0160396, "lt": 16631.999765176, "tt": 5.9232}
+{"stage": "interrupted", "t": 16600.697468037, "pid": 9960, "src": "ws", "recv": 16632.0542761, "lt": 16632.036142114, "tt": 5.9596}
+{"stage": "interrupted", "t": 16600.697555351, "pid": 9960, "src": "ws", "recv": 16632.0542927, "lt": 16632.036229428, "tt": 5.9596}
+{"stage": "asr_partial", "t": 16600.925315282, "pid": 9960, "text": "We should water the", "src": "ws", "recv": 16632.2809614, "lt": 16632.263989359, "tt": 6.1874}
+{"stage": "asr_partial", "t": 16601.171133055, "pid": 9960, "text": "We should water the", "src": "ws", "recv": 16632.5267935, "lt": 16632.509807132, "tt": 6.4332}
+{"stage": "asr_partial", "t": 16601.40654211, "pid": 9960, "text": "We should water the plants", "src": "ws", "recv": 16632.7629629, "lt": 16632.745216187, "tt": 6.6686}
+{"stage": "asr_partial", "t": 16601.650443963, "pid": 9960, "text": "We should water the plants later", "src": "ws", "recv": 16633.0058879, "lt": 16632.98911804, "tt": 6.9125}
+{"stage": "asr_partial", "t": 16601.725423236, "pid": 9960, "text": "We should water the plants later.", "src": "ws", "recv": 16633.0808217, "lt": 16633.064097313, "tt": 6.9875}
+{"stage": "vad_end", "t": 16601.837986876, "pid": 9960, "src": "ws", "recv": 16633.1938513, "lt": 16633.176660953, "tt": 7.1001}
+{"stage": "vad_end", "t": 16601.838039468, "pid": 9960, "src": "ws", "recv": 16633.1938724, "lt": 16633.176713545, "tt": 7.1001}
+{"stage": "llm_request", "t": 16601.855328171, "pid": 9960, "speculative": true, "messages": 40, "chars": 13031, "est_tokens": 3258, "src": "ws", "recv": 16633.2115123, "lt": 16633.194002248, "tt": 7.1174}
+{"stage": "asr_partial", "t": 16601.899682932, "pid": 9960, "text": "We should water the plants later.", "src": "ws", "recv": 16633.2601182, "lt": 16633.238357009, "tt": 7.1618}
+{"stage": "asr_final", "t": 16602.738135225, "pid": 9960, "text": "We should water the plants later.", "src": "ws", "recv": 16634.0950672, "lt": 16634.076809302, "tt": 8.0002}
+{"stage": "user_stopped", "t": 16602.745471205, "pid": 9960, "src": "ws", "recv": 16634.1044518, "lt": 16634.084145282, "tt": 8.0076}
+{"stage": "user_stopped", "t": 16602.745541241, "pid": 9960, "src": "ws", "recv": 16634.1044869, "lt": 16634.084215318002, "tt": 8.0076}
+{"stage": "llm_first_token", "t": 16602.748273094, "pid": 9960, "src": "ws", "recv": 16634.107851, "lt": 16634.086947171, "tt": 8.0104}

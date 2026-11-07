@@ -1,0 +1,202 @@
+{
+  "text": "Moral dilemmas force us to choose between conflicting duties, values or outcomes, and each option usually harms something we care about. One classic example is the trolley problem.",
+  "chunks": [
+    {
+      "text": "Moral",
+      "timestamp": [
+        0.0,
+        1.38
+      ]
+    },
+    {
+      "text": "dilemmas",
+      "timestamp": [
+        3.62,
+        4.12
+      ]
+    },
+    {
+      "text": "force",
+      "timestamp": [
+        4.12,
+        4.38
+      ]
+    },
+    {
+      "text": "us",
+      "timestamp": [
+        4.38,
+        4.62
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        4.62,
+        4.8
+      ]
+    },
+    {
+      "text": "choose",
+      "timestamp": [
+        4.8,
+        5.06
+      ]
+    },
+    {
+      "text": "between",
+      "timestamp": [
+        5.06,
+        5.42
+      ]
+    },
+    {
+      "text": "conflicting",
+      "timestamp": [
+        5.42,
+        5.98
+      ]
+    },
+    {
+      "text": "duties,",
+      "timestamp": [
+        5.98,
+        6.44
+      ]
+    },
+    {
+      "text": "values",
+      "timestamp": [
+        6.84,
+        7.34
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        7.34,
+        7.76
+      ]
+    },
+    {
+      "text": "outcomes,",
+      "timestamp": [
+        7.76,
+        8.24
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        8.78,
+        8.92
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        8.92,
+        9.14
+      ]
+    },
+    {
+      "text": "option",
+      "timestamp": [
+        9.14,
+        9.52
+      ]
+    },
+    {
+      "text": "usually",
+      "timestamp": [
+        9.52,
+        9.86
+      ]
+    },
+    {
+      "text": "harms",
+      "timestamp": [
+        9.86,
+        10.24
+      ]
+    },
+    {
+      "text": "something",
+      "timestamp": [
+        10.24,
+        10.6
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        10.6,
+        10.8
+      ]
+    },
+    {
+      "text": "care",
+      "timestamp": [
+        10.8,
+        11.04
+      ]
+    },
+    {
+      "text": "about.",
+      "timestamp": [
+        11.04,
+        11.32
+      ]
+    },
+    {
+      "text": "One",
+      "timestamp": [
+        11.48,
+        11.58
+      ]
+    },
+    {
+      "text": "classic",
+      "timestamp": [
+        11.58,
+        11.92
+      ]
+    },
+    {
+      "text": "example",
+      "timestamp": [
+        11.92,
+        12.42
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        12.42,
+        12.68
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        12.68,
+        12.82
+      ]
+    },
+    {
+      "text": "trolley",
+      "timestamp": [
+        12.82,
+        13.18
+      ]
+    },
+    {
+      "text": "problem.",
+      "timestamp": [
+        13.18,
+        13.54
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,34 @@
+{
+  "text": "Explain astronomy in depth.",
+  "chunks": [
+    {
+      "text": "Explain",
+      "timestamp": [
+        0.0,
+        0.34
+      ]
+    },
+    {
+      "text": "astronomy",
+      "timestamp": [
+        0.34,
+        0.86
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        0.86,
+        1.08
+      ]
+    },
+    {
+      "text": "depth.",
+      "timestamp": [
+        1.08,
+        1.32
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,93 @@
+{
+  "trial": "r09_v15_backchannel_v15_backchannel_34",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_34",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 12.896,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.88
+    },
+    {
+      "name": "overlap",
+      "t": 4.22,
+      "len": 0.65
+    }
+  ],
+  "live_bot_starts": [
+    2.72
+  ],
+  "live_bot_ends": [
+    11.968
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Outline sleep science clearly.",
+    "current_turn_text": "",
+    "overlap_text": "sure",
+    "overlap_duration": 0.65,
+    "overlap_window": [
+      5.672,
+      6.322
+    ],
+    "source_id": "34"
+  },
+  "mono": [
+    18546.019656,
+    18558.9101381
+  ],
+  "bot_segments": [
+    [
+      2.69,
+      11.998
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.88
+  ],
+  "overlap_played": true,
+  "t_stop": 7.771999999999999,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": true,
+  "overlap": [
+    4.226,
+    4.734
+  ],
+  "tor": 1,
+  "first_start": 4.87,
+  "spoke_s": 7.127999999999999,
+  "latency": 0.0,
+  "actual": "kept talking, did not come back",
+  "overlap_class": "through",
+  "label_provisional": null,
+  "verdict": "✓ kept talking",
+  "ok": true,
+  "marks": 30,
+  "final": {
+    "t_stop": 7.771999999999999,
+    "t_resp": null,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": -38.28006088280054,
+      "pitch_mean": -28.04518842629355,
+      "pitch_sd": -13.170996750540787,
+      "intensity_mean": -2.759763700658862,
+      "intensity_sd": 0.6288561178171239,
+      "utmosv2": null
+    },
+    "transcript": "Sleep science shows that we cycle through deep slow wave sleep and lighter REM stages each night, each stage helping memory, hormone balance and body repair.",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

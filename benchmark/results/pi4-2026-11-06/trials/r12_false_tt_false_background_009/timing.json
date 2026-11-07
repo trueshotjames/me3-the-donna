@@ -1,0 +1,63 @@
+{
+  "trial": "r12_false_tt_false_background_009",
+  "group": "false_tt",
+  "clip": "false_background_009",
+  "variant": "main",
+  "expected": "stay silent",
+  "duration": 31.36,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.3469375
+    }
+  ],
+  "live_bot_starts": [
+    0.448,
+    1.248
+  ],
+  "live_bot_ends": [
+    0.704
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 0
+  },
+  "clip_meta": {
+    "kind": "background",
+    "kind_label": "background speech",
+    "level_db": -15,
+    "text": "I'm going to take a nap.",
+    "source": "v15_background_17"
+  },
+  "mono": [
+    19405.7885293,
+    19437.1513142
+  ],
+  "bot_segments": [
+    [
+      0.418,
+      31.36
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.3469375
+  ],
+  "tor": 1,
+  "first_start": 0.418,
+  "spoke_s": 8.9289375,
+  "actual": "spoke 8.9 s after -0.9 s",
+  "verdict": "✗ took turn",
+  "ok": false,
+  "marks": 4,
+  "final": {
+    "tor": 1,
+    "words": 20,
+    "verdict": "✗ took turn",
+    "ok": false,
+    "transcript": "followed by the oral version that drove global eradication efforts. The 1960s introduced the measles, mumps, and rubella combined vaccine, simplifying childhood immunizations. The 1970s brought hepatitis B recombinant vaccines, protecting against liver disease. The 1980s launched the first HPV vaccine, preventing cervical cancer. The 1990s added varicella chickenpox and pneumococcal conjugate vacc"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

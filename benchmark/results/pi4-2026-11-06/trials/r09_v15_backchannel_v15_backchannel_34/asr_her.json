@@ -1,0 +1,188 @@
+{
+  "text": "Sleep science shows that we cycle through deep slow wave sleep and lighter REM stages each night, each stage helping memory, hormone balance and body repair.",
+  "chunks": [
+    {
+      "text": "Sleep",
+      "timestamp": [
+        2.32,
+        2.84
+      ]
+    },
+    {
+      "text": "science",
+      "timestamp": [
+        2.84,
+        3.22
+      ]
+    },
+    {
+      "text": "shows",
+      "timestamp": [
+        3.22,
+        3.56
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        3.56,
+        3.78
+      ]
+    },
+    {
+      "text": "we",
+      "timestamp": [
+        3.78,
+        3.92
+      ]
+    },
+    {
+      "text": "cycle",
+      "timestamp": [
+        3.92,
+        4.22
+      ]
+    },
+    {
+      "text": "through",
+      "timestamp": [
+        4.22,
+        4.48
+      ]
+    },
+    {
+      "text": "deep",
+      "timestamp": [
+        4.48,
+        5.1
+      ]
+    },
+    {
+      "text": "slow",
+      "timestamp": [
+        5.1,
+        5.54
+      ]
+    },
+    {
+      "text": "wave",
+      "timestamp": [
+        5.54,
+        5.82
+      ]
+    },
+    {
+      "text": "sleep",
+      "timestamp": [
+        5.82,
+        6.14
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        6.14,
+        6.48
+      ]
+    },
+    {
+      "text": "lighter",
+      "timestamp": [
+        6.48,
+        6.78
+      ]
+    },
+    {
+      "text": "REM",
+      "timestamp": [
+        6.78,
+        7.04
+      ]
+    },
+    {
+      "text": "stages",
+      "timestamp": [
+        7.04,
+        7.44
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        7.44,
+        7.78
+      ]
+    },
+    {
+      "text": "night,",
+      "timestamp": [
+        7.78,
+        8.06
+      ]
+    },
+    {
+      "text": "each",
+      "timestamp": [
+        8.36,
+        8.6
+      ]
+    },
+    {
+      "text": "stage",
+      "timestamp": [
+        8.6,
+        8.9
+      ]
+    },
+    {
+      "text": "helping",
+      "timestamp": [
+        8.9,
+        9.26
+      ]
+    },
+    {
+      "text": "memory,",
+      "timestamp": [
+        9.26,
+        9.74
+      ]
+    },
+    {
+      "text": "hormone",
+      "timestamp": [
+        10.08,
+        10.32
+      ]
+    },
+    {
+      "text": "balance",
+      "timestamp": [
+        10.32,
+        10.78
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        10.78,
+        11.08
+      ]
+    },
+    {
+      "text": "body",
+      "timestamp": [
+        11.08,
+        11.4
+      ]
+    },
+    {
+      "text": "repair.",
+      "timestamp": [
+        11.4,
+        11.78
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

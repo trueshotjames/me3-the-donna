@@ -1,0 +1,111 @@
+{
+  "text": "I'm sorry, I can't look up e - Emma Sushi sounds great. Let's go tonight.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        3.02,
+        3.5
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        3.5,
+        3.86
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        4.22,
+        4.3
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        4.3,
+        4.6
+      ]
+    },
+    {
+      "text": "look",
+      "timestamp": [
+        4.6,
+        4.7
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        4.7,
+        4.86
+      ]
+    },
+    {
+      "text": "e",
+      "timestamp": [
+        4.86,
+        5.04
+      ]
+    },
+    {
+      "text": "-",
+      "timestamp": [
+        5.04,
+        5.1
+      ]
+    },
+    {
+      "text": "Emma",
+      "timestamp": [
+        7.15,
+        8.05
+      ]
+    },
+    {
+      "text": "Sushi",
+      "timestamp": [
+        8.05,
+        8.39
+      ]
+    },
+    {
+      "text": "sounds",
+      "timestamp": [
+        8.39,
+        8.83
+      ]
+    },
+    {
+      "text": "great.",
+      "timestamp": [
+        8.83,
+        9.21
+      ]
+    },
+    {
+      "text": "Let's",
+      "timestamp": [
+        9.71,
+        10.01
+      ]
+    },
+    {
+      "text": "go",
+      "timestamp": [
+        10.01,
+        10.17
+      ]
+    },
+    {
+      "text": "tonight.",
+      "timestamp": [
+        10.17,
+        10.53
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,34 @@
+{
+  "text": "Outline sleep science clearly.",
+  "chunks": [
+    {
+      "text": "Outline",
+      "timestamp": [
+        0.0,
+        0.38
+      ]
+    },
+    {
+      "text": "sleep",
+      "timestamp": [
+        0.38,
+        0.64
+      ]
+    },
+    {
+      "text": "science",
+      "timestamp": [
+        0.64,
+        0.98
+      ]
+    },
+    {
+      "text": "clearly.",
+      "timestamp": [
+        0.98,
+        1.3
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

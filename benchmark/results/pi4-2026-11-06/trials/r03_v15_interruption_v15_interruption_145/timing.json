@@ -1,0 +1,99 @@
+{
+  "trial": "r03_v15_interruption_v15_interruption_145",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_145",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 17.152,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.648
+    },
+    {
+      "name": "overlap",
+      "t": 5.18,
+      "len": 3.7230625
+    }
+  ],
+  "live_bot_starts": [
+    3.68,
+    10.56
+  ],
+  "live_bot_ends": [
+    5.568,
+    16.8
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "I've been trying to eat healthier lately",
+    "current_turn_text": "Oh, before I forget, can we discuss some exercise tips instead?",
+    "overlap_text": "Oh, before I forget, can we discuss some exercise tips instead?",
+    "overlap_duration": 3.72,
+    "overlap_window": [
+      6.3149999999999995,
+      10.038
+    ],
+    "source_id": "145"
+  },
+  "mono": [
+    16879.9714025,
+    16897.1186203
+  ],
+  "bot_segments": [
+    [
+      3.65,
+      5.598
+    ],
+    [
+      10.53,
+      16.83
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.648
+  ],
+  "overlap_played": true,
+  "t_stop": 0.2839999999999998,
+  "t_resp": 1.6269374999999986,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.314,
+    8.9030625
+  ],
+  "tor": 1,
+  "first_start": 10.53,
+  "spoke_s": 6.299999999999999,
+  "latency": 1.6269374999999986,
+  "actual": "stopped after 0.28 s, back 1.63 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 67,
+  "final": {
+    "t_stop": 0.2839999999999998,
+    "t_resp": 1.6269374999999986,
+    "label": "Respond",
+    "voice_delta": {
+      "wpm": 41.07386866007556,
+      "pitch_mean": 23.101657588856227,
+      "pitch_sd": 23.394704942322992,
+      "intensity_mean": -3.4991004894386784,
+      "intensity_sd": -0.5073812390839887,
+      "utmosv2": null
+    },
+    "transcript": "That's great, small, balanced change. Sure, focus on mixing cardio like brisk walking or cycling with strength training 2 -3 times a week.",
+    "judge_label": "Respond",
+    "ok": true,
+    "verdict": "✓ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

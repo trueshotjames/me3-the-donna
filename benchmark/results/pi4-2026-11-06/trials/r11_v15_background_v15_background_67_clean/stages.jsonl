@@ -1,0 +1,26 @@
+{"stage": "vad_start", "t": 19282.859031775, "pid": 9960, "src": "ws", "recv": 19314.2547872, "lt": 19314.197705852, "tt": 0.1852}
+{"stage": "vad_start", "t": 19282.859116904, "pid": 9960, "src": "ws", "recv": 19314.2548116, "lt": 19314.197790981, "tt": 0.1853}
+{"stage": "interrupted", "t": 19283.325696585, "pid": 9960, "src": "ws", "recv": 19314.7216956, "lt": 19314.664370662, "tt": 0.6519}
+{"stage": "interrupted", "t": 19283.325785936, "pid": 9960, "src": "ws", "recv": 19314.7217155, "lt": 19314.664460013, "tt": 0.6519}
+{"stage": "asr_partial", "t": 19283.444210221, "pid": 9960, "text": "Remind me", "src": "ws", "recv": 19314.8387726, "lt": 19314.782884298, "tt": 0.7704}
+{"stage": "asr_partial", "t": 19283.64702081, "pid": 9960, "text": "Remind me to stand", "src": "ws", "recv": 19315.0418647, "lt": 19314.985694887, "tt": 0.9732}
+{"stage": "asr_partial", "t": 19283.925319967, "pid": 9960, "text": "Remind me to stand up", "src": "ws", "recv": 19315.3210655, "lt": 19315.263994044, "tt": 1.2515}
+{"stage": "asr_partial", "t": 19284.166646377, "pid": 9960, "text": "Remind me to stand up every", "src": "ws", "recv": 19315.5620625, "lt": 19315.505320454, "tt": 1.4928}
+{"stage": "vad_end", "t": 19284.393218114, "pid": 9960, "src": "ws", "recv": 19315.7881855, "lt": 19315.731892191, "tt": 1.7194}
+{"stage": "vad_end", "t": 19284.393271281, "pid": 9960, "src": "ws", "recv": 19315.7882076, "lt": 19315.731945358, "tt": 1.7194}
+{"stage": "asr_partial", "t": 19284.448874101, "pid": 9960, "text": "Remind me to stand up every hour.", "src": "ws", "recv": 19315.8447282, "lt": 19315.787548178, "tt": 1.775}
+{"stage": "llm_request", "t": 19284.452863076, "pid": 9960, "speculative": true, "messages": 24, "chars": 12104, "est_tokens": 3026, "src": "ws", "recv": 19315.8493601, "lt": 19315.791537153, "tt": 1.779}
+{"stage": "asr_partial", "t": 19284.603953247, "pid": 9960, "text": "Remind me to stand up every hour.", "src": "ws", "recv": 19315.9987087, "lt": 19315.942627324, "tt": 1.9301}
+{"stage": "asr_partial", "t": 19284.684094374, "pid": 9960, "text": "Remind me to stand up every hour.", "src": "ws", "recv": 19316.0786832, "lt": 19316.022768451, "tt": 2.0103}
+{"stage": "asr_final", "t": 19284.889573767, "pid": 9960, "text": "Remind me to stand up every hour.", "src": "ws", "recv": 19316.2852904, "lt": 19316.228247844, "tt": 2.2157}
+{"stage": "user_stopped", "t": 19284.896529117, "pid": 9960, "src": "ws", "recv": 19316.2935553, "lt": 19316.235203194, "tt": 2.2227}
+{"stage": "user_stopped", "t": 19284.896598783, "pid": 9960, "src": "ws", "recv": 19316.2935717, "lt": 19316.23527286, "tt": 2.2228}
+{"stage": "llm_first_token", "t": 19284.986752172, "pid": 9960, "src": "ws", "recv": 19316.3815447, "lt": 19316.325426249, "tt": 2.3129}
+{"stage": "llm_usage", "t": 19285.009135854, "pid": 9960, "prompt_tokens": 2834, "completion_tokens": 48, "src": "ws", "recv": 19316.4064382, "lt": 19316.347809931, "tt": 2.3353}
+{"stage": "tts_request", "t": 19285.029348819, "pid": 9960, "src": "ws", "recv": 19316.4271309, "lt": 19316.368022896, "tt": 2.3555}
+{"stage": "tts_first_audio", "t": 19285.240511409, "pid": 9960, "src": "ws", "recv": 19316.6347675, "lt": 19316.579185486, "tt": 2.5667}
+{"stage": "audio_out", "t": 19285.244878936, "pid": 9960, "src": "ws", "recv": 19316.6441557, "lt": 19316.583553013, "tt": 2.571}
+{"stage": "audio_out", "t": 19285.244963768, "pid": 9960, "src": "ws", "recv": 19316.6441729, "lt": 19316.583637845, "tt": 2.5711}
+{"stage": "bot_stopped", "t": 19287.773704307, "pid": 9960, "src": "ws", "recv": 19319.1687583, "lt": 19319.112378384, "tt": 5.0999}
+{"stage": "bot_stopped", "t": 19287.77378938, "pid": 9960, "src": "ws", "recv": 19319.1687772, "lt": 19319.112463457, "tt": 5.0999}
+{"stage": "llm_request", "t": 19287.780457844, "pid": 9960, "messages": 25, "chars": 12147, "est_tokens": 3037, "src": "ws", "recv": 19319.1757103, "lt": 19319.119131921, "tt": 5.1066}

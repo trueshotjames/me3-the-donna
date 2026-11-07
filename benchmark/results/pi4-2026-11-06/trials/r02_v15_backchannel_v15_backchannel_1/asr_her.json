@@ -1,0 +1,748 @@
+{
+  "text": "Global warming is the long -term rise in Earth's average surface temperature caused mainly by human activities that increase greenhouse gases in the atmosphere. Burying fossil fuels for electricity, transportation, and industry releases carbon dioxide, methane, and nitrous oxide, which trap heat that would otherwise escape into space. Deforestation reduces the planet's ability to absorb carbon dioxide because trees act as natural carbon sinks while also releasing stored carbon when they're cut or burned. As the atmosphere warms, ice sheets and glaciers melt, contributing to sea level rise and altering ocean currents that regulate climate patterns. Warmer oceans hold less dissolved oxygen. Harming Marine Eco -",
+  "chunks": [
+    {
+      "text": "Global",
+      "timestamp": [
+        3.82,
+        4.4
+      ]
+    },
+    {
+      "text": "warming",
+      "timestamp": [
+        4.4,
+        4.8
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        4.8,
+        5.04
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.04,
+        5.2
+      ]
+    },
+    {
+      "text": "long",
+      "timestamp": [
+        5.2,
+        5.44
+      ]
+    },
+    {
+      "text": "-term",
+      "timestamp": [
+        5.44,
+        5.64
+      ]
+    },
+    {
+      "text": "rise",
+      "timestamp": [
+        5.64,
+        6.02
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        6.02,
+        7.08
+      ]
+    },
+    {
+      "text": "Earth's",
+      "timestamp": [
+        7.08,
+        7.5
+      ]
+    },
+    {
+      "text": "average",
+      "timestamp": [
+        7.5,
+        7.88
+      ]
+    },
+    {
+      "text": "surface",
+      "timestamp": [
+        7.88,
+        8.16
+      ]
+    },
+    {
+      "text": "temperature",
+      "timestamp": [
+        8.16,
+        8.72
+      ]
+    },
+    {
+      "text": "caused",
+      "timestamp": [
+        8.72,
+        9.08
+      ]
+    },
+    {
+      "text": "mainly",
+      "timestamp": [
+        9.08,
+        9.42
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        9.42,
+        9.68
+      ]
+    },
+    {
+      "text": "human",
+      "timestamp": [
+        9.68,
+        9.96
+      ]
+    },
+    {
+      "text": "activities",
+      "timestamp": [
+        9.96,
+        10.52
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        10.52,
+        11.2
+      ]
+    },
+    {
+      "text": "increase",
+      "timestamp": [
+        11.2,
+        11.66
+      ]
+    },
+    {
+      "text": "greenhouse",
+      "timestamp": [
+        11.66,
+        12.04
+      ]
+    },
+    {
+      "text": "gases",
+      "timestamp": [
+        12.04,
+        12.58
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        12.58,
+        12.78
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        12.78,
+        12.9
+      ]
+    },
+    {
+      "text": "atmosphere.",
+      "timestamp": [
+        12.9,
+        13.36
+      ]
+    },
+    {
+      "text": "Burying",
+      "timestamp": [
+        13.7,
+        13.9
+      ]
+    },
+    {
+      "text": "fossil",
+      "timestamp": [
+        13.9,
+        14.26
+      ]
+    },
+    {
+      "text": "fuels",
+      "timestamp": [
+        14.26,
+        14.64
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        14.64,
+        14.86
+      ]
+    },
+    {
+      "text": "electricity,",
+      "timestamp": [
+        14.86,
+        15.34
+      ]
+    },
+    {
+      "text": "transportation,",
+      "timestamp": [
+        15.92,
+        16.48
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        17.0,
+        17.16
+      ]
+    },
+    {
+      "text": "industry",
+      "timestamp": [
+        17.16,
+        17.6
+      ]
+    },
+    {
+      "text": "releases",
+      "timestamp": [
+        17.6,
+        18.14
+      ]
+    },
+    {
+      "text": "carbon",
+      "timestamp": [
+        18.14,
+        18.52
+      ]
+    },
+    {
+      "text": "dioxide,",
+      "timestamp": [
+        18.52,
+        19.0
+      ]
+    },
+    {
+      "text": "methane,",
+      "timestamp": [
+        19.66,
+        20.04
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        20.44,
+        20.62
+      ]
+    },
+    {
+      "text": "nitrous",
+      "timestamp": [
+        20.62,
+        20.96
+      ]
+    },
+    {
+      "text": "oxide,",
+      "timestamp": [
+        20.96,
+        21.5
+      ]
+    },
+    {
+      "text": "which",
+      "timestamp": [
+        21.9,
+        22.1
+      ]
+    },
+    {
+      "text": "trap",
+      "timestamp": [
+        22.1,
+        22.4
+      ]
+    },
+    {
+      "text": "heat",
+      "timestamp": [
+        22.4,
+        22.72
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        22.72,
+        23.04
+      ]
+    },
+    {
+      "text": "would",
+      "timestamp": [
+        23.04,
+        23.14
+      ]
+    },
+    {
+      "text": "otherwise",
+      "timestamp": [
+        23.14,
+        23.56
+      ]
+    },
+    {
+      "text": "escape",
+      "timestamp": [
+        23.56,
+        24.0
+      ]
+    },
+    {
+      "text": "into",
+      "timestamp": [
+        24.0,
+        24.28
+      ]
+    },
+    {
+      "text": "space.",
+      "timestamp": [
+        24.28,
+        24.68
+      ]
+    },
+    {
+      "text": "Deforestation",
+      "timestamp": [
+        24.98,
+        25.68
+      ]
+    },
+    {
+      "text": "reduces",
+      "timestamp": [
+        25.68,
+        26.24
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        26.24,
+        26.52
+      ]
+    },
+    {
+      "text": "planet's",
+      "timestamp": [
+        26.52,
+        26.94
+      ]
+    },
+    {
+      "text": "ability",
+      "timestamp": [
+        26.94,
+        27.28
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        27.28,
+        27.54
+      ]
+    },
+    {
+      "text": "absorb",
+      "timestamp": [
+        27.54,
+        27.92
+      ]
+    },
+    {
+      "text": "carbon",
+      "timestamp": [
+        27.92,
+        28.3
+      ]
+    },
+    {
+      "text": "dioxide",
+      "timestamp": [
+        28.3,
+        28.9
+      ]
+    },
+    {
+      "text": "because",
+      "timestamp": [
+        28.9,
+        29.62
+      ]
+    },
+    {
+      "text": "trees",
+      "timestamp": [
+        29.62,
+        29.94
+      ]
+    },
+    {
+      "text": "act",
+      "timestamp": [
+        29.94,
+        30.34
+      ]
+    },
+    {
+      "text": "as",
+      "timestamp": [
+        30.34,
+        30.48
+      ]
+    },
+    {
+      "text": "natural",
+      "timestamp": [
+        30.48,
+        30.88
+      ]
+    },
+    {
+      "text": "carbon",
+      "timestamp": [
+        30.88,
+        31.24
+      ]
+    },
+    {
+      "text": "sinks",
+      "timestamp": [
+        31.24,
+        31.6
+      ]
+    },
+    {
+      "text": "while",
+      "timestamp": [
+        31.6,
+        32.32
+      ]
+    },
+    {
+      "text": "also",
+      "timestamp": [
+        32.32,
+        32.7
+      ]
+    },
+    {
+      "text": "releasing",
+      "timestamp": [
+        32.7,
+        33.12
+      ]
+    },
+    {
+      "text": "stored",
+      "timestamp": [
+        33.12,
+        33.54
+      ]
+    },
+    {
+      "text": "carbon",
+      "timestamp": [
+        33.54,
+        34.0
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        34.0,
+        34.2
+      ]
+    },
+    {
+      "text": "they're",
+      "timestamp": [
+        34.2,
+        34.4
+      ]
+    },
+    {
+      "text": "cut",
+      "timestamp": [
+        34.4,
+        34.6
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        34.6,
+        34.82
+      ]
+    },
+    {
+      "text": "burned.",
+      "timestamp": [
+        34.82,
+        35.24
+      ]
+    },
+    {
+      "text": "As",
+      "timestamp": [
+        35.64,
+        35.7
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        35.7,
+        35.84
+      ]
+    },
+    {
+      "text": "atmosphere",
+      "timestamp": [
+        35.84,
+        36.18
+      ]
+    },
+    {
+      "text": "warms,",
+      "timestamp": [
+        36.18,
+        36.84
+      ]
+    },
+    {
+      "text": "ice",
+      "timestamp": [
+        37.06,
+        37.26
+      ]
+    },
+    {
+      "text": "sheets",
+      "timestamp": [
+        37.26,
+        37.5
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        37.5,
+        37.7
+      ]
+    },
+    {
+      "text": "glaciers",
+      "timestamp": [
+        37.7,
+        38.1
+      ]
+    },
+    {
+      "text": "melt,",
+      "timestamp": [
+        38.1,
+        38.42
+      ]
+    },
+    {
+      "text": "contributing",
+      "timestamp": [
+        38.9,
+        39.34
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        39.34,
+        39.62
+      ]
+    },
+    {
+      "text": "sea",
+      "timestamp": [
+        39.62,
+        39.86
+      ]
+    },
+    {
+      "text": "level",
+      "timestamp": [
+        39.86,
+        40.08
+      ]
+    },
+    {
+      "text": "rise",
+      "timestamp": [
+        40.08,
+        40.48
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        40.48,
+        40.74
+      ]
+    },
+    {
+      "text": "altering",
+      "timestamp": [
+        40.74,
+        41.3
+      ]
+    },
+    {
+      "text": "ocean",
+      "timestamp": [
+        41.3,
+        41.58
+      ]
+    },
+    {
+      "text": "currents",
+      "timestamp": [
+        41.58,
+        42.08
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        42.08,
+        42.28
+      ]
+    },
+    {
+      "text": "regulate",
+      "timestamp": [
+        42.28,
+        42.68
+      ]
+    },
+    {
+      "text": "climate",
+      "timestamp": [
+        42.68,
+        43.06
+      ]
+    },
+    {
+      "text": "patterns.",
+      "timestamp": [
+        43.06,
+        43.6
+      ]
+    },
+    {
+      "text": "Warmer",
+      "timestamp": [
+        43.9,
+        44.18
+      ]
+    },
+    {
+      "text": "oceans",
+      "timestamp": [
+        44.18,
+        44.52
+      ]
+    },
+    {
+      "text": "hold",
+      "timestamp": [
+        44.52,
+        44.88
+      ]
+    },
+    {
+      "text": "less",
+      "timestamp": [
+        44.88,
+        45.16
+      ]
+    },
+    {
+      "text": "dissolved",
+      "timestamp": [
+        45.16,
+        45.54
+      ]
+    },
+    {
+      "text": "oxygen.",
+      "timestamp": [
+        45.54,
+        46.2
+      ]
+    },
+    {
+      "text": "Harming",
+      "timestamp": [
+        46.2,
+        47.02
+      ]
+    },
+    {
+      "text": "Marine",
+      "timestamp": [
+        47.02,
+        47.28
+      ]
+    },
+    {
+      "text": "Eco",
+      "timestamp": [
+        47.28,
+        47.58
+      ]
+    },
+    {
+      "text": "-",
+      "timestamp": [
+        47.58,
+        47.62
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

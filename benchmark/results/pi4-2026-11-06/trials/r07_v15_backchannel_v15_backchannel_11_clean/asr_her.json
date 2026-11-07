@@ -1,0 +1,244 @@
+{
+  "text": "black holes are extremely dense objects where gravity pulls everything inwards so strongly that even light cannot escape they form when a massive star runs out of fuel and collapses under its own weight",
+  "chunks": [
+    {
+      "text": "black",
+      "timestamp": [
+        0.0,
+        1.16
+      ]
+    },
+    {
+      "text": "holes",
+      "timestamp": [
+        3.18,
+        3.52
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        3.52,
+        3.76
+      ]
+    },
+    {
+      "text": "extremely",
+      "timestamp": [
+        3.76,
+        4.22
+      ]
+    },
+    {
+      "text": "dense",
+      "timestamp": [
+        4.22,
+        4.52
+      ]
+    },
+    {
+      "text": "objects",
+      "timestamp": [
+        4.52,
+        5.1
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        5.1,
+        5.54
+      ]
+    },
+    {
+      "text": "gravity",
+      "timestamp": [
+        5.54,
+        5.92
+      ]
+    },
+    {
+      "text": "pulls",
+      "timestamp": [
+        5.92,
+        6.2
+      ]
+    },
+    {
+      "text": "everything",
+      "timestamp": [
+        6.2,
+        6.6
+      ]
+    },
+    {
+      "text": "inwards",
+      "timestamp": [
+        6.6,
+        7.12
+      ]
+    },
+    {
+      "text": "so",
+      "timestamp": [
+        7.12,
+        7.34
+      ]
+    },
+    {
+      "text": "strongly",
+      "timestamp": [
+        7.34,
+        7.8
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        7.8,
+        8.28
+      ]
+    },
+    {
+      "text": "even",
+      "timestamp": [
+        8.28,
+        8.54
+      ]
+    },
+    {
+      "text": "light",
+      "timestamp": [
+        8.54,
+        8.82
+      ]
+    },
+    {
+      "text": "cannot",
+      "timestamp": [
+        8.82,
+        9.1
+      ]
+    },
+    {
+      "text": "escape",
+      "timestamp": [
+        9.1,
+        9.5
+      ]
+    },
+    {
+      "text": "they",
+      "timestamp": [
+        9.5,
+        9.8
+      ]
+    },
+    {
+      "text": "form",
+      "timestamp": [
+        9.8,
+        10.08
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        10.08,
+        10.24
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        10.24,
+        10.32
+      ]
+    },
+    {
+      "text": "massive",
+      "timestamp": [
+        10.32,
+        10.64
+      ]
+    },
+    {
+      "text": "star",
+      "timestamp": [
+        10.64,
+        11.04
+      ]
+    },
+    {
+      "text": "runs",
+      "timestamp": [
+        11.04,
+        11.32
+      ]
+    },
+    {
+      "text": "out",
+      "timestamp": [
+        11.32,
+        11.56
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        11.56,
+        11.64
+      ]
+    },
+    {
+      "text": "fuel",
+      "timestamp": [
+        11.64,
+        11.92
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        11.92,
+        12.18
+      ]
+    },
+    {
+      "text": "collapses",
+      "timestamp": [
+        12.18,
+        12.66
+      ]
+    },
+    {
+      "text": "under",
+      "timestamp": [
+        12.66,
+        13.0
+      ]
+    },
+    {
+      "text": "its",
+      "timestamp": [
+        13.0,
+        13.2
+      ]
+    },
+    {
+      "text": "own",
+      "timestamp": [
+        13.2,
+        13.38
+      ]
+    },
+    {
+      "text": "weight",
+      "timestamp": [
+        13.38,
+        13.68
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

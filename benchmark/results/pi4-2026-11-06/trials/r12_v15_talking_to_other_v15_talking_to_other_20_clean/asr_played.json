@@ -1,0 +1,69 @@
+{
+  "text": "Send a message to Alex saying I'll be late.",
+  "chunks": [
+    {
+      "text": "Send",
+      "timestamp": [
+        0.0,
+        0.18
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.18,
+        0.3
+      ]
+    },
+    {
+      "text": "message",
+      "timestamp": [
+        0.3,
+        0.56
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        0.56,
+        0.76
+      ]
+    },
+    {
+      "text": "Alex",
+      "timestamp": [
+        0.76,
+        1.04
+      ]
+    },
+    {
+      "text": "saying",
+      "timestamp": [
+        1.04,
+        1.32
+      ]
+    },
+    {
+      "text": "I'll",
+      "timestamp": [
+        1.32,
+        1.56
+      ]
+    },
+    {
+      "text": "be",
+      "timestamp": [
+        1.56,
+        1.68
+      ]
+    },
+    {
+      "text": "late.",
+      "timestamp": [
+        1.68,
+        1.92
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

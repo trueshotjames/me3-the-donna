@@ -1,0 +1,566 @@
+{
+  "text": "Black holes are regions of space -time where gravity is so strong that nothing, not even light, can escape. They form when massive stars collapse under their own weight after exhausting nuclear fuel. The boundary around a black hole called the event horizon marks the point of no return. Inside the horizon, all matter is crushed toward a singularity, a point of infinite density where known physics breaks down. Black holes are characterized mainly by mass, spin, and electric charge.",
+  "chunks": [
+    {
+      "text": "Black",
+      "timestamp": [
+        2.64,
+        3.2
+      ]
+    },
+    {
+      "text": "holes",
+      "timestamp": [
+        3.2,
+        3.46
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        3.46,
+        3.66
+      ]
+    },
+    {
+      "text": "regions",
+      "timestamp": [
+        3.66,
+        3.94
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        3.94,
+        4.2
+      ]
+    },
+    {
+      "text": "space",
+      "timestamp": [
+        4.2,
+        4.42
+      ]
+    },
+    {
+      "text": "-time",
+      "timestamp": [
+        4.42,
+        4.84
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        4.84,
+        6.24
+      ]
+    },
+    {
+      "text": "gravity",
+      "timestamp": [
+        6.24,
+        6.62
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        6.62,
+        6.88
+      ]
+    },
+    {
+      "text": "so",
+      "timestamp": [
+        6.88,
+        7.06
+      ]
+    },
+    {
+      "text": "strong",
+      "timestamp": [
+        7.06,
+        7.58
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        7.58,
+        8.06
+      ]
+    },
+    {
+      "text": "nothing,",
+      "timestamp": [
+        8.06,
+        8.42
+      ]
+    },
+    {
+      "text": "not",
+      "timestamp": [
+        8.86,
+        9.12
+      ]
+    },
+    {
+      "text": "even",
+      "timestamp": [
+        9.12,
+        9.32
+      ]
+    },
+    {
+      "text": "light,",
+      "timestamp": [
+        9.32,
+        9.62
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        9.86,
+        9.94
+      ]
+    },
+    {
+      "text": "escape.",
+      "timestamp": [
+        9.94,
+        10.3
+      ]
+    },
+    {
+      "text": "They",
+      "timestamp": [
+        10.58,
+        10.68
+      ]
+    },
+    {
+      "text": "form",
+      "timestamp": [
+        10.68,
+        11.08
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        11.08,
+        11.28
+      ]
+    },
+    {
+      "text": "massive",
+      "timestamp": [
+        11.28,
+        11.64
+      ]
+    },
+    {
+      "text": "stars",
+      "timestamp": [
+        11.64,
+        12.08
+      ]
+    },
+    {
+      "text": "collapse",
+      "timestamp": [
+        12.08,
+        12.52
+      ]
+    },
+    {
+      "text": "under",
+      "timestamp": [
+        12.52,
+        12.94
+      ]
+    },
+    {
+      "text": "their",
+      "timestamp": [
+        12.94,
+        13.12
+      ]
+    },
+    {
+      "text": "own",
+      "timestamp": [
+        13.12,
+        13.42
+      ]
+    },
+    {
+      "text": "weight",
+      "timestamp": [
+        13.42,
+        13.74
+      ]
+    },
+    {
+      "text": "after",
+      "timestamp": [
+        13.74,
+        14.14
+      ]
+    },
+    {
+      "text": "exhausting",
+      "timestamp": [
+        14.14,
+        14.72
+      ]
+    },
+    {
+      "text": "nuclear",
+      "timestamp": [
+        14.72,
+        15.1
+      ]
+    },
+    {
+      "text": "fuel.",
+      "timestamp": [
+        15.1,
+        15.62
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        15.84,
+        15.86
+      ]
+    },
+    {
+      "text": "boundary",
+      "timestamp": [
+        15.86,
+        16.22
+      ]
+    },
+    {
+      "text": "around",
+      "timestamp": [
+        16.22,
+        16.62
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        16.62,
+        16.76
+      ]
+    },
+    {
+      "text": "black",
+      "timestamp": [
+        16.76,
+        16.98
+      ]
+    },
+    {
+      "text": "hole",
+      "timestamp": [
+        16.98,
+        17.38
+      ]
+    },
+    {
+      "text": "called",
+      "timestamp": [
+        17.38,
+        17.64
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        17.64,
+        17.82
+      ]
+    },
+    {
+      "text": "event",
+      "timestamp": [
+        17.82,
+        18.04
+      ]
+    },
+    {
+      "text": "horizon",
+      "timestamp": [
+        18.04,
+        18.68
+      ]
+    },
+    {
+      "text": "marks",
+      "timestamp": [
+        18.68,
+        19.38
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        19.38,
+        19.64
+      ]
+    },
+    {
+      "text": "point",
+      "timestamp": [
+        19.64,
+        19.86
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        19.86,
+        20.04
+      ]
+    },
+    {
+      "text": "no",
+      "timestamp": [
+        20.04,
+        20.22
+      ]
+    },
+    {
+      "text": "return.",
+      "timestamp": [
+        20.22,
+        20.66
+      ]
+    },
+    {
+      "text": "Inside",
+      "timestamp": [
+        21.04,
+        21.34
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        21.34,
+        21.6
+      ]
+    },
+    {
+      "text": "horizon,",
+      "timestamp": [
+        21.6,
+        22.14
+      ]
+    },
+    {
+      "text": "all",
+      "timestamp": [
+        22.56,
+        22.84
+      ]
+    },
+    {
+      "text": "matter",
+      "timestamp": [
+        22.84,
+        23.1
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        23.1,
+        23.34
+      ]
+    },
+    {
+      "text": "crushed",
+      "timestamp": [
+        23.34,
+        23.72
+      ]
+    },
+    {
+      "text": "toward",
+      "timestamp": [
+        23.72,
+        24.02
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        24.02,
+        24.12
+      ]
+    },
+    {
+      "text": "singularity,",
+      "timestamp": [
+        24.12,
+        24.88
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        25.22,
+        25.4
+      ]
+    },
+    {
+      "text": "point",
+      "timestamp": [
+        25.4,
+        25.6
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        25.6,
+        25.78
+      ]
+    },
+    {
+      "text": "infinite",
+      "timestamp": [
+        25.78,
+        26.12
+      ]
+    },
+    {
+      "text": "density",
+      "timestamp": [
+        26.12,
+        26.66
+      ]
+    },
+    {
+      "text": "where",
+      "timestamp": [
+        26.66,
+        26.94
+      ]
+    },
+    {
+      "text": "known",
+      "timestamp": [
+        26.94,
+        27.2
+      ]
+    },
+    {
+      "text": "physics",
+      "timestamp": [
+        27.2,
+        27.52
+      ]
+    },
+    {
+      "text": "breaks",
+      "timestamp": [
+        27.52,
+        27.94
+      ]
+    },
+    {
+      "text": "down.",
+      "timestamp": [
+        27.94,
+        28.32
+      ]
+    },
+    {
+      "text": "Black",
+      "timestamp": [
+        28.32,
+        28.56
+      ]
+    },
+    {
+      "text": "holes",
+      "timestamp": [
+        28.56,
+        28.88
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        28.88,
+        29.1
+      ]
+    },
+    {
+      "text": "characterized",
+      "timestamp": [
+        29.1,
+        29.6
+      ]
+    },
+    {
+      "text": "mainly",
+      "timestamp": [
+        29.6,
+        30.08
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        30.08,
+        30.42
+      ]
+    },
+    {
+      "text": "mass,",
+      "timestamp": [
+        30.42,
+        30.74
+      ]
+    },
+    {
+      "text": "spin,",
+      "timestamp": [
+        31.24,
+        31.5
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        31.98,
+        32.06
+      ]
+    },
+    {
+      "text": "electric",
+      "timestamp": [
+        32.06,
+        32.46
+      ]
+    },
+    {
+      "text": "charge.",
+      "timestamp": [
+        32.46,
+        32.88
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

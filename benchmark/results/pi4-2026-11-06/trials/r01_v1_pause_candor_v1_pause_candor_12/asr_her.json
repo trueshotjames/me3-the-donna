@@ -1,0 +1,118 @@
+{
+  "text": "Sounds like you have a lot of fond memories and a unique perspective on that state.",
+  "chunks": [
+    {
+      "text": "Sounds",
+      "timestamp": [
+        11.02,
+        11.42
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        11.42,
+        11.7
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        11.7,
+        11.84
+      ]
+    },
+    {
+      "text": "have",
+      "timestamp": [
+        11.84,
+        11.98
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.98,
+        12.08
+      ]
+    },
+    {
+      "text": "lot",
+      "timestamp": [
+        12.08,
+        12.26
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        12.26,
+        12.36
+      ]
+    },
+    {
+      "text": "fond",
+      "timestamp": [
+        12.36,
+        12.58
+      ]
+    },
+    {
+      "text": "memories",
+      "timestamp": [
+        12.58,
+        13.04
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        13.04,
+        13.42
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        13.42,
+        13.52
+      ]
+    },
+    {
+      "text": "unique",
+      "timestamp": [
+        13.52,
+        13.8
+      ]
+    },
+    {
+      "text": "perspective",
+      "timestamp": [
+        13.8,
+        14.34
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        14.34,
+        14.64
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        14.64,
+        14.84
+      ]
+    },
+    {
+      "text": "state.",
+      "timestamp": [
+        14.84,
+        15.08
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

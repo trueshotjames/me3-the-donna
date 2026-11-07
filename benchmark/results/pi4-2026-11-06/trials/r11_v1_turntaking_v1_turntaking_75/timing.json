@@ -1,0 +1,69 @@
+{
+  "trial": "r11_v1_turntaking_v1_turntaking_75",
+  "group": "v1_turntaking",
+  "clip": "v1_turntaking_75",
+  "variant": "main",
+  "expected": "reply within 8 s",
+  "duration": 34.336,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 7.02
+    }
+  ],
+  "live_bot_starts": [
+    0.064,
+    7.648
+  ],
+  "live_bot_ends": [
+    1.216,
+    33.984
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "turn_end": 6.720000000000027,
+    "last_words": "",
+    "source_id": "75"
+  },
+  "mono": [
+    19213.686272,
+    19248.0314204
+  ],
+  "bot_segments": [
+    [
+      0.034,
+      1.246
+    ],
+    [
+      7.618,
+      34.014
+    ]
+  ],
+  "play_first": [
+    0.0,
+    7.02
+  ],
+  "tor": 1,
+  "first_start": 7.618,
+  "spoke_s": 7.102000000000027,
+  "latency": 0.897999999999973,
+  "turn_end": 6.720000000000027,
+  "actual": "replied after 0.90 s, spoke 7.1 s",
+  "verdict": "✓ 0.90 s",
+  "ok": true,
+  "marks": 47,
+  "final": {
+    "tor": 1,
+    "words": 20,
+    "latency": 0.897999999999973,
+    "verdict": "✓ 0.90 s",
+    "ok": true,
+    "transcript": "creates a rotating uptornados are intense. Rotating columns of air that stretch from a thunderstorm down to the Earth's surface, capable of ripping apart buildings and trees in moments. They develop when warm moist air from the Gulf of Mexico collides with cool, dry air from the interior, creating strong wind shear that spins the storms updraft into a mesocyclone. When the rotation tightens and th"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

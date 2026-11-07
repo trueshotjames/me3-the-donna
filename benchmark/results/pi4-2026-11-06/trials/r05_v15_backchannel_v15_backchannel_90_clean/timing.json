@@ -1,0 +1,68 @@
+{
+  "trial": "r05_v15_backchannel_v15_backchannel_90_clean",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_90",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 14.144,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.88
+    }
+  ],
+  "live_bot_starts": [
+    0.0,
+    3.328
+  ],
+  "live_bot_ends": [
+    0.288,
+    13.792
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Discuss moral dilemmas fully.",
+    "current_turn_text": "",
+    "overlap_text": "totally",
+    "overlap_duration": 0.84,
+    "overlap_window": [
+      5.8580000000000005,
+      6.694000000000001
+    ],
+    "source_id": "90"
+  },
+  "mono": [
+    17501.3597891,
+    17515.4871827
+  ],
+  "bot_segments": [
+    [
+      0.0,
+      0.318
+    ],
+    [
+      3.298,
+      13.822
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.88
+  ],
+  "tor": 1,
+  "first_start": 3.298,
+  "spoke_s": 6.581999999999999,
+  "actual": "replied after 1.42 s, spoke 6.6 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 28,
+  "final": {
+    "transcript": "Moral dilemmas force us to choose between conflicting duties, values or outcomes, and each option usually harms something we care about. One classic example is the trolley problem."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

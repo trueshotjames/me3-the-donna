@@ -1,0 +1,62 @@
+{
+  "trial": "r05_v15_interruption_v15_interruption_30_clean",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_30",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 14.176,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.744
+    }
+  ],
+  "live_bot_starts": [
+    4.16
+  ],
+  "live_bot_ends": [
+    13.824
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "My tomatoes are not growing well this season",
+    "current_turn_text": "By the way, what's the weather going to be like tomorrow?",
+    "overlap_text": "By the way, what's the weather going to be like tomorrow?",
+    "overlap_duration": 3.44,
+    "overlap_window": [
+      6.805,
+      10.25
+    ],
+    "source_id": "30"
+  },
+  "mono": [
+    17400.9061732,
+    17415.0700693
+  ],
+  "bot_segments": [
+    [
+      4.13,
+      13.854
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.744
+  ],
+  "tor": 1,
+  "first_start": 4.13,
+  "spoke_s": 6.614,
+  "actual": "replied after 1.39 s, spoke 6.6 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 25,
+  "final": {
+    "transcript": "Try moving the tomatoes to a sunnier spot. Use a balanced fertilizer and water consistently at the soil level each morning. Make sure they get at least six hours of direct sunlight."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

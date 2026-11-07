@@ -1,0 +1,57 @@
+{"stage": "vad_start", "t": 17350.054400413, "pid": 9960, "src": "ws", "recv": 17381.4227208, "lt": 17381.39307449, "tt": 0.4683}
+{"stage": "vad_start", "t": 17350.05450993, "pid": 9960, "src": "ws", "recv": 17381.4227453, "lt": 17381.393184007, "tt": 0.4684}
+{"stage": "asr_partial", "t": 17350.403557571, "pid": 9960, "text": "nine", "src": "ws", "recv": 17381.7708003, "lt": 17381.742231648, "tt": 0.8175}
+{"stage": "asr_partial", "t": 17350.524253922, "pid": 9960, "text": "My", "src": "ws", "recv": 17381.8927605, "lt": 17381.862927999002, "tt": 0.9382}
+{"stage": "interrupted", "t": 17350.686111198, "pid": 9960, "src": "ws", "recv": 17382.0558235, "lt": 17382.024785275, "tt": 1.1}
+{"stage": "interrupted", "t": 17350.686205642, "pid": 9960, "src": "ws", "recv": 17382.0558515, "lt": 17382.024879719, "tt": 1.1001}
+{"stage": "asr_partial", "t": 17350.923597078, "pid": 9960, "text": "My tomatoes are not", "src": "ws", "recv": 17382.290943, "lt": 17382.262271155, "tt": 1.3375}
+{"stage": "asr_partial", "t": 17351.12757275, "pid": 9960, "text": "My tomatoes are not good.", "src": "ws", "recv": 17382.4955249, "lt": 17382.466246827, "tt": 1.5415}
+{"stage": "asr_partial", "t": 17351.40375731, "pid": 9960, "text": "My tomatoes are not growing well", "src": "ws", "recv": 17382.771512, "lt": 17382.742431387, "tt": 1.8177}
+{"stage": "asr_partial", "t": 17351.606765772, "pid": 9960, "text": "My tomatoes are not growing well this", "src": "ws", "recv": 17382.9739602, "lt": 17382.945439849, "tt": 2.0207}
+{"stage": "asr_partial", "t": 17351.883739062, "pid": 9960, "text": "My tomatoes are not growing well this", "src": "ws", "recv": 17383.2510412, "lt": 17383.222413139, "tt": 2.2976}
+{"stage": "asr_partial", "t": 17352.087085168, "pid": 9960, "text": "My tomatoes are not growing well this season.", "src": "ws", "recv": 17383.4543809, "lt": 17383.425759245, "tt": 2.501}
+{"stage": "vad_end", "t": 17352.193821398, "pid": 9960, "src": "ws", "recv": 17383.5619993, "lt": 17383.532495475, "tt": 2.6077}
+{"stage": "vad_end", "t": 17352.19389073, "pid": 9960, "src": "ws", "recv": 17383.5620208, "lt": 17383.532564807, "tt": 2.6078}
+{"stage": "asr_partial", "t": 17352.367445045, "pid": 9960, "text": "My tomatoes are not growing well this season.", "src": "ws", "recv": 17383.7354911, "lt": 17383.706119122002, "tt": 2.7813}
+{"stage": "llm_request", "t": 17352.370621412, "pid": 9960, "speculative": true, "messages": 46, "chars": 11816, "est_tokens": 2954, "src": "ws", "recv": 17383.7382212, "lt": 17383.709295489, "tt": 2.7845}
+{"stage": "asr_partial", "t": 17352.567067513, "pid": 9960, "text": "My tomatoes are not growing well this season.", "src": "ws", "recv": 17383.9343431, "lt": 17383.90574159, "tt": 2.981}
+{"stage": "llm_usage", "t": 17352.966383966, "pid": 9960, "prompt_tokens": 2461, "completion_tokens": 107, "src": "ws", "recv": 17384.3341543, "lt": 17384.305058043, "tt": 3.3803}
+{"stage": "asr_final", "t": 17353.450014654, "pid": 9960, "text": "My tomatoes are not growing well this season.", "src": "ws", "recv": 17384.8186174, "lt": 17384.788688731, "tt": 3.8639}
+{"stage": "user_stopped", "t": 17353.456977677, "pid": 9960, "src": "ws", "recv": 17384.8324421, "lt": 17384.795651754, "tt": 3.8709}
+{"stage": "user_stopped", "t": 17353.457045787, "pid": 9960, "src": "ws", "recv": 17384.8324602, "lt": 17384.795719864, "tt": 3.871}
+{"stage": "llm_first_token", "t": 17353.460652168, "pid": 9960, "src": "ws", "recv": 17384.8398512, "lt": 17384.799326245, "tt": 3.8746}
+{"stage": "tts_request", "t": 17353.505571472, "pid": 9960, "src": "ws", "recv": 17384.8799485, "lt": 17384.844245549, "tt": 3.9195}
+{"stage": "tts_first_audio", "t": 17353.719613111, "pid": 9960, "src": "ws", "recv": 17385.0865754, "lt": 17385.058287188, "tt": 4.1335}
+{"stage": "audio_out", "t": 17353.724093239, "pid": 9960, "src": "ws", "recv": 17385.0963925, "lt": 17385.062767316, "tt": 4.138}
+{"stage": "audio_out", "t": 17353.724178849, "pid": 9960, "src": "ws", "recv": 17385.0964107, "lt": 17385.062852926, "tt": 4.1381}
+{"stage": "vad_start", "t": 17355.786802951, "pid": 9960, "src": "ws", "recv": 17387.1553648, "lt": 17387.125477028, "tt": 6.2007}
+{"stage": "vad_start", "t": 17355.786870376, "pid": 9960, "src": "ws", "recv": 17387.155383, "lt": 17387.125544453, "tt": 6.2008}
+{"stage": "asr_partial", "t": 17355.966014695, "pid": 9960, "text": "By", "src": "ws", "recv": 17387.3364123, "lt": 17387.304688772, "tt": 6.3799}
+{"stage": "asr_partial", "t": 17356.408549215, "pid": 9960, "text": "By the way, what", "src": "ws", "recv": 17387.7799943, "lt": 17387.747223292, "tt": 6.8225}
+{"stage": "interrupted", "t": 17356.412150077, "pid": 9960, "src": "ws", "recv": 17387.7828606, "lt": 17387.750824154, "tt": 6.8261}
+{"stage": "interrupted", "t": 17356.412240168, "pid": 9960, "src": "ws", "recv": 17387.7828862, "lt": 17387.750914245, "tt": 6.8261}
+{"stage": "bot_stopped", "t": 17356.470479805, "pid": 9960, "src": "ws", "recv": 17387.839018, "lt": 17387.809153882, "tt": 6.8844}
+{"stage": "bot_stopped", "t": 17356.470566619, "pid": 9960, "src": "ws", "recv": 17387.8390442, "lt": 17387.809240696, "tt": 6.8845}
+{"stage": "asr_partial", "t": 17356.683981321, "pid": 9960, "text": "By the way, what's the", "src": "ws", "recv": 17388.0517317, "lt": 17388.022655398, "tt": 7.0979}
+{"stage": "asr_partial", "t": 17356.727039205, "pid": 9960, "text": "By the way, what's the web", "src": "ws", "recv": 17388.0942919, "lt": 17388.065713282, "tt": 7.1409}
+{"stage": "asr_partial", "t": 17356.887120041, "pid": 9960, "text": "By the way, what's the weather?", "src": "ws", "recv": 17388.2544199, "lt": 17388.225794118, "tt": 7.301}
+{"stage": "asr_partial", "t": 17356.925013027, "pid": 9960, "text": "By the way, what's the weather?", "src": "ws", "recv": 17388.2942035, "lt": 17388.263687104, "tt": 7.3389}
+{"stage": "asr_partial", "t": 17357.164491104, "pid": 9960, "text": "By the way, what's the weather? Gonna", "src": "ws", "recv": 17388.5320377, "lt": 17388.503165181, "tt": 7.5784}
+{"stage": "asr_partial", "t": 17357.405386015, "pid": 9960, "text": "By the way, what's the weather? Gonna be", "src": "ws", "recv": 17388.7739108, "lt": 17388.744060092, "tt": 7.8193}
+{"stage": "asr_partial", "t": 17357.449879973, "pid": 9960, "text": "By the way, what's the weather gonna be like?", "src": "ws", "recv": 17388.8171775, "lt": 17388.78855405, "tt": 7.8638}
+{"stage": "asr_partial", "t": 17358.53319974, "pid": 9960, "text": "By the way, what's the weather gonna be like? tomorrow", "src": "ws", "recv": 17389.9019446, "lt": 17389.871873817, "tt": 8.9471}
+{"stage": "vad_end", "t": 17358.596753885, "pid": 9960, "src": "ws", "recv": 17389.9644859, "lt": 17389.935427962002, "tt": 9.0107}
+{"stage": "vad_end", "t": 17358.596808125, "pid": 9960, "src": "ws", "recv": 17389.964511, "lt": 17389.935482202, "tt": 9.0107}
+{"stage": "llm_request", "t": 17358.615043988, "pid": 9960, "speculative": true, "messages": 47, "chars": 11870, "est_tokens": 2968, "src": "ws", "recv": 17389.982603, "lt": 17389.953718065, "tt": 9.0289}
+{"stage": "asr_final", "t": 17358.659062304, "pid": 9960, "text": "By the way, what's the weather gonna be like? tomorrow", "src": "ws", "recv": 17390.0296729, "lt": 17389.997736381, "tt": 9.073}
+{"stage": "user_stopped", "t": 17358.670585955, "pid": 9960, "src": "ws", "recv": 17390.0451099, "lt": 17390.009260032, "tt": 9.0845}
+{"stage": "user_stopped", "t": 17358.670682806, "pid": 9960, "src": "ws", "recv": 17390.0456837, "lt": 17390.009356883, "tt": 9.0846}
+{"stage": "llm_first_token", "t": 17359.283399332, "pid": 9960, "src": "ws", "recv": 17390.6528428, "lt": 17390.622073409, "tt": 9.6973}
+{"stage": "llm_usage", "t": 17359.300181435, "pid": 9960, "prompt_tokens": 2418, "completion_tokens": 66, "src": "ws", "recv": 17390.6713156, "lt": 17390.638855512, "tt": 9.7141}
+{"stage": "tts_request", "t": 17359.324123634, "pid": 9960, "src": "ws", "recv": 17390.6972215, "lt": 17390.662797711, "tt": 9.738}
+{"stage": "tts_first_audio", "t": 17359.542521587, "pid": 9960, "src": "ws", "recv": 17390.9105677, "lt": 17390.881195664, "tt": 9.9564}
+{"stage": "audio_out", "t": 17359.548801323, "pid": 9960, "src": "ws", "recv": 17390.9210335, "lt": 17390.8874754, "tt": 9.9627}
+{"stage": "audio_out", "t": 17359.54888847, "pid": 9960, "src": "ws", "recv": 17390.9210598, "lt": 17390.887562547, "tt": 9.9628}
+{"stage": "bot_stopped", "t": 17362.077349098, "pid": 9960, "src": "ws", "recv": 17393.4468253, "lt": 17393.416023175, "tt": 12.4913}
+{"stage": "bot_stopped", "t": 17362.07776187, "pid": 9960, "src": "ws", "recv": 17393.4468477, "lt": 17393.416435947, "tt": 12.4917}
+{"stage": "llm_request", "t": 17362.085893435, "pid": 9960, "messages": 48, "chars": 11917, "est_tokens": 2979, "src": "ws", "recv": 17393.4535228, "lt": 17393.424567512, "tt": 12.4998}

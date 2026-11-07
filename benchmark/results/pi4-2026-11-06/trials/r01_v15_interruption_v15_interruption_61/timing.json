@@ -1,0 +1,93 @@
+{
+  "trial": "r01_v15_interruption_v15_interruption_61",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_61",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 19.68,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.544
+    },
+    {
+      "name": "overlap",
+      "t": 1.532,
+      "len": 2.635
+    }
+  ],
+  "live_bot_starts": [
+    0.032,
+    5.728,
+    11.84
+  ],
+  "live_bot_ends": [
+    0.448,
+    11.488,
+    19.328
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "How can I participate in environmental conservation from home?",
+    "current_turn_text": "Actually, what are some good environmental documentaries?",
+    "overlap_text": "Actually, what are some good environmental documentaries?",
+    "overlap_duration": 2.63,
+    "overlap_window": [
+      7.189,
+      9.824
+    ],
+    "source_id": "61"
+  },
+  "mono": [
+    16168.8501869,
+    16188.5429145
+  ],
+  "bot_segments": [
+    [
+      0.002,
+      0.478
+    ],
+    [
+      5.698,
+      19.358
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.544
+  ],
+  "overlap_played": true,
+  "t_stop": null,
+  "t_resp": 1.5310000000000006,
+  "bot_speaking_at_onset": false,
+  "spoke_through": false,
+  "overlap": [
+    1.532,
+    4.167
+  ],
+  "tor": 1,
+  "first_start": 5.698,
+  "spoke_s": 6.468999999999999,
+  "latency": 1.5310000000000006,
+  "actual": "was already silent, back 1.53 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 42,
+  "final": {
+    "t_stop": null,
+    "t_resp": 1.5310000000000006,
+    "label": "Respond",
+    "transcript": "You can start by reducing waste, supporting renewable energy, volunteering for local cleanup groups, and advocating for greener policies. For field documentaries, check out the biggest little farm, chasing ice, and our planet.",
+    "judge_label": "Respond",
+    "ok": true,
+    "verdict": "✓ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

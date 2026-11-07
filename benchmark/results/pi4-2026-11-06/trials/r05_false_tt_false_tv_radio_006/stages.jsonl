@@ -1,0 +1,35 @@
+{"stage": "vad_start", "t": 17512.227955535, "pid": 9960, "src": "ws", "recv": 17543.5989269, "lt": 17543.566629612, "tt": 0.2418}
+{"stage": "vad_start", "t": 17512.228127051, "pid": 9960, "src": "ws", "recv": 17543.5989509, "lt": 17543.566801128, "tt": 0.2419}
+{"stage": "interrupted", "t": 17512.729483066, "pid": 9960, "src": "ws", "recv": 17544.1007661, "lt": 17544.068157143, "tt": 0.7433}
+{"stage": "interrupted", "t": 17512.729573731, "pid": 9960, "src": "ws", "recv": 17544.1007886, "lt": 17544.068247808, "tt": 0.7434}
+{"stage": "asr_partial", "t": 17512.844442232, "pid": 9960, "text": "Actually, that", "src": "ws", "recv": 17544.2142271, "lt": 17544.183116309, "tt": 0.8583}
+{"stage": "asr_partial", "t": 17513.007040448, "pid": 9960, "text": "Actually, that's", "src": "ws", "recv": 17544.3768496, "lt": 17544.345714525, "tt": 1.0209}
+{"stage": "asr_partial", "t": 17513.287661254, "pid": 9960, "text": "Actually, that switched", "src": "ws", "recv": 17544.6583955, "lt": 17544.626335331, "tt": 1.3015}
+{"stage": "asr_partial", "t": 17513.486999953, "pid": 9960, "text": "Actually, that switched gears.", "src": "ws", "recv": 17544.8569157, "lt": 17544.82567403, "tt": 1.5008}
+{"stage": "vad_end", "t": 17513.730310136, "pid": 9960, "src": "ws", "recv": 17545.1004613, "lt": 17545.068984213, "tt": 1.7441}
+{"stage": "vad_end", "t": 17513.730362413, "pid": 9960, "src": "ws", "recv": 17545.100486, "lt": 17545.06903649, "tt": 1.7442}
+{"stage": "asr_partial", "t": 17513.771589154, "pid": 9960, "text": "Actually, that switched gears.", "src": "ws", "recv": 17545.1427551, "lt": 17545.110263231, "tt": 1.7854}
+{"stage": "llm_request", "t": 17513.775617252, "pid": 9960, "speculative": true, "messages": 24, "chars": 10802, "est_tokens": 2700, "src": "ws", "recv": 17545.1468386, "lt": 17545.114291329, "tt": 1.7894}
+{"stage": "vad_start", "t": 17513.887028037, "pid": 9960, "src": "ws", "recv": 17545.2572928, "lt": 17545.225702114, "tt": 1.9008}
+{"stage": "vad_start", "t": 17513.887083833, "pid": 9960, "src": "ws", "recv": 17545.257323, "lt": 17545.22575791, "tt": 1.9009}
+{"stage": "llm_cancel", "t": 17513.890189219, "pid": 9960, "src": "ws", "recv": 17545.2590604, "lt": 17545.228863296, "tt": 1.904}
+{"stage": "asr_partial", "t": 17514.005202922, "pid": 9960, "text": "Actually, that switched gears.", "src": "ws", "recv": 17545.3741389, "lt": 17545.343876999, "tt": 2.019}
+{"stage": "asr_partial", "t": 17514.247175196, "pid": 9960, "text": "Actually, that switched gears. Do you", "src": "ws", "recv": 17545.617098, "lt": 17545.585849273, "tt": 2.261}
+{"stage": "asr_partial", "t": 17514.447046406, "pid": 9960, "text": "Actually, that switched gears. Do you have any", "src": "ws", "recv": 17545.8168673, "lt": 17545.785720483, "tt": 2.4609}
+{"stage": "asr_partial", "t": 17514.727034092, "pid": 9960, "text": "Actually, that switched gears. Do you have any advice", "src": "ws", "recv": 17546.0968743, "lt": 17546.065708169, "tt": 2.7409}
+{"stage": "asr_partial", "t": 17514.807262009, "pid": 9960, "text": "Actually, that switched gears. Do you have any advice?", "src": "ws", "recv": 17546.177264, "lt": 17546.145936086, "tt": 2.8211}
+{"stage": "llm_request", "t": 17514.888841984, "pid": 9960, "speculative": true, "messages": 24, "chars": 10826, "est_tokens": 2706, "src": "ws", "recv": 17546.2585415, "lt": 17546.227516061, "tt": 2.9027}
+{"stage": "llm_cancel", "t": 17514.966111939, "pid": 9960, "src": "ws", "recv": 17546.3353631, "lt": 17546.304786016, "tt": 2.9799}
+{"stage": "asr_partial", "t": 17515.207227131, "pid": 9960, "text": "Actually, that switched gears. Do you have any advice on", "src": "ws", "recv": 17546.5772808, "lt": 17546.545901208, "tt": 3.221}
+{"stage": "asr_partial", "t": 17515.444788127, "pid": 9960, "text": "Actually, that switched gears. Do you have any advice on", "src": "ws", "recv": 17546.8145734, "lt": 17546.783462204, "tt": 3.4586}
+{"stage": "vad_end", "t": 17515.678543986, "pid": 9960, "src": "ws", "recv": 17547.0488614, "lt": 17547.017218063, "tt": 3.6924}
+{"stage": "vad_end", "t": 17515.67859717, "pid": 9960, "src": "ws", "recv": 17547.0488883, "lt": 17547.017271247, "tt": 3.6924}
+{"stage": "asr_partial", "t": 17515.69536883, "pid": 9960, "text": "Actually, that switched gears. Do you have any advice on gut", "src": "ws", "recv": 17547.066216, "lt": 17547.034042907, "tt": 3.7092}
+{"stage": "llm_request", "t": 17515.699146245, "pid": 9960, "speculative": true, "messages": 24, "chars": 10832, "est_tokens": 2708, "src": "ws", "recv": 17547.0698802, "lt": 17547.037820322, "tt": 3.713}
+{"stage": "asr_partial", "t": 17515.927826168, "pid": 9960, "text": "Actually, that switched gears. Do you have any advice on gardening", "src": "ws", "recv": 17547.298273, "lt": 17547.266500245, "tt": 3.9416}
+{"stage": "llm_cancel", "t": 17515.927906611, "pid": 9960, "src": "ws", "recv": 17547.2982956, "lt": 17547.266580688, "tt": 3.9417}
+{"stage": "llm_request", "t": 17515.934065719, "pid": 9960, "speculative": true, "messages": 24, "chars": 10838, "est_tokens": 2710, "src": "ws", "recv": 17547.3074099, "lt": 17547.272739796, "tt": 3.9479}
+{"stage": "asr_final", "t": 17516.055232845, "pid": 9960, "text": "Actually, that switched gears. Do you have any advice on gardening", "src": "ws", "recv": 17547.4264204, "lt": 17547.393906922, "tt": 4.0691}
+{"stage": "user_stopped", "t": 17516.063341891, "pid": 9960, "src": "ws", "recv": 17547.4390246, "lt": 17547.402015968, "tt": 4.0772}
+{"stage": "user_stopped", "t": 17516.063412834, "pid": 9960, "src": "ws", "recv": 17547.4390476, "lt": 17547.402086911, "tt": 4.0772}
+{"stage": "llm_first_token", "t": 17516.067074622, "pid": 9960, "src": "ws", "recv": 17547.4426171, "lt": 17547.405748699, "tt": 4.0809}

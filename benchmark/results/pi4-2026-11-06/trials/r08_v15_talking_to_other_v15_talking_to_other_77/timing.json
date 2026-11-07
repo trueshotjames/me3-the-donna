@@ -1,0 +1,99 @@
+{
+  "trial": "r08_v15_talking_to_other_v15_talking_to_other_77",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_77",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 10.368,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.2
+    },
+    {
+      "name": "overlap",
+      "t": 4.156,
+      "len": 1.858
+    }
+  ],
+  "live_bot_starts": [
+    2.656,
+    7.072
+  ],
+  "live_bot_ends": [
+    4.384,
+    9.152
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 3
+  },
+  "clip_meta": {
+    "context_text": "How far is it from Beijing to Shanghai?",
+    "current_turn_text": "Dr. Patel, I'm out of my meds.",
+    "overlap_text": "Dr. Patel, I'm out of my meds.",
+    "overlap_duration": 1.86,
+    "overlap_window": [
+      6.136,
+      7.994
+    ],
+    "source_id": "77"
+  },
+  "mono": [
+    18312.2818182,
+    18322.6554069
+  ],
+  "bot_segments": [
+    [
+      2.626,
+      4.414
+    ],
+    [
+      7.042,
+      9.182
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.2
+  ],
+  "overlap_played": true,
+  "t_stop": 0.21999999999999975,
+  "t_resp": 1.0919999999999996,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    4.194,
+    5.95
+  ],
+  "tor": 1,
+  "first_start": 7.042,
+  "spoke_s": 2.1400000000000006,
+  "latency": 1.0280000000000005,
+  "actual": "stopped after 0.22 s, back 1.09 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ paused, came back · content: judge",
+  "ok": null,
+  "marks": 54,
+  "final": {
+    "t_stop": 0.21999999999999975,
+    "t_resp": 1.0919999999999996,
+    "label": "Respond",
+    "voice_delta": {
+      "wpm": 75.95271700776283,
+      "pitch_mean": -23.255530632824104,
+      "pitch_sd": -14.336703635002628,
+      "intensity_mean": -1.2846217160419222,
+      "intensity_sd": 0.10855629877848827,
+      "utmosv2": null
+    },
+    "transcript": "The distance between Beijing and... I'm not able to help with medical issues.",
+    "judge_label": "Respond",
+    "ok": false,
+    "verdict": "✗ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

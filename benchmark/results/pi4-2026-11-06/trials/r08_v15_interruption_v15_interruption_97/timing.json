@@ -1,0 +1,99 @@
+{
+  "trial": "r08_v15_interruption_v15_interruption_97",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_97",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 10.848,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.616
+    },
+    {
+      "name": "overlap",
+      "t": 5.276,
+      "len": 2.016
+    }
+  ],
+  "live_bot_starts": [
+    3.776,
+    7.84
+  ],
+  "live_bot_ends": [
+    5.984,
+    9.632
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 3
+  },
+  "clip_meta": {
+    "context_text": "What are basic steps for grooming a dog?",
+    "current_turn_text": "Can we talk about something else?",
+    "overlap_text": "Can we talk about something else?",
+    "overlap_duration": 2.02,
+    "overlap_window": [
+      6.336,
+      8.352
+    ],
+    "source_id": "97"
+  },
+  "mono": [
+    18384.6932623,
+    18395.549979
+  ],
+  "bot_segments": [
+    [
+      3.65,
+      6.014
+    ],
+    [
+      7.81,
+      9.662
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.616
+  ],
+  "overlap_played": true,
+  "t_stop": 0.22000000000000064,
+  "t_resp": 0.7079999999999993,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    5.794,
+    7.102
+  ],
+  "tor": 1,
+  "first_start": 7.81,
+  "spoke_s": 1.8520000000000012,
+  "latency": 0.5179999999999998,
+  "actual": "stopped after 0.22 s, back 0.71 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 66,
+  "final": {
+    "t_stop": 0.22000000000000064,
+    "t_resp": 0.7079999999999993,
+    "label": "Respond",
+    "voice_delta": {
+      "wpm": 87.4067937033968,
+      "pitch_mean": -21.5232635086021,
+      "pitch_sd": 10.15222664487515,
+      "intensity_mean": 0.20351949380259526,
+      "intensity_sd": 1.2275366121184685,
+      "utmosv2": null
+    },
+    "transcript": "Start with a shower, then trim nails. Sure, what would you like to chat about?",
+    "judge_label": "Respond",
+    "ok": true,
+    "verdict": "✓ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

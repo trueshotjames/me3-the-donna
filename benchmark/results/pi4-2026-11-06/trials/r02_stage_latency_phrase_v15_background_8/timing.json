@@ -1,0 +1,84 @@
+{
+  "trial": "r02_stage_latency_phrase_v15_background_8",
+  "group": "stage_latency",
+  "clip": "phrase_v15_background_8",
+  "variant": "main",
+  "expected": "answer the phrase",
+  "duration": 5.952,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 1.528
+    }
+  ],
+  "live_bot_starts": [
+    2.304
+  ],
+  "live_bot_ends": [
+    4.736
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "text": "What's my current heart rate?",
+    "source": "v15_background_8"
+  },
+  "mono": [
+    15865.2239359,
+    15871.1658911
+  ],
+  "bot_segments": [
+    [
+      2.274,
+      4.766
+    ]
+  ],
+  "play_first": [
+    0.0,
+    1.528
+  ],
+  "tor": 1,
+  "first_start": 2.274,
+  "spoke_s": 2.492,
+  "user_end": 1.278,
+  "latency": 0.996,
+  "actual": "replied 1.00 s after speech end",
+  "verdict": "✓ 1.00 s",
+  "ok": true,
+  "marks": 24,
+  "final": {
+    "stages": {
+      "e2e_heard": 0.996,
+      "e2e": 0.8253,
+      "e2e_source": "marks",
+      "asr_final": 0.1363,
+      "llm_ttft": 0.4313,
+      "tts_ttfb": 0.2152,
+      "endpointing": 0.14,
+      "found": [
+        "vad_end",
+        "asr_final",
+        "llm_first_token",
+        "tts_request",
+        "tts_first_audio",
+        "audio_out"
+      ],
+      "transcript": "What's my current heart rate?",
+      "wer": {
+        "ref_words": 5,
+        "edits": 0,
+        "wer": 0.0
+      },
+      "context_early": true,
+      "context_tokens": 2649,
+      "context_source": "usage",
+      "context_messages": 33
+    },
+    "transcript": "I'm sorry, but I can't read your heart rate right now."
+  },
+  "scored_at": "2026-11-06T19:14:52+08:00"
+}

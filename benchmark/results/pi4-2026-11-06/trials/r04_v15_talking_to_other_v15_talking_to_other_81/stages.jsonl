@@ -1,0 +1,43 @@
+{"stage": "vad_start", "t": 17038.630379301, "pid": 9960, "src": "ws", "recv": 17069.9926022, "lt": 17069.969053378, "tt": 0.2124}
+{"stage": "vad_start", "t": 17038.630434837, "pid": 9960, "src": "ws", "recv": 17069.9926284, "lt": 17069.969108914, "tt": 0.2125}
+{"stage": "asr_partial", "t": 17039.046426326, "pid": 9960, "text": "Five", "src": "ws", "recv": 17070.4098018, "lt": 17070.385100403, "tt": 0.6285}
+{"stage": "interrupted", "t": 17039.166385028, "pid": 9960, "src": "ws", "recv": 17070.5300744, "lt": 17070.505059105, "tt": 0.7484}
+{"stage": "interrupted", "t": 17039.166476749, "pid": 9960, "src": "ws", "recv": 17070.5300987, "lt": 17070.505150826, "tt": 0.7485}
+{"stage": "asr_partial", "t": 17039.283311231, "pid": 9960, "text": "Find me a near", "src": "ws", "recv": 17070.6457515, "lt": 17070.621985308, "tt": 0.8654}
+{"stage": "asr_partial", "t": 17039.526535835, "pid": 9960, "text": "Find me a nearby", "src": "ws", "recv": 17070.8902994, "lt": 17070.865209912, "tt": 1.1086}
+{"stage": "asr_partial", "t": 17039.763358538, "pid": 9960, "text": "Find me a nearby coffee", "src": "ws", "recv": 17071.125765, "lt": 17071.102032615, "tt": 1.3454}
+{"stage": "asr_partial", "t": 17040.00713743, "pid": 9960, "text": "Find me a nearby coffee shop in", "src": "ws", "recv": 17071.3703679, "lt": 17071.345811507, "tt": 1.5892}
+{"stage": "asr_partial", "t": 17040.243466436, "pid": 9960, "text": "Find me a nearby coffee shop that's open", "src": "ws", "recv": 17071.6059541, "lt": 17071.582140513, "tt": 1.8255}
+{"stage": "asr_partial", "t": 17040.487169756, "pid": 9960, "text": "Find me a nearby coffee shop that's open now", "src": "ws", "recv": 17071.8507621, "lt": 17071.825843833, "tt": 2.0692}
+{"stage": "vad_end", "t": 17040.650476205, "pid": 9960, "src": "ws", "recv": 17072.0136968, "lt": 17071.989150282, "tt": 2.2325}
+{"stage": "vad_end", "t": 17040.650541815, "pid": 9960, "src": "ws", "recv": 17072.0137161, "lt": 17071.989215892, "tt": 2.2326}
+{"stage": "asr_partial", "t": 17040.662176168, "pid": 9960, "text": "Find me a nearby coffee shop that's open now.", "src": "ws", "recv": 17072.0261475, "lt": 17072.000850245, "tt": 2.2442}
+{"stage": "llm_request", "t": 17040.666510187, "pid": 9960, "speculative": true, "messages": 24, "chars": 11370, "est_tokens": 2842, "src": "ws", "recv": 17072.0306017, "lt": 17072.005184264, "tt": 2.2486}
+{"stage": "asr_final", "t": 17040.783754924, "pid": 9960, "text": "Find me a nearby coffee shop that's open now.", "src": "ws", "recv": 17072.1479241, "lt": 17072.122429001, "tt": 2.3658}
+{"stage": "user_stopped", "t": 17040.793005714, "pid": 9960, "src": "ws", "recv": 17072.1580495, "lt": 17072.131679791, "tt": 2.3751}
+{"stage": "user_stopped", "t": 17040.793075268, "pid": 9960, "src": "ws", "recv": 17072.1580656, "lt": 17072.131749345, "tt": 2.3751}
+{"stage": "llm_first_token", "t": 17041.359418408, "pid": 9960, "src": "ws", "recv": 17072.73393, "lt": 17072.698092485, "tt": 2.9415}
+{"stage": "llm_usage", "t": 17041.374876378, "pid": 9960, "prompt_tokens": 2495, "completion_tokens": 43, "src": "ws", "recv": 17072.745447, "lt": 17072.713550455, "tt": 2.9569}
+{"stage": "tts_request", "t": 17041.420554855, "pid": 9960, "src": "ws", "recv": 17072.7938858, "lt": 17072.759228932002, "tt": 3.0026}
+{"stage": "tts_first_audio", "t": 17041.612256852, "pid": 9960, "src": "ws", "recv": 17072.9743156, "lt": 17072.950930929, "tt": 3.1943}
+{"stage": "audio_out", "t": 17041.616580075, "pid": 9960, "src": "ws", "recv": 17072.9837211, "lt": 17072.955254152, "tt": 3.1986}
+{"stage": "audio_out", "t": 17041.616668482, "pid": 9960, "src": "ws", "recv": 17072.9837409, "lt": 17072.955342559, "tt": 3.1987}
+{"stage": "vad_start", "t": 17043.494422413, "pid": 9960, "src": "ws", "recv": 17074.8566914, "lt": 17074.83309649, "tt": 5.0765}
+{"stage": "vad_start", "t": 17043.494479579, "pid": 9960, "src": "ws", "recv": 17074.8567149, "lt": 17074.833153656, "tt": 5.0765}
+{"stage": "asr_partial", "t": 17044.332649905, "pid": 9960, "text": "Chris, your", "src": "ws", "recv": 17075.698518, "lt": 17075.671323982002, "tt": 5.9147}
+{"stage": "interrupted", "t": 17044.33546798, "pid": 9960, "src": "ws", "recv": 17075.7008193, "lt": 17075.674142057, "tt": 5.9175}
+{"stage": "interrupted", "t": 17044.335555608, "pid": 9960, "src": "ws", "recv": 17075.700835, "lt": 17075.674229685, "tt": 5.9176}
+{"stage": "bot_stopped", "t": 17044.367397112, "pid": 9960, "src": "ws", "recv": 17075.7327385, "lt": 17075.706071189, "tt": 5.9494}
+{"stage": "bot_stopped", "t": 17044.367475556, "pid": 9960, "src": "ws", "recv": 17075.7327612, "lt": 17075.706149633, "tt": 5.9495}
+{"stage": "asr_partial", "t": 17044.568074348, "pid": 9960, "text": "Chris, your laptop's", "src": "ws", "recv": 17075.9311404, "lt": 17075.906748425, "tt": 6.1501}
+{"stage": "asr_partial", "t": 17044.807201503, "pid": 9960, "text": "Chris, your laptop's still on", "src": "ws", "recv": 17076.1705424, "lt": 17076.14587558, "tt": 6.3892}
+{"stage": "asr_partial", "t": 17045.043955708, "pid": 9960, "text": "Chris, your laptop's still on the tape", "src": "ws", "recv": 17076.4065139, "lt": 17076.382629785, "tt": 6.626}
+{"stage": "asr_partial", "t": 17045.287480345, "pid": 9960, "text": "Chris, your laptop's still on the table now.", "src": "ws", "recv": 17076.651549, "lt": 17076.626154422, "tt": 6.8695}
+{"stage": "asr_partial", "t": 17045.366793062, "pid": 9960, "text": "Chris, your laptop's still on the table, man.", "src": "ws", "recv": 17076.7293446, "lt": 17076.705467139, "tt": 6.9488}
+{"stage": "vad_end", "t": 17045.450137617, "pid": 9960, "src": "ws", "recv": 17076.8133613, "lt": 17076.788811694, "tt": 7.0322}
+{"stage": "vad_end", "t": 17045.450202394, "pid": 9960, "src": "ws", "recv": 17076.8133865, "lt": 17076.788876471, "tt": 7.0322}
+{"stage": "llm_request", "t": 17045.464514898, "pid": 9960, "speculative": true, "messages": 25, "chars": 11415, "est_tokens": 2854, "src": "ws", "recv": 17076.8281382, "lt": 17076.803188975002, "tt": 7.0466}
+{"stage": "asr_final", "t": 17046.097164495, "pid": 9960, "text": "Chris, your laptop's still on the table, man.", "src": "ws", "recv": 17077.4606294, "lt": 17077.435838572, "tt": 7.6792}
+{"stage": "user_stopped", "t": 17046.104083592, "pid": 9960, "src": "ws", "recv": 17077.469667, "lt": 17077.442757669, "tt": 7.6861}
+{"stage": "user_stopped", "t": 17046.104151499, "pid": 9960, "src": "ws", "recv": 17077.4696851, "lt": 17077.442825576, "tt": 7.6862}
+{"stage": "llm_first_token", "t": 17046.106726059, "pid": 9960, "src": "ws", "recv": 17077.4729947, "lt": 17077.445400136, "tt": 7.6888}

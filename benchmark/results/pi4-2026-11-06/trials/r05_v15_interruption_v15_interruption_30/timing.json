@@ -1,0 +1,93 @@
+{
+  "trial": "r05_v15_interruption_v15_interruption_30",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_30",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 13.792,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.744
+    },
+    {
+      "name": "overlap",
+      "t": 5.756,
+      "len": 3.445
+    }
+  ],
+  "live_bot_starts": [
+    4.256,
+    6.048,
+    10.048
+  ],
+  "live_bot_ends": [
+    5.536,
+    6.272,
+    12.576
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "My tomatoes are not growing well this season",
+    "current_turn_text": "By the way, what's the weather going to be like tomorrow?",
+    "overlap_text": "By the way, what's the weather going to be like tomorrow?",
+    "overlap_duration": 3.44,
+    "overlap_window": [
+      6.805,
+      10.25
+    ],
+    "source_id": "30"
+  },
+  "mono": [
+    17380.8974548,
+    17394.6859996
+  ],
+  "bot_segments": [
+    [
+      4.226,
+      5.566
+    ],
+    [
+      10.018,
+      12.606
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.744
+  ],
+  "overlap_played": true,
+  "t_stop": null,
+  "t_resp": 1.1240000000000006,
+  "bot_speaking_at_onset": false,
+  "spoke_through": false,
+  "overlap": [
+    6.05,
+    8.894
+  ],
+  "tor": 1,
+  "first_start": 10.018,
+  "spoke_s": 2.587999999999999,
+  "latency": 0.8170000000000002,
+  "actual": "was already silent, back 1.12 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 57,
+  "final": {
+    "t_stop": null,
+    "t_resp": 1.1240000000000006,
+    "label": "Respond",
+    "transcript": "Check the soil moisture to make I'm sorry. I can't check the weather right now",
+    "judge_label": "Respond",
+    "ok": true,
+    "verdict": "✓ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

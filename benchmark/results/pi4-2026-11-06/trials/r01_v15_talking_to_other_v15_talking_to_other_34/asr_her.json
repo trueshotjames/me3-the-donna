@@ -1,0 +1,55 @@
+{
+  "text": "I can't mute the TV right now.",
+  "chunks": [
+    {
+      "text": "I",
+      "timestamp": [
+        1.74,
+        2.18
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        2.18,
+        2.52
+      ]
+    },
+    {
+      "text": "mute",
+      "timestamp": [
+        2.52,
+        2.68
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        2.68,
+        2.86
+      ]
+    },
+    {
+      "text": "TV",
+      "timestamp": [
+        2.86,
+        3.14
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        3.14,
+        3.46
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        3.46,
+        3.76
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

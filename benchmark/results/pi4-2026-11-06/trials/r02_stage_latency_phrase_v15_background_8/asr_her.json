@@ -1,0 +1,83 @@
+{
+  "text": "I'm sorry, but I can't read your heart rate right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        1.94,
+        2.44
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        2.44,
+        2.76
+      ]
+    },
+    {
+      "text": "but",
+      "timestamp": [
+        3.0,
+        3.08
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        3.08,
+        3.2
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        3.2,
+        3.5
+      ]
+    },
+    {
+      "text": "read",
+      "timestamp": [
+        3.5,
+        3.56
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        3.56,
+        3.74
+      ]
+    },
+    {
+      "text": "heart",
+      "timestamp": [
+        3.74,
+        3.96
+      ]
+    },
+    {
+      "text": "rate",
+      "timestamp": [
+        3.96,
+        4.16
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        4.16,
+        4.34
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        4.34,
+        4.6
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

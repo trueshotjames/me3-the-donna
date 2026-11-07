@@ -1,0 +1,130 @@
+{
+  "student": "202521354",
+  "run_id": "2026-11-06_16-38-00",
+  "started": "2026-11-06T16:38:00+08:00",
+  "rounds": 12,
+  "seed": 779831,
+  "fdbench": "0.1.0",
+  "rig": "direct",
+  "judge": "openrouter/openai/gpt-4o",
+  "machine": {
+    "os": "Windows 11",
+    "machine": "AMD64",
+    "pi_model": null,
+    "ram_gb": 15.3,
+    "python": "3.13.17",
+    "network": "ethernet+wifi",
+    "pi_temp_c": null,
+    "pi_throttled": null,
+    "disk_free_gb": 95.6,
+    "hostname": "LAPTOP-0FRPK8NV",
+    "optional": {
+      "ASR (faster-whisper)": true,
+      "pitch/intensity (praat-parselmouth)": true,
+      "UTMOSv2 quality": false
+    },
+    "fdbench": "0.1.0"
+  },
+  "devices": {},
+  "warnings_overridden": [
+    "network: ethernet+wifi"
+  ],
+  "dataset": "C:\\Users\\King\\Documents\\1. UP Files\\AI 231 - MLOps\\Machine Exercises\\Machine Exercise 3\\fd-benchmark\\datasets",
+  "dataset_counts": {
+    "v1_pause_synth": 30,
+    "v1_pause_candor": 30,
+    "v1_turntaking": 30,
+    "v1_interrupt": 30,
+    "v15_interruption": 30,
+    "v15_backchannel": 30,
+    "v15_talking_to_other": 30,
+    "v15_background": 30,
+    "false_tt": 40,
+    "stage_latency": 150
+  },
+  "stage_test": {
+    "phrases": 10,
+    "runs": 3,
+    "phrases_dir": null
+  },
+  "targets": {
+    "e2e": 4.0,
+    "asr_final": 0.8,
+    "llm_ttft": 1.5,
+    "tts_ttfb": 0.6,
+    "barge_in": 0.8,
+    "wer": 0.15
+  },
+  "where": "remote",
+  "link": {
+    "peer": "192.168.137.2:36084",
+    "rtt_ms": 5.8661999992182245,
+    "host": "0.0.0.0",
+    "port": 8791,
+    "disconnects": 1
+  },
+  "machine_stats": {
+    "hello": {
+      "host": "trueshot-pi",
+      "os": "Linux 6.18.50+rpt-rpi-v8",
+      "machine": "aarch64",
+      "pi_model": "Raspberry Pi 4 Model B Rev 1.5",
+      "ncpu": 4,
+      "caps": {
+        "backend": "procfs",
+        "cpu": true,
+        "cores": true,
+        "memory": true,
+        "processes": true,
+        "temperature": true,
+        "clock": true,
+        "throttle": true
+      },
+      "slow_every": 2.0,
+      "patterns": {
+        "asr_mcp": "mcp_servers.asr",
+        "tts_mcp": "mcp_servers.tts",
+        "tools_mcp": "mcp_servers.tools"
+      },
+      "python": "3.13.5",
+      "ram_mb": 3790,
+      "network": "wifi",
+      "link_network": "ethernet",
+      "source": "remote"
+    },
+    "samples": 4103,
+    "clock_offset": 31.33820168800048
+  },
+  "marks": {
+    "stages_seen": {
+      "vad_start": 724,
+      "interrupted": 522,
+      "asr_partial": 2843,
+      "vad_end": 724,
+      "llm_request": 524,
+      "asr_final": 262,
+      "user_stopped": 522,
+      "llm_first_token": 256,
+      "llm_usage": 234,
+      "tts_request": 221,
+      "tts_first_audio": 216,
+      "audio_out": 434,
+      "bot_stopped": 434,
+      "llm_cancel": 95
+    },
+    "n": 8011,
+    "clock_offsets": {
+      "ws": 31.338674077000178
+    }
+  },
+  "models": {
+    "harness": "pipecat 1.13.0"
+  },
+  "finished": "2026-11-06T17:46:30+08:00",
+  "outcome": {
+    "completed": 150,
+    "total": 150,
+    "stopped_early": false,
+    "seconds": 4097.4071203
+  }
+}

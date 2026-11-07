@@ -1,0 +1,97 @@
+{
+  "text": "how can i participate in environmental conservation what are some good environmental documentary",
+  "chunks": [
+    {
+      "text": "how",
+      "timestamp": [
+        0.0,
+        0.28
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        0.28,
+        0.44
+      ]
+    },
+    {
+      "text": "i",
+      "timestamp": [
+        0.44,
+        0.56
+      ]
+    },
+    {
+      "text": "participate",
+      "timestamp": [
+        0.56,
+        0.98
+      ]
+    },
+    {
+      "text": "in",
+      "timestamp": [
+        0.98,
+        1.32
+      ]
+    },
+    {
+      "text": "environmental",
+      "timestamp": [
+        1.32,
+        1.64
+      ]
+    },
+    {
+      "text": "conservation",
+      "timestamp": [
+        1.64,
+        2.32
+      ]
+    },
+    {
+      "text": "what",
+      "timestamp": [
+        2.32,
+        2.52
+      ]
+    },
+    {
+      "text": "are",
+      "timestamp": [
+        2.52,
+        2.6
+      ]
+    },
+    {
+      "text": "some",
+      "timestamp": [
+        2.6,
+        2.76
+      ]
+    },
+    {
+      "text": "good",
+      "timestamp": [
+        2.76,
+        2.92
+      ]
+    },
+    {
+      "text": "environmental",
+      "timestamp": [
+        2.92,
+        3.46
+      ]
+    },
+    {
+      "text": "documentary",
+      "timestamp": [
+        3.46,
+        3.98
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

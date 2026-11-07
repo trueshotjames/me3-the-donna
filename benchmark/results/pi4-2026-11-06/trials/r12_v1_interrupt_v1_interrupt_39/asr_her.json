@@ -1,0 +1,286 @@
+{
+  "text": "Morning can be great for exercise because morning workouts can boost metabolism. But the best time is when you can stay consistent. For diet, focus on balanced meals with protein, fiber and healthy fats. Stay hydrated and limit processed sugars.",
+  "chunks": [
+    {
+      "text": "Morning",
+      "timestamp": [
+        2.58,
+        3.2
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        3.2,
+        3.5
+      ]
+    },
+    {
+      "text": "be",
+      "timestamp": [
+        3.5,
+        3.66
+      ]
+    },
+    {
+      "text": "great",
+      "timestamp": [
+        3.66,
+        3.92
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        3.92,
+        4.1
+      ]
+    },
+    {
+      "text": "exercise",
+      "timestamp": [
+        4.1,
+        4.64
+      ]
+    },
+    {
+      "text": "because",
+      "timestamp": [
+        4.64,
+        5.06
+      ]
+    },
+    {
+      "text": "morning",
+      "timestamp": [
+        7.23,
+        8.23
+      ]
+    },
+    {
+      "text": "workouts",
+      "timestamp": [
+        8.23,
+        8.73
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        8.73,
+        9.01
+      ]
+    },
+    {
+      "text": "boost",
+      "timestamp": [
+        9.01,
+        9.33
+      ]
+    },
+    {
+      "text": "metabolism.",
+      "timestamp": [
+        9.33,
+        10.13
+      ]
+    },
+    {
+      "text": "But",
+      "timestamp": [
+        10.61,
+        10.77
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        10.77,
+        10.91
+      ]
+    },
+    {
+      "text": "best",
+      "timestamp": [
+        10.91,
+        11.13
+      ]
+    },
+    {
+      "text": "time",
+      "timestamp": [
+        11.13,
+        11.53
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        11.53,
+        11.93
+      ]
+    },
+    {
+      "text": "when",
+      "timestamp": [
+        11.93,
+        12.09
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        12.09,
+        12.23
+      ]
+    },
+    {
+      "text": "can",
+      "timestamp": [
+        12.23,
+        12.41
+      ]
+    },
+    {
+      "text": "stay",
+      "timestamp": [
+        12.41,
+        12.75
+      ]
+    },
+    {
+      "text": "consistent.",
+      "timestamp": [
+        12.75,
+        13.49
+      ]
+    },
+    {
+      "text": "For",
+      "timestamp": [
+        13.77,
+        13.83
+      ]
+    },
+    {
+      "text": "diet,",
+      "timestamp": [
+        13.83,
+        14.19
+      ]
+    },
+    {
+      "text": "focus",
+      "timestamp": [
+        14.47,
+        14.63
+      ]
+    },
+    {
+      "text": "on",
+      "timestamp": [
+        14.63,
+        14.93
+      ]
+    },
+    {
+      "text": "balanced",
+      "timestamp": [
+        14.93,
+        15.35
+      ]
+    },
+    {
+      "text": "meals",
+      "timestamp": [
+        15.35,
+        15.85
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        15.85,
+        16.13
+      ]
+    },
+    {
+      "text": "protein,",
+      "timestamp": [
+        16.13,
+        16.61
+      ]
+    },
+    {
+      "text": "fiber",
+      "timestamp": [
+        16.87,
+        17.11
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        17.11,
+        17.39
+      ]
+    },
+    {
+      "text": "healthy",
+      "timestamp": [
+        17.39,
+        17.67
+      ]
+    },
+    {
+      "text": "fats.",
+      "timestamp": [
+        17.67,
+        18.17
+      ]
+    },
+    {
+      "text": "Stay",
+      "timestamp": [
+        18.63,
+        18.73
+      ]
+    },
+    {
+      "text": "hydrated",
+      "timestamp": [
+        18.73,
+        19.27
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        19.27,
+        19.67
+      ]
+    },
+    {
+      "text": "limit",
+      "timestamp": [
+        19.67,
+        19.93
+      ]
+    },
+    {
+      "text": "processed",
+      "timestamp": [
+        19.93,
+        20.45
+      ]
+    },
+    {
+      "text": "sugars.",
+      "timestamp": [
+        20.45,
+        20.95
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

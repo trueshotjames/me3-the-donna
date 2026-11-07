@@ -1,0 +1,25 @@
+{"stage": "vad_start", "t": 15563.714470449, "pid": 9960, "src": "ws", "recv": 15595.0550667, "lt": 15595.053144526, "tt": 0.1765}
+{"stage": "vad_start", "t": 15563.714554633, "pid": 9960, "src": "ws", "recv": 15595.0550872, "lt": 15595.05322871, "tt": 0.1765}
+{"stage": "interrupted", "t": 15564.248595468, "pid": 9960, "src": "ws", "recv": 15595.5895729, "lt": 15595.587269545, "tt": 0.7106}
+{"stage": "interrupted", "t": 15564.248684337, "pid": 9960, "src": "ws", "recv": 15595.5895926, "lt": 15595.587358414, "tt": 0.7107}
+{"stage": "asr_partial", "t": 15564.407078997, "pid": 9960, "text": "Give a detail", "src": "ws", "recv": 15595.748736, "lt": 15595.745753074, "tt": 0.8691}
+{"stage": "asr_partial", "t": 15564.613353184, "pid": 9960, "text": "Give a detailed", "src": "ws", "recv": 15595.9532842, "lt": 15595.952027261, "tt": 1.0753}
+{"stage": "asr_partial", "t": 15564.849165214, "pid": 9960, "text": "Give a detailed introduction", "src": "ws", "recv": 15596.1886256, "lt": 15596.187839291, "tt": 1.3112}
+{"stage": "asr_partial", "t": 15565.089876073, "pid": 9960, "text": "Give a detailed introduction", "src": "ws", "recv": 15596.4293766, "lt": 15596.42855015, "tt": 1.5519}
+{"stage": "asr_partial", "t": 15565.326602017, "pid": 9960, "text": "Give a detailed introduction to the", "src": "ws", "recv": 15596.666077, "lt": 15596.665276094, "tt": 1.7886}
+{"stage": "asr_partial", "t": 15565.570116786, "pid": 9960, "text": "Give a detailed introduction to the stock", "src": "ws", "recv": 15596.9095813, "lt": 15596.908790863, "tt": 2.0321}
+{"stage": "asr_partial", "t": 15565.808226566, "pid": 9960, "text": "Give a detailed introduction to the stock market", "src": "ws", "recv": 15597.1481776, "lt": 15597.146900643, "tt": 2.2702}
+{"stage": "vad_end", "t": 15565.948739055, "pid": 9960, "src": "ws", "recv": 15597.2885844, "lt": 15597.287413132, "tt": 2.4107}
+{"stage": "vad_end", "t": 15565.948793128, "pid": 9960, "src": "ws", "recv": 15597.288607, "lt": 15597.287467205, "tt": 2.4108}
+{"stage": "asr_partial", "t": 15566.05324152, "pid": 9960, "text": "Give a detailed introduction to the stock market.", "src": "ws", "recv": 15597.3930976, "lt": 15597.391915597, "tt": 2.5152}
+{"stage": "llm_request", "t": 15566.056217836, "pid": 9960, "speculative": true, "messages": 6, "chars": 9114, "est_tokens": 2278, "src": "ws", "recv": 15597.3964719, "lt": 15597.394891913, "tt": 2.5182}
+{"stage": "asr_partial", "t": 15566.289668765, "pid": 9960, "text": "Give a detailed introduction to the stock market.", "src": "ws", "recv": 15597.6293139, "lt": 15597.628342842001, "tt": 2.7517}
+{"stage": "asr_final", "t": 15566.4907152, "pid": 9960, "text": "Give a detailed introduction to the stock market.", "src": "ws", "recv": 15597.8324307, "lt": 15597.829389277, "tt": 2.9527}
+{"stage": "user_stopped", "t": 15566.503407082, "pid": 9960, "src": "ws", "recv": 15597.8462698, "lt": 15597.842081159, "tt": 2.9654}
+{"stage": "user_stopped", "t": 15566.503471415, "pid": 9960, "src": "ws", "recv": 15597.8462894, "lt": 15597.842145492, "tt": 2.9655}
+{"stage": "llm_first_token", "t": 15567.278352551, "pid": 9960, "src": "ws", "recv": 15598.6186538, "lt": 15598.617026628, "tt": 3.7403}
+{"stage": "tts_request", "t": 15567.319089109, "pid": 9960, "src": "ws", "recv": 15598.6705828, "lt": 15598.657763186, "tt": 3.7811}
+{"stage": "llm_usage", "t": 15567.436513991, "pid": 9960, "prompt_tokens": 2333, "completion_tokens": 212, "src": "ws", "recv": 15598.7893673, "lt": 15598.775188068, "tt": 3.8985}
+{"stage": "tts_first_audio", "t": 15567.511512242, "pid": 9960, "src": "ws", "recv": 15598.8509165, "lt": 15598.850186319, "tt": 3.9735}
+{"stage": "audio_out", "t": 15567.51632911, "pid": 9960, "src": "ws", "recv": 15598.8629971, "lt": 15598.855003187, "tt": 3.9783}
+{"stage": "audio_out", "t": 15567.51641059, "pid": 9960, "src": "ws", "recv": 15598.8630136, "lt": 15598.855084667, "tt": 3.9784}

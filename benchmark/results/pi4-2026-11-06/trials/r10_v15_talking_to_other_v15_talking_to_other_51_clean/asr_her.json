@@ -1,0 +1,76 @@
+{
+  "text": "I'm sorry, I can't look up exchange rates right now.",
+  "chunks": [
+    {
+      "text": "I'm",
+      "timestamp": [
+        2.77,
+        3.29
+      ]
+    },
+    {
+      "text": "sorry,",
+      "timestamp": [
+        3.29,
+        3.61
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        3.99,
+        4.09
+      ]
+    },
+    {
+      "text": "can't",
+      "timestamp": [
+        4.09,
+        4.39
+      ]
+    },
+    {
+      "text": "look",
+      "timestamp": [
+        4.39,
+        4.47
+      ]
+    },
+    {
+      "text": "up",
+      "timestamp": [
+        4.47,
+        4.63
+      ]
+    },
+    {
+      "text": "exchange",
+      "timestamp": [
+        4.63,
+        4.91
+      ]
+    },
+    {
+      "text": "rates",
+      "timestamp": [
+        4.91,
+        5.33
+      ]
+    },
+    {
+      "text": "right",
+      "timestamp": [
+        5.33,
+        5.53
+      ]
+    },
+    {
+      "text": "now.",
+      "timestamp": [
+        5.53,
+        5.85
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

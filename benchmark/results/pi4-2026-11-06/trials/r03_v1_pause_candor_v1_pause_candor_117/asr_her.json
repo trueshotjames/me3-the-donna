@@ -1,0 +1,13 @@
+{
+  "text": "Schedule.",
+  "chunks": [
+    {
+      "text": "Schedule.",
+      "timestamp": [
+        0.0,
+        0.54
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

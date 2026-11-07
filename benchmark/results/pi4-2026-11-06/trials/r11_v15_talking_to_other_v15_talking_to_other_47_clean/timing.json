@@ -1,0 +1,62 @@
+{
+  "trial": "r11_v15_talking_to_other_v15_talking_to_other_47_clean",
+  "group": "v15_talking_to_other",
+  "clip": "v15_talking_to_other_47",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 6.56,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 3.064
+    }
+  ],
+  "live_bot_starts": [
+    3.904
+  ],
+  "live_bot_ends": [
+    5.344
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Set an alarm for 6:30 AM on weekdays.",
+    "current_turn_text": "Derek, traffic was insanity today.",
+    "overlap_text": "Derek, traffic was insanity today.",
+    "overlap_duration": 2.09,
+    "overlap_window": [
+      6.926,
+      9.016
+    ],
+    "source_id": "47"
+  },
+  "mono": [
+    19036.3062771,
+    19042.8453057
+  ],
+  "bot_segments": [
+    [
+      3.874,
+      5.374
+    ]
+  ],
+  "play_first": [
+    0.0,
+    3.064
+  ],
+  "tor": 1,
+  "first_start": 3.874,
+  "spoke_s": 1.4999999999999996,
+  "actual": "replied after 0.81 s, spoke 1.5 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 33,
+  "final": {
+    "transcript": "I can't set an alarm right now."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

@@ -1,0 +1,104 @@
+{
+  "text": "translate I love sushi to Japanese. Hey Jamie, you fed the dog already, yeah?",
+  "chunks": [
+    {
+      "text": "translate",
+      "timestamp": [
+        0.0,
+        0.42
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        0.42,
+        0.74
+      ]
+    },
+    {
+      "text": "love",
+      "timestamp": [
+        0.74,
+        0.94
+      ]
+    },
+    {
+      "text": "sushi",
+      "timestamp": [
+        0.94,
+        1.3
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        1.3,
+        1.58
+      ]
+    },
+    {
+      "text": "Japanese.",
+      "timestamp": [
+        1.58,
+        2.02
+      ]
+    },
+    {
+      "text": "Hey",
+      "timestamp": [
+        4.31,
+        4.95
+      ]
+    },
+    {
+      "text": "Jamie,",
+      "timestamp": [
+        4.95,
+        5.29
+      ]
+    },
+    {
+      "text": "you",
+      "timestamp": [
+        5.55,
+        5.63
+      ]
+    },
+    {
+      "text": "fed",
+      "timestamp": [
+        5.63,
+        5.81
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.81,
+        5.97
+      ]
+    },
+    {
+      "text": "dog",
+      "timestamp": [
+        5.97,
+        6.21
+      ]
+    },
+    {
+      "text": "already,",
+      "timestamp": [
+        6.21,
+        6.63
+      ]
+    },
+    {
+      "text": "yeah?",
+      "timestamp": [
+        6.63,
+        6.91
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

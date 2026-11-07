@@ -1,0 +1,139 @@
+{
+  "text": "Take a few minutes to list your top tasks. Prioritize the most urgent and block dedicated time for each.",
+  "chunks": [
+    {
+      "text": "Take",
+      "timestamp": [
+        9.78,
+        10.24
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        10.24,
+        10.4
+      ]
+    },
+    {
+      "text": "few",
+      "timestamp": [
+        10.4,
+        10.56
+      ]
+    },
+    {
+      "text": "minutes",
+      "timestamp": [
+        10.56,
+        10.82
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        10.82,
+        11.08
+      ]
+    },
+    {
+      "text": "list",
+      "timestamp": [
+        11.08,
+        11.32
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        11.32,
+        11.46
+      ]
+    },
+    {
+      "text": "top",
+      "timestamp": [
+        11.46,
+        11.74
+      ]
+    },
+    {
+      "text": "tasks.",
+      "timestamp": [
+        11.74,
+        12.22
+      ]
+    },
+    {
+      "text": "Prioritize",
+      "timestamp": [
+        12.88,
+        13.4
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        13.4,
+        13.54
+      ]
+    },
+    {
+      "text": "most",
+      "timestamp": [
+        13.54,
+        13.74
+      ]
+    },
+    {
+      "text": "urgent",
+      "timestamp": [
+        13.74,
+        14.16
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        14.16,
+        14.4
+      ]
+    },
+    {
+      "text": "block",
+      "timestamp": [
+        14.4,
+        14.68
+      ]
+    },
+    {
+      "text": "dedicated",
+      "timestamp": [
+        14.68,
+        15.08
+      ]
+    },
+    {
+      "text": "time",
+      "timestamp": [
+        15.08,
+        15.56
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        15.56,
+        15.76
+      ]
+    },
+    {
+      "text": "each.",
+      "timestamp": [
+        15.76,
+        15.96
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

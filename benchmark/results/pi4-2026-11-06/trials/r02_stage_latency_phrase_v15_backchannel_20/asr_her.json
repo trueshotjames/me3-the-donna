@@ -1,0 +1,195 @@
+{
+  "text": "Public speaking is the art of delivering a spoken message to an audience with the goal of informing, persuading, or entertaining. It begins with understanding your purpose.",
+  "chunks": [
+    {
+      "text": "Public",
+      "timestamp": [
+        3.41,
+        3.93
+      ]
+    },
+    {
+      "text": "speaking",
+      "timestamp": [
+        3.93,
+        4.37
+      ]
+    },
+    {
+      "text": "is",
+      "timestamp": [
+        4.37,
+        4.75
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        4.75,
+        4.87
+      ]
+    },
+    {
+      "text": "art",
+      "timestamp": [
+        4.87,
+        5.13
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        5.13,
+        5.31
+      ]
+    },
+    {
+      "text": "delivering",
+      "timestamp": [
+        5.31,
+        5.73
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        5.73,
+        5.93
+      ]
+    },
+    {
+      "text": "spoken",
+      "timestamp": [
+        5.93,
+        6.27
+      ]
+    },
+    {
+      "text": "message",
+      "timestamp": [
+        6.27,
+        6.69
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        6.69,
+        7.03
+      ]
+    },
+    {
+      "text": "an",
+      "timestamp": [
+        7.03,
+        7.17
+      ]
+    },
+    {
+      "text": "audience",
+      "timestamp": [
+        7.17,
+        7.51
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        7.51,
+        7.83
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        7.83,
+        7.99
+      ]
+    },
+    {
+      "text": "goal",
+      "timestamp": [
+        7.99,
+        8.25
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        8.25,
+        8.47
+      ]
+    },
+    {
+      "text": "informing,",
+      "timestamp": [
+        8.47,
+        9.01
+      ]
+    },
+    {
+      "text": "persuading,",
+      "timestamp": [
+        9.27,
+        9.95
+      ]
+    },
+    {
+      "text": "or",
+      "timestamp": [
+        10.21,
+        10.33
+      ]
+    },
+    {
+      "text": "entertaining.",
+      "timestamp": [
+        10.33,
+        10.85
+      ]
+    },
+    {
+      "text": "It",
+      "timestamp": [
+        11.09,
+        11.11
+      ]
+    },
+    {
+      "text": "begins",
+      "timestamp": [
+        11.11,
+        11.41
+      ]
+    },
+    {
+      "text": "with",
+      "timestamp": [
+        11.41,
+        11.63
+      ]
+    },
+    {
+      "text": "understanding",
+      "timestamp": [
+        11.63,
+        12.11
+      ]
+    },
+    {
+      "text": "your",
+      "timestamp": [
+        12.11,
+        12.37
+      ]
+    },
+    {
+      "text": "purpose.",
+      "timestamp": [
+        12.37,
+        12.71
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

@@ -1,0 +1,30 @@
+{"stage": "vad_start", "t": 19104.496442918, "pid": 9960, "src": "ws", "recv": 19135.8895401, "lt": 19135.835116995, "tt": 0.1264}
+{"stage": "vad_start", "t": 19104.496526436, "pid": 9960, "src": "ws", "recv": 19135.8895642, "lt": 19135.835200513, "tt": 0.1265}
+{"stage": "interrupted", "t": 19104.88746562, "pid": 9960, "src": "ws", "recv": 19136.2828028, "lt": 19136.226139697, "tt": 0.5175}
+{"stage": "interrupted", "t": 19104.887595396, "pid": 9960, "src": "ws", "recv": 19136.2828268, "lt": 19136.226269473, "tt": 0.5176}
+{"stage": "asr_partial", "t": 19105.086260204, "pid": 9960, "text": "Offer an", "src": "ws", "recv": 19136.478445, "lt": 19136.424934281, "tt": 0.7163}
+{"stage": "asr_partial", "t": 19105.363514171, "pid": 9960, "text": "Offer an exhaust", "src": "ws", "recv": 19136.7560041, "lt": 19136.702188248, "tt": 0.9935}
+{"stage": "asr_partial", "t": 19105.567523015, "pid": 9960, "text": "Offer an exhaustive", "src": "ws", "recv": 19136.9604615, "lt": 19136.906197092, "tt": 1.1975}
+{"stage": "asr_partial", "t": 19105.847971929, "pid": 9960, "text": "Offer an exhaustive over", "src": "ws", "recv": 19137.2403195, "lt": 19137.186646006, "tt": 1.478}
+{"stage": "asr_partial", "t": 19106.047000455, "pid": 9960, "text": "Offer an exhaustive overview", "src": "ws", "recv": 19137.4392282, "lt": 19137.385674532, "tt": 1.677}
+{"stage": "asr_partial", "t": 19106.32376913, "pid": 9960, "text": "Offer an exhaustive overview of", "src": "ws", "recv": 19137.7163518, "lt": 19137.662443207, "tt": 1.9538}
+{"stage": "asr_partial", "t": 19106.526724133, "pid": 9960, "text": "Offer an exhaustive overview of tornado", "src": "ws", "recv": 19137.9190355, "lt": 19137.86539821, "tt": 2.1567}
+{"stage": "asr_partial", "t": 19106.732592828, "pid": 9960, "text": "Offer an exhaustive overview of tornadoes.", "src": "ws", "recv": 19138.1264002, "lt": 19138.071266905, "tt": 2.3626}
+{"stage": "asr_partial", "t": 19106.803086312, "pid": 9960, "text": "Offer an exhaustive overview of tornadoes.", "src": "ws", "recv": 19138.1955712, "lt": 19138.141760389, "tt": 2.4331}
+{"stage": "vad_end", "t": 19106.891866492, "pid": 9960, "src": "ws", "recv": 19138.2848329, "lt": 19138.230540569, "tt": 2.5219}
+{"stage": "vad_end", "t": 19106.891921899, "pid": 9960, "src": "ws", "recv": 19138.2848569, "lt": 19138.230595976, "tt": 2.5219}
+{"stage": "llm_request", "t": 19106.929765317, "pid": 9960, "speculative": true, "messages": 14, "chars": 9840, "est_tokens": 2460, "src": "ws", "recv": 19138.3225387, "lt": 19138.268439394, "tt": 2.5598}
+{"stage": "asr_partial", "t": 19107.010935374, "pid": 9960, "text": "Offer an exhaustive overview of tornadoes.", "src": "ws", "recv": 19138.4043117, "lt": 19138.349609451, "tt": 2.6409}
+{"stage": "asr_final", "t": 19107.289879636, "pid": 9960, "text": "Offer an exhaustive overview of tornadoes.", "src": "ws", "recv": 19138.6838395, "lt": 19138.628553713, "tt": 2.9199}
+{"stage": "user_stopped", "t": 19107.298112328, "pid": 9960, "src": "ws", "recv": 19138.693941, "lt": 19138.636786405, "tt": 2.9281}
+{"stage": "user_stopped", "t": 19107.298333177, "pid": 9960, "src": "ws", "recv": 19138.6939615, "lt": 19138.637007254, "tt": 2.9283}
+{"stage": "llm_first_token", "t": 19107.431372968, "pid": 9960, "src": "ws", "recv": 19138.8246992, "lt": 19138.770047045, "tt": 3.0614}
+{"stage": "tts_request", "t": 19107.505180972, "pid": 9960, "src": "ws", "recv": 19138.909566, "lt": 19138.843855049, "tt": 3.1352}
+{"stage": "llm_usage", "t": 19107.598173461, "pid": 9960, "prompt_tokens": 2498, "completion_tokens": 293, "src": "ws", "recv": 19139.0064087, "lt": 19138.936847538, "tt": 3.2282}
+{"stage": "tts_first_audio", "t": 19107.712880407, "pid": 9960, "src": "ws", "recv": 19139.1048951, "lt": 19139.051554484002, "tt": 3.3429}
+{"stage": "audio_out", "t": 19107.717468211, "pid": 9960, "src": "ws", "recv": 19139.115334, "lt": 19139.056142288002, "tt": 3.3475}
+{"stage": "audio_out", "t": 19107.717553173, "pid": 9960, "src": "ws", "recv": 19139.1153575, "lt": 19139.05622725, "tt": 3.3476}
+{"stage": "vad_start", "t": 19109.676880595, "pid": 9960, "src": "ws", "recv": 19141.0691618, "lt": 19141.015554672, "tt": 5.3069}
+{"stage": "vad_start", "t": 19109.676945706, "pid": 9960, "src": "ws", "recv": 19141.0691926, "lt": 19141.015619783, "tt": 5.307}
+{"stage": "vad_end", "t": 19110.443303446, "pid": 9960, "src": "ws", "recv": 19141.8359345, "lt": 19141.781977523002, "tt": 6.0733}
+{"stage": "vad_end", "t": 19110.443363538, "pid": 9960, "src": "ws", "recv": 19141.8359581, "lt": 19141.782037615, "tt": 6.0734}

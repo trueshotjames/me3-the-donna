@@ -1,0 +1,42 @@
+{"stage": "vad_start", "t": 16137.848355353, "pid": 9960, "src": "ws", "recv": 16169.1967101, "lt": 16169.18702943, "tt": 0.2943}
+{"stage": "vad_start", "t": 16137.848419926, "pid": 9960, "src": "ws", "recv": 16169.1967324, "lt": 16169.187094003, "tt": 0.2944}
+{"stage": "asr_partial", "t": 16138.40715284, "pid": 9960, "text": "How can I", "src": "ws", "recv": 16169.7586918, "lt": 16169.745826917, "tt": 0.8531}
+{"stage": "interrupted", "t": 16138.410056971, "pid": 9960, "src": "ws", "recv": 16169.7611772, "lt": 16169.748731048001, "tt": 0.856}
+{"stage": "interrupted", "t": 16138.410149692, "pid": 9960, "src": "ws", "recv": 16169.7612264, "lt": 16169.748823769, "tt": 0.8561}
+{"stage": "bot_stopped", "t": 16138.438541896, "pid": 9960, "src": "ws", "recv": 16169.7956402, "lt": 16169.777215973, "tt": 0.8845}
+{"stage": "bot_stopped", "t": 16138.438657025, "pid": 9960, "src": "ws", "recv": 16169.7956707, "lt": 16169.777331102001, "tt": 0.8846}
+{"stage": "llm_request", "t": 16138.454662105, "pid": 9960, "messages": 65, "chars": 16684, "est_tokens": 4171, "src": "ws", "recv": 16169.8055511, "lt": 16169.793336182, "tt": 0.9007}
+{"stage": "asr_partial", "t": 16138.646878379, "pid": 9960, "text": "How can I proceed", "src": "ws", "recv": 16169.9953951, "lt": 16169.985552456, "tt": 1.0929}
+{"stage": "asr_partial", "t": 16138.891760632, "pid": 9960, "text": "How can I participate", "src": "ws", "recv": 16170.2406549, "lt": 16170.230434709, "tt": 1.3378}
+{"stage": "asr_partial", "t": 16139.125728575, "pid": 9960, "text": "How can I participate in", "src": "ws", "recv": 16170.4748789, "lt": 16170.464402652, "tt": 1.5717}
+{"stage": "asr_partial", "t": 16139.366867041, "pid": 9960, "text": "How can I participate in a", "src": "ws", "recv": 16170.7157346, "lt": 16170.705541118, "tt": 1.8129}
+{"stage": "asr_partial", "t": 16139.607390089, "pid": 9960, "text": "How can I participate in environmental", "src": "ws", "recv": 16170.9557632, "lt": 16170.946064166, "tt": 2.0534}
+{"stage": "asr_partial", "t": 16139.846076233, "pid": 9960, "text": "How can I participate in environmental", "src": "ws", "recv": 16171.1943724, "lt": 16171.18475031, "tt": 2.2921}
+{"stage": "llm_request", "t": 16140.010619589, "pid": 9960, "speculative": true, "messages": 66, "chars": 16722, "est_tokens": 4180, "src": "ws", "recv": 16171.3585762, "lt": 16171.349293666, "tt": 2.4566}
+{"stage": "asr_partial", "t": 16140.08979626, "pid": 9960, "text": "How can I participate in environmental", "src": "ws", "recv": 16171.4385033, "lt": 16171.428470337, "tt": 2.5358}
+{"stage": "llm_cancel", "t": 16140.326960219, "pid": 9960, "src": "ws", "recv": 16171.674339, "lt": 16171.665634296, "tt": 2.773}
+{"stage": "asr_partial", "t": 16140.566832867, "pid": 9960, "text": "How can I participate in environmental consideration? What are", "src": "ws", "recv": 16171.9151961, "lt": 16171.905506944, "tt": 3.0128}
+{"stage": "asr_partial", "t": 16140.807594949, "pid": 9960, "text": "How can I participate in environmental consideration? What are some good", "src": "ws", "recv": 16172.1563606, "lt": 16172.146269026, "tt": 3.2536}
+{"stage": "asr_partial", "t": 16141.047369876, "pid": 9960, "text": "How can I participate in environmental consideration? What are some field", "src": "ws", "recv": 16172.395798, "lt": 16172.386043953, "tt": 3.4934}
+{"stage": "asr_partial", "t": 16141.28918187, "pid": 9960, "text": "How can I participate in environmental consideration? What are some field environments", "src": "ws", "recv": 16172.6377418, "lt": 16172.627855947001, "tt": 3.7352}
+{"stage": "asr_partial", "t": 16141.527053932, "pid": 9960, "text": "How can I participate in environmental consideration? What are some field environmental", "src": "ws", "recv": 16172.8756667, "lt": 16172.865728009001, "tt": 3.973}
+{"stage": "asr_partial", "t": 16141.765886167, "pid": 9960, "text": "How can I participate in environmental consideration? What are some field environmental documents", "src": "ws", "recv": 16173.1143515, "lt": 16173.104560244, "tt": 4.2119}
+{"stage": "llm_request", "t": 16141.8226073, "pid": 9960, "speculative": true, "messages": 66, "chars": 16781, "est_tokens": 4195, "src": "ws", "recv": 16173.1712107, "lt": 16173.161281377, "tt": 4.2686}
+{"stage": "llm_cancel", "t": 16141.92787324, "pid": 9960, "src": "ws", "recv": 16173.2761206, "lt": 16173.266547317, "tt": 4.3739}
+{"stage": "vad_end", "t": 16141.978709409, "pid": 9960, "src": "ws", "recv": 16173.3270357, "lt": 16173.317383486, "tt": 4.4247}
+{"stage": "vad_end", "t": 16141.978779426, "pid": 9960, "src": "ws", "recv": 16173.3270583, "lt": 16173.317453503, "tt": 4.4248}
+{"stage": "asr_partial", "t": 16142.012793858, "pid": 9960, "text": "How can I participate in environmental consideration? What are some field environmental documentary", "src": "ws", "recv": 16173.3625642, "lt": 16173.351467935001, "tt": 4.4588}
+{"stage": "llm_request", "t": 16142.016999677, "pid": 9960, "speculative": true, "messages": 66, "chars": 16783, "est_tokens": 4196, "src": "ws", "recv": 16173.3668434, "lt": 16173.355673754, "tt": 4.463}
+{"stage": "asr_partial", "t": 16142.061350314, "pid": 9960, "text": "How can I participate in environmental consideration? What are some field environmental documentary?", "src": "ws", "recv": 16173.4122787, "lt": 16173.400024391, "tt": 4.5073}
+{"stage": "asr_final", "t": 16142.250500033, "pid": 9960, "text": "How can I participate in environmental consideration? What are some field environmental documentary?", "src": "ws", "recv": 16173.6001158, "lt": 16173.58917411, "tt": 4.6965}
+{"stage": "user_stopped", "t": 16142.258556304, "pid": 9960, "src": "ws", "recv": 16173.611256, "lt": 16173.597230381, "tt": 4.7045}
+{"stage": "user_stopped", "t": 16142.25862271, "pid": 9960, "src": "ws", "recv": 16173.6112776, "lt": 16173.597296787, "tt": 4.7046}
+{"stage": "llm_first_token", "t": 16142.821335204, "pid": 9960, "src": "ws", "recv": 16174.1760138, "lt": 16174.160009281, "tt": 5.2673}
+{"stage": "llm_usage", "t": 16142.987146841, "pid": 9960, "prompt_tokens": 2549, "completion_tokens": 85, "src": "ws", "recv": 16174.3366982, "lt": 16174.325820918, "tt": 5.4331}
+{"stage": "tts_request", "t": 16143.004271389, "pid": 9960, "src": "ws", "recv": 16174.3552385, "lt": 16174.342945466, "tt": 5.4503}
+{"stage": "tts_first_audio", "t": 16143.22767974, "pid": 9960, "src": "ws", "recv": 16174.5757219, "lt": 16174.566353817001, "tt": 5.6737}
+{"stage": "audio_out", "t": 16143.232062982, "pid": 9960, "src": "ws", "recv": 16174.5851406, "lt": 16174.570737059, "tt": 5.6781}
+{"stage": "audio_out", "t": 16143.23214737, "pid": 9960, "src": "ws", "recv": 16174.5851583, "lt": 16174.570821447, "tt": 5.6781}
+{"stage": "bot_stopped", "t": 16156.841182085, "pid": 9960, "src": "ws", "recv": 16188.1899397, "lt": 16188.179856162, "tt": 19.2872}
+{"stage": "bot_stopped", "t": 16156.841264418, "pid": 9960, "src": "ws", "recv": 16188.1899672, "lt": 16188.179938495, "tt": 19.2873}
+{"stage": "llm_request", "t": 16156.847694097, "pid": 9960, "messages": 67, "chars": 17017, "est_tokens": 4254, "src": "ws", "recv": 16188.196426, "lt": 16188.186368174, "tt": 19.2937}

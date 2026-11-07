@@ -1,0 +1,62 @@
+{"stage": "vad_start", "t": 16965.484459413, "pid": 9960, "src": "ws", "recv": 16996.8468356, "lt": 16996.82313349, "tt": 0.2501}
+{"stage": "vad_start", "t": 16965.48454843, "pid": 9960, "src": "ws", "recv": 16996.8468589, "lt": 16996.823222507, "tt": 0.2502}
+{"stage": "interrupted", "t": 16965.968263566, "pid": 9960, "src": "ws", "recv": 16997.3306945, "lt": 16997.306937643, "tt": 0.7339}
+{"stage": "interrupted", "t": 16965.968355658, "pid": 9960, "src": "ws", "recv": 16997.3307158, "lt": 16997.307029735, "tt": 0.734}
+{"stage": "asr_partial", "t": 16966.086975392, "pid": 9960, "text": "I've been feeling", "src": "ws", "recv": 16997.4496809, "lt": 16997.425649469, "tt": 0.8526}
+{"stage": "asr_partial", "t": 16966.32353087, "pid": 9960, "text": "I've been feeling a", "src": "ws", "recv": 16997.685124, "lt": 16997.662204947, "tt": 1.0891}
+{"stage": "asr_partial", "t": 16966.568404816, "pid": 9960, "text": "I've been feeling a bit", "src": "ws", "recv": 16997.9317103, "lt": 16997.907078893, "tt": 1.334}
+{"stage": "asr_partial", "t": 16966.803904585, "pid": 9960, "text": "I've been feeling a bit over", "src": "ws", "recv": 16998.1653474, "lt": 16998.142578662, "tt": 1.5695}
+{"stage": "asr_partial", "t": 16967.055142822, "pid": 9960, "text": "I've been feeling a bit over well", "src": "ws", "recv": 16998.4166107, "lt": 16998.393816899, "tt": 1.8208}
+{"stage": "asr_partial", "t": 16967.284241542, "pid": 9960, "text": "I've been feeling a bit overwhelmed at", "src": "ws", "recv": 16998.6456668, "lt": 16998.622915619, "tt": 2.0499}
+{"stage": "asr_partial", "t": 16967.527393825, "pid": 9960, "text": "I've been feeling a bit overwhelmed at", "src": "ws", "recv": 16998.8922257, "lt": 16998.866067902, "tt": 2.293}
+{"stage": "asr_partial", "t": 16967.764598795, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work", "src": "ws", "recv": 16999.1260354, "lt": 16999.103272872002, "tt": 2.5302}
+{"stage": "vad_end", "t": 16967.911568725, "pid": 9960, "src": "ws", "recv": 16999.2735025, "lt": 16999.250242802, "tt": 2.6772}
+{"stage": "vad_end", "t": 16967.911622817, "pid": 9960, "src": "ws", "recv": 16999.2735232, "lt": 16999.250296894, "tt": 2.6772}
+{"stage": "asr_partial", "t": 16968.011142702, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work.", "src": "ws", "recv": 16999.3734732, "lt": 16999.349816779, "tt": 2.7768}
+{"stage": "llm_request", "t": 16968.014913617, "pid": 9960, "speculative": true, "messages": 14, "chars": 10619, "est_tokens": 2655, "src": "ws", "recv": 16999.3773714, "lt": 16999.353587694, "tt": 2.7805}
+{"stage": "vad_start", "t": 16968.170287793, "pid": 9960, "src": "ws", "recv": 16999.5318465, "lt": 16999.50896187, "tt": 2.9359}
+{"stage": "vad_start", "t": 16968.17034357, "pid": 9960, "src": "ws", "recv": 16999.5318675, "lt": 16999.509017647, "tt": 2.936}
+{"stage": "llm_cancel", "t": 16968.173255996, "pid": 9960, "src": "ws", "recv": 16999.533431, "lt": 16999.511930073, "tt": 2.9389}
+{"stage": "asr_partial", "t": 16968.244218891, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work.", "src": "ws", "recv": 16999.6054291, "lt": 16999.582892968, "tt": 3.0098}
+{"stage": "asr_partial", "t": 16968.486847088, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I get", "src": "ws", "recv": 16999.8494918, "lt": 16999.825521165, "tt": 3.2525}
+{"stage": "asr_partial", "t": 16968.724659273, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I", "src": "ws", "recv": 17000.0861392, "lt": 17000.06333335, "tt": 3.4903}
+{"stage": "asr_partial", "t": 16968.967725427, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need", "src": "ws", "recv": 17000.3305605, "lt": 17000.306399504, "tt": 3.7333}
+{"stage": "asr_partial", "t": 16969.20508221, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to", "src": "ws", "recv": 17000.5670539, "lt": 17000.543756287, "tt": 3.9707}
+{"stage": "asr_partial", "t": 16969.447145452, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage", "src": "ws", "recv": 17000.8102764, "lt": 17000.785819529, "tt": 4.2128}
+{"stage": "asr_partial", "t": 16969.683849095, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my", "src": "ws", "recv": 17001.0452332, "lt": 17001.022523172, "tt": 4.4495}
+{"stage": "asr_partial", "t": 16969.927258801, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my", "src": "ws", "recv": 17001.2897816, "lt": 17001.265932878, "tt": 4.6929}
+{"stage": "asr_partial", "t": 16970.164747471, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time", "src": "ws", "recv": 17001.526218, "lt": 17001.503421548, "tt": 4.9304}
+{"stage": "asr_partial", "t": 16970.407607351, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better", "src": "ws", "recv": 17001.7703074, "lt": 17001.746281428, "tt": 5.1732}
+{"stage": "asr_partial", "t": 16970.651332145, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better.", "src": "ws", "recv": 17002.0142341, "lt": 17001.990006222, "tt": 5.4169}
+{"stage": "asr_partial", "t": 16970.88981171, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better.", "src": "ws", "recv": 17002.2513379, "lt": 17002.228485787, "tt": 5.6554}
+{"stage": "asr_partial", "t": 16971.126111784, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or", "src": "ws", "recv": 17002.4879595, "lt": 17002.464785861, "tt": 5.8917}
+{"stage": "asr_partial", "t": 16971.367525053, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or", "src": "ws", "recv": 17002.7301771, "lt": 17002.70619913, "tt": 6.1331}
+{"stage": "vad_end", "t": 16971.494628291, "pid": 9960, "src": "ws", "recv": 17002.8565419, "lt": 17002.833302368, "tt": 6.2602}
+{"stage": "vad_end", "t": 16971.494725234, "pid": 9960, "src": "ws", "recv": 17002.856563, "lt": 17002.833399311, "tt": 6.2603}
+{"stage": "asr_partial", "t": 16971.604860188, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or", "src": "ws", "recv": 17002.966334, "lt": 17002.943534265, "tt": 6.3705}
+{"stage": "asr_partial", "t": 16971.850177463, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or", "src": "ws", "recv": 17003.2115128, "lt": 17003.18885154, "tt": 6.6158}
+{"stage": "vad_start", "t": 16971.882865122, "pid": 9960, "src": "ws", "recv": 17003.2440687, "lt": 17003.221539199, "tt": 6.6485}
+{"stage": "vad_start", "t": 16971.882921454, "pid": 9960, "src": "ws", "recv": 17003.2440904, "lt": 17003.221595531, "tt": 6.6485}
+{"stage": "asr_partial", "t": 16972.086045598, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or make", "src": "ws", "recv": 17003.4476325, "lt": 17003.424719675, "tt": 6.8517}
+{"stage": "asr_partial", "t": 16972.328670073, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or men", "src": "ws", "recv": 17003.6909054, "lt": 17003.66734415, "tt": 7.0943}
+{"stage": "asr_partial", "t": 16972.565937006, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or men maybe", "src": "ws", "recv": 17003.9274273, "lt": 17003.904611083, "tt": 7.3315}
+{"stage": "asr_partial", "t": 16972.809395563, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or men maybe I should", "src": "ws", "recv": 17004.1710384, "lt": 17004.14806964, "tt": 7.575}
+{"stage": "asr_partial", "t": 16973.044875852, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or, man, maybe I should", "src": "ws", "recv": 17004.4064396, "lt": 17004.383549929, "tt": 7.8105}
+{"stage": "asr_partial", "t": 16973.289566709, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or, men, maybe I should talk to", "src": "ws", "recv": 17004.6519436, "lt": 17004.628240786, "tt": 8.0552}
+{"stage": "asr_partial", "t": 16973.529484015, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or, men, maybe I should talk to my", "src": "ws", "recv": 17004.8911198, "lt": 17004.868158092002, "tt": 8.2951}
+{"stage": "asr_partial", "t": 16973.768746996, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or, men, maybe I should talk to my manager", "src": "ws", "recv": 17005.1311818, "lt": 17005.107421073, "tt": 8.5344}
+{"stage": "asr_partial", "t": 16974.007280783, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or, men, maybe I should talk to my manager", "src": "ws", "recv": 17005.3686988, "lt": 17005.34595486, "tt": 8.7729}
+{"stage": "asr_partial", "t": 16974.248735644, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or, men, maybe I should talk to my manager about it", "src": "ws", "recv": 17005.6111572, "lt": 17005.587409721, "tt": 9.0143}
+{"stage": "vad_end", "t": 16974.254077576, "pid": 9960, "src": "ws", "recv": 17005.623731, "lt": 17005.592751653, "tt": 9.0197}
+{"stage": "vad_end", "t": 16974.254142686, "pid": 9960, "src": "ws", "recv": 17005.6237578, "lt": 17005.592816763, "tt": 9.0198}
+{"stage": "llm_request", "t": 16974.267865938, "pid": 9960, "speculative": true, "messages": 14, "chars": 10711, "est_tokens": 2678, "src": "ws", "recv": 17005.6304298, "lt": 17005.606540015, "tt": 9.0335}
+{"stage": "asr_partial", "t": 16974.445399573, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or, men, maybe I should talk to my manager about it.", "src": "ws", "recv": 17005.8067502, "lt": 17005.78407365, "tt": 9.211}
+{"stage": "asr_final", "t": 16974.542333824, "pid": 9960, "text": "I've been feeling a bit overwhelmed at work. I guess I need to manage my time better or, men, maybe I should talk to my manager about it.", "src": "ws", "recv": 17005.9061252, "lt": 17005.881007901, "tt": 9.3079}
+{"stage": "user_stopped", "t": 16974.551551744, "pid": 9960, "src": "ws", "recv": 17005.9165689, "lt": 17005.890225821, "tt": 9.3172}
+{"stage": "user_stopped", "t": 16974.551621354, "pid": 9960, "src": "ws", "recv": 17005.9165964, "lt": 17005.890295431, "tt": 9.3172}
+{"stage": "llm_first_token", "t": 16974.903189132, "pid": 9960, "src": "ws", "recv": 17006.2650016, "lt": 17006.241863209, "tt": 9.6688}
+{"stage": "llm_usage", "t": 16975.011252705, "pid": 9960, "prompt_tokens": 2691, "completion_tokens": 61, "src": "ws", "recv": 17006.3782342, "lt": 17006.349926782, "tt": 9.7769}
+{"stage": "tts_request", "t": 16975.039400181, "pid": 9960, "src": "ws", "recv": 17006.4048661, "lt": 17006.378074258, "tt": 9.805}
+{"stage": "tts_first_audio", "t": 16975.263875202, "pid": 9960, "src": "ws", "recv": 17006.6255126, "lt": 17006.602549279, "tt": 10.0295}
+{"stage": "audio_out", "t": 16975.268747029, "pid": 9960, "src": "ws", "recv": 17006.6375675, "lt": 17006.607421106, "tt": 10.0344}
+{"stage": "audio_out", "t": 16975.268832991, "pid": 9960, "src": "ws", "recv": 17006.6375839, "lt": 17006.607507068, "tt": 10.0344}

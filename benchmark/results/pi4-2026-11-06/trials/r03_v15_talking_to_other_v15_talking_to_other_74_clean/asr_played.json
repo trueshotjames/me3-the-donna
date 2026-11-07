@@ -1,0 +1,48 @@
+{
+  "text": "translate I love sushi to Japanese",
+  "chunks": [
+    {
+      "text": "translate",
+      "timestamp": [
+        0.0,
+        0.44
+      ]
+    },
+    {
+      "text": "I",
+      "timestamp": [
+        0.44,
+        0.74
+      ]
+    },
+    {
+      "text": "love",
+      "timestamp": [
+        0.74,
+        0.94
+      ]
+    },
+    {
+      "text": "sushi",
+      "timestamp": [
+        0.94,
+        1.3
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        1.3,
+        1.58
+      ]
+    },
+    {
+      "text": "Japanese",
+      "timestamp": [
+        1.58,
+        1.88
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

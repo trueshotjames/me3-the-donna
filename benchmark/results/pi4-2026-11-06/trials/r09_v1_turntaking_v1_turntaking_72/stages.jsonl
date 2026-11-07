@@ -1,0 +1,47 @@
+{"stage": "vad_start", "t": 18604.789109791, "pid": 9960, "src": "ws", "recv": 18636.1764702, "lt": 18636.127783868, "tt": 0.2593}
+{"stage": "vad_start", "t": 18604.789207994, "pid": 9960, "src": "ws", "recv": 18636.1764951, "lt": 18636.127882071, "tt": 0.2594}
+{"stage": "asr_partial", "t": 18605.16702463, "pid": 9960, "text": "There", "src": "ws", "recv": 18636.5550394, "lt": 18636.505698707, "tt": 0.6372}
+{"stage": "asr_partial", "t": 18605.282645204, "pid": 9960, "text": "There", "src": "ws", "recv": 18636.6685769, "lt": 18636.621319281, "tt": 0.7528}
+{"stage": "interrupted", "t": 18605.408578527, "pid": 9960, "src": "ws", "recv": 18636.795725, "lt": 18636.747252604, "tt": 0.8787}
+{"stage": "interrupted", "t": 18605.40867099, "pid": 9960, "src": "ws", "recv": 18636.795749, "lt": 18636.747345067, "tt": 0.8788}
+{"stage": "asr_partial", "t": 18605.60617408, "pid": 9960, "text": "They're still going", "src": "ws", "recv": 18636.9921106, "lt": 18636.944848157, "tt": 1.0763}
+{"stage": "asr_partial", "t": 18605.84741822, "pid": 9960, "text": "They're still going", "src": "ws", "recv": 18637.233769, "lt": 18637.186092297, "tt": 1.3176}
+{"stage": "asr_partial", "t": 18606.086076658, "pid": 9960, "text": "They're still going strong", "src": "ws", "recv": 18637.4720587, "lt": 18637.424750735, "tt": 1.5562}
+{"stage": "asr_partial", "t": 18606.326453507, "pid": 9960, "text": "They're still going strong because", "src": "ws", "recv": 18637.712744, "lt": 18637.665127584, "tt": 1.7966}
+{"stage": "asr_partial", "t": 18606.565252481, "pid": 9960, "text": "They're still going strong because", "src": "ws", "recv": 18637.9504727, "lt": 18637.903926558, "tt": 2.0354}
+{"stage": "vad_end", "t": 18606.702863319, "pid": 9960, "src": "ws", "recv": 18638.089289, "lt": 18638.041537396, "tt": 2.173}
+{"stage": "vad_end", "t": 18606.702916541, "pid": 9960, "src": "ws", "recv": 18638.0893102, "lt": 18638.041590618, "tt": 2.1731}
+{"stage": "vad_start", "t": 18606.803204054, "pid": 9960, "src": "ws", "recv": 18638.1891167, "lt": 18638.141878131, "tt": 2.2734}
+{"stage": "vad_start", "t": 18606.803267572, "pid": 9960, "src": "ws", "recv": 18638.1891397, "lt": 18638.141941649, "tt": 2.2734}
+{"stage": "asr_partial", "t": 18606.807735258, "pid": 9960, "text": "They're still going strong because", "src": "ws", "recv": 18638.1942798, "lt": 18638.146409335, "tt": 2.2779}
+{"stage": "asr_partial", "t": 18607.044299359, "pid": 9960, "text": "They're still going strong because of", "src": "ws", "recv": 18638.4302567, "lt": 18638.382973436, "tt": 2.5145}
+{"stage": "asr_partial", "t": 18607.284053971, "pid": 9960, "text": "They're still going strong because of how", "src": "ws", "recv": 18638.6699758, "lt": 18638.622728048, "tt": 2.7542}
+{"stage": "asr_partial", "t": 18607.525137073, "pid": 9960, "text": "They're still going strong because, like, I", "src": "ws", "recv": 18638.9102129, "lt": 18638.86381115, "tt": 2.9953}
+{"stage": "asr_partial", "t": 18607.763890526, "pid": 9960, "text": "They're still going strong because, like, everything's", "src": "ws", "recv": 18639.1498257, "lt": 18639.102564603, "tt": 3.234}
+{"stage": "asr_partial", "t": 18608.005479141, "pid": 9960, "text": "They're still going strong because, like, everything's gonna", "src": "ws", "recv": 18639.3903014, "lt": 18639.344153218, "tt": 3.4756}
+{"stage": "asr_partial", "t": 18608.244139038, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be", "src": "ws", "recv": 18639.6299866, "lt": 18639.582813115, "tt": 3.7143}
+{"stage": "asr_partial", "t": 18608.4852241, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online", "src": "ws", "recv": 18639.871095, "lt": 18639.823898177, "tt": 3.9554}
+{"stage": "asr_partial", "t": 18608.724346234, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online.", "src": "ws", "recv": 18640.1102817, "lt": 18640.063020311, "tt": 4.1945}
+{"stage": "asr_partial", "t": 18608.965714701, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online, so", "src": "ws", "recv": 18640.3517238, "lt": 18640.304388778, "tt": 4.4359}
+{"stage": "asr_partial", "t": 18609.204270097, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online, so they may", "src": "ws", "recv": 18640.590206, "lt": 18640.542944174, "tt": 4.6744}
+{"stage": "asr_partial", "t": 18609.445734748, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online. So they made me", "src": "ws", "recv": 18640.8318719, "lt": 18640.784408825, "tt": 4.9159}
+{"stage": "asr_partial", "t": 18609.684318199, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online, so they may even get", "src": "ws", "recv": 18641.0702671, "lt": 18641.022992276, "tt": 5.1545}
+{"stage": "asr_partial", "t": 18609.928566344, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online, so they may even get more", "src": "ws", "recv": 18641.3167348, "lt": 18641.267240421, "tt": 5.3987}
+{"stage": "asr_partial", "t": 18610.168528116, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online, so they may even get more work.", "src": "ws", "recv": 18641.5547865, "lt": 18641.507202193, "tt": 5.6387}
+{"stage": "vad_end", "t": 18610.225767554, "pid": 9960, "src": "ws", "recv": 18641.6170889, "lt": 18641.564441631, "tt": 5.6959}
+{"stage": "vad_end", "t": 18610.225820424, "pid": 9960, "src": "ws", "recv": 18641.6171126, "lt": 18641.564494501, "tt": 5.696}
+{"stage": "llm_request", "t": 18610.237232608, "pid": 9960, "speculative": true, "messages": 17, "chars": 9766, "est_tokens": 2442, "src": "ws", "recv": 18641.6232991, "lt": 18641.575906685, "tt": 5.7074}
+{"stage": "asr_partial", "t": 18610.407070752, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online, so they may even get more work.", "src": "ws", "recv": 18641.7932024, "lt": 18641.745744829, "tt": 5.8772}
+{"stage": "asr_partial", "t": 18610.649135803, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online, so they may even get more work.", "src": "ws", "recv": 18642.0351135, "lt": 18641.98780988, "tt": 6.1193}
+{"stage": "asr_final", "t": 18610.685992278, "pid": 9960, "text": "They're still going strong because, like, everything's gonna be online, so they may even get more work.", "src": "ws", "recv": 18642.0730065, "lt": 18642.024666355, "tt": 6.1561}
+{"stage": "user_stopped", "t": 18610.692837018, "pid": 9960, "src": "ws", "recv": 18642.0809608, "lt": 18642.031511095, "tt": 6.163}
+{"stage": "user_stopped", "t": 18610.692905462, "pid": 9960, "src": "ws", "recv": 18642.0809832, "lt": 18642.031579539, "tt": 6.1631}
+{"stage": "llm_first_token", "t": 18610.757178879, "pid": 9960, "src": "ws", "recv": 18642.1445675, "lt": 18642.095852956, "tt": 6.2273}
+{"stage": "llm_usage", "t": 18610.773308692, "pid": 9960, "prompt_tokens": 2424, "completion_tokens": 35, "src": "ws", "recv": 18642.1628033, "lt": 18642.111982769, "tt": 6.2435}
+{"stage": "tts_request", "t": 18610.79647902, "pid": 9960, "src": "ws", "recv": 18642.1861755, "lt": 18642.135153097, "tt": 6.2666}
+{"stage": "tts_first_audio", "t": 18611.040369351, "pid": 9960, "src": "ws", "recv": 18642.4274813, "lt": 18642.379043428, "tt": 6.5105}
+{"stage": "audio_out", "t": 18611.046800279, "pid": 9960, "src": "ws", "recv": 18642.437636, "lt": 18642.385474356, "tt": 6.517}
+{"stage": "audio_out", "t": 18611.046885816, "pid": 9960, "src": "ws", "recv": 18642.4376555, "lt": 18642.385559893, "tt": 6.517}
+{"stage": "bot_stopped", "t": 18612.894823411, "pid": 9960, "src": "ws", "recv": 18644.2811107, "lt": 18644.233497488, "tt": 8.365}
+{"stage": "bot_stopped", "t": 18612.894907577, "pid": 9960, "src": "ws", "recv": 18644.2811347, "lt": 18644.233581654, "tt": 8.3651}
+{"stage": "llm_request", "t": 18612.901056637, "pid": 9960, "messages": 18, "chars": 9820, "est_tokens": 2455, "src": "ws", "recv": 18644.2862897, "lt": 18644.239730714, "tt": 8.3712}

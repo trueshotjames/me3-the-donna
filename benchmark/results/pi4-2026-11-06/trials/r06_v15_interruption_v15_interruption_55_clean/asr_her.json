@@ -1,0 +1,90 @@
+{
+  "text": "Try the Thriller Night Run. It's fast -paced and full of twists.",
+  "chunks": [
+    {
+      "text": "Try",
+      "timestamp": [
+        3.12,
+        3.64
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        3.64,
+        3.8
+      ]
+    },
+    {
+      "text": "Thriller",
+      "timestamp": [
+        3.8,
+        4.12
+      ]
+    },
+    {
+      "text": "Night",
+      "timestamp": [
+        4.12,
+        4.5
+      ]
+    },
+    {
+      "text": "Run.",
+      "timestamp": [
+        4.5,
+        4.78
+      ]
+    },
+    {
+      "text": "It's",
+      "timestamp": [
+        5.22,
+        5.44
+      ]
+    },
+    {
+      "text": "fast",
+      "timestamp": [
+        5.44,
+        5.66
+      ]
+    },
+    {
+      "text": "-paced",
+      "timestamp": [
+        5.66,
+        5.98
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        5.98,
+        6.36
+      ]
+    },
+    {
+      "text": "full",
+      "timestamp": [
+        6.36,
+        6.66
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        6.66,
+        6.76
+      ]
+    },
+    {
+      "text": "twists.",
+      "timestamp": [
+        6.76,
+        7.14
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

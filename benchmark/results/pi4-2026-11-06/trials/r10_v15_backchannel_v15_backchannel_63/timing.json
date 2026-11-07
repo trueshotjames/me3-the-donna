@@ -1,0 +1,93 @@
+{
+  "trial": "r10_v15_backchannel_v15_backchannel_63",
+  "group": "v15_backchannel",
+  "clip": "v15_backchannel_63",
+  "variant": "main",
+  "expected": "keep talking (Resume)",
+  "duration": 15.744,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.232
+    },
+    {
+      "name": "overlap",
+      "t": 5.052,
+      "len": 0.8819375
+    }
+  ],
+  "live_bot_starts": [
+    3.552
+  ],
+  "live_bot_ends": [
+    15.392
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "Describe space telescopes completely.",
+    "current_turn_text": "",
+    "overlap_text": "mm-hmm",
+    "overlap_duration": 0.88,
+    "overlap_window": [
+      6.183,
+      7.0649999999999995
+    ],
+    "source_id": "63"
+  },
+  "mono": [
+    18763.3073358,
+    18779.0384593
+  ],
+  "bot_segments": [
+    [
+      3.522,
+      15.422
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.232
+  ],
+  "overlap_played": true,
+  "t_stop": 10.364,
+  "t_resp": null,
+  "bot_speaking_at_onset": true,
+  "spoke_through": true,
+  "overlap": [
+    5.058,
+    5.822
+  ],
+  "tor": 1,
+  "first_start": 5.9339375,
+  "spoke_s": 7.999999999999999,
+  "latency": 0.0,
+  "actual": "kept talking, did not come back",
+  "overlap_class": "through",
+  "label_provisional": null,
+  "verdict": "✓ kept talking",
+  "ok": true,
+  "marks": 28,
+  "final": {
+    "t_stop": 10.364,
+    "t_resp": null,
+    "label": "Resume",
+    "voice_delta": {
+      "wpm": 31.512605042016816,
+      "pitch_mean": 6.342168305857342,
+      "pitch_sd": 5.6567114769063735,
+      "intensity_mean": -1.9796895191648929,
+      "intensity_sd": 0.16535971570245955,
+      "utmosv2": null
+    },
+    "transcript": "Space telescopes are observatories placed outside Earth's atmosphere to capture clear views of the universe. They avoid atmospheric distortion, letting them see faint objects invisible, infrared,",
+    "judge_label": "Resume",
+    "ok": true,
+    "verdict": "✓ Resume"
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}

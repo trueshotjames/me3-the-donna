@@ -1,0 +1,101 @@
+{
+  "trial": "r12_v15_interruption_v15_interruption_179",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_179",
+  "variant": "main",
+  "expected": "stop, answer the new request (Respond)",
+  "duration": 27.488,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.84
+    },
+    {
+      "name": "overlap",
+      "t": 6.428,
+      "len": 2.571
+    }
+  ],
+  "live_bot_starts": [
+    4.928,
+    7.072,
+    10.048
+  ],
+  "live_bot_ends": [
+    6.592,
+    7.712,
+    27.136
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 2
+  },
+  "clip_meta": {
+    "context_text": "I want to start learning a new language",
+    "current_turn_text": "By the way, do we need milk?",
+    "overlap_text": "By the way, do we need milk?",
+    "overlap_duration": 2.57,
+    "overlap_window": [
+      6.635,
+      9.206
+    ],
+    "source_id": "179"
+  },
+  "mono": [
+    19579.2724212,
+    19606.7507401
+  ],
+  "bot_segments": [
+    [
+      4.898,
+      7.742
+    ],
+    [
+      10.018,
+      27.166
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.84
+  ],
+  "overlap_played": true,
+  "t_stop": 0.31599999999999984,
+  "t_resp": 1.3800000000000008,
+  "bot_speaking_at_onset": true,
+  "spoke_through": false,
+  "overlap": [
+    7.426,
+    8.638
+  ],
+  "tor": 1,
+  "first_start": 10.018,
+  "spoke_s": 6.981000000000002,
+  "latency": 1.0190000000000001,
+  "actual": "stopped after 0.32 s, back 1.38 s after",
+  "overlap_class": "paused",
+  "label_provisional": null,
+  "verdict": "◐ replied · content: judge",
+  "ok": null,
+  "marks": 56,
+  "final": {
+    "t_stop": 0.31599999999999984,
+    "t_resp": 1.3800000000000008,
+    "label": "Respond",
+    "voice_delta": {
+      "wpm": -4.591919145303052,
+      "pitch_mean": -57.00704957234558,
+      "pitch_sd": 11.662645931683919,
+      "intensity_mean": -4.4235343244387195,
+      "intensity_sd": -0.8435271608486481,
+      "utmosv2": null
+    },
+    "transcript": "Pick a language you're excited about, set a short. Learning a new language works best with daily practice. Use apps, listen to native speakers, and try speaking from day one. As for milk, it's optional. You can get calcium and protein from dairy or fortified plant milks, nuts, leafy greens, and wagooms if you prefer not to use dairy.",
+    "judge_label": "Respond",
+    "ok": true,
+    "verdict": "✓ Respond"
+  },
+  "scored_at": "2026-11-06T19:14:54+08:00"
+}

@@ -1,0 +1,41 @@
+{
+  "text": "What's the UV index today?",
+  "chunks": [
+    {
+      "text": "What's",
+      "timestamp": [
+        0.0,
+        0.22
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        0.22,
+        0.34
+      ]
+    },
+    {
+      "text": "UV",
+      "timestamp": [
+        0.34,
+        0.56
+      ]
+    },
+    {
+      "text": "index",
+      "timestamp": [
+        0.56,
+        0.92
+      ]
+    },
+    {
+      "text": "today?",
+      "timestamp": [
+        0.92,
+        1.32
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

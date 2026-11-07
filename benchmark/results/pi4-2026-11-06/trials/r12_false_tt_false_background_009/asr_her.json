@@ -1,0 +1,440 @@
+{
+  "text": "followed by the oral version that drove global eradication efforts. The 1960s introduced the measles, mumps, and rubella combined vaccine, simplifying childhood immunizations. The 1970s brought hepatitis B recombinant vaccines, protecting against liver disease. The 1980s launched the first HPV vaccine, preventing cervical cancer. The 1990s added varicella chickenpox and pneumococcal conjugate vaccines, expanding protection for children. The 2000s saw the H1N",
+  "chunks": [
+    {
+      "text": "followed",
+      "timestamp": [
+        0.05,
+        0.63
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        0.63,
+        1.37
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        1.37,
+        1.57
+      ]
+    },
+    {
+      "text": "oral",
+      "timestamp": [
+        1.57,
+        1.83
+      ]
+    },
+    {
+      "text": "version",
+      "timestamp": [
+        1.83,
+        2.27
+      ]
+    },
+    {
+      "text": "that",
+      "timestamp": [
+        2.27,
+        2.49
+      ]
+    },
+    {
+      "text": "drove",
+      "timestamp": [
+        2.49,
+        2.75
+      ]
+    },
+    {
+      "text": "global",
+      "timestamp": [
+        2.75,
+        3.15
+      ]
+    },
+    {
+      "text": "eradication",
+      "timestamp": [
+        3.15,
+        3.77
+      ]
+    },
+    {
+      "text": "efforts.",
+      "timestamp": [
+        3.77,
+        4.27
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        4.63,
+        4.63
+      ]
+    },
+    {
+      "text": "1960s",
+      "timestamp": [
+        4.63,
+        5.57
+      ]
+    },
+    {
+      "text": "introduced",
+      "timestamp": [
+        5.57,
+        5.99
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        5.99,
+        6.31
+      ]
+    },
+    {
+      "text": "measles,",
+      "timestamp": [
+        6.31,
+        6.71
+      ]
+    },
+    {
+      "text": "mumps,",
+      "timestamp": [
+        6.99,
+        7.21
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        7.41,
+        7.49
+      ]
+    },
+    {
+      "text": "rubella",
+      "timestamp": [
+        7.49,
+        7.87
+      ]
+    },
+    {
+      "text": "combined",
+      "timestamp": [
+        7.87,
+        8.27
+      ]
+    },
+    {
+      "text": "vaccine,",
+      "timestamp": [
+        8.27,
+        8.83
+      ]
+    },
+    {
+      "text": "simplifying",
+      "timestamp": [
+        9.37,
+        9.95
+      ]
+    },
+    {
+      "text": "childhood",
+      "timestamp": [
+        9.95,
+        10.49
+      ]
+    },
+    {
+      "text": "immunizations.",
+      "timestamp": [
+        10.49,
+        11.31
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        11.75,
+        11.79
+      ]
+    },
+    {
+      "text": "1970s",
+      "timestamp": [
+        11.79,
+        12.77
+      ]
+    },
+    {
+      "text": "brought",
+      "timestamp": [
+        12.77,
+        12.95
+      ]
+    },
+    {
+      "text": "hepatitis",
+      "timestamp": [
+        12.95,
+        13.53
+      ]
+    },
+    {
+      "text": "B",
+      "timestamp": [
+        13.53,
+        13.71
+      ]
+    },
+    {
+      "text": "recombinant",
+      "timestamp": [
+        13.71,
+        14.29
+      ]
+    },
+    {
+      "text": "vaccines,",
+      "timestamp": [
+        14.29,
+        14.75
+      ]
+    },
+    {
+      "text": "protecting",
+      "timestamp": [
+        15.33,
+        15.79
+      ]
+    },
+    {
+      "text": "against",
+      "timestamp": [
+        15.79,
+        16.27
+      ]
+    },
+    {
+      "text": "liver",
+      "timestamp": [
+        16.27,
+        16.55
+      ]
+    },
+    {
+      "text": "disease.",
+      "timestamp": [
+        16.55,
+        16.91
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        17.21,
+        17.29
+      ]
+    },
+    {
+      "text": "1980s",
+      "timestamp": [
+        17.29,
+        18.13
+      ]
+    },
+    {
+      "text": "launched",
+      "timestamp": [
+        18.13,
+        18.37
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        18.37,
+        18.57
+      ]
+    },
+    {
+      "text": "first",
+      "timestamp": [
+        18.57,
+        18.79
+      ]
+    },
+    {
+      "text": "HPV",
+      "timestamp": [
+        18.79,
+        19.53
+      ]
+    },
+    {
+      "text": "vaccine,",
+      "timestamp": [
+        19.53,
+        19.91
+      ]
+    },
+    {
+      "text": "preventing",
+      "timestamp": [
+        20.41,
+        20.77
+      ]
+    },
+    {
+      "text": "cervical",
+      "timestamp": [
+        20.77,
+        21.17
+      ]
+    },
+    {
+      "text": "cancer.",
+      "timestamp": [
+        21.17,
+        21.71
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        21.89,
+        21.97
+      ]
+    },
+    {
+      "text": "1990s",
+      "timestamp": [
+        21.97,
+        23.05
+      ]
+    },
+    {
+      "text": "added",
+      "timestamp": [
+        23.05,
+        23.33
+      ]
+    },
+    {
+      "text": "varicella",
+      "timestamp": [
+        23.33,
+        24.03
+      ]
+    },
+    {
+      "text": "chickenpox",
+      "timestamp": [
+        24.03,
+        24.71
+      ]
+    },
+    {
+      "text": "and",
+      "timestamp": [
+        24.71,
+        25.01
+      ]
+    },
+    {
+      "text": "pneumococcal",
+      "timestamp": [
+        25.01,
+        25.73
+      ]
+    },
+    {
+      "text": "conjugate",
+      "timestamp": [
+        25.73,
+        26.17
+      ]
+    },
+    {
+      "text": "vaccines,",
+      "timestamp": [
+        26.17,
+        26.91
+      ]
+    },
+    {
+      "text": "expanding",
+      "timestamp": [
+        27.35,
+        27.89
+      ]
+    },
+    {
+      "text": "protection",
+      "timestamp": [
+        27.89,
+        28.49
+      ]
+    },
+    {
+      "text": "for",
+      "timestamp": [
+        28.49,
+        28.91
+      ]
+    },
+    {
+      "text": "children.",
+      "timestamp": [
+        28.91,
+        29.29
+      ]
+    },
+    {
+      "text": "The",
+      "timestamp": [
+        29.29,
+        29.63
+      ]
+    },
+    {
+      "text": "2000s",
+      "timestamp": [
+        29.63,
+        30.39
+      ]
+    },
+    {
+      "text": "saw",
+      "timestamp": [
+        30.39,
+        30.51
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        30.51,
+        30.67
+      ]
+    },
+    {
+      "text": "H1N",
+      "timestamp": [
+        30.67,
+        31.33
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

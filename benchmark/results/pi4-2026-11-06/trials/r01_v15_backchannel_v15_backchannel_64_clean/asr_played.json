@@ -1,0 +1,62 @@
+{
+  "text": "offer a clear account of the moon landing.",
+  "chunks": [
+    {
+      "text": "offer",
+      "timestamp": [
+        0.0,
+        0.22
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        0.22,
+        0.44
+      ]
+    },
+    {
+      "text": "clear",
+      "timestamp": [
+        0.44,
+        0.64
+      ]
+    },
+    {
+      "text": "account",
+      "timestamp": [
+        0.64,
+        1.08
+      ]
+    },
+    {
+      "text": "of",
+      "timestamp": [
+        1.08,
+        1.32
+      ]
+    },
+    {
+      "text": "the",
+      "timestamp": [
+        1.32,
+        1.44
+      ]
+    },
+    {
+      "text": "moon",
+      "timestamp": [
+        1.44,
+        1.62
+      ]
+    },
+    {
+      "text": "landing.",
+      "timestamp": [
+        1.62,
+        1.96
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

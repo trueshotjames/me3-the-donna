@@ -1,0 +1,160 @@
+{
+  "text": "to make it. How about a quick crisp salad to start, followed by a hearty pasta, sounds like a solid dinner plan.",
+  "chunks": [
+    {
+      "text": "to",
+      "timestamp": [
+        0.0,
+        0.3
+      ]
+    },
+    {
+      "text": "make",
+      "timestamp": [
+        0.3,
+        0.46
+      ]
+    },
+    {
+      "text": "it.",
+      "timestamp": [
+        0.46,
+        0.8
+      ]
+    },
+    {
+      "text": "How",
+      "timestamp": [
+        3.02,
+        3.22
+      ]
+    },
+    {
+      "text": "about",
+      "timestamp": [
+        3.22,
+        3.5
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        3.5,
+        3.68
+      ]
+    },
+    {
+      "text": "quick",
+      "timestamp": [
+        3.68,
+        3.78
+      ]
+    },
+    {
+      "text": "crisp",
+      "timestamp": [
+        3.78,
+        4.42
+      ]
+    },
+    {
+      "text": "salad",
+      "timestamp": [
+        10.06,
+        10.46
+      ]
+    },
+    {
+      "text": "to",
+      "timestamp": [
+        10.46,
+        10.66
+      ]
+    },
+    {
+      "text": "start,",
+      "timestamp": [
+        10.66,
+        10.98
+      ]
+    },
+    {
+      "text": "followed",
+      "timestamp": [
+        11.28,
+        11.5
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        11.5,
+        11.76
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        11.76,
+        11.86
+      ]
+    },
+    {
+      "text": "hearty",
+      "timestamp": [
+        11.86,
+        12.22
+      ]
+    },
+    {
+      "text": "pasta,",
+      "timestamp": [
+        12.22,
+        12.66
+      ]
+    },
+    {
+      "text": "sounds",
+      "timestamp": [
+        13.06,
+        13.34
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        13.34,
+        13.6
+      ]
+    },
+    {
+      "text": "a",
+      "timestamp": [
+        13.6,
+        13.72
+      ]
+    },
+    {
+      "text": "solid",
+      "timestamp": [
+        13.72,
+        14.1
+      ]
+    },
+    {
+      "text": "dinner",
+      "timestamp": [
+        14.1,
+        14.4
+      ]
+    },
+    {
+      "text": "plan.",
+      "timestamp": [
+        14.4,
+        14.76
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

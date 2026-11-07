@@ -1,0 +1,76 @@
+{
+  "text": "It sounds like you're feeling overwhelmed by everything that's happening.",
+  "chunks": [
+    {
+      "text": "It",
+      "timestamp": [
+        18.38,
+        18.74
+      ]
+    },
+    {
+      "text": "sounds",
+      "timestamp": [
+        18.74,
+        18.96
+      ]
+    },
+    {
+      "text": "like",
+      "timestamp": [
+        18.96,
+        19.2
+      ]
+    },
+    {
+      "text": "you're",
+      "timestamp": [
+        19.2,
+        19.32
+      ]
+    },
+    {
+      "text": "feeling",
+      "timestamp": [
+        19.32,
+        19.56
+      ]
+    },
+    {
+      "text": "overwhelmed",
+      "timestamp": [
+        19.56,
+        20.2
+      ]
+    },
+    {
+      "text": "by",
+      "timestamp": [
+        20.2,
+        20.58
+      ]
+    },
+    {
+      "text": "everything",
+      "timestamp": [
+        20.58,
+        20.9
+      ]
+    },
+    {
+      "text": "that's",
+      "timestamp": [
+        20.9,
+        21.28
+      ]
+    },
+    {
+      "text": "happening.",
+      "timestamp": [
+        21.28,
+        21.54
+      ]
+    }
+  ],
+  "model": "faster-whisper/small"
+}

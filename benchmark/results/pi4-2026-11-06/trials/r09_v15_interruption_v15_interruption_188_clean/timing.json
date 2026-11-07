@@ -1,0 +1,62 @@
+{
+  "trial": "r09_v15_interruption_v15_interruption_188_clean",
+  "group": "v15_interruption",
+  "clip": "v15_interruption_188",
+  "variant": "clean",
+  "expected": "answer the turn (reference for the judge)",
+  "duration": 11.2,
+  "events": [
+    {
+      "name": "first",
+      "t": 0.0,
+      "len": 2.424
+    }
+  ],
+  "live_bot_starts": [
+    3.552
+  ],
+  "live_bot_ends": [
+    10.848
+  ],
+  "rig": {
+    "rig": "direct",
+    "her_out_sr": 48000,
+    "clears": 1
+  },
+  "clip_meta": {
+    "context_text": "I want to learn to play the guitar",
+    "current_turn_text": "Hold on, do you have any tips for sleeping better?",
+    "overlap_text": "Hold on, do you have any tips for sleeping better?",
+    "overlap_duration": 3.32,
+    "overlap_window": [
+      6.677,
+      9.994
+    ],
+    "source_id": "188"
+  },
+  "mono": [
+    18678.6900328,
+    18689.8867873
+  ],
+  "bot_segments": [
+    [
+      3.522,
+      10.878
+    ]
+  ],
+  "play_first": [
+    0.0,
+    2.424
+  ],
+  "tor": 1,
+  "first_start": 3.522,
+  "spoke_s": 6.901999999999999,
+  "actual": "replied after 1.10 s, spoke 6.9 s",
+  "verdict": "✓ answered",
+  "ok": true,
+  "marks": 24,
+  "final": {
+    "transcript": "Start with the basic chords G, C, D, and E -M. Practice each shape until it feels comfortable."
+  },
+  "scored_at": "2026-11-06T19:14:53+08:00"
+}
